@@ -78,7 +78,7 @@ module rr_arb_tree #(
   parameter bit          FairArb    = 1'b1,
   /// Dependent parameter, do **not** overwrite.
   /// Width of the arbitration priority signal and the arbitrated index.
-  parameter int unsigned IdxWidth   = (NumIn > 32'd1) ? unsigned'($clog2(NumIn)) : 32'd1,
+  parameter int unsigned IdxWidth   = (NumIn > 32'd1) ? $unsigned($clog2(NumIn)) : 32'd1,
   /// Dependent parameter, do **not** overwrite.
   /// Type for defining the arbitration priority and arbitrated index signal.
   parameter type         idx_t      = logic [IdxWidth-1:0]
@@ -119,14 +119,14 @@ module rr_arb_tree #(
   // pragma translate_on
 
   // just pass through in this corner case
-  if (NumIn == unsigned'(1)) begin : gen_pass_through
+  if (NumIn == $unsigned(1)) begin : gen_pass_through
     assign req_o    = req_i[0];
     assign gnt_o[0] = gnt_i;
     assign data_o   = data_i[0];
     assign idx_o    = '0;
   // non-degenerate cases
   end else begin : gen_arbiter
-    localparam int unsigned NumLevels = unsigned'($clog2(NumIn));
+    localparam int unsigned NumLevels = $unsigned($clog2(NumIn));
 
     /* verilator lint_off UNOPTFLAT */
     idx_t    [2**NumLevels-2:0] index_nodes; // used to propagate the indices
@@ -252,7 +252,7 @@ module rr_arb_tree #(
     assign gnt_nodes[0] = gnt_i;
 
     // arbiter tree
-    for (genvar level = 0; unsigned'(level) < NumLevels; level++) begin : gen_levels
+    for (genvar level = 0; $unsigned(level) < NumLevels; level++) begin : gen_levels
       for (genvar l = 0; l < 2**level; l++) begin : gen_level
         // local select signal
         logic sel;
@@ -261,9 +261,9 @@ module rr_arb_tree #(
         localparam int unsigned Idx1 = 2**(level+1)-1+l*2;
         //////////////////////////////////////////////////////////////
         // uppermost level where data is fed in from the inputs
-        if (unsigned'(level) == NumLevels-1) begin : gen_first_level
+        if ($unsigned(level) == NumLevels-1) begin : gen_first_level
           // if two successive indices are still in the vector...
-          if (unsigned'(l) * 2 < NumIn-1) begin : gen_reduce
+          if ($unsigned(l) * 2 < NumIn-1) begin : gen_reduce
             assign req_nodes[Idx0]   = req_d[l*2] | req_d[l*2+1];
 
             // arbitration: round robin
@@ -275,14 +275,14 @@ module rr_arb_tree #(
             assign gnt_o[l*2+1]      = gnt_nodes[Idx0] & (AxiVldRdy | req_d[l*2+1]) & sel;
           end
           // if only the first index is still in the vector...
-          if (unsigned'(l) * 2 == NumIn-1) begin : gen_first
+          if ($unsigned(l) * 2 == NumIn-1) begin : gen_first
             assign req_nodes[Idx0]   = req_d[l*2];
             assign index_nodes[Idx0] = '0;// always zero in this case
             assign data_nodes[Idx0]  = data_i[l*2];
             assign gnt_o[l*2]        = gnt_nodes[Idx0] & (AxiVldRdy | req_d[l*2]);
           end
           // if index is out of range, fill up with zeros (will get pruned)
-          if (unsigned'(l) * 2 > NumIn-1) begin : gen_out_of_range
+          if ($unsigned(l) * 2 > NumIn-1) begin : gen_out_of_range
             assign req_nodes[Idx0]   = 1'b0;
             assign index_nodes[Idx0] = idx_t'('0);
             assign data_nodes[Idx0]  = DataType'('0);
@@ -296,8 +296,8 @@ module rr_arb_tree #(
           assign sel =  ~req_nodes[Idx1] | req_nodes[Idx1+1] & rr_q[NumLevels-1-level];
 
           assign index_nodes[Idx0] = (sel) ?
-            idx_t'({1'b1, index_nodes[Idx1+1][NumLevels-unsigned'(level)-2:0]}) :
-            idx_t'({1'b0, index_nodes[Idx1][NumLevels-unsigned'(level)-2:0]});
+            idx_t'({1'b1, index_nodes[Idx1+1][NumLevels-$unsigned(level)-2:0]}) :
+            idx_t'({1'b0, index_nodes[Idx1][NumLevels-$unsigned(level)-2:0]});
 
           assign data_nodes[Idx0]  = (sel) ? data_nodes[Idx1+1] : data_nodes[Idx1];
           assign gnt_nodes[Idx1]   = gnt_nodes[Idx0] & ~sel;

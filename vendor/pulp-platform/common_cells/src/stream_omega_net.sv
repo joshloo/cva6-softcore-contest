@@ -41,7 +41,7 @@ module stream_omega_net #(
   /// Derived parameter, do **not** overwrite!
   ///
   /// Width of the output selection signal.
-  parameter int unsigned SelWidth = (NumOut > 32'd1) ? unsigned'($clog2(NumOut)) : 32'd1,
+  parameter int unsigned SelWidth = (NumOut > 32'd1) ? $unsigned($clog2(NumOut)) : 32'd1,
   /// Derived parameter, do **not** overwrite!
   ///
   /// Signal type definition for selecting the output at the inputs.
@@ -49,7 +49,7 @@ module stream_omega_net #(
   /// Derived parameter, do **not** overwrite!
   ///
   /// Width of the input index signal.
-  parameter int unsigned IdxWidth = (NumInp > 32'd1) ? unsigned'($clog2(NumInp)) : 32'd1,
+  parameter int unsigned IdxWidth = (NumInp > 32'd1) ? $unsigned($clog2(NumInp)) : 32'd1,
   /// Derived parameter, do **not** overwrite!
   ///
   /// Signal type definition indicating from which input the output came.
@@ -119,11 +119,11 @@ module stream_omega_net #(
     // Can lead however to RTL simulation overhead.
     // Dividing through the log base 2 of `Radix` leads to a change of base.
     localparam int unsigned NumLanes = (NumOut > NumInp) ?
-        unsigned'(Radix**(cf_math_pkg::ceil_div($clog2(NumOut), $clog2(Radix)))) :
-        unsigned'(Radix**(cf_math_pkg::ceil_div($clog2(NumInp), $clog2(Radix))));
+        $unsigned(Radix**(cf_math_pkg::ceil_div($clog2(NumOut), $clog2(Radix)))) :
+        $unsigned(Radix**(cf_math_pkg::ceil_div($clog2(NumInp), $clog2(Radix))));
 
     // Find the number of routing levels needed.
-    localparam int unsigned NumLevels = unsigned'(($clog2(NumLanes)+$clog2(Radix)-1)/$clog2(Radix));
+    localparam int unsigned NumLevels = $unsigned(($clog2(NumLanes)+$clog2(Radix)-1)/$clog2(Radix));
 
     // Find the number of routes per network stage. Can use a normal division here, as
     // `NumLanes % Radix == 0`.
@@ -138,7 +138,7 @@ module stream_omega_net #(
     typedef logic [$clog2(NumLanes)-1:0] sel_dst_t;
 
     // Selection signal type of an individual router
-    localparam int unsigned SelW = unsigned'($clog2(Radix));
+    localparam int unsigned SelW = $unsigned($clog2(Radix));
     initial begin : proc_selw
       $display("SelW is:    %0d", SelW);
       $display("SelDstW is: %0d", $bits(sel_dst_t));
@@ -159,9 +159,9 @@ module stream_omega_net #(
     logic        [NumLevels-1:0][NumRouters-1:0][Radix-1:0] out_router_valid, out_router_ready;
 
     // Generate the shuffling between the routers
-    for (genvar i = 0; unsigned'(i) < NumLevels-1; i++) begin : gen_shuffle_levels
-      for (genvar j = 0; unsigned'(j) < NumRouters; j++) begin : gen_shuffle_routers
-        for (genvar k = 0; unsigned'(k) < Radix; k++) begin : gen_shuffle_radix
+    for (genvar i = 0; $unsigned(i) < NumLevels-1; i++) begin : gen_shuffle_levels
+      for (genvar j = 0; $unsigned(j) < NumRouters; j++) begin : gen_shuffle_routers
+        for (genvar k = 0; $unsigned(k) < Radix; k++) begin : gen_shuffle_radix
           // This parameter is from `0` to `NumLanes-1`
           localparam int unsigned IdxLane = Radix * j + k;
           // Do the perfect shuffle
@@ -200,10 +200,10 @@ module stream_omega_net #(
     end
 
     // Generate the `stream_xbar_routers`
-    for (genvar i = 0; unsigned'(i) < NumLevels; i++) begin : gen_router_levels
-      for (genvar j = 0; unsigned'(j) < NumRouters; j++) begin : gen_routers
+    for (genvar i = 0; $unsigned(i) < NumLevels; i++) begin : gen_router_levels
+      for (genvar j = 0; $unsigned(j) < NumRouters; j++) begin : gen_routers
         sel_t [Radix-1:0] sel_router;
-        for (genvar k = 0; unsigned'(k) < Radix; k++) begin : gen_router_sel
+        for (genvar k = 0; $unsigned(k) < Radix; k++) begin : gen_router_sel
           // For the inter stage routing some bits of the overall selection are important.
           // The `MSB` is for stage `0`, `MSB-1` for stage `1` and so on for the `Radix=2` case.
           // For higher radices's a bit slice following the same pattern is used.
@@ -238,7 +238,7 @@ module stream_omega_net #(
     end
 
     // outputs are on the last level
-    for (genvar i = 0; unsigned'(i) < NumLanes; i++) begin : gen_outputs
+    for (genvar i = 0; $unsigned(i) < NumLanes; i++) begin : gen_outputs
       if (i < NumOut) begin : gen_connect
         assign data_o[i]  = out_router_data[NumLevels-1][i/Radix][i%Radix].payload;
         assign idx_o[i]   = out_router_data[NumLevels-1][i/Radix][i%Radix].idx_inp;
@@ -263,13 +263,13 @@ module stream_omega_net #(
     // pragma translate_off
     `ifndef VERILATOR
     default disable iff rst_ni;
-    for (genvar i = 0; unsigned'(i) < NumInp; i++) begin : gen_sel_assertions
+    for (genvar i = 0; $unsigned(i) < NumInp; i++) begin : gen_sel_assertions
       assert property (@(posedge clk_i) (valid_i[i] |-> sel_i[i] < sel_oup_t'(NumOut))) else
           $fatal(1, "Non-existing output is selected!");
     end
 
     if (AxiVldRdy) begin : gen_handshake_assertions
-      for (genvar i = 0; unsigned'(i) < NumInp; i++) begin : gen_inp_assertions
+      for (genvar i = 0; $unsigned(i) < NumInp; i++) begin : gen_inp_assertions
         assert property (@(posedge clk_i) (valid_i[i] && !ready_o[i] |=> $stable(data_i[i]))) else
             $error("data_i is unstable at input: %0d", i);
         assert property (@(posedge clk_i) (valid_i[i] && !ready_o[i] |=> $stable(sel_i[i]))) else
@@ -277,7 +277,7 @@ module stream_omega_net #(
         assert property (@(posedge clk_i) (valid_i[i] && !ready_o[i] |=> valid_i[i])) else
             $error("valid_i at input %0d has been taken away without a ready.", i);
       end
-      for (genvar i = 0; unsigned'(i) < NumOut; i++) begin : gen_out_assertions
+      for (genvar i = 0; $unsigned(i) < NumOut; i++) begin : gen_out_assertions
         assert property (@(posedge clk_i) (valid_o[i] && !ready_i[i] |=> $stable(data_o[i]))) else
             $error("data_o is unstable at output: %0d Check that parameter LockIn is set.", i);
         assert property (@(posedge clk_i) (valid_o[i] && !ready_i[i] |=> $stable(idx_o[i]))) else

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="ap6a00b" date="2024 08 24 00:02:51" device="LAV-AT-E70ES1" device_int="ap6a400be" family="LAV-AT" gen_platform="Propel" gen_platform_version="2024.1.2406150513_p" generator="ipgen" library="ip" module="sgdma" name="sgdma0" operation="Commercial" package="LFG1156" package_int="LFG1156" partnumber="LAV-AT-E70ES1-1LFG1156C" source_format="Verilog" speed="1" speed_int="1" vendor="latticesemi.com" version="2.2.0">
+ <Package>
+  <File modified="2024 08 24 00:02:51" name="rtl/sgdma0_bb.v" type="black_box_verilog"/>
+  <File modified="2024 08 24 00:02:51" name="sgdma0.cfg" type="cfg"/>
+  <File modified="2024 08 24 00:02:51" name="misc/sgdma0_tmpl.v" type="template_verilog"/>
+  <File modified="2024 08 24 00:02:51" name="misc/sgdma0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 08 24 00:02:51" name="rtl/sgdma0.sv" type="top_level_system_verilog"/>
+  <File modified="2024 08 24 00:02:51" name="constraints/constraint.sdc" stage="lse:all,synplify:all" type="tcl_constraints"/>
+  <File modified="2024 08 24 00:02:51" name="constraints/sgdma0.ldc" type="timing_constraints"/>
+  <File modified="2024 08 24 00:02:51" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:02:51" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:02:51" name="eval/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:02:51" name="eval/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:02:51" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 08 24 00:02:51" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2024 08 01 03:03:37" name="testbench/sgdma_ed_axil_m.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 01 03:03:37" name="testbench/sgdma_ed_axis_rx.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 01 03:03:37" name="testbench/sgdma_ed_axis_tx.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 01 03:03:37" name="testbench/sgdma_ed_axi_mem.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 01 03:03:37" name="testbench/tb_top.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 01 03:03:37" name="eval/constraint.pdc" type="eval"/>
+  <File modified="2024 08 01 03:03:37" name="eval/evalF.F" type="eval"/>
+  <File modified="2024 08 01 03:03:37" name="eval/eval_constraint.pdc" type="eval"/>
+  <File modified="2024 08 01 03:03:37" name="eval/eval_top.sv" type="eval"/>
+  <File modified="2024 08 01 03:03:37" name="driver/sgdma.c" type="driver_source"/>
+  <File modified="2024 08 01 03:03:37" name="driver/sgdma.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

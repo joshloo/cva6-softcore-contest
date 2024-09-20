@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>mbconfig0</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>fpga_multiboot_config_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="fpga_multiboot_config" vendor="latticesemi.com" version="1.0.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="SIM">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.pclk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="pclk_i"/>
+                <ipxact:externalPortReference portRef="pclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.rstn_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="rstn_i"/>
+                <ipxact:externalPortReference portRef="rstn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_penable_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_penable_i"/>
+                <ipxact:externalPortReference portRef="apb_penable_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_psel_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_psel_i"/>
+                <ipxact:externalPortReference portRef="apb_psel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_pwrite_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_pwrite_i"/>
+                <ipxact:externalPortReference portRef="apb_pwrite_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_paddr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_paddr_i"/>
+                <ipxact:externalPortReference portRef="apb_paddr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_pwdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_pwdata_i"/>
+                <ipxact:externalPortReference portRef="apb_pwdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_pready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_pready_o"/>
+                <ipxact:externalPortReference portRef="apb_pready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_pslverr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_pslverr_o"/>
+                <ipxact:externalPortReference portRef="apb_pslverr_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.apb_prdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="apb_prdata_o"/>
+                <ipxact:externalPortReference portRef="apb_prdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mbconfig0.config_active</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mbconfig0" portRef="config_active"/>
+                <ipxact:externalPortReference portRef="config_active"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

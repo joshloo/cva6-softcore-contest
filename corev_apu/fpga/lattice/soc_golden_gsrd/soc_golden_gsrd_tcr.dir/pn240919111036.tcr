@@ -1,0 +1,5 @@
+#Start recording tcl command: 9/18/2024 11:45:16
+#Project Location: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd; Project name: soc_golden_gsrd
+source "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/radiant_setup_template.tcl"
+prj_run Synthesis -impl impl_1
+#Stop recording: 9/19/2024 11:10:36

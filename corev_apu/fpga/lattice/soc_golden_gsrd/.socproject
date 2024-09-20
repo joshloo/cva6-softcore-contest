@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<propelProject>
+    <builder-resource>
+        <socProject sbxfile="./soc_golden_gsrd/soc_golden_gsrd.sbx"/>
+        <AddResources/>
+    </builder-resource>
+    <builderInfo version="2024.1"/>
+</propelProject>

@@ -72,12 +72,12 @@ package cva6_config_pkg;
   localparam CVA6ConfigRvfiTrace = 1;
 
   localparam config_pkg::cva6_cfg_t cva6_cfg = '{
-      NrCommitPorts: unsigned'(CVA6ConfigNrCommitPorts),
-      AxiAddrWidth: unsigned'(CVA6ConfigAxiAddrWidth),
-      AxiDataWidth: unsigned'(CVA6ConfigAxiDataWidth),
-      AxiIdWidth: unsigned'(CVA6ConfigAxiIdWidth),
-      AxiUserWidth: unsigned'(CVA6ConfigDataUserWidth),
-      NrLoadBufEntries: unsigned'(CVA6ConfigNrLoadBufEntries),
+      NrCommitPorts: $unsigned(CVA6ConfigNrCommitPorts),
+      AxiAddrWidth: $unsigned(CVA6ConfigAxiAddrWidth),
+      AxiDataWidth: $unsigned(CVA6ConfigAxiDataWidth),
+      AxiIdWidth: $unsigned(CVA6ConfigAxiIdWidth),
+      AxiUserWidth: $unsigned(CVA6ConfigDataUserWidth),
+      NrLoadBufEntries: $unsigned(CVA6ConfigNrLoadBufEntries),
       FpuEn: bit'(CVA6ConfigFpuEn),
       XF16: bit'(CVA6ConfigF16En),
       XF16ALT: bit'(CVA6ConfigF16AltEn),
@@ -97,30 +97,30 @@ package cva6_config_pkg;
       RVD: bit'(0),
       FpPresent: bit'(0),
       NSX: bit'(0),
-      FLen: unsigned'(0),
+      FLen: $unsigned(0),
       RVFVec: bit'(0),
       XF16Vec: bit'(0),
       XF16ALTVec: bit'(0),
       XF8Vec: bit'(0),
-      NrRgprPorts: unsigned'(0),
-      NrWbPorts: unsigned'(0),
+      NrRgprPorts: $unsigned(0),
+      NrWbPorts: $unsigned(0),
       EnableAccelerator: bit'(0),
       HaltAddress: 64'h800,
       ExceptionAddress: 64'h808,
-      RASDepth: unsigned'(CVA6ConfigRASDepth),
-      BTBEntries: unsigned'(CVA6ConfigBTBEntries),
-      BHTEntries: unsigned'(CVA6ConfigBHTEntries),
+      RASDepth: $unsigned(CVA6ConfigRASDepth),
+      BTBEntries: $unsigned(CVA6ConfigBTBEntries),
+      BHTEntries: $unsigned(CVA6ConfigBHTEntries),
       DmBaseAddress: 64'h0,
-      NrPMPEntries: unsigned'(CVA6ConfigNrPMPEntries),
+      NrPMPEntries: $unsigned(CVA6ConfigNrPMPEntries),
       NOCType: config_pkg::NOC_TYPE_L15_BIG_ENDIAN,
       // idempotent region
       NrNonIdempotentRules:
-      unsigned'(
+      $unsigned(
       2
       ),
       NonIdempotentAddrBase: 1024'({64'b0, 64'b0}),
       NonIdempotentLength: 1024'({64'b0, 64'b0}),
-      NrExecuteRegionRules: unsigned'(3),
+      NrExecuteRegionRules: $unsigned(3),
       //                      DRAM,          Boot ROM,   Debug Module
       ExecuteRegionAddrBase:
       1024'(
@@ -129,12 +129,12 @@ package cva6_config_pkg;
       ExecuteRegionLength: 1024'({64'h40000000, 64'h10000, 64'h1000}),
       // cached region
       NrCachedRegionRules:
-      unsigned'(
+      $unsigned(
       1
       ),
       CachedRegionAddrBase: 1024'({64'h8000_0000}),
       CachedRegionLength: 1024'({64'h40000000}),
-      MaxOutstandingStores: unsigned'(7)
+      MaxOutstandingStores: $unsigned(7)
   };
 
 endpackage

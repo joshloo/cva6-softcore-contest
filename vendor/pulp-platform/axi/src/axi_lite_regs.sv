@@ -295,7 +295,7 @@ module axi_lite_regs #(
     if (ar_dec_valid && ar_prot_ok) begin
       // Calculate the corresponding byte index from `ar_chunk_idx`.
       for (int unsigned i = 0; i < AxiStrbWidth; i++) begin
-        reg_byte_idx = unsigned'(ar_chunk_idx) * AxiStrbWidth + i;
+        reg_byte_idx = $unsigned(ar_chunk_idx) * AxiStrbWidth + i;
         // Guard to not index outside the `reg_q_o` array.
         if (reg_byte_idx < RegNumBytes) begin
           r_chan.data[8*i+:8]       = reg_q_o[reg_byte_idx];

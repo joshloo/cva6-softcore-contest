@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the area information from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<report_table display_priority="1" name="Area Summary">
+<report_link name="Detailed report">
+<data>C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\synlog\report\soc_golden_gsrd_impl_1_fpga_mapper_resourceusage.rpt</data>
+<title>Resource Usage</title>
+</report_link>
+<parameter tooltip="Total Register bits used" name="Register bits">
+<data>34077</data>
+</parameter>
+<parameter tooltip="Total I/O cells used" name="I/O cells">
+<data>91</data>
+</parameter>
+<parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
+<data>96</data>
+</parameter>
+<parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
+<data>30834</data>
+</parameter>
+</report_table>

@@ -1,0 +1,174 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>tse_to_rgmii_bridge0</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>tse_to_rgmii_bridge_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="tsemac_rgmii_bridge" vendor="latticesemi.com" version="1.0.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="DEL_MODE">SCLK_CENTERED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_FINE_DELAY_VALUE">191</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rst_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rst_n_i"/>
+                <ipxact:externalPortReference portRef="rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.plllock_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="plllock_i"/>
+                <ipxact:externalPortReference portRef="plllock_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rgmii_rxc_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rgmii_rxc_i"/>
+                <ipxact:externalPortReference portRef="rgmii_rxc_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rgmii_rxctl_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rgmii_rxctl_i"/>
+                <ipxact:externalPortReference portRef="rgmii_rxctl_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rgmii_rxd_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rgmii_rxd_i"/>
+                <ipxact:externalPortReference portRef="rgmii_rxd_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rgmii_txc_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rgmii_txc_i"/>
+                <ipxact:externalPortReference portRef="rgmii_txc_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rgmii_txctl_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rgmii_txctl_o"/>
+                <ipxact:externalPortReference portRef="rgmii_txctl_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rgmii_txd_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rgmii_txd_o"/>
+                <ipxact:externalPortReference portRef="rgmii_txd_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rxd_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rxd_o"/>
+                <ipxact:externalPortReference portRef="rxd_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rx_dv_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rx_dv_o"/>
+                <ipxact:externalPortReference portRef="rx_dv_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rx_er_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rx_er_o"/>
+                <ipxact:externalPortReference portRef="rx_er_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.txd_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="txd_i"/>
+                <ipxact:externalPortReference portRef="txd_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.tx_en_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="tx_en_i"/>
+                <ipxact:externalPortReference portRef="tx_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.tx_er_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="tx_er_i"/>
+                <ipxact:externalPortReference portRef="tx_er_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.rgmii_mdio_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="rgmii_mdio_o"/>
+                <ipxact:externalPortReference portRef="rgmii_mdio_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.tse_mdio_en_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="tse_mdio_en_o"/>
+                <ipxact:externalPortReference portRef="tse_mdio_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.tse_mdo_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="tse_mdo_o"/>
+                <ipxact:externalPortReference portRef="tse_mdo_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tse_to_rgmii_bridge0.tse_mdi_i_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="tse_to_rgmii_bridge0" portRef="tse_mdi_i_o"/>
+                <ipxact:externalPortReference portRef="tse_mdi_i_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

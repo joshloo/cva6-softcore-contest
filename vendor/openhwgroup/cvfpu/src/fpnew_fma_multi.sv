@@ -394,7 +394,7 @@ module fpnew_fma_multi #(
       addend_shamt = 3 * PRECISION_BITS + 4;
     // Addend and product will have mutual bits to add
     else if (exponent_difference <= signed'(PRECISION_BITS + 2))
-      addend_shamt = unsigned'(signed'(PRECISION_BITS) + 3 - exponent_difference);
+      addend_shamt = $unsigned(signed'(PRECISION_BITS) + 3 - exponent_difference);
     // Addend-anchored case, saturated shift (product is only in the sticky bit)
     else
       addend_shamt = 0;
@@ -614,7 +614,7 @@ module fpnew_fma_multi #(
       // Subnormal result
       end else begin
         // Cap the shift distance to align mantissa with minimum exponent
-        norm_shamt          = unsigned'(signed'(PRECISION_BITS + 2 + exponent_product_q));
+        norm_shamt          = $unsigned(signed'(PRECISION_BITS + 2 + exponent_product_q));
         normalized_exponent = 0; // subnormals encoded as 0
       end
     // Addend-anchored case

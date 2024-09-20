@@ -227,7 +227,7 @@ module scoreboard #(
 
   // precompute offsets for commit slots
   for (genvar k = 1; k < CVA6Cfg.NrCommitPorts; k++) begin : gen_cnt_incr
-    assign commit_pointer_n[k] = (flush_i) ? '0 : commit_pointer_n[0] + unsigned'(k);
+    assign commit_pointer_n[k] = (flush_i) ? '0 : commit_pointer_n[0] + $unsigned(k);
   end
 
   // -------------------
@@ -311,7 +311,7 @@ module scoreboard #(
   logic rs1_valid, rs2_valid, rs3_valid;
 
   // WB ports have higher prio than entries
-  for (genvar k = 0; unsigned'(k) < CVA6Cfg.NrWbPorts; k++) begin : gen_rs_wb
+  for (genvar k = 0; $unsigned(k) < CVA6Cfg.NrWbPorts; k++) begin : gen_rs_wb
     assign rs1_fwd_req[k] = (mem_q[trans_id_i[k]].sbe.rd == rs1_i) & wt_valid_i[k] & (~ex_i[k].valid) & (mem_q[trans_id_i[k]].is_rd_fpr_flag == (CVA6Cfg.FpPresent && ariane_pkg::is_rs1_fpr(
         issue_instr_o.op
     )));
@@ -323,7 +323,7 @@ module scoreboard #(
     )));
     assign rs_data[k] = wbdata_i[k];
   end
-  for (genvar k = 0; unsigned'(k) < NR_ENTRIES; k++) begin : gen_rs_entries
+  for (genvar k = 0; $unsigned(k) < NR_ENTRIES; k++) begin : gen_rs_entries
     assign rs1_fwd_req[k+CVA6Cfg.NrWbPorts] = (mem_q[k].sbe.rd == rs1_i) & mem_q[k].issued & mem_q[k].sbe.valid & (mem_q[k].is_rd_fpr_flag == (CVA6Cfg.FpPresent && ariane_pkg::is_rs1_fpr(
         issue_instr_o.op
     )));

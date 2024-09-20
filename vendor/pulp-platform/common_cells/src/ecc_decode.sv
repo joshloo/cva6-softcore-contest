@@ -81,9 +81,9 @@ module ecc_decode import ecc_pkg::*; #(
   ///!    parity position and the bit position is non-zero.
   always_comb begin : calculate_syndrome
     syndrome = 0;
-    for (int unsigned i = 0; i < unsigned'($bits(parity_t)); i++) begin
-      for (int unsigned j = 0; j < unsigned'($bits(code_word_t)); j++) begin
-        if (|(unsigned'(2**i) & (j + 1))) syndrome[i] = syndrome[i] ^ data_i.code_word[j];
+    for (int unsigned i = 0; i < $unsigned($bits(parity_t)); i++) begin
+      for (int unsigned j = 0; j < $unsigned($bits(code_word_t)); j++) begin
+        if (|($unsigned(2**i) & (j + 1))) syndrome[i] = syndrome[i] ^ data_i.code_word[j];
       end
     end
   end
@@ -114,9 +114,9 @@ module ecc_decode import ecc_pkg::*; #(
     data_wo_parity = '0;
     idx = 0;
 
-    for (int unsigned i = 1; i < unsigned'($bits(code_word_t)) + 1; i++) begin
+    for (int unsigned i = 1; i < $unsigned($bits(code_word_t)) + 1; i++) begin
       // if i is a power of two we are indexing a parity bit
-      if (unsigned'(2**$clog2(i)) != i) begin
+      if ($unsigned(2**$clog2(i)) != i) begin
         data_wo_parity[idx] = correct_data[i - 1];
         idx++;
       end

@@ -1,0 +1,160 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/2024.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2024.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn240830080617"></A><B><U><big>pn240830080617</big></U></B>
+#Start recording tcl command: 8/30/2024 08:05:48
+#Project Location: C:/Users/SKothari/Downloads/GSRD2.0_Avant_CPNX_Beta/Final_Beta_Testing/golden_avant/soc_golden_gsrd; Project name: soc_golden_gsrd
+source "C:/Users/SKothari/Downloads/GSRD2.0_Avant_CPNX_Beta/Final_Beta_Testing/golden_avant/soc_golden_gsrd/radiant_setup_template.tcl"
+#Stop recording: 8/30/2024 08:06:17
+
+
+
+<A name="pn240830105112"></A><B><U><big>pn240830105112</big></U></B>
+#Start recording tcl command: 8/30/2024 08:09:14
+#Project Location: C:/Users/SKothari/Downloads/GSRD2.0_Avant_CPNX_Beta/Final_Beta_Testing/golden_avant/soc_golden_gsrd; Project name: soc_golden_gsrd
+source "C:/Users/SKothari/Downloads/GSRD2.0_Avant_CPNX_Beta/Final_Beta_Testing/golden_avant/soc_golden_gsrd/radiant_setup_template.tcl"
+prj_set_strategy_value -strategy Strategy1 par_place_iterator=5
+prj_run Export -impl impl_1
+#Stop recording: 8/30/2024 10:51:12
+
+
+
+<A name="pn240830180732"></A><B><U><big>pn240830180732</big></U></B>
+#Start recording tcl command: 8/30/2024 15:50:12
+#Project Location: C:/Users/SKothari/Downloads/GSRD2.0_Avant_CPNX_Beta/Final_Beta_Testing/golden_avant/soc_golden_gsrd; Project name: soc_golden_gsrd
+prj_open "C:/Users/SKothari/Downloads/GSRD2.0_Avant_CPNX_Beta/Final_Beta_Testing/golden_avant/soc_golden_gsrd/soc_golden_gsrd.rdf"
+#Stop recording: 8/30/2024 18:07:32
+
+
+
+<A name="pn240902075504"></A><B><U><big>pn240902075504</big></U></B>
+#Start recording tcl command: 9/2/2024 07:54:45
+#Project Location: C:/git_ws/Automate_main/AutomateStack/golden_avant/soc_golden_gsrd; Project name: soc_golden_gsrd
+prj_open "C:/git_ws/Automate_main/AutomateStack/golden_avant/soc_golden_gsrd/soc_golden_gsrd.rdf"
+#Stop recording: 9/2/2024 07:55:04
+
+
+
+<A name="pn240918114245"></A><B><U><big>pn240918114245</big></U></B>
+#Start recording tcl command: 9/18/2024 11:42:03
+#Project Location: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd; Project name: soc_golden_gsrd
+prj_open "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd.rdf"
+prj_run Synthesis -impl impl_1
+#Stop recording: 9/18/2024 11:42:45
+
+
+
+<A name="pn240919111036"></A><B><U><big>pn240919111036</big></U></B>
+#Start recording tcl command: 9/18/2024 11:45:16
+#Project Location: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd; Project name: soc_golden_gsrd
+source "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/radiant_setup_template.tcl"
+prj_run Synthesis -impl impl_1
+#Stop recording: 9/19/2024 11:10:36
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn240830080617>pn240830080617</A></LI>
+<LI><A href=#pn240830105112>pn240830105112</A></LI>
+<LI><A href=#pn240830180732>pn240830180732</A></LI>
+<LI><A href=#pn240902075504>pn240902075504</A></LI>
+<LI><A href=#pn240918114245>pn240918114245</A></LI>
+<LI><A href=#pn240919111036>pn240919111036</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

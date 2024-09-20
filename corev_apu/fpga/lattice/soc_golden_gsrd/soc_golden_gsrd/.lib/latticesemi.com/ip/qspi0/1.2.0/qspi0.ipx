@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="ap6a00b" date="2024 08 24 00:06:07" device="LAV-AT-E70ES1" device_int="ap6a400be" family="LAV-AT" gen_platform="Propel" gen_platform_version="2024.1.2406150513_p" generator="ipgen" library="ip" module="qspi_flash_controller" name="qspi0" operation="Commercial" package="LFG1156" package_int="LFG1156" partnumber="LAV-AT-E70ES1-1LFG1156C" source_format="Verilog" speed="1" speed_int="1" vendor="latticesemi.com" version="1.2.0">
+ <Package>
+  <File modified="2024 08 24 00:06:07" name="rtl/qspi0_bb.v" type="black_box_verilog"/>
+  <File modified="2024 08 24 00:06:07" name="qspi0.cfg" type="cfg"/>
+  <File modified="2024 08 24 00:06:07" name="misc/qspi0_tmpl.v" type="template_verilog"/>
+  <File modified="2024 08 24 00:06:07" name="misc/qspi0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 08 24 00:06:07" name="rtl/qspi0.v" type="top_level_verilog"/>
+  <File modified="2024 08 24 00:06:07" name="constraints/qspi0.ldc" type="timing_constraints"/>
+  <File modified="2024 08 24 00:06:07" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:06:07" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:06:07" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 08 24 00:06:07" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2024 08 06 01:54:43" name="testbench/readme.txt" type="testbench"/>
+  <File modified="2024 08 06 01:54:43" name="testbench/tb_top.v" type="testbench_verilog"/>
+  <File modified="2024 08 06 01:54:43" name="driver/qspi_flash_cntl.c" type="driver_source"/>
+  <File modified="2024 08 06 01:54:43" name="driver/qspi_flash_cntl.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

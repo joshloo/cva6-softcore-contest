@@ -1,0 +1,9 @@
+n work lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_iface_top_Z161_layer0 verilog;
+av .compile_point_summary_status "Mapped";
+av .compile_point_summary_reason "No database";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "No";
+av .compile_point_cputime_used 41.7969;
+av .compile_point_starttime_stamp "Wed Sep 18 11:55:26 2024";
+av .compile_point_endtime_stamp "Wed Sep 18 11:56:08 2024";
+av .compile_point_realtime_used 41.728;

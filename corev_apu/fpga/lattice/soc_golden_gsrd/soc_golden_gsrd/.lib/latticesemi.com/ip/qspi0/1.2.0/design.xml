@@ -1,0 +1,900 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>qspi0</ipxact:name>
+    <ipxact:version>1.2.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_qspi_flash_controller_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="qspi_flash_controller" vendor="latticesemi.com" version="1.2.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="interface">AXI4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INTERFACE">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="enable_option_axi4l_for_register_access">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENABLE_OPTION_AXI4L_FOR_REGISTER_ACCESS">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INTERFACE_DATA_WIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI_ID_WIDTH">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="data_endianness">Big-endian</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_ENDIANNESS">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PMI_FAMILY">LAV-AT</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="enable_io_primitive">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENABLE_IO_PRIMITIVE">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="supported_protocol">Quad</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SUPPORTED_PROTOCOL">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUMBER_OF_SLAVE_SELECT_LINES">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_CLOCK_POLARITY">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_CLOCK_PHASE">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="first_transmitted_bit">MSB</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIRST_TRANSMITTED_BIT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="enable_back_to_back_transfer">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENABLE_BACK_TO_BACK_TRANSFER">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUMMY_CYCLES">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="cs_high_time">30</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CS_HIGH_TIME">3.7500000000000004</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MINIMUM_IDLE_TIME_BETWEEN_TRANSFER">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="chip_select_behavior">De-assert</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CHIP_SELECT_BEHAVIOR">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SYSTEM_CLOCK_FREQUENCY">125</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INTERNAL_CLOCK_FREQUENCY">125</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_CLOCK_FREQUENCY_DIVIDER">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPI_CLOCK_FREQUENCY">62.5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="enable_transmit_fifo">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENABLE_TRANSMIT_FIFO">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDRESS_DEPTH_TX">512</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="enable_receive_fifo">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENABLE_RECEIVE_FIFO">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDRESS_DEPTH_RX">512</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="enable_flash_address_mapping">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENABLE_FLASH_ADDRESS_MAPPING">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REGISTER_BLOCK_SIZE">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REGISTER_BLOCK_BASE_ADDRESS">00000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MINIMUM_FLASH_ADDRESS_ALIGNMENT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MINIMUM_FLASH_ADDRESS_ALIGNMENT_MAP">32'h00000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FLASH_MEMORY_MAP_SIZE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SIZE_FLASH_ADDRESS_SPACE_MAP">32'h00000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="starting_offset_address">00000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="STARTING_OFFSET_ADDRESS">32'h00000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="axi_address_map">00000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI_ADDRESS_MAP">32'h00000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="write_command_type">Page Program</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_ACCESS">3'h0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="read_command_type">Fast Read</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_ACCESS">3'h1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="flash_address_width">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FLASH_ADDRESS_WIDTH">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="command_lane_width">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="COMMAND_LANE_WIDTH">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="address_lane_width">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDRESS_LANE_WIDTH">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="data_lane_width">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_LANE_WIDTH">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="dummy_clock_cycles">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUMMY_CLOCK_CYCLES">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="enable_qpi_mode">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENABLE_QPI_MODE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_STATUS_REGISTER_1">8'h05</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_STATUS_REGISTER_2">8'h35</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_STATUS_REGISTER_3">8'h15</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_CONFIGURATION_REGISTER">8'hB5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_ID">8'h9F</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_ELECTRONIC_ID">8'hAB</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MULTIPLE_IO_READ_ID">8'hAF</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_MANUFACTURER_AND_DEVICE_ID">8'h90</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_MANUFACTURER_AND_DEVICE_ID_DUAL_IO">8'h92</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_MANUFACTURER_AND_DEVICE_ID_QUAD_IO">8'h94</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="READ_DATA">8'h03</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FAST_READ">8'h0B</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUAL_OUTPUT_FAST_READ">8'h3B</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUAL_INPUT_OUTPUT_FAST_READ">8'hBB</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="QUAD_OUTPUT_FAST_READ">8'h6B</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="QUAD_INPUT_OUTPUT_FAST_READ">8'hEB</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BLOCK_ERASE_TYPE1">8'h20</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BLOCK_ERASE_TYPE2">8'h52</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BLOCK_ERASE_TYPE3">8'hD8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CHIP_ERASE">8'h60</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_ENABLE">8'h06</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_DISABLE">8'h04</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WRITE_STATUS_CONFIGURATION_REGISTER">8'h01</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PAGE_PROGRAM">8'h02</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUAL_INPUT_FAST_PROGRAM">8'hA2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EXTENDED_DUAL_INPUT_FAST_PROGRAM">8'hD2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="QUAD_INPUT_FAST_PROGRAM">8'h32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EXTENDED_QUAD_INPUT_FAST_PROGRAM">8'h38</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENTER_4_BYTE_ADDRESS_MODE">8'hB7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EXIT_4_BYTE_ADDRESS_MODE">8'hE9</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ENTER_QUAD_INPUT_OUTPUT_MODE">8'h35</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RESET_QUAD_INPUT_OUTPUT_MODE">8'hF5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MAIN_INTF_MEMORY_MAP_SIZE">4096</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI4L_INTF_MEMORY_MAP_SIZE">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.a_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="a_clk_i"/>
+                <ipxact:externalPortReference portRef="a_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.a_reset_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="a_reset_n_i"/>
+                <ipxact:externalPortReference portRef="a_reset_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.int_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="int_o"/>
+                <ipxact:externalPortReference portRef="int_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.qspi_io0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="qspi_io0"/>
+                <ipxact:externalPortReference portRef="qspi_io0"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.qspi_io1</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="qspi_io1"/>
+                <ipxact:externalPortReference portRef="qspi_io1"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.qspi_io2</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="qspi_io2"/>
+                <ipxact:externalPortReference portRef="qspi_io2"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.qspi_io3</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="qspi_io3"/>
+                <ipxact:externalPortReference portRef="qspi_io3"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.sclk_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="sclk_o"/>
+                <ipxact:externalPortReference portRef="sclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ss_n_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ss_n_o"/>
+                <ipxact:externalPortReference portRef="ss_n_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io0_i</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io0_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io0_oe_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io0_oe_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io1_i</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io1_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io1_oe_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io1_oe_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io2_i</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io2_oe_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io2_oe_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io3_i</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.io3_oe_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="io3_oe_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hsel_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hsel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hready_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_haddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_haddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hburst_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hburst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hsize_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hsize_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hmastlock_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hmastlock_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hprot_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hprot_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_htrans_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_htrans_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hwrite_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hwrite_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hwdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hwdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hrdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hrdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.ahbl_hresp_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="ahbl_hresp_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awid_i"/>
+                <ipxact:externalPortReference portRef="axi_awid_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awaddr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awaddr_i"/>
+                <ipxact:externalPortReference portRef="axi_awaddr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awlen_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awlen_i"/>
+                <ipxact:externalPortReference portRef="axi_awlen_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awsize_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awsize_i"/>
+                <ipxact:externalPortReference portRef="axi_awsize_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awburst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awburst_i"/>
+                <ipxact:externalPortReference portRef="axi_awburst_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awlock_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awlock_i"/>
+                <ipxact:externalPortReference portRef="axi_awlock_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awcache_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awcache_i"/>
+                <ipxact:externalPortReference portRef="axi_awcache_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awprot_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awprot_i"/>
+                <ipxact:externalPortReference portRef="axi_awprot_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awvalid_i"/>
+                <ipxact:externalPortReference portRef="axi_awvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_awready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_awready_o"/>
+                <ipxact:externalPortReference portRef="axi_awready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_wdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_wdata_i"/>
+                <ipxact:externalPortReference portRef="axi_wdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_wstrb_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_wstrb_i"/>
+                <ipxact:externalPortReference portRef="axi_wstrb_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_wlast_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_wlast_i"/>
+                <ipxact:externalPortReference portRef="axi_wlast_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_wvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_wvalid_i"/>
+                <ipxact:externalPortReference portRef="axi_wvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_wready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_wready_o"/>
+                <ipxact:externalPortReference portRef="axi_wready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_bid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_bid_o"/>
+                <ipxact:externalPortReference portRef="axi_bid_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_bresp_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_bresp_o"/>
+                <ipxact:externalPortReference portRef="axi_bresp_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_bvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_bvalid_o"/>
+                <ipxact:externalPortReference portRef="axi_bvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_bready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_bready_i"/>
+                <ipxact:externalPortReference portRef="axi_bready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arid_i"/>
+                <ipxact:externalPortReference portRef="axi_arid_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_araddr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_araddr_i"/>
+                <ipxact:externalPortReference portRef="axi_araddr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arlen_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arlen_i"/>
+                <ipxact:externalPortReference portRef="axi_arlen_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arsize_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arsize_i"/>
+                <ipxact:externalPortReference portRef="axi_arsize_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arburst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arburst_i"/>
+                <ipxact:externalPortReference portRef="axi_arburst_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arlock_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arlock_i"/>
+                <ipxact:externalPortReference portRef="axi_arlock_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arcache_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arcache_i"/>
+                <ipxact:externalPortReference portRef="axi_arcache_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arprot_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arprot_i"/>
+                <ipxact:externalPortReference portRef="axi_arprot_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arvalid_i"/>
+                <ipxact:externalPortReference portRef="axi_arvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_arready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_arready_o"/>
+                <ipxact:externalPortReference portRef="axi_arready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_rid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_rid_o"/>
+                <ipxact:externalPortReference portRef="axi_rid_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_rdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_rdata_o"/>
+                <ipxact:externalPortReference portRef="axi_rdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_rresp_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_rresp_o"/>
+                <ipxact:externalPortReference portRef="axi_rresp_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_rlast_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_rlast_o"/>
+                <ipxact:externalPortReference portRef="axi_rlast_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_rvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_rvalid_o"/>
+                <ipxact:externalPortReference portRef="axi_rvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axi_rready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axi_rready_i"/>
+                <ipxact:externalPortReference portRef="axi_rready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_awaddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_awaddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_awprot_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_awprot_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_awvalid_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_awvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_awready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_awready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_wdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_wdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_wstrb_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_wstrb_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_wvalid_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_wvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_wready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_wready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_bresp_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_bresp_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_bvalid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_bvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_bready_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_bready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_araddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_araddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_arprot_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_arprot_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_arvalid_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_arvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_arready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_arready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_rdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_rdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_rresp_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_rresp_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_rvalid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_rvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>qspi0.axil_rready_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="qspi0" portRef="axil_rready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

@@ -36,7 +36,7 @@ module stream_xbar #(
   /// Derived parameter, do **not** overwrite!
   ///
   /// Width of the output selection signal.
-  parameter int unsigned SelWidth = (NumOut > 32'd1) ? unsigned'($clog2(NumOut)) : 32'd1,
+  parameter int unsigned SelWidth = (NumOut > 32'd1) ? $unsigned($clog2(NumOut)) : 32'd1,
   /// Derived parameter, do **not** overwrite!
   ///
   /// Signal type definition for selecting the output at the inputs.
@@ -44,7 +44,7 @@ module stream_xbar #(
   /// Derived parameter, do **not** overwrite!
   ///
   /// Width of the input index signal.
-  parameter int unsigned IdxWidth = (NumInp > 32'd1) ? unsigned'($clog2(NumInp)) : 32'd1,
+  parameter int unsigned IdxWidth = (NumInp > 32'd1) ? $unsigned($clog2(NumInp)) : 32'd1,
   /// Derived parameter, do **not** overwrite!
   ///
   /// Signal type definition indicating from which input the output came.
@@ -94,7 +94,7 @@ module stream_xbar #(
   logic     [NumOut-1:0][NumInp-1:0] out_ready;
 
   // Generate the input selection
-  for (genvar i = 0; unsigned'(i) < NumInp; i++) begin : gen_inps
+  for (genvar i = 0; $unsigned(i) < NumInp; i++) begin : gen_inps
     stream_demux #(
       .N_OUP ( NumOut )
     ) i_stream_demux (
@@ -106,7 +106,7 @@ module stream_xbar #(
     );
 
     // Do the switching cross of the signals.
-    for (genvar j = 0; unsigned'(j) < NumOut; j++) begin : gen_cross
+    for (genvar j = 0; $unsigned(j) < NumOut; j++) begin : gen_cross
       // Propagate the data from this input to all outputs.
       assign out_data[j][i]  = data_i[i];
       // switch handshaking
@@ -116,7 +116,7 @@ module stream_xbar #(
   end
 
   // Generate the output arbitration.
-  for (genvar j = 0; unsigned'(j) < NumOut; j++) begin : gen_outs
+  for (genvar j = 0; $unsigned(j) < NumOut; j++) begin : gen_outs
     spill_data_t arb;
     logic        arb_valid, arb_ready;
 
@@ -165,13 +165,13 @@ module stream_xbar #(
   // pragma translate_off
   `ifndef VERILATOR
   default disable iff rst_ni;
-  for (genvar i = 0; unsigned'(i) < NumInp; i++) begin : gen_sel_assertions
+  for (genvar i = 0; $unsigned(i) < NumInp; i++) begin : gen_sel_assertions
     assert property (@(posedge clk_i) (valid_i[i] |-> sel_i[i] < sel_oup_t'(NumOut))) else
         $fatal(1, "Non-existing output is selected!");
   end
 
   if (AxiVldRdy) begin : gen_handshake_assertions
-    for (genvar i = 0; unsigned'(i) < NumInp; i++) begin : gen_inp_assertions
+    for (genvar i = 0; $unsigned(i) < NumInp; i++) begin : gen_inp_assertions
       assert property (@(posedge clk_i) (valid_i[i] && !ready_o[i] |=> $stable(data_i[i]))) else
           $error("data_i is unstable at input: %0d", i);
       assert property (@(posedge clk_i) (valid_i[i] && !ready_o[i] |=> $stable(sel_i[i]))) else
@@ -179,7 +179,7 @@ module stream_xbar #(
       assert property (@(posedge clk_i) (valid_i[i] && !ready_o[i] |=> valid_i[i])) else
           $error("valid_i at input %0d has been taken away without a ready.", i);
     end
-    for (genvar i = 0; unsigned'(i) < NumOut; i++) begin : gen_out_assertions
+    for (genvar i = 0; $unsigned(i) < NumOut; i++) begin : gen_out_assertions
       assert property (@(posedge clk_i) (valid_o[i] && !ready_i[i] |=> $stable(data_o[i]))) else
           $error("data_o is unstable at output: %0d Check that parameter LockIn is set.", i);
       assert property (@(posedge clk_i) (valid_o[i] && !ready_i[i] |=> $stable(idx_o[i]))) else

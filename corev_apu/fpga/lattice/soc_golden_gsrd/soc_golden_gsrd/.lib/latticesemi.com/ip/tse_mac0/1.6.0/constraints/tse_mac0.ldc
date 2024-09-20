@@ -1,0 +1,124 @@
+set device "LAV-AT-E70ES1"
+set device_int "ap6a400be"
+set package "LFG1156"
+set package_int "LFG1156"
+set speed "1"
+set speed_int "1"
+set operation "Commercial"
+set family "LAV-AT"
+set architecture "ap6a00b"
+set partnumber "LAV-AT-E70ES1-1LFG1156C"
+set WRAPPER_INST "mac_phy_top_inst"
+set INTERFACE "APB"
+set IP_OPTION "MAC only"
+set STATS_CNTR 0
+set STATS_WIDTH 32
+set TX_STATS_CNTR 1
+set RX_STATS_CNTR 1
+set CLASSIC_TSMAC 0
+set MII_GMII 0
+set MIIM_MODULE 1
+set SGMII_TSMAC 0
+set GBE_MAC 1
+set RGMII 0
+set RMII 0
+set DATA_WIDTH 8
+set IF_DATA_WIDTH 32
+set OFFSET_WIDTH 11
+set FAMILY "LAV-AT"
+set GMII_STYLE 0
+set RX_CTC_MODE 0
+set STATIC_LO_THR 16
+set STATIC_HI_THR 32
+set USE_EXT_PLL 0
+set USE_CDR_REFCLK_IN 0
+set USE_MDIO 0
+set LANE_ID "AUTO"
+set LOOPBACK_MODE "DISABLED"
+
+
+create_clock -name {clk_i}          -period 10 [get_ports clk_i]
+create_clock -name {txmac_clk_i}    -period  8 [get_ports txmac_clk_i]
+create_clock -name {rxmac_clk_i}    -period  8 [get_ports rxmac_clk_i]
+
+if {($IP_OPTION=="MAC only")} {
+
+  if {(($MII_GMII == 1) || ($RGMII == 1))} {
+    create_clock -name {tx_mii_clk_i} -period 40 [get_ports tx_mii_clk_i]
+    create_clock -name {rx_mii_clk_i} -period 40 [get_ports rx_mii_clk_i]
+  
+    if {($MIIM_MODULE==1)} {
+      create_clock -name {mdc_i} -period 40  [get_ports mdc_i]
+      set_clock_groups -group [get_clocks clk_i] \
+                       -group [get_clocks txmac_clk_i] \
+                       -group [get_clocks rxmac_clk_i] \
+                       -group [get_clocks mdc_i] \
+                       -group [get_clocks tx_mii_clk_i]\
+                       -group [get_clocks rx_mii_clk_i]\
+                       -asynchronous
+    }
+    if {($MIIM_MODULE==0)} {
+      set_clock_groups -group [get_clocks clk_i] \
+                       -group [get_clocks txmac_clk_i] \
+                       -group [get_clocks rxmac_clk_i] \
+                       -group [get_clocks tx_mii_clk_i]\
+                       -group [get_clocks rx_mii_clk_i]\
+                       -asynchronous
+    }
+  }
+  
+  if {($RMII == 1)} {
+    create_clock -name {rmii_ref_clk_i} -period 20 [get_ports rmii_ref_clk_i]
+  
+    if {($MIIM_MODULE==1)} {
+      create_clock -name {mdc_i} -period 40  [get_ports mdc_i]
+      set_clock_groups -group [get_clocks clk_i] \
+                       -group [get_clocks txmac_clk_i] \
+                       -group [get_clocks rxmac_clk_i] \
+                       -group [get_clocks mdc_i] \
+                       -group [get_clocks rmii_ref_clk_i]\
+                       -asynchronous
+    }
+    if {($MIIM_MODULE==0)} {
+      set_clock_groups -group [get_clocks clk_i] \
+                       -group [get_clocks txmac_clk_i] \
+                       -group [get_clocks rxmac_clk_i] \
+                       -group [get_clocks rmii_ref_clk_i]\
+                       -asynchronous
+    }
+  }
+  
+  if {(($GBE_MAC == 1) || ($CLASSIC_TSMAC == 1) || ($SGMII_TSMAC == 1))} {
+    if {($MIIM_MODULE==1)} {
+      create_clock -name {mdc_i} -period 40  [get_ports mdc_i]
+      set_clock_groups -group [get_clocks clk_i] \
+                       -group [get_clocks txmac_clk_i] \
+                       -group [get_clocks rxmac_clk_i] \
+                       -group [get_clocks mdc_i] \
+                       -asynchronous
+    }
+    if {($MIIM_MODULE==0)} {
+      set_clock_groups -group [get_clocks clk_i] \
+                       -group [get_clocks txmac_clk_i] \
+                       -group [get_clocks rxmac_clk_i] \
+                       -asynchronous
+    }
+  }
+}
+
+if {($IP_OPTION=="MAC + SGMII")} {
+create_clock -name {pll_refclk_i} -period 8 [get_ports pll_refclk_i]
+set_clock_groups -group [get_clocks clk_i] \
+                 -group [get_clocks pll_refclk_i] \
+				 -asynchronous}
+				
+if {($IP_OPTION=="MAC + MPCS")} {
+create_clock -name {epcs_clkin_i}     -period 8 [get_ports epcs_clkin_i]
+create_clock -name {sdq_refclkp_q0_i} -period 8 [get_ports sdq_refclkp_q0_i]
+create_clock -name {sdq_refclkn_q0_i} -period 8 [get_ports sdq_refclkn_q0_i]
+set_clock_groups -group [get_clocks clk_i] \
+                 -group [get_clocks epcs_clkin_i] \
+                 -group [get_clocks sdq_refclkp_q0_i] \
+                 -group [get_clocks sdq_refclkn_q0_i] \
+				 -asynchronous}
+

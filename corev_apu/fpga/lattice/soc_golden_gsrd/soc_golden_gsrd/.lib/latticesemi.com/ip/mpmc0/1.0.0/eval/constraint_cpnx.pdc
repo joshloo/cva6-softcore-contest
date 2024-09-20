@@ -1,0 +1,259 @@
+# You need to copy the IP constraints to your project PDC file
+# Please read the comments for more information
+#############################################################################
+# Below are the IP constraints
+# The Reset Synchrounous Deassertion path should not be analyzed
+set_false_path -to [get_pins {*/lscc_mpmc_axi_inst/*rsd/*rst_regs*/D*}]
+
+#MPMC_HEADER#
+#MPMC_MAX_DELAY_AW#
+#MPMC_MAX_DELAY_B#
+#MPMC_MAX_DELAY_AR#
+
+#############################################################################
+# Below are the constraints for eval design, you dont need these if you are not using the eval
+
+#############################################################################
+# LPDDR4 Memory Controller Constraints
+# The ECLKDIV primitive already has constraint but the inferred name is not good.
+# The constraint below only aims to assign a name to the generated clock.
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/u_lp4mem/u_dq_dqs_dm/DQSBUF*.VREF.u0_DQSBUF.DQSBUFA_inst/RST]
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u0_ECLKDIV.ECLKDIV_inst/DIVRST]
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/dll_rst_o*.ff_inst/LSR]
+
+# Constraints for Clock synchronization logic
+# Group the double FF so that they will be placed in the same slice
+ldc_create_group -name clk_sync_lock -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/lock_d1*.ff_inst */lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/lock_d2*.ff_inst}]
+ldc_create_group -name clk_sync_sel -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ddr_clk_sel_d1_r*.ff_inst */lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ddr_clk_sel_d2_r*.ff_inst}]
+ldc_create_group -name clk_sync_ready -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ready_r0*.ff_inst */lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ready_r1*.ff_inst}]
+ldc_create_group -name clk_sync_update -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/sync_clk_update_sr0*.ff_inst */lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/sync_clk_update_sr1*.ff_inst}]
+ldc_create_group -name clk_sync_fr2init -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/friz2init_tgle_sr0*.ff_inst */lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/friz2init_tgle_sr1*.ff_inst}]
+
+# The async register should not be far to the double FF
+set_max_delay -from [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ddr_clk_sel_i_r*.ff_inst/Q}] -to [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ddr_clk_sel_d1_r*.ff_inst/DF}] -datapath_only 3.7
+set_max_delay -from [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ddr_clk_update_i_r*.ff_inst/Q}] -to [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/sync_clk_update_sr0*.ff_inst/DF}] -datapath_only 3.7
+set_max_delay -from [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/friz2init_tgle_r*.ff_inst/Q}] -to [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/friz2init_tgle_sr0*.ff_inst/DF}] -datapath_only 3.7
+set_max_delay -from [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ready_r*.ff_inst/Q}] -to [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/ready_r0*.ff_inst/DF}] -datapath_only 5
+
+# Input to the 1st FF in the double FF synchronizer flor PLL/DLL lock is false path.
+# This is because the PLL/DLL lock signals toggle once in a very long time.
+set_false_path -to [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/dll_lock_i_r*.ff_inst/DF}]
+set_false_path -to [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u1_mem_sync/lock_d1*.ff_inst/DF}]
+
+# Constraints for the APB_CDC
+# Group the double FF so that they will be placed in the same slice
+ldc_create_group -name mc_apb_m2s_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_b0_r0*.ff_inst */lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_b0_r1*.ff_inst}]
+ldc_create_group -name mc_apb_m2s_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_b1_r0*.ff_inst */lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_b1_r1*.ff_inst}]
+ldc_create_group -name mc_apbrdata_m2s_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_rdata_r0*.ff_inst */lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_rdata_r1*.ff_inst}]
+ldc_create_group -name mc_apb_s2m_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/i_apb_cdc/m_s2m_b0_r0*.ff_inst */lscc_lpddr4_mc_inst/i_apb_cdc/m_s2m_b0_r1*.ff_inst}]
+ldc_create_group -name mc_apb_s2m_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/i_apb_cdc/m_s2m_b1_r0*.ff_inst */lscc_lpddr4_mc_inst/i_apb_cdc/m_s2m_b1_r1*.ff_inst}]
+ldc_create_group -name mc_apb_phy_rdy -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/p_phy_ready_r1*.ff_inst */lscc_lpddr4_mc_inst/p_phy_ready_r2*.ff_inst}]
+
+# The async register should not be far to the double FF
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/m_m2s_pend0_r*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_b0_r0*.ff_inst/DF] -datapath_only 2.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/m_m2s_pend1_r*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_b1_r0*.ff_inst/DF] -datapath_only 2.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/m_m2s_rdata_pend_r*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_m2s_rdata_r0*.ff_inst/DF] -datapath_only 2.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_s2m_pend0_r*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/m_s2m_b0_r0*.ff_inst/DF] -datapath_only 2.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_s2m_pend1_r*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/m_s2m_b1_r0*.ff_inst/DF] -datapath_only 2.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/s_phy_ready_r*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/p_phy_ready_r1*.ff_inst/DF] -datapath_only 2.5
+
+# These APB signals are handled by CDC. These are stable until the capture is acknowledged via CDC logic.
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_buf*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/apb_m0_pwdata_mst_o*.ff_inst/DF] -datapath_only 4.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_buf*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/apb_m0_paddr_mst_o*.ff_inst/DF] -datapath_only 4.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/s_buf*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/apb_m0_pwrite_mst_o*.ff_inst/DF] -datapath_only 4.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/m_m2s_prdata_r*.ff_inst/Q] -to [get_pins */lscc_lpddr4_mc_inst/i_apb_cdc/apb_s0_prdata_slv_o*.ff_inst/DF] -datapath_only 4.5
+
+#Constraints for MC's FIFO DC instances
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_grey_sync_r*/Q] -to [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*/DF] -datapath_only 3.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_grey_sync_r*/Q] -to [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*/DF] -datapath_only 3.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wr_grey_sync_r*/Q] -to [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync1_r*/DF] -datapath_only 3.5
+ldc_create_group -name mc_rd_ctrl_wp_sync_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*[0].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync2_r*[0].ff_inst}]
+ldc_create_group -name mc_rd_ctrl_wp_sync_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*[1].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync2_r*[1].ff_inst}]
+ldc_create_group -name mc_rd_ctrl_wp_sync_b2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*[2].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync2_r*[2].ff_inst}]
+ldc_create_group -name mc_wr_ctrl_wp_sync_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*[0].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync2_r*[0].ff_inst}]
+ldc_create_group -name mc_wr_ctrl_wp_sync_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*[1].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync2_r*[1].ff_inst}]
+ldc_create_group -name mc_wr_ctrl_wp_sync_b2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*[2].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync2_r*[2].ff_inst}]
+ldc_create_group -name mc_wr_data_wp_sync_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync1_r*[0].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync2_r*[0].ff_inst}]
+ldc_create_group -name mc_wr_data_wp_sync_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync1_r*[1].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync2_r*[1].ff_inst}]
+ldc_create_group -name mc_wr_data_wp_sync_b2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync1_r*[2].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync2_r*[2].ff_inst}]
+ldc_create_group -name mc_wr_data_wp_sync_b3 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync1_r*[3].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync2_r*[3].ff_inst}]
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rd_grey_sync_r*/Q] -to [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*/DF] -datapath_only 3.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rd_grey_sync_r*/Q] -to [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*/DF] -datapath_only 3.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rd_grey_sync_r*/Q] -to [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync1_r*/DF] -datapath_only 3.5
+ldc_create_group -name mc_rd_ctrl_rp_sync_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*[0].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync2_r*[0].ff_inst}]
+ldc_create_group -name mc_rd_ctrl_rp_sync_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*[1].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync2_r*[1].ff_inst}]
+ldc_create_group -name mc_rd_ctrl_rp_sync_b2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*[2].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync2_r*[2].ff_inst}]
+ldc_create_group -name mc_wr_ctrl_rp_sync_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*[0].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync2_r*[0].ff_inst}]
+ldc_create_group -name mc_wr_ctrl_rp_sync_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*[1].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync2_r*[1].ff_inst}]
+ldc_create_group -name mc_wr_ctrl_rp_sync_b2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*[2].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync2_r*[2].ff_inst}]
+ldc_create_group -name mc_wr_data_rp_sync_b0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync1_r*[0].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync2_r*[0].ff_inst}]
+ldc_create_group -name mc_wr_data_rp_sync_b1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync1_r*[1].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync2_r*[1].ff_inst}]
+ldc_create_group -name mc_wr_data_rp_sync_b2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync1_r*[2].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync2_r*[2].ff_inst}]
+ldc_create_group -name mc_wr_data_rp_sync_b3 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync1_r*[3].ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync2_r*[3].ff_inst}]
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_addr_r*/Q] -datapath_only 4.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_addr_r*/Q] -datapath_only 4.5
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wr_addr_r*/Q] -datapath_only 4.5
+
+# The distributed RAM data output port to FIFO_DC data output register is already guaranteed by the CDC logic and above constraints.
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/mem*.*_inst/WDO*] -datapath_only 4
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/mem*.*_inst/WDO*] -datapath_only 4
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/mem*.*_inst/WDO*] -datapath_only 4
+
+# Constraints for CDC logic in reorder buffer
+# The above ldc_create_group constraints ensure that the async register and double FF registers are close to each other.
+ldc_create_group -name rebuff_tog_sync_0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[0].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[0].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+ldc_create_group -name rebuff_tog_sync_1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[1].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[1].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+ldc_create_group -name rebuff_tog_sync_2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[2].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[2].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+ldc_create_group -name rebuff_tog_sync_3 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[3].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[3].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+ldc_create_group -name rebuff_tog_sync_4 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[4].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[4].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+ldc_create_group -name rebuff_tog_sync_5 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[5].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[5].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+ldc_create_group -name rebuff_tog_sync_6 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[6].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[6].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+ldc_create_group -name rebuff_tog_sync_7 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[7].ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[7].ASYNC.u_enable_bus_sync/sync_toggle_r2*.ff_inst}]
+# This is false path because timing is guaranteed by the above grouping constraint - the async reg is placed adjacent to the double FF
+set_max_delay -from [get_pins {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL*.ASYNC.u_enable_bus_sync/toggle_r*.ff_inst/Q}] -to [get_pins {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL*.ASYNC.u_enable_bus_sync/sync_toggle_r1*.ff_inst/DF}] -datapath_only 2.5
+
+# The above ldc_create_group constraints ensure that the async register and double FF registers are close to each other.
+ldc_create_group -name rebuff_empty_sync_0 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[0].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[0].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+ldc_create_group -name rebuff_empty_sync_1 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[1].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[1].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+ldc_create_group -name rebuff_empty_sync_2 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[2].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[2].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+ldc_create_group -name rebuff_empty_sync_3 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[3].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[3].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+ldc_create_group -name rebuff_empty_sync_4 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[4].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[4].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+ldc_create_group -name rebuff_empty_sync_5 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[5].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[5].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+ldc_create_group -name rebuff_empty_sync_6 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[6].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[6].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+ldc_create_group -name rebuff_empty_sync_7 -bbox {1 1} [get_cells {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[7].ASYNC.u_not_empty_sync/data_0*.ff_inst */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL[7].ASYNC.u_not_empty_sync/data_out*.ff_inst}]
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/*ebr_not_empty_r*.ff_inst/Q] -to [get_pins {*/lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL*.ASYNC.u_not_empty_sync/data_0*.ff_inst/DF}] -datapath_only 2.5
+
+# The distributed RAM data output port timing is already guaranteed by the CDC logic and above constraints.
+set_max_delay -from [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/u_ctrl_dpram/lscc_distributed_dpram_inst/mem*.*_inst/WDO*] -datapath_only 4
+
+# The reset pin of double FF that synchronizes the reset de-assertion is false path
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/arst_n*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/phy_srst_n*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/srst_n*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/p_cpu_rst_n_r*.ff_inst/LSR]
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/sync_rst_n*.ff_inst/LSR]
+
+# This is false path due to DNG-15574
+set_false_path -to [get_pins */lscc_lpddr4_mc_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/u_lpddr4_mc_rd_rtrn_ebr_inst/lscc_ram_dp_inst/mem_main/*.u_mem0/*PDP16K_MODE_inst/RST]
+# These wr_cout_r and rd_cout_r are sampled few cycles after the expected change
+# The rd_dir_r and wr_dir_r are pseudo-static signals.
+set_false_path -from [get_pins {*/lscc_lpddr4_mc_inst/wr_dir_r*.ff_inst/Q}] -to [get_pins {*/lscc_lpddr4_mc_inst/wr_cout_r*.ff_inst/DF}]
+set_false_path -from [get_pins {*/lscc_lpddr4_mc_inst/rd_dir_r*.ff_inst/Q}] -to [get_pins {*/lscc_lpddr4_mc_inst/rd_cout_r*.ff_inst/DF}]
+
+
+
+#############################################################################
+# Constraints for blocks other than the LPDDR4 Memory Controller
+# Constrait for reset synchronizer
+set_false_path -to [get_pins areset_n*.ff_inst/LSR]
+set_false_path -to [get_pins prst_n*.ff_inst/LSR]
+set_false_path -to [get_pins sreset_n*.ff_inst/LSR]
+
+# Constraints for traffic generator
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cdc_r1_wr_start_*/DF]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cdc_r1_wr_txn_done_*/DF]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cfg_*/DF]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cdc_r1_*/DF]
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/p2a_*/Q] -datapath_only 5
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/a2p_*/Q] -datapath_only 5
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/csr_*/Q] -datapath_only 5
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/a2p_*/Q] -datapath_only 7.5
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/gen_in*.ff_inst/DF]
+
+# Performance constraints 
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/total_num_wr_rd_r*/DF]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/duration_cntr_status_sclk_r*/DF]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/duration_cntr_status_aclk_r*/DF]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_perf_calc/*a2s_duration_cntr_en_r1*/DF] 
+
+# UART In/Out ports are Async, these are false paths
+set_false_path -from [get_pins u_tragen/uart0_inst/lscc_uart_inst/u_txmitt/*tx_output*/Q]
+set_false_path -to [get_pins u_tragen/uart0_inst/lscc_uart_inst/u_rxcver/sin*/D*]
+# outputs that drive LED are async
+set_false_path -from [get_pins */LED_array_i*/Q]
+set_false_path -to [get_ports LED*]
+
+ldc_create_group -name rebuff_empty_sync_7 -bbox {1 1} [get_cells {s2p_r1_trn_done*.ff_inst s2p_r2_trn_done*.ff_inst}]
+set_false_path -to [get_pins s2p_r1_trn_done*.ff_inst/DF]
+set_false_path -from [get_pins */lscc_lpddr4_mc_inst/u_lp4mem/u_dq_dqs_dm/DQ*.*/DOUT]
+set_false_path -from [get_pins */lscc_lpddr4_mc_inst/u_lp4mem/u_dq_dqs_dm/DQ*.*/TOUT]
+set_false_path -from [get_pins */lscc_lpddr4_mc_inst/u_lp4mem/u_dq_dqs_dm/DMI*.*/DOUT]
+set_false_path -from [get_pins */lscc_lpddr4_mc_inst/u_lp4mem/u_dq_dqs_dm/DMI*.*/TOUT]
+
+#############################################################################
+# This section below is meant for the CertusPro-NX Versa Evaluation Board
+# Part Number: LFCPNX-VERSA-EVN
+# Link to Document: 
+# https://www.latticesemi.com/products/developmentboardsandkits/certuspro-nx-versa-board#_DB4E4B46A458492E85ACDE0B194CEB1F
+
+# DDR Pinouts for CertusPro-NX Versa Board
+ldc_set_location -site {AA13} [get_ports {ddr_ck_o[0]}]
+ldc_set_location -site {AD20} [get_ports {ddr_cke_o[0]}]
+ldc_set_location -site {AC19} [get_ports {ddr_cs_o[0]}]
+ldc_set_location -site {AE22} [get_ports {ddr_ca_o[0]}]
+ldc_set_location -site {AE23} [get_ports {ddr_ca_o[1]}]
+ldc_set_location -site {AD21} [get_ports {ddr_ca_o[2]}]
+ldc_set_location -site {AE21} [get_ports {ddr_ca_o[3]}]
+ldc_set_location -site {AF22} [get_ports {ddr_ca_o[4]}]
+ldc_set_location -site {AF23} [get_ports {ddr_ca_o[5]}]
+ldc_set_location -site {W13} [get_ports ddr_reset_n_o]
+ldc_set_location -site {AA6} [get_ports {ddr_dq_io[0]}]
+ldc_set_location -site {AA5} [get_ports {ddr_dq_io[1]}]
+ldc_set_location -site {Y6} [get_ports {ddr_dq_io[2]}]
+ldc_set_location -site {Y5} [get_ports {ddr_dq_io[3]}]
+ldc_set_location -site {AE4} [get_ports {ddr_dq_io[4]}]
+ldc_set_location -site {AD4} [get_ports {ddr_dq_io[5]}]
+ldc_set_location -site {AD3} [get_ports {ddr_dq_io[6]}]
+ldc_set_location -site {AC4} [get_ports {ddr_dq_io[7]}]
+ldc_set_location -site {AD6} [get_ports {ddr_dq_io[8]}]
+ldc_set_location -site {AE6} [get_ports {ddr_dq_io[9]}]
+ldc_set_location -site {AC7} [get_ports {ddr_dq_io[10]}]
+ldc_set_location -site {AB7} [get_ports {ddr_dq_io[11]}]
+ldc_set_location -site {AA7} [get_ports {ddr_dq_io[12]}]
+ldc_set_location -site {Y7} [get_ports {ddr_dq_io[13]}]
+ldc_set_location -site {AB6} [get_ports {ddr_dq_io[14]}]
+ldc_set_location -site {AC6} [get_ports {ddr_dq_io[15]}]
+ldc_set_location -site {AF4} [get_ports {ddr_dqs_io[0]}]
+ldc_set_location -site {AF6} [get_ports {ddr_dqs_io[1]}]
+ldc_set_location -site {AE3} [get_ports {ddr_dmi_io[0]}]
+ldc_set_location -site {AD5} [get_ports {ddr_dmi_io[1]}]
+ldc_set_location -site {W10} [get_ports {ddr_dq_io[16]}]
+ldc_set_location -site {W11} [get_ports {ddr_dq_io[17]}]
+ldc_set_location -site {AD9} [get_ports {ddr_dq_io[18]}]
+ldc_set_location -site {AE9} [get_ports {ddr_dq_io[19]}]
+ldc_set_location -site {AD10} [get_ports {ddr_dq_io[20]}]
+ldc_set_location -site {AE10} [get_ports {ddr_dq_io[21]}]
+ldc_set_location -site {AA10} [get_ports {ddr_dq_io[22]}]
+ldc_set_location -site {Y10} [get_ports {ddr_dq_io[23]}]
+ldc_set_location -site {AC11} [get_ports {ddr_dq_io[24]}]
+ldc_set_location -site {AD12} [get_ports {ddr_dq_io[25]}]
+ldc_set_location -site {AD11} [get_ports {ddr_dq_io[26]}]
+ldc_set_location -site {AE11} [get_ports {ddr_dq_io[27]}]
+ldc_set_location -site {AB12} [get_ports {ddr_dq_io[28]}]
+ldc_set_location -site {AA11} [get_ports {ddr_dq_io[29]}]
+ldc_set_location -site {Y11} [get_ports {ddr_dq_io[30]}]
+ldc_set_location -site {AA12} [get_ports {ddr_dq_io[31]}]
+ldc_set_location -site {AF10} [get_ports {ddr_dqs_io[2]}]
+ldc_set_location -site {AF12} [get_ports {ddr_dqs_io[3]}]
+ldc_set_location -site {AB9} [get_ports {ddr_dmi_io[2]}]
+ldc_set_location -site {AC12} [get_ports {ddr_dmi_io[3]}]
+
+# PLL Refclk Pinout for CertusPro-NX Versa Board
+ldc_set_location -site {AB19} [get_ports pll_refclk_i]
+
+# GPIO (General Purpose LED) Pinout for CertusPro-NX Versa Board
+ldc_set_location -site {R5} [get_ports {LED[0]}]
+ldc_set_location -site {R4} [get_ports {LED[1]}]
+ldc_set_location -site {R8} [get_ports {LED[2]}]
+ldc_set_location -site {R9} [get_ports {LED[3]}]
+ldc_set_location -site {U8} [get_ports {LED[4]}]
+ldc_set_location -site {R7} [get_ports {LED[5]}]
+ldc_set_location -site {R6} [get_ports {LED[6]}]
+ldc_set_location -site {P8} [get_ports {LED[7]}]
+
+# UART Pinouts for CertusPro-NX Versa Board
+ldc_set_location -site {M9} [get_ports uart_txd_o]
+ldc_set_location -site {L8} [get_ports uart_rxd_i]
+
+# Reset Pinout CertusPro-NX Versa Board
+ldc_set_location -site {N9} [get_ports rstn_i]

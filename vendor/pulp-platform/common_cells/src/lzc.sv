@@ -68,27 +68,27 @@ module lzc #(
       end
     end
 
-    for (genvar j = 0; unsigned'(j) < WIDTH; j++) begin : g_index_lut
-      assign index_lut[j] = (NumLevels)'(unsigned'(j));
+    for (genvar j = 0; $unsigned(j) < WIDTH; j++) begin : g_index_lut
+      assign index_lut[j] = (NumLevels)'($unsigned(j));
     end
 
-    for (genvar level = 0; unsigned'(level) < NumLevels; level++) begin : g_levels
-      if (unsigned'(level) == NumLevels - 1) begin : g_last_level
+    for (genvar level = 0; $unsigned(level) < NumLevels; level++) begin : g_levels
+      if ($unsigned(level) == NumLevels - 1) begin : g_last_level
         for (genvar k = 0; k < 2 ** level; k++) begin : g_level
           // if two successive indices are still in the vector...
-          if (unsigned'(k) * 2 < WIDTH - 1) begin : g_reduce
+          if ($unsigned(k) * 2 < WIDTH - 1) begin : g_reduce
             assign sel_nodes[2 ** level - 1 + k] = in_tmp[k * 2] | in_tmp[k * 2 + 1];
             assign index_nodes[2 ** level - 1 + k] = (in_tmp[k * 2] == 1'b1)
               ? index_lut[k * 2] :
                 index_lut[k * 2 + 1];
           end
           // if only the first index is still in the vector...
-          if (unsigned'(k) * 2 == WIDTH - 1) begin : g_base
+          if ($unsigned(k) * 2 == WIDTH - 1) begin : g_base
             assign sel_nodes[2 ** level - 1 + k] = in_tmp[k * 2];
             assign index_nodes[2 ** level - 1 + k] = index_lut[k * 2];
           end
           // if index is out of range
-          if (unsigned'(k) * 2 > WIDTH - 1) begin : g_out_of_range
+          if ($unsigned(k) * 2 > WIDTH - 1) begin : g_out_of_range
             assign sel_nodes[2 ** level - 1 + k] = 1'b0;
             assign index_nodes[2 ** level - 1 + k] = '0;
           end
@@ -104,8 +104,8 @@ module lzc #(
       end
     end
 
-    assign cnt_o = NumLevels > unsigned'(0) ? index_nodes[0] : {($clog2(WIDTH)) {1'b0}};
-    assign empty_o = NumLevels > unsigned'(0) ? ~sel_nodes[0] : ~(|in_i);
+    assign cnt_o = NumLevels > $unsigned(0) ? index_nodes[0] : {($clog2(WIDTH)) {1'b0}};
+    assign empty_o = NumLevels > $unsigned(0) ? ~sel_nodes[0] : ~(|in_i);
 
   end : gen_lzc
 

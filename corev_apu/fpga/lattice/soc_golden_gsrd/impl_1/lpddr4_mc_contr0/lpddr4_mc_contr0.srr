@@ -1,0 +1,1225 @@
+# Wed Sep 18 11:54:51 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: C:\lscc\radiant\2024.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 101R, Built May 14 2024 08:42:08, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 195MB peak: 195MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 197MB peak: 210MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 197MB peak: 210MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 200MB peak: 210MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 201MB peak: 210MB)
+
+
+
+
+@N: MF105 |Performing bottom-up mapping of Compile point view:work.lpddr4_mc_contr0(verilog) 
+
+Begin environment creation (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 305MB peak: 305MB)
+
+
+Finished environment creation (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 306MB peak: 306MB)
+
+
+Start loading ILMs (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 306MB peak: 307MB)
+
+
+Start creating ILM for FPGA lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_iface_top_Z161_layer0 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 309MB peak: 309MB)
+
+
+Finished creating ILM for FPGA lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_iface_top_Z161_layer0 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 309MB peak: 310MB)
+
+
+Start creating ILM for FPGA lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng_Z172_layer0 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 309MB peak: 310MB)
+
+
+Finished creating ILM for FPGA lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng_Z172_layer0 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 309MB peak: 310MB)
+
+
+Start creating ILM for FPGA lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 309MB peak: 310MB)
+
+
+Finished creating ILM for FPGA lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 309MB peak: 310MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 301MB peak: 310MB)
+
+
+Begin compile point sub-process log
+
+		 user requested clean build.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 301MB peak: 310MB)
+
+@W: BN161 :|Net cpu0_inst.riscvrtos_inst.clint_wdt0_inst.sys_clk has multiple drivers .
+@W: BN161 :|Net axi2apb0_inst.lscc_axi2apb_inst.aclk_i has multiple drivers .
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 305MB peak: 310MB)
+
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_read_rr_arbiter.rr_arb_ar_fifo.u_fifo.u_fifo.data_raw_r[0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_w_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[34].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[35].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[36].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[37].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[38].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[34].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[35].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[36].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[37].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[38].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un3lto21 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un3lto20 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un3lto9 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un3lto6 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un3lto3 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un3lto0 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un1_addr_ilto21 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un1_addr_ilto20 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un1_addr_ilto9 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un1_addr_ilto6 has multiple drivers .
+@W: BN161 :|Net apb_interconnect0_inst.lscc_apb_interconnect_inst.apb_bus\.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1\[2\]\.u_lscc_apb_decoder_sel.genblk1\[0\]\.u_lscc_apb_decoder_comp.full_dec\.un1_addr_ilto3 has multiple drivers .
+@W: BN161 :|Net N_7509 has multiple drivers .
+@W: BN161 :|Net N_7510 has multiple drivers .
+@W: BN161 :|Net N_7511 has multiple drivers .
+@W: BN161 :|Net N_7512 has multiple drivers .
+@W: BN161 :|Net N_7513 has multiple drivers .
+@W: BN161 :|Net N_7514 has multiple drivers .
+@W: BN161 :|Net N_7515 has multiple drivers .
+@W: BN161 :|Net N_7516 has multiple drivers .
+@W: BN161 :|Net N_7517 has multiple drivers .
+@W: BN161 :|Net N_7518 has multiple drivers .
+@W: BN161 :|Net N_7519 has multiple drivers .
+@W: BN161 :|Net N_7520 has multiple drivers .
+@W: BN161 :|Net N_7521 has multiple drivers .
+@W: BN161 :|Net N_7522 has multiple drivers .
+@W: BN161 :|Net N_7523 has multiple drivers .
+@W: BN161 :|Net N_7524 has multiple drivers .
+@W: BN161 :|Net N_7525 has multiple drivers .
+@W: BN161 :|Net N_7526 has multiple drivers .
+@W: BN161 :|Net N_7527 has multiple drivers .
+@W: BN161 :|Net N_7528 has multiple drivers .
+@W: BN161 :|Net N_7529 has multiple drivers .
+@W: BN161 :|Net N_7530 has multiple drivers .
+@W: BN161 :|Net N_7531 has multiple drivers .
+@W: BN161 :|Net N_7532 has multiple drivers .
+@W: BN161 :|Net N_7533 has multiple drivers .
+@W: BN161 :|Net N_7534 has multiple drivers .
+@W: BN161 :|Net N_7535 has multiple drivers .
+@W: BN161 :|Net N_7536 has multiple drivers .
+@W: BN161 :|Net N_7537 has multiple drivers .
+@W: BN161 :|Net N_7538 has multiple drivers .
+@W: BN161 :|Net N_7539 has multiple drivers .
+@W: BN161 :|Net N_7540 has multiple drivers .
+@W: BN161 :|Net N_7541 has multiple drivers .
+@W: BN161 :|Net N_7542 has multiple drivers .
+@W: BN161 :|Net N_7543 has multiple drivers .
+@W: BN161 :|Net N_7544 has multiple drivers .
+@W: BN161 :|Net N_7545 has multiple drivers .
+@W: BN161 :|Net N_7546 has multiple drivers .
+@W: BN161 :|Net N_7547 has multiple drivers .
+@W: BN161 :|Net N_7548 has multiple drivers .
+@W: BN161 :|Net N_7549 has multiple drivers .
+@W: BN161 :|Net N_7550 has multiple drivers .
+@W: BN161 :|Net N_7551 has multiple drivers .
+@W: BN161 :|Net N_7552 has multiple drivers .
+@W: BN161 :|Net N_7553 has multiple drivers .
+@W: BN161 :|Net N_7554 has multiple drivers .
+@W: BN161 :|Net N_7555 has multiple drivers .
+@W: BN161 :|Net N_7556 has multiple drivers .
+@W: BN161 :|Net N_7557 has multiple drivers .
+@W: BN161 :|Net N_7558 has multiple drivers .
+@W: BN161 :|Net N_7559 has multiple drivers .
+@W: BN161 :|Net N_7560 has multiple drivers .
+@W: BN161 :|Net N_7561 has multiple drivers .
+@W: BN161 :|Net N_7562 has multiple drivers .
+@W: BN161 :|Net N_7563 has multiple drivers .
+@W: BN161 :|Net N_7564 has multiple drivers .
+@W: BN161 :|Net N_7565 has multiple drivers .
+@W: BN161 :|Net N_7566 has multiple drivers .
+@W: BN161 :|Net N_7567 has multiple drivers .
+@W: BN161 :|Net N_7568 has multiple drivers .
+@W: BN161 :|Net N_7569 has multiple drivers .
+@W: BN161 :|Net N_7570 has multiple drivers .
+@W: BN161 :|Net N_7571 has multiple drivers .
+@W: BN161 :|Net N_7572 has multiple drivers .
+@W: BN161 :|Net N_7573 has multiple drivers .
+@W: BN161 :|Net N_7574 has multiple drivers .
+@W: BN161 :|Net N_7575 has multiple drivers .
+@W: BN161 :|Net N_7576 has multiple drivers .
+@W: BN161 :|Net N_7577 has multiple drivers .
+@W: BN161 :|Net N_7578 has multiple drivers .
+@W: BN161 :|Net N_7579 has multiple drivers .
+@W: BN161 :|Net N_7580 has multiple drivers .
+@W: BN161 :|Net N_7581 has multiple drivers .
+@W: BN161 :|Net N_7582 has multiple drivers .
+@W: BN161 :|Net N_7583 has multiple drivers .
+@W: BN161 :|Net N_7584 has multiple drivers .
+@W: BN161 :|Net N_7585 has multiple drivers .
+@W: BN161 :|Net N_7586 has multiple drivers .
+@W: BN161 :|Net N_7587 has multiple drivers .
+@W: BN161 :|Net N_7588 has multiple drivers .
+@W: BN161 :|Net N_7589 has multiple drivers .
+@W: BN161 :|Net N_7590 has multiple drivers .
+@W: BN161 :|Net N_7591 has multiple drivers .
+@W: BN161 :|Net N_7592 has multiple drivers .
+@W: BN161 :|Net N_7593 has multiple drivers .
+@W: BN161 :|Net N_7594 has multiple drivers .
+@W: BN161 :|Net N_7595 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\lpddr4_mc_contr0\lpddr4_mc_contr0.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+@N: MF179 :|Found 5 by 5 bit equality operator ('==') lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_rd.u_rd_rsp.u_data_fifo.u_fifo_dc.empty_cmp_w (in view: work.lpddr4_mc_contr0(verilog))
+@N: MF179 :|Found 5 by 5 bit equality operator ('==') ASYNC\.u_data_fifo.u_fifo_dc.empty_cmp_w (in view: work.lpddr4_mc_contr0_ipgen_lpddr4_mc_axi_slv_wr_Z222_layer0(verilog))
+
+Starting factoring (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:30s; Memory used current: 309MB peak: 310MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:31s; Memory used current: 313MB peak: 313MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:39s; Memory used current: 397MB peak: 409MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:40s; Memory used current: 398MB peak: 409MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:45s; CPU Time elapsed 0h:00m:44s; Memory used current: 401MB peak: 409MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 401MB peak: 409MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:48s; CPU Time elapsed 0h:00m:47s; Memory used current: 401MB peak: 409MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:48s; Memory used current: 430MB peak: 430MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:49s		    -2.79ns		2882 /      5505
+   2		0h:00m:49s		    -2.79ns		2873 /      5505
+   3		0h:00m:49s		    -2.83ns		2874 /      5505
+   4		0h:00m:49s		    -2.83ns		2874 /      5505
+   5		0h:00m:49s		    -2.65ns		2875 /      5505
+   6		0h:00m:49s		    -2.65ns		2875 /      5505
+@N: FX271 :|Replicating instance mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_w_fifo.u_fifo.u_fifo.data_raw_r[0] (in view: work.soc_golden_gsrd(verilog)) with 292 loads 3 times to improve timing.
+@N: FX271 :|Replicating instance mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r[0] (in view: work.soc_golden_gsrd(verilog)) with 19 loads 1 time to improve timing.
+Timing driven replication report
+Added 6 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+   7		0h:00m:50s		    -2.28ns		2885 /      5511
+   8		0h:00m:50s		    -2.28ns		2889 /      5511
+   9		0h:00m:50s		    -2.28ns		2889 /      5511
+  10		0h:00m:50s		    -2.28ns		2891 /      5511
+  11		0h:00m:50s		    -2.23ns		2891 /      5511
+  12		0h:00m:50s		    -2.23ns		2891 /      5511
+  13		0h:00m:50s		    -2.23ns		2890 /      5511
+  14		0h:00m:50s		    -2.46ns		2891 /      5511
+  15		0h:00m:50s		    -2.12ns		2890 /      5511
+  16		0h:00m:50s		    -2.24ns		2890 /      5511
+  17		0h:00m:50s		    -2.12ns		2893 /      5511
+  18		0h:00m:50s		    -2.27ns		2897 /      5511
+  19		0h:00m:51s		    -2.15ns		2900 /      5511
+@N: FX271 :|Replicating instance mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_w_fifo.u_fifo.u_fifo.data_raw_r_fast[0] (in view: work.soc_golden_gsrd(verilog)) with 19 loads 1 time to improve timing.
+Added 1 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+
+  20		0h:00m:51s		    -1.98ns		2897 /      5512
+  21		0h:00m:51s		    -2.16ns		2906 /      5512
+  22		0h:00m:51s		    -1.92ns		2906 /      5512
+  23		0h:00m:51s		    -1.98ns		2915 /      5512
+  24		0h:00m:51s		    -2.22ns		2920 /      5512
+  25		0h:00m:51s		    -2.22ns		2922 /      5512
+  26		0h:00m:51s		    -2.03ns		2923 /      5512
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:53s; CPU Time elapsed 0h:00m:53s; Memory used current: 430MB peak: 431MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:54s; Memory used current: 431MB peak: 431MB)
+
+
+End compile point sub-process log
+
+@W: MT246 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":1384:58:1384:62|Blackbox PLLC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\lpddr4_mc_contr0\2.2.0\rtl\lpddr4_mc_contr0.sv":64380:43:64380:50|Blackbox DDRPHY32E is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\lpddr4_mc_contr0\2.2.0\rtl\lpddr4_mc_contr0.sv":63261:30:63261:38|Blackbox ECLKDIVA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@N: MT615 |Found clock pll_refclk_i with period 10.00ns 
+@W: MT420 |Found inferred clock pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net axi2apb0_inst.lscc_axi2apb_inst.aclk_i[0].
+@W: MT420 |Found inferred clock pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net cpu0_inst.riscvrtos_inst.clint_wdt0_inst.sys_clk.
+@W: MT420 |Found inferred clock lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.sclk_o.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Sep 18 11:55:47 2024
+#
+
+
+Top view:               soc_golden_gsrd
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+                       C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\soc_golden_gsrd_impl_1_cpe.ldc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -2.643
+
+                                                                                                                               Requested     Estimated     Requested     Estimated                Clock                                                                            Clock                
+Starting Clock                                                                                                                 Frequency     Frequency     Period        Period        Slack      Type                                                                             Group                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk_125_in                                                                                                                     125.0 MHz     NA            8.000         NA            NA         declared                                                                         default_clkgroup     
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock                                              200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_8
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock                                    200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_9
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock                                                           200.0 MHz     189.7 MHz     5.000         5.271         -0.271     inferred                                                                         Inferred_clkgroup_0_6
+osc0_ipgen_lscc_osc_400s_40s_40_LAV-AT_LAV-AT-E70ES1|clk_out_o_inferred_clock                                                  200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_4
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock                                                                  200.0 MHz     130.8 MHz     5.000         7.644         -2.643     inferred                                                                         Inferred_clkgroup_0_3
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock                                                                 200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_1
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos_o_inferred_clock                                                                  200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_7
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_testclk_o_inferred_clock                                                                200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_5
+pll_refclk_i                                                                                                                   100.0 MHz     NA            10.000        NA            NA         declared                                                                         default_clkgroup     
+soc_golden_gsrd|rgmii_rxc_i                                                                                                    200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_2
+tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric_noreg_1s_9s|_FWFT_ENABLE_re_r_derived_clock     200.0 MHz     NA            5.000         NA            NA         derived (from pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock)     Inferred_clkgroup_0_3
+System                                                                                                                         200.0 MHz     181.4 MHz     5.000         5.513         -0.513     system                                                                           system_clkgroup      
+========================================================================================================================================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                              Ending                                                                |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                System                                                                |  5.000       -0.513  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                                pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock         |  5.000       -0.034  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                                lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock  |  5.000       2.707   |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock         System                                                                |  5.000       0.943   |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock         pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock         |  5.000       -2.643  |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock         lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock  System                                                                |  5.000       1.573   |  No paths    -      |  No paths    -      |  No paths    -    
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock  pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock         |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock  lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock  |  5.000       -0.271  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                                                                                      Arrival           
+Instance      Reference                                                                Type        Pin     Net                              Time        Slack 
+              Clock                                                                                                                                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       bbxfvJzgIeDnri3Dqd4c6CBxxLcs     1.081       -0.271
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       bAl90hphrF3DzIv8KKJxIsxhn        0.853       -0.043
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       bAl90hphrF3DzIv8KKJxIsxm3        0.853       -0.043
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       I3bGbrgahpdGDvvrJ                1.128       -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       I3bGbrgahpdGDvvxn                1.124       -0.031
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       cqzd9jKvs2se                     1.409       0.107 
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       nGcnC2I01ttm7nDobqGkiI3          0.907       0.186 
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       nGcnC2I01ttm7nDobqGkjbJ          0.907       0.186 
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       nGcnC2I01ttm7nDobqGkjrJ          0.907       0.186 
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     Q       nGcnC2I01ttm7nDobqGkjxn          0.907       0.186 
+==============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                                                                   Required           
+Instance      Reference                                                                Type        Pin     Net                           Time         Slack 
+              Clock                                                                                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       cqzd9jKvs2rc                  4.946        -0.271
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     SP      cGvybevvmeD7ai8wfGotr5        4.806        -0.068
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42jpcqzyls7J     5.372        -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42jzbC0hEuxn     5.372        -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42j9bm0Dvwm3     5.372        -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42jJa81xcybJ     5.372        -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42khai2g5zDn     5.372        -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42kqL42Cm123     5.372        -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42k0Le3vF3rJ     5.372        -0.035
+encrypted     lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock     FD1P3DX     D       b0amj3FCAjmJt42kAK04fw5hn     5.372        -0.035
+============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.216
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.271
+
+    Number of logic level(s):                7
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+encrypted                             FD1P3DX     Q        Out     1.081     1.081 r     -         
+bbxfvJzgIeDnri3Dqd4c6CBxxLcs          Net         -        -       -         -           19        
+encrypted                             CCU2C       B0       In      0.000     1.081 r     -         
+encrypted                             CCU2C       COUT     Out     0.900     1.981 r     -         
+f4H8Ijlye03sEJwttCrmx1xg0s2rb         Net         -        -       -         -           1         
+encrypted                             CCU2C       CIN      In      0.000     1.981 r     -         
+encrypted                             CCU2C       S0       Out     0.481     2.462 r     -         
+Hv5uz37coyki0l23db85wuA68bJ           Net         -        -       -         -           1         
+encrypted                             LUT4        B        In      0.000     2.462 r     -         
+encrypted                             LUT4        Z        Out     0.708     3.171 r     -         
+n9HGoFasw6xIcbaeer6g4rJ               Net         -        -       -         -           3         
+encrypted                             LUT4        B        In      0.000     3.171 r     -         
+encrypted                             LUT4        Z        Out     0.390     3.561 f     -         
+rEkj2divx5rqqt51xA1xtzsEvzmrdkogq     Net         -        -       -         -           1         
+encrypted                             LUT4        D        In      0.000     3.561 f     -         
+encrypted                             LUT4        Z        Out     0.660     4.221 f     -         
+4eFkirrmmHIm17inte8sxJECmp3ECu        Net         -        -       -         -           2         
+encrypted                             LUT4        C        In      0.000     4.221 f     -         
+encrypted                             LUT4        Z        Out     0.390     4.611 r     -         
+jzhCwEFE3jzj2K4G2o6eqzGG16            Net         -        -       -         -           1         
+encrypted                             LUT4        C        In      0.000     4.611 r     -         
+encrypted                             LUT4        Z        Out     0.606     5.216 f     -         
+cqzd9jKvs2rc                          Net         -        -       -         -           1         
+encrypted                             FD1P3DX     D        In      0.000     5.216 f     -         
+===================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.216
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.271
+
+    Number of logic level(s):                7
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+encrypted                             FD1P3DX     Q        Out     1.081     1.081 r     -         
+bbxfvJzgIeDnri3Dqd4c6CBxxLcs          Net         -        -       -         -           19        
+encrypted                             CCU2C       B1       In      0.000     1.081 r     -         
+encrypted                             CCU2C       COUT     Out     0.900     1.981 r     -         
+f4H8Ijlye03sEJwttCrmx1xg0s2rb         Net         -        -       -         -           1         
+encrypted                             CCU2C       CIN      In      0.000     1.981 r     -         
+encrypted                             CCU2C       S0       Out     0.481     2.462 r     -         
+Hv5uz37coyki0l23db85wuA68bJ           Net         -        -       -         -           1         
+encrypted                             LUT4        B        In      0.000     2.462 r     -         
+encrypted                             LUT4        Z        Out     0.708     3.171 r     -         
+n9HGoFasw6xIcbaeer6g4rJ               Net         -        -       -         -           3         
+encrypted                             LUT4        B        In      0.000     3.171 r     -         
+encrypted                             LUT4        Z        Out     0.390     3.561 f     -         
+rEkj2divx5rqqt51xA1xtzsEvzmrdkogq     Net         -        -       -         -           1         
+encrypted                             LUT4        D        In      0.000     3.561 f     -         
+encrypted                             LUT4        Z        Out     0.660     4.221 f     -         
+4eFkirrmmHIm17inte8sxJECmp3ECu        Net         -        -       -         -           2         
+encrypted                             LUT4        C        In      0.000     4.221 f     -         
+encrypted                             LUT4        Z        Out     0.390     4.611 r     -         
+jzhCwEFE3jzj2K4G2o6eqzGG16            Net         -        -       -         -           1         
+encrypted                             LUT4        C        In      0.000     4.611 r     -         
+encrypted                             LUT4        Z        Out     0.606     5.216 f     -         
+cqzd9jKvs2rc                          Net         -        -       -         -           1         
+encrypted                             FD1P3DX     D        In      0.000     5.216 f     -         
+===================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.194
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.806
+
+    - Propagation time:                      4.875
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.068
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / SP
+    The start point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                       Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+encrypted                                  FD1P3DX     Q        Out     1.081     1.081 r     -         
+bbxfvJzgIeDnri3Dqd4c6CBxxLcs               Net         -        -       -         -           19        
+encrypted                                  CCU2C       B0       In      0.000     1.081 r     -         
+encrypted                                  CCU2C       COUT     Out     0.900     1.981 r     -         
+f4H8Ijlye03sEJwttCrmx1xg0s2rb              Net         -        -       -         -           1         
+encrypted                                  CCU2C       CIN      In      0.000     1.981 r     -         
+encrypted                                  CCU2C       S0       Out     0.481     2.462 r     -         
+Hv5uz37coyki0l23db85wuA68bJ                Net         -        -       -         -           1         
+encrypted                                  LUT4        B        In      0.000     2.462 r     -         
+encrypted                                  LUT4        Z        Out     0.708     3.171 r     -         
+n9HGoFasw6xIcbaeer6g4rJ                    Net         -        -       -         -           3         
+encrypted                                  LUT4        B        In      0.000     3.171 r     -         
+encrypted                                  LUT4        Z        Out     0.390     3.561 r     -         
+bisc8e7HIsJoBrmF82tkAqEI92qa3u9Kfq5b7a     Net         -        -       -         -           1         
+encrypted                                  LUT4        C        In      0.000     3.561 r     -         
+encrypted                                  LUT4        Z        Out     0.708     4.269 r     -         
+bLgw1zJlfHKvJcg8trIvhqvdycDbb6a6Dbe        Net         -        -       -         -           3         
+encrypted                                  LUT4        D        In      0.000     4.269 r     -         
+encrypted                                  LUT4        Z        Out     0.606     4.875 r     -         
+cGvybevvmeD7ai8wfGotr5                     Net         -        -       -         -           1         
+encrypted                                  FD1P3DX     SP       In      0.000     4.875 r     -         
+========================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.194
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.806
+
+    - Propagation time:                      4.875
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.068
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / SP
+    The start point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                       Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+encrypted                                  FD1P3DX     Q        Out     1.081     1.081 r     -         
+bbxfvJzgIeDnri3Dqd4c6CBxxLcs               Net         -        -       -         -           19        
+encrypted                                  CCU2C       B1       In      0.000     1.081 r     -         
+encrypted                                  CCU2C       COUT     Out     0.900     1.981 r     -         
+f4H8Ijlye03sEJwttCrmx1xg0s2rb              Net         -        -       -         -           1         
+encrypted                                  CCU2C       CIN      In      0.000     1.981 r     -         
+encrypted                                  CCU2C       S0       Out     0.481     2.462 r     -         
+Hv5uz37coyki0l23db85wuA68bJ                Net         -        -       -         -           1         
+encrypted                                  LUT4        B        In      0.000     2.462 r     -         
+encrypted                                  LUT4        Z        Out     0.708     3.171 r     -         
+n9HGoFasw6xIcbaeer6g4rJ                    Net         -        -       -         -           3         
+encrypted                                  LUT4        B        In      0.000     3.171 r     -         
+encrypted                                  LUT4        Z        Out     0.390     3.561 r     -         
+bisc8e7HIsJoBrmF82tkAqEI92qa3u9Kfq5b7a     Net         -        -       -         -           1         
+encrypted                                  LUT4        C        In      0.000     3.561 r     -         
+encrypted                                  LUT4        Z        Out     0.708     4.269 r     -         
+bLgw1zJlfHKvJcg8trIvhqvdycDbb6a6Dbe        Net         -        -       -         -           3         
+encrypted                                  LUT4        D        In      0.000     4.269 r     -         
+encrypted                                  LUT4        Z        Out     0.606     4.875 r     -         
+cGvybevvmeD7ai8wfGotr5                     Net         -        -       -         -           1         
+encrypted                                  FD1P3DX     SP       In      0.000     4.875 r     -         
+========================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      4.989
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.043
+
+    Number of logic level(s):                7
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+encrypted                             FD1P3DX     Q        Out     0.853     0.853 r     -         
+bAl90hphrF3DzIv8KKJxIsxhn             Net         -        -       -         -           1         
+encrypted                             CCU2C       A0       In      0.000     0.853 r     -         
+encrypted                             CCU2C       COUT     Out     0.900     1.753 r     -         
+f4H8Ijlye03sEJwttCrmx1xg0s2rb         Net         -        -       -         -           1         
+encrypted                             CCU2C       CIN      In      0.000     1.753 r     -         
+encrypted                             CCU2C       S0       Out     0.481     2.235 r     -         
+Hv5uz37coyki0l23db85wuA68bJ           Net         -        -       -         -           1         
+encrypted                             LUT4        B        In      0.000     2.235 r     -         
+encrypted                             LUT4        Z        Out     0.708     2.942 r     -         
+n9HGoFasw6xIcbaeer6g4rJ               Net         -        -       -         -           3         
+encrypted                             LUT4        B        In      0.000     2.942 r     -         
+encrypted                             LUT4        Z        Out     0.390     3.333 f     -         
+rEkj2divx5rqqt51xA1xtzsEvzmrdkogq     Net         -        -       -         -           1         
+encrypted                             LUT4        D        In      0.000     3.333 f     -         
+encrypted                             LUT4        Z        Out     0.660     3.993 f     -         
+4eFkirrmmHIm17inte8sxJECmp3ECu        Net         -        -       -         -           2         
+encrypted                             LUT4        C        In      0.000     3.993 f     -         
+encrypted                             LUT4        Z        Out     0.390     4.383 r     -         
+jzhCwEFE3jzj2K4G2o6eqzGG16            Net         -        -       -         -           1         
+encrypted                             LUT4        C        In      0.000     4.383 r     -         
+encrypted                             LUT4        Z        Out     0.606     4.989 f     -         
+cqzd9jKvs2rc                          Net         -        -       -         -           1         
+encrypted                             FD1P3DX     D        In      0.000     4.989 f     -         
+===================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                                                                                       Starting                                                                                                                                                                                                                         Arrival           
+Instance                                                                                                                                                                               Reference                                                         Type        Pin     Net                                                                                                                                        Time        Slack 
+                                                                                                                                                                                       Clock                                                                                                                                                                                                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]                                                      pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD          Q       mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]          0.955       -2.643
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fwft._FWFT_ENABLE\.out_valid_o_fast                                                 pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDC         Q       mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fwft._FWFT_ENABLE\.out_valid_o_fast     0.955       -2.643
+mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fwft._FWFT_ENABLE\.out_valid_o                    pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDC         Q       mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_i[0]                                          0.853       -2.542
+mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[1\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fwft._FWFT_ENABLE\.out_valid_o                    pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDC         Q       mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_i[1]                                          0.853       -2.542
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.addr_outs_eq0_r                                                                                                         pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       addr_outs_eq0_r                                                                                                                            1.015       -2.523
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.axi_awready_r_fast                                                                                                      pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3BX     Q       axi_awready_r_fast                                                                                                                         0.985       -2.494
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_w_fifo.u_fwft._FWFT_ENABLE\.out_valid_o                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDC         Q       inp[115]                                                                                                                                   0.955       -2.475
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.axi_wready_r                                                                                                            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3BX     Q       axi_wready_r                                                                                                                               1.051       -2.421
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.int_fifo_empty_rd_d                                                                                                     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       int_fifo_empty_rd_d                                                                                                                        1.015       -2.385
+mpmc0_inst.lscc_mpmc_axi_inst.genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.w_mpmc_fifo.genblk1\.genblk1\.sync_fifo.mpmc_fifo_inst.u_fwft._FWFT_ENABLE\._REG\.out_valid_reg_o     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDC         Q       mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_wvalid_i[0]                                           0.853       -2.373
+==========================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                       Starting                                                                                           Required           
+Instance                                                                               Reference                                                         Type        Pin     Net          Time         Slack 
+                                                                                       Clock                                                                                                                 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0]      pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1466_i     4.946        -2.643
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[15]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1616_i     4.946        -2.643
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[16]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1626_i     4.946        -2.643
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[17]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1636_i     4.946        -2.643
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[18]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1646_i     4.946        -2.643
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[19]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1656_i     4.946        -2.643
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[30]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1766_i     4.946        -2.643
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[1]      pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1476_i     4.946        -2.217
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[2]      pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1486_i     4.946        -2.217
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[3]      pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       N_1496_i     4.946        -2.217
+=============================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      7.590
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.644
+
+    Number of logic level(s):                10
+    Starting point:                          mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0] / Q
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0] / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                                                                                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     FD          Q        Out     0.955     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     Net         -        -       -         -           3         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        I2       In      0.000     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        O        Out     0.180     1.135 r     -         
+mpmc0_inst_AXI_M00_interconnect_AWVALID                                                                                               Net         -        -       -         -           11        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        A        In      0.000     1.135 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        Z        Out     0.828     1.963 r     -         
+un1_addr_valid                                                                                                                        Net         -        -       -         -           17        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        C        In      0.000     1.963 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        Z        Out     0.708     2.671 r     -         
+start_addr[3]                                                                                                                         Net         -        -       -         -           3         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                            LUT4        C        In      0.000     2.671 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                            LUT4        Z        Out     0.390     3.061 r     -         
+dsp_join_kb_0[3]                                                                                                                      Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        A        In      0.000     3.061 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        Z        Out     0.606     3.667 r     -         
+total_bytes_cry_2_0_RNO_0                                                                                                             Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       C1       In      0.000     3.667 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       COUT     Out     0.900     4.567 r     -         
+total_bytes_cry_3                                                                                                                     Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       CIN      In      0.000     4.567 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       S1       Out     0.860     5.426 r     -         
+N_11                                                                                                                                  Net         -        -       -         -           6         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        A        In      0.000     5.426 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        Z        Out     0.738     6.165 r     -         
+un19_sig_data_fifo_wr_1                                                                                                               Net         -        -       -         -           4         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        D        In      0.000     6.165 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        Z        Out     0.819     6.984 f     -         
+total_bytes_cry_6_0_RNIR8GHM                                                                                                          Net         -        -       -         -           14        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                 LUT4        A        In      0.000     6.984 f     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                 LUT4        Z        Out     0.606     7.590 f     -         
+N_1466_i                                                                                                                              Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0]                                                     FD1P3DX     D        In      0.000     7.590 f     -         
+===================================================================================================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      7.590
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.644
+
+    Number of logic level(s):                10
+    Starting point:                          mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fwft._FWFT_ENABLE\.out_valid_o_fast / Q
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0] / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                         Pin      Pin               Arrival     No. of    
+Name                                                                                                                                       Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fwft._FWFT_ENABLE\.out_valid_o_fast     FDC         Q        Out     0.955     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fwft._FWFT_ENABLE\.out_valid_o_fast     Net         -        -       -         -           3         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                           LUT4        I3       In      0.000     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                           LUT4        O        Out     0.180     1.135 r     -         
+mpmc0_inst_AXI_M00_interconnect_AWVALID                                                                                                    Net         -        -       -         -           11        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                                   LUT4        A        In      0.000     1.135 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                                   LUT4        Z        Out     0.828     1.963 r     -         
+un1_addr_valid                                                                                                                             Net         -        -       -         -           17        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                             LUT4        C        In      0.000     1.963 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                             LUT4        Z        Out     0.708     2.671 r     -         
+start_addr[3]                                                                                                                              Net         -        -       -         -           3         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                                 LUT4        C        In      0.000     2.671 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                                 LUT4        Z        Out     0.390     3.061 r     -         
+dsp_join_kb_0[3]                                                                                                                           Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                                 LUT4        A        In      0.000     3.061 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                                 LUT4        Z        Out     0.606     3.667 r     -         
+total_bytes_cry_2_0_RNO_0                                                                                                                  Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                       CCU2C       C1       In      0.000     3.667 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                       CCU2C       COUT     Out     0.900     4.567 r     -         
+total_bytes_cry_3                                                                                                                          Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                       CCU2C       CIN      In      0.000     4.567 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                       CCU2C       S1       Out     0.860     5.426 r     -         
+N_11                                                                                                                                       Net         -        -       -         -           6         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                              LUT4        A        In      0.000     5.426 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                              LUT4        Z        Out     0.738     6.165 r     -         
+un19_sig_data_fifo_wr_1                                                                                                                    Net         -        -       -         -           4         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                              LUT4        D        In      0.000     6.165 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                              LUT4        Z        Out     0.819     6.984 f     -         
+total_bytes_cry_6_0_RNIR8GHM                                                                                                               Net         -        -       -         -           14        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                      LUT4        A        In      0.000     6.984 f     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                      LUT4        Z        Out     0.606     7.590 f     -         
+N_1466_i                                                                                                                                   Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0]                                                          FD1P3DX     D        In      0.000     7.590 f     -         
+========================================================================================================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      7.590
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.644
+
+    Number of logic level(s):                10
+    Starting point:                          mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0] / Q
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0] / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                                                                                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     FD          Q        Out     0.955     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     Net         -        -       -         -           3         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        I2       In      0.000     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        O        Out     0.180     1.135 r     -         
+mpmc0_inst_AXI_M00_interconnect_AWVALID                                                                                               Net         -        -       -         -           11        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        A        In      0.000     1.135 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        Z        Out     0.828     1.963 r     -         
+un1_addr_valid                                                                                                                        Net         -        -       -         -           17        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        C        In      0.000     1.963 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        Z        Out     0.708     2.671 r     -         
+start_addr[3]                                                                                                                         Net         -        -       -         -           3         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_4                            LUT4        C        In      0.000     2.671 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_4                            LUT4        Z        Out     0.390     3.061 r     -         
+total_bytes_rn_0[3]                                                                                                                   Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        C        In      0.000     3.061 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        Z        Out     0.606     3.667 r     -         
+total_bytes_cry_2_0_RNO_0                                                                                                             Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       C1       In      0.000     3.667 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       COUT     Out     0.900     4.567 r     -         
+total_bytes_cry_3                                                                                                                     Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       CIN      In      0.000     4.567 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       S1       Out     0.860     5.426 r     -         
+N_11                                                                                                                                  Net         -        -       -         -           6         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        A        In      0.000     5.426 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        Z        Out     0.738     6.165 r     -         
+un19_sig_data_fifo_wr_1                                                                                                               Net         -        -       -         -           4         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        D        In      0.000     6.165 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        Z        Out     0.819     6.984 f     -         
+total_bytes_cry_6_0_RNIR8GHM                                                                                                          Net         -        -       -         -           14        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                 LUT4        A        In      0.000     6.984 f     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                 LUT4        Z        Out     0.606     7.590 f     -         
+N_1466_i                                                                                                                              Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0]                                                     FD1P3DX     D        In      0.000     7.590 f     -         
+===================================================================================================================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      7.590
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.644
+
+    Number of logic level(s):                10
+    Starting point:                          mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0] / Q
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0] / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                                                                                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     FD          Q        Out     0.955     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     Net         -        -       -         -           3         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        I2       In      0.000     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        O        Out     0.180     1.135 r     -         
+mpmc0_inst_AXI_M00_interconnect_AWVALID                                                                                               Net         -        -       -         -           11        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        A        In      0.000     1.135 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        Z        Out     0.828     1.963 r     -         
+un1_addr_valid                                                                                                                        Net         -        -       -         -           17        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        C        In      0.000     1.963 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        Z        Out     0.708     2.671 r     -         
+start_addr[3]                                                                                                                         Net         -        -       -         -           3         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                            LUT4        C        In      0.000     2.671 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                            LUT4        Z        Out     0.390     3.061 r     -         
+dsp_join_kb_0[3]                                                                                                                      Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        A        In      0.000     3.061 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        Z        Out     0.606     3.667 r     -         
+total_bytes_cry_2_0_RNO_0                                                                                                             Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       C1       In      0.000     3.667 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       COUT     Out     0.900     4.567 r     -         
+total_bytes_cry_3                                                                                                                     Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       CIN      In      0.000     4.567 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       S0       Out     0.860     5.426 r     -         
+dsp_join_kb[4]                                                                                                                        Net         -        -       -         -           6         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        D        In      0.000     5.426 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        Z        Out     0.738     6.165 f     -         
+un19_sig_data_fifo_wr_1                                                                                                               Net         -        -       -         -           4         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        D        In      0.000     6.165 f     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        Z        Out     0.819     6.984 r     -         
+total_bytes_cry_6_0_RNIR8GHM                                                                                                          Net         -        -       -         -           14        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                 LUT4        A        In      0.000     6.984 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[0]                                                 LUT4        Z        Out     0.606     7.590 r     -         
+N_1466_i                                                                                                                              Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[0]                                                     FD1P3DX     D        In      0.000     7.590 r     -         
+===================================================================================================================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      7.590
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.644
+
+    Number of logic level(s):                10
+    Starting point:                          mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0] / Q
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[15] / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                                                                                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     FD          Q        Out     0.955     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r_fast[0]     Net         -        -       -         -           3         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        I2       In      0.000     0.955 r     -         
+mpmc0_inst.lscc_mpmc_axi_inst.u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.mi_awvalid_o_u                                      LUT4        O        Out     0.180     1.135 r     -         
+mpmc0_inst_AXI_M00_interconnect_AWVALID                                                                                               Net         -        -       -         -           11        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        A        In      0.000     1.135 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.m0_m2_e                                              LUT4        Z        Out     0.828     1.963 r     -         
+un1_addr_valid                                                                                                                        Net         -        -       -         -           17        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        C        In      0.000     1.963 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.start_addr[3]                                        LUT4        Z        Out     0.708     2.671 r     -         
+start_addr[3]                                                                                                                         Net         -        -       -         -           3         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                            LUT4        C        In      0.000     2.671 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_2                            LUT4        Z        Out     0.390     3.061 r     -         
+dsp_join_kb_0[3]                                                                                                                      Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        A        In      0.000     3.061 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0_RNO_0                            LUT4        Z        Out     0.606     3.667 r     -         
+total_bytes_cry_2_0_RNO_0                                                                                                             Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       C1       In      0.000     3.667 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_2_0                                  CCU2C       COUT     Out     0.900     4.567 r     -         
+total_bytes_cry_3                                                                                                                     Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       CIN      In      0.000     4.567 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_4_0                                  CCU2C       S1       Out     0.860     5.426 r     -         
+N_11                                                                                                                                  Net         -        -       -         -           6         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        A        In      0.000     5.426 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_0_0_RNIGJ8GC                         LUT4        Z        Out     0.738     6.165 r     -         
+un19_sig_data_fifo_wr_1                                                                                                               Net         -        -       -         -           4         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        D        In      0.000     6.165 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.u_int_fifo.u_fifo.total_bytes_cry_6_0_RNIR8GHM                         LUT4        Z        Out     0.819     6.984 f     -         
+total_bytes_cry_6_0_RNIR8GHM                                                                                                          Net         -        -       -         -           14        
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[15]                                                LUT4        A        In      0.000     6.984 f     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d_RNO[15]                                                LUT4        Z        Out     0.606     7.590 f     -         
+N_1616_i                                                                                                                              Net         -        -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.AXI_BI\.u_axi_if.u_wr.sig_axi_wstrb_d[15]                                                    FD1P3DX     D        In      0.000     7.590 f     -         
+===================================================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                        Starting                                                             Arrival           
+Instance                                                                Reference     Type          Pin                    Net               Time        Slack 
+                                                                        Clock                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DM_OEN0        ddr_dmi_oe[0]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DM_OEN1        ddr_dmi_oe[1]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DM_OEN2        ddr_dmi_oe[2]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DM_OEN3        ddr_dmi_oe[3]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DQS_OEN0       ddr_dqs_oe[0]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DQS_OEN1       ddr_dqs_oe[1]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DQS_OEN2       ddr_dqs_oe[2]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DQS_OEN3       ddr_dqs_oe[3]     0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DQ_OEN0[0]     ddr_dq_oe[0]      0.000       -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_OUT_DQ_OEN0[1]     ddr_dq_oe[1]      0.000       -0.513
+===============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                        Starting                                                        Required           
+Instance                                                                Reference     Type          Pin               Net               Time         Slack 
+                                                                        Clock                                                                              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DM0        ddr_dmi_in[0]     5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DM1        ddr_dmi_in[1]     5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DM2        ddr_dmi_in[2]     5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DM3        ddr_dmi_in[3]     5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DQ0[0]     ddr_dq_in[0]      5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DQ0[1]     ddr_dq_in[1]      5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DQ0[2]     ddr_dq_in[2]      5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DQ0[3]     ddr_dq_in[3]      5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DQ0[4]     ddr_dq_in[4]      5.000        -0.513
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy     System        DDRPHY32E     PHY_IN_DQ0[5]     ddr_dq_in[5]      5.000        -0.513
+===========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      5.513
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.513
+
+    Number of logic level(s):                1
+    Starting point:                          lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_OUT_DM_OEN0
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_IN_DM0
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                            Pin                 Pin               Arrival     No. of    
+Name                                                                        Type          Name                Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_OUT_DM_OEN0     Out     0.000     0.000 r     -         
+ddr_dmi_oe[0]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[0\]\.u_DMI_BB     BB            T                   In      0.000     0.000 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[0\]\.u_DMI_BB     BB            O                   Out     5.513     5.513 r     -         
+ddr_dmi_in[0]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_IN_DM0          In      0.000     5.513 r     -         
+======================================================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      5.513
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.513
+
+    Number of logic level(s):                1
+    Starting point:                          lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_OUT_DM_OEN1
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_IN_DM1
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                            Pin                 Pin               Arrival     No. of    
+Name                                                                        Type          Name                Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_OUT_DM_OEN1     Out     0.000     0.000 r     -         
+ddr_dmi_oe[1]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[1\]\.u_DMI_BB     BB            T                   In      0.000     0.000 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[1\]\.u_DMI_BB     BB            O                   Out     5.513     5.513 r     -         
+ddr_dmi_in[1]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_IN_DM1          In      0.000     5.513 r     -         
+======================================================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      5.513
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.513
+
+    Number of logic level(s):                1
+    Starting point:                          lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_OUT_DM_OEN2
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_IN_DM2
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                            Pin                 Pin               Arrival     No. of    
+Name                                                                        Type          Name                Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_OUT_DM_OEN2     Out     0.000     0.000 r     -         
+ddr_dmi_oe[2]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[2\]\.u_DMI_BB     BB            T                   In      0.000     0.000 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[2\]\.u_DMI_BB     BB            O                   Out     5.513     5.513 r     -         
+ddr_dmi_in[2]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_IN_DM2          In      0.000     5.513 r     -         
+======================================================================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      5.513
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.513
+
+    Number of logic level(s):                1
+    Starting point:                          lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_OUT_DM_OEN3
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_IN_DM3
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                            Pin                 Pin               Arrival     No. of    
+Name                                                                        Type          Name                Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_OUT_DM_OEN3     Out     0.000     0.000 r     -         
+ddr_dmi_oe[3]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[3\]\.u_DMI_BB     BB            T                   In      0.000     0.000 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[3\]\.u_DMI_BB     BB            O                   Out     5.513     5.513 r     -         
+ddr_dmi_in[3]                                                               Net           -                   -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_IN_DM3          In      0.000     5.513 r     -         
+======================================================================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      5.513
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.513
+
+    Number of logic level(s):                1
+    Starting point:                          lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_OUT_DQS_OEN0
+    Ending point:                            lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy / PHY_IN_DQS0
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                            Pin                  Pin               Arrival     No. of    
+Name                                                                        Type          Name                 Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_OUT_DQS_OEN0     Out     0.000     0.000 r     -         
+ddr_dqs_oe[0]                                                               Net           -                    -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[0\]\.u_DQS_BB     BB            T                    In      0.000     0.000 r     -         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.BB_DQS\[0\]\.u_DQS_BB     BB            O                    Out     5.513     5.513 r     -         
+ddr_dqs_in[0]                                                               Net           -                    -       -         -           1         
+lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32\.u_ddrphy         DDRPHY32E     PHY_IN_DQS0          In      0.000     5.513 r     -         
+=======================================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":121:0:121:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design 
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":123:0:123:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+None
+Writing compile point status file C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\lpddr4_mc_contr0\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                 Status       Reason      
+----------------------------------------------
+lpddr4_mc_contr0     Remapped     User request
+==============================================
+
+Process took 0h:00m:58s realtime, 0h:00m:57s cputime
+# Wed Sep 18 11:55:50 2024
+
+###########################################################]

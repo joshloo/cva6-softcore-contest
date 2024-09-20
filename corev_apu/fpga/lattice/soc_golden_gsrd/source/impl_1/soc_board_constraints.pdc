@@ -1,0 +1,225 @@
+ldc_set_sysconfig {MULTI_BOOT_MODE=ENABLE MULTI_BOOT_SEL=STATIC BOOT_SEL=DUAL MSPI_ADDRESS_32BIT=ENABLE MSPI_COMMAND_32BIT=ENABLE PROGRAMN_RECOVERY=ENABLE}
+create_generated_clock -name {clk_125MHz} -source [get_pins pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKI] -divide_by 1 [get_pins pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKOP]
+create_generated_clock -name {pll0_inst_clkos_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKI}] -multiply_by 8 -divide_by 61 [get_pins {pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKOS }] 
+create_generated_clock -name {pll0_inst_clkos2_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKI}] -multiply_by 4 -divide_by 5 [get_pins {pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKOS2 }] 
+create_generated_clock -name {pll0_clkout_testclk_o} -source [get_pins {pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKI}] -multiply_by 4 -divide_by 5 [get_pins {pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKRES }] 
+
+create_clock -name {pll_refclk_i} -period 10 -waveform {0.000 5.000} [get_ports pll_refclk_i]
+create_clock -name {clk_125_in} -period 8 -waveform {0.000 4.000} [get_ports clk_125_in]
+create_clock -name {rgmii_mdc_o} -period 100 [get_nets rgmii_mdc_o_c]
+#100MHz LPDDR4 PLL REFERENCE CLOCK
+ldc_set_location -site {AD32} [get_ports pll_refclk_i]
+ldc_set_location -site {AL10} [get_ports clk_125_in]
+#RESET
+ldc_set_location -site {AC17} [get_ports rstn_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18 PULLMODE=UP} [get_ports rstn_i]
+#UART
+ldc_set_location -site {R3} [get_ports s1_uart_txd_o]
+ldc_set_location -site {T3} [get_ports s1_uart_rxd_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports s1_uart_rxd_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports s1_uart_txd_o]
+
+#GPIO
+ldc_set_location -site {N7} [get_ports {s0_gpio[0]}]
+ldc_set_location -site {L7} [get_ports {s0_gpio[1]}]
+#ldc_set_location -site {L8} [get_ports {s0_gpio[2]}]
+#ldc_set_location -site {P8} [get_ports {s0_gpio[3]}]
+#ldc_set_location -site {M8} [get_ports {s0_gpio[4]}]
+#ldc_set_location -site {M9} [get_ports {s0_gpio[5]}]
+#ldc_set_location -site {P10} [get_ports {s0_gpio[6]}]
+#ldc_set_location -site {N10} [get_ports {s0_gpio[7]}]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports {s0_gpio[*]}]
+
+
+#SPI FLASH
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33 SLEWRATE=FAST} [get_ports SPI_CLK]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33 SLEWRATE=FAST} [get_ports SPI_CSS]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33 SLEWRATE=FAST} [get_ports SPI_MOSI]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33 SLEWRATE=FAST} [get_ports SPI_MISO]
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports SPI_D2]
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports SPI_D3]
+ldc_set_location -site {L12} [get_ports SPI_MOSI]
+ldc_set_location -site {L10} [get_ports SPI_D2]
+ldc_set_location -site {L11} [get_ports SPI_MISO]
+ldc_set_location -site {L9} [get_ports SPI_D3]
+ldc_set_location -site {P9} [get_ports SPI_CLK]
+ldc_set_location -site {P7} [get_ports SPI_CSS]
+
+#FPGA CONFIG LED
+ldc_set_location -site {M8} [get_ports config_active_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports config_active_o]
+
+#LPDDR4 MC LEDs
+ldc_set_location -site {N10} [get_ports pll_lock_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports pll_lock_o]
+ldc_set_location -site {P10} [get_ports init_done_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports init_done_o]
+ldc_set_location -site {M9} [get_ports trn_err_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports trn_err_o]
+
+#LPDDR4 MC
+ldc_set_location -site {AC26} [get_ports {ddr_ca_o[0]}]
+ldc_set_location -site {AB27} [get_ports {ddr_ca_o[1]}]
+ldc_set_location -site {AB28} [get_ports {ddr_ca_o[2]}]
+ldc_set_location -site {AC29} [get_ports {ddr_ca_o[3]}]
+ldc_set_location -site {AB29} [get_ports {ddr_ca_o[4]}]
+ldc_set_location -site {AD27} [get_ports {ddr_ca_o[5]}]
+ldc_set_location -site {AB25} [get_ports {ddr_ck_o[0]}]
+ldc_set_location -site {AB26} [get_ports {ddr_cke_o[0]}]
+ldc_set_location -site {AA31} [get_ports {ddr_cs_o[0]}]
+ldc_set_location -site {AF34} [get_ports ddr_reset_n_o]
+ldc_set_location -site {AC23} [get_ports {ddr_dqs_io[0]}]
+ldc_set_location -site {AC34} [get_ports {ddr_dqs_io[1]}]
+ldc_set_location -site {AD22} [get_ports {ddr_dq_io[0]}]
+ldc_set_location -site {AD21} [get_ports {ddr_dq_io[1]}]
+ldc_set_location -site {AE25} [get_ports {ddr_dq_io[2]}]
+ldc_set_location -site {AE24} [get_ports {ddr_dq_io[3]}]
+ldc_set_location -site {AA21} [get_ports {ddr_dq_io[4]}]
+ldc_set_location -site {Y21} [get_ports {ddr_dq_io[5]}]
+ldc_set_location -site {AB24} [get_ports {ddr_dq_io[6]}]
+ldc_set_location -site {AC24} [get_ports {ddr_dq_io[7]}]
+ldc_set_location -site {AD34} [get_ports {ddr_dq_io[8]}]
+ldc_set_location -site {AD33} [get_ports {ddr_dq_io[9]}]
+ldc_set_location -site {AE32} [get_ports {ddr_dq_io[10]}]
+ldc_set_location -site {AE31} [get_ports {ddr_dq_io[11]}]
+ldc_set_location -site {AE33} [get_ports {ddr_dq_io[12]}]
+ldc_set_location -site {AE34} [get_ports {ddr_dq_io[13]}]
+ldc_set_location -site {AB34} [get_ports {ddr_dq_io[14]}]
+ldc_set_location -site {AB33} [get_ports {ddr_dq_io[15]}]
+ldc_set_location -site {AC21} [get_ports {ddr_dmi_io[0]}]
+ldc_set_location -site {AF33} [get_ports {ddr_dmi_io[1]}]
+ldc_set_location -site {AB30} [get_ports {ddr_ck_o[1]}]
+ldc_set_location -site {Y29} [get_ports {ddr_dqs_io[2]}]
+ldc_set_location -site {W23} [get_ports {ddr_dqs_io[3]}]
+ldc_set_location -site {U29} [get_ports {ddr_dq_io[16]}]
+ldc_set_location -site {V29} [get_ports {ddr_dq_io[17]}]
+ldc_set_location -site {U30} [get_ports {ddr_dq_io[18]}]
+ldc_set_location -site {U31} [get_ports {ddr_dq_io[19]}]
+ldc_set_location -site {Y28} [get_ports {ddr_dq_io[20]}]
+ldc_set_location -site {AA28} [get_ports {ddr_dq_io[21]}]
+ldc_set_location -site {V30} [get_ports {ddr_dq_io[22]}]
+ldc_set_location -site {W30} [get_ports {ddr_dq_io[23]}]
+ldc_set_location -site {AA24} [get_ports {ddr_dq_io[24]}]
+ldc_set_location -site {Y24} [get_ports {ddr_dq_io[25]}]
+ldc_set_location -site {U23} [get_ports {ddr_dq_io[26]}]
+ldc_set_location -site {U22} [get_ports {ddr_dq_io[27]}]
+ldc_set_location -site {U25} [get_ports {ddr_dq_io[28]}]
+ldc_set_location -site {T25} [get_ports {ddr_dq_io[29]}]
+ldc_set_location -site {U24} [get_ports {ddr_dq_io[30]}]
+ldc_set_location -site {T24} [get_ports {ddr_dq_io[31]}]
+ldc_set_location -site {V32} [get_ports {ddr_dmi_io[2]}]
+ldc_set_location -site {V22} [get_ports {ddr_dmi_io[3]}]
+
+# The ECLKDIV primitive already has constraint but the inferred name is not good.
+# The constraint below only aims to assign a name to the generated clock.
+create_generated_clock -name {sclk_o} -source [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/pll_inst/gen_ext_outclkdiv*.u_pll.PLLC_MODE_inst/CLKOPHY}] -divide_by 8 [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/ECLKDIVOUT }]
+set_clock_uncertainty -setup 0.075 [get_clocks sclk_o]
+
+# The PLL lock is false as it toggles only once for a long time
+# It is also sampled by double FF 
+set_false_path -to [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/i_csr/p_pll_lock_r1*/D}]
+
+# This signal is asserted and then de-asserted while the clocks are stopped, thus, they are false path.
+set_false_path -to [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST}]
+
+# Constraints for the CDC logic on the DDRPHY's CSR
+set_max_delay -from [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/i_csr/wr_data_buff_r*/Q}] -to [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/i_csr/s_apb_data_r*/D}] -datapath_only 3
+set_max_delay -from [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/i_csr/addr_buff_r*/Q}] -to [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/i_csr/s_apb_addr_r*/D}] -datapath_only 3
+
+#Constraints for MC's FIFO DC instances
+# The distributed RAM data output port to FIFO_DC data output register is already guaranteed by the CDC logic and above constraints.
+set_max_delay -from [get_pins -hierarchical {lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*.dpram_inst/DO*}] -datapath_only 3
+set_max_delay -from [get_pins -hierarchical {lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_rd_rsp/u_data_fifo/u_fifo_dc/*.dpram_inst/DO*}] -datapath_only 3
+set_max_delay -from [get_pins -hierarchical {lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*.dpram_inst/DO*}] -datapath_only 3
+set_max_delay -from [get_pins -hierarchical {lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*.dpram_inst/DO*}] -datapath_only 3
+
+
+# The reset pin of double FF that synchronizes the reset de-assertion is false path
+set_false_path -to [get_pins -hierarchical {lscc_mc_avant_inst/rst_n*/CD}]
+set_false_path -to [get_pins -hierarchical {lscc_mc_avant_inst/reset_n*/CD}]
+set_false_path -to [get_pins -hierarchical {lscc_mc_avant_inst/phy_srst_n*/CD}]
+set_false_path -to [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/start_rst_r*/PD}]
+set_false_path -to [get_pins -hierarchical {lscc_mc_avant_inst/u_ddrphy/s_rst_n_r*/CD}]
+
+# SGDMA
+#set_max_delay -from [get_pins {*sgdmac_core_inst/sgdma_csr/genblk1.cc_mm2s_cfg_addr/genblk1.din[*]/Q}] -to [get_pins {*sgdmac_core_inst/sgdma_csr/genblk1.cc_mm2s_cfg_addr/genblk1.dout[*]/D}] -datapath_only 5 originating in instance sgdma_rx_inst was updated to set_max_delay -from [get_pins {sgdma_rx_inst/sgdmac_core_inst/sg   ....   AvantProjects/GSRD2024p1/Final/100Mhz/AvantGoldenGSRD/soc_golden_gsrd_avant/soc_golden_gsrd_avant/lib/latticesemi.com/ip/sgdma_rx/2.1.1.01/constraints/constraint.sdc
+
+
+#set_false_path -from [get_pins {*sgdma_rx_inst/sgdmac_core_inst/sgdma_mm2s_buff/mm2s_axis/state_fast_Z[*]/Q}] -to [get_pins {*sgdma_rx_inst/sgdmac_core_inst/sgdma_mm2s_buff/fifo_rd_count*/D}]
+#set_false_path -from [get_pins {*sgdma_rx_inst/sgdmac_core_inst/sgdma_mm2s_buff/genblk1.fifo_wr_count_0_0[*]/Q}] -to [get_pins {*sgdma_rx_inst/sgdmac_core_inst/sgdma_mm2s_buff/fifo_rd_count*/D}]
+
+
+# TSE MAC RGMII Constraints
+ldc_set_location -site {Y10} [get_ports rgmii_txc_o]
+ldc_set_location -site {AB12} [get_ports rgmii_txctl_o]
+ldc_set_location -site {Y11} [get_ports {rgmii_txd_o[0]}]
+ldc_set_location -site {AA2} [get_ports {rgmii_txd_o[1]}]
+ldc_set_location -site {Y2} [get_ports {rgmii_txd_o[2]}]
+ldc_set_location -site {AB13} [get_ports {rgmii_txd_o[3]}]
+ldc_set_location -site {Y7} [get_ports rgmii_rxc_i]
+ldc_set_location -site {Y6} [get_ports rgmii_rxctl_i]
+ldc_set_location -site {AC7} [get_ports {rgmii_rxd_i[0]}]
+ldc_set_location -site {AC6} [get_ports {rgmii_rxd_i[1]}]
+ldc_set_location -site {AD6} [get_ports {rgmii_rxd_i[2]}]
+ldc_set_location -site {AD5} [get_ports {rgmii_rxd_i[3]}]
+ldc_set_location -site {AA8} [get_ports rgmii_mdc_o]
+ldc_set_location -site {Y9}  [get_ports rgmii_mdio_o]
+
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18} [get_ports rgmii_rxc_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18} [get_ports rgmii_rxctl_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18} [get_ports {rgmii_rxd_i[*]}]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18 SLEWRATE=FAST} [get_ports rgmii_txc_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18 SLEWRATE=FAST} [get_ports rgmii_txctl_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18 SLEWRATE=FAST} [get_ports {rgmii_txd_o[*]}]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18} [get_ports rgmii_mdc_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18 PULLMODE=UP} [get_ports rgmii_mdio_o]
+ldc_set_location -site {AA9} [get_ports phy_resetn_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18} [get_ports phy_resetn_o]
+
+#create_clock -name {rgmii_rxc_i} -period 8 -waveform {2 6} [get_ports rgmii_rxc_i]
+create_clock -name {rgmii_rxc_i} -period 8 [get_ports rgmii_rxc_i]
+create_clock -name {rgmii_rxc_i_pad_0} -period 8
+create_clock -name {rgmii_txc_o} -period 8 [get_nets rgmii_txc_o]
+# - phase-shift 90 Degree
+set_input_delay -clock [get_clocks rgmii_rxc_i] -max 0.5 [get_ports {rgmii_rxctl_i rgmii_rxd_i[*]}]
+set_input_delay -clock [get_clocks rgmii_rxc_i] -clock_fall -min -add_delay -0.5 [get_ports {rgmii_rxctl_i rgmii_rxd_i[*]}]
+set_output_delay -clock [get_clocks clk_125MHz] -max 1 [get_ports {rgmii_txctl_o rgmii_txd_o[*]}]
+set_output_delay -clock [get_clocks clk_125MHz] -clock_fall -min -add_delay -0.8 [get_ports {rgmii_txctl_o rgmii_txd_o[*]}]
+set_clock_groups -group [get_clocks clk_125MHz] -group [get_clocks clk_125_in] -group [get_clocks rgmii_txc_o] -group [get_clocks rgmii_rxc_i] -group [get_clocks rgmii_mdc_o] -asynchronous
+
+
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports TCK]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports TDI]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports TMS]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS33} [get_ports TDO]
+
+set_false_path -from [get_clocks clk_125MHz] -to [get_clocks pll0_clkout_testclk_o]
+set_false_path -from [get_clocks sclk_o] -to [get_clocks pll0_clkout_testclk_o]
+set_false_path -from [get_clocks pll0_clkout_testclk_o] -to [get_clocks sclk_o]
+set_false_path -from [get_clocks pll0_clkout_testclk_o] -to [get_clocks clk_125MHz]
+set_false_path -from [get_clocks pll0_clkout_testclk_o] -to [get_clocks pll0_inst_clkos_o_net]
+set_false_path -from [get_clocks pll0_clkout_testclk_o] -to [get_clocks pll0_inst_clkos2_o_net]
+set_false_path -from [get_clocks pll0_inst_clkos_o_net] -to [get_clocks pll0_clkout_testclk_o]
+set_false_path -from [get_clocks pll0_inst_clkos2_o_net] -to [get_clocks pll0_clkout_testclk_o]
+
+set_false_path -from [get_clocks clk_125MHz] -to [get_clocks sclk_o]
+set_false_path -from [get_clocks clk_125MHz] -to [get_clocks pll0_inst_clkos_o_net]
+set_false_path -from [get_clocks sclk_o] -to [get_clocks clk_125MHz]
+set_false_path -from [get_clocks sclk_o] -to [get_clocks pll0_inst_clkos_o_net]
+set_false_path -from [get_clocks pll0_inst_clkos_o_net] -to [get_clocks sclk_o]
+set_false_path -from [get_clocks pll0_inst_clkos_o_net] -to [get_clocks clk_125MHz]
+
+set_false_path -from [get_clocks clk_125MHz] -to [get_clocks pll0_inst_clkos2_o_net]
+set_false_path -from [get_clocks sclk_o] -to [get_clocks pll0_inst_clkos2_o_net]
+set_false_path -from [get_clocks pll0_inst_clkos2_o_net] -to [get_clocks sclk_o]
+set_false_path -from [get_clocks pll0_inst_clkos2_o_net] -to [get_clocks clk_125MHz]
+
+set_false_path -from [get_clocks clk_125_in] -to [get_clocks pll0_inst_clkos_o_net]
+set_false_path -from [get_clocks pll0_inst_clkos_o_net] -to [get_clocks clk_125_in]
+
+set_false_path -from [get_ports rstn_i]
+set_false_path -from [get_pins {cpu0_inst/system_resetn_o}]
+
+set_false_path -from [get_clocks clk_125_in] -to [get_clocks pll0_clkout_testclk_o]
+set_false_path -from [get_clocks pll0_clkout_testclk_o] -to [get_clocks clk_125_in]
+

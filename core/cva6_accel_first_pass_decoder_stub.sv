@@ -24,8 +24,4 @@ module cva6_accel_first_pass_decoder
   assign illegal_instr_o         = 1'b0;
   assign is_control_flow_instr_o = 1'b0;
 
-  $error("cva6_accel_first_pass_decoder: instantiated non-functional module stub.\
-          Please replace this with your accelerator's first pass decoder \
-          (or unset ENABLE_ACCELERATOR).");
-
 endmodule : cva6_accel_first_pass_decoder

@@ -1,0 +1,9 @@
+n work axi4_interconnect1_ipgen_lscc_sync_axi_interconnect_Z116_layer0 verilog;
+av .compile_point_summary_status "Mapped";
+av .compile_point_summary_reason "No database";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "No";
+av .compile_point_cputime_used 75.1719;
+av .compile_point_starttime_stamp "Wed Sep 18 11:55:52 2024";
+av .compile_point_endtime_stamp "Wed Sep 18 11:57:08 2024";
+av .compile_point_realtime_used 76.157;

@@ -1,0 +1,1255 @@
+# Wed Sep 18 11:52:36 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: C:\lscc\radiant\2024.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 101R, Built May 14 2024 08:42:08, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 203MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 203MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 194MB peak: 203MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 195MB peak: 203MB)
+
+
+
+
+@N: MF105 |Performing bottom-up mapping of Compile point view:work.mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0(verilog) 
+
+Begin environment creation (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 278MB peak: 278MB)
+
+@W: BN114 :|Removing instance CP_fanout_cell_mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0_inst (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+
+Finished environment creation (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 279MB peak: 279MB)
+
+
+Start loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 279MB peak: 279MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:04s; Memory used current: 279MB peak: 279MB)
+
+
+Begin compile point sub-process log
+
+		 user requested clean build.
+
+@W: BN120 |Unrecognized resource in syn_allowed_resources: ultrarams
+Allowable resources for this device are :
+ff 
+pfu 
+blockmults 
+io 
+pll 
+blockrams 
+fpuram 
+lrams 
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 279MB peak: 279MB)
+
+@W: BN161 :|Net mpmc0_inst.axi_S01_aclk_i[0] has multiple drivers .
+@W: BN120 |Unrecognized resource in syn_allowed_resources: ultrarams
+Allowable resources for this device are :
+ff 
+pfu 
+blockmults 
+io 
+pll 
+blockrams 
+fpuram 
+lrams 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 284MB peak: 292MB)
+
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[64] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[63] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[62] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[61] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[60] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[59] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[58] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[57] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[56] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[55] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[54] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[53] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[52] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[51] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[50] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[49] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[48] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[47] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[46] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[45] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[44] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[43] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[42] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[41] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[40] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[39] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[38] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[37] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[36] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[35] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[65] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[64] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[63] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[62] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[61] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[60] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[59] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[58] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[57] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[56] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[55] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[54] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[53] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[52] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[51] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[50] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[49] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[48] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[47] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[46] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[45] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[44] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[43] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[42] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[41] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[40] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[39] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[38] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[37] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[36] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[35] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[26] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[25] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[24] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[26] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[25] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[24] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[64] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[63] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[62] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[61] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[60] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[59] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[58] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[57] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[56] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[55] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[54] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[53] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[52] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[51] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[50] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[49] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[48] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[47] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[46] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[45] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[44] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[43] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[42] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[41] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[40] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[39] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[38] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[37] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[36] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[35] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[65] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[64] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[63] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0\mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN161 :|Net N_7697 has multiple drivers .
+@W: BN161 :|Net N_7698 has multiple drivers .
+@W: BN161 :|Net N_7699 has multiple drivers .
+@W: BN161 :|Net N_7700 has multiple drivers .
+@W: BN161 :|Net N_7701 has multiple drivers .
+@W: BN161 :|Net N_7702 has multiple drivers .
+@W: BN161 :|Net N_7703 has multiple drivers .
+@W: BN161 :|Net N_7704 has multiple drivers .
+@W: BN161 :|Net N_7705 has multiple drivers .
+@W: BN161 :|Net N_7706 has multiple drivers .
+@W: BN161 :|Net N_7707 has multiple drivers .
+@W: BN161 :|Net N_7708 has multiple drivers .
+@W: BN161 :|Net N_7709 has multiple drivers .
+@W: BN161 :|Net N_7710 has multiple drivers .
+@W: BN161 :|Net N_7711 has multiple drivers .
+@W: BN161 :|Net N_7712 has multiple drivers .
+@W: BN161 :|Net N_7713 has multiple drivers .
+@W: BN161 :|Net N_7714 has multiple drivers .
+@W: BN161 :|Net N_7715 has multiple drivers .
+@W: BN161 :|Net N_7716 has multiple drivers .
+@W: BN161 :|Net N_7717 has multiple drivers .
+@W: BN161 :|Net N_7718 has multiple drivers .
+@W: BN161 :|Net N_7719 has multiple drivers .
+@W: BN161 :|Net N_7720 has multiple drivers .
+@W: BN161 :|Net N_7721 has multiple drivers .
+@W: BN161 :|Net N_7722 has multiple drivers .
+@W: BN161 :|Net N_7723 has multiple drivers .
+@W: BN161 :|Net N_7724 has multiple drivers .
+@W: BN161 :|Net N_7725 has multiple drivers .
+@W: BN161 :|Net N_7726 has multiple drivers .
+@W: BN161 :|Net N_7727 has multiple drivers .
+@W: BN161 :|Net N_7728 has multiple drivers .
+@W: BN161 :|Net N_7729 has multiple drivers .
+@W: BN161 :|Net N_7730 has multiple drivers .
+@W: BN161 :|Net N_7731 has multiple drivers .
+@W: BN161 :|Net N_7732 has multiple drivers .
+@W: BN161 :|Net N_7733 has multiple drivers .
+@W: BN161 :|Net N_7734 has multiple drivers .
+@W: BN161 :|Net N_7735 has multiple drivers .
+@W: BN161 :|Net N_7736 has multiple drivers .
+@W: BN161 :|Net N_7737 has multiple drivers .
+@W: BN161 :|Net N_7738 has multiple drivers .
+@W: BN161 :|Net N_7739 has multiple drivers .
+@W: BN161 :|Net N_7740 has multiple drivers .
+@W: BN161 :|Net N_7741 has multiple drivers .
+@W: BN161 :|Net N_7742 has multiple drivers .
+@W: BN161 :|Net N_7743 has multiple drivers .
+@W: BN161 :|Net N_7744 has multiple drivers .
+@W: BN161 :|Net N_7745 has multiple drivers .
+@W: BN161 :|Net N_7746 has multiple drivers .
+@W: BN161 :|Net N_7747 has multiple drivers .
+@W: BN161 :|Net N_7748 has multiple drivers .
+@W: BN161 :|Net N_7749 has multiple drivers .
+@W: BN161 :|Net N_7750 has multiple drivers .
+@W: BN161 :|Net N_7751 has multiple drivers .
+@W: BN161 :|Net N_7752 has multiple drivers .
+@W: BN161 :|Net N_7753 has multiple drivers .
+@W: BN161 :|Net N_7754 has multiple drivers .
+@W: BN161 :|Net N_7755 has multiple drivers .
+@W: BN161 :|Net N_7756 has multiple drivers .
+@W: BN161 :|Net N_7757 has multiple drivers .
+@W: BN161 :|Net N_7758 has multiple drivers .
+@W: BN161 :|Net N_7759 has multiple drivers .
+@W: BN161 :|Net N_7760 has multiple drivers .
+@W: BN161 :|Net N_7761 has multiple drivers .
+@W: BN161 :|Net N_7762 has multiple drivers .
+@W: BN161 :|Net N_7763 has multiple drivers .
+@W: BN161 :|Net N_7764 has multiple drivers .
+@W: BN161 :|Net N_7765 has multiple drivers .
+@W: BN161 :|Net N_7766 has multiple drivers .
+@W: BN161 :|Net N_7767 has multiple drivers .
+@W: BN161 :|Net N_7768 has multiple drivers .
+@W: BN161 :|Net N_7769 has multiple drivers .
+@W: BN161 :|Net N_7770 has multiple drivers .
+@W: BN161 :|Net N_7771 has multiple drivers .
+@W: BN161 :|Net N_7772 has multiple drivers .
+@W: BN161 :|Net N_7773 has multiple drivers .
+@W: BN161 :|Net N_7774 has multiple drivers .
+@W: BN161 :|Net N_7775 has multiple drivers .
+@W: BN161 :|Net N_7776 has multiple drivers .
+@W: BN161 :|Net N_7777 has multiple drivers .
+@W: BN161 :|Net N_7778 has multiple drivers .
+@W: BN161 :|Net N_7779 has multiple drivers .
+@W: BN161 :|Net N_7780 has multiple drivers .
+@W: BN161 :|Net N_7781 has multiple drivers .
+@W: BN161 :|Net N_7782 has multiple drivers .
+@W: BN161 :|Net N_7783 has multiple drivers .
+@W: BN161 :|Net N_7784 has multiple drivers .
+@W: BN161 :|Net N_7785 has multiple drivers .
+@W: BN161 :|Net N_7786 has multiple drivers .
+@W: BN161 :|Net N_7787 has multiple drivers .
+@W: BN161 :|Net N_7788 has multiple drivers .
+@W: BN161 :|Net N_7789 has multiple drivers .
+@W: BN161 :|Net N_7790 has multiple drivers .
+@W: BN161 :|Net N_7791 has multiple drivers .
+@W: BN161 :|Net N_7792 has multiple drivers .
+@W: BN161 :|Net N_7793 has multiple drivers .
+@W: BN161 :|Net N_7794 has multiple drivers .
+@W: BN161 :|Net N_7795 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0\mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[4].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[5].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[6].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[7].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[8].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[9].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[10].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[11].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[12].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[13].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[18].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[30].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[31].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[32].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[33].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[34].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[35].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[36].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[37].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[38].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[39].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[40].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[41].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[4].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[5].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[6].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[7].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[8].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[9].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[10].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[11].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[12].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[13].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[18].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[30].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[31].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[32].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[33].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[34].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[35].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[36].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[37].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[38].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[39].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[40].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[41].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[8].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[9].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[10].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[11].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[12].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[13].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r_0[18].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[30].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[31].
+
+Only the first 100 messages of id 'FX493' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0\mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0.srr -id FX493' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {FX493} -count unlimited' in the Tcl shell.
+
+Starting factoring (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:00m:59s; Memory used current: 296MB peak: 296MB)
+
+
+Finished factoring (Real Time elapsed 0h:01m:02s; CPU Time elapsed 0h:01m:01s; Memory used current: 315MB peak: 315MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: FX471 |User-specified initial value x is not applied on instance <encrypted> (of type dffe). Initial value must be either 0 or 1.
+@W: BN120 |Unrecognized resource in syn_allowed_resources: ultrarams
+Allowable resources for this device are :
+ff 
+pfu 
+blockmults 
+io 
+pll 
+blockrams 
+fpuram 
+lrams 
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:01m:15s; CPU Time elapsed 0h:01m:14s; Memory used current: 407MB peak: 434MB)
+
+@N: MF169 :|Pushed in register NoName.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:01m:20s; CPU Time elapsed 0h:01m:19s; Memory used current: 413MB peak: 434MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:26s; CPU Time elapsed 0h:01m:25s; Memory used current: 417MB peak: 434MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:27s; CPU Time elapsed 0h:01m:25s; Memory used current: 417MB peak: 434MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:01m:29s; CPU Time elapsed 0h:01m:27s; Memory used current: 417MB peak: 434MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 445MB peak: 483MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:01m:31s		    -3.24ns		3121 /      4446
+   2		0h:01m:31s		    -3.24ns		3075 /      4446
+Timing driven replication report
+Added 15 Registers via timing driven replication
+Added 2 LUTs via timing driven replication
+
+   3		0h:01m:34s		    -2.48ns		3085 /      4461
+   4		0h:01m:35s		    -2.57ns		3087 /      4461
+   5		0h:01m:35s		    -2.55ns		3088 /      4461
+   6		0h:01m:35s		    -2.48ns		3090 /      4461
+   7		0h:01m:35s		    -2.48ns		3090 /      4461
+
+
+   8		0h:01m:36s		    -2.27ns		3087 /      4461
+   9		0h:01m:36s		    -2.27ns		3088 /      4461
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 445MB peak: 483MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@W: BN120 |Unrecognized resource in syn_allowed_resources: ultrarams
+Allowable resources for this device are :
+ff 
+pfu 
+blockmults 
+io 
+pll 
+blockrams 
+fpuram 
+lrams 
+
+Finished restoring hierarchy (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:38s; Memory used current: 450MB peak: 483MB)
+
+
+End compile point sub-process log
+
+@W: MT246 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":1384:58:1384:62|Blackbox PLLC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net mpmc0_inst.axi_S01_aclk_i[0].
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Sep 18 11:54:17 2024
+#
+
+
+Top view:               soc_golden_gsrd
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+                       C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\soc_golden_gsrd_impl_1_cpe.ldc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.962
+
+                                                                                                                               Requested     Estimated     Requested     Estimated                Clock                                                                            Clock                
+Starting Clock                                                                                                                 Frequency     Frequency     Period        Period        Slack      Type                                                                             Group                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk_125_in                                                                                                                     125.0 MHz     NA            8.000         NA            NA         declared                                                                         default_clkgroup     
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock                                              200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_8
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock                                    200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_9
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock                                                           200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_6
+osc0_ipgen_lscc_osc_400s_40s_40_LAV-AT_LAV-AT-E70ES1|clk_out_o_inferred_clock                                                  200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_4
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock                                                                  200.0 MHz     143.6 MHz     5.000         6.963         -1.962     inferred                                                                         Inferred_clkgroup_0_3
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock                                                                 200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_1
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos_o_inferred_clock                                                                  200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_7
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_testclk_o_inferred_clock                                                                200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_5
+pll_refclk_i                                                                                                                   100.0 MHz     NA            10.000        NA            NA         declared                                                                         default_clkgroup     
+soc_golden_gsrd|rgmii_rxc_i                                                                                                    200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_2
+tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric_noreg_1s_9s|_FWFT_ENABLE_re_r_derived_clock     200.0 MHz     NA            5.000         NA            NA         derived (from pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock)     Inferred_clkgroup_0_3
+System                                                                                                                         200.0 MHz     300.3 MHz     5.000         3.330         1.670      system                                                                           system_clkgroup      
+========================================================================================================================================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                       Ending                                                         |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                         System                                                         |  5.000       1.670   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                         pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       -0.248  |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  System                                                         |  5.000       -0.659  |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       -1.963  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                                                                                                                                                                  Starting                                                                                                                                                                                                                                                                             Arrival           
+Instance                                                                                                                                                                                                                                                          Reference                                                         Type     Pin     Net                                                                                                                                                                                               Time        Slack 
+                                                                                                                                                                                                                                                                  Clock                                                                                                                                                                                                                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S01_arlen_i[0]                                                                                                                                                                     1.069       -1.962
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[17]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S01_arlen_i[1]                                                                                                                                                                     1.063       -1.956
+axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S00_arlen_i[0]                                                                                                                                                                     1.045       -1.813
+axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[17]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S00_arlen_i[1]                                                                                                                                                                     1.027       -1.796
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[28]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.EXT_SLV_ACLK_RO_WR_ACCESS_BLK\.u_read_downsizer.u_addr_downsizer.axsize_i[1]     1.133       -1.793
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[20]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S01_arlen_i[4]                                                                                                                                                                     1.051       -1.792
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[27]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.EXT_SLV_ACLK_RO_WR_ACCESS_BLK\.u_read_downsizer.u_addr_downsizer.axsize_i[0]     1.132       -1.792
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[21]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S01_arlen_i[5]                                                                                                                                                                     1.045       -1.786
+axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[18]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S00_arlen_i[2]                                                                                                                                                                     1.009       -1.778
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[22]     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDE      Q       mpmc0_inst.axi_S01_arlen_i[6]                                                                                                                                                                     1.027       -1.768
+=========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                                                                           Required           
+Instance      Reference                                                         Type        Pin     Net                                          Time         Slack 
+              Clock                                                                                                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       n9HGoFasw6xIcbaeerCwcrJ                      4.946        -1.962
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       n9HGoFasw6xIcbaeer9oq23                      4.946        -1.813
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkuzeinDwq     4.946        -1.481
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkuzeinDwr     4.946        -1.481
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkuzeinDwq     4.946        -1.481
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkuzeinDwr     4.946        -1.481
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkqBnIbK16     4.946        -1.420
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkqBnIbK17     4.946        -1.420
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkqBnIbK16     4.946        -1.420
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       7t2kko0vrqxAqi2vz7drsB47J9yyp3wkqBnIbK17     4.946        -1.420
+====================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      6.909
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.963
+
+    Number of logic level(s):                10
+    Starting point:                          axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16] / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                                                                                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                                                                                                                              Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16]     FDE         Q        Out     1.069     1.069 r     -         
+mpmc0_inst.axi_S01_arlen_i[0]                                                                                                                                                                                                                                     Net         -        -       -         -           15        
+encrypted                                                                                                                                                                                                                                                         LUT4        A        In      0.000     1.069 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     1.777 r     -         
+qdwhakuqpajh7z0vrHqB1bc                                                                                                                                                                                                                                           Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     1.777 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     2.485 r     -         
+f4H8IjjiDyrvd0h12kkyf9mts6lbe                                                                                                                                                                                                                                     Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.485 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     2.875 r     -         
+nwu8eAxpGpb7b                                                                                                                                                                                                                                                     Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.875 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.660     3.535 r     -         
+w8EJ0b1rCt                                                                                                                                                                                                                                                        Net         -        -       -         -           2         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     3.535 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     4.141 r     -         
+bzp0b5k8cyJp0GBqvDozHj3bJ                                                                                                                                                                                                                                         Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       A1       In      0.000     4.141 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.900     5.041 r     -         
+czor0GA0DrAHvxjqlAdiCv                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.041 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       S0       Out     0.481     5.522 r     -         
+e9i3HrsrvijlBkLbyI0l3qLw90mCq                                                                                                                                                                                                                                     Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     5.522 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     5.912 r     -         
+bLgwu7DriAAE9DtcHLKALs3fDvnyLrC1xba                                                                                                                                                                                                                               Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     5.912 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     6.303 r     -         
+bLgwu7DriAAE9DtcHLKALs3fDvnyLrC1xbh                                                                                                                                                                                                                               Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     6.303 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     6.909 r     -         
+n9HGoFasw6xIcbaeerCwcrJ                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         FD1P3DX     D        In      0.000     6.909 r     -         
+===============================================================================================================================================================================================================================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      6.902
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.957
+
+    Number of logic level(s):                10
+    Starting point:                          axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[17] / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                                                                                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                                                                                                                              Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[17]     FDE         Q        Out     1.063     1.063 r     -         
+mpmc0_inst.axi_S01_arlen_i[1]                                                                                                                                                                                                                                     Net         -        -       -         -           13        
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     1.063 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     1.771 r     -         
+qdwhakuqpajh7z0vrHqB1bc                                                                                                                                                                                                                                           Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     1.771 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     2.479 r     -         
+f4H8IjjiDyrvd0h12kkyf9mts6lbe                                                                                                                                                                                                                                     Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.479 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     2.869 r     -         
+nwu8eAxpGpb7b                                                                                                                                                                                                                                                     Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.869 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.660     3.529 r     -         
+w8EJ0b1rCt                                                                                                                                                                                                                                                        Net         -        -       -         -           2         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     3.529 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     4.135 r     -         
+bzp0b5k8cyJp0GBqvDozHj3bJ                                                                                                                                                                                                                                         Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       A1       In      0.000     4.135 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.900     5.035 r     -         
+czor0GA0DrAHvxjqlAdiCv                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.035 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       S0       Out     0.481     5.516 r     -         
+e9i3HrsrvijlBkLbyI0l3qLw90mCq                                                                                                                                                                                                                                     Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     5.516 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     5.907 r     -         
+bLgwu7DriAAE9DtcHLKALs3fDvnyLrC1xba                                                                                                                                                                                                                               Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     5.907 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     6.296 r     -         
+bLgwu7DriAAE9DtcHLKALs3fDvnyLrC1xbh                                                                                                                                                                                                                               Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     6.296 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     6.902 r     -         
+n9HGoFasw6xIcbaeerCwcrJ                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         FD1P3DX     D        In      0.000     6.902 r     -         
+===============================================================================================================================================================================================================================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      6.763
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.817
+
+    Number of logic level(s):                13
+    Starting point:                          axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16] / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                                                                                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                                                                                                                              Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16]     FDE         Q        Out     1.069     1.069 r     -         
+mpmc0_inst.axi_S01_arlen_i[0]                                                                                                                                                                                                                                     Net         -        -       -         -           15        
+encrypted                                                                                                                                                                                                                                                         LUT4        A        In      0.000     1.069 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     1.777 r     -         
+qdwhakuqpajh7z0vrHqB1bc                                                                                                                                                                                                                                           Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     1.777 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     2.485 r     -         
+f4H8IjjiDyrvd0h12kkyf9mts6lbe                                                                                                                                                                                                                                     Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.485 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     2.875 r     -         
+nwu8eAxpGpb7b                                                                                                                                                                                                                                                     Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.875 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.660     3.535 r     -         
+w8EJ0b1rCt                                                                                                                                                                                                                                                        Net         -        -       -         -           2         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     3.535 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     4.141 r     -         
+bzp0b5k8cyJp0GBqvDozHj3bJ                                                                                                                                                                                                                                         Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       A1       In      0.000     4.141 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.900     5.041 r     -         
+czor0GA0DrAHvxjqlAdiCv                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.041 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.102 r     -         
+czor0GA0DrAHvxjqlAdiCx                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.102 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.163 r     -         
+czor0GA0DrAHvxjqlAdiCz                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.163 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.224 r     -         
+nwI35ucLbKAD817C46qKI17                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.224 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.285 r     -         
+nwI35ucLbKAD817C46qKI19                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.285 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       S1       Out     0.481     5.766 r     -         
+zl3Lxm7JaH7oC00EeJ1JHwL8aJuqrb                                                                                                                                                                                                                                    Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     5.766 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     6.157 r     -         
+bLgwu7DriAAE9DtcHLKALs3fDvnyLrC1xbf                                                                                                                                                                                                                               Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     6.157 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     6.763 r     -         
+n9HGoFasw6xIcbaeerCwcrJ                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         FD1P3DX     D        In      0.000     6.763 r     -         
+===============================================================================================================================================================================================================================================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      6.763
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.817
+
+    Number of logic level(s):                13
+    Starting point:                          axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16] / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                                                                                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                                                                                                                              Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16]     FDE         Q        Out     1.069     1.069 r     -         
+mpmc0_inst.axi_S01_arlen_i[0]                                                                                                                                                                                                                                     Net         -        -       -         -           15        
+encrypted                                                                                                                                                                                                                                                         LUT4        A        In      0.000     1.069 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     1.777 r     -         
+qdwhakuqpajh7z0vrHqB1bc                                                                                                                                                                                                                                           Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     1.777 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.708     2.485 r     -         
+f4H8IjjiDyrvd0h12kkyf9mts6lbe                                                                                                                                                                                                                                     Net         -        -       -         -           3         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.485 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     2.875 r     -         
+nwu8eAxpGpb7b                                                                                                                                                                                                                                                     Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     2.875 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.660     3.535 r     -         
+w8EJ0b1rCt                                                                                                                                                                                                                                                        Net         -        -       -         -           2         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     3.535 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     4.141 r     -         
+bzp0b5k8cyJp0GBqvDozHj3bJ                                                                                                                                                                                                                                         Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       A1       In      0.000     4.141 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.900     5.041 r     -         
+czor0GA0DrAHvxjqlAdiCv                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.041 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.102 r     -         
+czor0GA0DrAHvxjqlAdiCx                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.102 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.163 r     -         
+czor0GA0DrAHvxjqlAdiCz                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.163 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.224 r     -         
+nwI35ucLbKAD817C46qKI17                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.224 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     5.285 r     -         
+nwI35ucLbKAD817C46qKI19                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     5.285 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       S0       Out     0.481     5.766 r     -         
+zl3Lxm7JaH7oC00EeJ1JHwL8aJuqra                                                                                                                                                                                                                                    Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        A        In      0.000     5.766 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     6.157 r     -         
+bLgwu7DriAAE9DtcHLKALs3fDvnyLrC1xbf                                                                                                                                                                                                                               Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        B        In      0.000     6.157 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     6.763 r     -         
+n9HGoFasw6xIcbaeerCwcrJ                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         FD1P3DX     D        In      0.000     6.763 r     -         
+===============================================================================================================================================================================================================================================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      6.760
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.814
+
+    Number of logic level(s):                10
+    Starting point:                          axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16] / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                                                                                                                                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                                                                                                                              Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+axi4_interconnect1_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16]     FDE         Q        Out     1.045     1.045 r     -         
+mpmc0_inst.axi_S00_arlen_i[0]                                                                                                                                                                                                                                     Net         -        -       -         -           9         
+encrypted                                                                                                                                                                                                                                                         LUT4        A        In      0.000     1.045 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.762     1.807 r     -         
+qdwhakuqpajh7z0vrHqB1bd                                                                                                                                                                                                                                           Net         -        -       -         -           5         
+encrypted                                                                                                                                                                                                                                                         LUT4        C        In      0.000     1.807 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.780     2.587 r     -         
+qdwhakuqpajh7z0vrHqB1bf                                                                                                                                                                                                                                           Net         -        -       -         -           7         
+encrypted                                                                                                                                                                                                                                                         LUT4        C        In      0.000     2.587 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.738     3.325 r     -         
+qdwhakuqpajh7z0vrHqB1bh                                                                                                                                                                                                                                           Net         -        -       -         -           4         
+encrypted                                                                                                                                                                                                                                                         LUT4        C        In      0.000     3.325 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     3.931 r     -         
+nwwI4LorabLH7                                                                                                                                                                                                                                                     Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       B1       In      0.000     3.931 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.900     4.831 r     -         
+czor0GA0DrAHvxjqlAdiCx                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     4.831 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       COUT     Out     0.061     4.892 r     -         
+czor0GA0DrAHvxjqlAdiCz                                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         CCU2C       CIN      In      0.000     4.892 r     -         
+encrypted                                                                                                                                                                                                                                                         CCU2C       S1       Out     0.481     5.373 r     -         
+nwI35ucLbKAD817C46qKI16                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     5.373 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     5.763 r     -         
+bisc4cm5yAayhaloiojJbtHIqm3q2dvdEoI5H8                                                                                                                                                                                                                            Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     5.763 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.390     6.154 r     -         
+bLgwu7DriAAE9DtcHLKALs3fDvnyLrC1xbj                                                                                                                                                                                                                               Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         LUT4        D        In      0.000     6.154 r     -         
+encrypted                                                                                                                                                                                                                                                         LUT4        Z        Out     0.606     6.760 r     -         
+n9HGoFasw6xIcbaeer9oq23                                                                                                                                                                                                                                           Net         -        -       -         -           1         
+encrypted                                                                                                                                                                                                                                                         FD1P3DX     D        In      0.000     6.760 r     -         
+===============================================================================================================================================================================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                            Arrival           
+Instance      Reference     Type        Pin     Net               Time        Slack 
+              Clock                                                                 
+------------------------------------------------------------------------------------
+encrypted     System        WIDEFN9     Z       j5HocgkHGdj29     0.000       -0.248
+encrypted     System        WIDEFN9     Z       j5Hocglmz6lsd     0.000       -0.248
+encrypted     System        WIDEFN9     Z       j5HocglncJF29     0.000       -0.248
+encrypted     System        WIDEFN9     Z       j5Hocgl380Hsd     0.000       -0.248
+encrypted     System        WIDEFN9     Z       dcByyoqri         0.000       0.123 
+encrypted     System        WIDEFN9     Z       dcByyoqwv         0.000       0.123 
+encrypted     System        WIDEFN9     Z       dcByyoqgs         0.000       0.331 
+encrypted     System        WIDEFN9     Z       dcByyoqgv         0.000       0.331 
+encrypted     System        WIDEFN9     Z       dcByyoqlD         0.000       0.331 
+encrypted     System        WIDEFN9     Z       dcByyoqra         0.000       0.331 
+====================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                          Required           
+Instance      Reference     Type        Pin     Net                                             Time         Slack 
+              Clock                                                                                                
+-------------------------------------------------------------------------------------------------------------------
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDHxbb     4.946        -0.248
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDIdwr     4.946        -0.248
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDHxbb     4.946        -0.248
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDIdwr     4.946        -0.248
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc180bkc8iyCr     4.946        -0.188
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc180bkc8jfl7     4.946        -0.188
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc180bkc8iyCr     4.946        -0.188
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc180bkc8jfl7     4.946        -0.188
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9IgczxLCtb2v017     4.946        -0.127
+encrypted     System        FD1P3DX     D       tCnhDGtkGnpFemj9FG7L46K4BBcd9IgczxLCtb2whbb     4.946        -0.127
+===================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.194
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.248
+
+    Number of logic level(s):                10
+    Starting point:                          encrypted / Z
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+encrypted                                       WIDEFN9     Z        Out     0.000     0.000 r     -         
+j5HocgkHGdj29                                   Net         -        -       -         -           1         
+encrypted                                       LUT4        A        In      0.000     0.000 r     -         
+encrypted                                       LUT4        Z        Out     0.762     0.762 r     -         
+j5Hocglm2DJht                                   Net         -        -       -         -           5         
+encrypted                                       LUT4        A        In      0.000     0.762 r     -         
+encrypted                                       LUT4        Z        Out     0.390     1.152 f     -         
+btF8Dxhmq0n6iwt                                 Net         -        -       -         -           1         
+encrypted                                       LUT4        C        In      0.000     1.152 f     -         
+encrypted                                       LUT4        Z        Out     0.660     1.812 r     -         
+ebmGqDIra                                       Net         -        -       -         -           2         
+encrypted                                       LUT4        D        In      0.000     1.812 r     -         
+encrypted                                       LUT4        Z        Out     0.840     2.652 r     -         
+b0bAtKqAvFtqb4C8lbIfnwc7z                       Net         -        -       -         -           21        
+encrypted                                       LUT4        C        In      0.000     2.652 r     -         
+encrypted                                       LUT4        Z        Out     0.708     3.360 r     -         
+bzp0b5k8cyJp0GBqvDoGohDhn                       Net         -        -       -         -           3         
+encrypted                                       CCU2C       A0       In      0.000     3.360 r     -         
+encrypted                                       CCU2C       COUT     Out     0.900     4.260 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H7               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.260 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.321 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H9               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.321 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.382 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HB               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.382 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.443 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HD               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.443 r     -         
+encrypted                                       CCU2C       S1       Out     0.751     5.194 r     -         
+tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDIdwr     Net         -        -       -         -           2         
+encrypted                                       FD1P3DX     D        In      0.000     5.194 r     -         
+=============================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.194
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.248
+
+    Number of logic level(s):                10
+    Starting point:                          encrypted / Z
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+encrypted                                       WIDEFN9     Z        Out     0.000     0.000 r     -         
+j5Hocglmz6lsd                                   Net         -        -       -         -           1         
+encrypted                                       LUT4        B        In      0.000     0.000 r     -         
+encrypted                                       LUT4        Z        Out     0.762     0.762 r     -         
+j5Hocglm2DJht                                   Net         -        -       -         -           5         
+encrypted                                       LUT4        A        In      0.000     0.762 r     -         
+encrypted                                       LUT4        Z        Out     0.390     1.152 f     -         
+btF8Dxhmq0n6iwt                                 Net         -        -       -         -           1         
+encrypted                                       LUT4        C        In      0.000     1.152 f     -         
+encrypted                                       LUT4        Z        Out     0.660     1.812 r     -         
+ebmGqDIra                                       Net         -        -       -         -           2         
+encrypted                                       LUT4        D        In      0.000     1.812 r     -         
+encrypted                                       LUT4        Z        Out     0.840     2.652 r     -         
+b0bAtKqAvFtqb4C8lbIfnwc7z                       Net         -        -       -         -           21        
+encrypted                                       LUT4        C        In      0.000     2.652 r     -         
+encrypted                                       LUT4        Z        Out     0.708     3.360 r     -         
+bzp0b5k8cyJp0GBqvDoGohDhn                       Net         -        -       -         -           3         
+encrypted                                       CCU2C       A0       In      0.000     3.360 r     -         
+encrypted                                       CCU2C       COUT     Out     0.900     4.260 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H7               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.260 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.321 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H9               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.321 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.382 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HB               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.382 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.443 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HD               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.443 r     -         
+encrypted                                       CCU2C       S1       Out     0.751     5.194 r     -         
+tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDIdwr     Net         -        -       -         -           2         
+encrypted                                       FD1P3DX     D        In      0.000     5.194 r     -         
+=============================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.194
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.248
+
+    Number of logic level(s):                10
+    Starting point:                          encrypted / Z
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+encrypted                                       WIDEFN9     Z        Out     0.000     0.000 r     -         
+j5HocglncJF29                                   Net         -        -       -         -           1         
+encrypted                                       LUT4        A        In      0.000     0.000 r     -         
+encrypted                                       LUT4        Z        Out     0.762     0.762 r     -         
+j5Hocgl3B83ht                                   Net         -        -       -         -           5         
+encrypted                                       LUT4        B        In      0.000     0.762 r     -         
+encrypted                                       LUT4        Z        Out     0.390     1.152 f     -         
+btF8Dxhmq0n6iwt                                 Net         -        -       -         -           1         
+encrypted                                       LUT4        C        In      0.000     1.152 f     -         
+encrypted                                       LUT4        Z        Out     0.660     1.812 r     -         
+ebmGqDIra                                       Net         -        -       -         -           2         
+encrypted                                       LUT4        D        In      0.000     1.812 r     -         
+encrypted                                       LUT4        Z        Out     0.840     2.652 r     -         
+b0bAtKqAvFtqb4C8lbIfnwc7z                       Net         -        -       -         -           21        
+encrypted                                       LUT4        C        In      0.000     2.652 r     -         
+encrypted                                       LUT4        Z        Out     0.708     3.360 r     -         
+bzp0b5k8cyJp0GBqvDoGohDhn                       Net         -        -       -         -           3         
+encrypted                                       CCU2C       A0       In      0.000     3.360 r     -         
+encrypted                                       CCU2C       COUT     Out     0.900     4.260 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H7               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.260 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.321 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H9               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.321 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.382 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HB               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.382 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.443 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HD               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.443 r     -         
+encrypted                                       CCU2C       S1       Out     0.751     5.194 r     -         
+tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDIdwr     Net         -        -       -         -           2         
+encrypted                                       FD1P3DX     D        In      0.000     5.194 r     -         
+=============================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.194
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.248
+
+    Number of logic level(s):                10
+    Starting point:                          encrypted / Z
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+encrypted                                       WIDEFN9     Z        Out     0.000     0.000 r     -         
+j5Hocgl380Hsd                                   Net         -        -       -         -           1         
+encrypted                                       LUT4        B        In      0.000     0.000 r     -         
+encrypted                                       LUT4        Z        Out     0.762     0.762 r     -         
+j5Hocgl3B83ht                                   Net         -        -       -         -           5         
+encrypted                                       LUT4        B        In      0.000     0.762 r     -         
+encrypted                                       LUT4        Z        Out     0.390     1.152 f     -         
+btF8Dxhmq0n6iwt                                 Net         -        -       -         -           1         
+encrypted                                       LUT4        C        In      0.000     1.152 f     -         
+encrypted                                       LUT4        Z        Out     0.660     1.812 r     -         
+ebmGqDIra                                       Net         -        -       -         -           2         
+encrypted                                       LUT4        D        In      0.000     1.812 r     -         
+encrypted                                       LUT4        Z        Out     0.840     2.652 r     -         
+b0bAtKqAvFtqb4C8lbIfnwc7z                       Net         -        -       -         -           21        
+encrypted                                       LUT4        C        In      0.000     2.652 r     -         
+encrypted                                       LUT4        Z        Out     0.708     3.360 r     -         
+bzp0b5k8cyJp0GBqvDoGohDhn                       Net         -        -       -         -           3         
+encrypted                                       CCU2C       A0       In      0.000     3.360 r     -         
+encrypted                                       CCU2C       COUT     Out     0.900     4.260 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H7               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.260 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.321 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H9               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.321 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.382 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HB               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.382 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.443 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HD               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.443 r     -         
+encrypted                                       CCU2C       S1       Out     0.751     5.194 r     -         
+tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDIdwr     Net         -        -       -         -           2         
+encrypted                                       FD1P3DX     D        In      0.000     5.194 r     -         
+=============================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.194
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -0.248
+
+    Number of logic level(s):                10
+    Starting point:                          encrypted / Z
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+encrypted                                       WIDEFN9     Z        Out     0.000     0.000 r     -         
+j5HocgkHGdj29                                   Net         -        -       -         -           1         
+encrypted                                       LUT4        A        In      0.000     0.000 r     -         
+encrypted                                       LUT4        Z        Out     0.762     0.762 r     -         
+j5Hocglm2DJht                                   Net         -        -       -         -           5         
+encrypted                                       LUT4        A        In      0.000     0.762 r     -         
+encrypted                                       LUT4        Z        Out     0.390     1.152 f     -         
+btF8Dxhmq0n6iwt                                 Net         -        -       -         -           1         
+encrypted                                       LUT4        C        In      0.000     1.152 f     -         
+encrypted                                       LUT4        Z        Out     0.660     1.812 r     -         
+ebmGqDIra                                       Net         -        -       -         -           2         
+encrypted                                       LUT4        D        In      0.000     1.812 r     -         
+encrypted                                       LUT4        Z        Out     0.840     2.652 r     -         
+b0bAtKqAvFtqb4C8lbIfnwc7z                       Net         -        -       -         -           21        
+encrypted                                       LUT4        C        In      0.000     2.652 r     -         
+encrypted                                       LUT4        Z        Out     0.708     3.360 r     -         
+bzp0b5k8cyJp0GBqvDoGohDm3                       Net         -        -       -         -           3         
+encrypted                                       CCU2C       A1       In      0.000     3.360 r     -         
+encrypted                                       CCU2C       COUT     Out     0.900     4.260 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H7               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.260 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.321 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5H9               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.321 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.382 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HB               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.382 r     -         
+encrypted                                       CCU2C       COUT     Out     0.061     4.443 r     -         
+rEkj4bICsquIF2tk3iplrn3bICvz4I5HD               Net         -        -       -         -           1         
+encrypted                                       CCU2C       CIN      In      0.000     4.443 r     -         
+encrypted                                       CCU2C       S1       Out     0.751     5.194 r     -         
+tCnhDGtkGnpFemj9FG7L46K4BBcd9Igc3JembdDIdwr     Net         -        -       -         -           2         
+encrypted                                       FD1P3DX     D        In      0.000     5.194 r     -         
+=============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":121:0:121:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":123:0:123:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+None
+Writing compile point status file C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                                      Status       Reason      
+-------------------------------------------------------------------
+mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0     Remapped     User request
+===================================================================
+
+Process took 0h:01m:43s realtime, 0h:01m:41s cputime
+# Wed Sep 18 11:54:20 2024
+
+###########################################################]

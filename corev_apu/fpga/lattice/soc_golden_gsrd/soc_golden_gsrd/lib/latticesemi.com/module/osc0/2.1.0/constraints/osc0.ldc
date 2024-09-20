@@ -1,0 +1,31 @@
+set device "LAV-AT-E70ES1"
+set device_int "ap6a400be"
+set package "LFG1156"
+set package_int "LFG1156"
+set speed "1"
+set speed_int "1"
+set operation "Commercial"
+set family "LAV-AT"
+set architecture "ap6a00b"
+set partnumber "LAV-AT-E70ES1-1LFG1156C"
+set WRAPPER_INST "lscc_osc_inst"
+set USER_CLK_DIVIDEND 400
+set CLK_DIV_DEC 40
+set CLK_DIV "40"
+set FAMILY "LAV-AT"
+set DEVICE "LAV-AT-E70ES1"
+
+
+
+if {$USER_CLK_DIVIDEND == 400} {
+set CLK_FREQ [expr {double(round(400000000/$CLK_DIV_DEC))/1000000}]
+}
+if {$USER_CLK_DIVIDEND == 320} {
+set CLK_FREQ [expr {double(round(320000000/$CLK_DIV_DEC))/1000000}]
+}
+
+set CLK_PERIOD [expr {double(round(1000000/$CLK_FREQ))/1000}]
+
+create_clock -name {clk_out_o} -period $CLK_PERIOD [get_ports clk_out_o]
+
+    

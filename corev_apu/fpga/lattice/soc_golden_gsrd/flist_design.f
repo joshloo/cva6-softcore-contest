@@ -1,0 +1,21 @@
+## Radiant Files
+soc_golden_gsrd/lib/latticesemi.com/ip/tse_to_rgmii_bridge0/1.0.0/tse_to_rgmii_bridge0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/axi2apb0/1.2.0/axi2apb0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/mpmc0/1.0.0/mpmc0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/rst_sync0/3.0.0/rst_sync0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/uart0/1.3.0/uart0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/axi4_interconnect1/2.0.1/axi4_interconnect1.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/gpio0/1.6.2/gpio0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/axi_register_slice0/1.0.0/axi_register_slice0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/axi4_interconnect0/2.0.1/axi4_interconnect0.ipx
+soc_golden_gsrd/lib/latticesemi.com/module/pll0/2.5.0/pll0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/mbconfig0/1.0.0/mbconfig0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/lpddr4_mc_contr0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/tse_mac0/1.6.0/tse_mac0.ipx
+soc_golden_gsrd/lib/latticesemi.com/module/osc0/2.1.0/osc0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/cpu0/2.4.0/cpu0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/sysmem0/2.2.0/sysmem0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/qspi0/1.2.0/qspi0.ipx
+soc_golden_gsrd/lib/latticesemi.com/ip/sgdma0/2.2.0/sgdma0.ipx
+soc_golden_gsrd/lib/latticesemi.com/module/apb_interconnect0/1.2.1/apb_interconnect0.ipx
+soc_golden_gsrd/soc_golden_gsrd.v

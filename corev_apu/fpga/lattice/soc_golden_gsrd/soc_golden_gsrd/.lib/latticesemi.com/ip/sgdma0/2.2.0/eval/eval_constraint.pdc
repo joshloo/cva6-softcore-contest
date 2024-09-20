@@ -1,0 +1,7 @@
+ldc_set_location -site {N4} [get_ports rstn]
+ldc_set_location -site {P24} [get_ports clk]
+ldc_set_location -site {W24} [get_ports axil_clk]
+ldc_set_location -site {R5} [get_ports data_mismatch]
+
+set_max_delay -from [get_pins */sgdmac_core_inst/sgdma_csr/genblk1.cc_s2mm_cfg_addr/genblk1.din*.ff_inst/Q] -to [get_pins */sgdmac_core_inst/sgdma_csr/genblk1.cc_s2mm_cfg_addr/genblk1.dout*.ff_inst/DF] -datapath_only 5
+set_max_delay -from [get_pins */sgdmac_core_inst/sgdma_csr/genblk1.cc_mm2s_cfg_addr/genblk1.din*.ff_inst/Q] -to [get_pins */sgdmac_core_inst/sgdma_csr/genblk1.cc_mm2s_cfg_addr/genblk1.dout*.ff_inst/DF] -datapath_only 5

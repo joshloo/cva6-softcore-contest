@@ -315,7 +315,7 @@ module axi_dw_upsizer #(
     axi_pkg::size_t orig_ar_size;
   } r_req_t;
 
-  for (genvar t = 0; unsigned'(t) < AxiMaxReads; t++) begin: gen_read_upsizer
+  for (genvar t = 0; $unsigned(t) < AxiMaxReads; t++) begin: gen_read_upsizer
     r_state_e r_state_d, r_state_q;
     r_req_t r_req_d    , r_req_q  ;
 

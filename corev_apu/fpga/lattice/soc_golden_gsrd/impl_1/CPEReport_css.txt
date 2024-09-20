@@ -1,0 +1,154 @@
+###File created by Lattice CPE. Do not modify.###
+create_clock -name {osc0_inst_clk_out_o_net} -period 100 [get_pins osc0_inst/lscc_osc_inst/u_OSC.OSCE_inst/CLKOUT] originating in top was kept as is.
+
+create_clock -name {pll_refclk_i} -period 10 -waveform {0.000 5.000} [get_ports pll_refclk_i] originating in top was kept as is.
+
+create_clock -name {clk_125_in} -period 8 -waveform {0.000 4.000} [get_ports clk_125_in] originating in top was kept as is.
+
+create_generated_clock -name {clk_125MHz} -source [get_pins pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKI] -divide_by 1 -multiply_by 1 [get_pins pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKOP] originating in top was kept as is.
+
+create_clock -name {clk_out_o} -period 100 [get_ports clk_out_o] originating in instance osc0_inst in IP osc0 was removed because it conflicts with a top-level constraint.
+
+create_clock -name {clki_i} -period 8 [get_ports clki_i] originating in instance pll0_inst in IP pll0 was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {a_clk_i} -period 8 [get_ports a_clk_i] originating in instance qspi0_inst in IP qspi0 was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {axi_clk} -period 8 [get_ports clk] originating in instance sgdma0_inst in IP constraint was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {axil_clk} -period 8 [get_ports axil_clk] originating in instance sgdma0_inst in IP constraint was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {clk_i} -period 10 [get_ports clk_i] originating in instance tse_mac0_inst in IP tse_mac0 was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {txmac_clk_i} -period 8 [get_ports txmac_clk_i] originating in instance tse_mac0_inst in IP tse_mac0 was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {rxmac_clk_i} -period 8 [get_ports rxmac_clk_i] originating in instance tse_mac0_inst in IP tse_mac0 was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {mdc_i} -period 40 [get_ports mdc_i] originating in instance tse_mac0_inst in IP tse_mac0 was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+set_clock_groups -group [get_clocks clk_i] -group [get_clocks txmac_clk_i] -group [get_clocks rxmac_clk_i] -group [get_clocks mdc_i] -asynchronous originating in instance tse_mac0_inst in IP tse_mac0 was removed because all of the referenced clocks have been superseded by other clocks in the design.
+
+# Top level Clocks originating in top was kept as is.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I} [get_ports pll_refclk_i] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I} [get_ports pll_refclk_i] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[0]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[1]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[1]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[2]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[2]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[3]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[3]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[0]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[1]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[1]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[2]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[2]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[3]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[3]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[4]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[4]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[5]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[5]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[6]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[6]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[7]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[7]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[8]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[8]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[9]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[9]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[10]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[10]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[11]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[11]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[12]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[12]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[13]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[13]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[14]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[14]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[15]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[15]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[16]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[16]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[17]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[17]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[18]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[18]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[19]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[19]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[20]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[20]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[21]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[21]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[22]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[22]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[23]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[23]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[24]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[24]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[25]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[25]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[26]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[26]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[27]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[27]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[28]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[28]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[29]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[29]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[30]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[30]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[31]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[31]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[0]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[1]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[1]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[2]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[2]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[3]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[3]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ck_o[0]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ck_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ck_o[1]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ck_o[1]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_cke_o[0]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_cke_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_cs_o[0]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_cs_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[0]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[0]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[1]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[1]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[2]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[2]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[3]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[3]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[4]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[4]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[5]}] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[5]}] and kept.
+
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM} [get_ports ddr_reset_n_o] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM} [get_ports ddr_reset_n_o] and kept.
+
+set_false_path -to [get_pins lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to set_false_path -to [get_pins {lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST }] and kept.
+
+set_false_path -to [get_pins lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC] originating in instance lpddr4_mc_contr0_inst in IP constraint was updated to set_false_path -to [get_pins {lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC }] and kept.
+
+# IO_TYPE constraint - Refclk originating in instance pll0_inst in IP pll0 was kept as is.
+
+# if {$PLL_REFCLK_FROM_PIN} { originating in instance pll0_inst in IP pll0 was kept as is.
+
+#   ldc_set_port -iobuf IO_TYPE=$IO_TYPE [get_ports clki_i] originating in instance pll0_inst in IP pll0 was kept as is.
+
+# } originating in instance pll0_inst in IP pll0 was kept as is.
+
+# constraint to force the CLKRES signal to use a local clock originating in instance pll0_inst in IP pll0 was kept as is.
+
+ldc_set_attribute {USE_PRIMARY=FALSE} [get_nets lscc_pll_inst/clkout_testclk_o] originating in instance pll0_inst in IP pll0 was updated to ldc_set_attribute {USE_PRIMARY=FALSE} [get_nets {pll0_inst/lscc_pll_inst/clkout_testclk_o }] and kept.
+
+#create_generated_clock -name {sclk_o} -source [get_ports a_clk_i] -divide_by $SPI_CLOCK_FREQUENCY_DIVIDER [get_ports sclk_o] originating in instance qspi0_inst in IP qspi0 was kept as is.
+
+

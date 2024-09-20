@@ -1,0 +1,1095 @@
+<?xml version="1.0" ?>
+<ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>qspi0</ipxact:name>
+    <ipxact:version>1.2.0</ipxact:version>
+    <ipxact:busInterfaces>
+        <ipxact:busInterface>
+            <ipxact:name>AXI4</ipxact:name>
+            <ipxact:displayName>AXI4</ipxact:displayName>
+            <ipxact:description>AXI4 slave port</ipxact:description>
+            <ipxact:busType library="AMBA4" name="AXI4" vendor="amba.com" version="r0p0"/>
+            <ipxact:abstractionTypes>
+                <ipxact:abstractionType>
+                    <ipxact:abstractionRef library="AMBA4" name="AXI4_rtl" vendor="amba.com" version="r0p0"/>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARADDR</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_araddr_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARBURST</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arburst_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARCACHE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arcache_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arid_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARLEN</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arlen_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARLOCK</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arlock_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARPROT</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arprot_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARREADY</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arready_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARSIZE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arsize_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>ARVALID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_arvalid_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWADDR</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awaddr_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWBURST</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awburst_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWCACHE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awcache_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awid_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWLEN</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awlen_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWLOCK</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awlock_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWPROT</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awprot_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWREADY</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awready_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWSIZE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awsize_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>AWVALID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_awvalid_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>BID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_bid_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>BREADY</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_bready_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>BRESP</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_bresp_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>BVALID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_bvalid_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>RDATA</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_rdata_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>RID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_rid_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>RLAST</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_rlast_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>RREADY</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_rready_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>RRESP</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_rresp_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>RVALID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_rvalid_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>WDATA</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_wdata_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>WLAST</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_wlast_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>WREADY</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_wready_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>WSTRB</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_wstrb_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>WVALID</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>axi_wvalid_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+            </ipxact:abstractionTypes>
+            <ipxact:slave>
+                <ipxact:memoryMapRef memoryMapRef="qspi_flash_controller_mem_map_axi4"/>
+            </ipxact:slave>
+        </ipxact:busInterface>
+        <ipxact:busInterface>
+            <ipxact:name>INTR</ipxact:name>
+            <ipxact:displayName>INTR</ipxact:displayName>
+            <ipxact:description>Interrupt Request</ipxact:description>
+            <ipxact:busType library="busdef.interrupt" name="interrupt" vendor="spiritconsortium.org" version="1.0"/>
+            <ipxact:abstractionTypes>
+                <ipxact:abstractionType>
+                    <ipxact:abstractionRef library="busdef.interrupt" name="interrupt_rtl" vendor="spiritconsortium.org" version="1.0"/>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>IRQ</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>int_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+            </ipxact:abstractionTypes>
+            <ipxact:master/>
+        </ipxact:busInterface>
+    </ipxact:busInterfaces>
+    <ipxact:memoryMaps>
+        <ipxact:memoryMap>
+            <ipxact:name>qspi_flash_controller_mem_map_axi4</ipxact:name>
+            <ipxact:description>QSPI Flash Controller Memory Map AXI4</ipxact:description>
+            <ipxact:addressBlock>
+                <ipxact:name>QSPI_Flash_Controller_Registers_AXI4</ipxact:name>
+                <ipxact:baseAddress>0</ipxact:baseAddress>
+                <ipxact:range>4096</ipxact:range>
+                <ipxact:width>32</ipxact:width>
+            </ipxact:addressBlock>
+        </ipxact:memoryMap>
+    </ipxact:memoryMaps>
+    <ipxact:model>
+        <ipxact:instantiations>
+            <ipxact:componentInstantiation>
+                <ipxact:name>qspi0</ipxact:name>
+                <ipxact:moduleParameters>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="INTERFACE" resolve="generated" type="int">
+                        <ipxact:name>INTERFACE</ipxact:name>
+                        <ipxact:displayName>Main interface</ipxact:displayName>
+                        <ipxact:value>1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ENABLE_OPTION_AXI4L_FOR_REGISTER_ACCESS" resolve="generated" type="int">
+                        <ipxact:name>ENABLE_OPTION_AXI4L_FOR_REGISTER_ACCESS</ipxact:name>
+                        <ipxact:displayName>Enable AXI4L Interface(optional for register access only)</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="32" parameterId="INTERFACE_DATA_WIDTH" resolve="generated" type="int">
+                        <ipxact:name>INTERFACE_DATA_WIDTH</ipxact:name>
+                        <ipxact:displayName>Interface Data Width</ipxact:displayName>
+                        <ipxact:value>32</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="4" parameterId="AXI_ID_WIDTH" resolve="generated" type="int">
+                        <ipxact:name>AXI_ID_WIDTH</ipxact:name>
+                        <ipxact:displayName>AXI4 ID Width</ipxact:displayName>
+                        <ipxact:value>4</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="DATA_ENDIANNESS" resolve="generated" type="int">
+                        <ipxact:name>DATA_ENDIANNESS</ipxact:name>
+                        <ipxact:displayName>Data Endianness</ipxact:displayName>
+                        <ipxact:value>1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ENABLE_IO_PRIMITIVE" resolve="generated" type="int">
+                        <ipxact:name>ENABLE_IO_PRIMITIVE</ipxact:name>
+                        <ipxact:displayName>Enable IO Buffer</ipxact:displayName>
+                        <ipxact:value>1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="SUPPORTED_PROTOCOL" resolve="generated" type="int">
+                        <ipxact:name>SUPPORTED_PROTOCOL</ipxact:name>
+                        <ipxact:displayName>supported protocol</ipxact:displayName>
+                        <ipxact:value>2</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="1" parameterId="NUMBER_OF_SLAVE_SELECT_LINES" resolve="generated" type="int">
+                        <ipxact:name>NUMBER_OF_SLAVE_SELECT_LINES</ipxact:name>
+                        <ipxact:displayName>Number of SPI Target</ipxact:displayName>
+                        <ipxact:value>1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="SPI_CLOCK_POLARITY" resolve="generated" type="int">
+                        <ipxact:name>SPI_CLOCK_POLARITY</ipxact:name>
+                        <ipxact:displayName>SPI Clock Polarity</ipxact:displayName>
+                        <ipxact:value>1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="SPI_CLOCK_PHASE" resolve="generated" type="int">
+                        <ipxact:name>SPI_CLOCK_PHASE</ipxact:name>
+                        <ipxact:displayName>SPI Clock Phase</ipxact:displayName>
+                        <ipxact:value>1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="FIRST_TRANSMITTED_BIT" resolve="generated" type="int">
+                        <ipxact:name>FIRST_TRANSMITTED_BIT</ipxact:name>
+                        <ipxact:displayName>First Transmitted Bit</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ENABLE_BACK_TO_BACK_TRANSFER" resolve="generated" type="int">
+                        <ipxact:name>ENABLE_BACK_TO_BACK_TRANSFER</ipxact:name>
+                        <ipxact:displayName>Enable Back To Back Transfer</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="8" parameterId="DUMMY_CYCLES" resolve="generated" type="int">
+                        <ipxact:name>DUMMY_CYCLES</ipxact:name>
+                        <ipxact:displayName>Dummy Cycles</ipxact:displayName>
+                        <ipxact:value>8</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="3" parameterId="CS_HIGH_TIME" resolve="generated" type="int">
+                        <ipxact:name>CS_HIGH_TIME</ipxact:name>
+                        <ipxact:displayName>Chip Select High Time(ns)</ipxact:displayName>
+                        <ipxact:value>3</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="MINIMUM_IDLE_TIME_BETWEEN_TRANSFER" resolve="generated" type="int">
+                        <ipxact:name>MINIMUM_IDLE_TIME_BETWEEN_TRANSFER</ipxact:name>
+                        <ipxact:displayName>Minimum Idle Time Between Transfer(Number of SCK)</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="1" parameterId="CHIP_SELECT_BEHAVIOR" resolve="generated" type="int">
+                        <ipxact:name>CHIP_SELECT_BEHAVIOR</ipxact:name>
+                        <ipxact:displayName>Chip Select Behavior</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="200" parameterId="SYSTEM_CLOCK_FREQUENCY" resolve="generated" type="int">
+                        <ipxact:name>SYSTEM_CLOCK_FREQUENCY</ipxact:name>
+                        <ipxact:displayName>System Clock Frequency (MHz)</ipxact:displayName>
+                        <ipxact:value>125</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="INTERNAL_CLOCK_FREQUENCY" resolve="generated" type="int">
+                        <ipxact:name>INTERNAL_CLOCK_FREQUENCY</ipxact:name>
+                        <ipxact:displayName>Internal Clock Frequency (MHz)</ipxact:displayName>
+                        <ipxact:value>125</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="2" parameterId="SPI_CLOCK_FREQUENCY_DIVIDER" resolve="generated" type="int">
+                        <ipxact:name>SPI_CLOCK_FREQUENCY_DIVIDER</ipxact:name>
+                        <ipxact:displayName>SPI Clock Frequency Divider</ipxact:displayName>
+                        <ipxact:value>2</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="SPI_CLOCK_FREQUENCY" resolve="generated" type="int">
+                        <ipxact:name>SPI_CLOCK_FREQUENCY</ipxact:name>
+                        <ipxact:displayName>SPI Clock Frequency (MHz)</ipxact:displayName>
+                        <ipxact:value>62</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ENABLE_TRANSMIT_FIFO" resolve="generated" type="int">
+                        <ipxact:name>ENABLE_TRANSMIT_FIFO</ipxact:name>
+                        <ipxact:displayName>Enable Transmit FIFO</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="512" parameterId="ADDRESS_DEPTH_TX" resolve="generated" type="int">
+                        <ipxact:name>ADDRESS_DEPTH_TX</ipxact:name>
+                        <ipxact:displayName>Address Depth</ipxact:displayName>
+                        <ipxact:value>512</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ENABLE_RECEIVE_FIFO" resolve="generated" type="int">
+                        <ipxact:name>ENABLE_RECEIVE_FIFO</ipxact:name>
+                        <ipxact:displayName>Enable Reveive FIFO</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="512" parameterId="ADDRESS_DEPTH_RX" resolve="generated" type="int">
+                        <ipxact:name>ADDRESS_DEPTH_RX</ipxact:name>
+                        <ipxact:displayName>Address Depth</ipxact:displayName>
+                        <ipxact:value>512</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ENABLE_FLASH_ADDRESS_MAPPING" resolve="generated" type="int">
+                        <ipxact:name>ENABLE_FLASH_ADDRESS_MAPPING</ipxact:name>
+                        <ipxact:displayName>Enable Flash Address Mapping</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="MINIMUM_FLASH_ADDRESS_ALIGNMENT" resolve="generated" type="int">
+                        <ipxact:name>MINIMUM_FLASH_ADDRESS_ALIGNMENT</ipxact:name>
+                        <ipxact:displayName>Minimum Flash Address Alignment (4KB-2GB)</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="" parameterId="MINIMUM_FLASH_ADDRESS_ALIGNMENT_MAP" resolve="generated" type="string">
+                        <ipxact:name>MINIMUM_FLASH_ADDRESS_ALIGNMENT_MAP</ipxact:name>
+                        <ipxact:displayName>Minimum Flash Address Alignment Register Value</ipxact:displayName>
+                        <ipxact:value>32'h00000000</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="FLASH_MEMORY_MAP_SIZE" resolve="generated" type="int">
+                        <ipxact:name>FLASH_MEMORY_MAP_SIZE</ipxact:name>
+                        <ipxact:displayName>Flash Memory Map Size (4KB-2GB)</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="" parameterId="SIZE_FLASH_ADDRESS_SPACE_MAP" resolve="generated" type="string">
+                        <ipxact:name>SIZE_FLASH_ADDRESS_SPACE_MAP</ipxact:name>
+                        <ipxact:displayName>Flash Memory Map Size Register Value</ipxact:displayName>
+                        <ipxact:value>32'h00000000</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="" parameterId="STARTING_OFFSET_ADDRESS" resolve="generated" type="string">
+                        <ipxact:name>STARTING_OFFSET_ADDRESS</ipxact:name>
+                        <ipxact:displayName>Starting Flash Address (Hex)</ipxact:displayName>
+                        <ipxact:value>32'h00000000</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="" parameterId="AXI_ADDRESS_MAP" resolve="generated" type="string">
+                        <ipxact:name>AXI_ADDRESS_MAP</ipxact:name>
+                        <ipxact:displayName>AXI/AHB-L Address Map (Hex)</ipxact:displayName>
+                        <ipxact:value>32'h00000000</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="'3'h0'" parameterId="WRITE_ACCESS" resolve="generated" type="string">
+                        <ipxact:name>WRITE_ACCESS</ipxact:name>
+                        <ipxact:displayName>Write Access Channel</ipxact:displayName>
+                        <ipxact:value>3'h0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="'3'h0'" parameterId="READ_ACCESS" resolve="generated" type="string">
+                        <ipxact:name>READ_ACCESS</ipxact:name>
+                        <ipxact:displayName>Read Access Channel</ipxact:displayName>
+                        <ipxact:value>3'h1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="1" parameterId="FLASH_ADDRESS_WIDTH" resolve="generated" type="int">
+                        <ipxact:name>FLASH_ADDRESS_WIDTH</ipxact:name>
+                        <ipxact:displayName>Flash Address Width</ipxact:displayName>
+                        <ipxact:value>1</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="COMMAND_LANE_WIDTH" resolve="generated" type="int">
+                        <ipxact:name>COMMAND_LANE_WIDTH</ipxact:name>
+                        <ipxact:displayName>Command Lane Width</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ADDRESS_LANE_WIDTH" resolve="generated" type="int">
+                        <ipxact:name>ADDRESS_LANE_WIDTH</ipxact:name>
+                        <ipxact:displayName>Address Lane Width</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="4" parameterId="DATA_LANE_WIDTH" resolve="generated" type="int">
+                        <ipxact:name>DATA_LANE_WIDTH</ipxact:name>
+                        <ipxact:displayName>Data Lane Width</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="8" parameterId="DUMMY_CLOCK_CYCLES" resolve="generated" type="int">
+                        <ipxact:name>DUMMY_CLOCK_CYCLES</ipxact:name>
+                        <ipxact:displayName>Dummy Clock Cycles</ipxact:displayName>
+                        <ipxact:value>8</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter configGroups="SystemBuilder" latticeDefaultValue="0" parameterId="ENABLE_QPI_MODE" resolve="generated" type="int">
+                        <ipxact:name>ENABLE_QPI_MODE</ipxact:name>
+                        <ipxact:displayName>Enable QPI Mode</ipxact:displayName>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                </ipxact:moduleParameters>
+            </ipxact:componentInstantiation>
+            <ipxact:designInstantiation>
+                <ipxact:name>qspi0_design</ipxact:name>
+                <ipxact:designRef library="ip" name="qspi0" vendor="latticesemi.com" version="1.2.0"/>
+            </ipxact:designInstantiation>
+        </ipxact:instantiations>
+        <ipxact:ports>
+            <ipxact:port>
+                <ipxact:name>a_clk_i</ipxact:name>
+                <ipxact:displayName>a_clk_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isClk>true</lsccip:isClk>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>a_reset_n_i</ipxact:name>
+                <ipxact:displayName>a_reset_n_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isRst>true</lsccip:isRst>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>int_o</ipxact:name>
+                <ipxact:displayName>int_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>qspi_io0</ipxact:name>
+                <ipxact:displayName>qspi_io0</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>inout</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>qspi_io1</ipxact:name>
+                <ipxact:displayName>qspi_io1</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>inout</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>qspi_io2</ipxact:name>
+                <ipxact:displayName>qspi_io2</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>inout</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>qspi_io3</ipxact:name>
+                <ipxact:displayName>qspi_io3</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>inout</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>sclk_o</ipxact:name>
+                <ipxact:displayName>sclk_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>ss_n_o</ipxact:name>
+                <ipxact:displayName>ss_n_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awid_i</ipxact:name>
+                <ipxact:displayName>axi_awid_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awaddr_i</ipxact:name>
+                <ipxact:displayName>axi_awaddr_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awlen_i</ipxact:name>
+                <ipxact:displayName>axi_awlen_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awsize_i</ipxact:name>
+                <ipxact:displayName>axi_awsize_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awburst_i</ipxact:name>
+                <ipxact:displayName>axi_awburst_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awlock_i</ipxact:name>
+                <ipxact:displayName>axi_awlock_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awcache_i</ipxact:name>
+                <ipxact:displayName>axi_awcache_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awprot_i</ipxact:name>
+                <ipxact:displayName>axi_awprot_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awvalid_i</ipxact:name>
+                <ipxact:displayName>axi_awvalid_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_awready_o</ipxact:name>
+                <ipxact:displayName>axi_awready_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_wdata_i</ipxact:name>
+                <ipxact:displayName>axi_wdata_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_wstrb_i</ipxact:name>
+                <ipxact:displayName>axi_wstrb_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_wlast_i</ipxact:name>
+                <ipxact:displayName>axi_wlast_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_wvalid_i</ipxact:name>
+                <ipxact:displayName>axi_wvalid_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_wready_o</ipxact:name>
+                <ipxact:displayName>axi_wready_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_bid_o</ipxact:name>
+                <ipxact:displayName>axi_bid_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_bresp_o</ipxact:name>
+                <ipxact:displayName>axi_bresp_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_bvalid_o</ipxact:name>
+                <ipxact:displayName>axi_bvalid_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_bready_i</ipxact:name>
+                <ipxact:displayName>axi_bready_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arid_i</ipxact:name>
+                <ipxact:displayName>axi_arid_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_araddr_i</ipxact:name>
+                <ipxact:displayName>axi_araddr_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arlen_i</ipxact:name>
+                <ipxact:displayName>axi_arlen_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arsize_i</ipxact:name>
+                <ipxact:displayName>axi_arsize_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arburst_i</ipxact:name>
+                <ipxact:displayName>axi_arburst_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arlock_i</ipxact:name>
+                <ipxact:displayName>axi_arlock_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arcache_i</ipxact:name>
+                <ipxact:displayName>axi_arcache_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arprot_i</ipxact:name>
+                <ipxact:displayName>axi_arprot_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arvalid_i</ipxact:name>
+                <ipxact:displayName>axi_arvalid_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_arready_o</ipxact:name>
+                <ipxact:displayName>axi_arready_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_rid_o</ipxact:name>
+                <ipxact:displayName>axi_rid_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_rdata_o</ipxact:name>
+                <ipxact:displayName>axi_rdata_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_rresp_o</ipxact:name>
+                <ipxact:displayName>axi_rresp_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_rlast_o</ipxact:name>
+                <ipxact:displayName>axi_rlast_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_rvalid_o</ipxact:name>
+                <ipxact:displayName>axi_rvalid_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>axi_rready_i</ipxact:name>
+                <ipxact:displayName>axi_rready_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    <ipxact:fileSets>
+        <ipxact:fileSet>
+            <ipxact:name>ipx_file_list</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>rtl/qspi0_bb.v</ipxact:name>
+                <ipxact:fileType user="black_box_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>qspi0.cfg</ipxact:name>
+                <ipxact:fileType user="cfg">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/qspi0_tmpl.v</ipxact:name>
+                <ipxact:fileType user="template_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/qspi0_tmpl.vhd</ipxact:name>
+                <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/qspi0.v</ipxact:name>
+                <ipxact:fileType user="top_level_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>constraints/qspi0.ldc</ipxact:name>
+                <ipxact:fileType user="timing_constraints">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/dut_params.v</ipxact:name>
+                <ipxact:fileType user="dependency_file">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/dut_inst.v</ipxact:name>
+                <ipxact:fileType user="dependency_file">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>design.xml</ipxact:name>
+                <ipxact:fileType user="IP-XACT_design">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/readme.txt</ipxact:name>
+                <ipxact:fileType user="testbench">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_top.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>driver/qspi_flash_cntl.c</ipxact:name>
+                <ipxact:fileType user="driver_source">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>driver/qspi_flash_cntl.h</ipxact:name>
+                <ipxact:fileType user="driver_header">user</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+        <ipxact:fileSet>
+            <ipxact:name>driver_file_list</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>driver/qspi_flash_cntl.c</ipxact:name>
+                <ipxact:fileType user="driver_source">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>driver/qspi_flash_cntl.h</ipxact:name>
+                <ipxact:fileType user="driver_header">user</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+    </ipxact:fileSets>
+    <ipxact:vendorExtensions>
+        <lsccip:moduleRef lsccip:library="ip" lsccip:name="qspi_flash_controller" lsccip:vendor="latticesemi.com" lsccip:version="1.2.0"/>
+        <lsccip:deviceInfo>
+            <lsccip:device>LAV-AT-E70ES1</lsccip:device>
+            <lsccip:device_int>ap6a400be</lsccip:device_int>
+            <lsccip:package>LFG1156</lsccip:package>
+            <lsccip:package_int>LFG1156</lsccip:package_int>
+            <lsccip:performanceGrade>1</lsccip:performanceGrade>
+            <lsccip:speed_int>1</lsccip:speed_int>
+            <lsccip:operation>Commercial</lsccip:operation>
+            <lsccip:family>LAV-AT</lsccip:family>
+            <lsccip:architecture>ap6a00b</lsccip:architecture>
+            <lsccip:partnumber>LAV-AT-E70ES1-1LFG1156C</lsccip:partnumber>
+        </lsccip:deviceInfo>
+        <lsccip:generationInfo>
+            <lsccip:fileVersion>20180929</lsccip:fileVersion>
+            <lsccip:createdTimestamp>2024 08 24 00:06:07</lsccip:createdTimestamp>
+            <lsccip:radiantBuild>&quot;Lattice Propel&quot; (64-bit) 2024.1.2406150513_p</lsccip:radiantBuild>
+        </lsccip:generationInfo>
+    </ipxact:vendorExtensions>
+</ipxact:component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>rst_sync0</ipxact:name>
+    <ipxact:version>3.0.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>rst_sync_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="rst_sync" vendor="latticesemi.com" version="3.0.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="SIM">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>rst_sync0.clk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="rst_sync0" portRef="clk"/>
+                <ipxact:externalPortReference portRef="clk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>rst_sync0.pb_in_n</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="rst_sync0" portRef="pb_in_n"/>
+                <ipxact:externalPortReference portRef="pb_in_n"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>rst_sync0.pb_out</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="rst_sync0" portRef="pb_out"/>
+                <ipxact:externalPortReference portRef="pb_out"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

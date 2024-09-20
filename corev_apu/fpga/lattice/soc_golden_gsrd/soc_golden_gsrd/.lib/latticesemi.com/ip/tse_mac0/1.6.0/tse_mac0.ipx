@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="ap6a00b" date="2024 08 24 00:41:07" device="LAV-AT-E70ES1" device_int="ap6a400be" family="LAV-AT" gen_platform="Propel" gen_platform_version="2024.1.2406150513_p" generator="ipgen" library="ip" module="tse_mac" name="tse_mac0" operation="Commercial" package="LFG1156" package_int="LFG1156" partnumber="LAV-AT-E70ES1-1LFG1156C" source_format="Verilog" speed="1" speed_int="1" vendor="latticesemi.com" version="1.6.0">
+ <Package>
+  <File modified="2024 08 24 00:41:05" name="rtl/tse_mac0_bb.v" type="black_box_verilog"/>
+  <File modified="2024 08 24 00:41:05" name="tse_mac0.cfg" type="cfg"/>
+  <File modified="2024 08 24 00:41:05" name="misc/tse_mac0_tmpl.v" type="template_verilog"/>
+  <File modified="2024 08 24 00:41:05" name="misc/tse_mac0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 08 24 00:41:07" name="rtl/tse_mac0.v" type="top_level_verilog"/>
+  <File modified="2024 08 24 00:41:07" name="constraints/tse_mac0.ldc" type="timing_constraints"/>
+  <File modified="2024 08 24 00:41:07" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:41:07" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:41:07" name="eval/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:41:07" name="eval/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:41:07" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 08 24 00:41:07" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/lscc_oddrx_soft.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/lscc_pkt_mon_gbcl.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/lscc_pkt_mon_sgts.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/pmi_ram_dp_sim.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/readme.txt" type="testbench"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/tb_top.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/tse_mac_ahb_master.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/tse_mac_axi4l_master.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/tse_mac_defines.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/tse_mac_output_monitor.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/tse_mac_scoreboard.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/tse_mac_traffic_gen.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="testbench/VLO.v" type="testbench_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/defines.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/readme.txt" type="eval"/>
+  <File modified="2024 07 26 02:11:33" name="eval/tb_apb_mst.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/tb_axis_mst.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/tb_data_checker.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/tb_mem.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/tb_top.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/tse_mac_ahb_master.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/tse_mac_axi4l_master.v" type="eval_verilog"/>
+  <File modified="2024 07 26 02:11:33" name="eval/versa_top/RGMII_eval_top.sv" type="eval"/>
+  <File modified="2024 07 26 02:11:33" name="eval/versa_top/tse_500eevn.pdc" type="eval"/>
+  <File modified="2024 07 26 02:11:33" name="driver/ethernet.c" type="driver_source"/>
+  <File modified="2024 07 26 02:11:33" name="driver/ethernet.h" type="driver_header"/>
+  <File modified="2024 07 26 02:11:33" name="driver/ethernet_hw.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

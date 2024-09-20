@@ -122,7 +122,7 @@ module axi_err_slv #(
 
   fifo_v3 #(
     .FALL_THROUGH ( 1'b0         ),
-    .DEPTH        ( unsigned'(2) ), // two placed so that w can eat beats if b is not sent
+    .DEPTH        ( $unsigned(2) ), // two placed so that w can eat beats if b is not sent
     .dtype        ( id_t         )
   ) i_b_fifo (
     .clk_i      ( clk_i        ),

@@ -67,7 +67,7 @@ module fpnew_fma #(
   // Internal exponent width of FMA must accomodate all meaningful exponent values in order to avoid
   // datapath leakage. This is either given by the exponent bits or the width of the LZC result.
   // In most reasonable FP formats the internal exponent will be wider than the LZC result.
-  localparam int unsigned EXP_WIDTH = unsigned'(fpnew_pkg::maximum(EXP_BITS + 2, LZC_RESULT_WIDTH));
+  localparam int unsigned EXP_WIDTH = fpnew_pkg::maximum(EXP_BITS + 2, LZC_RESULT_WIDTH);
   // Shift amount width: maximum internal mantissa size is 3p+4 bits
   localparam int unsigned SHIFT_AMOUNT_WIDTH = $clog2(3 * PRECISION_BITS + 5);
   // Pipelines
@@ -310,7 +310,7 @@ module fpnew_fma #(
       addend_shamt = 3 * PRECISION_BITS + 4;
     // Addend and product will have mutual bits to add
     else if (exponent_difference <= signed'(PRECISION_BITS + 2))
-      addend_shamt = unsigned'(signed'(PRECISION_BITS) + 3 - exponent_difference);
+      addend_shamt = $unsigned(signed'(PRECISION_BITS) + 3 - exponent_difference);
     // Addend-anchored case, saturated shift (product is only in the sticky bit)
     else
       addend_shamt = 0;
@@ -526,7 +526,7 @@ module fpnew_fma #(
       // Subnormal result
       end else begin
         // Cap the shift distance to align mantissa with minimum exponent
-        norm_shamt          = unsigned'(signed'(PRECISION_BITS) + 2 + exponent_product_q);
+        norm_shamt          = $unsigned(signed'(PRECISION_BITS) + 2 + exponent_product_q);
         normalized_exponent = 0; // subnormals encoded as 0
       end
     // Addend-anchored case
@@ -588,7 +588,7 @@ module fpnew_fma #(
 
   // Assemble result before rounding. In case of overflow, the largest normal value is set.
   assign pre_round_sign     = final_sign_q;
-  assign pre_round_exponent = (of_before_round) ? 2**EXP_BITS-2 : unsigned'(final_exponent[EXP_BITS-1:0]);
+  assign pre_round_exponent = (of_before_round) ? 2**EXP_BITS-2 : $unsigned(final_exponent[EXP_BITS-1:0]);
   assign pre_round_mantissa = (of_before_round) ? '1 : final_mantissa[MAN_BITS:1]; // bit 0 is R bit
   assign pre_round_abs      = {pre_round_exponent, pre_round_mantissa};
 

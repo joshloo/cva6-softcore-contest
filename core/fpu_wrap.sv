@@ -59,7 +59,7 @@ module fpu_wrap
 
     // Features (enabled formats, vectors etc.)
     localparam fpnew_pkg::fpu_features_t FPU_FEATURES = '{
-        Width: unsigned'(riscv::XLEN),  // parameterized using XLEN
+        Width: $unsigned(riscv::XLEN),  // parameterized using XLEN
         EnableVectors: CVA6Cfg.XFVec,
         EnableNanBox: 1'b1,
         FpFmtMask: {CVA6Cfg.RVF, CVA6Cfg.RVD, CVA6Cfg.XF16, CVA6Cfg.XF8, CVA6Cfg.XF16ALT},
@@ -75,15 +75,15 @@ module fpu_wrap
     localparam fpnew_pkg::fpu_implementation_t FPU_IMPLEMENTATION = '{
         PipeRegs: '{  // FP32, FP64, FP16, FP8, FP16alt
             '{
-                unsigned'(LAT_COMP_FP32),
-                unsigned'(LAT_COMP_FP64),
-                unsigned'(LAT_COMP_FP16),
-                unsigned'(LAT_COMP_FP8),
-                unsigned'(LAT_COMP_FP16ALT)
+                $unsigned(LAT_COMP_FP32),
+                $unsigned(LAT_COMP_FP64),
+                $unsigned(LAT_COMP_FP16),
+                $unsigned(LAT_COMP_FP8),
+                $unsigned(LAT_COMP_FP16ALT)
             },  // ADDMUL
-            '{default: unsigned'(LAT_DIVSQRT)},  // DIVSQRT
-            '{default: unsigned'(LAT_NONCOMP)},  // NONCOMP
-            '{default: unsigned'(LAT_CONV)}
+            '{default: $unsigned(LAT_DIVSQRT)},  // DIVSQRT
+            '{default: $unsigned(LAT_NONCOMP)},  // NONCOMP
+            '{default: $unsigned(LAT_CONV)}
         },  // CONV
         UnitTypes: '{
             '{default: fpnew_pkg::PARALLEL},  // ADDMUL

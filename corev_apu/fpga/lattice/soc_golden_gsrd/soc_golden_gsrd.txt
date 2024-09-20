@@ -1,0 +1,12 @@
+Golden Hardware Reference Design (GHRD) for Avant-E
+
+Components included:
+	a) Processor - RISC-V RX CPU Core 
+	b) QSPI Flash Controller
+	c) LPDDR4 MC
+	d) Tri-Speed Ethernet MAC
+	e) Scatter-Gather DMA
+	f) UART, GPIO
+	g) OSC and PLL
+	h) Reset Synchronizer Glue Logic
+	i) Multi-Boot Config Glue Logic

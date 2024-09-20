@@ -244,7 +244,7 @@ module fpnew_cast_multi #(
   // Construct input mantissa from integer
   assign int_value    = ifmt_input_val[int_fmt_q];
   assign int_sign     = int_value[INT_MAN_WIDTH-1] & ~op_mod_q; // only signed ints are negative
-  assign int_mantissa = int_sign ? unsigned'(-int_value) : int_value; // get magnitude of negative
+  assign int_mantissa = int_sign ? $unsigned(-int_value) : int_value; // get magnitude of negative
 
   // select mantissa with source format
   assign encoded_mant = src_is_int ? int_mantissa : fmt_mantissa[src_fmt_q];
@@ -426,7 +426,7 @@ module fpnew_cast_multi #(
   // Perform adjustments to mantissa and exponent
   always_comb begin : cast_value
     // Default assignment
-    final_exp       = unsigned'(destination_exp_q); // take exponent as is, only look at lower bits
+    final_exp       = $unsigned(destination_exp_q); // take exponent as is, only look at lower bits
     preshift_mant   = '0;  // initialize mantissa container with zeroes
     denorm_shamt    = SUPER_MAN_BITS - fpnew_pkg::man_bits(dst_fmt_q2); // right of mantissa
     of_before_round = 1'b0;
@@ -438,7 +438,7 @@ module fpnew_cast_multi #(
     // Handle INT casts
     if (dst_is_int_q) begin
       // By default right shift mantissa to be an integer
-      denorm_shamt = unsigned'(MAX_INT_WIDTH - 1 - input_exp_q);
+      denorm_shamt = $unsigned(MAX_INT_WIDTH - 1 - input_exp_q);
       // overflow: when converting to unsigned the range is larger by one
       if (input_exp_q >= signed'(fpnew_pkg::int_width(int_fmt_q2) - 1 + op_mod_q2)) begin
         denorm_shamt    = '0; // prevent shifting
@@ -453,19 +453,19 @@ module fpnew_cast_multi #(
       // Overflow or infinities (for proper rounding)
       if ((destination_exp_q >= signed'(2**fpnew_pkg::exp_bits(dst_fmt_q2))-1) ||
           (~src_is_int_q && info_q.is_inf)) begin
-        final_exp       = unsigned'(2**fpnew_pkg::exp_bits(dst_fmt_q2)-2); // largest normal value
+        final_exp       = $unsigned(2**fpnew_pkg::exp_bits(dst_fmt_q2)-2); // largest normal value
         preshift_mant   = '1;                           // largest normal value and RS bits set
         of_before_round = 1'b1;
       // Denormalize underflowing values
       end else if (destination_exp_q < 1 &&
                    destination_exp_q >= -signed'(fpnew_pkg::man_bits(dst_fmt_q2))) begin
         final_exp       = '0; // denormal result
-        denorm_shamt    = unsigned'(denorm_shamt + 1 - destination_exp_q); // adjust right shifting
+        denorm_shamt    = $unsigned(denorm_shamt + 1 - destination_exp_q); // adjust right shifting
         uf_before_round = 1'b1;
       // Limit the shift to retain sticky bits
       end else if (destination_exp_q < -signed'(fpnew_pkg::man_bits(dst_fmt_q2))) begin
         final_exp       = '0; // denormal result
-        denorm_shamt    = unsigned'(denorm_shamt + 2 + fpnew_pkg::man_bits(dst_fmt_q2)); // to sticky
+        denorm_shamt    = $unsigned(denorm_shamt + 2 + fpnew_pkg::man_bits(dst_fmt_q2)); // to sticky
         uf_before_round = 1'b1;
       end
     end
@@ -585,7 +585,7 @@ module fpnew_cast_multi #(
   end
 
   // Negative integer result needs to be brought into two's complement
-  assign rounded_int_res      = rounded_sign ? unsigned'(-rounded_abs) : rounded_abs;
+  assign rounded_int_res      = rounded_sign ? $unsigned(-rounded_abs) : rounded_abs;
   assign rounded_int_res_zero = (rounded_int_res == '0);
 
   // Detect integer overflows after rounding (only positives)

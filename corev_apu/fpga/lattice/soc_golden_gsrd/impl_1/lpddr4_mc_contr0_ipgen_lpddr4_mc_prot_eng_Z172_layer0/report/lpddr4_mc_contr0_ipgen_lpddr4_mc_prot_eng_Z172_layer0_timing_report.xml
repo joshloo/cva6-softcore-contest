@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng_Z172_layer0\lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng_Z172_layer0.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>clk_125_in</data>
+<data>125.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>193.2 MHz</data>
+<data>-0.176</data>
+</row>
+<row>
+<data>osc0_ipgen_lscc_osc_400s_40s_40_LAV-AT_LAV-AT-E70ES1|clk_out_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>pll0_ipgen_lscc_pll_Z262_layer0|clkout_testclk_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>pll_refclk_i</data>
+<data>100.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>soc_golden_gsrd|rgmii_rxc_i</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric_noreg_1s_9s|_FWFT_ENABLE_re_r_derived_clock</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>System</data>
+<data>200.0 MHz</data>
+<data>299.6 MHz</data>
+<data>1.663</data>
+</row>
+</report_table>

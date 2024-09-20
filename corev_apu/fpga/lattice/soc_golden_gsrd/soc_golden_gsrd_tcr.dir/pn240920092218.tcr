@@ -1,0 +1,4 @@
+#Start recording tcl command: 9/20/2024 09:22:04
+#Project Location: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd; Project name: soc_golden_gsrd
+prj_open "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd.rdf"
+#Stop recording: 9/20/2024 09:22:18

@@ -1,0 +1,194 @@
+# You need to copy the IP constraints to your project PDC file
+# Please read the comments for more information
+#############################################################################
+# Below are the IP constraints
+# The Reset Synchrounous Deassertion path should not be analyzed
+set_false_path -to [get_pins {*/lscc_mpmc_axi_inst/*rsd/*rst_regs*/D*}]
+
+#MPMC_HEADER#
+#MPMC_MAX_DELAY_AW#
+#MPMC_MAX_DELAY_B#
+#MPMC_MAX_DELAY_AR#
+
+#############################################################################
+# Below are the constraints for eval design, you dont need these if you are not using the eval
+
+#############################################################################
+# LPDDR4 Memory Controller Constraints
+# The ECLKDIV primitive already has constraint but the inferred name is not good.
+# The constraint below only aims to assign a name to the generated clock.
+create_generated_clock -name {sclk_o} -source [get_pins */lscc_mc_avant_inst/u_ddrphy/pll_inst/gen_ext_outclkdiv.gen_no_clk7.u_pll.PLLC_MODE_inst/CLKOPHY] -divide_by 8 [get_pins {*/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/ECLKDIVOUT }]
+
+# The PLL lock is false as it toggles only once for a long time
+# It is also sampled by double FF
+set_false_path -to [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/p_pll_lock_r1*/D]
+
+# These signals are asserted and then de-asserted while the clocks are stopped, thus, they are false path.
+set_false_path -to [get_pins */lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST]
+# FIXME: Check if the removal of this will not cause STA issue
+#set_false_path -to [get_pins */lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC]
+
+# Constraints for the CDC logic on the DDRPHY's CSR
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/trn_done_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_trn_done_r1*/Q] 1
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/trn_err_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_trn_err_r1*/Q] 1
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/p_wr_cdc_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s2p_wr_cdc_r1*/Q] 1
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/wr_data_buff_r*/Q] -to [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_apb_data_r*/D] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/addr_buff_r*/Q] -to [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_apb_addr_r*/D] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_wrdone_cdc_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s2p_wr_cdc_r1*/Q] 1
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_timeout_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/p_timeout_r1*/Q] 1
+
+#Constraints for MC's FIFO DC instances
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_rd_rsp/u_data_fifo/u_fifo_dc/*wr_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wr_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_rd_rsp/u_data_fifo/u_fifo_dc/*wp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rd_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_rd_rsp/u_data_fifo/u_fifo_dc/*rd_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rd_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rd_grey_sync_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_rd_rsp/u_data_fifo/u_fifo_dc/*rp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*rp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*rp_sync1_r*/Q] 1.5
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_addr_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_rd_rsp/u_data_fifo/u_fifo_dc/*wr_addr_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/*wr_addr_r*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/*wr_addr_r*/Q] -datapath_only 3
+# The distributed RAM data output port to FIFO_DC data output register is already guaranteed by the CDC logic and above constraints.
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/ASYNC.u_ctrl_fifo/u_fifo_dc/mem_ram*.dpram_inst/DO*] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_rd_rsp/u_data_fifo/u_fifo_dc/mem_ram*.dpram_inst/DO*] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_ctrl_fifo/u_fifo_dc/mem_ram*.dpram_inst/DO*] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_wr/ASYNC.u_data_fifo/u_fifo_dc/mem_ram*.dpram_inst/DO*] -datapath_only 3
+
+# Constraints for CDC logic in reorder buffer
+#set_max_delay -from [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL*.u_enable_bus_sync/sync_toggle_r1*/Q] 1.5
+#set_false_path -to  [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL*.u_enable_bus_sync/sync_toggle_r1_Z*/D]
+#set_false_path -to  [get_pins */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/EBR_CTRL*.u_not_empty_sync/data_0_Z*/D]
+# The distributed RAM data output port timing is already guaranteed by the CDC logic and above constraints.
+#set_false_path -from  [get_pins  */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/u_ctrl_dpram/lscc_distributed_dpram_inst/mem*.*_inst/DO*]
+
+#set_false_path -to    [get_pins  */lscc_mc_avant_inst/AXI_BI.u_axi_if/u_rd/u_reorder_buff/u_lpddr4_mc_rd_rtrn_ebr_inst/lscc_ram_dp_inst/mem_main/NON_MIX.ADDR_ROUTE*.DATA_ROUTE*.no_init.u_mem0/AP6_MEM.pdp32k.PDP32K_MODE_inst/RST]
+
+# The reset pin of double FF that synchronizes the reset de-assertion is false path
+set_false_path -to [get_pins */lscc_mc_avant_inst/rst_n*/CD]
+set_false_path -to [get_pins */lscc_mc_avant_inst/reset_n*/CD]
+set_false_path -to [get_pins */lscc_mc_avant_inst/phy_srst_n*/CD]
+set_false_path -to [get_pins */lscc_mc_avant_inst/u_ddrphy/start_rst_r*/PD]
+set_false_path -to [get_pins */lscc_mc_avant_inst/u_ddrphy/s_rst_n_r*/CD]
+
+
+#############################################################################
+# Constraints for blocks other than the LPDDR4 Memory Controller
+# Constraints for reset synchronizer
+set_false_path -to [get_pins arst_n*/CD]
+set_false_path -to [get_pins srst_n*/CD]
+set_false_path -to [get_pins prst_n*/CD]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cdc_r1_wr_start_Z/D]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cdc_r1_wr_txn_done_Z/D]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cfg_*/D]
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cdc_r1_*/D]
+
+# Constraints for traffic generator
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/p2a_*/Q] -datapath_only 3
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/a2p_*/Q] -datapath_only 3
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/cdc_r1*/Q] 1
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/csr_*/Q] -datapath_only 3
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_trn_done_o*/Q] -datapath_only 3
+set_max_delay -from [get_pins s2p_r1_trn_done*/Q] 1
+set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/s_trn_err_o*/Q] -datapath_only 3
+set_max_delay -from [get_pins s2p_r1_trn_err*/Q] 1
+#For_APB_INTF_DIS#set_max_delay -from [get_pins INIT_EN.u_apb2init/p_init_start_r*/Q]  -datapath_only 3
+#For_APB_INTF_DIS#set_max_delay -from [get_pins INIT_EN.u_apb2init/s_init_start_r1*/Q] -datapath_only 1
+#For_APB_INTF_DIS#set_max_delay -from [get_pins INIT_EN.u_apb2init/s_init_start_r2*/Q] -datapath_only 3
+#For_APB_INTF_DIS#set_max_delay -from [get_pins */lscc_mc_avant_inst/u_ddrphy/i_csr/reset_reg_r1*/Q] -datapath_only 1
+
+# UART In/Out ports are Async, these are false paths
+set_false_path -from [get_pins u_tragen/uart0_inst/lscc_uart_inst/u_txmitt/*tx_output*/Q]
+set_false_path -to [get_pins u_tragen/uart0_inst/lscc_uart_inst/u_rxcver/sin_r*/D]
+
+# outputs that drive LED are async
+#set_false_path -from [get_pins */LED_array_i*/Q]
+set_false_path -to [get_pins u_tragen/gpio0_inst/lscc_gpio_inst/LxxNX.lscc_gpio_lmmi_0/gpio_in_dr0*/D]
+set_false_path -to [get_ports LED*]
+set_max_delay -from [get_pins u_tragen/*.axi_tragen_inst/u_axi_m_csr/a2p_*/Q] -datapath_only 3
+# SW cannot replicate reset register, false path for now
+set_false_path -from [get_pins arst_n*/Q]
+
+# Performance monitor constraints
+set_false_path -to [get_pins {u_tragen/*.axi_tragen_inst/u_axi_m_csr/total_num_wr_rd_r*/D}]
+set_false_path -to [get_pins {u_tragen/*.axi_tragen_inst/u_axi_m_csr/duration_cntr_status_aclk_r*/D}]
+set_false_path -to [get_pins {u_tragen/*.axi_tragen_inst/u_axi_m_csr/duration_cntr_status_sclk_r*/D}]
+
+set_false_path -to [get_pins u_tragen/*.axi_tragen_inst/u_axi_perf_calc/*a2s_duration_cntr_en_r1*/D]
+
+#############################################################################
+# This section below is meant for the Avant Evaluation Board
+# Part Number: LFCPNX-500E-EVN
+# Link to Document:
+# https://www.latticesemi.com/view_document?document_id=53775
+
+# DDR Pinouts for Avant Evaluation Board
+ldc_set_location -site {AC26} [get_ports {ddr_ca_o[0]}]
+ldc_set_location -site {AB27} [get_ports {ddr_ca_o[1]}]
+ldc_set_location -site {AB28} [get_ports {ddr_ca_o[2]}]
+ldc_set_location -site {AC29} [get_ports {ddr_ca_o[3]}]
+ldc_set_location -site {AB29} [get_ports {ddr_ca_o[4]}]
+ldc_set_location -site {AD27} [get_ports {ddr_ca_o[5]}]
+ldc_set_location -site {AB25} [get_ports {ddr_ck_o[0]}]
+ldc_set_location -site {AB30} [get_ports {ddr_ck_o[1]}]
+ldc_set_location -site {AB26} [get_ports {ddr_cke_o[0]}]
+ldc_set_location -site {AA31} [get_ports {ddr_cs_o[0]}]
+ldc_set_location -site {AF34} [get_ports ddr_reset_n_o]
+ldc_set_location -site {AC21} [get_ports {ddr_dmi_io[0]}]
+ldc_set_location -site {AF33} [get_ports {ddr_dmi_io[1]}]
+ldc_set_location -site {AD22} [get_ports {ddr_dq_io[0]}]
+ldc_set_location -site {AD21} [get_ports {ddr_dq_io[1]}]
+ldc_set_location -site {AE25} [get_ports {ddr_dq_io[2]}]
+ldc_set_location -site {AE24} [get_ports {ddr_dq_io[3]}]
+ldc_set_location -site {AA21} [get_ports {ddr_dq_io[4]}]
+ldc_set_location -site {Y21} [get_ports {ddr_dq_io[5]}]
+ldc_set_location -site {AB24} [get_ports {ddr_dq_io[6]}]
+ldc_set_location -site {AC24} [get_ports {ddr_dq_io[7]}]
+ldc_set_location -site {AD34} [get_ports {ddr_dq_io[8]}]
+ldc_set_location -site {AD33} [get_ports {ddr_dq_io[9]}]
+ldc_set_location -site {AE32} [get_ports {ddr_dq_io[10]}]
+ldc_set_location -site {AE31} [get_ports {ddr_dq_io[11]}]
+ldc_set_location -site {AE33} [get_ports {ddr_dq_io[12]}]
+ldc_set_location -site {AE34} [get_ports {ddr_dq_io[13]}]
+ldc_set_location -site {AB34} [get_ports {ddr_dq_io[14]}]
+ldc_set_location -site {AB33} [get_ports {ddr_dq_io[15]}]
+ldc_set_location -site {AC23} [get_ports {ddr_dqs_io[0]}]
+ldc_set_location -site {AC34} [get_ports {ddr_dqs_io[1]}]
+
+# PLL Refclk Pinout for Avant Evaluation Board
+ldc_set_location -site {AA34} [get_ports ddr_pll_refclk_i]
+
+# GPIO (General Purpose LED) Pinout for Avant Evaluation Board
+ldc_set_location -site {N7} [get_ports {LED[0]}]
+ldc_set_location -site {L7} [get_ports {LED[1]}]
+ldc_set_location -site {L8} [get_ports {LED[2]}]
+ldc_set_location -site {P8} [get_ports {LED[3]}]
+ldc_set_location -site {M8} [get_ports {LED[4]}]
+ldc_set_location -site {M9} [get_ports {LED[5]}]
+ldc_set_location -site {P10} [get_ports {LED[6]}]
+ldc_set_location -site {N10} [get_ports {LED[7]}]
+ldc_set_location -site {AN15} [get_ports {LED[8]}]
+ldc_set_location -site {AH17} [get_ports {LED[9]}]
+ldc_set_location -site {AG17} [get_ports {LED[10]}]
+ldc_set_location -site {AM14} [get_ports {LED[11]}]
+
+# UART Pinouts for Avant Evaluation Board
+ldc_set_location -site {T3} [get_ports uart_rxd_i]
+ldc_set_location -site {R3} [get_ports uart_txd_o]
+
+# Reset Pinout CertusPro-NX Versa Board
+ldc_set_location -site {AC17} [get_ports rstn_i]

@@ -56,7 +56,7 @@ module fpnew_opgroup_fmt_slice #(
 );
 
   localparam int unsigned FP_WIDTH  = fpnew_pkg::fp_width(FpFormat);
-  localparam int unsigned SIMD_WIDTH = unsigned'(Width/NUM_LANES);
+  localparam int unsigned SIMD_WIDTH = $unsigned(Width/NUM_LANES);
 
 
   logic [NUM_LANES-1:0] lane_in_ready, lane_out_valid; // Handshake signals for the lanes
@@ -99,7 +99,7 @@ module fpnew_opgroup_fmt_slice #(
       // Slice out the operands for this lane
       always_comb begin : prepare_input
         for (int i = 0; i < int'(NUM_OPERANDS); i++) begin
-          local_operands[i] = operands_i[i][(unsigned'(lane)+1)*FP_WIDTH-1:unsigned'(lane)*FP_WIDTH];
+          local_operands[i] = operands_i[i][($unsigned(lane)+1)*FP_WIDTH-1:$unsigned(lane)*FP_WIDTH];
         end
       end
 
@@ -221,7 +221,7 @@ module fpnew_opgroup_fmt_slice #(
     end
 
     // Insert lane result into slice result
-    assign slice_result[(unsigned'(lane)+1)*FP_WIDTH-1:unsigned'(lane)*FP_WIDTH] = local_result;
+    assign slice_result[($unsigned(lane)+1)*FP_WIDTH-1:$unsigned(lane)*FP_WIDTH] = local_result;
 
     // Create Classification results
     if (TrueSIMDClass && SIMD_WIDTH >= 10) begin : vectorial_true_class // true vectorial class blocks are 10bits in size

@@ -1,0 +1,96 @@
+set device "LAV-AT-E70ES1"
+set device_int "ap6a400be"
+set package "LFG1156"
+set package_int "LFG1156"
+set speed "1"
+set speed_int "1"
+set operation "Commercial"
+set family "LAV-AT"
+set architecture "ap6a00b"
+set partnumber "LAV-AT-E70ES1-1LFG1156C"
+set WRAPPER_INST "lscc_pll_inst"
+set DEVICE_NAME "LAV-AT-E70ES1"
+set VCO_FREQ 4000.000000
+set REFCLK_FREQ 125.000000
+set REFCLK_SEL 0
+set FBKSEL_CLKOUT 0
+set EXT_FBK_DELAY 3
+set EN_USR_FBKCLK 0
+set EN_EXT_CLKDIV 1
+set EN_SYNC_CLK0 0
+set WAIT_FOR_LOCK 0
+set EN_FAST_LOCK 0
+set EN_LOCK_DETECT 1
+set EN_PLL_RST 1
+set EN_CLK0_OUT 1
+set EN_CLK1_OUT 1
+set EN_CLK2_OUT 1
+set EN_CLK3_OUT 0
+set EN_CLK4_OUT 0
+set EN_CLK5_OUT 0
+set EN_CLK6_OUT 0
+set EN_CLK7_OUT 0
+set EN_CLK0_CLKEN 0
+set EN_CLK1_CLKEN 0
+set EN_CLK2_CLKEN 0
+set EN_CLK3_CLKEN 0
+set EN_CLK4_CLKEN 0
+set EN_CLK5_CLKEN 0
+set EN_CLK6_CLKEN 0
+set EN_CLK7_CLKEN 0
+set CLK0_BYP 0
+set CLK1_BYP 0
+set CLK2_BYP 0
+set CLK3_BYP 0
+set CLK4_BYP 0
+set CLK5_BYP 0
+set CLK6_BYP 0
+set CLK7_BYP 0
+set PHASE_SHIFT_TYPE 0
+set CLK0_PHI 1
+set CLK1_PHI 1
+set CLK2_PHI 1
+set CLK3_PHI 1
+set CLK4_PHI 1
+set CLK5_PHI 1
+set CLK6_PHI 1
+set CLK7_PHI 1
+set CLK0_DEL 32
+set CLK1_DEL 244
+set CLK2_DEL 40
+set CLK3_DEL 1
+set CLK4_DEL 1
+set CLK5_DEL 1
+set CLK6_DEL 1
+set CLK7_DEL 1
+set PLL_SSEN 0
+set PLL_DITHEN 1
+set PLL_ENSAT 1
+set PLL_INTFBK 1
+set PLL_CLKR "6'h00"
+set PLL_CLKF "26'h0080000"
+set PLL_CLKV "26'h0000000"
+set PLL_CLKS "12'h000"
+set PLL_BWADJ "12'h007"
+set PLL_CLKOD0 "11'h01F"
+set PLL_CLKOD1 "11'h0F3"
+set PLL_CLKOD2 "11'h027"
+set PLL_CLKOD3 "11'h000"
+set PLL_CLKOD4 "11'h000"
+set PLL_CLKOD5 "11'h000"
+set PLL_CLKOD6 "11'h000"
+set PLL_CLKOD7 "11'h013"
+set REG_INTERFACE "None"
+set REG_MAPPING 0
+
+
+set CLK_PERIOD [expr {double(round(1000000/$REFCLK_FREQ))/1000}]
+create_clock -name {clki_i} -period $CLK_PERIOD [get_ports clki_i]
+
+# IO_TYPE constraint - Refclk
+# if {$PLL_REFCLK_FROM_PIN} {
+#   ldc_set_port -iobuf IO_TYPE=$IO_TYPE [get_ports clki_i]
+# }
+
+# constraint to force the CLKRES signal to use a local clock
+ldc_set_attribute USE_PRIMARY=FALSE [get_nets lscc_pll_inst/clkout_testclk_o]

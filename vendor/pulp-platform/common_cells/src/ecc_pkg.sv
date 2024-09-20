@@ -18,7 +18,7 @@ package ecc_pkg;
   function automatic int unsigned get_parity_width (input int unsigned data_width);
     // data_width + cw_width + 1 <= 2**cw_width
     int unsigned cw_width = 2;
-    while (unsigned'(2**cw_width) < cw_width + data_width + 1) cw_width++;
+    while ($unsigned(2**cw_width) < cw_width + data_width + 1) cw_width++;
     return cw_width;
   endfunction
 

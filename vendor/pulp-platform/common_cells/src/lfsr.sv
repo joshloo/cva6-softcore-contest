@@ -249,7 +249,7 @@ end
 // block cipher layers
 ////////////////////////////////////////////////////////////////////////
 
-if (CipherLayers > unsigned'(0)) begin : g_cipher_layers
+if (CipherLayers > $unsigned(0)) begin : g_cipher_layers
   logic [63:0] ciph_layer;
   localparam int unsigned NumRepl = ((64+LfsrWidth)/LfsrWidth);
 
@@ -295,7 +295,7 @@ initial begin
   // these are the LUT limits
   assert(OutWidth <= LfsrWidth) else
     $fatal(1,"OutWidth must be smaller equal the LfsrWidth.");
-  assert(RstVal > unsigned'(0)) else
+  assert(RstVal > $unsigned(0)) else
     $fatal(1,"RstVal must be nonzero.");
   assert((LfsrWidth >= $low(Masks)) && (LfsrWidth <= $high(Masks))) else
     $fatal(1,"Unsupported LfsrWidth.");

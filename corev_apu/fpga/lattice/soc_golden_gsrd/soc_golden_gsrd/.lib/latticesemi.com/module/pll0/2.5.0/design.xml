@@ -1,0 +1,672 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>pll0</ipxact:name>
+    <ipxact:version>2.5.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_pll_inst</ipxact:instanceName>
+            <ipxact:componentRef library="module" name="pll" vendor="latticesemi.com" version="2.5.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="get_user_input">get_user_input: done</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="set_attr">set_attr: done</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="set_attributes">dummy_val_expr : done</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="print_attributes">print_attr: done</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUT_INST_NAME">u_pll0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_min_fvco">1600</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_max_fvco">4000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_optim_prio">JITTER</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_max_error">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_set_min_ndiv">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_num_clkout">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_check_range_mdiv">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_dither">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_ssc">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_saturation">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_sync">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_wait_for_lock">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_sel_out_div_path">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_vco_freq">4000.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_cfg_sel">-1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_refclk_freq">125.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_max_m_div">64</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_m_div_disp">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_phasedet_freq">125.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_fbk_mode">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_use_eclk_fbpath">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_float_n_div_disp">32.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_int_n_div_disp">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_frac_n_div_disp">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_n_div_disp">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_b_div_disp">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_profile">DOWN</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_fbw_adj">0.7071067811865476</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_mod_freq">30.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_mod_freq_disp">30.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_mod_depth">2.5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_ssc_mod_depth_disp">2.5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_set_min_ndiv_disp">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_v_div_disp">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_s_div_disp">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout">{0: {'EN': True, 'NAME': 0, 'BYP': False, 'FREQ': 125.0, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}, 1: {'EN': True, 'NAME': 1, 'BYP': False, 'FREQ': 16.384, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}, 2: {'EN': False, 'NAME': 2, 'BYP': False, 'FREQ': 100.0, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}, 3: {'EN': False, 'NAME': 3, 'BYP': False, 'FREQ': 100.0, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}, 4: {'EN': False, 'NAME': 4, 'BYP': False, 'FREQ': 100.0, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}, 5: {'EN': False, 'NAME': 5, 'BYP': False, 'FREQ': 100.0, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}, 6: {'EN': False, 'NAME': 6, 'BYP': False, 'FREQ': 1000.0, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}, 7: {'EN': False, 'NAME': 7, 'BYP': False, 'FREQ': 100.0, 'PHASE': 0, 'TOL': 0.0, 'CLKEN': False}}</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_en">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_name">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_freq">125.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_freq_disp">125.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_div_disp">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_ppm">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_0_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_en">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_name">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_freq">16.384</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_freq_disp">16.39344262295082</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_div_disp">244</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_ppm">576.332</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_1_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_name">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_div_disp">40</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_ppm">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_2_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_name">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_div_disp">25</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_ppm">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_3_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_name">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_div_disp">25</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_ppm">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_4_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_name">5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_div_disp">25</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_ppm">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_5_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_name">6</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_freq">1000.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_freq_disp">1000.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_div_disp">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_ppm">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_6_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_en">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_name">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_byp">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_freq">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_freq_disp">100.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_div_disp">25</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_tol">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_ppm">0.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_phase">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_clkout_7_clken">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_refclk_pin">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_refclk_io_type">LVDS</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_dyn_phase">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_use_phase_adv">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_pll_reset">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_pll_lock">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_fast_lock">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_reg_interface">None</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_reg_mapping">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_en_misc_ports">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="gui_sim_type">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GATE_SIM">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DEVICE_NAME">LAV-AT-E70ES1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="VCO_FREQ">4000.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REFCLK_FREQ">125.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REFCLK_SEL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FBKSEL_CLKOUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EXT_FBK_DELAY">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_USR_FBKCLK">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_EXT_CLKDIV">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_SYNC_CLK0">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WAIT_FOR_LOCK">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_FAST_LOCK">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_LOCK_DETECT">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_PLL_RST">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK0_OUT">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK1_OUT">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK2_OUT">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK3_OUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK4_OUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK5_OUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK6_OUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK7_OUT">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK0_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK1_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK2_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK3_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK4_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK5_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK6_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="EN_CLK7_CLKEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK0_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK1_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK2_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK3_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK4_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK5_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK6_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK7_BYP">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHASE_SHIFT_TYPE">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK0_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK1_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK2_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK3_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK4_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK5_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK6_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK7_PHI">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK0_DEL">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK1_DEL">244</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK2_DEL">40</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK3_DEL">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK4_DEL">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK5_DEL">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK6_DEL">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CLK7_DEL">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_SSEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_DITHEN">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_ENSAT">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_INTFBK">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKR">6'h00</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKF">26'h0080000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKV">26'h0000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKS">12'h000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_BWADJ">12'h007</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD0">11'h01F</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD1">11'h0F3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD2">11'h027</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD3">11'h000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD4">11'h000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD5">11'h000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD6">11'h000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PLL_CLKOD7">11'h013</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REG_INTERFACE">None</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REG_MAPPING">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.rst_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="rst_n_i"/>
+                <ipxact:externalPortReference portRef="rstn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.refclk_in_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="refclk_in_i"/>
+                <ipxact:externalPortReference portRef="clki_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.usr_fbkclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="usr_fbkclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.phasedir_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="phasedir_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.phasestep_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="phasestep_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.phaseloadreg_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="phaseloadreg_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.phasesel_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="phasesel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_clkop_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_clkop_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_clkos_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_clkos_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_clkos2_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_clkos2_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_clkos3_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_clkos3_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_clkos4_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_clkos4_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_clkos5_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_clkos5_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_clkophy_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_clkophy_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clken_testclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clken_testclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.refclk_out_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="refclk_out_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.div_change_refclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="div_change_refclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.div_change_fbkclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="div_change_fbkclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.slip_refclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="slip_refclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.slip_fbkclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="slip_fbkclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.pll_lock_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="pll_lock_o"/>
+                <ipxact:externalPortReference portRef="lock_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_clkop_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_clkop_o"/>
+                <ipxact:externalPortReference portRef="clkop_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_clkos_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_clkos_o"/>
+                <ipxact:externalPortReference portRef="clkos_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_clkos2_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_clkos2_o"/>
+                <ipxact:externalPortReference portRef="clkos2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_clkos3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_clkos3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_clkos4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_clkos4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_clkos5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_clkos5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_clkophy_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_clkophy_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.clkout_testclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="clkout_testclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_clkop_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_clkop_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_clkos_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_clkos_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_clkos2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_clkos2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_clkos3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_clkos3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_clkos4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_clkos4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_clkos5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_clkos5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_clkophy_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_clkophy_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.outresetack_testclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="outresetack_testclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_clkop_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_clkop_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_clkos_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_clkos_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_clkos2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_clkos2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_clkos3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_clkos3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_clkos4_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_clkos4_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_clkos5_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_clkos5_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_clkophy_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_clkophy_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.stepack_testclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="stepack_testclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_clk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_resetn_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_resetn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_request_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_request_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_wr_rdn_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_wr_rdn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_offset_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_offset_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_wdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_wdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_rdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_rdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_rdata_valid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_rdata_valid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.lmmi_ready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="lmmi_ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_pclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_pclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_preset_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_preset_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_penable_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_penable_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_psel_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_psel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_pwrite_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_pwrite_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_paddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_paddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_pwdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_pwdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_pready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_pready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_pslverr_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_pslverr_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>pll0.apb_prdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="pll0" portRef="apb_prdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

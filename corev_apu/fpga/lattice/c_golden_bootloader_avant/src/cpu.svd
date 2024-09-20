@@ -1,0 +1,4319 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+    <device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD.xsd" >
+      <vendor>Latticsemi.com</vendor>                                       <!-- device vendor name -->
+      <vendorID>Latticesemi</vendorID>                                        <!-- device vendor short name -->
+      <name>LAV_AT_E70ES1</name>                                        <!-- name of part-->
+      <series>LAV-AT</series>                                         <!-- device series the device belongs to -->
+      <version>1.0</version>                                          <!-- version of this description, adding CMSIS-SVD 1.1 tags -->
+      <description>soc_golden_gsrd</description>
+
+      <addressUnitBits>8</addressUnitBits>
+      <width>32</width>
+      <size>32</size>
+      <access>read-write</access>
+      <resetValue>0x00000000</resetValue>
+      <resetMask>0xFFFFFFFF</resetMask>
+
+      <peripherals>
+          <peripheral>
+          <name>cpu0_inst</name>
+          <version>2.4.0</version>
+          <baseAddress>0xF2000000</baseAddress>
+          <groupName>riscv_rtos</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00100000</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+          
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>gpio0_inst</name>
+          <version>1.6.2</version>
+          <baseAddress>0x40000000</baseAddress>
+          <groupName>gpio</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00000400</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+                <!-- RD_DATA_REG: Read Data Register -->
+            <register>
+              <name>RD_DATA_REG</name>
+              <description>Read Data Register</description>
+              <addressOffset>0x0000</addressOffset>
+              <size>32</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rd_data: Read actual values of GPIO's -->
+                <field>
+                  <name>rd_data</name>
+                  <description>Read actual values of GPIO's</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- WR_DATA_REG: Write Data Register -->
+            <register>
+              <name>WR_DATA_REG</name>
+              <description>Write Data Register</description>
+              <addressOffset>0x0004</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- wr_data: Write GPIO output register -->
+                <field>
+                  <name>wr_data</name>
+                  <description>Write GPIO output register</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- SET_DATA_REG: Set Data Register -->
+            <register>
+              <name>SET_DATA_REG</name>
+              <description>Set Data Register</description>
+              <addressOffset>0x0008</addressOffset>
+              <size>32</size>
+              <access>write-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- set_data: Set GPIO output register -->
+                <field>
+                  <name>set_data</name>
+                  <description>Set GPIO output register</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>write-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- CLEAR_DATA_REG: Clear Data Register -->
+            <register>
+              <name>CLEAR_DATA_REG</name>
+              <description>Clear Data Register</description>
+              <addressOffset>0x000C</addressOffset>
+              <size>32</size>
+              <access>write-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- clear_data: Clear GPIO output register -->
+                <field>
+                  <name>clear_data</name>
+                  <description>Clear GPIO output register</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>write-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- DIRECTION_REG: Direction Register -->
+            <register>
+              <name>DIRECTION_REG</name>
+              <description>Direction Register</description>
+              <addressOffset>0x0010</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- direction_reg: GPIO Direction register -->
+                <field>
+                  <name>direction_reg</name>
+                  <description>GPIO Direction register</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- INT_TYPE_REG: Interrupt Type Register -->
+            <register>
+              <name>INT_TYPE_REG</name>
+              <description>Interrupt Type Register</description>
+              <addressOffset>0x0014</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- int_type: Interrupt Type Cofiguration Register, 1-Edge, 0-Level -->
+                <field>
+                  <name>int_type</name>
+                  <description>Interrupt Type Cofiguration Register, 1-Edge, 0-Level</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- INT_METHOD_REG: Interrupt Method Register -->
+            <register>
+              <name>INT_METHOD_REG</name>
+              <description>Interrupt Method Register</description>
+              <addressOffset>0x0018</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- int_method: Interrupt Method Register, if Interrupt Type is Edge` 1-Rising edge 0-faling edge, if Interrupt Type is Level` 1-High level, 0-Low level -->
+                <field>
+                  <name>int_method</name>
+                  <description>Interrupt Method Register, if Interrupt Type is Edge` 1-Rising edge 0-faling edge, if Interrupt Type is Level` 1-High level, 0-Low level</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- INT_STATUS_REG: Interrupt Status Register -->
+            <register>
+              <name>INT_STATUS_REG</name>
+              <description>Interrupt Status Register</description>
+              <addressOffset>0x001C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- int_status: Interrupt Status Register, indicates interrupt status -->
+                <field>
+                  <name>int_status</name>
+                  <description>Interrupt Status Register, indicates interrupt status</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- INT_ENABLE_REG: Interrupt Enable Register -->
+            <register>
+              <name>INT_ENABLE_REG</name>
+              <description>Interrupt Enable Register</description>
+              <addressOffset>0x0020</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- Int_enable: Interrupt Enable Register, enables appropriate channel interrupt -->
+                <field>
+                  <name>Int_enable</name>
+                  <description>Interrupt Enable Register, enables appropriate channel interrupt</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- INT_SET_REG: Interrupt Set Register -->
+            <register>
+              <name>INT_SET_REG</name>
+              <description>Interrupt Set Register</description>
+              <addressOffset>0x0024</addressOffset>
+              <size>32</size>
+              <access>write-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- int_set: Interrupt Set Register, user can generate interrupt by writing '1' to the corresponding bit of this register -->
+                <field>
+                  <name>int_set</name>
+                  <description>Interrupt Set Register, user can generate interrupt by writing '1' to the corresponding bit of this register</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>write-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>lpddr4_mc_contr0_inst</name>
+          <version>2.2.0</version>
+          <baseAddress>0x80000000</baseAddress>
+          <groupName>mc_avant</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x40000000</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+          
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>mbconfig0_inst</name>
+          <version>1.0.0</version>
+          <baseAddress>0x40097000</baseAddress>
+          <groupName>fpga_multiboot_config</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00001000</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+          
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>qspi0_inst</name>
+          <version>1.2.0</version>
+          <baseAddress>0x40300000</baseAddress>
+          <groupName>qspi_flash_controller</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00001000</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+          
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>sgdma0_inst</name>
+          <version>2.2.0</version>
+          <baseAddress>0x40098000</baseAddress>
+          <groupName>sgdma</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00001000</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+                <!-- MM2S_CTRL: Memory Map to Streaming Control Register  -->
+            <register>
+              <name>MM2S_CTRL</name>
+              <description>Memory Map to Streaming Control Register </description>
+              <addressOffset>0x0000</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- RSVD: Reserved -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved</description>
+                  <bitRange>[31:18]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- ERR_IRQ_MASK: To mask out Interrupt event when Error detected. -->
+                <field>
+                  <name>ERR_IRQ_MASK</name>
+                  <description>To mask out Interrupt event when Error detected.</description>
+                  <bitRange>[17:17]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- CMPL_IRQ_MASK: To mask out Interrupt event upon transfer completion. -->
+                <field>
+                  <name>CMPL_IRQ_MASK</name>
+                  <description>To mask out Interrupt event upon transfer completion.</description>
+                  <bitRange>[16:16]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- RSVD: Reserved -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved</description>
+                  <bitRange>[15:2]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- RESET: Soft reset to reset MM2S DMA core. -->
+                <field>
+                  <name>RESET</name>
+                  <description>Soft reset to reset MM2S DMA core.</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>write-only</access>
+                </field>
+            <!-- REQ23UEST: Request to start DMA operation. -->
+                <field>
+                  <name>REQ23UEST</name>
+                  <description>Request to start DMA operation.</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- MM2S_STS: Memory Map to Streaming Status Register -->
+            <register>
+              <name>MM2S_STS</name>
+              <description>Memory Map to Streaming Status Register</description>
+              <addressOffset>0x0004</addressOffset>
+              <size>32</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- RSVD: Reserved -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved</description>
+                  <bitRange>[31:18]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- XFER_ERR: Current Transfer detected error. -->
+                <field>
+                  <name>XFER_ERR</name>
+                  <description>Current Transfer detected error.</description>
+                  <bitRange>[17:17]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- XFER_CMPL: Current Transfer status. -->
+                <field>
+                  <name>XFER_CMPL</name>
+                  <description>Current Transfer status.</description>
+                  <bitRange>[16:16]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- RSVD: Reserved -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved</description>
+                  <bitRange>[15:11]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- AXI_DEC_ERR : AXI-MM Read RESP = DEC_ERR. -->
+                <field>
+                  <name>AXI_DEC_ERR </name>
+                  <description>AXI-MM Read RESP = DEC_ERR.</description>
+                  <bitRange>[10:10]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- AXI_SLV_ERR: AXI-MM Read RESP = SLV_ERR -->
+                <field>
+                  <name>AXI_SLV_ERR</name>
+                  <description>AXI-MM Read RESP = SLV_ERR</description>
+                  <bitRange>[9:9]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- BD_LEN_ERR: Descriptor Buffer Length error. -->
+                <field>
+                  <name>BD_LEN_ERR</name>
+                  <description>Descriptor Buffer Length error.</description>
+                  <bitRange>[8:8]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- RSVD: Reserved -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved</description>
+                  <bitRange>[6:1]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- STATUS: MM2S DMA operation status -->
+                <field>
+                  <name>STATUS</name>
+                  <description>MM2S DMA operation status</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- MM2S_CURDESC: Memory Map to Streaming Current Descriptor Pointer. -->
+            <register>
+              <name>MM2S_CURDESC</name>
+              <description>Memory Map to Streaming Current Descriptor Pointer.</description>
+              <addressOffset>0x0008</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- MM2S_CURDESC: Address pointer to Current MM2S Descriptor. -->
+                <field>
+                  <name>MM2S_CURDESC</name>
+                  <description>Address pointer to Current MM2S Descriptor.</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RSVD: Reserved -->
+            <register>
+              <name>RSVD</name>
+              <description>Reserved</description>
+              <addressOffset>0x000C</addressOffset>
+              <size>112</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- RSVD: Reserved. -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved.</description>
+                  <bitRange>[111:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- S2MM_CTRL: Memory Map to Streaming Control Register -->
+            <register>
+              <name>S2MM_CTRL</name>
+              <description>Memory Map to Streaming Control Register</description>
+              <addressOffset>0x0020</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- RSVD: Reserved. -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved.</description>
+                  <bitRange>[31:18]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- ERR_IRQ_MASK: To mask out Interrupt event when Error detected. -->
+                <field>
+                  <name>ERR_IRQ_MASK</name>
+                  <description>To mask out Interrupt event when Error detected.</description>
+                  <bitRange>[17:17]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- CMPL_IRQ_MASK: To mask out Interrupt event upon transfer completion. -->
+                <field>
+                  <name>CMPL_IRQ_MASK</name>
+                  <description>To mask out Interrupt event upon transfer completion.</description>
+                  <bitRange>[16:16]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- RSVD: Reserved. -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved.</description>
+                  <bitRange>[15:2]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- RESET: Soft reset to reset S2MM DMA core. -->
+                <field>
+                  <name>RESET</name>
+                  <description>Soft reset to reset S2MM DMA core.</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>write-only</access>
+                </field>
+            <!-- REQUEST: Request to start DMA operation. -->
+                <field>
+                  <name>REQUEST</name>
+                  <description>Request to start DMA operation.</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- S2MM_STS: Memory Map to Streaming Status Register. -->
+            <register>
+              <name>S2MM_STS</name>
+              <description>Memory Map to Streaming Status Register.</description>
+              <addressOffset>0x0024</addressOffset>
+              <size>32</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- RSVD: Reserved. -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved.</description>
+                  <bitRange>[31:18]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- XFER_ERR: Current Transfer detected error. -->
+                <field>
+                  <name>XFER_ERR</name>
+                  <description>Current Transfer detected error.</description>
+                  <bitRange>[17:17]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- XFER_CMPL: Current Transfer status. -->
+                <field>
+                  <name>XFER_CMPL</name>
+                  <description>Current Transfer status.</description>
+                  <bitRange>[16:16]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- RSVD: Reserved. -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved.</description>
+                  <bitRange>[15:11]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- AXI_DEC_ERR: AXI-MM Read RESP = DEC_ER. -->
+                <field>
+                  <name>AXI_DEC_ERR</name>
+                  <description>AXI-MM Read RESP = DEC_ER.</description>
+                  <bitRange>[10:10]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- AXI_SLV_ERR: AXI-MM Read RESP = SLV_ERR. -->
+                <field>
+                  <name>AXI_SLV_ERR</name>
+                  <description>AXI-MM Read RESP = SLV_ERR.</description>
+                  <bitRange>[9:9]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- BD_LEN_ERR: Descriptor’s Buffer Length error. -->
+                <field>
+                  <name>BD_LEN_ERR</name>
+                  <description>Descriptor’s Buffer Length error.</description>
+                  <bitRange>[8:8]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- RSVD: Reserved. -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved.</description>
+                  <bitRange>[6:1]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- STATUS: S2MM DMA operation status. -->
+                <field>
+                  <name>STATUS</name>
+                  <description>S2MM DMA operation status.</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- S2MM_CURDESC: Memory Map to Streaming Current Descriptor Pointer  -->
+            <register>
+              <name>S2MM_CURDESC</name>
+              <description>Memory Map to Streaming Current Descriptor Pointer </description>
+              <addressOffset>0x0028</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- S2MM_CURDESC: Address pointer to Current S2MM Descriptor. -->
+                <field>
+                  <name>S2MM_CURDESC</name>
+                  <description>Address pointer to Current S2MM Descriptor.</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RSVD: Reserved -->
+            <register>
+              <name>RSVD</name>
+              <description>Reserved</description>
+              <addressOffset>0x002C</addressOffset>
+              <size>112</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- RSVD: Reserved. -->
+                <field>
+                  <name>RSVD</name>
+                  <description>Reserved.</description>
+                  <bitRange>[111:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>sysmem0_inst</name>
+          <version>2.2.0</version>
+          <baseAddress>0x00000000</baseAddress>
+          <groupName>system_memory</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00020000</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+          
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>tse_mac0_inst</name>
+          <version>1.6.0</version>
+          <baseAddress>0x40001000</baseAddress>
+          <groupName>tse_mac</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00004000</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+                <!-- MODE: MODE -->
+            <register>
+              <name>MODE</name>
+              <description>MODE</description>
+              <addressOffset>0x0000</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- gbit_en: Gbit enable -->
+                <field>
+                  <name>gbit_en</name>
+                  <description>Gbit enable</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- fc_en: Flow-control Enable -->
+                <field>
+                  <name>fc_en</name>
+                  <description>Flow-control Enable</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rx_en: Receive Enable -->
+                <field>
+                  <name>rx_en</name>
+                  <description>Receive Enable</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_en: Transmit Enable -->
+                <field>
+                  <name>tx_en</name>
+                  <description>Transmit Enable</description>
+                  <bitRange>[3:3]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rmii_100m_en: RMII speed switch, 1 - 100Mbps, 0 - 10Mbps -->
+                <field>
+                  <name>rmii_100m_en</name>
+                  <description>RMII speed switch, 1 - 100Mbps, 0 - 10Mbps</description>
+                  <bitRange>[4:4]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_RX_CTL: TX_RX_CTL -->
+            <register>
+              <name>TX_RX_CTL</name>
+              <description>TX_RX_CTL</description>
+              <addressOffset>0x0004</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- prms: Promiscuous Mode -->
+                <field>
+                  <name>prms</name>
+                  <description>Promiscuous Mode</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- discard_fcs: Receive Discard FCS and Pad -->
+                <field>
+                  <name>discard_fcs</name>
+                  <description>Receive Discard FCS and Pad</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_dis_fcs: Transmit Disable FCS -->
+                <field>
+                  <name>tx_dis_fcs</name>
+                  <description>Transmit Disable FCS</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- receive_pause: Receive PAUSE -->
+                <field>
+                  <name>receive_pause</name>
+                  <description>Receive PAUSE</description>
+                  <bitRange>[3:3]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- receive_mltcst: Receive Multicast -->
+                <field>
+                  <name>receive_mltcst</name>
+                  <description>Receive Multicast</description>
+                  <bitRange>[4:4]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- hden: Half-duplex Enable -->
+                <field>
+                  <name>hden</name>
+                  <description>Half-duplex Enable</description>
+                  <bitRange>[5:5]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- drop_control: Drop control -->
+                <field>
+                  <name>drop_control</name>
+                  <description>Drop control</description>
+                  <bitRange>[6:6]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- receive_brdcst: Receive Broadcast -->
+                <field>
+                  <name>receive_brdcst</name>
+                  <description>Receive Broadcast</description>
+                  <bitRange>[7:7]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- receive_short: Receive Short Frames -->
+                <field>
+                  <name>receive_short</name>
+                  <description>Receive Short Frames</description>
+                  <bitRange>[8:8]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- MAX_PKT_SIZE: MAX_PKT_SIZE -->
+            <register>
+              <name>MAX_PKT_SIZE</name>
+              <description>MAX_PKT_SIZE</description>
+              <addressOffset>0x0008</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- max_pkt_size: Maximum Packet Size -->
+                <field>
+                  <name>max_pkt_size</name>
+                  <description>Maximum Packet Size</description>
+                  <bitRange>[0:15]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- IPG: IPG -->
+            <register>
+              <name>IPG</name>
+              <description>IPG</description>
+              <addressOffset>0x000C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- ipg: Inter-Packet Gap -->
+                <field>
+                  <name>ipg</name>
+                  <description>Inter-Packet Gap</description>
+                  <bitRange>[15:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- MAC_ADDR_0: MAC_ADDR_0 -->
+            <register>
+              <name>MAC_ADDR_0</name>
+              <description>MAC_ADDR_0</description>
+              <addressOffset>0x0010</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- mac_addr_0: First 4 Bytes of MAC Address -->
+                <field>
+                  <name>mac_addr_0</name>
+                  <description>First 4 Bytes of MAC Address</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- MAC_ADDR_1: MAC_ADDR_1 -->
+            <register>
+              <name>MAC_ADDR_1</name>
+              <description>MAC_ADDR_1</description>
+              <addressOffset>0x0014</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- mac_addr_1: Last 2 Bytes of MAC Address -->
+                <field>
+                  <name>mac_addr_1</name>
+                  <description>Last 2 Bytes of MAC Address</description>
+                  <bitRange>[15:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_RX_STS: TX_RX_STS -->
+            <register>
+              <name>TX_RX_STS</name>
+              <description>TX_RX_STS</description>
+              <addressOffset>0x0018</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_idle: Tx MAC Idle -->
+                <field>
+                  <name>tx_idle</name>
+                  <description>Tx MAC Idle</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- pause_frame: Rx PAUSE Frame -->
+                <field>
+                  <name>pause_frame</name>
+                  <description>Rx PAUSE Frame</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- crc: Rx CRC Error -->
+                <field>
+                  <name>crc</name>
+                  <description>Rx CRC Error</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- error_frame: Rx frame error -->
+                <field>
+                  <name>error_frame</name>
+                  <description>Rx frame error</description>
+                  <bitRange>[3:3]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- long_frame: Rx long frame -->
+                <field>
+                  <name>long_frame</name>
+                  <description>Rx long frame</description>
+                  <bitRange>[4:4]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- short_frame: Rx short frame -->
+                <field>
+                  <name>short_frame</name>
+                  <description>Rx short frame</description>
+                  <bitRange>[5:5]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- ipg_shrink: Rx shrunk IPG frame(IPG less then 96 bit time) -->
+                <field>
+                  <name>ipg_shrink</name>
+                  <description>Rx shrunk IPG frame(IPG less then 96 bit time)</description>
+                  <bitRange>[6:6]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- multcst_frame: Rx multicast frame -->
+                <field>
+                  <name>multcst_frame</name>
+                  <description>Rx multicast frame</description>
+                  <bitRange>[7:7]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- brdcst_frame: Rx broadcast frame -->
+                <field>
+                  <name>brdcst_frame</name>
+                  <description>Rx broadcast frame</description>
+                  <bitRange>[8:8]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- tagged_frame: Rx tagged frame -->
+                <field>
+                  <name>tagged_frame</name>
+                  <description>Rx tagged frame</description>
+                  <bitRange>[9:9]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- rx_idle: Rx MAC Idle -->
+                <field>
+                  <name>rx_idle</name>
+                  <description>Rx MAC Idle</description>
+                  <bitRange>[10:10]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- VLAN_TAG: VLAN_TAG -->
+            <register>
+              <name>VLAN_TAG</name>
+              <description>VLAN_TAG</description>
+              <addressOffset>0x001C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- vlan: length/type of field of the VLAN tag -->
+                <field>
+                  <name>vlan</name>
+                  <description>length/type of field of the VLAN tag</description>
+                  <bitRange>[0:15]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- GMII_MNG_CTL: GMII_MNG_CTL -->
+            <register>
+              <name>GMII_MNG_CTL</name>
+              <description>GMII_MNG_CTL</description>
+              <addressOffset>0x0020</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- reg_add: GMII Register Address -->
+                <field>
+                  <name>reg_add</name>
+                  <description>GMII Register Address</description>
+                  <bitRange>[4:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- phy_add: GMII PHY Address -->
+                <field>
+                  <name>phy_add</name>
+                  <description>GMII PHY Address</description>
+                  <bitRange>[9:5]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rw_phyreg: Read/Write PHY Registers -->
+                <field>
+                  <name>rw_phyreg</name>
+                  <description>Read/Write PHY Registers</description>
+                  <bitRange>[10:10]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- cmd_fin: Command Finished -->
+                <field>
+                  <name>cmd_fin</name>
+                  <description>Command Finished</description>
+                  <bitRange>[11:11]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- GMII_MNG_DAT: GMII_MNG_DAT -->
+            <register>
+              <name>GMII_MNG_DAT</name>
+              <description>GMII_MNG_DAT</description>
+              <addressOffset>0x0024</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- gmii_dat: GMII Management Access Data -->
+                <field>
+                  <name>gmii_dat</name>
+                  <description>GMII Management Access Data</description>
+                  <bitRange>[15:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- MLT_TAB_0: MLT_TAB_0 -->
+            <register>
+              <name>MLT_TAB_0</name>
+              <description>MLT_TAB_0</description>
+              <addressOffset>0x0028</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- multicast_table0: Multicast Table Word 0 -->
+                <field>
+                  <name>multicast_table0</name>
+                  <description>Multicast Table Word 0</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- MLT_TAB_1: MLT_TAB_1 -->
+            <register>
+              <name>MLT_TAB_1</name>
+              <description>MLT_TAB_1</description>
+              <addressOffset>0x002C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- multicast_table1: Multicast Table Word 1 -->
+                <field>
+                  <name>multicast_table1</name>
+                  <description>Multicast Table Word 1</description>
+                  <bitRange>[32:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- PAUS_OP: PAUS_OP -->
+            <register>
+              <name>PAUS_OP</name>
+              <description>PAUS_OP</description>
+              <addressOffset>0x0030</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- pause_opcode: Pause Opcode -->
+                <field>
+                  <name>pause_opcode</name>
+                  <description>Pause Opcode</description>
+                  <bitRange>[0:15]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_AFIFO_AFULL_TH: TX_AFIFO_AFULL_TH -->
+            <register>
+              <name>TX_AFIFO_AFULL_TH</name>
+              <description>TX_AFIFO_AFULL_TH</description>
+              <addressOffset>0x0034</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_fifo_afull_th: TX FIFO Almost Full Threshold -->
+                <field>
+                  <name>tx_fifo_afull_th</name>
+                  <description>TX FIFO Almost Full Threshold</description>
+                  <bitRange>[10:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_AFIFO_AEMPTY_TH: TX_AFIFO_AEMPTY_TH -->
+            <register>
+              <name>TX_AFIFO_AEMPTY_TH</name>
+              <description>TX_AFIFO_AEMPTY_TH</description>
+              <addressOffset>0x0038</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_fifo_aempty_th: TX FIFO Almost Empty Threshold -->
+                <field>
+                  <name>tx_fifo_aempty_th</name>
+                  <description>TX FIFO Almost Empty Threshold</description>
+                  <bitRange>[10:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_AFIFO_AFULL_TH: RX_AFIFO_AFULL_TH -->
+            <register>
+              <name>RX_AFIFO_AFULL_TH</name>
+              <description>RX_AFIFO_AFULL_TH</description>
+              <addressOffset>0x003C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_fifo_afull_th: RX FIFO Almost Full Threshold -->
+                <field>
+                  <name>rx_fifo_afull_th</name>
+                  <description>RX FIFO Almost Full Threshold</description>
+                  <bitRange>[10:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_AFIFO_AEMPTY_TH: RX_AFIFO_AEMPTY_TH -->
+            <register>
+              <name>RX_AFIFO_AEMPTY_TH</name>
+              <description>RX_AFIFO_AEMPTY_TH</description>
+              <addressOffset>0x0040</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_fifo_aempty_th: RX FIFO Almost Empty Threshold -->
+                <field>
+                  <name>rx_fifo_aempty_th</name>
+                  <description>RX FIFO Almost Empty Threshold</description>
+                  <bitRange>[10:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- INTR_STA: INTR_STA -->
+            <register>
+              <name>INTR_STA</name>
+              <description>INTR_STA</description>
+              <addressOffset>0x0044</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_afull_int: RX FIFO Almost Full Interrupt -->
+                <field>
+                  <name>rx_afull_int</name>
+                  <description>RX FIFO Almost Full Interrupt</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rx_aempty_int: RX FIFO Almost Empty Interrupt -->
+                <field>
+                  <name>rx_aempty_int</name>
+                  <description>RX FIFO Almost Empty Interrupt</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rx_empty_int: RX FIFO Empty Interrupt -->
+                <field>
+                  <name>rx_empty_int</name>
+                  <description>RX FIFO Empty Interrupt</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rx_underflow_int: RX FIFO Underflow Interrupt -->
+                <field>
+                  <name>rx_underflow_int</name>
+                  <description>RX FIFO Underflow Interrupt</description>
+                  <bitRange>[3:3]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_aempty_int: TX FIFO Almost Empty Interrrupt -->
+                <field>
+                  <name>tx_aempty_int</name>
+                  <description>TX FIFO Almost Empty Interrrupt</description>
+                  <bitRange>[4:4]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_afull_int: TX FIFO Almost Full Interrrupt -->
+                <field>
+                  <name>tx_afull_int</name>
+                  <description>TX FIFO Almost Full Interrrupt</description>
+                  <bitRange>[5:5]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_full_int: TX FIFO Full Interrrupt -->
+                <field>
+                  <name>tx_full_int</name>
+                  <description>TX FIFO Full Interrrupt</description>
+                  <bitRange>[6:6]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_overflow_int: TX FIFO Overflow Interrrupt -->
+                <field>
+                  <name>tx_overflow_int</name>
+                  <description>TX FIFO Overflow Interrrupt</description>
+                  <bitRange>[7:7]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- INTR_ENA: INTR_ENA -->
+            <register>
+              <name>INTR_ENA</name>
+              <description>INTR_ENA</description>
+              <addressOffset>0x0048</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_afull_en: RX FIFO Almost Full Interrupt Enable -->
+                <field>
+                  <name>rx_afull_en</name>
+                  <description>RX FIFO Almost Full Interrupt Enable</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rx_aempty_en: RX FIFO Almost Empty Interrupt Enable -->
+                <field>
+                  <name>rx_aempty_en</name>
+                  <description>RX FIFO Almost Empty Interrupt Enable</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rx_empty_en: RX FIFO Empty Interrupt Enable -->
+                <field>
+                  <name>rx_empty_en</name>
+                  <description>RX FIFO Empty Interrupt Enable</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rx_underflow_en: RX FIFO Underflow Interrupt Enable -->
+                <field>
+                  <name>rx_underflow_en</name>
+                  <description>RX FIFO Underflow Interrupt Enable</description>
+                  <bitRange>[3:3]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_aempty_en: TX FIFO Almost Empty Interrrupt Enable -->
+                <field>
+                  <name>tx_aempty_en</name>
+                  <description>TX FIFO Almost Empty Interrrupt Enable</description>
+                  <bitRange>[4:4]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_afull_en: TX FIFO Almost Full Interrrupt Enable -->
+                <field>
+                  <name>tx_afull_en</name>
+                  <description>TX FIFO Almost Full Interrrupt Enable</description>
+                  <bitRange>[5:5]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_full_en: TX FIFO Full Interrrupt Enable -->
+                <field>
+                  <name>tx_full_en</name>
+                  <description>TX FIFO Full Interrrupt Enable</description>
+                  <bitRange>[6:6]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- tx_overflow_en: TX FIFO Overflow Interrrupt Enable -->
+                <field>
+                  <name>tx_overflow_en</name>
+                  <description>TX FIFO Overflow Interrrupt Enable</description>
+                  <bitRange>[7:7]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_UNICST_0: TX_STAT_UNICST_0 -->
+            <register>
+              <name>TX_STAT_UNICST_0</name>
+              <description>TX_STAT_UNICST_0</description>
+              <addressOffset>0x004C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_unicst_0: empty content -->
+                <field>
+                  <name>tx_stat_unicst_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_UNICST_1: TX_STAT_UNICST_1 -->
+            <register>
+              <name>TX_STAT_UNICST_1</name>
+              <description>TX_STAT_UNICST_1</description>
+              <addressOffset>0x0050</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_unicst_1: empty content -->
+                <field>
+                  <name>tx_stat_unicst_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_MULTCST_0: TX_STAT_MULTCST_0 -->
+            <register>
+              <name>TX_STAT_MULTCST_0</name>
+              <description>TX_STAT_MULTCST_0</description>
+              <addressOffset>0x0054</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_multcst_0: empty content -->
+                <field>
+                  <name>tx_stat_multcst_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_MULTCST_1: TX_STAT_MULTCST_1 -->
+            <register>
+              <name>TX_STAT_MULTCST_1</name>
+              <description>TX_STAT_MULTCST_1</description>
+              <addressOffset>0x0058</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_multcst_1: empty content -->
+                <field>
+                  <name>tx_stat_multcst_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_BRDCST_0: TX_STAT_BRDCST_0 -->
+            <register>
+              <name>TX_STAT_BRDCST_0</name>
+              <description>TX_STAT_BRDCST_0</description>
+              <addressOffset>0x005C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_brdcst_0: empty content -->
+                <field>
+                  <name>tx_stat_brdcst_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_BRDCST_1: TX_STAT_BRDCST_1 -->
+            <register>
+              <name>TX_STAT_BRDCST_1</name>
+              <description>TX_STAT_BRDCST_1</description>
+              <addressOffset>0x0060</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_brdcst_1: empty content -->
+                <field>
+                  <name>tx_stat_brdcst_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_BADFCS_0: TX_STAT_BADFCS_0 -->
+            <register>
+              <name>TX_STAT_BADFCS_0</name>
+              <description>TX_STAT_BADFCS_0</description>
+              <addressOffset>0x0064</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_badfcs_0: empty content -->
+                <field>
+                  <name>tx_stat_badfcs_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_BADFCS_1: TX_STAT_BADFCS_1 -->
+            <register>
+              <name>TX_STAT_BADFCS_1</name>
+              <description>TX_STAT_BADFCS_1</description>
+              <addressOffset>0x0068</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_badfcs_1: empty content -->
+                <field>
+                  <name>tx_stat_badfcs_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_JMBO_0: TX_STAT_JMBO_0 -->
+            <register>
+              <name>TX_STAT_JMBO_0</name>
+              <description>TX_STAT_JMBO_0</description>
+              <addressOffset>0x006C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_jmbo_0: empty content -->
+                <field>
+                  <name>tx_stat_jmbo_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_JMBO_1: TX_STAT_JMBO_1 -->
+            <register>
+              <name>TX_STAT_JMBO_1</name>
+              <description>TX_STAT_JMBO_1</description>
+              <addressOffset>0x0070</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_jmbo_1: empty content -->
+                <field>
+                  <name>tx_stat_jmbo_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_UNDER_RUN_0: TX_STAT_UNDER_RUN_0 -->
+            <register>
+              <name>TX_STAT_UNDER_RUN_0</name>
+              <description>TX_STAT_UNDER_RUN_0</description>
+              <addressOffset>0x0074</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_under_run_0: empty content -->
+                <field>
+                  <name>tx_stat_under_run_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_UNDER_RUN_1: TX_STAT_UNDER_RUN_1 -->
+            <register>
+              <name>TX_STAT_UNDER_RUN_1</name>
+              <description>TX_STAT_UNDER_RUN_1</description>
+              <addressOffset>0x0078</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_under_run_1: empty content -->
+                <field>
+                  <name>tx_stat_under_run_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_PAUSE_0: TX_STAT_PAUSE_0 -->
+            <register>
+              <name>TX_STAT_PAUSE_0</name>
+              <description>TX_STAT_PAUSE_0</description>
+              <addressOffset>0x007C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_pause_0: empty content -->
+                <field>
+                  <name>tx_stat_pause_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_PAUSE_1: TX_STAT_PAUSE_1 -->
+            <register>
+              <name>TX_STAT_PAUSE_1</name>
+              <description>TX_STAT_PAUSE_1</description>
+              <addressOffset>0x0080</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_pause_1: empty content -->
+                <field>
+                  <name>tx_stat_pause_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_VLN_TG_0: TX_STAT_VLN_TG_0 -->
+            <register>
+              <name>TX_STAT_VLN_TG_0</name>
+              <description>TX_STAT_VLN_TG_0</description>
+              <addressOffset>0x0084</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_vln_tg_0: empty content -->
+                <field>
+                  <name>tx_stat_vln_tg_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_VLN_TG_1: TX_STAT_VLN_TG_1 -->
+            <register>
+              <name>TX_STAT_VLN_TG_1</name>
+              <description>TX_STAT_VLN_TG_1</description>
+              <addressOffset>0x0088</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_vln_tg_1: empty content -->
+                <field>
+                  <name>tx_stat_vln_tg_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_LNGTH_0: TX_STAT_FRM_LNGTH_0 -->
+            <register>
+              <name>TX_STAT_FRM_LNGTH_0</name>
+              <description>TX_STAT_FRM_LNGTH_0</description>
+              <addressOffset>0x008C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_lngth_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_lngth_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_LNGTH_1: TX_STAT_FRM_LNGTH_1 -->
+            <register>
+              <name>TX_STAT_FRM_LNGTH_1</name>
+              <description>TX_STAT_FRM_LNGTH_1</description>
+              <addressOffset>0x0090</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_lngth_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_lngth_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_DEFERRED_TRANS_0: TX_STAT_DEFERRED_TRANS_0 -->
+            <register>
+              <name>TX_STAT_DEFERRED_TRANS_0</name>
+              <description>TX_STAT_DEFERRED_TRANS_0</description>
+              <addressOffset>0x0094</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_deferred_trans_0: empty content -->
+                <field>
+                  <name>tx_stat_deferred_trans_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_DEFERRED_TRANS_1: TX_STAT_DEFERRED_TRANS_1 -->
+            <register>
+              <name>TX_STAT_DEFERRED_TRANS_1</name>
+              <description>TX_STAT_DEFERRED_TRANS_1</description>
+              <addressOffset>0x0098</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_deferred_trans_1: empty content -->
+                <field>
+                  <name>tx_stat_deferred_trans_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_EXCESSIVE_DEFERRED_TRANS_0: TX_STAT_EXCESSIVE_DEFERRED_TRANS_0 -->
+            <register>
+              <name>TX_STAT_EXCESSIVE_DEFERRED_TRANS_0</name>
+              <description>TX_STAT_EXCESSIVE_DEFERRED_TRANS_0</description>
+              <addressOffset>0x009C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_excessive_deferred_trans_0: empty content -->
+                <field>
+                  <name>tx_stat_excessive_deferred_trans_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_EXCESSIVE_DEFERRED_TRANS_1: TX_STAT_EXCESSIVE_DEFERRED_TRANS_1 -->
+            <register>
+              <name>TX_STAT_EXCESSIVE_DEFERRED_TRANS_1</name>
+              <description>TX_STAT_EXCESSIVE_DEFERRED_TRANS_1</description>
+              <addressOffset>0x00A0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_excessive_deferred_trans_1: empty content -->
+                <field>
+                  <name>tx_stat_excessive_deferred_trans_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_LATE_COL_0: TX_STAT_LATE_COL_0 -->
+            <register>
+              <name>TX_STAT_LATE_COL_0</name>
+              <description>TX_STAT_LATE_COL_0</description>
+              <addressOffset>0x00A4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_late_col_0: empty content -->
+                <field>
+                  <name>tx_stat_late_col_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_LATE_COL_1: TX_STAT_LATE_COL_1 -->
+            <register>
+              <name>TX_STAT_LATE_COL_1</name>
+              <description>TX_STAT_LATE_COL_1</description>
+              <addressOffset>0x00A8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_late_col_1: empty content -->
+                <field>
+                  <name>tx_stat_late_col_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_EXCESSIVE_COL_0: TX_STAT_EXCESSIVE_COL_0 -->
+            <register>
+              <name>TX_STAT_EXCESSIVE_COL_0</name>
+              <description>TX_STAT_EXCESSIVE_COL_0</description>
+              <addressOffset>0x00AC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_excessive_col_0: empty content -->
+                <field>
+                  <name>tx_stat_excessive_col_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_EXCESSIVE_COL_1: TX_STAT_EXCESSIVE_COL_1 -->
+            <register>
+              <name>TX_STAT_EXCESSIVE_COL_1</name>
+              <description>TX_STAT_EXCESSIVE_COL_1</description>
+              <addressOffset>0x00B0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_excessive_col_1: empty content -->
+                <field>
+                  <name>tx_stat_excessive_col_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_NUM_EARLY_COL_0: TX_STAT_NUM_EARLY_COL_0 -->
+            <register>
+              <name>TX_STAT_NUM_EARLY_COL_0</name>
+              <description>TX_STAT_NUM_EARLY_COL_0</description>
+              <addressOffset>0x00B4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_num_early_col_0: empty content -->
+                <field>
+                  <name>tx_stat_num_early_col_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_NUM_EARLY_COL_1: TX_STAT_NUM_EARLY_COL_1 -->
+            <register>
+              <name>TX_STAT_NUM_EARLY_COL_1</name>
+              <description>TX_STAT_NUM_EARLY_COL_1</description>
+              <addressOffset>0x00B8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_num_early_col_1: empty content -->
+                <field>
+                  <name>tx_stat_num_early_col_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_SHRT_FRM_DIS_FCS_0: TX_STAT_SHRT_FRM_DIS_FCS_0 -->
+            <register>
+              <name>TX_STAT_SHRT_FRM_DIS_FCS_0</name>
+              <description>TX_STAT_SHRT_FRM_DIS_FCS_0</description>
+              <addressOffset>0x00BC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_shrt_frm_dis_fcs_0: empty content -->
+                <field>
+                  <name>tx_stat_shrt_frm_dis_fcs_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_SHRT_FRM_DIS_FCS_1: TX_STAT_SHRT_FRM_DIS_FCS_1 -->
+            <register>
+              <name>TX_STAT_SHRT_FRM_DIS_FCS_1</name>
+              <description>TX_STAT_SHRT_FRM_DIS_FCS_1</description>
+              <addressOffset>0x00C0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_shrt_frm_dis_fcs_1: empty content -->
+                <field>
+                  <name>tx_stat_shrt_frm_dis_fcs_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_PTP1588_FRM_0: TX_STAT_PTP1588_FRM_0 -->
+            <register>
+              <name>TX_STAT_PTP1588_FRM_0</name>
+              <description>TX_STAT_PTP1588_FRM_0</description>
+              <addressOffset>0x00C4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_ptp1588_frm_0: empty content -->
+                <field>
+                  <name>tx_stat_ptp1588_frm_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_PTP1588_FRM_1: TX_STAT_PTP1588_FRM_1 -->
+            <register>
+              <name>TX_STAT_PTP1588_FRM_1</name>
+              <description>TX_STAT_PTP1588_FRM_1</description>
+              <addressOffset>0x00C8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_ptp1588_frm_1: empty content -->
+                <field>
+                  <name>tx_stat_ptp1588_frm_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_64_0: TX_STAT_FRM_64_0 -->
+            <register>
+              <name>TX_STAT_FRM_64_0</name>
+              <description>TX_STAT_FRM_64_0</description>
+              <addressOffset>0x00CC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_64_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_64_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_64_1: TX_STAT_FRM_64_1 -->
+            <register>
+              <name>TX_STAT_FRM_64_1</name>
+              <description>TX_STAT_FRM_64_1</description>
+              <addressOffset>0x00D0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_64_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_64_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_65_127_0: TX_STAT_FRM_65_127_0 -->
+            <register>
+              <name>TX_STAT_FRM_65_127_0</name>
+              <description>TX_STAT_FRM_65_127_0</description>
+              <addressOffset>0x00D4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_65_127_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_65_127_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_65_127_1: TX_STAT_FRM_65_127_1 -->
+            <register>
+              <name>TX_STAT_FRM_65_127_1</name>
+              <description>TX_STAT_FRM_65_127_1</description>
+              <addressOffset>0x00D8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_65_127_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_65_127_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_128_255_0: TX_STAT_FRM_128_255_0 -->
+            <register>
+              <name>TX_STAT_FRM_128_255_0</name>
+              <description>TX_STAT_FRM_128_255_0</description>
+              <addressOffset>0x00DC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_128_255_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_128_255_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_128_255_1: TX_STAT_FRM_128_255_1 -->
+            <register>
+              <name>TX_STAT_FRM_128_255_1</name>
+              <description>TX_STAT_FRM_128_255_1</description>
+              <addressOffset>0x00E0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_128_255_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_128_255_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_256_511_0: TX_STAT_FRM_256_511_0 -->
+            <register>
+              <name>TX_STAT_FRM_256_511_0</name>
+              <description>TX_STAT_FRM_256_511_0</description>
+              <addressOffset>0x00E4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_256_511_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_256_511_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_256_511_1: TX_STAT_FRM_256_511_1 -->
+            <register>
+              <name>TX_STAT_FRM_256_511_1</name>
+              <description>TX_STAT_FRM_256_511_1</description>
+              <addressOffset>0x00E8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_256_511_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_256_511_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_512_1023_0: TX_STAT_FRM_512_1023_0 -->
+            <register>
+              <name>TX_STAT_FRM_512_1023_0</name>
+              <description>TX_STAT_FRM_512_1023_0</description>
+              <addressOffset>0x00EC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_512_1023_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_512_1023_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_512_1023_1: TX_STAT_FRM_512_1023_1 -->
+            <register>
+              <name>TX_STAT_FRM_512_1023_1</name>
+              <description>TX_STAT_FRM_512_1023_1</description>
+              <addressOffset>0x00F0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_512_1023_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_512_1023_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_1024_1518_0: TX_STAT_FRM_1024_1518_0 -->
+            <register>
+              <name>TX_STAT_FRM_1024_1518_0</name>
+              <description>TX_STAT_FRM_1024_1518_0</description>
+              <addressOffset>0x00F4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_1024_1518_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_1024_1518_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_1024_1518_1: TX_STAT_FRM_1024_1518_1 -->
+            <register>
+              <name>TX_STAT_FRM_1024_1518_1</name>
+              <description>TX_STAT_FRM_1024_1518_1</description>
+              <addressOffset>0x00F8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_1024_1518_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_1024_1518_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_1519_2047_0: TX_STAT_FRM_1519_2047_0 -->
+            <register>
+              <name>TX_STAT_FRM_1519_2047_0</name>
+              <description>TX_STAT_FRM_1519_2047_0</description>
+              <addressOffset>0x00FC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_1519_2047_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_1519_2047_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_1519_2047_1: TX_STAT_FRM_1519_2047_1 -->
+            <register>
+              <name>TX_STAT_FRM_1519_2047_1</name>
+              <description>TX_STAT_FRM_1519_2047_1</description>
+              <addressOffset>0x0100</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_1519_2047_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_1519_2047_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_2048_4095_0: TX_STAT_FRM_2048_4095_0 -->
+            <register>
+              <name>TX_STAT_FRM_2048_4095_0</name>
+              <description>TX_STAT_FRM_2048_4095_0</description>
+              <addressOffset>0x0104</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_2048_4095_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_2048_4095_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_2048_4095_1: TX_STAT_FRM_2048_4095_1 -->
+            <register>
+              <name>TX_STAT_FRM_2048_4095_1</name>
+              <description>TX_STAT_FRM_2048_4095_1</description>
+              <addressOffset>0x0108</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_2048_4095_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_2048_4095_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_4096_9216_0: TX_STAT_FRM_4096_9216_0 -->
+            <register>
+              <name>TX_STAT_FRM_4096_9216_0</name>
+              <description>TX_STAT_FRM_4096_9216_0</description>
+              <addressOffset>0x010C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_4096_9216_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_4096_9216_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_4096_9216_1: TX_STAT_FRM_4096_9216_1 -->
+            <register>
+              <name>TX_STAT_FRM_4096_9216_1</name>
+              <description>TX_STAT_FRM_4096_9216_1</description>
+              <addressOffset>0x0110</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_4096_9216_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_4096_9216_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_9217_16383_0: TX_STAT_FRM_9217_16383_0 -->
+            <register>
+              <name>TX_STAT_FRM_9217_16383_0</name>
+              <description>TX_STAT_FRM_9217_16383_0</description>
+              <addressOffset>0x0114</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_9217_16383_0: empty content -->
+                <field>
+                  <name>tx_stat_frm_9217_16383_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- TX_STAT_FRM_9217_16383_1: TX_STAT_FRM_9217_16383_1 -->
+            <register>
+              <name>TX_STAT_FRM_9217_16383_1</name>
+              <description>TX_STAT_FRM_9217_16383_1</description>
+              <addressOffset>0x0118</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- tx_stat_frm_9217_16383_1: empty content -->
+                <field>
+                  <name>tx_stat_frm_9217_16383_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_LNGTH_0: RX_STAT_FRM_LNGTH_0 -->
+            <register>
+              <name>RX_STAT_FRM_LNGTH_0</name>
+              <description>RX_STAT_FRM_LNGTH_0</description>
+              <addressOffset>0x011C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_lngth_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_lngth_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_LNGTH_1: RX_STAT_FRM_LNGTH_1 -->
+            <register>
+              <name>RX_STAT_FRM_LNGTH_1</name>
+              <description>RX_STAT_FRM_LNGTH_1</description>
+              <addressOffset>0x0120</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_lngth_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_lngth_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_VLN_TG_0: RX_STAT_VLN_TG_0 -->
+            <register>
+              <name>RX_STAT_VLN_TG_0</name>
+              <description>RX_STAT_VLN_TG_0</description>
+              <addressOffset>0x0124</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_vln_tg_0: empty content -->
+                <field>
+                  <name>rx_stat_vln_tg_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_VLN_TG_1: RX_STAT_VLN_TG_1 -->
+            <register>
+              <name>RX_STAT_VLN_TG_1</name>
+              <description>RX_STAT_VLN_TG_1</description>
+              <addressOffset>0x0128</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_vln_tg_1: empty content -->
+                <field>
+                  <name>rx_stat_vln_tg_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PAUSE_0: RX_STAT_PAUSE_0 -->
+            <register>
+              <name>RX_STAT_PAUSE_0</name>
+              <description>RX_STAT_PAUSE_0</description>
+              <addressOffset>0x012C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_pause_0: empty content -->
+                <field>
+                  <name>rx_stat_pause_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PAUSE_1: RX_STAT_PAUSE_1 -->
+            <register>
+              <name>RX_STAT_PAUSE_1</name>
+              <description>RX_STAT_PAUSE_1</description>
+              <addressOffset>0x0130</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_pause_1: empty content -->
+                <field>
+                  <name>rx_stat_pause_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_CTRL_0: RX_STAT_CTRL_0 -->
+            <register>
+              <name>RX_STAT_CTRL_0</name>
+              <description>RX_STAT_CTRL_0</description>
+              <addressOffset>0x0134</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_ctrl_0: empty content -->
+                <field>
+                  <name>rx_stat_ctrl_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_CTRL_1: RX_STAT_CTRL_1 -->
+            <register>
+              <name>RX_STAT_CTRL_1</name>
+              <description>RX_STAT_CTRL_1</description>
+              <addressOffset>0x0138</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_ctrl_1: empty content -->
+                <field>
+                  <name>rx_stat_ctrl_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_UNSP_OPCODE_0: RX_STAT_UNSP_OPCODE_0 -->
+            <register>
+              <name>RX_STAT_UNSP_OPCODE_0</name>
+              <description>RX_STAT_UNSP_OPCODE_0</description>
+              <addressOffset>0x013C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_unsp_opcode_0: empty content -->
+                <field>
+                  <name>rx_stat_unsp_opcode_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_UNSP_OPCODE_1: RX_STAT_UNSP_OPCODE_1 -->
+            <register>
+              <name>RX_STAT_UNSP_OPCODE_1</name>
+              <description>RX_STAT_UNSP_OPCODE_1</description>
+              <addressOffset>0x0140</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_unsp_opcode_1: empty content -->
+                <field>
+                  <name>rx_stat_unsp_opcode_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_DRIBB_NIBB_0: RX_STAT_DRIBB_NIBB_0 -->
+            <register>
+              <name>RX_STAT_DRIBB_NIBB_0</name>
+              <description>RX_STAT_DRIBB_NIBB_0</description>
+              <addressOffset>0x0144</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_dribb_nibb_0: empty content -->
+                <field>
+                  <name>rx_stat_dribb_nibb_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_DRIBB_NIBB_1: RX_STAT_DRIBB_NIBB_1 -->
+            <register>
+              <name>RX_STAT_DRIBB_NIBB_1</name>
+              <description>RX_STAT_DRIBB_NIBB_1</description>
+              <addressOffset>0x0148</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_dribb_nibb_1: empty content -->
+                <field>
+                  <name>rx_stat_dribb_nibb_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_BRDCST_0: RX_STAT_BRDCST_0 -->
+            <register>
+              <name>RX_STAT_BRDCST_0</name>
+              <description>RX_STAT_BRDCST_0</description>
+              <addressOffset>0x014C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_brdcst_0: empty content -->
+                <field>
+                  <name>rx_stat_brdcst_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_BRDCST_1: RX_STAT_BRDCST_1 -->
+            <register>
+              <name>RX_STAT_BRDCST_1</name>
+              <description>RX_STAT_BRDCST_1</description>
+              <addressOffset>0x0150</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_brdcst_1: empty content -->
+                <field>
+                  <name>rx_stat_brdcst_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_MULTCST_0: RX_STAT_MULTCST_0 -->
+            <register>
+              <name>RX_STAT_MULTCST_0</name>
+              <description>RX_STAT_MULTCST_0</description>
+              <addressOffset>0x0154</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_multcst_0: empty content -->
+                <field>
+                  <name>rx_stat_multcst_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_MULTCST_1: RX_STAT_MULTCST_1 -->
+            <register>
+              <name>RX_STAT_MULTCST_1</name>
+              <description>RX_STAT_MULTCST_1</description>
+              <addressOffset>0x0158</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_multcst_1: empty content -->
+                <field>
+                  <name>rx_stat_multcst_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_UNICST_0: RX_STAT_UNICST_0 -->
+            <register>
+              <name>RX_STAT_UNICST_0</name>
+              <description>RX_STAT_UNICST_0</description>
+              <addressOffset>0x015C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_unicst_0: empty content -->
+                <field>
+                  <name>rx_stat_unicst_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_UNICST_1: RX_STAT_UNICST_1 -->
+            <register>
+              <name>RX_STAT_UNICST_1</name>
+              <description>RX_STAT_UNICST_1</description>
+              <addressOffset>0x0160</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_unicst_1: empty content -->
+                <field>
+                  <name>rx_stat_unicst_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_RCVD_OK_0: RX_STAT_RCVD_OK_0 -->
+            <register>
+              <name>RX_STAT_RCVD_OK_0</name>
+              <description>RX_STAT_RCVD_OK_0</description>
+              <addressOffset>0x0164</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_rcvd_ok_0: empty content -->
+                <field>
+                  <name>rx_stat_rcvd_ok_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_RCVD_OK_1: RX_STAT_RCVD_OK_1 -->
+            <register>
+              <name>RX_STAT_RCVD_OK_1</name>
+              <description>RX_STAT_RCVD_OK_1</description>
+              <addressOffset>0x0168</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_rcvd_ok_1: empty content -->
+                <field>
+                  <name>rx_stat_rcvd_ok_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_LNGTH_ERR_0: RX_STAT_LNGTH_ERR_0 -->
+            <register>
+              <name>RX_STAT_LNGTH_ERR_0</name>
+              <description>RX_STAT_LNGTH_ERR_0</description>
+              <addressOffset>0x016C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_lngth_err_0: empty content -->
+                <field>
+                  <name>rx_stat_lngth_err_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_LNGTH_ERR_1: RX_STAT_LNGTH_ERR_1 -->
+            <register>
+              <name>RX_STAT_LNGTH_ERR_1</name>
+              <description>RX_STAT_LNGTH_ERR_1</description>
+              <addressOffset>0x0170</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_lngth_err_1: empty content -->
+                <field>
+                  <name>rx_stat_lngth_err_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_CRC_ERR_0: RX_STAT_CRC_ERR_0 -->
+            <register>
+              <name>RX_STAT_CRC_ERR_0</name>
+              <description>RX_STAT_CRC_ERR_0</description>
+              <addressOffset>0x0174</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_crc_err_0: empty content -->
+                <field>
+                  <name>rx_stat_crc_err_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_CRC_ERR_1: RX_STAT_CRC_ERR_1 -->
+            <register>
+              <name>RX_STAT_CRC_ERR_1</name>
+              <description>RX_STAT_CRC_ERR_1</description>
+              <addressOffset>0x0178</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_crc_err_1: empty content -->
+                <field>
+                  <name>rx_stat_crc_err_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PKT_IGNORE_0: RX_STAT_PKT_IGNORE_0 -->
+            <register>
+              <name>RX_STAT_PKT_IGNORE_0</name>
+              <description>RX_STAT_PKT_IGNORE_0</description>
+              <addressOffset>0x017C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_pkt_ignore_0: empty content -->
+                <field>
+                  <name>rx_stat_pkt_ignore_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PKT_IGNORE_1: RX_STAT_PKT_IGNORE_1 -->
+            <register>
+              <name>RX_STAT_PKT_IGNORE_1</name>
+              <description>RX_STAT_PKT_IGNORE_1</description>
+              <addressOffset>0x0180</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_pkt_ignore_1: empty content -->
+                <field>
+                  <name>rx_stat_pkt_ignore_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PREVIOUS_CARRIER_EVENT_0: RX_STAT_PREVIOUS_CARRIER_EVENT_0 -->
+            <register>
+              <name>RX_STAT_PREVIOUS_CARRIER_EVENT_0</name>
+              <description>RX_STAT_PREVIOUS_CARRIER_EVENT_0</description>
+              <addressOffset>0x0184</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_previous_carrier_event_0: empty content -->
+                <field>
+                  <name>rx_stat_previous_carrier_event_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PREVIOUS_CARRIER_EVENT_1: RX_STAT_PREVIOUS_CARRIER_EVENT_1 -->
+            <register>
+              <name>RX_STAT_PREVIOUS_CARRIER_EVENT_1</name>
+              <description>RX_STAT_PREVIOUS_CARRIER_EVENT_1</description>
+              <addressOffset>0x0188</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_previous_carrier_event_1: empty content -->
+                <field>
+                  <name>rx_stat_previous_carrier_event_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PTP1588_FRM_0: RX_STAT_PTP1588_FRM_0 -->
+            <register>
+              <name>RX_STAT_PTP1588_FRM_0</name>
+              <description>RX_STAT_PTP1588_FRM_0</description>
+              <addressOffset>0x018C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_ptp1588_frm_0: empty content -->
+                <field>
+                  <name>rx_stat_ptp1588_frm_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_PTP1588_FRM_1: RX_STAT_PTP1588_FRM_1 -->
+            <register>
+              <name>RX_STAT_PTP1588_FRM_1</name>
+              <description>RX_STAT_PTP1588_FRM_1</description>
+              <addressOffset>0x0190</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_ptp1588_frm_1: empty content -->
+                <field>
+                  <name>rx_stat_ptp1588_frm_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_IPG_VIOL_0: RX_STAT_IPG_VIOL_0 -->
+            <register>
+              <name>RX_STAT_IPG_VIOL_0</name>
+              <description>RX_STAT_IPG_VIOL_0</description>
+              <addressOffset>0x0194</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_ipg_viol_0: empty content -->
+                <field>
+                  <name>rx_stat_ipg_viol_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_IPG_VIOL_1: RX_STAT_IPG_VIOL_1 -->
+            <register>
+              <name>RX_STAT_IPG_VIOL_1</name>
+              <description>RX_STAT_IPG_VIOL_1</description>
+              <addressOffset>0x0198</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_ipg_viol_1: empty content -->
+                <field>
+                  <name>rx_stat_ipg_viol_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_SHRT_FRM_0: RX_STAT_SHRT_FRM_0 -->
+            <register>
+              <name>RX_STAT_SHRT_FRM_0</name>
+              <description>RX_STAT_SHRT_FRM_0</description>
+              <addressOffset>0x019C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_shrt_frm_0: empty content -->
+                <field>
+                  <name>rx_stat_shrt_frm_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_SHRT_FRM_1: RX_STAT_SHRT_FRM_1 -->
+            <register>
+              <name>RX_STAT_SHRT_FRM_1</name>
+              <description>RX_STAT_SHRT_FRM_1</description>
+              <addressOffset>0x01A0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_shrt_frm_1: empty content -->
+                <field>
+                  <name>rx_stat_shrt_frm_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_LNG_FRM_0: RX_STAT_LNG_FRM_0 -->
+            <register>
+              <name>RX_STAT_LNG_FRM_0</name>
+              <description>RX_STAT_LNG_FRM_0</description>
+              <addressOffset>0x01A4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_lng_frm_0: empty content -->
+                <field>
+                  <name>rx_stat_lng_frm_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_LNG_FRM_1: RX_STAT_LNG_FRM_1 -->
+            <register>
+              <name>RX_STAT_LNG_FRM_1</name>
+              <description>RX_STAT_LNG_FRM_1</description>
+              <addressOffset>0x01A8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_lng_frm_1: empty content -->
+                <field>
+                  <name>rx_stat_lng_frm_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_UNDERSIZE_0: RX_STAT_FRM_UNDERSIZE_0 -->
+            <register>
+              <name>RX_STAT_FRM_UNDERSIZE_0</name>
+              <description>RX_STAT_FRM_UNDERSIZE_0</description>
+              <addressOffset>0x01AC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_undersize_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_undersize_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_UNDERSIZE_1: RX_STAT_FRM_UNDERSIZE_1 -->
+            <register>
+              <name>RX_STAT_FRM_UNDERSIZE_1</name>
+              <description>RX_STAT_FRM_UNDERSIZE_1</description>
+              <addressOffset>0x01B0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_undersize_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_undersize_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_FRAGMENTS_0: RX_STAT_FRM_FRAGMENTS_0 -->
+            <register>
+              <name>RX_STAT_FRM_FRAGMENTS_0</name>
+              <description>RX_STAT_FRM_FRAGMENTS_0</description>
+              <addressOffset>0x01B4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_fragments_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_fragments_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_FRAGMENTS_1: RX_STAT_FRM_FRAGMENTS_1 -->
+            <register>
+              <name>RX_STAT_FRM_FRAGMENTS_1</name>
+              <description>RX_STAT_FRM_FRAGMENTS_1</description>
+              <addressOffset>0x01B8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_fragments_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_fragments_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_JABBER_0: RX_STAT_FRM_JABBER_0 -->
+            <register>
+              <name>RX_STAT_FRM_JABBER_0</name>
+              <description>RX_STAT_FRM_JABBER_0</description>
+              <addressOffset>0x01BC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_jabber_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_jabber_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_JABBER_1: RX_STAT_FRM_JABBER_1 -->
+            <register>
+              <name>RX_STAT_FRM_JABBER_1</name>
+              <description>RX_STAT_FRM_JABBER_1</description>
+              <addressOffset>0x01C0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_jabber_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_jabber_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_64_GOOD_CRC_0: RX_STAT_FRM_64_GOOD_CRC_0 -->
+            <register>
+              <name>RX_STAT_FRM_64_GOOD_CRC_0</name>
+              <description>RX_STAT_FRM_64_GOOD_CRC_0</description>
+              <addressOffset>0x01C4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_64_good_crc_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_64_good_crc_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_64_GOOD_CRC_1: RX_STAT_FRM_64_GOOD_CRC_1 -->
+            <register>
+              <name>RX_STAT_FRM_64_GOOD_CRC_1</name>
+              <description>RX_STAT_FRM_64_GOOD_CRC_1</description>
+              <addressOffset>0x01C8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_64_good_crc_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_64_good_crc_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_1518_GOOD_CRC_0: RX_STAT_FRM_1518_GOOD_CRC_0 -->
+            <register>
+              <name>RX_STAT_FRM_1518_GOOD_CRC_0</name>
+              <description>RX_STAT_FRM_1518_GOOD_CRC_0</description>
+              <addressOffset>0x01CC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_1518_good_crc_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_1518_good_crc_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_1518_GOOD_CRC_1: RX_STAT_FRM_1518_GOOD_CRC_1 -->
+            <register>
+              <name>RX_STAT_FRM_1518_GOOD_CRC_1</name>
+              <description>RX_STAT_FRM_1518_GOOD_CRC_1</description>
+              <addressOffset>0x01D0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_1518_good_crc_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_1518_good_crc_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_64_0: RX_STAT_FRM_64_0 -->
+            <register>
+              <name>RX_STAT_FRM_64_0</name>
+              <description>RX_STAT_FRM_64_0</description>
+              <addressOffset>0x01D4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_64_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_64_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_64_1: RX_STAT_FRM_64_1 -->
+            <register>
+              <name>RX_STAT_FRM_64_1</name>
+              <description>RX_STAT_FRM_64_1</description>
+              <addressOffset>0x01D8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_64_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_64_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_65_127_0: RX_STAT_FRM_65_127_0 -->
+            <register>
+              <name>RX_STAT_FRM_65_127_0</name>
+              <description>RX_STAT_FRM_65_127_0</description>
+              <addressOffset>0x01DC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_65_127_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_65_127_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_65_127_1: RX_STAT_FRM_65_127_1 -->
+            <register>
+              <name>RX_STAT_FRM_65_127_1</name>
+              <description>RX_STAT_FRM_65_127_1</description>
+              <addressOffset>0x01E0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_65_127_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_65_127_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_128_255_0: RX_STAT_FRM_128_255_0 -->
+            <register>
+              <name>RX_STAT_FRM_128_255_0</name>
+              <description>RX_STAT_FRM_128_255_0</description>
+              <addressOffset>0x01E4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_128_255_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_128_255_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_128_255_1: RX_STAT_FRM_128_255_1 -->
+            <register>
+              <name>RX_STAT_FRM_128_255_1</name>
+              <description>RX_STAT_FRM_128_255_1</description>
+              <addressOffset>0x01E8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_128_255_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_128_255_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_256_511_0: RX_STAT_FRM_256_511_0 -->
+            <register>
+              <name>RX_STAT_FRM_256_511_0</name>
+              <description>RX_STAT_FRM_256_511_0</description>
+              <addressOffset>0x01EC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_256_511_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_256_511_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_256_511_1: RX_STAT_FRM_256_511_1 -->
+            <register>
+              <name>RX_STAT_FRM_256_511_1</name>
+              <description>RX_STAT_FRM_256_511_1</description>
+              <addressOffset>0x01F0</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_256_511_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_256_511_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_512_1023_0: RX_STAT_FRM_512_1023_0 -->
+            <register>
+              <name>RX_STAT_FRM_512_1023_0</name>
+              <description>RX_STAT_FRM_512_1023_0</description>
+              <addressOffset>0x01F4</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_512_1023_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_512_1023_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_512_1023_1: RX_STAT_FRM_512_1023_1 -->
+            <register>
+              <name>RX_STAT_FRM_512_1023_1</name>
+              <description>RX_STAT_FRM_512_1023_1</description>
+              <addressOffset>0x01F8</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_512_1023_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_512_1023_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_1024_1518_0: RX_STAT_FRM_1024_1518_0 -->
+            <register>
+              <name>RX_STAT_FRM_1024_1518_0</name>
+              <description>RX_STAT_FRM_1024_1518_0</description>
+              <addressOffset>0x01FC</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_1024_1518_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_1024_1518_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_1024_1518_1: RX_STAT_FRM_1024_1518_1 -->
+            <register>
+              <name>RX_STAT_FRM_1024_1518_1</name>
+              <description>RX_STAT_FRM_1024_1518_1</description>
+              <addressOffset>0x0200</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_1024_1518_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_1024_1518_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_1519_2047_0: RX_STAT_FRM_1519_2047_0 -->
+            <register>
+              <name>RX_STAT_FRM_1519_2047_0</name>
+              <description>RX_STAT_FRM_1519_2047_0</description>
+              <addressOffset>0x0204</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_1519_2047_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_1519_2047_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_1519_2047_1: RX_STAT_FRM_1519_2047_1 -->
+            <register>
+              <name>RX_STAT_FRM_1519_2047_1</name>
+              <description>RX_STAT_FRM_1519_2047_1</description>
+              <addressOffset>0x0208</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_1519_2047_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_1519_2047_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_2048_4095_0: RX_STAT_FRM_2048_4095_0 -->
+            <register>
+              <name>RX_STAT_FRM_2048_4095_0</name>
+              <description>RX_STAT_FRM_2048_4095_0</description>
+              <addressOffset>0x020C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_2048_4095_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_2048_4095_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_2048_4095_1: RX_STAT_FRM_2048_4095_1 -->
+            <register>
+              <name>RX_STAT_FRM_2048_4095_1</name>
+              <description>RX_STAT_FRM_2048_4095_1</description>
+              <addressOffset>0x0210</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_2048_4095_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_2048_4095_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_4096_9216_0: RX_STAT_FRM_4096_9216_0 -->
+            <register>
+              <name>RX_STAT_FRM_4096_9216_0</name>
+              <description>RX_STAT_FRM_4096_9216_0</description>
+              <addressOffset>0x0214</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_4096_9216_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_4096_9216_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_4096_9216_1: RX_STAT_FRM_4096_9216_1 -->
+            <register>
+              <name>RX_STAT_FRM_4096_9216_1</name>
+              <description>RX_STAT_FRM_4096_9216_1</description>
+              <addressOffset>0x0218</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_4096_9216_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_4096_9216_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_9217_16383_0: RX_STAT_FRM_9217_16383_0 -->
+            <register>
+              <name>RX_STAT_FRM_9217_16383_0</name>
+              <description>RX_STAT_FRM_9217_16383_0</description>
+              <addressOffset>0x021C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_9217_16383_0: empty content -->
+                <field>
+                  <name>rx_stat_frm_9217_16383_0</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RX_STAT_FRM_9217_16383_1: RX_STAT_FRM_9217_16383_1 -->
+            <register>
+              <name>RX_STAT_FRM_9217_16383_1</name>
+              <description>RX_STAT_FRM_9217_16383_1</description>
+              <addressOffset>0x0220</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rx_stat_frm_9217_16383_1: empty content -->
+                <field>
+                  <name>rx_stat_frm_9217_16383_1</name>
+                  <description>empty content</description>
+                  <bitRange>[31:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+
+          </registers>
+    </peripheral>
+    <peripheral>
+          <name>uart0_inst</name>
+          <version>1.3.0</version>
+          <baseAddress>0x40090000</baseAddress>
+          <groupName>uart</groupName>
+          <description></description>
+
+          <addressBlock>
+            <offset>0x0</offset>
+            <size>0x00000400</size>
+            <usage>registers</usage>
+          </addressBlock>
+
+          <registers>
+                <!-- THR: Transmitter Holding Register is the interface to the Transmitter Buffer/FIFO (XMIT FIFO). -->
+            <register>
+              <name>THR</name>
+              <description>Transmitter Holding Register is the interface to the Transmitter Buffer/FIFO (XMIT FIFO).</description>
+              <addressOffset>0x0000</addressOffset>
+              <size>32</size>
+              <access>write-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- XMIT_FIFO: Write access to this field pushes data to XMIT FIFO -->
+                <field>
+                  <name>XMIT_FIFO</name>
+                  <description>Write access to this field pushes data to XMIT FIFO</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>write-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- RBR: Receive Buffer Register is the interface to the Receiver Buffer/FIFO (RCVR FIFO). -->
+            <register>
+              <name>RBR</name>
+              <description>Receive Buffer Register is the interface to the Receiver Buffer/FIFO (RCVR FIFO).</description>
+              <addressOffset>0x0000</addressOffset>
+              <size>32</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- RCVR_FIFO: Read access to this field pops data from RCVR FIFO -->
+                <field>
+                  <name>RCVR_FIFO</name>
+                  <description>Read access to this field pops data from RCVR FIFO</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- IER: Interrupt Enable Register enables the four types of UART interrupts. -->
+            <register>
+              <name>IER</name>
+              <description>Interrupt Enable Register enables the four types of UART interrupts.</description>
+              <addressOffset>0x0004</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- rda_int_en: Received Data Available Interrupt Enable. 0-> Interrupt is disabled. 1-> Interrupt is enabled. -->
+                <field>
+                  <name>rda_int_en</name>
+                  <description>Received Data Available Interrupt Enable. 0-> Interrupt is disabled. 1-> Interrupt is enabled.</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- thre_int_en: Transmitter Holding Register Empty Interrupt Enable. 0-> Interrupt is disabled. 1-> Interrupt is enabled. -->
+                <field>
+                  <name>thre_int_en</name>
+                  <description>Transmitter Holding Register Empty Interrupt Enable. 0-> Interrupt is disabled. 1-> Interrupt is enabled.</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- rls_int_en: Receiver Line Status Interrupt Enable. 0-> Interrupt is disabled. 1-> Interrupt is enabled. -->
+                <field>
+                  <name>rls_int_en</name>
+                  <description>Receiver Line Status Interrupt Enable. 0-> Interrupt is disabled. 1-> Interrupt is enabled.</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- IIR: Interrupt Identification Register determines the asserted interrupt based on priority. -->
+            <register>
+              <name>IIR</name>
+              <description>Interrupt Identification Register determines the asserted interrupt based on priority.</description>
+              <addressOffset>0x0008</addressOffset>
+              <size>32</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- int_pending: 0 -> Interrupt is pending according to int_prio and timeout_int. 1 -> No pending interrupt. -->
+                <field>
+                  <name>int_pending</name>
+                  <description>0 -> Interrupt is pending according to int_prio and timeout_int. 1 -> No pending interrupt.</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- int_prio: 2'b11 -> Receiver Line Status Interrupt. 2'b10 -> Received Data Available Interrupt. 2'b01 -> Transmitter Holding Register Empty Interrupt. 2'b00 -> MODEM Status Interrupt. -->
+                <field>
+                  <name>int_prio</name>
+                  <description>2'b11 -> Receiver Line Status Interrupt. 2'b10 -> Received Data Available Interrupt. 2'b01 -> Transmitter Holding Register Empty Interrupt. 2'b00 -> MODEM Status Interrupt.</description>
+                  <bitRange>[2:1]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- fifos_en: FIFO mode - Fixed to logic 2'b11. Non-FIFO mode - fixed to 2'b00. -->
+                <field>
+                  <name>fifos_en</name>
+                  <description>FIFO mode - Fixed to logic 2'b11. Non-FIFO mode - fixed to 2'b00.</description>
+                  <bitRange>[7:6]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- LCR: Line Control Register configures character length, number stop bits and parity bit. -->
+            <register>
+              <name>LCR</name>
+              <description>Line Control Register configures character length, number stop bits and parity bit.</description>
+              <addressOffset>0x000C</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- char_len_sel:  2'b00 -> 5 bits. 2'b01 -> 6 bits. 2'b10 -> 7 bits. 2'b11 -> 8 bits. -->
+                <field>
+                  <name>char_len_sel</name>
+                  <description> 2'b00 -> 5 bits. 2'b01 -> 6 bits. 2'b10 -> 7 bits. 2'b11 -> 8 bits.</description>
+                  <bitRange>[1:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- stop_bit_ctrl: 0 -> One stop bit is generated in the transmitted data. 1 -> Two stop bits are generated. -->
+                <field>
+                  <name>stop_bit_ctrl</name>
+                  <description>0 -> One stop bit is generated in the transmitted data. 1 -> Two stop bits are generated.</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- parity_en: Parity Enable. 0-> Parity generation and checking is disabled. 1-> Parity generation and checking is enabled. -->
+                <field>
+                  <name>parity_en</name>
+                  <description>Parity Enable. 0-> Parity generation and checking is disabled. 1-> Parity generation and checking is enabled.</description>
+                  <bitRange>[3:3]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- even_parity_sel: Even Parity Select. 0 -> Odd parity. 1 -> Even Parity. -->
+                <field>
+                  <name>even_parity_sel</name>
+                  <description>Even Parity Select. 0 -> Odd parity. 1 -> Even Parity.</description>
+                  <bitRange>[4:4]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- stick_parity_en: Stick Parity Enable. 0 -> Stick parity is disabled. 1 -> Stick parity is enabled. -->
+                <field>
+                  <name>stick_parity_en</name>
+                  <description>Stick Parity Enable. 0 -> Stick parity is disabled. 1 -> Stick parity is enabled.</description>
+                  <bitRange>[5:5]</bitRange>
+                  <access>read-write</access>
+                </field>
+            <!-- break_ctrl_en: Break Control Enable. 0 -> Break control is disabled. 1 -> Break control is enabled. -->
+                <field>
+                  <name>break_ctrl_en</name>
+                  <description>Break Control Enable. 0 -> Break control is disabled. 1 -> Break control is enabled.</description>
+                  <bitRange>[6:6]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- LSR: Line Status Register -->
+            <register>
+              <name>LSR</name>
+              <description>Line Status Register</description>
+              <addressOffset>0x0014</addressOffset>
+              <size>32</size>
+              <access>read-only</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- data_rdy: Data Ready Indicator asserts when RCVR FIFO has data. -->
+                <field>
+                  <name>data_rdy</name>
+                  <description>Data Ready Indicator asserts when RCVR FIFO has data.</description>
+                  <bitRange>[0:0]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- overrun_err: Overrun Error Indicator asserts when RCVR FIFO is full and the next character has been fully received. -->
+                <field>
+                  <name>overrun_err</name>
+                  <description>Overrun Error Indicator asserts when RCVR FIFO is full and the next character has been fully received.</description>
+                  <bitRange>[1:1]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- parity_err: Parity Error Indicator asserts when parity error occurs. -->
+                <field>
+                  <name>parity_err</name>
+                  <description>Parity Error Indicator asserts when parity error occurs.</description>
+                  <bitRange>[2:2]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- framing_err: Framing Error Indicator asserts when received data does not have a valid stop bit. -->
+                <field>
+                  <name>framing_err</name>
+                  <description>Framing Error Indicator asserts when received data does not have a valid stop bit.</description>
+                  <bitRange>[3:3]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- break_cond: Break condition indicator asserts when rxd_i is held low for longer than full RX time. -->
+                <field>
+                  <name>break_cond</name>
+                  <description>Break condition indicator asserts when rxd_i is held low for longer than full RX time.</description>
+                  <bitRange>[4:4]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- thr_empty: THR Empty bit asserts when XMIT FIFO is empty. -->
+                <field>
+                  <name>thr_empty</name>
+                  <description>THR Empty bit asserts when XMIT FIFO is empty.</description>
+                  <bitRange>[5:5]</bitRange>
+                  <access>read-only</access>
+                </field>
+            <!-- xmitr_empty: Transmitter Empty bit asserts when both XMIT FIFO and Transmitter Shift Register are empty. -->
+                <field>
+                  <name>xmitr_empty</name>
+                  <description>Transmitter Empty bit asserts when both XMIT FIFO and Transmitter Shift Register are empty.</description>
+                  <bitRange>[6:6]</bitRange>
+                  <access>read-only</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- DLAB_LSB: Divisor Latch Register LSB -->
+            <register>
+              <name>DLAB_LSB</name>
+              <description>Divisor Latch Register LSB</description>
+              <addressOffset>0x0020</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- divisor_lsb: The lower byte of the Divisor Latch Register. -->
+                <field>
+                  <name>divisor_lsb</name>
+                  <description>The lower byte of the Divisor Latch Register.</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+      <!-- DLAB_MSB: Divisor Latch Register MSB -->
+            <register>
+              <name>DLAB_MSB</name>
+              <description>Divisor Latch Register MSB</description>
+              <addressOffset>0x0024</addressOffset>
+              <size>32</size>
+              <access>read-write</access>
+              <resetValue>0x00000000</resetValue>
+              <resetMask>0xFFFFFFFF</resetMask>
+
+              <fields>
+                          <!-- divisor_msb: The upper byte of the Divisor Latch Register. -->
+                <field>
+                  <name>divisor_msb</name>
+                  <description>The upper byte of the Divisor Latch Register.</description>
+                  <bitRange>[7:0]</bitRange>
+                  <access>read-write</access>
+                </field>
+
+              </fields>
+           </register>
+
+
+          </registers>
+    </peripheral>
+
+      </peripherals>
+    </device>

@@ -1,0 +1,1323 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>sgdma0</ipxact:name>
+    <ipxact:version>2.2.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>sgdmac_core_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="sgdma" vendor="latticesemi.com" version="2.2.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="TYPE_BIFUR_SEL">LAV-AT</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI_DWIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI_DWIDTH_D8">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI_AWIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI_ID_WIDTH">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TDATA_WIDTH">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TDATA_WIDTH_D8">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TDEST_WIDTH">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TID_WIDTH">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MM2S_FIFO_DEPTH">2048</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="S2MM_FIFO_DEPTH">2048</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXIL_DWIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXIL_DWIDTH_D8">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXIL_AWIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BD_DWIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BD_DWIDTH_D8">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BD_AWIDTH">32</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.clk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="clk"/>
+                <ipxact:externalPortReference portRef="clk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rstn</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rstn"/>
+                <ipxact:externalPortReference portRef="rstn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.axil_clk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="axil_clk"/>
+                <ipxact:externalPortReference portRef="axil_clk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.axil_rstn</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="axil_rstn"/>
+                <ipxact:externalPortReference portRef="axil_rstn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_awaddr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_awaddr_i"/>
+                <ipxact:externalPortReference portRef="s_axil_awaddr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_awprot_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_awprot_i"/>
+                <ipxact:externalPortReference portRef="s_axil_awprot_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_awvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_awvalid_i"/>
+                <ipxact:externalPortReference portRef="s_axil_awvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_awready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_awready_o"/>
+                <ipxact:externalPortReference portRef="s_axil_awready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_wdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_wdata_i"/>
+                <ipxact:externalPortReference portRef="s_axil_wdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_wstrb_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_wstrb_i"/>
+                <ipxact:externalPortReference portRef="s_axil_wstrb_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_wvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_wvalid_i"/>
+                <ipxact:externalPortReference portRef="s_axil_wvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_wready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_wready_o"/>
+                <ipxact:externalPortReference portRef="s_axil_wready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_bresp_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_bresp_o"/>
+                <ipxact:externalPortReference portRef="s_axil_bresp_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_bvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_bvalid_o"/>
+                <ipxact:externalPortReference portRef="s_axil_bvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_bready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_bready_i"/>
+                <ipxact:externalPortReference portRef="s_axil_bready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_araddr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_araddr_i"/>
+                <ipxact:externalPortReference portRef="s_axil_araddr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_arprot_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_arprot_i"/>
+                <ipxact:externalPortReference portRef="s_axil_arprot_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_arvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_arvalid_i"/>
+                <ipxact:externalPortReference portRef="s_axil_arvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_arready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_arready_o"/>
+                <ipxact:externalPortReference portRef="s_axil_arready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_rdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_rdata_o"/>
+                <ipxact:externalPortReference portRef="s_axil_rdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_rresp_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_rresp_o"/>
+                <ipxact:externalPortReference portRef="s_axil_rresp_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_rvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_rvalid_o"/>
+                <ipxact:externalPortReference portRef="s_axil_rvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s_axil_rready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s_axil_rready_i"/>
+                <ipxact:externalPortReference portRef="s_axil_rready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arready_i"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arid_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_araddr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_araddr_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_araddr_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arregion_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arregion_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arregion_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arlen_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arlen_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arlen_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arsize_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arsize_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arsize_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arburst_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arburst_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arburst_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arlock_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arlock_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arlock_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arcache_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arcache_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arcache_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arprot_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arprot_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arprot_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arqos_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arqos_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arqos_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_arvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_arvalid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_arvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_rready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_rready_o"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_rready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_rid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_rid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_rid_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_rdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_rdata_i"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_rdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_rresp_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_rresp_i"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_rresp_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_rlast_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_rlast_i"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_rlast_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_mm2s_rvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_mm2s_rvalid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_mm2s_rvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awready_i"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awid_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awaddr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awaddr_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awaddr_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awregion_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awregion_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awregion_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awlen_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awlen_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awlen_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awsize_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awsize_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awsize_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awburst_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awburst_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awburst_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awlock_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awlock_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awlock_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awcache_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awcache_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awcache_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awprot_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awprot_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awprot_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awqos_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awqos_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awqos_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_awvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_awvalid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_awvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_wready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_wready_i"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_wready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_wdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_wdata_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_wdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_wstrb_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_wstrb_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_wstrb_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_wlast_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_wlast_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_wlast_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_wvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_wvalid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_wvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_bready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_bready_o"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_bready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_bid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_bid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_bid_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_bresp_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_bresp_i"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_bresp_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_s2mm_bvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_s2mm_bvalid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_s2mm_bvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awready_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awid_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awaddr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awaddr_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awaddr_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awregion_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awregion_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awregion_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awlen_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awlen_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awlen_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awsize_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awsize_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awsize_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awburst_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awburst_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awburst_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awlock_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awlock_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awlock_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awcache_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awcache_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awcache_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awprot_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awprot_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awprot_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awqos_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awqos_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awqos_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_awvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_awvalid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_awvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_wready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_wready_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_wready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_wdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_wdata_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_wdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_wstrb_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_wstrb_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_wstrb_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_wlast_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_wlast_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_wlast_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_wvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_wvalid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_wvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_bready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_bready_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_bready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_bid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_bid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_bid_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_bresp_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_bresp_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_bresp_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_bvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_bvalid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_bvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arready_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arid_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_araddr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_araddr_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_araddr_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arregion_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arregion_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arregion_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arlen_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arlen_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arlen_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arsize_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arsize_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arsize_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arburst_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arburst_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arburst_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arlock_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arlock_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arlock_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arcache_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arcache_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arcache_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arprot_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arprot_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arprot_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arqos_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arqos_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arqos_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_arvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_arvalid_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_arvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_rready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_rready_o"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_rready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_rid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_rid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_rid_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_rdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_rdata_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_rdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_rresp_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_rresp_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_rresp_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_rlast_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_rlast_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_rlast_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.m_axi_bd_rvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="m_axi_bd_rvalid_i"/>
+                <ipxact:externalPortReference portRef="m_axi_bd_rvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.tx_axis_mm2s_tready_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="tx_axis_mm2s_tready_i"/>
+                <ipxact:externalPortReference portRef="tx_axis_mm2s_tready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.tx_axis_mm2s_tvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="tx_axis_mm2s_tvalid_o"/>
+                <ipxact:externalPortReference portRef="tx_axis_mm2s_tvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.tx_axis_mm2s_tdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="tx_axis_mm2s_tdata_o"/>
+                <ipxact:externalPortReference portRef="tx_axis_mm2s_tdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.tx_axis_mm2s_tkeep_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="tx_axis_mm2s_tkeep_o"/>
+                <ipxact:externalPortReference portRef="tx_axis_mm2s_tkeep_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.tx_axis_mm2s_tlast_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="tx_axis_mm2s_tlast_o"/>
+                <ipxact:externalPortReference portRef="tx_axis_mm2s_tlast_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.tx_axis_mm2s_tid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="tx_axis_mm2s_tid_o"/>
+                <ipxact:externalPortReference portRef="tx_axis_mm2s_tid_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.tx_axis_mm2s_tdest_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="tx_axis_mm2s_tdest_o"/>
+                <ipxact:externalPortReference portRef="tx_axis_mm2s_tdest_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rx_axis_s2mm_tvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rx_axis_s2mm_tvalid_i"/>
+                <ipxact:externalPortReference portRef="rx_axis_s2mm_tvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rx_axis_s2mm_tdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rx_axis_s2mm_tdata_i"/>
+                <ipxact:externalPortReference portRef="rx_axis_s2mm_tdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rx_axis_s2mm_tkeep_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rx_axis_s2mm_tkeep_i"/>
+                <ipxact:externalPortReference portRef="rx_axis_s2mm_tkeep_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>0</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rx_axis_s2mm_tlast_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rx_axis_s2mm_tlast_i"/>
+                <ipxact:externalPortReference portRef="rx_axis_s2mm_tlast_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rx_axis_s2mm_tid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rx_axis_s2mm_tid_i"/>
+                <ipxact:externalPortReference portRef="rx_axis_s2mm_tid_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rx_axis_s2mm_tready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rx_axis_s2mm_tready_o"/>
+                <ipxact:externalPortReference portRef="rx_axis_s2mm_tready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.rx_axis_s2mm_tdest_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="rx_axis_s2mm_tdest_i"/>
+                <ipxact:externalPortReference portRef="rx_axis_s2mm_tdest_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.s2mm_xfer_cmpl_irq_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="s2mm_xfer_cmpl_irq_o"/>
+                <ipxact:externalPortReference portRef="s2mm_xfer_cmpl_irq_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sgdma0.mm2s_xfer_cmpl_irq_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sgdma0" portRef="mm2s_xfer_cmpl_irq_o"/>
+                <ipxact:externalPortReference portRef="mm2s_xfer_cmpl_irq_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>
