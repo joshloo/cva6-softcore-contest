@@ -2,7 +2,7 @@
 <RadiantProject version="4.2" radiant="2024.1.0.34.2" title="cva6_1" device="LAV-AT-E70ES1-1LFG676C" performance_grade="1" family_int="ap6a00b" device_int="ap6a400bee" package_int="LFG676" operation_int="COM" speed_int="1" default_implementation="impl_1">
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="Verilog 2001" def_top="SimJTAG" hdl_sort="off">
+        <Options VerilogStandard="System Verilog" def_top="apb_uart" hdl_sort="off">
             <Option name="include path" value="../../../vendor/pulp-platform/common_cells/include;../../../vendor/pulp-platform/axi/include;../../../core/cache_subsystem/hpdcache/rtl/include;../../register_interface/include"/>
             <Option name="top" value="cva6"/>
         </Options>
@@ -96,58 +96,58 @@
         <Source name="../../../vendor/pulp-platform/common_cells/src/delta_counter.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/apb_uart.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/apb_uart.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/slib_clock_div.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/slib_counter.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/slib_counter.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/slib_edge_detect.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/slib_fifo.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/slib_input_filter.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/slib_input_sync.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/slib_input_sync.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/slib_mv_filter.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/uart_baudgen.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/uart_baudgen.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/uart_interrupt.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/uart_interrupt.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/uart_receiver.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_uart/src/uart_transmitter.vhd" type="VHDL" type_short="VHDL">
+        <Source name="../src/apb_uart/src/uart_transmitter.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/tb/ariane_axi_pkg.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/ariane_axi_pkg.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/axi_intf.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/axi_intf.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/register_interface/src/reg_intf.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../register_interface/src/reg_intf.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/ariane_soc_pkg.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/ariane_soc_pkg.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dm_pkg.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dm_pkg.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/ariane_axi_soc_pkg.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/ariane_axi_soc_pkg.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="../../../vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv" type="Verilog" type_short="Verilog">
@@ -537,115 +537,115 @@
         <Source name="../../../core/mmu_sv32/cva6_shared_tlb_sv32.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/ariane.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/ariane.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/clint/axi_lite_interface.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../clint/axi_lite_interface.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/clint/clint.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../clint/clint.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi2apb/src/axi2apb_64_32.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi2apb/src/axi2apb_64_32.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi2apb/src/axi2apb.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi2apb/src/axi2apb.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi2apb/src/axi2apb_wrap.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi2apb/src/axi2apb_wrap.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_timer/apb_timer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/apb_timer/apb_timer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/apb_timer/timer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/apb_timer/timer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_ar_buffer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_ar_buffer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_aw_buffer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_aw_buffer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_b_buffer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_b_buffer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_r_buffer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_r_buffer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_single_slice.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_single_slice.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_slice.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_slice.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_slice_wrap.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_slice_wrap.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/axi_slice/src/axi_w_buffer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../src/axi_slice/src/axi_w_buffer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/axi_riscv_atomics/src/axi_res_tbl.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/axi_riscv_atomics/src/axi_res_tbl.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/axi_riscv_atomics/src/axi_riscv_amos.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/axi_riscv_atomics/src/axi_riscv_atomics.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics_wrap.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/axi_riscv_atomics/src/axi_riscv_atomics_wrap.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/axi_riscv_atomics/src/axi_riscv_lrsc.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc_wrap.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../src/axi_riscv_atomics/src/axi_riscv_lrsc_wrap.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/axi_mem_if/src/axi2mem.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../axi_mem_if/src/axi2mem.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/rv_plic/rtl/rv_plic_target.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../rv_plic/rtl/rv_plic_target.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/rv_plic/rtl/rv_plic_gateway.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../rv_plic/rtl/rv_plic_gateway.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/rv_plic/rtl/plic_regmap.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../rv_plic/rtl/plic_regmap.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/rv_plic/rtl/plic_top.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../rv_plic/rtl/plic_top.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dmi_cdc.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dmi_cdc.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dmi_jtag.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dmi_jtag.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dmi_jtag_tap.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dmi_jtag_tap.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dm_csrs.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dm_csrs.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dm_mem.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dm_mem.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dm_sba.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dm_sba.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/src/dm_top.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/src/dm_top.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/riscv-dbg/debug_rom/debug_rom.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../riscv-dbg/debug_rom/debug_rom.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/register_interface/src/apb_to_reg.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../register_interface/src/apb_to_reg.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="../../../vendor/pulp-platform/axi/src/axi_multicut.sv" type="Verilog" type_short="Verilog">
@@ -723,28 +723,28 @@
         <Source name="../../../vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/ariane_testharness.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/ariane_testharness.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/ariane_peripherals.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/ariane_peripherals.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/rvfi_tracer.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/rvfi_tracer.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/common/uart.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/common/uart.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/common/SimDTM.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/common/SimDTM.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/tb/common/SimJTAG.sv" type="Verilog" type_short="Verilog">
+        <Source name="../../tb/common/SimJTAG.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/zybo-z7-20.svh" type="Verilog" type_short="Verilog">
+        <Source name="../src/zybo-z7-20.svh" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="../../../corev_apu/fpga/src/zybo-z7-20-ddr.svh" type="Verilog" type_short="Verilog">
+        <Source name="../src/zybo-z7-20-ddr.svh" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="../../../vendor/pulp-platform/common_cells/include/common_cells/registers.svh" type="Verilog" type_short="Verilog">
