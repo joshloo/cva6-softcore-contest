@@ -1,0 +1,884 @@
+<HTML>
+<HEAD>
+<TITLE>Synthesis Report</TITLE>
+<link href="file:///C:/lscc/radiant/2024.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2024.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+Synthesis options:
+The -a option is LAV-AT.
+The -t option is LFG676.
+The -sp option is 1.
+The -p option is LAV-AT-E70ES1.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : LAV-AT
+
+
+### Device             : LAV-AT-E70ES1
+
+
+### Package            : LFG676
+
+
+### Performance Grade  : 1
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = ariane.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = no
+Output HDL file name = cva6_1_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+Hardtimer checking is enabled (default). The -dt option is not used.
+-path C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/include (searchpath added)
+-path C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice (searchpath added)
+-path C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/impl_1 (searchpath added)
+-path C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/register_interface/include (searchpath added)
+-path C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include (searchpath added)
+-path C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include (searchpath added)
+-path C:/lscc/radiant/2024.1/ispfpga/ap6a00b/data (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/config_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/cv32a6_ima_sv32_fpga_config_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/riscv_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/ariane_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/wt_cache_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/std_cache_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/acc_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/cvxif_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_example/include/cvxif_instr_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_fu.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_example/cvxif_example_coprocessor.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_example/instr_decoder.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lfsr.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_arbiter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_mux.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_demux.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lzc.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/shift_reg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/unread.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/popcount.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/exp_backoff.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/counter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/delta_counter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/ariane_axi_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/axi_intf.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/register_interface/src/reg_intf.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/ariane_soc_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/ariane_axi_soc_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_cast_multi.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_classifier.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_divsqrt_multi.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_fma_multi.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_fma.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_noncomp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_block.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_fmt_slice.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_multifmt_slice.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_rounding.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_top.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cva6.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/alu.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/fpu_wrap.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/branch_unit.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/compressed_decoder.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/controller.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/csr_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/csr_regfile.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/decoder.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ex_stage.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/id_stage.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/issue_read_operands.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/issue_stage.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/load_unit.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/load_store_unit.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/lsu_bypass.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mult.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/multiplier.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/serdiv.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/perf_counters.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ariane_regfile_ff.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ariane_regfile_fpga.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/scoreboard.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/store_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/amo_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/store_unit.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/commit_stage.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/axi_shim.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cva6_accel_first_pass_decoder_stub.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/acc_dispatcher.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/btb.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/bht.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/ras.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/instr_scan.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/instr_queue.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/frontend.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_ctrl.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_mem.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_missunit.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_wbuffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_icache.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_cache_subsystem.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_axi_adapter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/tag_cmp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/axi_adapter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/miss_handler.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cache_ctrl.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_icache_axi_wrapper.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/std_cache_subsystem.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/std_nbdcache.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/cva6_hpdcache_default_config_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_snooper.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_subsystem.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_if_adapter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/pmp/src/pmp.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/pmp/src/pmp_entry.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/common/local/util/tc_sram_fpga_wrapper.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/common/local/util/sram.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_mmu_sv32.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_ptw_sv32.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_tlb_sv32.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_shared_tlb_sv32.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/ariane.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/clint/axi_lite_interface.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/clint/clint.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi2apb/src/axi2apb_64_32.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi2apb/src/axi2apb.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi2apb/src/axi2apb_wrap.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_timer/apb_timer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_timer/timer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_ar_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_aw_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_b_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_r_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_single_slice.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_slice.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_slice_wrap.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_w_buffer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_res_tbl.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics_wrap.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc_wrap.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/axi_mem_if/src/axi2mem.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/rv_plic_target.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/rv_plic_gateway.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/plic_regmap.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/plic_top.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_cdc.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_jtag.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_csrs.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_mem.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_sba.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_top.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/debug_rom/debug_rom.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/register_interface/src/apb_to_reg.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_multicut.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rstgen_bypass.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rstgen.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/addr_decode.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_register.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_cut.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_join.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_delayer.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_to_axi_lite.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_id_prepend.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_atop_filter.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_err_slv.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_mux.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_xbar.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/cdc_2phase.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/deprecated/fifo_v1.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_delay.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lfsr_16bit.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/tech_cells_generic/src/deprecated/cluster_clk_cells.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/tech_cells_generic/src/deprecated/pulp_clk_cells.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20.svh
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20-ddr.svh
+Verilog design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_sync.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_baudgen.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_interrupt.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd
+VHDL library = work
+VHDL design file = C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_transmitter.vhd
+WARNING <35002033> - synthesis: Unexpected file name extension for Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20.svh.
+WARNING <35002033> - synthesis: Unexpected file name extension for Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20-ddr.svh.
+WARNING <35002033> - synthesis: Unexpected file name extension for Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(1): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(2): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(3): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(4): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(5): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v(43): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(6): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v(42): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(7): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v(42): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(8): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v(41): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(9): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(10): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(11): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(12): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(13): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(14): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(15): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(16): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(17): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v(49): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(18): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(19): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(20): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(21): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/config_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/cv32a6_ima_sv32_fpga_config_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/riscv_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/ariane_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/wt_cache_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/std_cache_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/acc_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/cvxif_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_example/include/cvxif_instr_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_fu.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_example/cvxif_example_coprocessor.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cvxif_example/instr_decoder.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lfsr.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_arbiter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_mux.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_demux.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lzc.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/shift_reg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/unread.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/popcount.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/exp_backoff.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/counter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/delta_counter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/ariane_axi_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/axi_intf.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/register_interface/src/reg_intf.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/ariane_soc_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/tb/ariane_axi_soc_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/syncdpram.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/asyncdpram.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/asyncthreeportram.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_cast_multi.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_cast_multi.sv(16): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_classifier.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_divsqrt_multi.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_divsqrt_multi.sv(16): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_fma_multi.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_fma_multi.sv(16): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_fma.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_fma.sv(16): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_noncomp.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_noncomp.sv(16): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_block.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_fmt_slice.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_multifmt_slice.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_opgroup_multifmt_slice.sv(16): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_rounding.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpnew_top.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/openhwgroup/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cva6.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/alu.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/fpu_wrap.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/branch_unit.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/compressed_decoder.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/controller.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/csr_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/csr_regfile.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/decoder.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ex_stage.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/id_stage.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/issue_read_operands.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/issue_stage.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/load_unit.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/load_store_unit.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/lsu_bypass.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mult.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/multiplier.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/serdiv.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/perf_counters.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ariane_regfile_ff.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ariane_regfile_fpga.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/scoreboard.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/store_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/amo_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/store_unit.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/commit_stage.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/axi_shim.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cva6_accel_first_pass_decoder_stub.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/acc_dispatcher.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/acc_dispatcher.sv(70): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/btb.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/bht.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/ras.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/instr_scan.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/instr_queue.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/frontend.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_ctrl.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_mem.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_missunit.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache_wbuffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_dcache.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_icache.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_cache_subsystem.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/wt_axi_adapter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/tag_cmp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/axi_adapter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/miss_handler.sv. VERI-1482
+WARNING <35901199> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/miss_handler.sv(70): parameter declaration becomes local in NR_BYPASS_PORTS with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cache_ctrl.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_icache_axi_wrapper.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/std_cache_subsystem.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/std_nbdcache.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/include/cva6_hpdcache_default_config_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_snooper.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memarray.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr_to_cache_set.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf_wrapper.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_subsystem.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_subsystem.sv(90): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_subsystem.sv(125): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_if_adapter.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/pmp/src/pmp.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/pmp/src/pmp_entry.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/syncsprambenx64.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/common/local/util/tc_sram_fpga_wrapper.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/common/local/util/sram.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_mmu_sv32.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_ptw_sv32.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_tlb_sv32.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/mmu_sv32/cva6_shared_tlb_sv32.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/ariane.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/clint/axi_lite_interface.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/clint/clint.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi2apb/src/axi2apb_64_32.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi2apb/src/axi2apb.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi2apb/src/axi2apb_wrap.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_timer/apb_timer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_timer/timer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_ar_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_aw_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_b_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_r_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_single_slice.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_slice.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_slice_wrap.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/axi_slice/src/axi_w_buffer.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_res_tbl.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_atomics_wrap.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_lrsc_wrap.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/axi_mem_if/src/axi2mem.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/rv_plic_target.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/rv_plic_gateway.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/plic_regmap.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/rv_plic/rtl/plic_top.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_cdc.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_jtag.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_csrs.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_mem.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_sba.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_top.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/riscv-dbg/debug_rom/debug_rom.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/register_interface/src/apb_to_reg.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_multicut.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_multicut.sv(92): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_multicut.sv(93): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rstgen_bypass.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rstgen.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/addr_decode.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_register.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_cut.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_cut.sv(115): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_cut.sv(116): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_join.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_join.sv(16): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_delayer.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_delayer.sv(123): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_delayer.sv(124): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_to_axi_lite.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_to_axi_lite.sv(247): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_to_axi_lite.sv(248): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_id_prepend.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_atop_filter.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_atop_filter.sv(371): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_atop_filter.sv(372): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_err_slv.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_mux.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_mux.sv(25): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_mux.sv(422): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_mux.sv(423): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv(15): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv(698): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv(699): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_xbar.sv. VERI-1482
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_xbar.sv(239): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/assign.svh. VERI-1328
+INFO <35901328> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_xbar.sv(240): analyzing included file C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include/axi/typedef.svh. VERI-1328
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/cdc_2phase.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/deprecated/fifo_v1.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_delay.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lfsr_16bit.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/tech_cells_generic/src/deprecated/cluster_clk_cells.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/tech_cells_generic/src/deprecated/pulp_clk_cells.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_clk.sv. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20.svh. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20-ddr.svh. VERI-1482
+Analyzing Verilog file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd(37): analyzing entity apb_uart. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd(66): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd(29): analyzing entity slib_clock_div. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd(41): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd(29): analyzing entity slib_counter. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd(46): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd(28): analyzing entity slib_edge_detect. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd(38): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd(29): analyzing entity slib_fifo. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd(48): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd(28): analyzing entity slib_input_filter. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd(41): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_sync.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_sync.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_sync.vhd(28): analyzing entity slib_input_sync. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_sync.vhd(37): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd(29): analyzing entity slib_mv_filter. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd(44): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_baudgen.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_baudgen.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_baudgen.vhd(29): analyzing entity uart_baudgen. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_baudgen.vhd(40): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_interrupt.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_interrupt.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_interrupt.vhd(33): analyzing entity uart_interrupt. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_interrupt.vhd(49): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd(29): analyzing entity uart_receiver. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd(49): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_transmitter.vhd. VHDL-1481
+Analyzing VHDL file c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_transmitter.vhd
+
+INFO <35921012> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_transmitter.vhd(29): analyzing entity uart_transmitter. VHDL-1012
+INFO <35921010> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_transmitter.vhd(48): analyzing architecture rtl. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): ariane
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/src/ariane.sv(16): compiling module ariane. VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cva6.sv(16): compiling module cva6(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b0,1'b0,1'b0,1'b0,1'b0,32'b0,32'b0,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0},IsRVFI=1'b0,rvfi_instr_t=logic,axi_ar_chan_t=ariane_axi::ar_chan_t,axi_aw_chan_t=ariane_axi::aw_chan_t,axi_w_chan_t=ariane_axi::w_chan_t,noc_req_t=ariane_axi::req_t,noc_resp_t=ariane_axi::resp_t). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/frontend.sv(18): compiling module frontend(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0}). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv(23): compiling module instr_realign(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0}). VERI-1018
+WARNING <35908216> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv(67): index 1 is out of range [0:0] for valid_o. VERI-1216
+WARNING <35908216> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv(68): index 1 is out of range [0:0] for instr_o. VERI-1216
+WARNING <35908216> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv(69): index 1 is out of range [0:0] for addr_o. VERI-1216
+WARNING <35908216> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv(81): index 1 is out of range [0:0] for valid_o. VERI-1216
+WARNING <35908216> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv(82): index 1 is out of range [0:0] for instr_o. VERI-1216
+WARNING <35931002> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/instr_realign.sv(40): net instr_is_compressed[1] does not have a driver. VDB-1002
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/instr_scan.sv(18): compiling module instr_scan(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0}). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/frontend/instr_queue.sv(46): compiling module instr_queue(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0}). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(13): compiling module fifo_v3(DEPTH=32'b0100,dtype=instr_queue(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0})_instr_data_t). VERI-1018
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(102): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(104): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(113): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(115): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/asyncdpram.sv(21): compiling module AsyncDpRam(ADDR_WIDTH=32'b010,DATA_DEPTH=32'b0100,DATA_WIDTH=69). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(13): compiling module fifo_v3(DATA_WIDTH=32'b0100000,DEPTH=32'b0100). VERI-1018
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(102): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(104): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(113): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING <35901209> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv(115): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/asyncdpram.sv(21): compiling module AsyncDpRam(ADDR_WIDTH=32'b010,DATA_DEPTH=32'b0100). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/unread.sv(16): compiling module unread. VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/id_stage.sv(16): compiling module id_stage(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0}). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/decoder.sv(22): compiling module decoder(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0}). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/issue_stage.sv(17): compiling module issue_stage(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0},IsRVFI=1'b0,NR_ENTRIES=32'b0100). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/scoreboard.sv(15): compiling module scoreboard(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0},IsRVFI=1'b0,rs3_len_t=is   ....   2'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0},IsRVFI=1'b0,NR_ENTRIES=32'b0100)_rs3_len_t,NR_ENTRIES=32'b0100). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv(47): compiling module rr_arb_tree(NumIn=32'b0101,DataType=ariane_pkg::fu_t,ExtPrio=1'b1,AxiVldRdy=1'b1). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv(47): compiling module rr_arb_tree(NumIn=32'b01000,DataWidth=32'b0100000,ExtPrio=1'b1,AxiVldRdy=1'b1). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/issue_read_operands.sv(17): compiling module issue_read_operands(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0},rs3_len_t=issue   ....   ,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0},IsRVFI=1'b0,NR_ENTRIES=32'b0100)_rs3_len_t). VERI-1018
+INFO <35901018> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ariane_regfile_fpga.sv(28): compiling module ariane_regfile_fpga(CVA6Cfg={32'b0,32'b0,32'b0,32'b0,32'b0,32'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,32'b01,1'b0,1'b0,1'b0,1'b0,32'b010,32'b0100,1'b0,64'b0,64'b0,32'b0,32'b0,32'b0,64'b0,32'b0,32'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0,1024'b0,1024'b0,32'b0},DATA_WIDTH=32'b0100000,NR_READ_PORTS=32'b010,ZERO_REG_ZERO=1'b1). VERI-1018
+ERROR <35901343> - synthesis: c:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/ariane_regfile_fpga.sv(53): zero or negative value for size. VERI-1343
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

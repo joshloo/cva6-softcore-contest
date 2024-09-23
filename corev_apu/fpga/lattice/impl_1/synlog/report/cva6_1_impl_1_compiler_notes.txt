@@ -15,6 +15,8 @@
 @N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\src\apb_uart\src\uart_receiver.vhd'.
 @N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\src\apb_uart\src\apb_uart.vhd'.
 @N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\2024.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
@@ -215,6 +217,8 @@
 @N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\cache_subsystem\cva6_hpdcache_if_adapter.sv":198:15:198:26|Read directive translate_on.
 @N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\pmp\src\pmp.sv":78:15:78:27|Read directive translate_off.
 @N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\pmp\src\pmp.sv":92:15:92:26|Read directive translate_on.
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\2024.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.

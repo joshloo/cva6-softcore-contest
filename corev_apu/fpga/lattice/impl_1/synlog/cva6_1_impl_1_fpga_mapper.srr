@@ -1,4 +1,4 @@
-# Fri Sep 20 14:23:03 2024
+# Fri Sep 20 14:45:16 2024
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -44,7 +44,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Synthesis running in Multiprocessing mode
 Maximum number of parallel jobs set to 4
-Multiprocessing started at : Fri Sep 20 14:23:04 2024
+Multiprocessing started at : Fri Sep 20 14:45:17 2024
 Mapping cva6 as a separate process
 Mapping ex_stage_1s_34_layer0 as a separate process
 Mapping issue_stage_1_4s_13_layer0 as a separate process
@@ -52,10 +52,10 @@ Mapping wt_dcache_4s_1s_43_layer0 as a separate process
 MCP Status: 4 jobs running
 
 @N: MF106 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\cache_subsystem\wt_dcache.sv":16:7:16:15|Mapping Compile point view:work.wt_dcache_4s_1s_43_layer0(verilog) because 
-		 no database from previous run found.
+		 user requested clean build.
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 272MB peak: 273MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 273MB peak: 273MB)
 
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance ex_stage_i.lsu_i.lsu_bypass_i.mem_q\[0\]\.trans_id[1:0] (in view: work.cva6(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance ex_stage_i.lsu_i.lsu_bypass_i.mem_q\[1\]\.trans_id[1:0] (in view: work.cva6(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
@@ -69,7 +69,7 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapse
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance ex_stage_i.lsu_i.lsu_bypass_i.mem_q\[0\]\.overflow (in view: work.cva6(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: MF135 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\cache_subsystem\wt_dcache_wbuffer.sv":537:2:537:10|RAM gen_cache_wt\.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat_q_1[3:0] is 4 words by 4 bits.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 274MB peak: 274MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 274MB peak: 274MB)
 
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance ex_stage_i.lsu_i.lsu_bypass_i.mem_q\[1\]\.vaddr[31] (in view: work.cva6(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance ex_stage_i.lsu_i.lsu_bypass_i.mem_q\[1\]\.vaddr[30] (in view: work.cva6(verilog)) because it does not drive other instances.
@@ -369,10 +369,10 @@ Only the first 100 messages of id 'BN161' are reported. To see all messages use 
 @N: MF794 |RAM tx_stat_q_1[3:0] required 8 registers during mapping 
 @N: MF794 |RAM tx_stat_q[0] required 1 registers during mapping 
 
-Starting factoring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 277MB peak: 277MB)
+Starting factoring (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 277MB peak: 277MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 300MB peak: 300MB)
+Finished factoring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 300MB peak: 300MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -384,29 +384,29 @@ NConnInternalConnection caching is on
 @W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\cache_subsystem\wt_dcache_wbuffer.sv":537:2:537:10|Removing instance gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat_q_tx_stat_q_ram2_[0] because it is equivalent to instance gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat_q[2].ptr[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\cache_subsystem\wt_dcache_wbuffer.sv":537:2:537:10|Removing instance gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat_q_tx_stat_q_ram3_[0] because it is equivalent to instance gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat_q[3].ptr[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:24s; Memory used current: 394MB peak: 414MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:20s; Memory used current: 394MB peak: 414MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:24s; Memory used current: 394MB peak: 414MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:20s; Memory used current: 394MB peak: 414MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:36s; Memory used current: 410MB peak: 414MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:29s; Memory used current: 410MB peak: 414MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:36s; Memory used current: 410MB peak: 414MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 410MB peak: 414MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:37s; Memory used current: 410MB peak: 414MB)
+Finished preparing to map (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 410MB peak: 414MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:39s; CPU Time elapsed 0h:00m:39s; Memory used current: 432MB peak: 472MB)
+Finished technology mapping (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:32s; Memory used current: 433MB peak: 472MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:39s		    -7.87ns		2970 /      1299
-   2		0h:00m:39s		    -7.87ns		2958 /      1299
-   3		0h:00m:39s		    -7.87ns		2959 /      1299
-   4		0h:00m:39s		    -7.95ns		2959 /      1299
+   1		0h:00m:32s		    -7.87ns		2970 /      1299
+   2		0h:00m:32s		    -7.87ns		2958 /      1299
+   3		0h:00m:32s		    -7.87ns		2959 /      1299
+   4		0h:00m:32s		    -7.95ns		2959 /      1299
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\issue_read_operands.sv":285:2:285:10|Replicating instance issue_stage_i.i_issue_read_operands.lsu_valid_q (in view: work.cva6(verilog)) with 66 loads 2 times to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_regfile.sv":1403:2:1403:10|Replicating instance csr_regfile_i.debug_mode_q (in view: work.cva6(verilog)) with 12 loads 1 time to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_regfile.sv":1403:2:1403:10|Replicating instance csr_regfile_i.priv_lvl_q[0] (in view: work.cva6(verilog)) with 4 loads 1 time to improve timing.
@@ -415,16 +415,16 @@ Timing driven replication report
 Added 6 Registers via timing driven replication
 Added 2 LUTs via timing driven replication
 
-   5		0h:00m:41s		    -7.53ns		2977 /      1305
+   5		0h:00m:33s		    -7.53ns		2977 /      1305
 
-   6		0h:00m:41s		    -7.40ns		2979 /      1305
-   7		0h:00m:41s		    -7.44ns		2983 /      1305
+   6		0h:00m:34s		    -7.40ns		2979 /      1305
+   7		0h:00m:34s		    -7.44ns		2983 /      1305
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 432MB peak: 472MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:34s; Memory used current: 434MB peak: 472MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:42s; Memory used current: 432MB peak: 472MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:34s; Memory used current: 434MB peak: 472MB)
 
 
 Finished mapping wt_dcache_4s_1s_43_layer0
@@ -432,7 +432,7 @@ Mapping csr_regfile_1s_6s_1075056897_36_layer0 as a separate process
 MCP Status: 4 jobs running
 
 @N: MF106 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\ex_stage.sv":17:7:17:14|Mapping Compile point view:work.ex_stage_1s_34_layer0(verilog) because 
-		 no database from previous run found.
+		 user requested clean build.
 
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 278MB peak: 279MB)
@@ -670,7 +670,7 @@ Only the first 100 messages of id 'BN161' are reported. To see all messages use 
 @N: MF179 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\store_buffer.sv":214:11:214:65|Found 9 by 9 bit equality operator ('==') address_checker_l3\.un1_page_offset_i (in view: work.store_buffer_20_layer0(verilog))
 @N: MF794 |RAM gen_sram\[0\]\.tag_sram.gen_cut\[0\]\.i_tc_sram_wrapper.i_ram.Mem_DP_5[53:0] required 98 registers during mapping 
 
-Starting factoring (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 301MB peak: 301MB)
+Starting factoring (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 302MB peak: 302MB)
 
 
 Finished factoring (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 352MB peak: 352MB)
@@ -749,33 +749,33 @@ NConnInternalConnection caching is on
 @W: FX471 |User-specified initial value x is not applied on instance lsu_i.i_store_unit.genblk1®i_amo_buffer.i_amo_fifo.gen_fpga_queue®fifo_ram.memÛ0Ý[4] (of type dffe). Initial value must be either 0 or 1.
 @W: FX471 |User-specified initial value x is not applied on instance lsu_i.i_store_unit.genblk1®i_amo_buffer.i_amo_fifo.gen_fpga_queue®fifo_ram.memÛ0Ý[3] (of type dffe). Initial value must be either 0 or 1.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 433MB peak: 460MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:28s; Memory used current: 430MB peak: 459MB)
 
 @N: FA113 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\serdiv.sv":148:20:148:76|Pipelining module add_out[31:0]. For more information, search for "pipelining" in Online Help.
 @N: MF169 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\serdiv.sv":239:2:239:10|Pushed in register op_a_q[31:0].
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:38s; CPU Time elapsed 0h:00m:37s; Memory used current: 434MB peak: 460MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:35s; Memory used current: 433MB peak: 459MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:49s; Memory used current: 451MB peak: 460MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:46s; Memory used current: 450MB peak: 459MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:50s; CPU Time elapsed 0h:00m:49s; Memory used current: 451MB peak: 460MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:47s; CPU Time elapsed 0h:00m:46s; Memory used current: 450MB peak: 459MB)
 
 @N: FX211 |Packed ROM lsu_i.i_store_unit.amo_op_d_0[3:0] (7 input, 4 output) to Block SelectRAM 
 
-Finished preparing to map (Real Time elapsed 0h:00m:53s; CPU Time elapsed 0h:00m:52s; Memory used current: 451MB peak: 460MB)
+Finished preparing to map (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:49s; Memory used current: 451MB peak: 459MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:58s; Memory used current: 484MB peak: 526MB)
+Finished technology mapping (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:55s; Memory used current: 482MB peak: 527MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:59s		   -13.45ns		7060 /      3708
-   2		0h:00m:59s		   -13.24ns		7018 /      3708
-   3		0h:00m:59s		   -12.63ns		7025 /      3708
-   4		0h:01m:00s		   -12.62ns		7026 /      3708
-   5		0h:01m:00s		   -12.57ns		7027 /      3708
+   1		0h:00m:55s		   -13.45ns		7060 /      3708
+   2		0h:00m:55s		   -13.24ns		7018 /      3708
+   3		0h:00m:56s		   -12.63ns		7025 /      3708
+   4		0h:00m:56s		   -12.62ns		7026 /      3708
+   5		0h:00m:56s		   -12.57ns		7027 /      3708
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance issue_stage_i.i_scoreboard.commit_pointer_q\[0\][1] (in view: work.cva6(verilog)) with 107 loads 3 times to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance issue_stage_i.i_scoreboard.mem_q\[2\]\.sbe\.valid (in view: work.cva6(verilog)) with 4 loads 1 time to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance issue_stage_i.i_scoreboard.mem_q\[0\]\.sbe\.valid (in view: work.cva6(verilog)) with 4 loads 1 time to improve timing.
@@ -802,36 +802,36 @@ Timing driven replication report
 Added 26 Registers via timing driven replication
 Added 8 LUTs via timing driven replication
 
-   6		0h:01m:03s		   -12.64ns		7039 /      3734
-   7		0h:01m:04s		   -12.46ns		7043 /      3734
-   8		0h:01m:04s		   -11.60ns		7053 /      3734
-   9		0h:01m:04s		   -11.18ns		7055 /      3734
-  10		0h:01m:05s		   -11.87ns		7057 /      3734
-  11		0h:01m:05s		   -11.67ns		7059 /      3734
-  12		0h:01m:05s		   -11.43ns		7061 /      3734
-  13		0h:01m:05s		   -11.51ns		7064 /      3734
+   6		0h:01m:00s		   -12.64ns		7039 /      3734
+   7		0h:01m:00s		   -12.46ns		7043 /      3734
+   8		0h:01m:01s		   -11.60ns		7053 /      3734
+   9		0h:01m:01s		   -11.18ns		7055 /      3734
+  10		0h:01m:01s		   -11.87ns		7057 /      3734
+  11		0h:01m:01s		   -11.67ns		7059 /      3734
+  12		0h:01m:01s		   -11.43ns		7061 /      3734
+  13		0h:01m:02s		   -11.51ns		7064 /      3734
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance issue_stage_i.i_scoreboard.commit_pointer_q\[0\]_1_rep1 (in view: work.cva6(verilog)) with 21 loads 2 times to improve timing.
 Added 2 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
 
-  14		0h:01m:06s		   -11.53ns		7052 /      3736
-  15		0h:01m:06s		   -10.81ns		7058 /      3736
-  16		0h:01m:06s		   -10.98ns		7062 /      3736
-  17		0h:01m:06s		   -10.75ns		7065 /      3736
-  18		0h:01m:06s		   -10.54ns		7071 /      3736
-  19		0h:01m:07s		   -10.51ns		7082 /      3736
-  20		0h:01m:07s		   -10.30ns		7089 /      3736
-  21		0h:01m:08s		   -10.30ns		7090 /      3736
-  22		0h:01m:08s		   -10.20ns		7091 /      3736
-  23		0h:01m:08s		   -10.05ns		7093 /      3736
-  24		0h:01m:09s		    -9.90ns		7094 /      3736
-  25		0h:01m:10s		    -9.95ns		7107 /      3736
-  26		0h:01m:10s		   -10.15ns		7109 /      3736
-  27		0h:01m:11s		   -10.08ns		7110 /      3736
-  28		0h:01m:11s		   -10.05ns		7112 /      3736
+  14		0h:01m:02s		   -11.53ns		7052 /      3736
+  15		0h:01m:03s		   -10.81ns		7058 /      3736
+  16		0h:01m:03s		   -10.98ns		7062 /      3736
+  17		0h:01m:03s		   -10.75ns		7065 /      3736
+  18		0h:01m:03s		   -10.54ns		7071 /      3736
+  19		0h:01m:04s		   -10.51ns		7082 /      3736
+  20		0h:01m:04s		   -10.30ns		7089 /      3736
+  21		0h:01m:05s		   -10.30ns		7090 /      3736
+  22		0h:01m:05s		   -10.20ns		7091 /      3736
+  23		0h:01m:05s		   -10.05ns		7093 /      3736
+  24		0h:01m:05s		    -9.90ns		7094 /      3736
+  25		0h:01m:06s		    -9.95ns		7107 /      3736
+  26		0h:01m:07s		   -10.15ns		7109 /      3736
+  27		0h:01m:08s		   -10.08ns		7110 /      3736
+  28		0h:01m:08s		   -10.05ns		7112 /      3736
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:13s; CPU Time elapsed 0h:01m:12s; Memory used current: 498MB peak: 526MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:10s; CPU Time elapsed 0h:01m:09s; Memory used current: 496MB peak: 527MB)
 
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance lsu_i.lsu_bypass_i.mem_q\[1\]\.operation[7] (in view: work.ex_stage_1s_34_layer0(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance lsu_i.lsu_bypass_i.mem_q\[0\]\.operation[7] (in view: work.ex_stage_1s_34_layer0(verilog)) because it does not drive other instances.
@@ -844,17 +844,17 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\load_unit.sv":144:2:144:10|Removing sequential instance lsu_i.i_load_unit.ldbuf_q\[1\]\.operation[7] (in view: work.ex_stage_1s_34_layer0(verilog)) because it does not drive other instances.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:01m:14s; CPU Time elapsed 0h:01m:14s; Memory used current: 499MB peak: 526MB)
+Finished restoring hierarchy (Real Time elapsed 0h:01m:11s; CPU Time elapsed 0h:01m:11s; Memory used current: 496MB peak: 527MB)
 
 
 Finished mapping ex_stage_1s_34_layer0
 MCP Status: 3 jobs running
 
 @N: MF106 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_regfile.sv":16:7:16:17|Mapping Compile point view:work.csr_regfile_1s_6s_1075056897_36_layer0(verilog) because 
-		 no database from previous run found.
+		 user requested clean build.
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 279MB peak: 279MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 279MB peak: 279MB)
 
 @W: BN114 :|Removing instance CP_fanout_cell_work_csr_regfile_1s_6s_1075056897_36_layer0_verilog_0_0_0_0_0_0_0_0_0_inst (in view: work.cva6(verilog)) because it does not drive other instances.
 @W: BN114 :|Removing instance CP_fanout_cell_work_csr_regfile_1s_6s_1075056897_36_layer0_verilog_0_0_0_0_0_0_0_0_inst (in view: work.cva6(verilog)) because it does not drive other instances.
@@ -963,7 +963,7 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapse
 @W: BN161 :|Net N_409 has multiple drivers .
 @W: BN161 :|Net N_410 has multiple drivers .
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 282MB peak: 282MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 282MB peak: 282MB)
 
 @W: BN161 :|Net issue_stage_i.i_scoreboard.mem_n\[3\]$sbe$bp$predict_address_0_sqmuxa_108_sn has multiple drivers .
 @W: BN161 :|Net issue_stage_i.i_scoreboard.mem_n\[3\]$sbe$result_0_sqmuxa_sn has multiple drivers .
@@ -1006,10 +1006,10 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00
 
 Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\csr_regfile_1s_6s_1075056897_36_layer0\csr_regfile_1s_6s_1075056897_36_layer0.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
 
-Starting factoring (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 290MB peak: 290MB)
+Starting factoring (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 290MB peak: 290MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:22s; Memory used current: 320MB peak: 320MB)
+Finished factoring (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:21s; Memory used current: 320MB peak: 320MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -1018,7 +1018,7 @@ Available hyper_sources - for debug and ip models
 NConnInternalConnection caching is on
 @W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_regfile.sv":1403:2:1403:10|Removing sequential instance csr_regfile_i.debug_mode_q_0 because it is equivalent to instance csr_regfile_i.debug_mode_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 399MB peak: 414MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:25s; Memory used current: 400MB peak: 415MB)
 
 @W: BN132 :|Removing instance csr_regfile_i.instret_q_mod_0[32] because it is equivalent to instance csr_regfile_i.instret_q_mod[32]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :|Removing instance csr_regfile_i.instret_q_mod[32] because it is equivalent to instance csr_regfile_i.instret_q[32]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -1122,29 +1122,29 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:27s; CP
 
 Only the first 100 messages of id 'BN132' are reported. To see all messages use 'report_messages -log C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\csr_regfile_1s_6s_1075056897_36_layer0\csr_regfile_1s_6s_1075056897_36_layer0.srr -id BN132' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN132} -count unlimited' in the Tcl shell.
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 403MB peak: 414MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:28s; Memory used current: 404MB peak: 415MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:37s; Memory used current: 411MB peak: 414MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:37s; Memory used current: 411MB peak: 415MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:37s; Memory used current: 412MB peak: 414MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:37s; Memory used current: 412MB peak: 415MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:38s; CPU Time elapsed 0h:00m:38s; Memory used current: 412MB peak: 414MB)
+Finished preparing to map (Real Time elapsed 0h:00m:38s; CPU Time elapsed 0h:00m:38s; Memory used current: 412MB peak: 415MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:40s; Memory used current: 440MB peak: 477MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:40s		    -9.93ns		4806 /      1445
+   1		0h:00m:41s		    -9.93ns		4806 /      1445
    2		0h:00m:41s		    -9.93ns		4791 /      1445
    3		0h:00m:41s		    -9.50ns		4796 /      1445
    4		0h:00m:41s		    -9.28ns		4796 /      1445
    5		0h:00m:41s		    -9.28ns		4797 /      1445
    6		0h:00m:41s		    -9.28ns		4797 /      1445
-   7		0h:00m:41s		    -9.28ns		4797 /      1445
+   7		0h:00m:42s		    -9.28ns		4797 /      1445
    8		0h:00m:42s		    -9.23ns		4797 /      1445
    9		0h:00m:42s		    -9.23ns		4797 /      1445
   10		0h:00m:42s		    -9.23ns		4797 /      1445
@@ -1165,7 +1165,7 @@ Added 9 LUTs via timing driven replication
   18		0h:00m:46s		    -7.80ns		4840 /      1454
   19		0h:00m:46s		    -7.87ns		4841 /      1454
   20		0h:00m:46s		    -7.76ns		4848 /      1454
-  21		0h:00m:46s		    -7.78ns		4855 /      1454
+  21		0h:00m:47s		    -7.78ns		4855 /      1454
   22		0h:00m:47s		    -7.93ns		4860 /      1454
   23		0h:00m:47s		    -8.05ns		4861 /      1454
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance issue_stage_i.i_scoreboard.commit_pointer_q\[0\]_fast[1] (in view: work.cva6(verilog)) with 27 loads 2 times to improve timing.
@@ -1176,21 +1176,21 @@ Added 2 LUTs via timing driven replication
   24		0h:00m:47s		    -7.70ns		4854 /      1456
   25		0h:00m:48s		    -7.92ns		4854 /      1456
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:48s; CPU Time elapsed 0h:00m:48s; Memory used current: 440MB peak: 477MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:48s; Memory used current: 440MB peak: 477MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:49s; Memory used current: 441MB peak: 477MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:49s; CPU Time elapsed 0h:00m:49s; Memory used current: 440MB peak: 477MB)
 
 
 Finished mapping csr_regfile_1s_6s_1075056897_36_layer0
 MCP Status: 2 jobs running
 
 @N: MF106 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\issue_stage.sv":17:7:17:17|Mapping Compile point view:work.issue_stage_1_4s_13_layer0(verilog) because 
-		 no database from previous run found.
+		 user requested clean build.
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 273MB peak: 273MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 273MB peak: 274MB)
 
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance ex_stage_i.lsu_i.lsu_bypass_i.mem_q\[0\]\.valid (in view: work.cva6(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\lsu_bypass.sv":108:2:108:10|Removing sequential instance ex_stage_i.lsu_i.lsu_bypass_i.mem_q\[0\]\.overflow (in view: work.cva6(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
@@ -1223,7 +1223,7 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapse
 @W: BN161 :|Net csr_regfile_i.csr_update$flush_o_2 has multiple drivers .
 @N: MF135 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|RAM issue_stage_i.i_scoreboard.mem_q[334:303] is 4 words by 32 bits.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 279MB peak: 279MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 280MB peak: 280MB)
 
 @W: BN161 :|Net ex_stage_i.alu_valid_i_sn has multiple drivers .
 @W: BN161 :|Net ex_stage_i.flu_result_o9_sn has multiple drivers .
@@ -1343,10 +1343,10 @@ Only the first 100 messages of id 'BN161' are reported. To see all messages use 
 @N: MF179 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":330:47:330:71|Found 5 by 5 bit equality operator ('==') gen_rs_entries\[1\]\.un91_rs2_fwd_req (in view: work.scoreboard_rs3_len_t_1_1_4s_2s_10_layer0(verilog))
 @N: MF794 |RAM mem_q[334:303] required 4 registers during mapping 
 
-Starting factoring (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:42s; Memory used current: 295MB peak: 295MB)
+Starting factoring (Real Time elapsed 0h:00m:38s; CPU Time elapsed 0h:00m:37s; Memory used current: 295MB peak: 295MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:44s; Memory used current: 311MB peak: 311MB)
+Finished factoring (Real Time elapsed 0h:00m:39s; CPU Time elapsed 0h:00m:38s; Memory used current: 311MB peak: 311MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -1360,7 +1360,7 @@ NConnInternalConnection caching is on
 @W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\serdiv.sv":239:2:239:10|Removing sequential instance ex_stage_i.i_mult.i_div.op_b_zero_q_0 because it is equivalent to instance ex_stage_i.i_mult.i_div.op_b_zero_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\serdiv.sv":239:2:239:10|Removing sequential instance ex_stage_i.i_mult.i_div.rem_sel_q_0 because it is equivalent to instance ex_stage_i.i_mult.i_div.rem_sel_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:52s; CPU Time elapsed 0h:00m:51s; Memory used current: 418MB peak: 437MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 419MB peak: 438MB)
 
 @W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Removing instance issue_stage_i.i_scoreboard.mem_q[1].sbe.op[7] because it is equivalent to instance issue_stage_i.i_scoreboard.mem_q[1].sbe.fu[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Removing instance issue_stage_i.i_scoreboard.mem_q[0].sbe.ex.cause[28] because it is equivalent to instance issue_stage_i.i_scoreboard.mem_q[0].sbe.ex.cause[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -1449,13 +1449,13 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:52s; CP
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Removing sequential instance i_scoreboard.mem_q\[3\]\.sbe\.fu[3] (in view: work.issue_stage_1_4s_13_layer0(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Removing sequential instance i_scoreboard.mem_q\[1\]\.sbe\.fu[3] (in view: work.issue_stage_1_4s_13_layer0(verilog)) because it does not drive other instances.
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:57s; CPU Time elapsed 0h:00m:56s; Memory used current: 420MB peak: 437MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:50s; Memory used current: 421MB peak: 438MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:01m:11s; CPU Time elapsed 0h:01m:10s; Memory used current: 429MB peak: 437MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:01m:04s; Memory used current: 430MB peak: 438MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:11s; CPU Time elapsed 0h:01m:11s; Memory used current: 430MB peak: 437MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:05s; CPU Time elapsed 0h:01m:05s; Memory used current: 431MB peak: 438MB)
 
 @W: BN132 :|Removing instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[1].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_7[6] because it is equivalent to instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[1].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_5[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :|Removing instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[1].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_6[6] because it is equivalent to instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[1].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_5[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -1467,20 +1467,20 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:11s; CP
 @W: BN132 :|Removing instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[0].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_6[6] because it is equivalent to instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[0].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_5[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :|Removing instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[0].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_5[6] because it is equivalent to instance ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.gen_sram[0].pte_sram.gen_cut[0].i_tc_sram_wrapper.i_ram.Mem_DP_4[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished preparing to map (Real Time elapsed 0h:01m:14s; CPU Time elapsed 0h:01m:13s; Memory used current: 430MB peak: 437MB)
+Finished preparing to map (Real Time elapsed 0h:01m:08s; CPU Time elapsed 0h:01m:07s; Memory used current: 431MB peak: 438MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:01m:19s; CPU Time elapsed 0h:01m:18s; Memory used current: 471MB peak: 506MB)
+Finished technology mapping (Real Time elapsed 0h:01m:13s; CPU Time elapsed 0h:01m:13s; Memory used current: 473MB peak: 506MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:01m:18s		   -11.76ns		7649 /      2766
-   2		0h:01m:18s		   -11.76ns		7562 /      2766
-   3		0h:01m:19s		   -11.02ns		7569 /      2766
-   4		0h:01m:20s		   -11.06ns		7568 /      2766
-   5		0h:01m:20s		   -11.06ns		7568 /      2766
-   6		0h:01m:21s		   -11.06ns		7568 /      2766
-   7		0h:01m:21s		   -11.06ns		7568 /      2766
+   1		0h:01m:13s		   -11.76ns		7649 /      2766
+   2		0h:01m:13s		   -11.76ns		7562 /      2766
+   3		0h:01m:14s		   -11.02ns		7569 /      2766
+   4		0h:01m:14s		   -11.06ns		7568 /      2766
+   5		0h:01m:15s		   -11.06ns		7568 /      2766
+   6		0h:01m:16s		   -11.06ns		7568 /      2766
+   7		0h:01m:16s		   -11.06ns		7568 /      2766
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance i_scoreboard.commit_pointer_q\[0\][1] (in view: work.issue_stage_1_4s_13_layer0(verilog)) with 554 loads 3 times to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_buffer.sv":68:2:68:10|Replicating instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address[5] (in view: work.cva6(verilog)) with 31 loads 2 times to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_buffer.sv":68:2:68:10|Replicating instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address[7] (in view: work.cva6(verilog)) with 31 loads 2 times to improve timing.
@@ -1514,36 +1514,36 @@ Timing driven replication report
 Added 50 Registers via timing driven replication
 Added 9 LUTs via timing driven replication
 
-   8		0h:01m:25s		   -10.16ns		7583 /      2816
-   9		0h:01m:25s		    -9.70ns		7589 /      2816
-  10		0h:01m:25s		    -9.78ns		7592 /      2816
-  11		0h:01m:26s		    -9.42ns		7594 /      2816
-  12		0h:01m:26s		    -9.42ns		7598 /      2816
-  13		0h:01m:26s		    -9.30ns		7601 /      2816
-  14		0h:01m:26s		    -9.16ns		7601 /      2816
-  15		0h:01m:27s		    -9.00ns		7602 /      2816
-  16		0h:01m:27s		    -8.96ns		7603 /      2816
-  17		0h:01m:27s		    -8.50ns		7608 /      2816
-  18		0h:01m:27s		    -8.59ns		7611 /      2816
-  19		0h:01m:27s		    -8.51ns		7611 /      2816
-  20		0h:01m:28s		    -8.54ns		7616 /      2816
-  21		0h:01m:28s		    -8.46ns		7626 /      2816
-  22		0h:01m:28s		    -8.30ns		7629 /      2816
-  23		0h:01m:29s		    -8.21ns		7631 /      2816
-  24		0h:01m:30s		    -8.28ns		7634 /      2816
-  25		0h:01m:30s		    -8.21ns		7635 /      2816
-  26		0h:01m:30s		    -8.13ns		7636 /      2816
-  27		0h:01m:31s		    -8.12ns		7639 /      2816
-  28		0h:01m:31s		    -8.04ns		7643 /      2816
-  29		0h:01m:32s		    -8.06ns		7642 /      2816
+   8		0h:01m:20s		   -10.16ns		7583 /      2816
+   9		0h:01m:20s		    -9.70ns		7589 /      2816
+  10		0h:01m:20s		    -9.78ns		7592 /      2816
+  11		0h:01m:21s		    -9.42ns		7594 /      2816
+  12		0h:01m:21s		    -9.42ns		7598 /      2816
+  13		0h:01m:21s		    -9.30ns		7601 /      2816
+  14		0h:01m:21s		    -9.16ns		7601 /      2816
+  15		0h:01m:22s		    -9.00ns		7602 /      2816
+  16		0h:01m:22s		    -8.96ns		7603 /      2816
+  17		0h:01m:22s		    -8.50ns		7608 /      2816
+  18		0h:01m:22s		    -8.59ns		7611 /      2816
+  19		0h:01m:22s		    -8.51ns		7611 /      2816
+  20		0h:01m:23s		    -8.54ns		7616 /      2816
+  21		0h:01m:23s		    -8.46ns		7626 /      2816
+  22		0h:01m:23s		    -8.30ns		7629 /      2816
+  23		0h:01m:24s		    -8.21ns		7631 /      2816
+  24		0h:01m:25s		    -8.28ns		7634 /      2816
+  25		0h:01m:25s		    -8.21ns		7635 /      2816
+  26		0h:01m:25s		    -8.13ns		7636 /      2816
+  27		0h:01m:26s		    -8.12ns		7639 /      2816
+  28		0h:01m:26s		    -8.04ns		7643 /      2816
+  29		0h:01m:26s		    -8.06ns		7642 /      2816
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance i_scoreboard.commit_pointer_q\[0\]_fast[1] (in view: work.issue_stage_1_4s_13_layer0(verilog)) with 28 loads 2 times to improve timing.
 Added 2 Registers via timing driven replication
 Added 2 LUTs via timing driven replication
 
-  30		0h:01m:32s		    -8.04ns		7634 /      2818
-  31		0h:01m:32s		    -8.80ns		7634 /      2818
+  30		0h:01m:27s		    -8.04ns		7634 /      2818
+  31		0h:01m:27s		    -8.80ns		7634 /      2818
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:33s; Memory used current: 480MB peak: 506MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:28s; CPU Time elapsed 0h:01m:28s; Memory used current: 483MB peak: 506MB)
 
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Removing sequential instance i_scoreboard.mem_q\[0\]\.sbe\.fu[3] (in view: work.issue_stage_1_4s_13_layer0(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Removing sequential instance i_scoreboard.mem_q\[2\]\.sbe\.fu[3] (in view: work.issue_stage_1_4s_13_layer0(verilog)) because it does not drive other instances.
@@ -1577,14 +1577,14 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Removing sequential instance i_scoreboard.mem_q\[2\]\.sbe\.fu_fast[3] (in view: work.issue_stage_1_4s_13_layer0(verilog)) because it does not drive other instances.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:34s; Memory used current: 482MB peak: 506MB)
+Finished restoring hierarchy (Real Time elapsed 0h:01m:29s; CPU Time elapsed 0h:01m:28s; Memory used current: 484MB peak: 506MB)
 
 
 Finished mapping issue_stage_1_4s_13_layer0
 MCP Status: 1 jobs running
 
 @N: MF106 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\cva6.sv":16:7:16:10|Mapping Top level view:work.cva6(verilog) because 
-		 no database from previous run found.
+		 user requested clean build.
 
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 296MB peak: 297MB)
@@ -1694,10 +1694,10 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00
 @N: FO126 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\vendor\pulp-platform\fpga-support\rtl\asyncdpram.sv":42:2:42:10|Generating RAM gen_fpga_queue\.fifo_ram.mem[1:0]
 @N: FO126 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\vendor\pulp-platform\fpga-support\rtl\asyncdpram.sv":42:2:42:10|Generating RAM gen_fpga_queue\.fifo_ram.mem[1:0]
 
-Starting factoring (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 331MB peak: 331MB)
+Starting factoring (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:54s; Memory used current: 331MB peak: 331MB)
 
 
-Finished factoring (Real Time elapsed 0h:01m:03s; CPU Time elapsed 0h:01m:02s; Memory used current: 360MB peak: 360MB)
+Finished factoring (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:00m:59s; Memory used current: 360MB peak: 360MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -1928,32 +1928,32 @@ Only the first 100 messages of id 'BN161' are reported. To see all messages use 
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\cache_subsystem\cva6_icache.sv":491:2:491:10|Removing sequential instance gen_cache_wt\.i_cache_subsystem.i_cva6_icache.vaddr_q_0_0_mod[4] (in view: work.cva6(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\axi_shim.sv":286:2:286:10|Removing sequential instance gen_cache_wt\.i_cache_subsystem.i_adapter.i_axi_shim.wr_state_q[3] (in view: work.cva6(verilog)) because it does not drive other instances.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:01m:18s; CPU Time elapsed 0h:01m:17s; Memory used current: 445MB peak: 474MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:01m:16s; CPU Time elapsed 0h:01m:15s; Memory used current: 447MB peak: 474MB)
 
 @N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\axi_shim.sv":286:2:286:10|Removing sequential instance gen_cache_wt\.i_cache_subsystem.i_adapter.i_axi_shim.wr_state_q[4] (in view: work.cva6(verilog)) because it does not drive other instances.
 
-Starting Early Timing Optimization (Real Time elapsed 0h:01m:29s; CPU Time elapsed 0h:01m:28s; Memory used current: 452MB peak: 474MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:01m:28s; CPU Time elapsed 0h:01m:26s; Memory used current: 454MB peak: 474MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:36s; Memory used current: 456MB peak: 474MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:33s; Memory used current: 458MB peak: 474MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 456MB peak: 474MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:34s; Memory used current: 458MB peak: 474MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:01m:41s; CPU Time elapsed 0h:01m:39s; Memory used current: 456MB peak: 474MB)
+Finished preparing to map (Real Time elapsed 0h:01m:37s; CPU Time elapsed 0h:01m:36s; Memory used current: 458MB peak: 474MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:01m:45s; CPU Time elapsed 0h:01m:44s; Memory used current: 544MB peak: 544MB)
+Finished technology mapping (Real Time elapsed 0h:01m:42s; CPU Time elapsed 0h:01m:41s; Memory used current: 546MB peak: 546MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:01m:45s		   -12.16ns		11458 /      6632
-   2		0h:01m:45s		   -11.94ns		11366 /      6632
-   3		0h:01m:46s		   -11.55ns		11372 /      6632
-   4		0h:01m:46s		   -11.55ns		11375 /      6632
-   5		0h:01m:47s		   -11.55ns		11375 /      6632
-   6		0h:01m:48s		   -11.55ns		11375 /      6632
+   1		0h:01m:42s		   -12.16ns		11458 /      6632
+   2		0h:01m:42s		   -11.94ns		11366 /      6632
+   3		0h:01m:42s		   -11.55ns		11372 /      6632
+   4		0h:01m:43s		   -11.55ns		11375 /      6632
+   5		0h:01m:44s		   -11.55ns		11375 /      6632
+   6		0h:01m:45s		   -11.55ns		11375 /      6632
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance i_scoreboard.commit_pointer_q\[0\][1] (in view: work.issue_stage_1_4s_13_layer0(verilog)) with 297 loads 3 times to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance i_scoreboard.mem_q\[1\]\.sbe\.fu[0] (in view: work.issue_stage_1_4s_13_layer0(verilog)) with 33 loads 1 time to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance i_scoreboard.mem_q\[3\]\.sbe\.fu[0] (in view: work.issue_stage_1_4s_13_layer0(verilog)) with 33 loads 1 time to improve timing.
@@ -1981,14 +1981,14 @@ Timing driven replication report
 Added 28 Registers via timing driven replication
 Added 12 LUTs via timing driven replication
 
-   7		0h:01m:51s		   -10.98ns		11398 /      6660
-   8		0h:01m:52s		   -10.74ns		11402 /      6660
-   9		0h:01m:52s		   -10.41ns		11406 /      6660
-  10		0h:01m:52s		   -10.27ns		11407 /      6660
-  11		0h:01m:53s		   -10.48ns		11408 /      6660
-  12		0h:01m:53s		   -10.47ns		11413 /      6660
-  13		0h:01m:53s		   -10.47ns		11414 /      6660
-  14		0h:01m:53s		   -10.47ns		11415 /      6660
+   7		0h:01m:48s		   -10.98ns		11398 /      6660
+   8		0h:01m:49s		   -10.74ns		11402 /      6660
+   9		0h:01m:49s		   -10.41ns		11406 /      6660
+  10		0h:01m:50s		   -10.27ns		11407 /      6660
+  11		0h:01m:50s		   -10.48ns		11408 /      6660
+  12		0h:01m:50s		   -10.47ns		11413 /      6660
+  13		0h:01m:50s		   -10.47ns		11414 /      6660
+  14		0h:01m:50s		   -10.47ns		11415 /      6660
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_regfile.sv":1403:2:1403:10|Replicating instance priv_lvl_q[1] (in view: work.csr_regfile_1s_6s_1075056897_36_layer0(verilog)) with 12 loads 1 time to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\csr_regfile.sv":1403:2:1403:10|Replicating instance priv_lvl_q[0] (in view: work.csr_regfile_1s_6s_1075056897_36_layer0(verilog)) with 9 loads 1 time to improve timing.
 @N: FX271 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\scoreboard.sv":419:2:419:10|Replicating instance i_scoreboard.commit_pointer_q\[0\]_fast[1] (in view: work.issue_stage_1_4s_13_layer0(verilog)) with 18 loads 2 times to improve timing.
@@ -1996,47 +1996,47 @@ Added 4 Registers via timing driven replication
 Added 2 LUTs via timing driven replication
 
 
-  15		0h:01m:53s		   -10.13ns		11406 /      6664
-  16		0h:01m:54s		   -10.03ns		11411 /      6664
-  17		0h:01m:54s		    -9.83ns		11413 /      6664
-  18		0h:01m:54s		    -9.85ns		11420 /      6664
-  19		0h:01m:55s		    -9.63ns		11422 /      6664
-  20		0h:01m:55s		    -9.85ns		11423 /      6664
-  21		0h:01m:55s		    -9.47ns		11426 /      6664
-  22		0h:01m:55s		    -9.57ns		11426 /      6664
-  23		0h:01m:56s		    -9.38ns		11428 /      6664
-  24		0h:01m:56s		    -9.47ns		11429 /      6664
-  25		0h:01m:56s		    -9.47ns		11429 /      6664
-  26		0h:01m:57s		    -9.44ns		11430 /      6664
-  27		0h:01m:57s		    -9.29ns		11431 /      6664
-  28		0h:01m:57s		    -9.39ns		11434 /      6664
-  29		0h:01m:57s		    -9.20ns		11436 /      6664
-  30		0h:01m:58s		    -9.38ns		11444 /      6664
-  31		0h:01m:58s		    -9.32ns		11445 /      6664
-  32		0h:01m:59s		    -9.36ns		11447 /      6664
-  33		0h:01m:59s		    -9.23ns		11449 /      6664
+  15		0h:01m:51s		   -10.13ns		11406 /      6664
+  16		0h:01m:51s		   -10.03ns		11411 /      6664
+  17		0h:01m:51s		    -9.83ns		11413 /      6664
+  18		0h:01m:52s		    -9.85ns		11420 /      6664
+  19		0h:01m:52s		    -9.63ns		11422 /      6664
+  20		0h:01m:52s		    -9.85ns		11423 /      6664
+  21		0h:01m:52s		    -9.47ns		11426 /      6664
+  22		0h:01m:52s		    -9.57ns		11426 /      6664
+  23		0h:01m:53s		    -9.38ns		11428 /      6664
+  24		0h:01m:53s		    -9.47ns		11429 /      6664
+  25		0h:01m:53s		    -9.47ns		11429 /      6664
+  26		0h:01m:54s		    -9.44ns		11430 /      6664
+  27		0h:01m:54s		    -9.29ns		11431 /      6664
+  28		0h:01m:54s		    -9.39ns		11434 /      6664
+  29		0h:01m:54s		    -9.20ns		11436 /      6664
+  30		0h:01m:55s		    -9.38ns		11444 /      6664
+  31		0h:01m:55s		    -9.32ns		11445 /      6664
+  32		0h:01m:56s		    -9.36ns		11447 /      6664
+  33		0h:01m:56s		    -9.23ns		11449 /      6664
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:02m:01s; CPU Time elapsed 0h:02m:00s; Memory used current: 544MB peak: 545MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:58s; CPU Time elapsed 0h:01m:57s; Memory used current: 547MB peak: 548MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:02m:02s; CPU Time elapsed 0h:02m:01s; Memory used current: 545MB peak: 545MB)
+Finished restoring hierarchy (Real Time elapsed 0h:01m:59s; CPU Time elapsed 0h:01m:58s; Memory used current: 547MB peak: 548MB)
 
 
 Finished mapping cva6
-Multiprocessing finished at : Fri Sep 20 14:25:07 2024
-Multiprocessing took 0h:02m:02s realtime, 0h:00m:02s cputime
+Multiprocessing finished at : Fri Sep 20 14:47:17 2024
+Multiprocessing took 0h:01m:59s realtime, 0h:00m:02s cputime
 
 Summary of Compile Points :
 *************************** 
-Name                                       Status     Reason          Start Time                   End Time                     Realtime       CPU Time       Fast Synthesis
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-wt_dcache_4s_1s_43_layer0                  Mapped     No database     Fri Sep 20 14:23:05 2024     Fri Sep 20 14:23:48 2024     0h:00m:42s     0h:00m:42s     No            
-ex_stage_1s_34_layer0                      Mapped     No database     Fri Sep 20 14:23:05 2024     Fri Sep 20 14:24:20 2024     0h:01m:14s     0h:01m:14s     No            
-csr_regfile_1s_6s_1075056897_36_layer0     Mapped     No database     Fri Sep 20 14:23:49 2024     Fri Sep 20 14:24:39 2024     0h:00m:49s     0h:00m:49s     No            
-issue_stage_1_4s_13_layer0                 Mapped     No database     Fri Sep 20 14:23:05 2024     Fri Sep 20 14:24:40 2024     0h:01m:35s     0h:01m:34s     No            
-cva6                                       Mapped     No database     Fri Sep 20 14:23:04 2024     Fri Sep 20 14:25:07 2024     0h:02m:02s     0h:02m:01s     No            
-============================================================================================================================================================================
+Name                                       Status       Reason           Start Time                   End Time                     Realtime       CPU Time       Fast Synthesis
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+wt_dcache_4s_1s_43_layer0                  Remapped     User request     Fri Sep 20 14:45:18 2024     Fri Sep 20 14:45:54 2024     0h:00m:35s     0h:00m:35s     No            
+ex_stage_1s_34_layer0                      Remapped     User request     Fri Sep 20 14:45:18 2024     Fri Sep 20 14:46:29 2024     0h:01m:11s     0h:01m:11s     No            
+csr_regfile_1s_6s_1075056897_36_layer0     Remapped     User request     Fri Sep 20 14:45:55 2024     Fri Sep 20 14:46:44 2024     0h:00m:49s     0h:00m:49s     No            
+issue_stage_1_4s_13_layer0                 Remapped     User request     Fri Sep 20 14:45:18 2024     Fri Sep 20 14:46:48 2024     0h:01m:29s     0h:01m:29s     No            
+cva6                                       Remapped     User request     Fri Sep 20 14:45:17 2024     Fri Sep 20 14:47:17 2024     0h:01m:59s     0h:01m:58s     No            
+===============================================================================================================================================================================
 Total number of compile points: 5
 ===================================
 
@@ -2051,19 +2051,19 @@ Links to Compile point Reports:
 ==============================
 
 
-Start loading CP mapped netlist (Real Time elapsed 0h:02m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 317MB peak: 318MB)
+Start loading CP mapped netlist (Real Time elapsed 0h:02m:01s; CPU Time elapsed 0h:00m:03s; Memory used current: 317MB peak: 318MB)
 
 
-Finished loading CP mapped netlist (Real Time elapsed 0h:02m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 340MB peak: 340MB)
+Finished loading CP mapped netlist (Real Time elapsed 0h:02m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 340MB peak: 340MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:02m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 341MB peak: 341MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:02m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 341MB peak: 341MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:02m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 341MB peak: 342MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:02m:02s; CPU Time elapsed 0h:00m:04s; Memory used current: 341MB peak: 342MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:02m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 214MB peak: 342MB)
+Start Writing Netlists (Real Time elapsed 0h:02m:02s; CPU Time elapsed 0h:00m:04s; Memory used current: 214MB peak: 342MB)
 
 Writing Analyst data base C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\synwork\cva6_1_impl_1_m.srm
 Warning: Found 32 combinational loops!
@@ -2293,22 +2293,22 @@ Warning: Found 32 combinational loops!
     net        ex_stage_i.lat_5
 End of loops
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:02m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 314MB peak: 342MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:02m:04s; CPU Time elapsed 0h:00m:06s; Memory used current: 314MB peak: 342MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:02m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 318MB peak: 342MB)
+Writing scf file... (Real Time elapsed 0h:02m:06s; CPU Time elapsed 0h:00m:08s; Memory used current: 318MB peak: 342MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:02m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 308MB peak: 342MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:02m:07s; CPU Time elapsed 0h:00m:08s; Memory used current: 308MB peak: 342MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:02m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 308MB peak: 342MB)
+Finished Writing Netlists (Real Time elapsed 0h:02m:07s; CPU Time elapsed 0h:00m:08s; Memory used current: 308MB peak: 342MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:02m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 306MB peak: 342MB)
+Start final timing analysis (Real Time elapsed 0h:02m:07s; CPU Time elapsed 0h:00m:09s; Memory used current: 307MB peak: 342MB)
 
 Warning: Found 32 combinational loops!
 @W: BN137 :|Found combinational loop during mapping at net ex_stage_i.lat_15
@@ -2541,7 +2541,7 @@ End of loops
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Sep 20 14:25:13 2024
+# Timing report written on Fri Sep 20 14:47:24 2024
 #
 
 
@@ -3834,10 +3834,10 @@ i_frontend.i_instr_queue.gen_pc_q_without_C\.pc_q[31]               FD1P3DX     
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:02m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 315MB peak: 342MB)
+Finished final timing analysis (Real Time elapsed 0h:02m:08s; CPU Time elapsed 0h:00m:09s; Memory used current: 315MB peak: 342MB)
 
 
-Finished timing report (Real Time elapsed 0h:02m:11s; CPU Time elapsed 0h:00m:09s; Memory used current: 315MB peak: 342MB)
+Finished timing report (Real Time elapsed 0h:02m:08s; CPU Time elapsed 0h:00m:09s; Memory used current: 315MB peak: 342MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -3891,9 +3891,9 @@ Total number of Carry Chains: 592 + 0 = 592
 Total number of BlackBoxes: 309 + 0 = 309 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:02m:11s; CPU Time elapsed 0h:00m:09s; Memory used current: 136MB peak: 342MB)
+At Mapper Exit (Real Time elapsed 0h:02m:08s; CPU Time elapsed 0h:00m:10s; Memory used current: 137MB peak: 342MB)
 
-Process took 0h:02m:11s realtime, 0h:00m:10s cputime
-# Fri Sep 20 14:25:14 2024
+Process took 0h:02m:08s realtime, 0h:00m:10s cputime
+# Fri Sep 20 14:47:24 2024
 
 ###########################################################]

@@ -2,7 +2,7 @@
 <RadiantProject version="4.2" radiant="2024.1.0.34.2" title="cva6_1" device="LAV-AT-E70ES1-1LFG676C" performance_grade="1" family_int="ap6a00b" device_int="ap6a400bee" package_int="LFG676" operation_int="COM" speed_int="1" default_implementation="impl_1">
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="Verilog 2001" def_top="apb_uart" hdl_sort="off">
+        <Options VerilogStandard="System Verilog" def_top="apb_uart" hdl_sort="off">
             <Option name="include path" value="../../../vendor/pulp-platform/common_cells/include;../../../vendor/pulp-platform/axi/include;../../../core/cache_subsystem/hpdcache/rtl/include;../../register_interface/include"/>
             <Option name="top" value="cva6"/>
         </Options>

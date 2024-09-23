@@ -1,4 +1,4 @@
-# Fri Sep 20 14:22:58 2024
+# Fri Sep 20 14:45:11 2024
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -55,7 +55,7 @@ NConnInternalConnection caching is on
 @N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[1\][110:0].
 @N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[0\][110:0].
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 324MB peak: 325MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 324MB peak: 324MB)
 
 
 Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 324MB peak: 325MB)
@@ -216,7 +216,7 @@ original code -> new code
    0011 -> 01000
    0100 -> 10000
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 335MB peak: 335MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 334MB peak: 334MB)
 
 @N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
 
@@ -294,16 +294,16 @@ Finished Pre Mapping Phase.
 Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 321MB peak: 336MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 326MB peak: 336MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 325MB peak: 336MB)
 
 
 Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 332MB peak: 336MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 227MB peak: 336MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 227MB peak: 336MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Fri Sep 20 14:23:02 2024
+# Fri Sep 20 14:45:15 2024
 
 ###########################################################]

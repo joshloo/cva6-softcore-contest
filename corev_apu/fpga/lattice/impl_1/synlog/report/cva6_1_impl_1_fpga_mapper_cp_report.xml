@@ -18,10 +18,10 @@ The file contains the information about all compile points from mapper to be dis
 <data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\wt_dcache_4s_1s_43_layer0\wt_dcache_4s_1s_43_layer0.srr</data>
 </report_link>
 </data>
-<data>Mapped</data>
-<data>No database</data>
-<data>0h:00m:42s</data>
-<data>0h:00m:42s</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:00m:35s</data>
+<data>0h:00m:35s</data>
 </row>
 <row>
 <data>
@@ -30,10 +30,10 @@ The file contains the information about all compile points from mapper to be dis
 <data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\ex_stage_1s_34_layer0\ex_stage_1s_34_layer0.srr</data>
 </report_link>
 </data>
-<data>Mapped</data>
-<data>No database</data>
-<data>0h:01m:14s</data>
-<data>0h:01m:14s</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:01m:11s</data>
+<data>0h:01m:11s</data>
 </row>
 <row>
 <data>
@@ -42,8 +42,8 @@ The file contains the information about all compile points from mapper to be dis
 <data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\csr_regfile_1s_6s_1075056897_36_layer0\csr_regfile_1s_6s_1075056897_36_layer0.srr</data>
 </report_link>
 </data>
-<data>Mapped</data>
-<data>No database</data>
+<data>Remapped</data>
+<data>User request</data>
 <data>0h:00m:49s</data>
 <data>0h:00m:49s</data>
 </row>
@@ -54,10 +54,10 @@ The file contains the information about all compile points from mapper to be dis
 <data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\issue_stage_1_4s_13_layer0\issue_stage_1_4s_13_layer0.srr</data>
 </report_link>
 </data>
-<data>Mapped</data>
-<data>No database</data>
-<data>0h:01m:35s</data>
-<data>0h:01m:34s</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:01m:29s</data>
+<data>0h:01m:29s</data>
 </row>
 <row>
 <data>
@@ -66,9 +66,9 @@ The file contains the information about all compile points from mapper to be dis
 <data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\impl_1\cva6\cva6.srr</data>
 </report_link>
 </data>
-<data>Mapped</data>
-<data>No database</data>
-<data>0h:02m:02s</data>
-<data>0h:02m:01s</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:01m:59s</data>
+<data>0h:01m:58s</data>
 </row>
 </report_table>

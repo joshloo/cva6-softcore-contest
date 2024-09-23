@@ -1,3 +1,3 @@
-@E: CS187 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\tb\rvfi_tracer.sv":42:2:42:7|Expecting endmodule
-@E::Verilog compiler failed
+@E: CG478 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\core\ariane_regfile_fpga.sv":81:51:81:51|Expression size is either 0 or could not be determined.
+@E::Errors while synthesizing top module ariane.
 
