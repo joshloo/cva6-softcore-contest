@@ -1,0 +1,829 @@
+PAD Specification File
+***************************
+
+PART TYPE:        LAV-AT-E70ES1
+Performance Grade:      1
+PACKAGE:          LFG1156
+Package Status:                     Preliminary    Version 10
+
+Fri Aug 30 08:53:08 2024
+
+Pinout by Port Name:
++-----------------+----------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Port Name       | Pin/Bank | Buffer Type     | Site       | Properties                                                                                                                                                           |
++-----------------+----------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SPI_CLK         | P9/1     | LVCMOS33_OUT    | WRIO1_5A   | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| SPI_CSS         | P7/1     | LVCMOS33_OUT    | WRIO1_3A   | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| SPI_D2          | L10/1    | LVCMOS33_BIDI   | WRIO1_2A   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP VREF:OFF           |
+| SPI_D3          | L9/1     | LVCMOS33_BIDI   | WRIO1_2B   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP VREF:OFF           |
+| SPI_MISO        | L11/1    | LVCMOS33_BIDI   | WRIO1_0B   | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| SPI_MOSI        | L12/1    | LVCMOS33_BIDI   | WRIO1_0A   | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| clk_125_in      | AL10/6   | LVCMOS18_IN     | HPIO6_25A  | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| config_active_o | M8/1     | LVCMOS33_OUT    | WRIO1_6A   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| ddr_ca_o[0]     | AC26/10  | LVSTL11_I_OUT   | HPIO10_2B  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_ca_o[1]     | AB27/10  | LVSTL11_I_OUT   | HPIO10_4A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_ca_o[2]     | AB28/10  | LVSTL11_I_OUT   | HPIO10_4B  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_ca_o[3]     | AC29/10  | LVSTL11_I_OUT   | HPIO10_6A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_ca_o[4]     | AB29/10  | LVSTL11_I_OUT   | HPIO10_6B  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_ca_o[5]     | AD27/10  | LVSTL11_I_OUT   | HPIO10_8A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_ck_o[0]     | AB25/10  | LVSTL11D_I_OUT  | HPIO10_0A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11D_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF    |
+| ddr_ck_o[1]     | AB30/10  | LVSTL11D_I_OUT  | HPIO10_1A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11D_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF    |
+| ddr_cke_o[0]    | AB26/10  | LVSTL11_I_OUT   | HPIO10_2A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_cs_o[0]     | AA31/10  | LVSTL11_I_OUT   | HPIO10_7A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_dmi_io[0]   | AC21/10  | LVSTL11_I_BIDI  | HPIO10_24A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dmi_io[1]   | AF33/10  | LVSTL11_I_BIDI  | HPIO10_25A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dmi_io[2]   | V32/11   | LVSTL11_I_BIDI  | HPIO11_11A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dmi_io[3]   | V22/11   | LVSTL11_I_BIDI  | HPIO11_24A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[0]    | AD22/10  | LVSTL11_I_BIDI  | HPIO10_20B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[10]   | AE32/10  | LVSTL11_I_BIDI  | HPIO10_15B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[11]   | AE31/10  | LVSTL11_I_BIDI  | HPIO10_15A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[12]   | AE33/10  | LVSTL11_I_BIDI  | HPIO10_23B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[13]   | AE34/10  | LVSTL11_I_BIDI  | HPIO10_23A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[14]   | AB34/10  | LVSTL11_I_BIDI  | HPIO10_17B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[15]   | AB33/10  | LVSTL11_I_BIDI  | HPIO10_17A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[16]   | U29/11   | LVSTL11_I_BIDI  | HPIO11_3A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[17]   | V29/11   | LVSTL11_I_BIDI  | HPIO11_3B  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[18]   | U30/11   | LVSTL11_I_BIDI  | HPIO11_9A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[19]   | U31/11   | LVSTL11_I_BIDI  | HPIO11_9B  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[1]    | AD21/10  | LVSTL11_I_BIDI  | HPIO10_20A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[20]   | Y28/11   | LVSTL11_I_BIDI  | HPIO11_1A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[21]   | AA28/11  | LVSTL11_I_BIDI  | HPIO11_1B  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[22]   | V30/11   | LVSTL11_I_BIDI  | HPIO11_7A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[23]   | W30/11   | LVSTL11_I_BIDI  | HPIO11_7B  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[24]   | AA24/11  | LVSTL11_I_BIDI  | HPIO11_16A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[25]   | Y24/11   | LVSTL11_I_BIDI  | HPIO11_16B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[26]   | U23/11   | LVSTL11_I_BIDI  | HPIO11_22A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[27]   | U22/11   | LVSTL11_I_BIDI  | HPIO11_22B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[28]   | U25/11   | LVSTL11_I_BIDI  | HPIO11_14A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[29]   | T25/11   | LVSTL11_I_BIDI  | HPIO11_14B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[2]    | AE25/10  | LVSTL11_I_BIDI  | HPIO10_14B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[30]   | U24/11   | LVSTL11_I_BIDI  | HPIO11_20A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[31]   | T24/11   | LVSTL11_I_BIDI  | HPIO11_20B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[3]    | AE24/10  | LVSTL11_I_BIDI  | HPIO10_14A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[4]    | AA21/10  | LVSTL11_I_BIDI  | HPIO10_22B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[5]    | Y21/10   | LVSTL11_I_BIDI  | HPIO10_22A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[6]    | AB24/10  | LVSTL11_I_BIDI  | HPIO10_16B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[7]    | AC24/10  | LVSTL11_I_BIDI  | HPIO10_16A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[8]    | AD34/10  | LVSTL11_I_BIDI  | HPIO10_21B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dq_io[9]    | AD33/10  | LVSTL11_I_BIDI  | HPIO10_21A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:VREF_INT |
+| ddr_dqs_io[0]   | AC23/10  | LVSTL11D_I_BIDI | HPIO10_18A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11D_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_dqs_io[1]   | AC34/10  | LVSTL11D_I_BIDI | HPIO10_19A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11D_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_dqs_io[2]   | Y29/11   | LVSTL11D_I_BIDI | HPIO11_5A  | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11D_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_dqs_io[3]   | W23/11   | LVSTL11D_I_BIDI | HPIO11_18A | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:48 OPENDRAIN:OFF IO_TYPE:LVSTL11D_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| ddr_reset_n_o   | AF34/10  | LVSTL11_I_OUT   | HPIO10_25B | DRIVE:34_OHMmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVSTL11_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF     |
+| init_done_o     | P10/1    | LVCMOS33_OUT    | WRIO1_7A   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| irq_o           | AP31/9   | LVCMOS18_OUT    | HPIO9_23A  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| phy_resetn_o    | AA9/3    | LVCMOS18_OUT    | HPIO3_22B  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| pll_lock_o      | N10/1    | LVCMOS33_OUT    | WRIO1_7B   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| pll_refclk_i    | AD32/10  | LVSTL11D_I_IN   | HPIO10_13A | DRIVE:NA SLEWRATE:NA GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:34 OPENDRAIN:OFF IO_TYPE:LVSTL11D_I DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF             |
+| rgmii_mdc_o     | AA8/3    | LVCMOS18_OUT    | HPIO3_22A  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| rgmii_mdio_o    | Y9/3     | LVCMOS18_BIDI   | HPIO3_16B  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP VREF:OFF           |
+| rgmii_rxc_i     | Y7/3     | LVCMOS18_IN     | HPIO3_25A  | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| rgmii_rxctl_i   | Y6/3     | LVCMOS18_IN     | HPIO3_25B  | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| rgmii_rxd_i[0]  | AC7/3    | LVCMOS18_IN     | HPIO3_18A  | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| rgmii_rxd_i[1]  | AC6/3    | LVCMOS18_IN     | HPIO3_18B  | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| rgmii_rxd_i[2]  | AD6/3    | LVCMOS18_IN     | HPIO3_1A   | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| rgmii_rxd_i[3]  | AD5/3    | LVCMOS18_IN     | HPIO3_1B   | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| rgmii_txc_o     | Y10/3    | LVCMOS18_OUT    | HPIO3_14B  | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| rgmii_txctl_o   | AB12/3   | LVCMOS18_OUT    | HPIO3_0B   | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| rgmii_txd_o[0]  | Y11/3    | LVCMOS18_OUT    | HPIO3_14A  | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| rgmii_txd_o[1]  | AA2/3    | LVCMOS18_OUT    | HPIO3_15A  | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| rgmii_txd_o[2]  | Y2/3     | LVCMOS18_OUT    | HPIO3_15B  | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| rgmii_txd_o[3]  | AB13/3   | LVCMOS18_OUT    | HPIO3_0A   | DRIVE:50RSmA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| rstn_i          | AC17/6   | LVCMOS18_IN     | HPIO6_4A   | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP VREF:OFF                 |
+| s0_gpio[0]      | N7/1     | LVCMOS33_BIDI   | WRIO1_3B   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s0_gpio[1]      | L7/1     | LVCMOS33_BIDI   | WRIO1_4A   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s0_gpio[2]      | T19/13   | LVCMOS33_BIDI   | WRIO13_2B  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s0_gpio[3]      | R19/13   | LVCMOS33_BIDI   | WRIO13_0A  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s0_gpio[4]      | R16/12   | LVCMOS33_BIDI   | WRIO12_6A  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s0_gpio[5]      | T18/13   | LVCMOS33_BIDI   | WRIO13_2A  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s0_gpio[6]      | R14/13   | LVCMOS33_BIDI   | WRIO13_1A  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s0_gpio[7]      | P19/12   | LVCMOS33_BIDI   | WRIO12_7A  | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF         |
+| s1_uart_rxd_i   | T3/2     | LVCMOS33_IN     | WRIO2_6B   | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN VREF:OFF               |
+| s1_uart_txd_o   | R3/2     | LVCMOS33_OUT    | WRIO2_6A   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| sclk_o          | AF28/9   | LVCMOS18_OUT    | HPIO9_0A   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
+| trn_err_o       | M9/1     | LVCMOS33_OUT    | WRIO1_6B   | DRIVE:50RSmA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE VREF:OFF        |
++-----------------+----------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 1    | 3.3V  |
+| 2    | 3.3V  |
+| 3    | 1.8V  |
+| 6    | 1.8V  |
+| 9    | 1.8V  |
+| 10   | 1.1V  |
+| 11   | 1.1V  |
+| 12   | 3.3V  |
+| 13   | 3.3V  |
++------+-------+
+
+Vref by Bank:
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+Pinout by Pin Number:
++----------------------------------+-----------------------+------------+-----------------+--------------------------------+----------------------------------------+
+| Pin/Bank                         | Pin Info              | Preference | Buffer Type     | Site                           | Dual Function                          |
++----------------------------------+-----------------------+------------+-----------------+--------------------------------+----------------------------------------+
+| AA1/3                            |     unused, PULL:DOWN |            |                 | HPIO3_13B                      | PLLC3_IN                               |
+| AA2/3                            | rgmii_txd_o[1]        | LOCATED    | LVCMOS18_OUT    | HPIO3_15A                      | DQ3_3                                  |
+| AA3/3                            |     unused, PULL:DOWN |            |                 | HPIO3_17A                      | SD13_IN/DQ3_3                          |
+| AA4/3                            |     unused, PULL:DOWN |            |                 | HPIO3_21A                      | SD17_IN/DQ3_3                          |
+| AA5/3                            |     unused, PULL:DOWN |            |                 | HPIO3_23B                      | DQ3_3                                  |
+| AA7/3                            |     unused, PULL:DOWN |            |                 | HPIO3_24B                      | PCLKRC3_2/PCLKEC3_2/ATB_TESTPAD2       |
+| AA8/3                            | rgmii_mdc_o           | LOCATED    | LVCMOS18_OUT    | HPIO3_22A                      | DQ3_2                                  |
+| AA9/3                            | phy_resetn_o          | LOCATED    | LVCMOS18_OUT    | HPIO3_22B                      | DQ3_2                                  |
+| AA11/3                           |     unused, PULL:DOWN |            |                 | HPIO3_12A                      | VREF3                                  |
+| AA14/5                           |     unused, PULL:DOWN |            |                 | HPIO5_0B                       | DQ5_0                                  |
+| AA15/5                           |     unused, PULL:DOWN |            |                 | HPIO5_0A                       | DQ5_0                                  |
+| AA16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_0A                       | DQ6_0                                  |
+| AA17/6                           |     unused, PULL:DOWN |            |                 | HPIO6_0B                       | DQ6_0                                  |
+| AA18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_0B                       | DQ7_0                                  |
+| AA19/8                           |     unused, PULL:DOWN |            |                 | HPIO8_4B                       | DQSN8_0                                |
+| AA20/8                           |     unused, PULL:DOWN |            |                 | HPIO8_2B                       | DQ8_0                                  |
+| AA21/10                          | ddr_dq_io[4]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_22B                     | DQ10_2                                 |
+| AA24/11                          | ddr_dq_io[24]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_16A                     | SD0_IN/DQ11_2                          |
+| AA26/11                          | Prohibited/Reserved   |            |                 | HPIO11_6A                      | HS11_PLL_MFGOUT1/DQ11_0                |
+| AA27/11                          | Prohibited/Reserved   |            |                 | HPIO11_0A                      | DQ11_0                                 |
+| AA28/11                          | ddr_dq_io[21]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_1B                      | DQ11_1                                 |
+| AA29/11                          | Prohibited/Reserved   |            |                 | HPIO11_25B                     | PCLKRC11_3/PCLKEC11_3                  |
+| AA30/11                          | Prohibited/Reserved   |            |                 | HPIO11_25A                     | PCLKRT11_3/PCLKET11_3/DM11_3           |
+| AA31/10                          | ddr_cs_o[0]           | LOCATED    | LVSTL11_I_OUT   | HPIO10_7A                      | DQ10_1                                 |
+| AA32/10                          | Prohibited/Reserved   |            |                 | HPIO10_9A                      | DQ10_1                                 |
+| AA33/10                          | Prohibited/Reserved   |            |                 | HPIO10_11B                     | PCLKC10_1/PCLKRC10_1/PCLKEC10_1        |
+| AA34/10                          | Prohibited/Reserved   |            |                 | HPIO10_11A                     | PCLKT10_1/PCLKRT10_1/PCLKET10_1/DM10_1 |
+| AB1/3                            |     unused, PULL:DOWN |            |                 | HPIO3_11A                      | PCLKT3_1/PCLKRT3_1/PCLKET3_1/DM3_1     |
+| AB4/3                            |     unused, PULL:DOWN |            |                 | HPIO3_19A                      | SD15_IN/DQS3_3                         |
+| AB5/3                            |     unused, PULL:DOWN |            |                 | HPIO3_19B                      | SD15_OUT/DQSN3_3                       |
+| AB7/3                            |     unused, PULL:DOWN |            |                 | HPIO3_24A                      | PCLKRT3_2/PCLKET3_2/ATB_TESTPAD1/DM3_2 |
+| AB10/3                           |     unused, PULL:DOWN |            |                 | HPIO3_20A                      | SD16_IN/DQ3_2                          |
+| AB12/3                           | rgmii_txctl_o         | LOCATED    | LVCMOS18_OUT    | HPIO3_0B                       | DQ3_0                                  |
+| AB13/3                           | rgmii_txd_o[3]        | LOCATED    | LVCMOS18_OUT    | HPIO3_0A                       | DQ3_0                                  |
+| AB14/5                           |     unused, PULL:DOWN |            |                 | HPIO5_2A                       | DQ5_0                                  |
+| AB15/5                           |     unused, PULL:DOWN |            |                 | HPIO5_2B                       | DQ5_0                                  |
+| AB16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_2A                       | DQ6_0                                  |
+| AB17/6                           |     unused, PULL:DOWN |            |                 | HPIO6_2B                       | DQ6_0                                  |
+| AB18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_0A                       | DQ7_0                                  |
+| AB19/8                           |     unused, PULL:DOWN |            |                 | HPIO8_4A                       | DQS8_0                                 |
+| AB20/8                           |     unused, PULL:DOWN |            |                 | HPIO8_0B                       | DQ8_0                                  |
+| AB21/10                          | Prohibited/Reserved   |            |                 | HPIO10_24B                     | PCLKRC10_2/PCLKEC10_2                  |
+| AB24/10                          | ddr_dq_io[6]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_16B                     | SD2_OUT/DQ10_2                         |
+| AB25/10                          | ddr_ck_o[0]+          | LOCATED    | LVSTL11D_I_OUT  | HPIO10_0A                      | DQ10_0                                 |
+| AB26/10                          | ddr_cke_o[0]          | LOCATED    | LVSTL11_I_OUT   | HPIO10_2A                      | DQ10_0                                 |
+| AB27/10                          | ddr_ca_o[1]           | LOCATED    | LVSTL11_I_OUT   | HPIO10_4A                      | DQS10_0                                |
+| AB28/10                          | ddr_ca_o[2]           | LOCATED    | LVSTL11_I_OUT   | HPIO10_4B                      | DQSN10_0                               |
+| AB29/10                          | ddr_ca_o[4]           | LOCATED    | LVSTL11_I_OUT   | HPIO10_6B                      | DQ10_0                                 |
+| AB30/10                          | ddr_ck_o[1]+          | LOCATED    | LVSTL11D_I_OUT  | HPIO10_1A                      | DQ10_1                                 |
+| AB31/10                          | Prohibited/Reserved   |            |                 | HPIO10_7B                      | DQ10_1                                 |
+| AB32/10                          | Prohibited/Reserved   |            |                 | HPIO10_9B                      | DQ10_1                                 |
+| AB33/10                          | ddr_dq_io[15]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_17A                     | SD3_IN/DQ10_3                          |
+| AB34/10                          | ddr_dq_io[14]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_17B                     | SD3_OUT/DQ10_3                         |
+| AC1/3                            |     unused, PULL:DOWN |            |                 | HPIO3_11B                      | PCLKC3_1/PCLKRC3_1/PCLKEC3_1           |
+| AC2/3                            |     unused, PULL:DOWN |            |                 | HPIO3_7B                       | DQ3_1                                  |
+| AC3/3                            |     unused, PULL:DOWN |            |                 | HPIO3_7A                       | DQ3_1                                  |
+| AC4/3                            |     unused, PULL:DOWN |            |                 | HPIO3_5A                       | DQS3_1                                 |
+| AC5/3                            |     unused, PULL:DOWN |            |                 | HPIO3_5B                       | DQSN3_1                                |
+| AC6/3                            | rgmii_rxd_i[1]        | LOCATED    | LVCMOS18_IN     | HPIO3_18B                      | SD14_OUT/DQSN3_2                       |
+| AC7/3                            | rgmii_rxd_i[0]        | LOCATED    | LVCMOS18_IN     | HPIO3_18A                      | SD14_IN/DQS3_2                         |
+| AC8/3                            |     unused, PULL:DOWN |            |                 | HPIO3_10A                      | PCLKT3_0/PCLKRT3_0/PCLKET3_0/DM3_0     |
+| AC9/3                            |     unused, PULL:DOWN |            |                 | HPIO3_10B                      | PCLKC3_0/PCLKRC3_0/PCLKEC3_0           |
+| AC10/3                           |     unused, PULL:DOWN |            |                 | HPIO3_20B                      | SD16_OUT/DQ3_2                         |
+| AC12/3                           |     unused, PULL:DOWN |            |                 | HPIO3_2B                       | DQ3_0                                  |
+| AC13/3                           |     unused, PULL:DOWN |            |                 | HPIO3_2A                       | DQ3_0                                  |
+| AC14/5                           |     unused, PULL:DOWN |            |                 | HPIO5_4B                       | DQSN5_0                                |
+| AC15/5                           |     unused, PULL:DOWN |            |                 | HPIO5_4A                       | DQS5_0                                 |
+| AC16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_4B                       | DQSN6_0                                |
+| AC17/6                           | rstn_i                | LOCATED    | LVCMOS18_IN     | HPIO6_4A                       | DQS6_0                                 |
+| AC20/8                           |     unused, PULL:DOWN |            |                 | HPIO8_0A                       | DQ8_0                                  |
+| AC21/10                          | ddr_dmi_io[0]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_24A                     | PCLKRT10_2/PCLKET10_2/DM10_2           |
+| AC23/10                          | ddr_dqs_io[0]+        | LOCATED    | LVSTL11D_I_BIDI | HPIO10_18A                     | DQS10_2                                |
+| AC24/10                          | ddr_dq_io[7]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_16A                     | SD2_IN/DQ10_2                          |
+| AC25/10                          | ddr_ck_o[0]-          |            | LVSTL11D_I_OUT  | HPIO10_0B                      | DQ10_0                                 |
+| AC26/10                          | ddr_ca_o[0]           | LOCATED    | LVSTL11_I_OUT   | HPIO10_2B                      | DQ10_0                                 |
+| AC27/10                          | Prohibited/Reserved   |            |                 | HPIO10_8B                      | DQ10_0                                 |
+| AC29/10                          | ddr_ca_o[3]           | LOCATED    | LVSTL11_I_OUT   | HPIO10_6A                      | HS10_PLL_MFGOUT1/DQ10_0                |
+| AC30/10                          | ddr_ck_o[1]-          |            | LVSTL11D_I_OUT  | HPIO10_1B                      | DQ10_1                                 |
+| AC33/10                          | ddr_dqs_io[1]-        |            | LVSTL11D_I_BIDI | HPIO10_19B                     | DQSN10_3                               |
+| AC34/10                          | ddr_dqs_io[1]+        | LOCATED    | LVSTL11D_I_BIDI | HPIO10_19A                     | DQS10_3                                |
+| AD1/3                            |     unused, PULL:DOWN |            |                 | HPIO3_9B                       | DQ3_1                                  |
+| AD2/3                            |     unused, PULL:DOWN |            |                 | HPIO3_9A                       | DQ3_1                                  |
+| AD3/3                            |     unused, PULL:DOWN |            |                 | HPIO3_3A                       | DQ3_1                                  |
+| AD4/3                            |     unused, PULL:DOWN |            |                 | HPIO3_3B                       | DQ3_1                                  |
+| AD5/3                            | rgmii_rxd_i[3]        | LOCATED    | LVCMOS18_IN     | HPIO3_1B                       | DQ3_1                                  |
+| AD6/3                            | rgmii_rxd_i[2]        | LOCATED    | LVCMOS18_IN     | HPIO3_1A                       | DQ3_1                                  |
+| AD7/3                            |     unused, PULL:DOWN |            |                 | HPIO3_8A                       | HS3_PLL_MFGOUT2/DQ3_0                  |
+| AD8/3                            |     unused, PULL:DOWN |            |                 | HPIO3_8B                       | DQ3_0                                  |
+| AD9/3                            |     unused, PULL:DOWN |            |                 | HPIO3_6A                       | HS3_PLL_MFGOUT1/DQ3_0                  |
+| AD10/3                           |     unused, PULL:DOWN |            |                 | HPIO3_6B                       | DQ3_0                                  |
+| AD11/3                           |     unused, PULL:DOWN |            |                 | HPIO3_4B                       | DQSN3_0                                |
+| AD12/3                           |     unused, PULL:DOWN |            |                 | HPIO3_4A                       | DQS3_0                                 |
+| AD15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_24B                      | PCLKRC6_2/PCLKEC6_2                    |
+| AD17/7                           |     unused, PULL:DOWN |            |                 | HPIO7_4A                       | DQS7_0                                 |
+| AD19/8                           |     unused, PULL:DOWN |            |                 | HPIO8_6A                       | HS8_PLL_MFGOUT1/DQ8_0                  |
+| AD20/8                           |     unused, PULL:DOWN |            |                 | HPIO8_6B                       | DQ8_0                                  |
+| AD21/10                          | ddr_dq_io[1]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_20A                     | DQ10_2                                 |
+| AD22/10                          | ddr_dq_io[0]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_20B                     | DQ10_2                                 |
+| AD23/10                          | ddr_dqs_io[0]-        |            | LVSTL11D_I_BIDI | HPIO10_18B                     | DQSN10_2                               |
+| AD26/10                          | Prohibited/Reserved   |            |                 | HPIO10_10A                     | PCLKT10_0/PCLKRT10_0/PCLKET10_0/DM10_0 |
+| AD27/10                          | ddr_ca_o[5]           | LOCATED    | LVSTL11_I_OUT   | HPIO10_8A                      | HS10_PLL_MFGOUT2/DQ10_0                |
+| AD29/10                          | Prohibited/Reserved   |            |                 | HPIO10_3B                      | DQ10_1                                 |
+| AD30/10                          | Prohibited/Reserved   |            |                 | HPIO10_3A                      | DQ10_1                                 |
+| AD31/10                          | pll_refclk_i-         |            | LVSTL11D_I_IN   | HPIO10_13B                     | PLLC10_IN                              |
+| AD32/10                          | pll_refclk_i+         | LOCATED    | LVSTL11D_I_IN   | HPIO10_13A                     | PLLT10_IN                              |
+| AD33/10                          | ddr_dq_io[9]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_21A                     | DQ10_3                                 |
+| AD34/10                          | ddr_dq_io[8]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_21B                     | DQ10_3                                 |
+| AE1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_24B                      | PCLKRC4_2/PCLKEC4_2                    |
+| AE2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_20A                      | DQ4_2                                  |
+| AE3/4                            |     unused, PULL:DOWN |            |                 | HPIO4_18B                      | DQSN4_2                                |
+| AE4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_16A                      | DQ4_2                                  |
+| AE5/4                            |     unused, PULL:DOWN |            |                 | HPIO4_14A                      | DQ4_2                                  |
+| AE6/4                            |     unused, PULL:DOWN |            |                 | HPIO4_10B                      | PCLKC4_0/PCLKRC4_0/PCLKEC4_0           |
+| AE7/4                            |     unused, PULL:DOWN |            |                 | HPIO4_8A                       | HS4_PLL_MFGOUT2/DQ4_0                  |
+| AE9/4                            |     unused, PULL:DOWN |            |                 | HPIO4_4B                       | DQSN4_0                                |
+| AE10/4                           |     unused, PULL:DOWN |            |                 | HPIO4_2B                       | DQ4_0                                  |
+| AE11/4                           |     unused, PULL:DOWN |            |                 | HPIO4_0A                       | DQ4_0                                  |
+| AE12/5                           |     unused, PULL:DOWN |            |                 | HPIO5_24B                      | PCLKRC5_2/PCLKEC5_2                    |
+| AE14/5                           |     unused, PULL:DOWN |            |                 | HPIO5_6A                       | HS5_PLL_MFGOUT1/DQ5_0                  |
+| AE15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_24A                      | PCLKRT6_2/PCLKET6_2/DM6_2              |
+| AE17/7                           |     unused, PULL:DOWN |            |                 | HPIO7_4B                       | DQSN7_0                                |
+| AE18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_6A                       | HS7_PLL_MFGOUT1/DQ7_0                  |
+| AE19/7                           |     unused, PULL:DOWN |            |                 | HPIO7_6B                       | DQ7_0                                  |
+| AE20/8                           |     unused, PULL:DOWN |            |                 | HPIO8_8A                       | HS8_PLL_MFGOUT2/DQ8_0                  |
+| AE21/8                           |     unused, PULL:DOWN |            |                 | HPIO8_8B                       | DQ8_0                                  |
+| AE22/8                           |     unused, PULL:DOWN |            |                 | HPIO8_10A                      | PCLKT8_0/PCLKRT8_0/PCLKET8_0/DM8_0     |
+| AE23/8                           |     unused, PULL:DOWN |            |                 | HPIO8_10B                      | PCLKC8_0/PCLKRC8_0/PCLKEC8_0           |
+| AE24/10                          | ddr_dq_io[3]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_14A                     | DQ10_2                                 |
+| AE25/10                          | ddr_dq_io[2]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_14B                     | DQ10_2                                 |
+| AE26/10                          | Prohibited/Reserved   |            |                 | HPIO10_10B                     | PCLKC10_0/PCLKRC10_0/PCLKEC10_0        |
+| AE28/10                          | Prohibited/Reserved   |            |                 | HPIO10_12A                     | VREF10                                 |
+| AE29/10                          | Prohibited/Reserved   |            |                 | HPIO10_5A                      | DQS10_1                                |
+| AE30/10                          | Prohibited/Reserved   |            |                 | HPIO10_5B                      | DQSN10_1                               |
+| AE31/10                          | ddr_dq_io[11]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_15A                     | DQ10_3                                 |
+| AE32/10                          | ddr_dq_io[10]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_15B                     | DQ10_3                                 |
+| AE33/10                          | ddr_dq_io[12]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_23B                     | DQ10_3                                 |
+| AE34/10                          | ddr_dq_io[13]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_23A                     | DQ10_3                                 |
+| AF1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_24A                      | PCLKRT4_2/PCLKET4_2/DM4_2              |
+| AF2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_20B                      | DQ4_2                                  |
+| AF3/4                            |     unused, PULL:DOWN |            |                 | HPIO4_18A                      | DQS4_2                                 |
+| AF4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_16B                      | DQ4_2                                  |
+| AF5/4                            |     unused, PULL:DOWN |            |                 | HPIO4_14B                      | DQ4_2                                  |
+| AF6/4                            |     unused, PULL:DOWN |            |                 | HPIO4_10A                      | PCLKT4_0/PCLKRT4_0/PCLKET4_0/DM4_0     |
+| AF7/4                            |     unused, PULL:DOWN |            |                 | HPIO4_8B                       | DQ4_0                                  |
+| AF9/4                            |     unused, PULL:DOWN |            |                 | HPIO4_4A                       | DQS4_0                                 |
+| AF10/4                           |     unused, PULL:DOWN |            |                 | HPIO4_2A                       | DQ4_0                                  |
+| AF11/4                           |     unused, PULL:DOWN |            |                 | HPIO4_0B                       | DQ4_0                                  |
+| AF12/5                           |     unused, PULL:DOWN |            |                 | HPIO5_24A                      | PCLKRT5_2/PCLKET5_2/DM5_2              |
+| AF13/5                           |     unused, PULL:DOWN |            |                 | HPIO5_12A                      | VREF5                                  |
+| AF14/5                           |     unused, PULL:DOWN |            |                 | HPIO5_6B                       | DQ5_0                                  |
+| AF15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_16A                      | DQ6_2                                  |
+| AF16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_16B                      | DQ6_2                                  |
+| AF18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_12A                      | VREF7                                  |
+| AF19/7                           |     unused, PULL:DOWN |            |                 | HPIO7_8A                       | HS7_PLL_MFGOUT2/DQ7_0                  |
+| AF20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_8B                       | DQ7_0                                  |
+| AF21/8                           |     unused, PULL:DOWN |            |                 | HPIO8_18A                      | SD8_IN/DQS8_2                          |
+| AF24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_12A                      | VREF8                                  |
+| AF25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_14B                      | DQ8_2                                  |
+| AF27/9                           |     unused, PULL:DOWN |            |                 | HPIO9_12A                      | VREF9                                  |
+| AF28/9                           | sclk_o                |            | LVCMOS18_OUT    | HPIO9_0A                       | DQ9_0                                  |
+| AF29/9                           |     unused, PULL:DOWN |            |                 | HPIO9_0B                       | DQ9_0                                  |
+| AF30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_2A                       | DQ9_0                                  |
+| AF31/9                           |     unused, PULL:DOWN |            |                 | HPIO9_4A                       | DQS9_0                                 |
+| AF32/9                           |     unused, PULL:DOWN |            |                 | HPIO9_6B                       | DQ9_0                                  |
+| AF33/10                          | ddr_dmi_io[1]         | LOCATED    | LVSTL11_I_BIDI  | HPIO10_25A                     | PCLKRT10_3/PCLKET10_3/DM10_3           |
+| AF34/10                          | ddr_reset_n_o         | LOCATED    | LVSTL11_I_OUT   | HPIO10_25B                     | PCLKRC10_3/PCLKEC10_3                  |
+| AG1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_22A                      | DQ4_2                                  |
+| AG2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_22B                      | DQ4_2                                  |
+| AG6/4                            |     unused, PULL:DOWN |            |                 | HPIO4_12A                      | VREF4                                  |
+| AG7/4                            |     unused, PULL:DOWN |            |                 | HPIO4_6A                       | HS4_PLL_MFGOUT1/DQ4_0                  |
+| AG8/4                            |     unused, PULL:DOWN |            |                 | HPIO4_6B                       | DQ4_0                                  |
+| AG9/5                            |     unused, PULL:DOWN |            |                 | HPIO5_18B                      | DQSN5_2                                |
+| AG10/5                           |     unused, PULL:DOWN |            |                 | HPIO5_20A                      | DQ5_2                                  |
+| AG11/5                           |     unused, PULL:DOWN |            |                 | HPIO5_20B                      | DQ5_2                                  |
+| AG12/5                           |     unused, PULL:DOWN |            |                 | HPIO5_8A                       | HS5_PLL_MFGOUT2/DQ5_0                  |
+| AG13/5                           |     unused, PULL:DOWN |            |                 | HPIO5_8B                       | DQ5_0                                  |
+| AG14/6                           |     unused, PULL:DOWN |            |                 | HPIO6_18B                      | DQSN6_2                                |
+| AG15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_14A                      | DQ6_2                                  |
+| AG16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_10B                      | PCLKC6_0/PCLKRC6_0/PCLKEC6_0           |
+| AG17/6                           |     unused, PULL:DOWN |            |                 | HPIO6_6B                       | DQ6_0                                  |
+| AG18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_16B                      | DQ7_2                                  |
+| AG20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_10A                      | PCLKT7_0/PCLKRT7_0/PCLKET7_0/DM7_0     |
+| AG21/8                           |     unused, PULL:DOWN |            |                 | HPIO8_18B                      | SD8_OUT/DQSN8_2                        |
+| AG23/8                           |     unused, PULL:DOWN |            |                 | HPIO8_16A                      | SD6_IN/DQ8_2                           |
+| AG24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_16B                      | SD6_OUT/DQ8_2                          |
+| AG25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_14A                      | DQ8_2                                  |
+| AG26/9                           |     unused, PULL:DOWN |            |                 | HPIO9_22B                      | DQ9_2                                  |
+| AG27/9                           |     unused, PULL:DOWN |            |                 | HPIO9_14A                      | DQ9_2                                  |
+| AG28/9                           |     unused, PULL:DOWN |            |                 | HPIO9_14B                      | DQ9_2                                  |
+| AG29/9                           |     unused, PULL:DOWN |            |                 | HPIO9_16B                      | SD4_OUT/DQ9_2                          |
+| AG30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_2B                       | DQ9_0                                  |
+| AG31/9                           |     unused, PULL:DOWN |            |                 | HPIO9_4B                       | DQSN9_0                                |
+| AG32/9                           |     unused, PULL:DOWN |            |                 | HPIO9_6A                       | HS9_PLL_MFGOUT1/DQ9_0                  |
+| AG33/9                           |     unused, PULL:DOWN |            |                 | HPIO9_10A                      | PCLKT9_0/PCLKRT9_0/PCLKET9_0/DM9_0     |
+| AG34/9                           |     unused, PULL:DOWN |            |                 | HPIO9_8B                       | DQ9_0                                  |
+| AH1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_25A                      | PCLKRT4_3/PCLKET4_3/DM4_3              |
+| AH2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_23A                      | DQ4_3                                  |
+| AH3/4                            |     unused, PULL:DOWN |            |                 | HPIO4_21B                      | DQ4_3                                  |
+| AH4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_21A                      | DQ4_3                                  |
+| AH5/4                            |     unused, PULL:DOWN |            |                 | HPIO4_1B                       | DQ4_1                                  |
+| AH6/4                            |     unused, PULL:DOWN |            |                 | HPIO4_1A                       | DQ4_1                                  |
+| AH7/5                            |     unused, PULL:DOWN |            |                 | HPIO5_22A                      | DQ5_2                                  |
+| AH8/5                            |     unused, PULL:DOWN |            |                 | HPIO5_22B                      | DQ5_2                                  |
+| AH9/5                            |     unused, PULL:DOWN |            |                 | HPIO5_18A                      | DQS5_2                                 |
+| AH10/5                           |     unused, PULL:DOWN |            |                 | HPIO5_16A                      | DQ5_2                                  |
+| AH13/6                           |     unused, PULL:DOWN |            |                 | HPIO6_22A                      | DQ6_2                                  |
+| AH14/6                           |     unused, PULL:DOWN |            |                 | HPIO6_18A                      | DQS6_2                                 |
+| AH15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_14B                      | DQ6_2                                  |
+| AH16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_10A                      | PCLKT6_0/PCLKRT6_0/PCLKET6_0/DM6_0     |
+| AH17/6                           |     unused, PULL:DOWN |            |                 | HPIO6_6A                       | HS6_PLL_MFGOUT1/DQ6_0                  |
+| AH18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_16A                      | DQ7_2                                  |
+| AH20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_10B                      | PCLKC7_0/PCLKRC7_0/PCLKEC7_0           |
+| AH21/7                           |     unused, PULL:DOWN |            |                 | HPIO7_14A                      | DQ7_2                                  |
+| AH22/7                           |     unused, PULL:DOWN |            |                 | HPIO7_14B                      | DQ7_2                                  |
+| AH23/8                           |     unused, PULL:DOWN |            |                 | HPIO8_22B                      | DQ8_2                                  |
+| AH24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_20A                      | SD10_IN/DQ8_2                          |
+| AH25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_20B                      | SD10_OUT/DQ8_2                         |
+| AH26/9                           |     unused, PULL:DOWN |            |                 | HPIO9_22A                      | DQ9_2                                  |
+| AH29/9                           |     unused, PULL:DOWN |            |                 | HPIO9_16A                      | SD4_IN/DQ9_2                           |
+| AH30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_18A                      | DQS9_2                                 |
+| AH33/9                           |     unused, PULL:DOWN |            |                 | HPIO9_10B                      | PCLKC9_0/PCLKRC9_0/PCLKEC9_0           |
+| AH34/9                           |     unused, PULL:DOWN |            |                 | HPIO9_8A                       | HS9_PLL_MFGOUT2/DQ9_0                  |
+| AJ1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_25B                      | PCLKRC4_3/PCLKEC4_3                    |
+| AJ2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_19A                      | DQS4_3                                 |
+| AJ3/4                            |     unused, PULL:DOWN |            |                 | HPIO4_23B                      | DQ4_3                                  |
+| AJ4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_3A                       | DQ4_1                                  |
+| AJ5/5                            |     unused, PULL:DOWN |            |                 | HPIO5_25A                      | PCLKRT5_3/PCLKET5_3/DM5_3              |
+| AJ6/5                            |     unused, PULL:DOWN |            |                 | HPIO5_25B                      | PCLKRC5_3/PCLKEC5_3                    |
+| AJ7/5                            |     unused, PULL:DOWN |            |                 | HPIO5_21B                      | DQ5_3                                  |
+| AJ10/5                           |     unused, PULL:DOWN |            |                 | HPIO5_16B                      | DQ5_2                                  |
+| AJ11/5                           |     unused, PULL:DOWN |            |                 | HPIO5_10B                      | PCLKC5_0/PCLKRC5_0/PCLKEC5_0           |
+| AJ12/5                           |     unused, PULL:DOWN |            |                 | HPIO5_10A                      | PCLKT5_0/PCLKRT5_0/PCLKET5_0/DM5_0     |
+| AJ13/6                           |     unused, PULL:DOWN |            |                 | HPIO6_22B                      | DQ6_2                                  |
+| AJ16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_12A                      | VREF6                                  |
+| AJ17/6                           |     unused, PULL:DOWN |            |                 | HPIO6_8B                       | DQ6_0                                  |
+| AJ18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_24A                      | PCLKRT7_2/PCLKET7_2/DM7_2              |
+| AJ19/7                           |     unused, PULL:DOWN |            |                 | HPIO7_22B                      | DQ7_2                                  |
+| AJ20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_20B                      | DQ7_2                                  |
+| AJ21/7                           |     unused, PULL:DOWN |            |                 | HPIO7_18B                      | DQSN7_2                                |
+| AJ22/7                           |     unused, PULL:DOWN |            |                 | HPIO7_18A                      | DQS7_2                                 |
+| AJ23/8                           |     unused, PULL:DOWN |            |                 | HPIO8_22A                      | DQ8_2                                  |
+| AJ26/9                           |     unused, PULL:DOWN |            |                 | HPIO9_24B                      | PCLKRC9_2/PCLKEC9_2                    |
+| AJ27/9                           |     unused, PULL:DOWN |            |                 | HPIO9_24A                      | PCLKRT9_2/PCLKET9_2/DM9_2              |
+| AJ28/9                           |     unused, PULL:DOWN |            |                 | HPIO9_20A                      | DQ9_2                                  |
+| AJ29/9                           |     unused, PULL:DOWN |            |                 | HPIO9_20B                      | DQ9_2                                  |
+| AJ30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_18B                      | DQSN9_2                                |
+| AJ31/9                           |     unused, PULL:DOWN |            |                 | HPIO9_1A                       | DQ9_1                                  |
+| AJ32/9                           |     unused, PULL:DOWN |            |                 | HPIO9_1B                       | DQ9_1                                  |
+| AJ33/9                           |     unused, PULL:DOWN |            |                 | HPIO9_3B                       | DQ9_1                                  |
+| AJ34/9                           |     unused, PULL:DOWN |            |                 | HPIO9_3A                       | DQ9_1                                  |
+| AK1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_17B                      | DQ4_3                                  |
+| AK2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_19B                      | DQSN4_3                                |
+| AK4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_3B                       | DQ4_1                                  |
+| AK5/5                            |     unused, PULL:DOWN |            |                 | HPIO5_23A                      | DQ5_3                                  |
+| AK6/5                            |     unused, PULL:DOWN |            |                 | HPIO5_23B                      | DQ5_3                                  |
+| AK7/5                            |     unused, PULL:DOWN |            |                 | HPIO5_21A                      | DQ5_3                                  |
+| AK8/5                            |     unused, PULL:DOWN |            |                 | HPIO5_1B                       | DQ5_1                                  |
+| AK9/5                            |     unused, PULL:DOWN |            |                 | HPIO5_1A                       | DQ5_1                                  |
+| AK10/5                           |     unused, PULL:DOWN |            |                 | HPIO5_14A                      | DQ5_2                                  |
+| AK11/5                           |     unused, PULL:DOWN |            |                 | HPIO5_14B                      | DQ5_2                                  |
+| AK12/6                           |     unused, PULL:DOWN |            |                 | HPIO6_15B                      | DQ6_3                                  |
+| AK13/6                           |     unused, PULL:DOWN |            |                 | HPIO6_15A                      | DQ6_3                                  |
+| AK14/6                           |     unused, PULL:DOWN |            |                 | HPIO6_20A                      | DQ6_2                                  |
+| AK15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_20B                      | DQ6_2                                  |
+| AK17/6                           |     unused, PULL:DOWN |            |                 | HPIO6_8A                       | HS6_PLL_MFGOUT2/DQ6_0                  |
+| AK18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_24B                      | PCLKRC7_2/PCLKEC7_2                    |
+| AK19/7                           |     unused, PULL:DOWN |            |                 | HPIO7_22A                      | DQ7_2                                  |
+| AK20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_20A                      | DQ7_2                                  |
+| AK21/7                           |     unused, PULL:DOWN |            |                 | HPIO7_1A                       | DQ7_1                                  |
+| AK22/7                           |     unused, PULL:DOWN |            |                 | HPIO7_1B                       | DQ7_1                                  |
+| AK23/8                           |     unused, PULL:DOWN |            |                 | HPIO8_24B                      | PCLKRC8_2/PCLKEC8_2                    |
+| AK24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_24A                      | PCLKRT8_2/PCLKET8_2/DM8_2              |
+| AK25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_1A                       | DQ8_1                                  |
+| AK26/8                           |     unused, PULL:DOWN |            |                 | HPIO8_3B                       | DQ8_1                                  |
+| AK27/8                           |     unused, PULL:DOWN |            |                 | HPIO8_5B                       | DQSN8_1                                |
+| AK28/8                           |     unused, PULL:DOWN |            |                 | HPIO8_5A                       | DQS8_1                                 |
+| AK29/9                           |     unused, PULL:DOWN |            |                 | HPIO9_5A                       | DQS9_1                                 |
+| AK30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_5B                       | DQSN9_1                                |
+| AK31/9                           |     unused, PULL:DOWN |            |                 | HPIO9_7A                       | DQ9_1                                  |
+| AK32/9                           |     unused, PULL:DOWN |            |                 | HPIO9_7B                       | DQ9_1                                  |
+| AK33/9                           |     unused, PULL:DOWN |            |                 | HPIO9_9A                       | DQ9_1                                  |
+| AK34/9                           |     unused, PULL:DOWN |            |                 | HPIO9_9B                       | DQ9_1                                  |
+| AL1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_17A                      | DQ4_3                                  |
+| AL2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_13A                      | PLLT4_IN                               |
+| AL4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_5B                       | DQSN4_1                                |
+| AL5/5                            |     unused, PULL:DOWN |            |                 | HPIO5_19A                      | DQS5_3                                 |
+| AL6/5                            |     unused, PULL:DOWN |            |                 | HPIO5_19B                      | DQSN5_3                                |
+| AL8/5                            |     unused, PULL:DOWN |            |                 | HPIO5_3A                       | DQ5_1                                  |
+| AL9/5                            |     unused, PULL:DOWN |            |                 | HPIO5_3B                       | DQ5_1                                  |
+| AL10/6                           | clk_125_in            | LOCATED    | LVCMOS18_IN     | HPIO6_25A                      | PCLKRT6_3/PCLKET6_3/DM6_3              |
+| AL11/6                           |     unused, PULL:DOWN |            |                 | HPIO6_25B                      | PCLKRC6_3/PCLKEC6_3                    |
+| AL13/6                           |     unused, PULL:DOWN |            |                 | HPIO6_13A                      | PLLT6_IN                               |
+| AL14/6                           |     unused, PULL:DOWN |            |                 | HPIO6_7B                       | DQ6_1                                  |
+| AL16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_1A                       | DQ6_1                                  |
+| AL17/7                           |     unused, PULL:DOWN |            |                 | HPIO7_23B                      | DQ7_3                                  |
+| AL18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_19B                      | DQSN7_3                                |
+| AL20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_7A                       | DQ7_1                                  |
+| AL21/7                           |     unused, PULL:DOWN |            |                 | HPIO7_5B                       | DQSN7_1                                |
+| AL23/7                           |     unused, PULL:DOWN |            |                 | HPIO7_3B                       | DQ7_1                                  |
+| AL24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_25B                      | PCLKRC8_3/PCLKEC8_3                    |
+| AL25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_1B                       | DQ8_1                                  |
+| AL26/8                           |     unused, PULL:DOWN |            |                 | HPIO8_3A                       | DQ8_1                                  |
+| AL27/8                           |     unused, PULL:DOWN |            |                 | HPIO8_7A                       | DQ8_1                                  |
+| AL28/8                           |     unused, PULL:DOWN |            |                 | HPIO8_7B                       | DQ8_1                                  |
+| AL29/8                           |     unused, PULL:DOWN |            |                 | HPIO8_9A                       | DQ8_1                                  |
+| AL30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_11B                      | PCLKC9_1/PCLKRC9_1/PCLKEC9_1           |
+| AL33/9                           |     unused, PULL:DOWN |            |                 | HPIO9_15A                      | DQ9_3                                  |
+| AL34/9                           |     unused, PULL:DOWN |            |                 | HPIO9_15B                      | DQ9_3                                  |
+| AM1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_15B                      | DQ4_3                                  |
+| AM2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_13B                      | PLLC4_IN                               |
+| AM3/4                            |     unused, PULL:DOWN |            |                 | HPIO4_9A                       | DQ4_1                                  |
+| AM4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_5A                       | DQS4_1                                 |
+| AM5/5                            |     unused, PULL:DOWN |            |                 | HPIO5_17B                      | DQ5_3                                  |
+| AM6/5                            |     unused, PULL:DOWN |            |                 | HPIO5_17A                      | DQ5_3                                  |
+| AM8/5                            |     unused, PULL:DOWN |            |                 | HPIO5_5A                       | DQS5_1                                 |
+| AM9/5                            |     unused, PULL:DOWN |            |                 | HPIO5_5B                       | DQSN5_1                                |
+| AM10/6                           |     unused, PULL:DOWN |            |                 | HPIO6_23A                      | DQ6_3                                  |
+| AM11/6                           |     unused, PULL:DOWN |            |                 | HPIO6_23B                      | DQ6_3                                  |
+| AM13/6                           |     unused, PULL:DOWN |            |                 | HPIO6_13B                      | PLLC6_IN                               |
+| AM14/6                           |     unused, PULL:DOWN |            |                 | HPIO6_7A                       | DQ6_1                                  |
+| AM16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_1B                       | DQ6_1                                  |
+| AM17/7                           |     unused, PULL:DOWN |            |                 | HPIO7_23A                      | DQ7_3                                  |
+| AM18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_19A                      | DQS7_3                                 |
+| AM20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_7B                       | DQ7_1                                  |
+| AM21/7                           |     unused, PULL:DOWN |            |                 | HPIO7_5A                       | DQS7_1                                 |
+| AM23/7                           |     unused, PULL:DOWN |            |                 | HPIO7_3A                       | DQ7_1                                  |
+| AM24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_25A                      | PCLKRT8_3/PCLKET8_3/DM8_3              |
+| AM25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_17B                      | SD7_OUT/DQ8_3                          |
+| AM26/8                           |     unused, PULL:DOWN |            |                 | HPIO8_17A                      | SD7_IN/DQ8_3                           |
+| AM28/8                           |     unused, PULL:DOWN |            |                 | HPIO8_11B                      | PCLKC8_1/PCLKRC8_1/PCLKEC8_1           |
+| AM29/8                           |     unused, PULL:DOWN |            |                 | HPIO8_9B                       | DQ8_1                                  |
+| AM30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_11A                      | PCLKT9_1/PCLKRT9_1/PCLKET9_1/DM9_1     |
+| AM31/9                           |     unused, PULL:DOWN |            |                 | HPIO9_13B                      | PLLC9_IN                               |
+| AM32/9                           |     unused, PULL:DOWN |            |                 | HPIO9_13A                      | PLLT9_IN                               |
+| AM33/9                           |     unused, PULL:DOWN |            |                 | HPIO9_17A                      | SD5_IN/DQ9_3                           |
+| AM34/9                           |     unused, PULL:DOWN |            |                 | HPIO9_17B                      | SD5_OUT/DQ9_3                          |
+| AN1/4                            |     unused, PULL:DOWN |            |                 | HPIO4_15A                      | DQ4_3                                  |
+| AN3/4                            |     unused, PULL:DOWN |            |                 | HPIO4_9B                       | DQ4_1                                  |
+| AN4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_7A                       | DQ4_1                                  |
+| AN5/5                            |     unused, PULL:DOWN |            |                 | HPIO5_15B                      | DQ5_3                                  |
+| AN6/5                            |     unused, PULL:DOWN |            |                 | HPIO5_15A                      | DQ5_3                                  |
+| AN7/5                            |     unused, PULL:DOWN |            |                 | HPIO5_11A                      | PCLKT5_1/PCLKRT5_1/PCLKET5_1/DM5_1     |
+| AN8/5                            |     unused, PULL:DOWN |            |                 | HPIO5_7B                       | DQ5_1                                  |
+| AN9/5                            |     unused, PULL:DOWN |            |                 | HPIO5_7A                       | DQ5_1                                  |
+| AN10/6                           |     unused, PULL:DOWN |            |                 | HPIO6_21B                      | DQ6_3                                  |
+| AN11/6                           |     unused, PULL:DOWN |            |                 | HPIO6_21A                      | DQ6_3                                  |
+| AN12/6                           |     unused, PULL:DOWN |            |                 | HPIO6_17B                      | DQ6_3                                  |
+| AN13/6                           |     unused, PULL:DOWN |            |                 | HPIO6_11A                      | PCLKT6_1/PCLKRT6_1/PCLKET6_1/DM6_1     |
+| AN14/6                           |     unused, PULL:DOWN |            |                 | HPIO6_9A                       | DQ6_1                                  |
+| AN15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_5B                       | DQSN6_1                                |
+| AN16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_3B                       | DQ6_1                                  |
+| AN17/7                           |     unused, PULL:DOWN |            |                 | HPIO7_25B                      | PCLKRC7_3/PCLKEC7_3                    |
+| AN18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_21A                      | DQ7_3                                  |
+| AN19/7                           |     unused, PULL:DOWN |            |                 | HPIO7_17A                      | DQ7_3                                  |
+| AN20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_15A                      | DQ7_3                                  |
+| AN21/7                           |     unused, PULL:DOWN |            |                 | HPIO7_13B                      | PLLC7_IN                               |
+| AN22/7                           |     unused, PULL:DOWN |            |                 | HPIO7_11B                      | PCLKC7_1/PCLKRC7_1/PCLKEC7_1           |
+| AN23/7                           |     unused, PULL:DOWN |            |                 | HPIO7_9A                       | DQ7_1                                  |
+| AN24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_23A                      | DQ8_3                                  |
+| AN25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_21A                      | SD11_IN/DQ8_3                          |
+| AN26/8                           |     unused, PULL:DOWN |            |                 | HPIO8_19B                      | SD9_OUT/DQSN8_3                        |
+| AN28/8                           |     unused, PULL:DOWN |            |                 | HPIO8_11A                      | PCLKT8_1/PCLKRT8_1/PCLKET8_1/DM8_1     |
+| AN29/8                           |     unused, PULL:DOWN |            |                 | HPIO8_13B                      | PLLC8_IN                               |
+| AN30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_25B                      | PCLKRC9_3/PCLKEC9_3                    |
+| AN31/9                           |     unused, PULL:DOWN |            |                 | HPIO9_23B                      | DQ9_3                                  |
+| AN32/9                           |     unused, PULL:DOWN |            |                 | HPIO9_21A                      | DQ9_3                                  |
+| AN33/9                           |     unused, PULL:DOWN |            |                 | HPIO9_19B                      | DQSN9_3                                |
+| AN34/9                           |     unused, PULL:DOWN |            |                 | HPIO9_19A                      | DQS9_3                                 |
+| AP2/4                            |     unused, PULL:DOWN |            |                 | HPIO4_11A                      | PCLKT4_1/PCLKRT4_1/PCLKET4_1/DM4_1     |
+| AP3/4                            |     unused, PULL:DOWN |            |                 | HPIO4_11B                      | PCLKC4_1/PCLKRC4_1/PCLKEC4_1           |
+| AP4/4                            |     unused, PULL:DOWN |            |                 | HPIO4_7B                       | DQ4_1                                  |
+| AP5/5                            |     unused, PULL:DOWN |            |                 | HPIO5_13A                      | PLLT5_IN                               |
+| AP6/5                            |     unused, PULL:DOWN |            |                 | HPIO5_13B                      | PLLC5_IN                               |
+| AP7/5                            |     unused, PULL:DOWN |            |                 | HPIO5_11B                      | PCLKC5_1/PCLKRC5_1/PCLKEC5_1           |
+| AP8/5                            |     unused, PULL:DOWN |            |                 | HPIO5_9B                       | DQ5_1                                  |
+| AP9/5                            |     unused, PULL:DOWN |            |                 | HPIO5_9A                       | DQ5_1                                  |
+| AP10/6                           |     unused, PULL:DOWN |            |                 | HPIO6_19A                      | DQS6_3                                 |
+| AP11/6                           |     unused, PULL:DOWN |            |                 | HPIO6_19B                      | DQSN6_3                                |
+| AP12/6                           |     unused, PULL:DOWN |            |                 | HPIO6_17A                      | DQ6_3                                  |
+| AP13/6                           |     unused, PULL:DOWN |            |                 | HPIO6_11B                      | PCLKC6_1/PCLKRC6_1/PCLKEC6_1           |
+| AP14/6                           |     unused, PULL:DOWN |            |                 | HPIO6_9B                       | DQ6_1                                  |
+| AP15/6                           |     unused, PULL:DOWN |            |                 | HPIO6_5A                       | DQS6_1                                 |
+| AP16/6                           |     unused, PULL:DOWN |            |                 | HPIO6_3A                       | DQ6_1                                  |
+| AP17/7                           |     unused, PULL:DOWN |            |                 | HPIO7_25A                      | PCLKRT7_3/PCLKET7_3/DM7_3              |
+| AP18/7                           |     unused, PULL:DOWN |            |                 | HPIO7_21B                      | DQ7_3                                  |
+| AP19/7                           |     unused, PULL:DOWN |            |                 | HPIO7_17B                      | DQ7_3                                  |
+| AP20/7                           |     unused, PULL:DOWN |            |                 | HPIO7_15B                      | DQ7_3                                  |
+| AP21/7                           |     unused, PULL:DOWN |            |                 | HPIO7_13A                      | PLLT7_IN                               |
+| AP22/7                           |     unused, PULL:DOWN |            |                 | HPIO7_11A                      | PCLKT7_1/PCLKRT7_1/PCLKET7_1/DM7_1     |
+| AP23/7                           |     unused, PULL:DOWN |            |                 | HPIO7_9B                       | DQ7_1                                  |
+| AP24/8                           |     unused, PULL:DOWN |            |                 | HPIO8_23B                      | DQ8_3                                  |
+| AP25/8                           |     unused, PULL:DOWN |            |                 | HPIO8_21B                      | SD11_OUT/DQ8_3                         |
+| AP26/8                           |     unused, PULL:DOWN |            |                 | HPIO8_19A                      | SD9_IN/DQS8_3                          |
+| AP27/8                           |     unused, PULL:DOWN |            |                 | HPIO8_15B                      | DQ8_3                                  |
+| AP28/8                           |     unused, PULL:DOWN |            |                 | HPIO8_15A                      | DQ8_3                                  |
+| AP29/8                           |     unused, PULL:DOWN |            |                 | HPIO8_13A                      | PLLT8_IN                               |
+| AP30/9                           |     unused, PULL:DOWN |            |                 | HPIO9_25A                      | PCLKRT9_3/PCLKET9_3/DM9_3              |
+| AP31/9                           | irq_o                 |            | LVCMOS18_OUT    | HPIO9_23A                      | DQ9_3                                  |
+| AP32/9                           |     unused, PULL:DOWN |            |                 | HPIO9_21B                      | DQ9_3                                  |
+| HPIO_BANK_PVTCAL_CORE_R115C101/0 |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C101 |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C145/0 |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C145 |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C186/0 |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C186 |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C221/0 |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C221 |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C25/0  |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C25  |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C265/0 |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C265 |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C306/0 |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C306 |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C341/0 |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C341 |                                        |
+| HPIO_BANK_PVTCAL_CORE_R115C66/0  |                       |            |                 | HPIO_BANK_PVTCAL_CORE_R115C66  |                                        |
+| HPIO_DFTCIB_R115C209/0           |                       |            |                 | HPIO_DFTCIB_R115C209           |                                        |
+| HPIO_DFTCIB_R115C329/0           |                       |            |                 | HPIO_DFTCIB_R115C329           |                                        |
+| HPIO_DFTCIB_R115C89/0            |                       |            |                 | HPIO_DFTCIB_R115C89            |                                        |
+| HPIO_DFTMUX_SECTOR_3/0           |                       |            |                 | HPIO_DFTMUX_SECTOR_3           |                                        |
+| HPIO_DFTMUX_SECTOR_6/0           |                       |            |                 | HPIO_DFTMUX_SECTOR_6           |                                        |
+| HPIO_DFTMUX_SECTOR_9/0           |                       |            |                 | HPIO_DFTMUX_SECTOR_9           |                                        |
+| L7/1                             | s0_gpio[1]            | LOCATED    | LVCMOS33_BIDI   | WRIO1_4A                       | MDQ4                                   |
+| L8/1                             |     unused, PULL:DOWN |            |                 | WRIO1_4B                       | MDQ5                                   |
+| L9/1                             | SPI_D3                | LOCATED    | LVCMOS33_BIDI   | WRIO1_2B                       | MDQ3                                   |
+| L10/1                            | SPI_D2                | LOCATED    | LVCMOS33_BIDI   | WRIO1_2A                       | MDQ2                                   |
+| L11/1                            | SPI_MISO              | LOCATED    | LVCMOS33_BIDI   | WRIO1_0B                       | MDQ1                                   |
+| L12/1                            | SPI_MOSI              | LOCATED    | LVCMOS33_BIDI   | WRIO1_0A                       | MDQ0                                   |
+| M8/1                             | config_active_o       | LOCATED    | LVCMOS33_OUT    | WRIO1_6A                       | MDQ6                                   |
+| M9/1                             | trn_err_o             | LOCATED    | LVCMOS33_OUT    | WRIO1_6B                       | MDQ7                                   |
+| M19/12                           |     unused, PULL:DOWN |            |                 | WRIO12_3A                      |                                        |
+| M20/12                           |     unused, PULL:DOWN |            |                 | WRIO12_3B                      | PCLKT12_0/PCLKRT12_0                   |
+| N5/2                             |     unused, PULL:DOWN |            |                 | WRIO2_0B                       | SDQ1                                   |
+| N6/2                             |     unused, PULL:DOWN |            |                 | WRIO2_0A                       | SDQ0                                   |
+| N7/1                             | s0_gpio[0]            | LOCATED    | LVCMOS33_BIDI   | WRIO1_3B                       | PCLKRT1_0/MDS                          |
+| N10/1                            | pll_lock_o            | LOCATED    | LVCMOS33_OUT    | WRIO1_7B                       | W_PLLMFGOUT2                           |
+| N14/12                           |     unused, PULL:DOWN |            |                 | WRIO12_0B                      |                                        |
+| N15/12                           |     unused, PULL:DOWN |            |                 | WRIO12_0A                      |                                        |
+| N16/12                           |     unused, PULL:DOWN |            |                 | WRIO12_2B                      |                                        |
+| N17/12                           |     unused, PULL:DOWN |            |                 | WRIO12_1B                      | PCLKT12_1/PCLKRT12_1                   |
+| N19/12                           |     unused, PULL:DOWN |            |                 | WRIO12_1A                      |                                        |
+| N20/12                           |     unused, PULL:DOWN |            |                 | WRIO12_5B                      |                                        |
+| P3/2                             |     unused, PULL:DOWN |            |                 | WRIO2_4A                       | SDQ4                                   |
+| P4/2                             |     unused, PULL:DOWN |            |                 | WRIO2_4B                       | SDQ5                                   |
+| P5/2                             |     unused, PULL:DOWN |            |                 | WRIO2_2B                       | SDQ3                                   |
+| P6/2                             |     unused, PULL:DOWN |            |                 | WRIO2_2A                       | SDQ2                                   |
+| P7/1                             | SPI_CSS               | LOCATED    | LVCMOS33_OUT    | WRIO1_3A                       | MCSN                                   |
+| P8/1                             |     unused, PULL:DOWN |            |                 | WRIO1_5B                       | MCLKN                                  |
+| P9/1                             | SPI_CLK               | LOCATED    | LVCMOS33_OUT    | WRIO1_5A                       | MCLKP                                  |
+| P10/1                            | init_done_o           | LOCATED    | LVCMOS33_OUT    | WRIO1_7A                       | W_PLLMFGOUT1/MRSTN                     |
+| P13/12                           |     unused, PULL:DOWN |            |                 | WRIO12_4A                      |                                        |
+| P14/12                           |     unused, PULL:DOWN |            |                 | WRIO12_4B                      |                                        |
+| P15/12                           |     unused, PULL:DOWN |            |                 | WRIO12_2A                      |                                        |
+| P18/12                           |     unused, PULL:DOWN |            |                 | WRIO12_7B                      | PLLTFB12_IN                            |
+| P19/12                           | s0_gpio[7]            |            | LVCMOS33_BIDI   | WRIO12_7A                      | PLLT12_IN                              |
+| P20/12                           |     unused, PULL:DOWN |            |                 | WRIO12_5A                      |                                        |
+| R1/2                             | Reserved: sysCONFIG   |            |                 | WRIO2_7B                       | TMS                                    |
+| R3/2                             | s1_uart_txd_o         | LOCATED    | LVCMOS33_OUT    | WRIO2_6A                       | SDQ6                                   |
+| R5/2                             |     unused, PULL:DOWN |            |                 | WRIO2_3B                       | SDS                                    |
+| R6/2                             |     unused, PULL:DOWN |            |                 | WRIO2_3A                       | SCSN                                   |
+| R8/1                             |     unused, PULL:DOWN |            |                 | WRIO1_1B                       | MSDO/MCSNO                             |
+| R9/14                            |     unused, PULL:DOWN |            |                 | WRIO14_8B                      |                                        |
+| R10/14                           |     unused, PULL:DOWN |            |                 | WRIO14_9B                      |                                        |
+| R11/14                           |     unused, PULL:DOWN |            |                 | WRIO14_9A                      |                                        |
+| R12/14                           |     unused, PULL:DOWN |            |                 | WRIO14_7A                      |                                        |
+| R13/13                           |     unused, PULL:DOWN |            |                 | WRIO13_7B                      | U_PLLMFGOUT2                           |
+| R14/13                           | s0_gpio[6]            |            | LVCMOS33_BIDI   | WRIO13_1A                      |                                        |
+| R15/13                           |     unused, PULL:DOWN |            |                 | WRIO13_1B                      |                                        |
+| R16/12                           | s0_gpio[4]            |            | LVCMOS33_BIDI   | WRIO12_6A                      |                                        |
+| R17/12                           |     unused, PULL:DOWN |            |                 | WRIO12_6B                      |                                        |
+| R18/13                           |     unused, PULL:DOWN |            |                 | WRIO13_0B                      |                                        |
+| R19/13                           | s0_gpio[3]            |            | LVCMOS33_BIDI   | WRIO13_0A                      |                                        |
+| T1/2                             | Reserved: sysCONFIG   |            |                 | WRIO2_7A                       | TCK                                    |
+| T3/2                             | s1_uart_rxd_i         | LOCATED    | LVCMOS33_IN     | WRIO2_6B                       | SDQ7                                   |
+| T6/0                             |     unused, PULL:DOWN |            |                 | WRIO0_7B                       | PLLTFB0_IN                             |
+| T7/0                             |     unused, PULL:DOWN |            |                 | WRIO0_3B                       | PCLKT0_0/PCLKRT0_0                     |
+| T8/0                             |     unused, PULL:DOWN |            |                 | WRIO0_1B                       | PCLKT0_1/PCLKRT0_1                     |
+| T9/14                            |     unused, PULL:DOWN |            |                 | WRIO14_8A                      |                                        |
+| T10/14                           |     unused, PULL:DOWN |            |                 | WRIO14_0B                      |                                        |
+| T11/14                           |     unused, PULL:DOWN |            |                 | WRIO14_7B                      |                                        |
+| T12/14                           |     unused, PULL:DOWN |            |                 | WRIO14_5B                      |                                        |
+| T13/13                           |     unused, PULL:DOWN |            |                 | WRIO13_7A                      | U_PLLMFGOUT1                           |
+| T15/13                           |     unused, PULL:DOWN |            |                 | WRIO13_3A                      |                                        |
+| T18/13                           | s0_gpio[5]            |            | LVCMOS33_BIDI   | WRIO13_2A                      |                                        |
+| T19/13                           | s0_gpio[2]            |            | LVCMOS33_BIDI   | WRIO13_2B                      |                                        |
+| T24/11                           | ddr_dq_io[31]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_20B                     | DQ11_2                                 |
+| T25/11                           | ddr_dq_io[29]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_14B                     | DQ11_2                                 |
+| T26/11                           | Prohibited/Reserved   |            |                 | HPIO11_12A                     | VREF11                                 |
+| U1/2                             | Reserved: sysCONFIG   |            |                 | WRIO2_9A                       | TDI                                    |
+| U2/2                             | Reserved: sysCONFIG   |            |                 | WRIO2_9B                       | TDO                                    |
+| U3/2                             |     unused, PULL:DOWN |            |                 | WRIO2_5A                       | PCLKRT2_0/SCLKP                        |
+| U5/2                             |     unused, PULL:DOWN |            |                 | WRIO2_1B                       | SSDO                                   |
+| U6/0                             |     unused, PULL:DOWN |            |                 | WRIO0_7A                       | PLLT0_IN                               |
+| U7/0                             |     unused, PULL:DOWN |            |                 | WRIO0_3A                       |                                        |
+| U8/0                             |     unused, PULL:DOWN |            |                 | WRIO0_1A                       |                                        |
+| U12/14                           |     unused, PULL:DOWN |            |                 | WRIO14_5A                      | PCLKRT14_0                             |
+| U15/13                           |     unused, PULL:DOWN |            |                 | WRIO13_3B                      | PCLKRT13_0                             |
+| U16/13                           |     unused, PULL:DOWN |            |                 | WRIO13_4A                      |                                        |
+| U17/13                           |     unused, PULL:DOWN |            |                 | WRIO13_4B                      |                                        |
+| U22/11                           | ddr_dq_io[27]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_22B                     | DQ11_2                                 |
+| U23/11                           | ddr_dq_io[26]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_22A                     | DQ11_2                                 |
+| U24/11                           | ddr_dq_io[30]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_20A                     | DQ11_2                                 |
+| U25/11                           | ddr_dq_io[28]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_14A                     | DQ11_2                                 |
+| U27/11                           | Prohibited/Reserved   |            |                 | HPIO11_4A                      | DQS11_0                                |
+| U28/11                           | Prohibited/Reserved   |            |                 | HPIO11_2B                      | DQ11_0                                 |
+| U29/11                           | ddr_dq_io[16]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_3A                      | DQ11_1                                 |
+| U30/11                           | ddr_dq_io[18]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_9A                      | DQ11_1                                 |
+| U31/11                           | ddr_dq_io[19]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_9B                      | DQ11_1                                 |
+| U32/11                           |     unused, PULL:DOWN |            |                 | HPIO11_13B                     | PLLC11_IN                              |
+| U33/11                           |     unused, PULL:DOWN |            |                 | HPIO11_13A                     | PLLT11_IN                              |
+| U34/11                           | Prohibited/Reserved   |            |                 | HPIO11_17A                     | SD1_IN/DQ11_3                          |
+| V1/0                             |     unused, PULL:DOWN |            |                 | WRIO0_4B                       |                                        |
+| V2/0                             |     unused, PULL:DOWN |            |                 | WRIO0_6A                       |                                        |
+| V4/0                             |     unused, PULL:DOWN |            |                 | WRIO0_2A                       |                                        |
+| V5/0                             |     unused, PULL:DOWN |            |                 | WRIO0_0B                       |                                        |
+| V8/14                            |     unused, PULL:DOWN |            |                 | WRIO14_6A                      |                                        |
+| V9/14                            |     unused, PULL:DOWN |            |                 | WRIO14_4B                      |                                        |
+| V10/14                           |     unused, PULL:DOWN |            |                 | WRIO14_0A                      |                                        |
+| V11/14                           |     unused, PULL:DOWN |            |                 | WRIO14_2B                      |                                        |
+| V12/14                           |     unused, PULL:DOWN |            |                 | WRIO14_1A                      |                                        |
+| V13/14                           |     unused, PULL:DOWN |            |                 | WRIO14_1B                      |                                        |
+| V14/13                           |     unused, PULL:DOWN |            |                 | WRIO13_5B                      |                                        |
+| V15/13                           |     unused, PULL:DOWN |            |                 | WRIO13_6B                      |                                        |
+| V16/13                           |     unused, PULL:DOWN |            |                 | WRIO13_6A                      |                                        |
+| V22/11                           | ddr_dmi_io[3]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_24A                     | PCLKRT11_2/PCLKET11_2/DM11_2           |
+| V25/11                           | Prohibited/Reserved   |            |                 | HPIO11_10A                     | PCLKT11_0/PCLKRT11_0/PCLKET11_0/DM11_0 |
+| V26/11                           | Prohibited/Reserved   |            |                 | HPIO11_8B                      | DQ11_0                                 |
+| V27/11                           | Prohibited/Reserved   |            |                 | HPIO11_4B                      | DQSN11_0                               |
+| V28/11                           | Prohibited/Reserved   |            |                 | HPIO11_2A                      | DQ11_0                                 |
+| V29/11                           | ddr_dq_io[17]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_3B                      | DQ11_1                                 |
+| V30/11                           | ddr_dq_io[22]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_7A                      | DQ11_1                                 |
+| V31/11                           |     unused, PULL:DOWN |            |                 | HPIO11_11B                     | PCLKC11_1/PCLKRC11_1/PCLKEC11_1        |
+| V32/11                           | ddr_dmi_io[2]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_11A                     | PCLKT11_1/PCLKRT11_1/PCLKET11_1/DM11_1 |
+| V33/11                           | Prohibited/Reserved   |            |                 | HPIO11_15A                     | DQ11_3                                 |
+| V34/11                           | Prohibited/Reserved   |            |                 | HPIO11_17B                     | SD1_OUT/DQ11_3                         |
+| W1/0                             |     unused, PULL:DOWN |            |                 | WRIO0_4A                       |                                        |
+| W4/0                             |     unused, PULL:DOWN |            |                 | WRIO0_2B                       |                                        |
+| W5/0                             |     unused, PULL:DOWN |            |                 | WRIO0_0A                       |                                        |
+| W6/0                             |     unused, PULL:DOWN |            |                 | WRIO0_5B                       |                                        |
+| W7/0                             |     unused, PULL:DOWN |            |                 | WRIO0_5A                       |                                        |
+| W8/14                            |     unused, PULL:DOWN |            |                 | WRIO14_6B                      |                                        |
+| W9/14                            |     unused, PULL:DOWN |            |                 | WRIO14_4A                      |                                        |
+| W10/14                           |     unused, PULL:DOWN |            |                 | WRIO14_2A                      |                                        |
+| W11/14                           |     unused, PULL:DOWN |            |                 | WRIO14_3B                      |                                        |
+| W12/14                           |     unused, PULL:DOWN |            |                 | WRIO14_3A                      |                                        |
+| W14/13                           |     unused, PULL:DOWN |            |                 | WRIO13_5A                      |                                        |
+| W22/11                           | Prohibited/Reserved   |            |                 | HPIO11_24B                     | PCLKRC11_2/PCLKEC11_2                  |
+| W23/11                           | ddr_dqs_io[3]+        | LOCATED    | LVSTL11D_I_BIDI | HPIO11_18A                     | DQS11_2                                |
+| W24/11                           | ddr_dqs_io[3]-        |            | LVSTL11D_I_BIDI | HPIO11_18B                     | DQSN11_2                               |
+| W25/11                           |     unused, PULL:DOWN |            |                 | HPIO11_10B                     | PCLKC11_0/PCLKRC11_0/PCLKEC11_0        |
+| W26/11                           | Prohibited/Reserved   |            |                 | HPIO11_8A                      | HS11_PLL_MFGOUT2/DQ11_0                |
+| W29/11                           | ddr_dqs_io[2]-        |            | LVSTL11D_I_BIDI | HPIO11_5B                      | DQSN11_1                               |
+| W30/11                           | ddr_dq_io[23]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_7B                      | DQ11_1                                 |
+| W33/11                           | Prohibited/Reserved   |            |                 | HPIO11_15B                     | DQ11_3                                 |
+| W34/11                           | Prohibited/Reserved   |            |                 | HPIO11_19B                     | DQSN11_3                               |
+| Y1/3                             |     unused, PULL:DOWN |            |                 | HPIO3_13A                      | PLLT3_IN                               |
+| Y2/3                             | rgmii_txd_o[2]        | LOCATED    | LVCMOS18_OUT    | HPIO3_15B                      | DQ3_3                                  |
+| Y3/3                             |     unused, PULL:DOWN |            |                 | HPIO3_17B                      | SD13_OUT/DQ3_3                         |
+| Y4/3                             |     unused, PULL:DOWN |            |                 | HPIO3_21B                      | SD17_OUT/DQ3_3                         |
+| Y5/3                             |     unused, PULL:DOWN |            |                 | HPIO3_23A                      | DQ3_3                                  |
+| Y6/3                             | rgmii_rxctl_i         | LOCATED    | LVCMOS18_IN     | HPIO3_25B                      | PCLKRC3_3/PCLKEC3_3                    |
+| Y7/3                             | rgmii_rxc_i           | LOCATED    | LVCMOS18_IN     | HPIO3_25A                      | PCLKRT3_3/PCLKET3_3/DM3_3              |
+| Y8/3                             |     unused, PULL:DOWN |            |                 | HPIO3_16A                      | SD12_IN/DQ3_2                          |
+| Y9/3                             | rgmii_mdio_o          | LOCATED    | LVCMOS18_BIDI   | HPIO3_16B                      | SD12_OUT/DQ3_2                         |
+| Y10/3                            | rgmii_txc_o           | LOCATED    | LVCMOS18_OUT    | HPIO3_14B                      | DQ3_2                                  |
+| Y11/3                            | rgmii_txd_o[0]        | LOCATED    | LVCMOS18_OUT    | HPIO3_14A                      | DQ3_2                                  |
+| Y17/7                            |     unused, PULL:DOWN |            |                 | HPIO7_2A                       | DQ7_0                                  |
+| Y18/7                            |     unused, PULL:DOWN |            |                 | HPIO7_2B                       | DQ7_0                                  |
+| Y20/8                            |     unused, PULL:DOWN |            |                 | HPIO8_2A                       | DQ8_0                                  |
+| Y21/10                           | ddr_dq_io[5]          | LOCATED    | LVSTL11_I_BIDI  | HPIO10_22A                     | DQ10_2                                 |
+| Y24/11                           | ddr_dq_io[25]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_16B                     | SD0_OUT/DQ11_2                         |
+| Y26/11                           | Prohibited/Reserved   |            |                 | HPIO11_6B                      | DQ11_0                                 |
+| Y27/11                           | Prohibited/Reserved   |            |                 | HPIO11_0B                      | DQ11_0                                 |
+| Y28/11                           | ddr_dq_io[20]         | LOCATED    | LVSTL11_I_BIDI  | HPIO11_1A                      | DQ11_1                                 |
+| Y29/11                           | ddr_dqs_io[2]+        | LOCATED    | LVSTL11D_I_BIDI | HPIO11_5A                      | DQS11_1                                |
+| Y30/11                           | Prohibited/Reserved   |            |                 | HPIO11_23B                     | DQ11_3                                 |
+| Y31/11                           | Prohibited/Reserved   |            |                 | HPIO11_23A                     | DQ11_3                                 |
+| Y32/11                           | Prohibited/Reserved   |            |                 | HPIO11_21A                     | DQ11_3                                 |
+| Y33/11                           | Prohibited/Reserved   |            |                 | HPIO11_21B                     | DQ11_3                                 |
+| Y34/11                           | Prohibited/Reserved   |            |                 | HPIO11_19A                     | DQS11_3                                |
++----------------------------------+-----------------------+------------+-----------------+--------------------------------+----------------------------------------+
+
+sysCONFIG Pins:
++----------+--------------------+----------+-------------+
+| Pad Name | sysCONFIG Pin Name | Pin/Bank | Buffer Type |
++----------+--------------------+----------+-------------+
+| WRIO2_1A | INITN              | T5/2     |             |
+| WRIO2_5B | DONE               | U4/2     |             |
+| WRIO2_7A | TCK                | T1/2     |             |
+| WRIO2_7B | TMS                | R1/2     |             |
+| WRIO2_8B | PROGRAMN           | P2/2     |             |
+| WRIO2_9A | TDI                | U1/2     |             |
+| WRIO2_9B | TDO                | U2/2     |             |
++----------+--------------------+----------+-------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {P9} [ get_ports {SPI_CLK} ]
+ldc_set_location -site {P7} [ get_ports {SPI_CSS} ]
+ldc_set_location -site {L10} [ get_ports {SPI_D2} ]
+ldc_set_location -site {L9} [ get_ports {SPI_D3} ]
+ldc_set_location -site {L11} [ get_ports {SPI_MISO} ]
+ldc_set_location -site {L12} [ get_ports {SPI_MOSI} ]
+ldc_set_location -site {AL10} [ get_ports {clk_125_in} ]
+ldc_set_location -site {M8} [ get_ports {config_active_o} ]
+ldc_set_location -site {AC26} [ get_ports {ddr_ca_o[0]} ]
+ldc_set_location -site {AB27} [ get_ports {ddr_ca_o[1]} ]
+ldc_set_location -site {AB28} [ get_ports {ddr_ca_o[2]} ]
+ldc_set_location -site {AC29} [ get_ports {ddr_ca_o[3]} ]
+ldc_set_location -site {AB29} [ get_ports {ddr_ca_o[4]} ]
+ldc_set_location -site {AD27} [ get_ports {ddr_ca_o[5]} ]
+ldc_set_location -site {AB25} [ get_ports {ddr_ck_o[0]} ]
+ldc_set_location -site {AB30} [ get_ports {ddr_ck_o[1]} ]
+ldc_set_location -site {AB26} [ get_ports {ddr_cke_o[0]} ]
+ldc_set_location -site {AA31} [ get_ports {ddr_cs_o[0]} ]
+ldc_set_location -site {AC21} [ get_ports {ddr_dmi_io[0]} ]
+ldc_set_location -site {AF33} [ get_ports {ddr_dmi_io[1]} ]
+ldc_set_location -site {V32} [ get_ports {ddr_dmi_io[2]} ]
+ldc_set_location -site {V22} [ get_ports {ddr_dmi_io[3]} ]
+ldc_set_location -site {AD22} [ get_ports {ddr_dq_io[0]} ]
+ldc_set_location -site {AE32} [ get_ports {ddr_dq_io[10]} ]
+ldc_set_location -site {AE31} [ get_ports {ddr_dq_io[11]} ]
+ldc_set_location -site {AE33} [ get_ports {ddr_dq_io[12]} ]
+ldc_set_location -site {AE34} [ get_ports {ddr_dq_io[13]} ]
+ldc_set_location -site {AB34} [ get_ports {ddr_dq_io[14]} ]
+ldc_set_location -site {AB33} [ get_ports {ddr_dq_io[15]} ]
+ldc_set_location -site {U29} [ get_ports {ddr_dq_io[16]} ]
+ldc_set_location -site {V29} [ get_ports {ddr_dq_io[17]} ]
+ldc_set_location -site {U30} [ get_ports {ddr_dq_io[18]} ]
+ldc_set_location -site {U31} [ get_ports {ddr_dq_io[19]} ]
+ldc_set_location -site {AD21} [ get_ports {ddr_dq_io[1]} ]
+ldc_set_location -site {Y28} [ get_ports {ddr_dq_io[20]} ]
+ldc_set_location -site {AA28} [ get_ports {ddr_dq_io[21]} ]
+ldc_set_location -site {V30} [ get_ports {ddr_dq_io[22]} ]
+ldc_set_location -site {W30} [ get_ports {ddr_dq_io[23]} ]
+ldc_set_location -site {AA24} [ get_ports {ddr_dq_io[24]} ]
+ldc_set_location -site {Y24} [ get_ports {ddr_dq_io[25]} ]
+ldc_set_location -site {U23} [ get_ports {ddr_dq_io[26]} ]
+ldc_set_location -site {U22} [ get_ports {ddr_dq_io[27]} ]
+ldc_set_location -site {U25} [ get_ports {ddr_dq_io[28]} ]
+ldc_set_location -site {T25} [ get_ports {ddr_dq_io[29]} ]
+ldc_set_location -site {AE25} [ get_ports {ddr_dq_io[2]} ]
+ldc_set_location -site {U24} [ get_ports {ddr_dq_io[30]} ]
+ldc_set_location -site {T24} [ get_ports {ddr_dq_io[31]} ]
+ldc_set_location -site {AE24} [ get_ports {ddr_dq_io[3]} ]
+ldc_set_location -site {AA21} [ get_ports {ddr_dq_io[4]} ]
+ldc_set_location -site {Y21} [ get_ports {ddr_dq_io[5]} ]
+ldc_set_location -site {AB24} [ get_ports {ddr_dq_io[6]} ]
+ldc_set_location -site {AC24} [ get_ports {ddr_dq_io[7]} ]
+ldc_set_location -site {AD34} [ get_ports {ddr_dq_io[8]} ]
+ldc_set_location -site {AD33} [ get_ports {ddr_dq_io[9]} ]
+ldc_set_location -site {AC23} [ get_ports {ddr_dqs_io[0]} ]
+ldc_set_location -site {AC34} [ get_ports {ddr_dqs_io[1]} ]
+ldc_set_location -site {Y29} [ get_ports {ddr_dqs_io[2]} ]
+ldc_set_location -site {W23} [ get_ports {ddr_dqs_io[3]} ]
+ldc_set_location -site {AF34} [ get_ports {ddr_reset_n_o} ]
+ldc_set_location -site {P10} [ get_ports {init_done_o} ]
+ldc_set_location -site {AP31} [ get_ports {irq_o} ]
+ldc_set_location -site {AA9} [ get_ports {phy_resetn_o} ]
+ldc_set_location -site {N10} [ get_ports {pll_lock_o} ]
+ldc_set_location -site {AD32} [ get_ports {pll_refclk_i} ]
+ldc_set_location -site {AA8} [ get_ports {rgmii_mdc_o} ]
+ldc_set_location -site {Y9} [ get_ports {rgmii_mdio_o} ]
+ldc_set_location -site {Y7} [ get_ports {rgmii_rxc_i} ]
+ldc_set_location -site {Y6} [ get_ports {rgmii_rxctl_i} ]
+ldc_set_location -site {AC7} [ get_ports {rgmii_rxd_i[0]} ]
+ldc_set_location -site {AC6} [ get_ports {rgmii_rxd_i[1]} ]
+ldc_set_location -site {AD6} [ get_ports {rgmii_rxd_i[2]} ]
+ldc_set_location -site {AD5} [ get_ports {rgmii_rxd_i[3]} ]
+ldc_set_location -site {Y10} [ get_ports {rgmii_txc_o} ]
+ldc_set_location -site {AB12} [ get_ports {rgmii_txctl_o} ]
+ldc_set_location -site {Y11} [ get_ports {rgmii_txd_o[0]} ]
+ldc_set_location -site {AA2} [ get_ports {rgmii_txd_o[1]} ]
+ldc_set_location -site {Y2} [ get_ports {rgmii_txd_o[2]} ]
+ldc_set_location -site {AB13} [ get_ports {rgmii_txd_o[3]} ]
+ldc_set_location -site {AC17} [ get_ports {rstn_i} ]
+ldc_set_location -site {N7} [ get_ports {s0_gpio[0]} ]
+ldc_set_location -site {L7} [ get_ports {s0_gpio[1]} ]
+ldc_set_location -site {T19} [ get_ports {s0_gpio[2]} ]
+ldc_set_location -site {R19} [ get_ports {s0_gpio[3]} ]
+ldc_set_location -site {R16} [ get_ports {s0_gpio[4]} ]
+ldc_set_location -site {T18} [ get_ports {s0_gpio[5]} ]
+ldc_set_location -site {R14} [ get_ports {s0_gpio[6]} ]
+ldc_set_location -site {P19} [ get_ports {s0_gpio[7]} ]
+ldc_set_location -site {T3} [ get_ports {s1_uart_rxd_i} ]
+ldc_set_location -site {R3} [ get_ports {s1_uart_txd_o} ]
+ldc_set_location -site {AF28} [ get_ports {sclk_o} ]
+ldc_set_location -site {M9} [ get_ports {trn_err_o} ]
+
+#PLL
+ldc_set_location -site {PLL10} [ get_cells {lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst} ]
+# ldc_set_location -site {PLL10} [ get_cells {lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.pll_inst.gen_ext_outclkdiv.u_pll.PLLC_MODE_inst} ]
+#PLL
+ldc_set_location -site {PLL6} [ get_cells {pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst} ]
+# ldc_set_location -site {PLL6} [ get_cells {pll0_inst.lscc_pll_inst.gen_ext_outclkdiv.u_pll.PLLC_MODE_inst} ]
+
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Fri Aug 30 08:53:09 2024
+

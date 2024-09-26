@@ -1,0 +1,138 @@
+###File created by Lattice CPE. Do not modify.###
+set_hierarchy_separator /
+create_clock -name {osc0_inst_clk_out_o_net} -period 100 [get_pins osc0_inst/lscc_osc_inst/u_OSC.OSCE_inst/CLKOUT]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/source/impl_1/clock_constraint.sdc
+create_clock -name {pll_refclk_i} -period 10 -waveform {0.000 5.000} [get_ports pll_refclk_i]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/source/impl_1/clock_constraint.sdc
+create_clock -name {clk_125_in} -period 8 -waveform {0.000 4.000} [get_ports clk_125_in]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/source/impl_1/clock_constraint.sdc
+create_generated_clock -name {clk_125MHz} -source [get_pins pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKI] -divide_by 1 -multiply_by 1 [get_pins pll0_inst/lscc_pll_inst/gen_ext_outclkdiv.u_pll.PLLC_MODE_inst/CLKOP]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/source/impl_1/clock_constraint.sdc
+#create_clock -name {clk_out_o} -period 100 [get_pins {osc0_inst/clk_out_o }]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/module/osc0/2.1.0/constraints/osc0.ldc
+#set_clock_groups -group [get_clocks clk_i] -group [get_clocks txmac_clk_i] -group [get_clocks rxmac_clk_i] -group [get_clocks mdc_i] -asynchronous
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/tse_mac0/1.6.0/constraints/tse_mac0.ldc
+# Top level Clocks
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/source/impl_1/clock_constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I} [get_ports pll_refclk_i]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[0]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[1]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[2]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dqs_io[3]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[0]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[1]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[2]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[3]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[4]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[5]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[6]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[7]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[8]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[9]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[10]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[11]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[12]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[13]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[14]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[15]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[16]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[17]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[18]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[19]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[20]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[21]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[22]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[23]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[24]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[25]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[26]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[27]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[28]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[29]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[30]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dq_io[31]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[0]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[1]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[2]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW TERMINATION=48} [get_ports {ddr_dmi_io[3]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ck_o[0]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11D_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ck_o[1]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_cke_o[0]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_cs_o[0]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[0]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[1]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[2]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[3]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[4]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM SLEWRATE=SLOW} [get_ports {ddr_ca_o[5]}]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+ldc_set_port -iobuf {IO_TYPE=LVSTL11_I DRIVE=34_OHM} [get_ports ddr_reset_n_o]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+set_false_path -to [get_pins {lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST }]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+set_false_path -to [get_pins {lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC }]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/lpddr4_mc_contr0.ldc;C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc
+# IO_TYPE constraint - Refclk
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/module/pll0/2.5.0/constraints/pll0.ldc
+# if {$PLL_REFCLK_FROM_PIN} {
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/module/pll0/2.5.0/constraints/pll0.ldc
+#   ldc_set_port -iobuf IO_TYPE=$IO_TYPE [get_ports clki_i]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/module/pll0/2.5.0/constraints/pll0.ldc
+# }
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/module/pll0/2.5.0/constraints/pll0.ldc
+# constraint to force the CLKRES signal to use a local clock
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/module/pll0/2.5.0/constraints/pll0.ldc
+ldc_set_attribute {USE_PRIMARY=FALSE} [get_nets {pll0_inst/lscc_pll_inst/clkout_testclk_o }]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/module/pll0/2.5.0/constraints/pll0.ldc
+#create_generated_clock -name {sclk_o} -source [get_ports a_clk_i] -divide_by $SPI_CLOCK_FREQUENCY_DIVIDER [get_ports sclk_o]
+##Original File: C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/qspi0/1.2.0/constraints/qspi0.ldc

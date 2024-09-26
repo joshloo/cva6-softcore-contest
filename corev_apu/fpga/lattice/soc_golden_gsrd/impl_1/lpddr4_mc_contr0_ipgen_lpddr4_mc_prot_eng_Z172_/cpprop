@@ -1,0 +1,9 @@
+n work lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng_Z172_ verilog;
+av .compile_point_summary_status "Remapped";
+av .compile_point_summary_reason "User request";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "No";
+av .compile_point_cputime_used 43.9688;
+av .compile_point_starttime_stamp "Fri Aug 30 08:24:33 2024";
+av .compile_point_endtime_stamp "Fri Aug 30 08:25:17 2024";
+av .compile_point_realtime_used 44.19;

@@ -1,0 +1,801 @@
+# Fri Aug 30 08:26:46 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: C:\lscc\radiant\2024.1\synpbase
+OS: Windows 10 or later
+Hostname: L-PF44FKLH
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 123R, Built Jun 14 2024 11:20:26, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 195MB peak: 195MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 198MB peak: 210MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 210MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 200MB peak: 210MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 201MB peak: 210MB)
+
+
+
+
+@N: MF105 |Performing bottom-up mapping of Compile point view:work.axi4_interconnect1_ipgen_lscc_sync_axi_intercon(verilog) 
+
+Begin environment creation (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 277MB peak: 277MB)
+
+
+Finished environment creation (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 277MB peak: 278MB)
+
+
+Start loading ILMs (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 277MB peak: 278MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 277MB peak: 278MB)
+
+
+Begin compile point sub-process log
+
+		 user requested clean build.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 277MB peak: 278MB)
+
+@W: BN161 :|Net axi4_interconnect1_inst.lscc_axi_interconnect_inst.axi_aclk_i has multiple drivers .
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 288MB peak: 288MB)
+
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec.nxt_ext_slv_sel_8[0] has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec.nxt_ext_slv_sel_8[0] has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un1_ext_mas_addrlto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un1_ext_mas_addrlto13 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l1\.un21lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l1\.un21lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l1\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l1\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un20lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un20lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un20lto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un20lto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l0\.un1_ext_mas_addrlto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l4_l0\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l4_l0\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l4_l0\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l3_l0\.un26lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l3_l0\.un26lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l2_l0\.un25lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l2_l0\.un25lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l2_l0\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l2_l0\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l4\.un24lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l4\.un24lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l4\.un24lto14 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l4\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l4\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l4\.un1_ext_mas_addrlto12 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un23lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un23lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un23lto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un23lto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un23lto15 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un1_ext_mas_addrlto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l3\.un1_ext_mas_addrlto15 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un22lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un22lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un22lto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un22lto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l1_l2\.un22lto13 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l4_l0\.un27lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l4_l0\.un27lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_RO_WR_BLK\.u_ext_mas_ard_adr_dec._l4_l0\.un27lto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un22lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un22lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un22lto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un22lto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un22lto13 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un1_ext_mas_addrlto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l2\.un1_ext_mas_addrlto13 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l1\.un21lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l1\.un21lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l1\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l1\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un20lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un20lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un20lto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un20lto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l0\.un1_ext_mas_addrlto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l4_l0\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l4_l0\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l4_l0\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l3_l0\.un26lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l3_l0\.un26lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l2_l0\.un25lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l2_l0\.un25lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l2_l0\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l2_l0\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l4\.un24lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l4\.un24lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l4\.un24lto14 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l4\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l4\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l4\.un1_ext_mas_addrlto12 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un23lto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un23lto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un23lto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un23lto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un23lto15 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un1_ext_mas_addrlto31 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un1_ext_mas_addrlto30 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un1_ext_mas_addrlto19 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un1_ext_mas_addrlto16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[2\]\.u_ext_mas_port.EXT_MAS_ACLK_WO_WR_BLK\.u_ext_mas_awr_adr_dec._l1_l3\.un1_ext_mas_addrlto15 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\soc_golden_gsrd\impl_1\axi4_interconnect1_ipgen_lscc_sync_axi_intercon\axi4_interconnect1_ipgen_lscc_sync_axi_intercon.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.R_FIFO_FULL\.u_r_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[37:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[39:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[21:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[37:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[1\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.R_FIFO_FULL\.u_r_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[37:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[1\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[48:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[1\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[36:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM EXT_MAS_BLK\[1\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[48:0]
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[2].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[3].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[4].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[5].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[1].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[2].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[3].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[4].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[5].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[6].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[7].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[8].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[9].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[10].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[11].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[12].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[13].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[18].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[30].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[31].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[32].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[33].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[34].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[35].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[36].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[37].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[38].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[39].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[1].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r_1[2].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r_1[3].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r_1[4].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r_1[5].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[6].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[7].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[8].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[9].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[10].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[11].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[12].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[13].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[18].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[1].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[2].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[3].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[4].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[5].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[6].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[7].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[8].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[9].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[10].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[11].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[12].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[13].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[18].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[30].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[31].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[32].
+@N: FX493 |Applying initial value "0" on instance EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[33].
+
+Only the first 100 messages of id 'FX493' are reported. To see all messages use 'report_messages -log C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\soc_golden_gsrd\impl_1\axi4_interconnect1_ipgen_lscc_sync_axi_intercon\axi4_interconnect1_ipgen_lscc_sync_axi_intercon.srr -id FX493' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {FX493} -count unlimited' in the Tcl shell.
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM mem[4:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM mem[1:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM mem[4:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.R_FIFO_FULL\.u_r_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[39:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[47:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[36:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[47:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM mem[6:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.R_FIFO_FULL\.u_r_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[37:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[47:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.W_FIFO_FULL\.u_w_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[36:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem[47:0]
+@N: FO126 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3329:4:3329:9|Generating RAM mem[4:0]
+
+Starting factoring (Real Time elapsed 0h:01m:22s; CPU Time elapsed 0h:01m:19s; Memory used current: 289MB peak: 289MB)
+
+
+Finished factoring (Real Time elapsed 0h:01m:23s; CPU Time elapsed 0h:01m:21s; Memory used current: 294MB peak: 294MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:01m:33s; CPU Time elapsed 0h:01m:30s; Memory used current: 386MB peak: 404MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:32s; Memory used current: 390MB peak: 404MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:39s; CPU Time elapsed 0h:01m:37s; Memory used current: 396MB peak: 404MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:38s; Memory used current: 396MB peak: 404MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:01m:42s; CPU Time elapsed 0h:01m:40s; Memory used current: 396MB peak: 404MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:01m:45s; CPU Time elapsed 0h:01m:43s; Memory used current: 456MB peak: 456MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:01m:43s		    -1.01ns		2270 /      3230
+   2		0h:01m:44s		    -1.01ns		2255 /      3230
+   3		0h:01m:44s		    -0.76ns		2258 /      3230
+   4		0h:01m:44s		    -0.53ns		2257 /      3230
+   5		0h:01m:44s		    -0.53ns		2257 /      3230
+Timing driven replication report
+Added 3 Registers via timing driven replication
+Added 29 LUTs via timing driven replication
+
+   6		0h:01m:47s		    -0.03ns		2298 /      3233
+   7		0h:01m:47s		     0.01ns		2301 /      3233
+   8		0h:01m:47s		     0.01ns		2303 /      3233
+   9		0h:01m:47s		     0.10ns		2304 /      3233
+  10		0h:01m:47s		     0.10ns		2306 /      3233
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:50s; CPU Time elapsed 0h:01m:48s; Memory used current: 457MB peak: 457MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:01m:53s; CPU Time elapsed 0h:01m:50s; Memory used current: 459MB peak: 459MB)
+
+
+End compile point sub-process log
+
+@W: MT246 :"c:\users\skothari\downloads\gsrd2.0_avant_cpnx_beta\final_beta_testing\golden_avant\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":1384:58:1384:62|Blackbox PLLC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net axi4_interconnect1_inst.lscc_axi_interconnect_inst.axi_aclk_i[0].
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Fri Aug 30 08:28:39 2024
+#
+
+
+Top view:               soc_golden_gsrd
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+                       C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\soc_golden_gsrd\impl_1\soc_golden_gsrd_impl_1_cpe.ldc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.107
+
+                                                                                                                               Requested     Estimated      Requested     Estimated                Clock                                                                            Clock                
+Starting Clock                                                                                                                 Frequency     Frequency      Period        Period        Slack      Type                                                                             Group                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk_125_in                                                                                                                     125.0 MHz     NA             8.000         NA            NA         declared                                                                         default_clkgroup     
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock                                              200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_8
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock                                    200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_9
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock                                                           200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_6
+osc0_ipgen_lscc_osc_400s_40s_40_LAV-AT_LAV-AT-E70ES1|clk_out_o_inferred_clock                                                  200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_4
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock                                                                  200.0 MHz     195.8 MHz      5.000         5.107         -0.107     inferred                                                                         Inferred_clkgroup_0_3
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock                                                                 200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_1
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos_o_inferred_clock                                                                  200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_7
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_testclk_o_inferred_clock                                                                200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_5
+pll_refclk_i                                                                                                                   100.0 MHz     NA             10.000        NA            NA         declared                                                                         default_clkgroup     
+soc_golden_gsrd|rgmii_rxc_i                                                                                                    200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_2
+tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric_noreg_1s_9s|_FWFT_ENABLE_re_r_derived_clock     200.0 MHz     NA             5.000         NA            NA         derived (from pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock)     Inferred_clkgroup_0_3
+System                                                                                                                         200.0 MHz     1272.3 MHz     5.000         0.786         4.214      system                                                                           system_clkgroup      
+=========================================================================================================================================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                       Ending                                                         |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                         System                                                         |  5.000       4.214   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                         pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       0.950   |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  System                                                         |  5.000       0.565   |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       -0.107  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                                                                                          Arrival           
+Instance      Reference                                                         Type        Pin     Net                                         Time        Slack 
+              Clock                                                                                                                                               
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       cA2gFJ9c3ED5                                1.027       -0.107
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       cIHyqF1ijnu3sjJ7jiuEI3                      1.027       -0.095
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       cIHyqF1ijnu3sjJ7jiuFm3                      1.009       -0.077
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       o8GLIHaLrCAhx                               0.985       -0.065
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       cIHyqF1ijnu3sjJ7jiuFbJ                      0.985       -0.053
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       cIHyqF1ijnu3sjJ7jiuFhn                      0.985       -0.053
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       z86GGab2hhJ19xLGGqsu                        0.955       -0.035
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       DfGJbtc30scfAj78p                           0.955       -0.035
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       Lqji4zwon8bk5LGm2HavoczkBxn                 0.907       0.043 
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3IX     Q       ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn     1.045       0.133 
+==================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                                            Required           
+Instance      Reference                                                         Type        Pin     Net           Time         Slack 
+              Clock                                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------------
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3BX     D       encrypted     4.946        -0.107
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3BX     D       encrypted     4.946        -0.107
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3BX     D       encrypted     4.946        -0.107
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       encrypted     4.946        -0.107
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       encrypted     4.946        -0.107
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       encrypted     4.946        -0.107
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       encrypted     4.946        -0.095
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       encrypted     4.946        -0.095
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       encrypted     4.946        -0.095
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       encrypted     4.946        -0.095
+=====================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.053
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.107
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                 Pin      Pin               Arrival     No. of    
+Name               Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+encrypted          FD1P3DX     Q        Out     1.027     1.027 r     -         
+cA2gFJ9c3ED5       Net         -        -       -         -           7         
+encrypted          LUT4        D        In      0.000     1.027 r     -         
+encrypted          LUT4        Z        Out     0.798     1.825 r     -         
+fh7pl7             Net         -        -       -         -           9         
+encrypted          LUT4        A        In      0.000     1.825 r     -         
+encrypted          LUT4        Z        Out     0.390     2.215 f     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          LUT4        A        In      0.000     2.215 f     -         
+encrypted          LUT4        Z        Out     0.708     2.923 f     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     2.923 f     -         
+encrypted          LUT4        Z        Out     0.816     3.739 f     -         
+encrypted          Net         -        -       -         -           13        
+encrypted          LUT4        A        In      0.000     3.739 f     -         
+encrypted          LUT4        Z        Out     0.708     4.447 r     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     4.447 r     -         
+encrypted          LUT4        Z        Out     0.606     5.053 r     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          FD1P3BX     D        In      0.000     5.053 r     -         
+================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.053
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.107
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                 Pin      Pin               Arrival     No. of    
+Name               Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+encrypted          FD1P3DX     Q        Out     1.027     1.027 r     -         
+cA2gFJ9c3ED5       Net         -        -       -         -           7         
+encrypted          LUT4        D        In      0.000     1.027 r     -         
+encrypted          LUT4        Z        Out     0.798     1.825 r     -         
+fh7pl7             Net         -        -       -         -           9         
+encrypted          LUT4        A        In      0.000     1.825 r     -         
+encrypted          LUT4        Z        Out     0.390     2.215 f     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          LUT4        A        In      0.000     2.215 f     -         
+encrypted          LUT4        Z        Out     0.708     2.923 f     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     2.923 f     -         
+encrypted          LUT4        Z        Out     0.816     3.739 f     -         
+encrypted          Net         -        -       -         -           13        
+encrypted          LUT4        A        In      0.000     3.739 f     -         
+encrypted          LUT4        Z        Out     0.708     4.447 f     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     4.447 f     -         
+encrypted          LUT4        Z        Out     0.606     5.053 f     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          FD1P3DX     D        In      0.000     5.053 f     -         
+================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.053
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.107
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                 Pin      Pin               Arrival     No. of    
+Name               Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+encrypted          FD1P3DX     Q        Out     1.027     1.027 r     -         
+cA2gFJ9c3ED5       Net         -        -       -         -           7         
+encrypted          LUT4        D        In      0.000     1.027 r     -         
+encrypted          LUT4        Z        Out     0.798     1.825 r     -         
+fh7pl7             Net         -        -       -         -           9         
+encrypted          LUT4        A        In      0.000     1.825 r     -         
+encrypted          LUT4        Z        Out     0.390     2.215 f     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          LUT4        A        In      0.000     2.215 f     -         
+encrypted          LUT4        Z        Out     0.708     2.923 f     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     2.923 f     -         
+encrypted          LUT4        Z        Out     0.816     3.739 f     -         
+encrypted          Net         -        -       -         -           13        
+encrypted          LUT4        A        In      0.000     3.739 f     -         
+encrypted          LUT4        Z        Out     0.708     4.447 r     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     4.447 r     -         
+encrypted          LUT4        Z        Out     0.606     5.053 r     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          FD1P3BX     D        In      0.000     5.053 r     -         
+================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.053
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.107
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                 Pin      Pin               Arrival     No. of    
+Name               Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+encrypted          FD1P3DX     Q        Out     1.027     1.027 r     -         
+cA2gFJ9c3ED5       Net         -        -       -         -           7         
+encrypted          LUT4        D        In      0.000     1.027 r     -         
+encrypted          LUT4        Z        Out     0.798     1.825 r     -         
+fh7pl7             Net         -        -       -         -           9         
+encrypted          LUT4        A        In      0.000     1.825 r     -         
+encrypted          LUT4        Z        Out     0.390     2.215 f     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          LUT4        A        In      0.000     2.215 f     -         
+encrypted          LUT4        Z        Out     0.708     2.923 f     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     2.923 f     -         
+encrypted          LUT4        Z        Out     0.816     3.739 f     -         
+encrypted          Net         -        -       -         -           13        
+encrypted          LUT4        A        In      0.000     3.739 f     -         
+encrypted          LUT4        Z        Out     0.708     4.447 r     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     4.447 r     -         
+encrypted          LUT4        Z        Out     0.606     5.053 r     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          FD1P3BX     D        In      0.000     5.053 r     -         
+================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.053
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.107
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                 Pin      Pin               Arrival     No. of    
+Name               Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+encrypted          FD1P3DX     Q        Out     1.027     1.027 r     -         
+cA2gFJ9c3ED5       Net         -        -       -         -           7         
+encrypted          LUT4        D        In      0.000     1.027 r     -         
+encrypted          LUT4        Z        Out     0.798     1.825 r     -         
+fh7pl7             Net         -        -       -         -           9         
+encrypted          LUT4        A        In      0.000     1.825 r     -         
+encrypted          LUT4        Z        Out     0.390     2.215 f     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          LUT4        A        In      0.000     2.215 f     -         
+encrypted          LUT4        Z        Out     0.708     2.923 f     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     2.923 f     -         
+encrypted          LUT4        Z        Out     0.816     3.739 f     -         
+encrypted          Net         -        -       -         -           13        
+encrypted          LUT4        A        In      0.000     3.739 f     -         
+encrypted          LUT4        Z        Out     0.708     4.447 f     -         
+encrypted          Net         -        -       -         -           3         
+encrypted          LUT4        C        In      0.000     4.447 f     -         
+encrypted          LUT4        Z        Out     0.606     5.053 f     -         
+encrypted          Net         -        -       -         -           1         
+encrypted          FD1P3DX     D        In      0.000     5.053 f     -         
+================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                                          Arrival          
+Instance      Reference     Type         Pin       Net                                          Time        Slack
+              Clock                                                                                              
+-----------------------------------------------------------------------------------------------------------------
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3      0.000       0.950
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3      0.000       0.950
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3      0.000       1.298
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3      0.000       1.298
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn      0.000       1.316
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn      0.000       1.316
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn      0.000       1.502
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn      0.000       1.502
+encrypted     System        WIDEFN9      Z         fh7oH6                                       0.000       3.680
+encrypted     System        WIDEFN9      Z         2nhwE6or8LlqtGmEh3x71oJmCbF2r8zFd22mKI23     0.000       3.916
+=================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                        Required          
+Instance      Reference     Type        Pin     Net           Time         Slack
+              Clock                                                             
+--------------------------------------------------------------------------------
+encrypted     System        FD1P3BX     D       encrypted     4.946        0.950
+encrypted     System        FD1P3BX     D       encrypted     4.946        0.950
+encrypted     System        FD1P3BX     D       encrypted     4.946        0.950
+encrypted     System        FD1P3DX     D       encrypted     4.946        0.950
+encrypted     System        FD1P3DX     D       encrypted     4.946        0.950
+encrypted     System        FD1P3DX     D       encrypted     4.946        0.950
+encrypted     System        FD1P3DX     D       encrypted     4.946        0.998
+encrypted     System        FD1P3DX     D       encrypted     4.946        0.998
+encrypted     System        FD1P3DX     D       encrypted     4.946        1.436
+encrypted     System        FD1P3DX     D       encrypted     4.946        1.436
+================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      3.996
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 0.950
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / DO[1]
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                           Pin       Pin               Arrival     No. of    
+Name                                        Type         Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+encrypted                                   DPR16X4A     DO[1]     Out     0.000     0.000 r     -         
+ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3     Net          -         -       -         -           3         
+encrypted                                   LUT4         A         In      0.000     0.000 r     -         
+encrypted                                   LUT4         Z         Out     0.390     0.390 f     -         
+gCghbb                                      Net          -         -       -         -           1         
+encrypted                                   LUT4         D         In      0.000     0.390 f     -         
+encrypted                                   LUT4         Z         Out     0.768     1.158 f     -         
+fmwqKfBcDfljIEheqea4e5JpuI8su               Net          -         -       -         -           6         
+encrypted                                   LUT4         B         In      0.000     1.158 f     -         
+encrypted                                   LUT4         Z         Out     0.708     1.866 r     -         
+encrypted                                   Net          -         -       -         -           3         
+encrypted                                   LUT4         C         In      0.000     1.866 r     -         
+encrypted                                   LUT4         Z         Out     0.816     2.682 r     -         
+encrypted                                   Net          -         -       -         -           13        
+encrypted                                   LUT4         A         In      0.000     2.682 r     -         
+encrypted                                   LUT4         Z         Out     0.708     3.390 f     -         
+encrypted                                   Net          -         -       -         -           3         
+encrypted                                   LUT4         C         In      0.000     3.390 f     -         
+encrypted                                   LUT4         Z         Out     0.606     3.996 f     -         
+encrypted                                   Net          -         -       -         -           1         
+encrypted                                   FD1P3BX      D         In      0.000     3.996 f     -         
+===========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+@W: MT447 :"c:/users/skothari/downloads/gsrd2.0_avant_cpnx_beta/final_beta_testing/golden_avant/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":121:0:121:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/skothari/downloads/gsrd2.0_avant_cpnx_beta/final_beta_testing/golden_avant/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":123:0:123:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+None
+Writing compile point status file C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\soc_golden_gsrd\impl_1\axi4_interconnect1_ipgen_lscc_sync_axi_intercon\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                                                Status       Reason      
+-----------------------------------------------------------------------------
+axi4_interconnect1_ipgen_lscc_sync_axi_intercon     Remapped     User request
+=============================================================================
+
+Process took 0h:01m:54s realtime, 0h:01m:52s cputime
+# Fri Aug 30 08:28:40 2024
+
+###########################################################]

@@ -1,0 +1,140 @@
+<html> 
+ 			<head> 			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+			<title>Project Status Summary Page</title>
+			<link rel="stylesheet" type="text/css" href="projectstatuspage.css" />
+			<script type = "text/javascript" src="projectstatuspage.js"></script>
+			</head>
+
+ 			<body style="background-color:#f0f0ff;">
+ 			
+<table style="border:none;" width="100%" ><tr> <td class="outline">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
+ <tr> <td class="optionTitle" align="left"> Project Name</td> <td> proj_1</td> <td class="optionTitle" align="left"> Device Name</td> <td> impl_1: Lattice LAV-AT : LAV_AT_E70ES1</td> </tr>
+<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> impl_1</td> <td class="optionTitle" align="left"> Top Module</td> <td> soc_golden_gsrd</td> </tr>
+ 		 </thead> 
+		 <tbody> <tr> <td class="optionTitle" align="left"> Pipelining</td> <td> 1</td> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> </tr>
+<tr> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 1000</td> </tr>
+<tr> <td class="optionTitle" align="left"> Disable I/O Insertion</td> <td> 0</td> <td class="optionTitle" align="left"> Disable Sequential Optimizations</td> <td> 0</td> </tr>
+<tr> <td class="optionTitle" align="left"> Clock Conversion</td> <td> 0</td> <td class="optionTitle" align="left"> FSM Compiler</td> <td> 1</td> </tr>
+ 
+</tbody> 
+  </table><br>	 <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="9">Run Status</th></tr></thead>
+         <tbody>
+ 		<tr>
+ 			<th align="left" width="17%">Job Name</th>
+			<th align="left">Status</th>
+ 			<td class="lnote" align="center" title="Notes"></td>
+ 			<td class="lwarn" align="center" title="Warnings"></td>
+ 			<td class="lerror" align="center" title="Errors"></td>
+ 			<th align="left">CPU Time</th>
+ 			<th align="left">Real Time</th>
+ 			<th align="left">Memory</th>
+ 			<th align="left">Date/Time</th>
+         </tr>
+  <tr>
+  <td class="optionTitle"> (compiler)</td><td>Complete</td>
+ <td>233</td>
+ <td>288</td>
+<td>0</td>
+<td>-</td>
+<td>04m:59s</td>
+<td>-</td>
+<td><font size="-1">9/18/2024</font><br/><font size="-2">11:51 AM</font></td>
+</tr> 
+
+ <tr>
+  <td class="optionTitle"> (premap)</td><td>Complete</td>
+ <td>70</td>
+ <td>69</td>
+<td>0</td>
+<td>0m:42s</td>
+<td>0m:42s</td>
+<td>653MB</td>
+<td><font size="-1">9/18/2024</font><br/><font size="-2">11:52 AM</font></td>
+</tr> 
+
+ <tr>
+  <td class="optionTitle"> (fpga_mapper)</td><td>Complete</td>
+ <td>3124</td>
+ <td>5339</td>
+<td>0</td>
+<td>01m:18s</td>
+<td>05m:44s</td>
+<td>655MB</td>
+<td><font size="-1">9/18/2024</font><br/><font size="-2">11:57 AM</font></td>
+</tr> 
+
+<tr>
+  <td class="optionTitle">Multi-srs Generator</td>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>00m:17s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">9/18/2024</font><br/><font size="-2">11:51 AM</font></td> 		</tbody>
+     </table>
+ <br> 
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Area Summary</th></tr></thead>
+<tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
+ </tfoot> 
+ <tbody> <tr> 
+<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>34077</td>
+<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>91</td>
+</tr>
+<tr> 
+<td title ="Total Block RAMs used" class="optionTitle" align="left">Block RAMs
+(v_ram)</td> <td>96</td>
+<td title ="Total LUTs used" class="optionTitle" align="left">LUTs
+(total_luts)</td> <td>30834</td>
+</tr>
+ 
+</tbody>
+    </table><br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Timing Summary</th></tr></thead>
+<tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
+ </tfoot> 
+<tbody> 
+   <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
+<tr> <td  align="left">clk_125_in</td><td  align="left">125.0 MHz</td><td  align="left">263.0 MHz</td><td  align="left">4.197</td></tr> 
+<tr> <td  align="left">cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">290.1 MHz</td><td  align="left">1.554</td></tr> 
+<tr> <td  align="left">cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">516.9 MHz</td><td  align="left">3.066</td></tr> 
+<tr> <td  align="left">lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">177.2 MHz</td><td  align="left">-0.644</td></tr> 
+<tr> <td  align="left">osc0_ipgen_lscc_osc_400s_40s_40_LAV-AT_LAV-AT-E70ES1|clk_out_o_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">322.3 MHz</td><td  align="left">1.897</td></tr> 
+<tr> <td  align="left">pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">110.9 MHz</td><td  align="left">-4.015</td></tr> 
+<tr> <td  align="left">pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">111.7 MHz</td><td  align="left">-3.951</td></tr> 
+<tr> <td  align="left">pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos_o_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">442.2 MHz</td><td  align="left">2.739</td></tr> 
+<tr> <td  align="left">pll0_ipgen_lscc_pll_Z262_layer0|clkout_testclk_o_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">419.6 MHz</td><td  align="left">2.617</td></tr> 
+<tr> <td  align="left">pll_refclk_i</td><td  align="left">100.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">soc_golden_gsrd|rgmii_rxc_i</td><td  align="left">200.0 MHz</td><td  align="left">164.8 MHz</td><td  align="left">-1.067</td></tr> 
+<tr> <td  align="left">tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric_noreg_1s_9s|_FWFT_ENABLE_re_r_derived_clock</td><td  align="left">200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">System</td><td  align="left">200.0 MHz</td><td  align="left">167.4 MHz</td><td  align="left">-0.973</td></tr> 
+</tbody> 
+ </table>
+<br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Optimizations Summary</th></tr></thead>
+ <tbody> <tr> 
+<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>10 / 1</td>
+<td class="optionTitle"></td><td></td></tr> 
+</tbody>
+    </table><br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="5">Compile Points Summary</th></tr></thead>
+<tbody> 
+   <tr><th class="optionTitle" align= "left ">Name</th><th class="optionTitle" align= "left ">Status</th><th class="optionTitle" align= "left ">Reason</th><th class="optionTitle" align= "left ">Real Time</th><th class="optionTitle" align= "left ">CPU Time</th></tr> 
+<tr> <td  align="left">qspi0_ipgen_qspi_flash_controller_core_Z266_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:01m:10s</td><td  align="left">0h:01m:10s</td></tr> 
+<tr> <td  align="left">mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:01m:42s</td><td  align="left">0h:01m:41s</td></tr> 
+<tr> <td  align="left">soc_golden_gsrd</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:02m:13s</td><td  align="left">0h:02m:12s</td></tr> 
+<tr> <td  align="left">lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng_Z172_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:00m:27s</td><td  align="left">0h:00m:28s</td></tr> 
+<tr> <td  align="left">cpu0_1s_1s_0_1073741824_0_1073741824_0s_0_1s_0_143_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:02m:49s</td><td  align="left">0h:02m:47s</td></tr> 
+<tr> <td  align="left">axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:35s</td><td  align="left">0h:00m:36s</td></tr> 
+<tr> <td  align="left">lpddr4_mc_contr0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:58s</td><td  align="left">0h:00m:57s</td></tr> 
+<tr> <td  align="left">lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_iface_top_Z161_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:00m:41s</td><td  align="left">0h:00m:41s</td></tr> 
+<tr> <td  align="left">lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:01m:05s</td><td  align="left">0h:01m:04s</td></tr> 
+<tr> <td  align="left">sgdma0_ipgen_sgdmac_core_Z281_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:39s</td><td  align="left">0h:00m:39s</td></tr> 
+<tr> <td  align="left">axi4_interconnect0_ipgen_lscc_sync_axi_interconnect_Z12_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:03m:06s</td><td  align="left">0h:03m:03s</td></tr> 
+<tr> <td  align="left">axi4_interconnect1_ipgen_lscc_sync_axi_interconnect_Z116_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:01m:16s</td><td  align="left">0h:01m:15s</td></tr> 
+</tbody> 
+ </table>
+<br>
+<br> 
+</td></tr></table></body> 
+ </html>

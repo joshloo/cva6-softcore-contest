@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="ap6a00b" date="2024 08 24 00:05:23" device="LAV-AT-E70ES1" device_int="ap6a400be" family="LAV-AT" gen_platform="Propel" gen_platform_version="2024.1.2406150513_p" generator="ipgen" library="ip" module="mc_avant" name="lpddr4_mc_contr0" operation="Commercial" package="LFG1156" package_int="LFG1156" partnumber="LAV-AT-E70ES1-1LFG1156C" source_format="Verilog" speed="1" speed_int="1" vendor="latticesemi.com" version="2.2.0">
+ <Package>
+  <File modified="2024 08 24 00:05:21" name="rtl/lpddr4_mc_contr0_bb.v" type="black_box_verilog"/>
+  <File modified="2024 08 24 00:05:21" name="lpddr4_mc_contr0.cfg" type="cfg"/>
+  <File modified="2024 08 24 00:05:21" name="misc/lpddr4_mc_contr0_tmpl.v" type="template_verilog"/>
+  <File modified="2024 08 24 00:05:21" name="misc/lpddr4_mc_contr0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 08 24 00:05:23" name="rtl/lpddr4_mc_contr0.sv" type="top_level_system_verilog"/>
+  <File modified="2024 08 24 00:05:23" name="constraints/constraint.sdc" stage="lse:all,synplify:all" type="tcl_constraints"/>
+  <File modified="2024 08 24 00:05:23" name="constraints/lpddr4_mc_contr0.ldc" type="timing_constraints"/>
+  <File modified="2024 08 24 00:05:23" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:05:23" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:05:23" name="eval/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:05:23" name="eval/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:05:23" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 08 24 00:05:23" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/ddr4/arch_defines.v" type="testbench_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/ddr4/arch_package.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/ddr4/ddr4_memory_instance.svh" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/ddr4/ddr4_model.svp" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/ddr4/interface.svh" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:29" name="testbench/ddr4/MemoryArray.svp" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/ddr4/proj_package.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:29" name="testbench/ddr4/StateTable.svp" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:29" name="testbench/ddr4/StateTableCore.svp" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/ddr4/timing_tasks.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/debug_c_code.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/delay_1dir.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/dqs_grp_delay.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/lpddr4/lpddr4_memory_instance.vh" type="testbench"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/lpddr4/lpddr4_x16_delay.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="testbench/lpddr4/z19m_2gx16_4266_20210604_ms.svp" type="testbench_system_verilog"/>
+  <File modified="2024 08 24 07:05:23" name="testbench/tb_top.sv" type="testbench_system_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/apb2init.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/async_reset_sync_deassert.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lpddr4_mc_async_fifo.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lpddr4_mc_axi_iface_top.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lpddr4_mc_axi_slv_rd.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lpddr4_mc_axi_slv_rd_rsp.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lpddr4_mc_axi_slv_wr.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lpddr4_mc_sync_fifo.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lscc_fifo_fwft.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/axi_bridge/lscc_ram_dp.v" type="eval_verilog"/>
+  <File modified="2024 08 24 07:05:23" name="eval/clock_constraint.sdc" type="eval"/>
+  <File modified="2024 08 24 07:05:23" name="eval/constraint.pdc" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/copy_bin_file.py" type="eval"/>
+  <File modified="2024 08 24 07:05:23" name="eval/eval_top.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/kitcar.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/pll0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/select_protocol.py" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/ahbl0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/ahbl2apb0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/apb0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/cpu0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/ctrl_fifo.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/eval_mem0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/eval_mem0_sim.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/gpio0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_axi4_m_csr.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_axi4_m_rd.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_axi4_m_wr.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_axi4_perf_calc.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_axi4_traffic_gen.sv" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_lfsr.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_osc.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/lscc_ram_dp_true.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/mc_axi4_traffic_gen.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/memc_apb.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/osc0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/sysmem0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/traffic_gen/uart0.v" type="eval_verilog"/>
+  <File modified="2024 08 13 14:40:27" name="eval/VexRiscv.v_toplevel_RegFilePlugin_regFile.bin" type="eval"/>
+  <File modified="2024 08 13 14:40:27" name="driver/ddr_mc_avant.c" type="driver_source"/>
+  <File modified="2024 08 13 14:40:27" name="driver/ddr_mc_avant.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

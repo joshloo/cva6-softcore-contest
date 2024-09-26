@@ -1,0 +1,516 @@
+# Wed Sep 18 11:52:34 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: C:\lscc\radiant\2024.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 101R, Built May 14 2024 08:42:08, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 187MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 202MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 202MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 192MB peak: 202MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 193MB peak: 202MB)
+
+
+
+
+@N: MF105 |Performing bottom-up mapping of Top level view:work.soc_golden_gsrd(verilog) 
+
+Start loading ILMs (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 434MB peak: 434MB)
+
+
+Start creating ILM for FPGA axi4_interconnect0_ipgen_lscc_sync_axi_interconnect_Z12_layer0 (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 457MB peak: 457MB)
+
+
+Finished creating ILM for FPGA axi4_interconnect0_ipgen_lscc_sync_axi_interconnect_Z12_layer0 (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 457MB peak: 457MB)
+
+
+Start creating ILM for FPGA axi4_interconnect1_ipgen_lscc_sync_axi_interconnect_Z116_layer0 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 435MB peak: 458MB)
+
+
+Finished creating ILM for FPGA axi4_interconnect1_ipgen_lscc_sync_axi_interconnect_Z116_layer0 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 436MB peak: 458MB)
+
+
+Start creating ILM for FPGA cpu0_1s_1s_0_1073741824_0_1073741824_0s_0_1s_0_143_layer0 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 422MB peak: 458MB)
+
+
+Finished creating ILM for FPGA cpu0_1s_1s_0_1073741824_0_1073741824_0s_0_1s_0_143_layer0 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 422MB peak: 458MB)
+
+
+Start creating ILM for FPGA lpddr4_mc_contr0 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 431MB peak: 458MB)
+
+
+Finished creating ILM for FPGA lpddr4_mc_contr0 (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 431MB peak: 458MB)
+
+
+Start creating ILM for FPGA mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0 (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 400MB peak: 458MB)
+
+
+Finished creating ILM for FPGA mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0 (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 400MB peak: 458MB)
+
+
+Start creating ILM for FPGA qspi0_ipgen_qspi_flash_controller_core_Z266_layer0 (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 381MB peak: 458MB)
+
+
+Finished creating ILM for FPGA qspi0_ipgen_qspi_flash_controller_core_Z266_layer0 (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 381MB peak: 458MB)
+
+
+Start creating ILM for FPGA sgdma0_ipgen_sgdmac_core_Z281_layer0 (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 371MB peak: 458MB)
+
+
+Finished creating ILM for FPGA sgdma0_ipgen_sgdmac_core_Z281_layer0 (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 371MB peak: 458MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 371MB peak: 458MB)
+
+
+Begin compile point sub-process log
+
+@N: MF106 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Mapping Top level view:work.soc_golden_gsrd(verilog) because 
+		 user requested clean build.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 371MB peak: 458MB)
+
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_7 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_7 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_8 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_en_o_8 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":777:36:777:41|Tristate driver gpio_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":777:36:777:41|Tristate driver gpio_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) on net gpio_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z145_layer0(verilog)) has its enable tied to GND.
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_8 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_7 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_6 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_5 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_4 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_3 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_2 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_o_1 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_8 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_7 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_6 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_5 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_4 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_3 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_2 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Net gpio_en_o_1 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v":70:7:70:52|Net tse_mdi_i_o has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net rgmii_mdc_o has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net rgmii_mdio_o has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net rgmii_txc_o has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net pll0_inst_clkos2_o_net has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[0] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[1] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[2] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[3] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[4] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[5] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[6] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[7] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[8] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[9] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[10] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[11] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[12] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[13] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[14] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[15] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[16] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[17] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[18] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[19] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[20] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[21] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[22] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[23] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[24] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[25] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[26] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[27] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[28] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[29] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[30] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net apb_interconnect0_inst_APB_M03_interconnect_PRDATA[31] has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net pll0_inst_clkos_o_net has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_1 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_2 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_3 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_4 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_5 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_6 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_7 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_8 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_9 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_10 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_11 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_12 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_13 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_14 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_15 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_16 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_17 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_18 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_19 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_20 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_21 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_22 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_23 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_24 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_25 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_26 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_27 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_28 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_29 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_30 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_31 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_32 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_33 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_34 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_35 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_36 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_37 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_38 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_39 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_40 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_41 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_42 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_43 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_44 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_45 has multiple drivers .
+@W: BN161 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v":54:7:54:21|Net tse_mac0_inst.N_46 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\soc_golden_gsrd\soc_golden_gsrd.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:22s; Memory used current: 370MB peak: 458MB)
+
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":321:16:321:21|Removing sequential instance gpio0_inst.lscc_gpio_inst.genblk2\.lscc_apb2lmmi_0.genblk1\.lmmi_offset_o[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":321:16:321:21|Removing sequential instance gpio0_inst.lscc_gpio_inst.genblk2\.lscc_apb2lmmi_0.genblk1\.lmmi_offset_o[0] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance mbconfig0_inst.fpga_multiboot_config_inst.state[0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance mbconfig0_inst.fpga_multiboot_config_inst.state[1].
+@N: FX493 |Applying initial value "0" on instance mbconfig0_inst.fpga_multiboot_config_inst.state[2].
+@N: FX493 |Applying initial value "0" on instance mbconfig0_inst.fpga_multiboot_config_inst.state[3].
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":2010:16:2010:21|Removing instance pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init.wdata[2] because it is equivalent to instance pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init.wdata[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":2010:16:2010:21|Removing instance pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init.wdata[1] because it is equivalent to instance pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init.wdata[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":2010:16:2010:21|Removing instance pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init.wdata[4] because it is equivalent to instance pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init.wdata[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: FX493 |Applying initial value "0" on instance u_arbiter.RoundRobinArbitration\.u_read_rr_arbiter.rr_arb_ar_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_w_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance u_arbiter.RoundRobinArbitration\.u_write_rr_arbiter.rr_arb_aw_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[1].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[2].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[3].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[4].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[5].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[6].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[7].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[8].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[9].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[10].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[11].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[12].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[13].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[18].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[64].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[65].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[1].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[2].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[3].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[4].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[5].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[6].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[7].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[8].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[9].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[10].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[11].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[12].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[13].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[18].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[27].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[28].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[29].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[34].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[35].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[36].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[37].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[38].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[64].
+@N: FX493 |Applying initial value "0" on instance genblk2\[0\]\.u_fifo_intf.ReadWriteAccessWriteCdc\.aw_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[65].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[1].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[2].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[3].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[4].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[5].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[6].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[7].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[8].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[9].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[10].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[11].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[12].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[13].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[14].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[15].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[16].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[17].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[18].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[19].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[20].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[21].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[22].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[23].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[24].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[25].
+@N: FX493 |Applying initial value "0" on instance genblk2\[1\]\.u_fifo_intf.ReadWriteAccessReadCdc\.ar_mpmc_fifo.genblk1\.genblk1\.genblk1\.sync_fifo.u_fifo.u_fifo.data_raw_r[26].
+
+Only the first 100 messages of id 'FX493' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\soc_golden_gsrd\soc_golden_gsrd.srr -id FX493' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {FX493} -count unlimited' in the Tcl shell.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[6] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[7] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[8] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[9] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[10] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[11] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[12] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[13] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[14] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[15] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_pipe_r[16] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_pipe_r[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[6] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[7] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[8] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[10] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[11] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[12] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[14] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[15] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[16] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[9] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_wrap_lower_r[13] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.araddr_in_r[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: FO126 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v":155:4:155:9|Generating RAM rx_ddr_out_dddd_CR9[9:0]
+@N: FO126 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v":4915:20:4915:25|Generating RAM distmem[7:0]
+@N: MF179 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v":4251:27:4251:61|Found 11 by 11 bit equality operator ('==') full_cmp_w (in view: work.tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_soft_fifo_dc_Z342_layer0(verilog))
+@N: MF179 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v":4511:28:4511:54|Found 12 by 12 bit equality operator ('==') empty_cmp_w (in view: work.tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_soft_fifo_dc_Z342_layer0(verilog))
+@N: MF135 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3368:4:3368:9|RAM uart0_inst.lscc_uart_inst.u_intface.tx_fifo_inst\.TX_FIFO.genblk1\.tx_fifo_inst.u_mem0.fifo0._FABRIC\.u_fifo.mem[7:0] is 16 words by 8 bits.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3011:4:3011:9|Removing sequential instance MASTER_ASYNC\.wr_addr_p1cmp_r[3] (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3011:4:3011:9|Removing sequential instance MASTER_ASYNC\.wr_addr_p1cmp_r[2] (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3011:4:3011:9|Removing sequential instance MASTER_ASYNC\.wr_addr_p1cmp_r[1] (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MF179 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2952:71:2952:99|Found 5 by 5 bit equality operator ('==') un1_MASTER_ASYNC\.rd_addr_p1cmp_r (in view: work.lscc_soft_fifo_Z346_layer0(verilog))
+@N: MO231 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1590:4:1590:9|Found counter in view:work.uart0_ipgen_lscc_uart_rxcver_8s_1s_5s_1_2_4_8_16_MachXO3D(verilog) instance databit_recved_num[3:0] 
+@N: MO231 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1590:4:1590:9|Found counter in view:work.uart0_ipgen_lscc_uart_rxcver_8s_1s_5s_1_2_4_8_16_MachXO3D(verilog) instance counter[15:0] 
+@N: MF179 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1448:31:1448:51|Found 16 by 16 bit equality operator ('==') counter_eq_div_2 (in view: work.uart0_ipgen_lscc_uart_rxcver_8s_1s_5s_1_2_4_8_16_MachXO3D(verilog))
+@N: MO231 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1287:4:1287:9|Found counter in view:work.uart0_ipgen_lscc_uart_rxcver_fifo(verilog) instance wr_pointer1[3:0] 
+@N: MO231 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1287:4:1287:9|Found counter in view:work.uart0_ipgen_lscc_uart_rxcver_fifo(verilog) instance rd_pointer1[3:0] 
+@N: MF135 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3368:4:3368:9|RAM uart0_inst.lscc_uart_inst.u_rxcver.genblk2\.RX_FIFO.genblk1\.rx_fifo_inst.u_mem0.fifo0._FABRIC\.u_fifo.mem[7:0] is 16 words by 8 bits.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3011:4:3011:9|Removing sequential instance MASTER_ASYNC\.wr_addr_p1cmp_r[3] (in view: work.lscc_soft_fifo_Z350_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3011:4:3011:9|Removing sequential instance MASTER_ASYNC\.wr_addr_p1cmp_r[2] (in view: work.lscc_soft_fifo_Z350_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3011:4:3011:9|Removing sequential instance MASTER_ASYNC\.wr_addr_p1cmp_r[1] (in view: work.lscc_soft_fifo_Z350_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MF179 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2952:71:2952:99|Found 5 by 5 bit equality operator ('==') un1_MASTER_ASYNC\.rd_addr_p1cmp_r (in view: work.lscc_soft_fifo_Z350_layer0(verilog))
+@N: MO231 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2107:16:2107:21|Found counter in view:work.uart0_ipgen_lscc_uart_txmitt_8s_1s_7s_1_2_4_8_16_32_64(verilog) instance fifo_fsm\.counter[15:0] 
+@N: MF794 |RAM rx_ddr_out_dddd_CR9[9:0] required 2 registers during mapping 
+@N: MF794 |RAM mem[7:0] required 128 registers during mapping 
+@N: MF794 |RAM mem[7:0] required 128 registers during mapping 
+
+Starting factoring (Real Time elapsed 0h:01m:06s; CPU Time elapsed 0h:01m:05s; Memory used current: 388MB peak: 458MB)
+
+
+Finished factoring (Real Time elapsed 0h:01m:08s; CPU Time elapsed 0h:01m:07s; Memory used current: 402MB peak: 458MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_8[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_7_mod[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_6_mod[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_5_mod[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_4_mod[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_3_mod[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_2_mod[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_1_mod[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0_0[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r_0[8:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_rd_cnt_r[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":3125:16:3125:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk6.mem_raddr_r_1[31:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk6.mem_raddr_r_0[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":3125:16:3125:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk6.mem_raddr_r_0[31:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk6.mem_raddr_r[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2662:16:2662:21|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_arlen_r_0[7:0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk2.mem_arlen_r[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2164:4:2164:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.awburst_pipe_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.arburst_pipe_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2131:4:2131:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.awburst_in_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.arburst_in_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:01m:28s; CPU Time elapsed 0h:01m:27s; Memory used current: 474MB peak: 489MB)
+
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[17] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[18] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[19] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[20] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[21] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[22] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[23] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[24] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[25] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[26] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[27] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[28] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[29] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[30] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[31] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_0_0[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[0] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[1] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[2] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[3] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[4] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[5] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[6] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[7] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[8] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[9] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[10] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[11] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[12] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[13] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[14] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[15] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r_mod[16] because it is equivalent to instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.mem_waddr_r[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: FA113 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2689:22:2689:58|Pipelining module un6_rlast_w. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2662:16:2662:21|Pushed in register mem_arlen_r.
+@N: MF169 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Pushed in register arlen_pipe_r[7:0].
+@N: MF169 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Pushed in register arlen_in_r[7:0].
+@N: MF169 :|Pushed in register NoName.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 476MB peak: 489MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:43s; CPU Time elapsed 0h:01m:42s; Memory used current: 477MB peak: 489MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:44s; CPU Time elapsed 0h:01m:43s; Memory used current: 477MB peak: 489MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:01m:50s; CPU Time elapsed 0h:01m:48s; Memory used current: 477MB peak: 489MB)
+
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":3169:4:3169:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_boundary_chk_r (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_pipe_r[5] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_pipe_r[4] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_pipe_r[3] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_pipe_r[2] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_pipe_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2568:4:2568:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_pipe_r[0] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_r[5] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_r[4] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_r[3] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_r[2] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2527:4:2527:9|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_wrap_lower_r[0] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+
+Finished technology mapping (Real Time elapsed 0h:01m:55s; CPU Time elapsed 0h:01m:53s; Memory used current: 512MB peak: 552MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:01m:55s		    -3.73ns		6957 /      7597
+   2		0h:01m:55s		    -3.73ns		6908 /      7597
+   3		0h:01m:56s		    -3.92ns		6917 /      7597
+   4		0h:01m:56s		    -3.92ns		6917 /      7597
+   5		0h:01m:56s		    -3.92ns		6916 /      7597
+   6		0h:01m:56s		    -3.92ns		6916 /      7597
+@N: FX271 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2768:16:2768:21|Replicating instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.genblk3\.axi_rvalid_r (in view: work.soc_golden_gsrd(verilog)) with 7 loads 1 time to improve timing.
+@N: FX271 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2718:4:2718:9|Replicating instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.axi_rlast_r (in view: work.soc_golden_gsrd(verilog)) with 7 loads 1 time to improve timing.
+Timing driven replication report
+Added 7 Registers via timing driven replication
+Added 5 LUTs via timing driven replication
+
+   7		0h:02m:00s		    -3.67ns		6921 /      7604
+   8		0h:02m:00s		    -3.13ns		6925 /      7604
+   9		0h:02m:00s		    -3.59ns		6927 /      7604
+  10		0h:02m:00s		    -3.65ns		6931 /      7604
+  11		0h:02m:01s		    -3.09ns		6931 /      7604
+  12		0h:02m:01s		    -3.83ns		6932 /      7604
+  13		0h:02m:01s		    -3.65ns		6933 /      7604
+  14		0h:02m:01s		    -3.68ns		6931 /      7604
+  15		0h:02m:01s		    -3.80ns		6931 /      7604
+@N: FX271 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v":2645:16:2645:21|Replicating instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.genblk2\.mem_rd_cnt_r[0] (in view: work.soc_golden_gsrd(verilog)) with 5 loads 1 time to improve timing.
+Added 3 Registers via timing driven replication
+Added 3 LUTs via timing driven replication
+
+
+  16		0h:02m:02s		    -3.59ns		6935 /      7607
+  17		0h:02m:02s		    -3.59ns		6936 /      7607
+  18		0h:02m:02s		    -3.62ns		6937 /      7607
+  19		0h:02m:02s		    -3.13ns		6937 /      7607
+  20		0h:02m:02s		    -3.56ns		6938 /      7607
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:02m:05s; CPU Time elapsed 0h:02m:04s; Memory used current: 512MB peak: 552MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:02m:08s; CPU Time elapsed 0h:02m:07s; Memory used current: 514MB peak: 552MB)
+
+
+End compile point sub-process log
+
+Writing compile point status file C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\soc_golden_gsrd\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                Status       Reason      
+---------------------------------------------
+soc_golden_gsrd     Remapped     User request
+=============================================
+
+Process took 0h:02m:14s realtime, 0h:02m:12s cputime
+# Wed Sep 18 11:54:48 2024
+
+###########################################################]

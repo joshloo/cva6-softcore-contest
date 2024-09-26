@@ -1,0 +1,70 @@
+@N: MF472 |Synthesis running in Automatic Compile Point mode
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: FX493 |Applying initial value "0" on instance inputArea_target.
+@N: FX493 |Applying initial value "0000" on instance jtag_tap_fsm_state[3:0].
+@N: FX493 |Applying initial value "1111111111111111111111111111111111111111111111111111111111111111" on instance clint_cmp[63:0].
+@N: FX493 |Applying initial value "010" on instance RESET_SYNC\.ahbl_hsize_p_r[2:0].
+@N: FX493 |Applying initial value "00000000000000" on instance RESET_SYNC\.rd_prev_r[15:2].
+@N: FX493 |Applying initial value "0000000000000000" on instance RESET_SYNC\.wr_addr_r[15:0].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.ahbl_hresp_r.
+@N: FX493 |Applying initial value "1" on instance RESET_SYNC\.ahbl_hreadyout_ext_r.
+@N: FX493 |Applying initial value "0000" on instance state[3:0].
+@N: FX493 |Applying initial value "0000" on instance rd_pointer_prev[3:0].
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v":4299:8:4299:13|Removing sequential instance \.full_ext_r (in view: work.tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_soft_fifo_dc_Z342_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v":5080:4:5080:9|Removing sequential instance rstn_sync[1:0] (in view: work.tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_reset_async(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_28 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_26 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_24 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_22 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_20 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_18 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_16 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_14 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_12 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance G_10 (in view: work.tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge_191_SCLK_CENTERED(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2024.1\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":756:2:756:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z318_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2024.1\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":771:2:771:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z318_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3200:12:3200:17|Removing sequential instance MISC\.AEmpty\.genblk4\.almost_empty_ext_r (in view: work.lscc_soft_fifo_Z350_layer0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":121:2:121:7|Removing instance u_fwft (in view: work.lscc_fifo_Z351_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2479:16:2479:21|Removing sequential instance fifo_thrrdy\.thr_ready (in view: work.uart0_ipgen_lscc_uart_txmitt_8s_1s_7s_1_2_4_8_16_32_64(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3200:12:3200:17|Removing sequential instance MISC\.AEmpty\.genblk4\.almost_empty_ext_r (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3153:12:3153:17|Removing sequential instance MISC\.AFull\.genblk2\.almost_full_ext_r (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3101:8:3101:13|Removing sequential instance MISC\.ASYNC_CON\.wr_flag_addr_p1_r[4:0] (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffpatr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3101:8:3101:13|Removing sequential instance MISC\.ASYNC_CON\.rd_flag_addr_p1_r[4:0] (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffpatr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3101:8:3101:13|Removing sequential instance MISC\.ASYNC_CON\.empty_flag_r (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3101:8:3101:13|Removing sequential instance MISC\.ASYNC_CON\.full_flag_r (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3101:8:3101:13|Removing sequential instance MISC\.ASYNC_CON\.wr_flag_addr_r[4:0] (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3101:8:3101:13|Removing sequential instance MISC\.ASYNC_CON\.rd_flag_addr_r[4:0] (in view: work.lscc_soft_fifo_Z346_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":121:2:121:7|Removing instance u_fwft (in view: work.lscc_fifo_Z347_layer0(verilog)) because it does not drive other instances.
+@N: MO225 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":321:16:321:21|There are no possible illegal states for state machine genblk1\.bus_sm_cs[3:0] (in view: work.gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s(verilog)); safe FSM implementation is not required.
+@N: FX493 |Applying initial value "1" on instance RESET_SYNC\.bridge_sm_r[0].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[1].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[2].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[3].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[4].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[5].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[6].
+@N: FX493 |Applying initial value "1" on instance RESET_SYNC\.bridge_sm_r[0].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[1].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[2].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[3].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[4].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[5].
+@N: FX493 |Applying initial value "0" on instance RESET_SYNC\.bridge_sm_r[6].
+@N: MO225 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1021:16:1021:21|There are no possible illegal states for state machine fifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z344_layer0(verilog)); safe FSM implementation is not required.
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+@N: FX1185 |Applying syn_allowed_resources blockrams=5 on compile point axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=43 on compile point axi4_interconnect0_ipgen_lscc_sync_axi_interconnect_Z12_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=24 on compile point axi4_interconnect1_ipgen_lscc_sync_axi_interconnect_Z116_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=19 on compile point cpu0_1s_1s_0_1073741824_0_1073741824_0s_0_1s_0_143_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=10 on compile point lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_iface_top_Z161_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=2 on compile point lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng_Z172_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=18 on compile point lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=19 on compile point lpddr4_mc_contr0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=37, ultrarams=0 on compile point mpmc0_ipgen_lscc_mpmc_axi_Z235_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=1 on compile point qspi0_ipgen_qspi_flash_controller_core_Z266_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=4, ultrarams=0 on compile point sgdma0_ipgen_sgdmac_core_Z281_layer0 
+@N: FX1184 |Applying syn_allowed_resources blockrams=990 on top level netlist soc_golden_gsrd 
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

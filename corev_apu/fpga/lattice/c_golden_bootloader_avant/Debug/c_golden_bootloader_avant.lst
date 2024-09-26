@@ -1,0 +1,3275 @@
+
+c_golden_bootloader_avant.elf:     file format elf32-littleriscv
+c_golden_bootloader_avant.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00001ca0 memsz 0x000027b0 flags rwx
+
+Sections:
+Idx Name           Size      VMA       LMA       File off  Algn  Flags
+  0 .text          00001644  00000000  00000000  00001000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .gprof         00000000  00001644  00001644  00002ca0  2**2  CONTENTS
+  2 .ctors         00000000  00001644  00001644  00002ca0  2**2  CONTENTS
+  3 .dtors         00000000  00001644  00001644  00002ca0  2**2  CONTENTS
+  4 .rodata        00000648  00001644  00001644  00002644  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .data          00000014  00001c8c  00001c8c  00002c8c  2**2  CONTENTS, ALLOC, LOAD, DATA
+  6 .bss           00000108  00001ca0  00001ca0  00002ca0  2**2  ALLOC
+  7 .heap          00000000  00001da8  00001da8  00002ca0  2**3  CONTENTS
+  8 .stack         00000a00  00001db0  00001db0  00002ca0  2**4  ALLOC
+  9 .debug_info    00002961  00000000  00000000  00002ca0  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_abbrev  00000c76  00000000  00000000  00005601  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_aranges 000002a0  00000000  00000000  00006277  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_ranges  00000220  00000000  00000000  00006517  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_macro   00004134  00000000  00000000  00006737  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_line    000036f1  00000000  00000000  0000a86b  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_str     000118b2  00000000  00000000  0000df5c  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .comment       00000033  00000000  00000000  0001f80e  2**0  CONTENTS, READONLY
+ 17 .debug_frame   00000964  00000000  00000000  0001f844  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00001644 l    d  .gprof	00000000 .gprof
+00001644 l    d  .ctors	00000000 .ctors
+00001644 l    d  .dtors	00000000 .dtors
+00001644 l    d  .rodata	00000000 .rodata
+00001c8c l    d  .data	00000000 .data
+00001ca0 l    d  .bss	00000000 .bss
+00001da8 l    d  .heap	00000000 .heap
+00001db0 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./src/bsp/driver/riscv_rtos/start.o
+00000001 l       *ABS*	00000000 MAXNUM_CPU
+000000be l       .text	00000000 park
+0000008e l       .text	00000000 bss_init
+0000009e l       .text	00000000 bss_loop
+000000aa l       .text	00000000 bss_done
+00000000 l    df *ABS*	00000000 uart.c
+00000000 l    df *ABS*	00000000 iob.c
+00001ca0 l     O .bss	00000004 s_putc_func
+00001ca4 l     O .bss	00000004 s_getc_func
+00001ca8 l     O .bss	00000004 s_flush_func
+000001e8 l     F .text	0000003c iob_putc
+00000224 l     F .text	00000030 iob_getc
+00000254 l     F .text	00000030 iob_flush
+00001c8c l     O .data	00000014 __stdio
+00000000 l    df *ABS*	00000000 reg_access.c
+00000000 l    df *ABS*	00000000 qspi_flash_cntl.c
+00001cac l     O .bss	00000004 flash_cntl
+00000000 l    df *ABS*	00000000 ddr_mc_avant.c
+00001cb0 l     O .bss	00000004 lpddr4_inst
+00000000 l    df *ABS*	00000000 gpio.c
+00000000 l    df *ABS*	00000000 crc16.c
+00001798 l     O .rodata	00000200 crc16tab
+00000000 l    df *ABS*	00000000 main.c
+00001cb8 l     O .bss	00000010 qspi_core
+00000b9e l     F .text	0000002e lscc_uart_putc
+00000bcc l     F .text	00000014 lscc_uart_getc
+00000be0 l     F .text	00000014 lscc_uart_flush
+00000bf4 l     F .text	00000068 bsp_init
+00000000 l    df *ABS*	00000000 printf.c
+00000000 l    df *ABS*	00000000 puts.c
+00000000 l    df *ABS*	00000000 vfiprintf.c
+000010d6 l     F .text	0000003e __ultoa_invert
+00000000 l    df *ABS*	00000000 strnlen.c
+00000000 l    df *ABS*	00000000 fputc.c
+00001074 g     F .text	00000026 printf
+000015ec g     F .text	00000028 .hidden __riscv_save_8
+00000284 g     F .text	0000002a reg_32b_write
+00001638 g     F .text	0000000c .hidden __riscv_restore_3
+000003d4 g     F .text	00000038 qspi_trans_start
+00001624 g     F .text	00000020 .hidden __riscv_restore_10
+000015ec g     F .text	00000028 .hidden __riscv_save_11
+00001644 g       .text	00000000 _etext
+00000a34 g     F .text	0000016a crc16_ccitt
+00001644 g       .ctors	00000000 _ctors_end
+00001638 g     F .text	0000000c .hidden __riscv_restore_2
+000002da g     F .text	00000046 reg_32b_modify
+0000109a g     F .text	0000003c puts
+00000772 g     F .text	0000002a lpddr4_read32
+00001ca0 g       .bss	00000000 _bss_start
+000015e4 g     F .text	00000030 .hidden __riscv_save_12
+0000040c g     F .text	0000004c qspi_flash_cntl_write
+000002ae g     F .text	0000002c reg_32b_read
+00001114 g     F .text	00000498 __i_vfprintf
+00001624 g     F .text	00000020 .hidden __riscv_restore_11
+00001614 g     F .text	0000000c .hidden __riscv_save_1
+00001638 g     F .text	0000000c .hidden __riscv_restore_0
+000015fa g     F .text	0000001a .hidden __riscv_save_7
+0000162e g     F .text	00000016 .hidden __riscv_restore_5
+000001b0 g     F .text	00000038 iob_init
+000015ac g     F .text	00000018 strnlen
+00000c7a g     F .text	000000ce qspi_init
+0000162e g     F .text	00000016 .hidden __riscv_restore_6
+00001da8 g       .bss	00000000 _bss_end
+00001cb4 g     O .bss	00000004 lpddr4_instance
+0000049c g     F .text	000001f2 qspi_flash_cntl_read_fifo_dis
+000015ec g     F .text	00000028 .hidden __riscv_save_9
+000015fa g     F .text	0000001a .hidden __riscv_save_4
+000006e0 g     F .text	0000005a reset_quad_mode
+000000c4 g     F .text	0000008a uart_init
+00001614 g     F .text	0000000c .hidden __riscv_save_3
+00000384 g     F .text	00000050 qspi_flash_cntl_init
+00001cc8 g     O .bss	00000058 uart_core_uart
+00000000 g       .text	00000000 _ftext
+00000000 g       .text	00000000 _start
+00001644 g       .ctors	00000000 _ctors_start
+0000068e g     F .text	00000052 qspi_flash_cntl_set_pkt_hdr
+00000d48 g     F .text	000001dc mdio_phy_init
+000015ec g     F .text	00000028 .hidden __riscv_save_10
+0000162e g     F .text	00000016 .hidden __riscv_restore_4
+00001624 g     F .text	00000020 .hidden __riscv_restore_8
+000015fa g     F .text	0000001a .hidden __riscv_save_6
+00000a00 g       *ABS*	00000000 _STACK_SIZE
+00001624 g     F .text	00000020 .hidden __riscv_restore_9
+0000162e g     F .text	00000016 .hidden __riscv_restore_7
+00000f24 g     F .text	00000150 main
+00000000 g       *ABS*	00000000 _HEAP_SIZE
+0000014e g     F .text	00000062 uart_putc
+000015c4 g     F .text	00000020 putc
+00000458 g     F .text	00000044 convert_endian
+000027b0 g       .stack	00000000 _stack_start
+00000c5c g     F .text	0000001e LPDDR_init
+00001d20 g     O .bss	00000088 gpio_inst
+000015c4 g     F .text	00000020 fputc
+00001614 g     F .text	0000000c .hidden __riscv_save_2
+0000073a g     F .text	00000038 lpddr4_write32
+00000320 g     F .text	0000002e reg_16b_write
+000015fa g     F .text	0000001a .hidden __riscv_save_5
+00000000 g     F *ABS*	000004f2 vfscanf
+0000079c g     F .text	000001c8 lpddr4_init
+00001620 g     F .text	00000024 .hidden __riscv_restore_12
+00001614 g     F .text	0000000c .hidden __riscv_save_0
+00001644  w    O .rodata	0000000c __iob
+00000964 g     F .text	000000d0 gpio_init
+00001638 g     F .text	0000000c .hidden __riscv_restore_1
+0000034e g     F .text	00000036 reg_16b_read
+00001644 g       .dtors	00000000 _dtors_start
+00001114 g     F .text	000004ee vfprintf
+
+
+
+Disassembly of section .text:
+
+00000000 <_ftext>:
+_ftext():
+       0:	00000093          	li	ra,0
+       4:	00000113          	li	sp,0
+       8:	00000193          	li	gp,0
+       c:	00000213          	li	tp,0
+      10:	00000293          	li	t0,0
+      14:	00000313          	li	t1,0
+      18:	00000393          	li	t2,0
+      1c:	00000413          	li	s0,0
+      20:	00000493          	li	s1,0
+      24:	00000513          	li	a0,0
+      28:	00000593          	li	a1,0
+      2c:	00000613          	li	a2,0
+      30:	00000693          	li	a3,0
+      34:	00000713          	li	a4,0
+      38:	00000793          	li	a5,0
+      3c:	00000813          	li	a6,0
+      40:	00000893          	li	a7,0
+      44:	00000913          	li	s2,0
+      48:	00000993          	li	s3,0
+      4c:	00000a13          	li	s4,0
+      50:	00000a93          	li	s5,0
+      54:	00000b13          	li	s6,0
+      58:	00000b93          	li	s7,0
+      5c:	00000c13          	li	s8,0
+      60:	00000c93          	li	s9,0
+      64:	00000d13          	li	s10,0
+      68:	00000d93          	li	s11,0
+      6c:	00000e13          	li	t3,0
+      70:	00000e93          	li	t4,0
+      74:	00000f13          	li	t5,0
+      78:	00000f93          	li	t6,0
+      7c:	f14022f3          	csrr	t0,mhartid
+      80:	8216                	mv	tp,t0
+      82:	02029e63          	bnez	t0,be <park>
+      86:	00002117          	auipc	sp,0x2
+      8a:	72a10113          	addi	sp,sp,1834 # 27b0 <_stack_start>
+
+0000008e <bss_init>:
+bss_init():
+      8e:	00002517          	auipc	a0,0x2
+      92:	c1250513          	addi	a0,a0,-1006 # 1ca0 <s_putc_func>
+      96:	00002597          	auipc	a1,0x2
+      9a:	d1258593          	addi	a1,a1,-750 # 1da8 <_bss_end>
+
+0000009e <bss_loop>:
+bss_loop():
+      9e:	00b50663          	beq	a0,a1,aa <bss_done>
+      a2:	00052023          	sw	zero,0(a0)
+      a6:	0511                	addi	a0,a0,4
+      a8:	bfdd                	j	9e <bss_loop>
+
+000000aa <bss_done>:
+bss_done():
+      aa:	08000293          	li	t0,128
+      ae:	300025f3          	csrr	a1,mstatus
+      b2:	00b2e2b3          	or	t0,t0,a1
+      b6:	30029073          	csrw	mstatus,t0
+      ba:	66b0006f          	j	f24 <main>
+
+000000be <park>:
+park():
+      be:	10500073          	wfi
+      c2:	bff5                	j	be <park>
+
+000000c4 <uart_init>:
+uart_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:173
+unsigned char uart_init(struct uart_instance *this_uart,
+			unsigned int base_addr,
+			unsigned int sys_clk,
+			unsigned int baud_rate,
+			unsigned char stop_bits, unsigned char data_width)
+{
+      c4:	7139                	addi	sp,sp,-64
+      c6:	de22                	sw	s0,60(sp)
+      c8:	0080                	addi	s0,sp,64
+      ca:	fca42e23          	sw	a0,-36(s0)
+      ce:	fcb42c23          	sw	a1,-40(s0)
+      d2:	fcc42a23          	sw	a2,-44(s0)
+      d6:	fcd42823          	sw	a3,-48(s0)
+      da:	86ba                	mv	a3,a4
+      dc:	873e                	mv	a4,a5
+      de:	87b6                	mv	a5,a3
+      e0:	fcf407a3          	sb	a5,-49(s0)
+      e4:	87ba                	mv	a5,a4
+      e6:	fcf40723          	sb	a5,-50(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:175
+	volatile struct uart_dev *dev;
+	if (NULL == this_uart) {
+      ea:	fdc42783          	lw	a5,-36(s0)
+      ee:	e399                	bnez	a5,f4 <uart_init+0x30>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:176
+		return 1;
+      f0:	4785                	li	a5,1
+      f2:	a891                	j	146 <uart_init+0x82>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:178
+	}
+	this_uart->base = base_addr;
+      f4:	fdc42783          	lw	a5,-36(s0)
+      f8:	fd842703          	lw	a4,-40(s0)
+      fc:	c3d8                	sw	a4,4(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:179
+	dev = (volatile struct uart_dev *) (this_uart->base);
+      fe:	fdc42783          	lw	a5,-36(s0)
+     102:	43dc                	lw	a5,4(a5)
+     104:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:182
+
+	/*initialize the instance data */
+	this_uart->base = base_addr;
+     108:	fdc42783          	lw	a5,-36(s0)
+     10c:	fd842703          	lw	a4,-40(s0)
+     110:	c3d8                	sw	a4,4(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:183
+	this_uart->sys_clk = sys_clk;
+     112:	fdc42783          	lw	a5,-36(s0)
+     116:	fd442703          	lw	a4,-44(s0)
+     11a:	c798                	sw	a4,8(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:184
+	this_uart->baudrate = baud_rate;
+     11c:	fdc42783          	lw	a5,-36(s0)
+     120:	fd042703          	lw	a4,-48(s0)
+     124:	cb98                	sw	a4,16(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:185
+	this_uart->databits = data_width;
+     126:	fce44703          	lbu	a4,-50(s0)
+     12a:	fdc42783          	lw	a5,-36(s0)
+     12e:	cbd8                	sw	a4,20(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:186
+	this_uart->stopbits = stop_bits;
+     130:	fcf44703          	lbu	a4,-49(s0)
+     134:	fdc42783          	lw	a5,-36(s0)
+     138:	cf98                	sw	a4,24(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:191
+
+	/* set the data-configuration */
+	//uart_config(this_uart, 8, 0, 0, 1);
+
+	this_uart->blockingTx = 1;
+     13a:	fdc42783          	lw	a5,-36(s0)
+     13e:	4705                	li	a4,1
+     140:	00e78f23          	sb	a4,30(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:218
+		pic_isr_register(this_uart->intrLevel, uart_isr, this_uart);	//uart_isr have two parameter!!!!!
+	}
+#endif
+
+	/* all done! */
+	return 0;
+     144:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:219
+}
+     146:	853e                	mv	a0,a5
+     148:	5472                	lw	s0,60(sp)
+     14a:	6121                	addi	sp,sp,64
+     14c:	8082                	ret
+
+0000014e <uart_putc>:
+uart_putc():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:291
+ * Returns 0 if no error
+ ***************************************************************
+*/
+unsigned char uart_putc(struct uart_instance *this_uart,
+			unsigned char ucChar)
+{
+     14e:	7179                	addi	sp,sp,-48
+     150:	d622                	sw	s0,44(sp)
+     152:	1800                	addi	s0,sp,48
+     154:	fca42e23          	sw	a0,-36(s0)
+     158:	87ae                	mv	a5,a1
+     15a:	fcf40da3          	sb	a5,-37(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:294
+	volatile unsigned char uiValue;
+	volatile struct uart_dev *dev;
+	if (NULL == this_uart) {
+     15e:	fdc42783          	lw	a5,-36(s0)
+     162:	e399                	bnez	a5,168 <uart_putc+0x1a>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:295
+		return 1;
+     164:	4785                	li	a5,1
+     166:	a089                	j	1a8 <uart_putc+0x5a>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:297
+	}
+	dev = (volatile struct uart_dev *) (this_uart->base);
+     168:	fdc42783          	lw	a5,-36(s0)
+     16c:	43dc                	lw	a5,4(a5)
+     16e:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:329
+	} else
+#endif
+	{
+		do {
+			/* if uart's ready to accept character, send immediately */
+			uiValue = dev->lsr;
+     172:	fec42783          	lw	a5,-20(s0)
+     176:	4bdc                	lw	a5,20(a5)
+     178:	0ff7f793          	zext.b	a5,a5
+     17c:	fef405a3          	sb	a5,-21(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:330
+			if (uiValue & UART_LSR_TX_RDY_MASK) {
+     180:	feb44783          	lbu	a5,-21(s0)
+     184:	0ff7f793          	zext.b	a5,a5
+     188:	0207f793          	andi	a5,a5,32
+     18c:	cb81                	beqz	a5,19c <uart_putc+0x4e>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:331
+				dev->rxtx = ucChar;
+     18e:	fdb44703          	lbu	a4,-37(s0)
+     192:	fec42783          	lw	a5,-20(s0)
+     196:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:332
+				return (0);
+     198:	4781                	li	a5,0
+     19a:	a039                	j	1a8 <uart_putc+0x5a>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:336
+			}
+
+			/* if non-blocking tx, return immediately */
+			if (this_uart->blockingTx == 0)
+     19c:	fdc42783          	lw	a5,-36(s0)
+     1a0:	01e7c783          	lbu	a5,30(a5)
+     1a4:	f7f9                	bnez	a5,172 <uart_putc+0x24>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:337
+				return (UART_ERR_WOULD_BLOCK);
+     1a6:	4785                	li	a5,1
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/uart/uart.c:344
+		} while (1);
+	}
+
+	/* all done */
+	return 0;
+}
+     1a8:	853e                	mv	a0,a5
+     1aa:	5432                	lw	s0,44(sp)
+     1ac:	6145                	addi	sp,sp,48
+     1ae:	8082                	ret
+
+000001b0 <iob_init>:
+iob_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:63
+static lscc_getc_func s_getc_func;
+static lscc_flush_func s_flush_func;
+
+
+void iob_init(lscc_putc_func putc_func, lscc_getc_func getc_func, lscc_flush_func flush_func)
+{
+     1b0:	1101                	addi	sp,sp,-32
+     1b2:	ce22                	sw	s0,28(sp)
+     1b4:	1000                	addi	s0,sp,32
+     1b6:	fea42623          	sw	a0,-20(s0)
+     1ba:	feb42423          	sw	a1,-24(s0)
+     1be:	fec42223          	sw	a2,-28(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:64
+	s_putc_func = putc_func;
+     1c2:	6789                	lui	a5,0x2
+     1c4:	fec42703          	lw	a4,-20(s0)
+     1c8:	cae7a023          	sw	a4,-864(a5) # 1ca0 <s_putc_func>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:65
+	s_getc_func = getc_func;
+     1cc:	6789                	lui	a5,0x2
+     1ce:	fe842703          	lw	a4,-24(s0)
+     1d2:	cae7a223          	sw	a4,-860(a5) # 1ca4 <s_getc_func>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:66
+	s_flush_func = flush_func;
+     1d6:	6789                	lui	a5,0x2
+     1d8:	fe442703          	lw	a4,-28(s0)
+     1dc:	cae7a423          	sw	a4,-856(a5) # 1ca8 <s_flush_func>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:67
+}
+     1e0:	0001                	nop
+     1e2:	4472                	lw	s0,28(sp)
+     1e4:	6105                	addi	sp,sp,32
+     1e6:	8082                	ret
+
+000001e8 <iob_putc>:
+iob_putc():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:71
+
+
+static int iob_putc(char c, FILE *file)
+{
+     1e8:	1101                	addi	sp,sp,-32
+     1ea:	ce06                	sw	ra,28(sp)
+     1ec:	cc22                	sw	s0,24(sp)
+     1ee:	1000                	addi	s0,sp,32
+     1f0:	87aa                	mv	a5,a0
+     1f2:	feb42423          	sw	a1,-24(s0)
+     1f6:	fef407a3          	sb	a5,-17(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:72
+	return s_putc_func ? (*s_putc_func)(c, file) : EOF;
+     1fa:	6789                	lui	a5,0x2
+     1fc:	ca07a783          	lw	a5,-864(a5) # 1ca0 <s_putc_func>
+     200:	cf81                	beqz	a5,218 <iob_putc+0x30>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:72 (discriminator 1)
+     202:	6789                	lui	a5,0x2
+     204:	ca07a703          	lw	a4,-864(a5) # 1ca0 <s_putc_func>
+     208:	fef40783          	lb	a5,-17(s0)
+     20c:	fe842583          	lw	a1,-24(s0)
+     210:	853e                	mv	a0,a5
+     212:	9702                	jalr	a4
+     214:	87aa                	mv	a5,a0
+     216:	a011                	j	21a <iob_putc+0x32>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:72 (discriminator 2)
+     218:	57fd                	li	a5,-1
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:73 (discriminator 5)
+}
+     21a:	853e                	mv	a0,a5
+     21c:	40f2                	lw	ra,28(sp)
+     21e:	4462                	lw	s0,24(sp)
+     220:	6105                	addi	sp,sp,32
+     222:	8082                	ret
+
+00000224 <iob_getc>:
+iob_getc():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:77
+
+
+static int iob_getc(FILE *file)
+{
+     224:	1101                	addi	sp,sp,-32
+     226:	ce06                	sw	ra,28(sp)
+     228:	cc22                	sw	s0,24(sp)
+     22a:	1000                	addi	s0,sp,32
+     22c:	fea42623          	sw	a0,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:78
+	return s_getc_func ? (*s_getc_func)(file) : EOF;
+     230:	6789                	lui	a5,0x2
+     232:	ca47a783          	lw	a5,-860(a5) # 1ca4 <s_getc_func>
+     236:	cb89                	beqz	a5,248 <iob_getc+0x24>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:78 (discriminator 1)
+     238:	6789                	lui	a5,0x2
+     23a:	ca47a783          	lw	a5,-860(a5) # 1ca4 <s_getc_func>
+     23e:	fec42503          	lw	a0,-20(s0)
+     242:	9782                	jalr	a5
+     244:	87aa                	mv	a5,a0
+     246:	a011                	j	24a <iob_getc+0x26>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:78 (discriminator 2)
+     248:	57fd                	li	a5,-1
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:79 (discriminator 5)
+}
+     24a:	853e                	mv	a0,a5
+     24c:	40f2                	lw	ra,28(sp)
+     24e:	4462                	lw	s0,24(sp)
+     250:	6105                	addi	sp,sp,32
+     252:	8082                	ret
+
+00000254 <iob_flush>:
+iob_flush():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:83
+
+
+static int iob_flush(FILE *file)
+{
+     254:	1101                	addi	sp,sp,-32
+     256:	ce06                	sw	ra,28(sp)
+     258:	cc22                	sw	s0,24(sp)
+     25a:	1000                	addi	s0,sp,32
+     25c:	fea42623          	sw	a0,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:84
+	return s_flush_func ? (*s_flush_func)(file) : 0;
+     260:	6789                	lui	a5,0x2
+     262:	ca87a783          	lw	a5,-856(a5) # 1ca8 <s_flush_func>
+     266:	cb89                	beqz	a5,278 <iob_flush+0x24>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:84 (discriminator 1)
+     268:	6789                	lui	a5,0x2
+     26a:	ca87a783          	lw	a5,-856(a5) # 1ca8 <s_flush_func>
+     26e:	fec42503          	lw	a0,-20(s0)
+     272:	9782                	jalr	a5
+     274:	87aa                	mv	a5,a0
+     276:	a011                	j	27a <iob_flush+0x26>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:84 (discriminator 2)
+     278:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/iob.c:85 (discriminator 5)
+}
+     27a:	853e                	mv	a0,a5
+     27c:	40f2                	lw	ra,28(sp)
+     27e:	4462                	lw	s0,24(sp)
+     280:	6105                	addi	sp,sp,32
+     282:	8082                	ret
+
+00000284 <reg_32b_write>:
+reg_32b_write():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:55
+     ================================================================== */
+
+#include "reg_access.h"
+
+uint8_t reg_32b_write(uint32_t reg_addr, uint32_t value)
+{
+     284:	7179                	addi	sp,sp,-48
+     286:	d622                	sw	s0,44(sp)
+     288:	1800                	addi	s0,sp,48
+     28a:	fca42e23          	sw	a0,-36(s0)
+     28e:	fcb42c23          	sw	a1,-40(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:56
+	uint32_t volatile *reg_value = (void *) reg_addr;
+     292:	fdc42783          	lw	a5,-36(s0)
+     296:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:58
+
+	*reg_value = value;
+     29a:	fec42783          	lw	a5,-20(s0)
+     29e:	fd842703          	lw	a4,-40(s0)
+     2a2:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:59
+	return 0;
+     2a4:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:60
+}
+     2a6:	853e                	mv	a0,a5
+     2a8:	5432                	lw	s0,44(sp)
+     2aa:	6145                	addi	sp,sp,48
+     2ac:	8082                	ret
+
+000002ae <reg_32b_read>:
+reg_32b_read():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:64
+
+uint8_t reg_32b_read(uint32_t reg_addr,
+			   uint32_t *reg_32b_value)
+{
+     2ae:	7179                	addi	sp,sp,-48
+     2b0:	d622                	sw	s0,44(sp)
+     2b2:	1800                	addi	s0,sp,48
+     2b4:	fca42e23          	sw	a0,-36(s0)
+     2b8:	fcb42c23          	sw	a1,-40(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:65
+	uint32_t volatile *reg_value = (void *) reg_addr;
+     2bc:	fdc42783          	lw	a5,-36(s0)
+     2c0:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:66
+	*reg_32b_value = *reg_value;
+     2c4:	fec42783          	lw	a5,-20(s0)
+     2c8:	4398                	lw	a4,0(a5)
+     2ca:	fd842783          	lw	a5,-40(s0)
+     2ce:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:68
+
+	return 0;
+     2d0:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:69
+}
+     2d2:	853e                	mv	a0,a5
+     2d4:	5432                	lw	s0,44(sp)
+     2d6:	6145                	addi	sp,sp,48
+     2d8:	8082                	ret
+
+000002da <reg_32b_modify>:
+reg_32b_modify():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:73
+
+uint8_t reg_32b_modify(uint32_t reg_addr, uint32_t bits_mask,
+			     uint32_t value)
+{
+     2da:	7179                	addi	sp,sp,-48
+     2dc:	d622                	sw	s0,44(sp)
+     2de:	1800                	addi	s0,sp,48
+     2e0:	fca42e23          	sw	a0,-36(s0)
+     2e4:	fcb42c23          	sw	a1,-40(s0)
+     2e8:	fcc42a23          	sw	a2,-44(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:74
+	uint32_t volatile *reg_value = (void *) reg_addr;
+     2ec:	fdc42783          	lw	a5,-36(s0)
+     2f0:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:77
+
+	//*reg_value = ((*reg_value) & ~bits_mask) | value;
+	*reg_value = ((*reg_value) & (~bits_mask)) | (value & bits_mask);
+     2f4:	fec42783          	lw	a5,-20(s0)
+     2f8:	4398                	lw	a4,0(a5)
+     2fa:	fd842783          	lw	a5,-40(s0)
+     2fe:	fff7c793          	not	a5,a5
+     302:	8f7d                	and	a4,a4,a5
+     304:	fd442683          	lw	a3,-44(s0)
+     308:	fd842783          	lw	a5,-40(s0)
+     30c:	8ff5                	and	a5,a5,a3
+     30e:	8f5d                	or	a4,a4,a5
+     310:	fec42783          	lw	a5,-20(s0)
+     314:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:78
+	return 0;
+     316:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:79
+}
+     318:	853e                	mv	a0,a5
+     31a:	5432                	lw	s0,44(sp)
+     31c:	6145                	addi	sp,sp,48
+     31e:	8082                	ret
+
+00000320 <reg_16b_write>:
+reg_16b_write():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:82
+
+uint8_t reg_16b_write(uint32_t reg_addr, unsigned short value)
+{
+     320:	7179                	addi	sp,sp,-48
+     322:	d622                	sw	s0,44(sp)
+     324:	1800                	addi	s0,sp,48
+     326:	fca42e23          	sw	a0,-36(s0)
+     32a:	87ae                	mv	a5,a1
+     32c:	fcf41d23          	sh	a5,-38(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:83
+	unsigned short volatile *reg_value = (void *) reg_addr;
+     330:	fdc42783          	lw	a5,-36(s0)
+     334:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:85
+
+	*reg_value = value;
+     338:	fec42783          	lw	a5,-20(s0)
+     33c:	fda45703          	lhu	a4,-38(s0)
+     340:	00e79023          	sh	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:86
+	return 0;
+     344:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:87
+}
+     346:	853e                	mv	a0,a5
+     348:	5432                	lw	s0,44(sp)
+     34a:	6145                	addi	sp,sp,48
+     34c:	8082                	ret
+
+0000034e <reg_16b_read>:
+reg_16b_read():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:91
+
+uint8_t reg_16b_read(uint32_t reg_addr,
+			   unsigned short *reg_16b_value)
+{
+     34e:	7179                	addi	sp,sp,-48
+     350:	d622                	sw	s0,44(sp)
+     352:	1800                	addi	s0,sp,48
+     354:	fca42e23          	sw	a0,-36(s0)
+     358:	fcb42c23          	sw	a1,-40(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:92
+	unsigned short volatile *reg_value = (void *) reg_addr;
+     35c:	fdc42783          	lw	a5,-36(s0)
+     360:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:93
+	*reg_16b_value = *reg_value;
+     364:	fec42783          	lw	a5,-20(s0)
+     368:	0007d783          	lhu	a5,0(a5)
+     36c:	01079713          	slli	a4,a5,0x10
+     370:	8341                	srli	a4,a4,0x10
+     372:	fd842783          	lw	a5,-40(s0)
+     376:	00e79023          	sh	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:94
+	return 0;
+     37a:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/riscv_rtos/reg_access.c:95
+}
+     37c:	853e                	mv	a0,a5
+     37e:	5432                	lw	s0,44(sp)
+     380:	6145                	addi	sp,sp,48
+     382:	8082                	ret
+
+00000384 <qspi_flash_cntl_init>:
+qspi_flash_cntl_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:65
+ *
+ * @param 	this_qspi_flash_cntl	 Pointer to the QSPI flash controller instance.
+ * @param 	base_addr 				 The base address of the QSPI flash controller registers.
+ * @return 	                         Returns 'SUCCESS' (0) on successful initialization, or 'FAILURE' (1) if 'this_qspi_flash_cntl' is NULL.
+ */
+unsigned int qspi_flash_cntl_init(struct qspi_flash_cntl_instance_t *this_qspi_flash_cntl) {
+     384:	1101                	addi	sp,sp,-32
+     386:	ce22                	sw	s0,28(sp)
+     388:	1000                	addi	s0,sp,32
+     38a:	fea42623          	sw	a0,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:66
+	if(this_qspi_flash_cntl == IS_NULL) {
+     38e:	fec42783          	lw	a5,-20(s0)
+     392:	e399                	bnez	a5,398 <qspi_flash_cntl_init+0x14>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:67
+		return RET_FAILURE;
+     394:	4785                	li	a5,1
+     396:	a81d                	j	3cc <qspi_flash_cntl_init+0x48>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:69
+	}
+	flash_cntl = (volatile qspi_flash_cntl_reg_t *)this_qspi_flash_cntl->base_address;
+     398:	fec42783          	lw	a5,-20(s0)
+     39c:	439c                	lw	a5,0(a5)
+     39e:	873e                	mv	a4,a5
+     3a0:	6789                	lui	a5,0x2
+     3a2:	cae7a623          	sw	a4,-852(a5) # 1cac <flash_cntl>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:70
+	flash_cntl->REG_QSPI_CONFIG_0 = this_qspi_flash_cntl->config_0;
+     3a6:	6789                	lui	a5,0x2
+     3a8:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     3ac:	fec42703          	lw	a4,-20(s0)
+     3b0:	4718                	lw	a4,8(a4)
+     3b2:	c3d8                	sw	a4,4(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:71
+	flash_cntl->REG_QSPI_CONFIG_1 = this_qspi_flash_cntl->config_1;
+     3b4:	6789                	lui	a5,0x2
+     3b6:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     3ba:	fec42703          	lw	a4,-20(s0)
+     3be:	4758                	lw	a4,12(a4)
+     3c0:	c798                	sw	a4,8(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:72
+	this_qspi_flash_cntl->status = IDLE;
+     3c2:	fec42783          	lw	a5,-20(s0)
+     3c6:	0007a223          	sw	zero,4(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:73
+	return RET_SUCCESS;
+     3ca:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:74
+}
+     3cc:	853e                	mv	a0,a5
+     3ce:	4472                	lw	s0,28(sp)
+     3d0:	6105                	addi	sp,sp,32
+     3d2:	8082                	ret
+
+000003d4 <qspi_trans_start>:
+qspi_trans_start():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:84
+ * This function inititate the SPI transaction by configure the start transaction register (0x220)
+ *
+ * @return 	                         Returns 'SUCCESS' (0) on successful transaction.
+ */
+
+unsigned int qspi_trans_start(void) {
+     3d4:	1101                	addi	sp,sp,-32
+     3d6:	ce22                	sw	s0,28(sp)
+     3d8:	1000                	addi	s0,sp,32
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:85
+	unsigned int sts = 0;
+     3da:	fe042623          	sw	zero,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:87
+	
+	flash_cntl->REG_START_TRANS = START_TRANS_VAL;
+     3de:	6789                	lui	a5,0x2
+     3e0:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     3e4:	4705                	li	a4,1
+     3e6:	22e7a023          	sw	a4,544(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:88
+	while (sts & CHECK_ONE != 0) {
+     3ea:	a801                	j	3fa <qspi_trans_start+0x26>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:89
+		sts = flash_cntl->REG_TRANS_STATUS;
+     3ec:	6789                	lui	a5,0x2
+     3ee:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     3f2:	1007a783          	lw	a5,256(a5)
+     3f6:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:88
+	while (sts & CHECK_ONE != 0) {
+     3fa:	fec42783          	lw	a5,-20(s0)
+     3fe:	8b85                	andi	a5,a5,1
+     400:	f7f5                	bnez	a5,3ec <qspi_trans_start+0x18>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:91
+	}
+	return RET_SUCCESS;
+     402:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:92
+}
+     404:	853e                	mv	a0,a5
+     406:	4472                	lw	s0,28(sp)
+     408:	6105                	addi	sp,sp,32
+     40a:	8082                	ret
+
+0000040c <qspi_flash_cntl_write>:
+qspi_flash_cntl_write():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:129
+ * @param   index                 The index of the QSPI configuration register to write.
+ * @param   reg_data              The value to be written to the register.
+ * @return                        Returns 'SUCCESS' (0) on successful write, or 'FAILURE' (1) if 'this_qspi_flash_cntl' is NULL.
+ */
+unsigned int qspi_flash_cntl_write(struct qspi_flash_cntl_instance_t *this_qspi_flash_cntl,
+		qspi_reg_type_t index, unsigned int reg_data) {
+     40c:	7179                	addi	sp,sp,-48
+     40e:	d622                	sw	s0,44(sp)
+     410:	1800                	addi	s0,sp,48
+     412:	fca42e23          	sw	a0,-36(s0)
+     416:	fcb42c23          	sw	a1,-40(s0)
+     41a:	fcc42a23          	sw	a2,-44(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:130
+	if(this_qspi_flash_cntl == IS_NULL) {
+     41e:	fdc42783          	lw	a5,-36(s0)
+     422:	e399                	bnez	a5,428 <qspi_flash_cntl_write+0x1c>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:131
+		return RET_FAILURE;
+     424:	4785                	li	a5,1
+     426:	a02d                	j	450 <qspi_flash_cntl_write+0x44>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:133
+	}
+	volatile unsigned int base_addr = (unsigned int)(this_qspi_flash_cntl->base_address);
+     428:	fdc42783          	lw	a5,-36(s0)
+     42c:	439c                	lw	a5,0(a5)
+     42e:	fef42423          	sw	a5,-24(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:134
+	volatile unsigned int *write_reg = (unsigned int *)(base_addr + (index<<REG_GAP));
+     432:	fd842783          	lw	a5,-40(s0)
+     436:	00279713          	slli	a4,a5,0x2
+     43a:	fe842783          	lw	a5,-24(s0)
+     43e:	97ba                	add	a5,a5,a4
+     440:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:135
+	*write_reg = reg_data;
+     444:	fec42783          	lw	a5,-20(s0)
+     448:	fd442703          	lw	a4,-44(s0)
+     44c:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:137
+
+	return RET_SUCCESS;
+     44e:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:138
+}
+     450:	853e                	mv	a0,a5
+     452:	5432                	lw	s0,44(sp)
+     454:	6145                	addi	sp,sp,48
+     456:	8082                	ret
+
+00000458 <convert_endian>:
+convert_endian():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:281
+ * @param input   		  Data input.
+ * @return                Little Endian as return data
+ *
+ */
+
+unsigned int convert_endian(unsigned int input) {
+     458:	1101                	addi	sp,sp,-32
+     45a:	ce22                	sw	s0,28(sp)
+     45c:	1000                	addi	s0,sp,32
+     45e:	fea42623          	sw	a0,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:282
+	return (   ((input & 0xFF) << 24) |
+     462:	fec42783          	lw	a5,-20(s0)
+     466:	01879713          	slli	a4,a5,0x18
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:283
+		       ((input & 0xFF00) << 8) |
+     46a:	fec42783          	lw	a5,-20(s0)
+     46e:	00879693          	slli	a3,a5,0x8
+     472:	00ff07b7          	lui	a5,0xff0
+     476:	8ff5                	and	a5,a5,a3
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:282
+	return (   ((input & 0xFF) << 24) |
+     478:	8f5d                	or	a4,a4,a5
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:284
+	           ((input >> 8) & 0xFF00) |
+     47a:	fec42783          	lw	a5,-20(s0)
+     47e:	0087d693          	srli	a3,a5,0x8
+     482:	67c1                	lui	a5,0x10
+     484:	f0078793          	addi	a5,a5,-256 # ff00 <_stack_start+0xd750>
+     488:	8ff5                	and	a5,a5,a3
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:283
+		       ((input & 0xFF00) << 8) |
+     48a:	8f5d                	or	a4,a4,a5
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:285
+	           (input >> 24)
+     48c:	fec42783          	lw	a5,-20(s0)
+     490:	83e1                	srli	a5,a5,0x18
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:284
+	           ((input >> 8) & 0xFF00) |
+     492:	8fd9                	or	a5,a5,a4
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:287
+	       );
+}
+     494:	853e                	mv	a0,a5
+     496:	4472                	lw	s0,28(sp)
+     498:	6105                	addi	sp,sp,32
+     49a:	8082                	ret
+
+0000049c <qspi_flash_cntl_read_fifo_dis>:
+qspi_flash_cntl_read_fifo_dis():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:308
+unsigned char qspi_flash_cntl_read_fifo_dis(	unsigned int flash_addr,
+												unsigned int flash_addr_width,
+												unsigned int spi_mode,
+												unsigned int  *buffer,
+												unsigned int buffer_len,
+												unsigned int manufacturer_id) {
+     49c:	715d                	addi	sp,sp,-80
+     49e:	c686                	sw	ra,76(sp)
+     4a0:	c4a2                	sw	s0,72(sp)
+     4a2:	c2a6                	sw	s1,68(sp)
+     4a4:	0880                	addi	s0,sp,80
+     4a6:	fca42623          	sw	a0,-52(s0)
+     4aa:	fcb42423          	sw	a1,-56(s0)
+     4ae:	fcc42223          	sw	a2,-60(s0)
+     4b2:	fcd42023          	sw	a3,-64(s0)
+     4b6:	fae42e23          	sw	a4,-68(s0)
+     4ba:	faf42c23          	sw	a5,-72(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:309
+	unsigned int len = 0;
+     4be:	fe042623          	sw	zero,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:311
+
+	if (buffer == IS_NULL)
+     4c2:	fc042783          	lw	a5,-64(s0)
+     4c6:	e399                	bnez	a5,4cc <qspi_flash_cntl_read_fifo_dis+0x30>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:312
+		return RET_FAILURE;
+     4c8:	4785                	li	a5,1
+     4ca:	aa65                	j	682 <qspi_flash_cntl_read_fifo_dis+0x1e6>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:314
+
+	qspi_params_t qspi_params = { 0, 0, 0, 0 };
+     4cc:	fc042e23          	sw	zero,-36(s0)
+     4d0:	fe042023          	sw	zero,-32(s0)
+     4d4:	fe042223          	sw	zero,-28(s0)
+     4d8:	fe042423          	sw	zero,-24(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:316
+
+	flash_cntl->REG_START_TRANS = 0;
+     4dc:	6789                	lui	a5,0x2
+     4de:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     4e2:	2207a023          	sw	zero,544(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:319
+
+	/* Configure packet header */
+	qspi_params.params_ext_t.flash_addr_width = flash_addr_width;
+     4e6:	fc842783          	lw	a5,-56(s0)
+     4ea:	8b9d                	andi	a5,a5,7
+     4ec:	0ff7f793          	zext.b	a5,a5
+     4f0:	8b9d                	andi	a5,a5,7
+     4f2:	07b6                	slli	a5,a5,0xd
+     4f4:	fe042683          	lw	a3,-32(s0)
+     4f8:	7749                	lui	a4,0xffff2
+     4fa:	177d                	addi	a4,a4,-1
+     4fc:	8f75                	and	a4,a4,a3
+     4fe:	8fd9                	or	a5,a5,a4
+     500:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:320
+	if (flash_addr_width == FLASH_24BIT_ADDR) {
+     504:	fc842703          	lw	a4,-56(s0)
+     508:	4789                	li	a5,2
+     50a:	00f71863          	bne	a4,a5,51a <qspi_flash_cntl_read_fifo_dis+0x7e>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:321
+		qspi_params.params_ext_t.flash_addr_LSB = flash_addr << 8;
+     50e:	fcc42783          	lw	a5,-52(s0)
+     512:	07a2                	slli	a5,a5,0x8
+     514:	fef42223          	sw	a5,-28(s0)
+     518:	a029                	j	522 <qspi_flash_cntl_read_fifo_dis+0x86>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:323
+	} else {
+		qspi_params.params_ext_t.flash_addr_LSB = flash_addr;
+     51a:	fcc42783          	lw	a5,-52(s0)
+     51e:	fef42223          	sw	a5,-28(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:326
+	}
+
+	qspi_params.params_ext_t.flash_addr_MSB = 0x00000000;
+     522:	fe042423          	sw	zero,-24(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:327
+	if (spi_mode == FLASH_CNTL_SPI_MODE) {
+     526:	fc442783          	lw	a5,-60(s0)
+     52a:	e3b1                	bnez	a5,56e <qspi_flash_cntl_read_fifo_dis+0xd2>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:328
+		qspi_params.params_ext_t.cmd_lane_width = LANE_WIDTH_X1;
+     52c:	fe042783          	lw	a5,-32(s0)
+     530:	9bf1                	andi	a5,a5,-4
+     532:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:329
+		qspi_params.params_ext_t.addr_lane_width = LANE_WIDTH_X1;
+     536:	fe042783          	lw	a5,-32(s0)
+     53a:	9bcd                	andi	a5,a5,-13
+     53c:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:330
+		qspi_params.params_ext_t.data_lane_width = LANE_WIDTH_X1;
+     540:	fe042783          	lw	a5,-32(s0)
+     544:	fcf7f793          	andi	a5,a5,-49
+     548:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:331
+		qspi_params.params_ext_t.flash_cmd_code = FLASH_CMD_CODE_FAST_READ;
+     54c:	fdc42783          	lw	a5,-36(s0)
+     550:	f837f793          	andi	a5,a5,-125
+     554:	02c7e793          	ori	a5,a5,44
+     558:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:332
+		printf("FLASH_CMD_CODE_FAST_READ\r\n");
+     55c:	6785                	lui	a5,0x1
+     55e:	65078513          	addi	a0,a5,1616 # 1650 <_etext+0xc>
+     562:	339000ef          	jal	ra,109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:334
+		/* 8 dummy clock cycles for basic Fast Read command */
+		qspi_params.params_ext_t.num_wait_cycle = 8;
+     566:	47a1                	li	a5,8
+     568:	fcf40ea3          	sb	a5,-35(s0)
+     56c:	a885                	j	5dc <qspi_flash_cntl_read_fifo_dis+0x140>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:336
+	}
+	else if (spi_mode == FLASH_CNTL_QSPI_MODE) {
+     56e:	fc442703          	lw	a4,-60(s0)
+     572:	4785                	li	a5,1
+     574:	06f71463          	bne	a4,a5,5dc <qspi_flash_cntl_read_fifo_dis+0x140>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:345
+		 * | Winbond      | LANE_WIDTH_X1  |
+		 * | Macronix     | LANE_WIDTH_X4  |
+		 * | Micron       | LANE_WIDTH_X4  |
+		 * ---------------------------------
+		 */
+		if (manufacturer_id == JEDEC_MANUFACTURER_ID_WINBOND)
+     578:	fb842703          	lw	a4,-72(s0)
+     57c:	0ef00793          	li	a5,239
+     580:	00f71863          	bne	a4,a5,590 <qspi_flash_cntl_read_fifo_dis+0xf4>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:346
+			qspi_params.params_ext_t.cmd_lane_width = LANE_WIDTH_X1;
+     584:	fe042783          	lw	a5,-32(s0)
+     588:	9bf1                	andi	a5,a5,-4
+     58a:	fef42023          	sw	a5,-32(s0)
+     58e:	a801                	j	59e <qspi_flash_cntl_read_fifo_dis+0x102>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:348
+		else
+			qspi_params.params_ext_t.cmd_lane_width = LANE_WIDTH_X4;
+     590:	fe042783          	lw	a5,-32(s0)
+     594:	9bf1                	andi	a5,a5,-4
+     596:	0027e793          	ori	a5,a5,2
+     59a:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:349
+		qspi_params.params_ext_t.addr_lane_width = LANE_WIDTH_X4;
+     59e:	fe042783          	lw	a5,-32(s0)
+     5a2:	9bcd                	andi	a5,a5,-13
+     5a4:	0087e793          	ori	a5,a5,8
+     5a8:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:350
+		qspi_params.params_ext_t.data_lane_width = LANE_WIDTH_X4;
+     5ac:	fe042783          	lw	a5,-32(s0)
+     5b0:	fcf7f793          	andi	a5,a5,-49
+     5b4:	0207e793          	ori	a5,a5,32
+     5b8:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:351
+		qspi_params.params_ext_t.flash_cmd_code = FLASH_CMD_CODE_QUAD_INPUT_OUTPUT_FAST_READ;
+     5bc:	fdc42783          	lw	a5,-36(s0)
+     5c0:	f837f793          	andi	a5,a5,-125
+     5c4:	03c7e793          	ori	a5,a5,60
+     5c8:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:352
+		printf("FLASH_CMD_CODE_QUAD_INPUT_OUTPUT_FAST_READ\r\n");
+     5cc:	6785                	lui	a5,0x1
+     5ce:	66c78513          	addi	a0,a5,1644 # 166c <_etext+0x28>
+     5d2:	2c9000ef          	jal	ra,109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:355
+
+		/* 6 dummy clock cycles (winbond) for Quad I/O Fast Read */
+		qspi_params.params_ext_t.num_wait_cycle = 6;
+     5d6:	4799                	li	a5,6
+     5d8:	fcf40ea3          	sb	a5,-35(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:358
+	}
+
+	qspi_params.params_ext_t.buff_length = buffer_len;
+     5dc:	fbc42783          	lw	a5,-68(s0)
+     5e0:	07c2                	slli	a5,a5,0x10
+     5e2:	83c1                	srli	a5,a5,0x10
+     5e4:	fcf41f23          	sh	a5,-34(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:359
+	qspi_params.params_ext_t.with_payload = 0;
+     5e8:	fdc42783          	lw	a5,-36(s0)
+     5ec:	9bf5                	andi	a5,a5,-3
+     5ee:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:362
+
+	/* Single falsh target */
+	qspi_params.params_ext_t.mult_flash_tgt = 0;
+     5f2:	fdc42783          	lw	a5,-36(s0)
+     5f6:	f7f7f793          	andi	a5,a5,-129
+     5fa:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:365
+
+	/* Supported command */
+	qspi_params.params_ext_t.supp_flash_cmd = 1;
+     5fe:	fdc42783          	lw	a5,-36(s0)
+     602:	0017e793          	ori	a5,a5,1
+     606:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:368
+
+	/* Write packet headers */
+	qspi_flash_cntl_set_pkt_hdr(&qspi_params);
+     60a:	fdc40793          	addi	a5,s0,-36
+     60e:	853e                	mv	a0,a5
+     610:	28bd                	jal	68e <qspi_flash_cntl_set_pkt_hdr>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:371
+
+	/* Enable interrupt */
+	flash_cntl->REG_INT_ENABLE = INT_EN_VAL;
+     612:	6789                	lui	a5,0x2
+     614:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     618:	6705                	lui	a4,0x1
+     61a:	177d                	addi	a4,a4,-1
+     61c:	10e7a423          	sw	a4,264(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:374
+
+	/* Start SPI transaction*/
+	qspi_trans_start();
+     620:	3b55                	jal	3d4 <qspi_trans_start>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:376
+
+	for (len = IDX_ZERO; len < ((buffer_len)>>REG_GAP); len++) {
+     622:	fe042623          	sw	zero,-20(s0)
+     626:	a0b1                	j	672 <qspi_flash_cntl_read_fifo_dis+0x1d6>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:378
+	    /* Check the interrupt */
+		while (((flash_cntl->REG_INT_STATUS >> SHIFT_FOUR) & CHECK_ONE) == IRQ_RD_FIFO_DIS);
+     628:	0001                	nop
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:378 (discriminator 1)
+     62a:	6789                	lui	a5,0x2
+     62c:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     630:	1047a783          	lw	a5,260(a5)
+     634:	8391                	srli	a5,a5,0x4
+     636:	8b85                	andi	a5,a5,1
+     638:	dbed                	beqz	a5,62a <qspi_flash_cntl_read_fifo_dis+0x18e>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:380 (discriminator 2)
+		/* Clear interrupt */
+		flash_cntl->REG_INT_STATUS = CLR_INTERRUPT;
+     63a:	6789                	lui	a5,0x2
+     63c:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     640:	6705                	lui	a4,0x1
+     642:	177d                	addi	a4,a4,-1
+     644:	10e7a223          	sw	a4,260(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:386 (discriminator 2)
+		//printf("flash_cntl->REG_PACKET_DATA_0: 0x%x \r\n",flash_cntl->REG_PACKET_DATA_0);
+		/* Check data endianess and store the data from DATA_0 */
+#ifndef USE_BIG_ENDIAN
+		*(buffer+len) = flash_cntl->REG_PACKET_DATA_0;
+#else
+		*(buffer+len) = convert_endian(flash_cntl->REG_PACKET_DATA_0);
+     648:	6789                	lui	a5,0x2
+     64a:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     64e:	2187a683          	lw	a3,536(a5)
+     652:	fec42783          	lw	a5,-20(s0)
+     656:	078a                	slli	a5,a5,0x2
+     658:	fc042703          	lw	a4,-64(s0)
+     65c:	00f704b3          	add	s1,a4,a5
+     660:	8536                	mv	a0,a3
+     662:	3bdd                	jal	458 <convert_endian>
+     664:	87aa                	mv	a5,a0
+     666:	c09c                	sw	a5,0(s1)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:376 (discriminator 2)
+	for (len = IDX_ZERO; len < ((buffer_len)>>REG_GAP); len++) {
+     668:	fec42783          	lw	a5,-20(s0)
+     66c:	0785                	addi	a5,a5,1
+     66e:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:376 (discriminator 1)
+     672:	fbc42783          	lw	a5,-68(s0)
+     676:	8389                	srli	a5,a5,0x2
+     678:	fec42703          	lw	a4,-20(s0)
+     67c:	faf766e3          	bltu	a4,a5,628 <qspi_flash_cntl_read_fifo_dis+0x18c>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:390
+#endif
+	}
+
+	return RET_SUCCESS;
+     680:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:391 (discriminator 1)
+}
+     682:	853e                	mv	a0,a5
+     684:	40b6                	lw	ra,76(sp)
+     686:	4426                	lw	s0,72(sp)
+     688:	4496                	lw	s1,68(sp)
+     68a:	6161                	addi	sp,sp,80
+     68c:	8082                	ret
+
+0000068e <qspi_flash_cntl_set_pkt_hdr>:
+qspi_flash_cntl_set_pkt_hdr():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:402
+ * This function set the packet header registers based on the provided parameters.
+ *
+ * @param this_pkt_hdr    Pointer to the structure qspi_params_t containing the desired variables.
+ *
+ */
+void qspi_flash_cntl_set_pkt_hdr(qspi_params_t *this_pkt_hdr) {
+     68e:	1101                	addi	sp,sp,-32
+     690:	ce22                	sw	s0,28(sp)
+     692:	1000                	addi	s0,sp,32
+     694:	fea42623          	sw	a0,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:403
+	flash_cntl->REG_PACKET_HDR_0 = this_pkt_hdr->params_reg_t.packet_header0;
+     698:	6789                	lui	a5,0x2
+     69a:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     69e:	fec42703          	lw	a4,-20(s0)
+     6a2:	4318                	lw	a4,0(a4)
+     6a4:	20e7a423          	sw	a4,520(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:404
+	flash_cntl->REG_PACKET_HDR_1 = this_pkt_hdr->params_reg_t.packet_header1;
+     6a8:	6789                	lui	a5,0x2
+     6aa:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     6ae:	fec42703          	lw	a4,-20(s0)
+     6b2:	4358                	lw	a4,4(a4)
+     6b4:	20e7a623          	sw	a4,524(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:405
+	flash_cntl->REG_PACKET_HDR_2 = this_pkt_hdr->params_reg_t.packet_header2;
+     6b8:	6789                	lui	a5,0x2
+     6ba:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     6be:	fec42703          	lw	a4,-20(s0)
+     6c2:	4718                	lw	a4,8(a4)
+     6c4:	20e7a823          	sw	a4,528(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:406
+	flash_cntl->REG_PACKET_HDR_3 = this_pkt_hdr->params_reg_t.packet_header3;
+     6c8:	6789                	lui	a5,0x2
+     6ca:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     6ce:	fec42703          	lw	a4,-20(s0)
+     6d2:	4758                	lw	a4,12(a4)
+     6d4:	20e7aa23          	sw	a4,532(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:407
+}
+     6d8:	0001                	nop
+     6da:	4472                	lw	s0,28(sp)
+     6dc:	6105                	addi	sp,sp,32
+     6de:	8082                	ret
+
+000006e0 <reset_quad_mode>:
+reset_quad_mode():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:516
+ * RESET_quad_mode - Reset Quad Mode for the QSPI flash controller.
+ *
+ * @brief - This function sets up the necessary registers to Reset Quad Mode for the QSPI flash controller.
+ *
+ */
+void reset_quad_mode() {
+     6e0:	1141                	addi	sp,sp,-16
+     6e2:	c622                	sw	s0,12(sp)
+     6e4:	0800                	addi	s0,sp,16
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:517
+	flash_cntl->REG_QSPI_FLASH_CMD_CODE_7 = FLASH_CMD_CODE_7_REG_CMD_QUAD_RST;
+     6e6:	6789                	lui	a5,0x2
+     6e8:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     6ec:	0f500713          	li	a4,245
+     6f0:	d798                	sw	a4,40(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:518
+	flash_cntl->REG_PACKET_HDR_0 = PKT_HDR_0_CMD_QUAD_RST;
+     6f2:	6789                	lui	a5,0x2
+     6f4:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     6f8:	07d00713          	li	a4,125
+     6fc:	20e7a423          	sw	a4,520(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:519
+	flash_cntl->REG_PACKET_HDR_1 = PKT_HDR_1_CMD_QUAD_RST;
+     700:	6789                	lui	a5,0x2
+     702:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     706:	02a00713          	li	a4,42
+     70a:	20e7a623          	sw	a4,524(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:520
+	flash_cntl->REG_START_TRANS = START_TRANS_VAL;
+     70e:	6789                	lui	a5,0x2
+     710:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     714:	4705                	li	a4,1
+     716:	22e7a023          	sw	a4,544(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:521
+	flash_cntl->REG_INT_STATUS = CLR_INTERRUPT;
+     71a:	6789                	lui	a5,0x2
+     71c:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     720:	6705                	lui	a4,0x1
+     722:	177d                	addi	a4,a4,-1
+     724:	10e7a223          	sw	a4,260(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:522
+	flash_cntl->REG_START_TRANS = CLR_START_TRANS;
+     728:	6789                	lui	a5,0x2
+     72a:	cac7a783          	lw	a5,-852(a5) # 1cac <flash_cntl>
+     72e:	2207a023          	sw	zero,544(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/qspi_flash_controller/qspi_flash_cntl.c:523
+}
+     732:	0001                	nop
+     734:	4432                	lw	s0,12(sp)
+     736:	0141                	addi	sp,sp,16
+     738:	8082                	ret
+
+0000073a <lpddr4_write32>:
+lpddr4_write32():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:66
+ * @param : base_address - base address of a LPDDR IP.
+ *          offset - address offset of a specific register.
+ *          val - value to be written into specific register.
+ * @return : Value written to register.
+ */
+unsigned int lpddr4_write32(unsigned int base_address, unsigned int offset, unsigned int val){
+     73a:	7179                	addi	sp,sp,-48
+     73c:	d622                	sw	s0,44(sp)
+     73e:	1800                	addi	s0,sp,48
+     740:	fca42e23          	sw	a0,-36(s0)
+     744:	fcb42c23          	sw	a1,-40(s0)
+     748:	fcc42a23          	sw	a2,-44(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:67
+    volatile unsigned int *const reg = (unsigned int*) (base_address + offset);
+     74c:	fdc42703          	lw	a4,-36(s0)
+     750:	fd842783          	lw	a5,-40(s0)
+     754:	97ba                	add	a5,a5,a4
+     756:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:68
+    *reg = val;
+     75a:	fec42783          	lw	a5,-20(s0)
+     75e:	fd442703          	lw	a4,-44(s0)
+     762:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:69
+    return *reg;
+     764:	fec42783          	lw	a5,-20(s0)
+     768:	439c                	lw	a5,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:70
+}
+     76a:	853e                	mv	a0,a5
+     76c:	5432                	lw	s0,44(sp)
+     76e:	6145                	addi	sp,sp,48
+     770:	8082                	ret
+
+00000772 <lpddr4_read32>:
+lpddr4_read32():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:78
+ * @brief : lpddr4_read32 - This API is used to read data to a specific register.
+ * @param : base_address - base address of a LPDDR IP.
+ *          offset - address offset of a specific register.
+ * @return : Value read from register.
+ */
+unsigned int lpddr4_read32(unsigned int base_address, unsigned int offset){
+     772:	7179                	addi	sp,sp,-48
+     774:	d622                	sw	s0,44(sp)
+     776:	1800                	addi	s0,sp,48
+     778:	fca42e23          	sw	a0,-36(s0)
+     77c:	fcb42c23          	sw	a1,-40(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:79
+    volatile unsigned int *const reg = (unsigned int*) (base_address + offset);
+     780:	fdc42703          	lw	a4,-36(s0)
+     784:	fd842783          	lw	a5,-40(s0)
+     788:	97ba                	add	a5,a5,a4
+     78a:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:80
+    return *reg;
+     78e:	fec42783          	lw	a5,-20(s0)
+     792:	439c                	lw	a5,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:81
+}
+     794:	853e                	mv	a0,a5
+     796:	5432                	lw	s0,44(sp)
+     798:	6145                	addi	sp,sp,48
+     79a:	8082                	ret
+
+0000079c <lpddr4_init>:
+lpddr4_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:93
+ * 			Note: This API must be called at bootup time/BSP initialization phase if user wants to use external LPDDR4 SDRAM.
+ * @param : instance_ptr [In] - Handle of the lpddr4 structure.
+ *          base_address [In] - base address of a LPDDR IP (from sys_platform.h)
+ * @return : Success or Training error codes.
+ */
+LPDDR_RET lpddr4_init(lpddr4 *instance_ptr, unsigned int base_addr){
+     79c:	7179                	addi	sp,sp,-48
+     79e:	d606                	sw	ra,44(sp)
+     7a0:	d422                	sw	s0,40(sp)
+     7a2:	1800                	addi	s0,sp,48
+     7a4:	fca42e23          	sw	a0,-36(s0)
+     7a8:	fcb42c23          	sw	a1,-40(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:94
+	LPDDR_RET ret = NO_FAIL;
+     7ac:	fe042623          	sw	zero,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:97
+	volatile trn_status_reg_t sts_reg;
+	volatile phy_clk_reg_t clk_chng_reg;
+	unsigned int *reg_d=0;
+     7b0:	fe042423          	sw	zero,-24(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:98
+	if(instance_ptr == IS_NULL){
+     7b4:	fdc42783          	lw	a5,-36(s0)
+     7b8:	e399                	bnez	a5,7be <lpddr4_init+0x22>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:99
+	    	return FAILURE;
+     7ba:	4781                	li	a5,0
+     7bc:	aa79                	j	95a <lpddr4_init+0x1be>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:101
+	   	}
+	instance_ptr->lpddr4_base_address=base_addr;
+     7be:	fdc42783          	lw	a5,-36(s0)
+     7c2:	fd842703          	lw	a4,-40(s0)
+     7c6:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:102
+	lpddr4_inst=instance_ptr;
+     7c8:	6789                	lui	a5,0x2
+     7ca:	fdc42703          	lw	a4,-36(s0)
+     7ce:	cae7a823          	sw	a4,-848(a5) # 1cb0 <lpddr4_inst>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:103
+	lpddr4_inst->lpddr4_base_address=instance_ptr->lpddr4_base_address;
+     7d2:	6789                	lui	a5,0x2
+     7d4:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     7d8:	fdc42703          	lw	a4,-36(s0)
+     7dc:	4318                	lw	a4,0(a4)
+     7de:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:107 (discriminator 1)
+
+	/* Waiting until PLL is locked */
+	do{
+		clk_chng_reg=(phy_clk_reg_t)lpddr4_read32(lpddr4_inst->lpddr4_base_address,PHY_CLOCK_REG);
+     7e0:	6789                	lui	a5,0x2
+     7e2:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     7e6:	439c                	lw	a5,0(a5)
+     7e8:	20c00593          	li	a1,524
+     7ec:	853e                	mv	a0,a5
+     7ee:	3751                	jal	772 <lpddr4_read32>
+     7f0:	87aa                	mv	a5,a0
+     7f2:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:108 (discriminator 1)
+	}while((clk_chng_reg.reg & PLL_LOCK_BIT) != PLL_LOCK_BIT);
+     7f6:	fe042783          	lw	a5,-32(s0)
+     7fa:	0027f713          	andi	a4,a5,2
+     7fe:	4789                	li	a5,2
+     800:	fef710e3          	bne	a4,a5,7e0 <lpddr4_init+0x44>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:109
+	printf("\r\nINFO: DDR PLL Locked");
+     804:	6785                	lui	a5,0x1
+     806:	69878513          	addi	a0,a5,1688 # 1698 <_etext+0x54>
+     80a:	06b000ef          	jal	ra,1074 <printf>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:114
+
+	/* For Avant: Bit Level Sweep training enabled if DDR freq is set to more than 1066 MHz for Avant devices. Refer IP user guide for details.
+	 * For CPNX: Bit Level Sweep feature is not available. */
+	 /* Reading DDR freq set in GUI */
+	*reg_d = lpddr4_read32(lpddr4_inst->lpddr4_base_address, SETTINGS_REG); 
+     80e:	6789                	lui	a5,0x2
+     810:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     814:	439c                	lw	a5,0(a5)
+     816:	20800593          	li	a1,520
+     81a:	853e                	mv	a0,a5
+     81c:	3f99                	jal	772 <lpddr4_read32>
+     81e:	872a                	mv	a4,a0
+     820:	fe842783          	lw	a5,-24(s0)
+     824:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:115
+	*reg_d = (*reg_d >> 16) & 0xFFF;
+     826:	fe842783          	lw	a5,-24(s0)
+     82a:	439c                	lw	a5,0(a5)
+     82c:	0107d713          	srli	a4,a5,0x10
+     830:	6785                	lui	a5,0x1
+     832:	17fd                	addi	a5,a5,-1
+     834:	8f7d                	and	a4,a4,a5
+     836:	fe842783          	lw	a5,-24(s0)
+     83a:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:117
+	//printf("\r\n ddr Freq: %d ", *reg_d);
+	if (*reg_d >= DDR_FREQ){
+     83c:	fe842783          	lw	a5,-24(s0)
+     840:	4398                	lw	a4,0(a5)
+     842:	42900793          	li	a5,1065
+     846:	00e7fd63          	bgeu	a5,a4,860 <lpddr4_init+0xc4>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:119
+		/* Starts LPDDR training with Bit Level Sweep training enabled (only available for Avant devices). */
+		lpddr4_write32(lpddr4_inst->lpddr4_base_address,TRN_OP_REG,TRN_BIT_LVL_SWEEP_EN); 
+     84a:	6789                	lui	a5,0x2
+     84c:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     850:	439c                	lw	a5,0(a5)
+     852:	1df00613          	li	a2,479
+     856:	22000593          	li	a1,544
+     85a:	853e                	mv	a0,a5
+     85c:	3df9                	jal	73a <lpddr4_write32>
+     85e:	a819                	j	874 <lpddr4_init+0xd8>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:123
+	}
+	else{
+		/* Starts LPDDR training without Bit Level Sweep training. */
+		lpddr4_write32(lpddr4_inst->lpddr4_base_address,TRN_OP_REG,TRN_BIT_LVL_SWEEP_DIS); 
+     860:	6789                	lui	a5,0x2
+     862:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     866:	439c                	lw	a5,0(a5)
+     868:	0df00613          	li	a2,223
+     86c:	22000593          	li	a1,544
+     870:	853e                	mv	a0,a5
+     872:	35e1                	jal	73a <lpddr4_write32>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:126
+	}
+	/* Bring LPDDR out of reset to start training sequence */
+	lpddr4_write32(lpddr4_inst->lpddr4_base_address,RESET_REG,OUT_OF_RESET);
+     874:	6789                	lui	a5,0x2
+     876:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     87a:	439c                	lw	a5,0(a5)
+     87c:	4605                	li	a2,1
+     87e:	20400593          	li	a1,516
+     882:	853e                	mv	a0,a5
+     884:	3d5d                	jal	73a <lpddr4_write32>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:129
+
+	/* Reading LPDDR4 Status register */
+	sts_reg = (trn_status_reg_t)lpddr4_read32(lpddr4_inst->lpddr4_base_address,STATUS_REG);
+     886:	6789                	lui	a5,0x2
+     888:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     88c:	439c                	lw	a5,0(a5)
+     88e:	22400593          	li	a1,548
+     892:	853e                	mv	a0,a5
+     894:	3df9                	jal	772 <lpddr4_read32>
+     896:	87aa                	mv	a5,a0
+     898:	fef42223          	sw	a5,-28(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:131
+
+	while((sts_reg.reg & LPDDR_ERR_DONE_BITS) != LPDDR_DONE_BITS){
+     89c:	a861                	j	934 <lpddr4_init+0x198>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:132
+			sts_reg = (trn_status_reg_t)lpddr4_read32(lpddr4_inst->lpddr4_base_address,STATUS_REG);
+     89e:	6789                	lui	a5,0x2
+     8a0:	cb07a783          	lw	a5,-848(a5) # 1cb0 <lpddr4_inst>
+     8a4:	439c                	lw	a5,0(a5)
+     8a6:	22400593          	li	a1,548
+     8aa:	853e                	mv	a0,a5
+     8ac:	35d9                	jal	772 <lpddr4_read32>
+     8ae:	87aa                	mv	a5,a0
+     8b0:	fef42223          	sw	a5,-28(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:134
+			//printf("\rINFO: DDR status = %x\n", sts_reg);
+			if(sts_reg.fields.cbt_err == 1){
+     8b4:	fe442783          	lw	a5,-28(s0)
+     8b8:	83a1                	srli	a5,a5,0x8
+     8ba:	8b85                	andi	a5,a5,1
+     8bc:	0ff7f713          	zext.b	a4,a5
+     8c0:	4785                	li	a5,1
+     8c2:	00f71963          	bne	a4,a5,8d4 <lpddr4_init+0x138>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:135
+				printf("\r\nErr:LPDDR CBT_FAIL ocurred\n");
+     8c6:	6785                	lui	a5,0x1
+     8c8:	6b078513          	addi	a0,a5,1712 # 16b0 <_etext+0x6c>
+     8cc:	7ce000ef          	jal	ra,109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:136
+				return CBT_FAIL;
+     8d0:	4785                	li	a5,1
+     8d2:	a061                	j	95a <lpddr4_init+0x1be>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:138
+			}
+			if(sts_reg.fields.write_lvl_err == 1){
+     8d4:	fe442783          	lw	a5,-28(s0)
+     8d8:	83a5                	srli	a5,a5,0x9
+     8da:	8b85                	andi	a5,a5,1
+     8dc:	0ff7f713          	zext.b	a4,a5
+     8e0:	4785                	li	a5,1
+     8e2:	00f71963          	bne	a4,a5,8f4 <lpddr4_init+0x158>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:139
+				printf("\r\nErr:LPDDR WR_LVL_FAIL ocurred\n");
+     8e6:	6785                	lui	a5,0x1
+     8e8:	6d078513          	addi	a0,a5,1744 # 16d0 <_etext+0x8c>
+     8ec:	7ae000ef          	jal	ra,109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:140
+				return WR_LVL_FAIL;
+     8f0:	4789                	li	a5,2
+     8f2:	a0a5                	j	95a <lpddr4_init+0x1be>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:142
+			}
+			if(sts_reg.fields.read_trn_err == 1){
+     8f4:	fe442783          	lw	a5,-28(s0)
+     8f8:	83a9                	srli	a5,a5,0xa
+     8fa:	8b85                	andi	a5,a5,1
+     8fc:	0ff7f713          	zext.b	a4,a5
+     900:	4785                	li	a5,1
+     902:	00f71963          	bne	a4,a5,914 <lpddr4_init+0x178>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:143
+				printf("\r\nErr:LPDDR RD_TRN_FAIL ocurred\n");
+     906:	6785                	lui	a5,0x1
+     908:	6f078513          	addi	a0,a5,1776 # 16f0 <_etext+0xac>
+     90c:	78e000ef          	jal	ra,109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:144
+				return RD_TRN_FAIL;
+     910:	478d                	li	a5,3
+     912:	a0a1                	j	95a <lpddr4_init+0x1be>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:146
+			}
+			if(sts_reg.fields.write_trn_err == 1){
+     914:	fe442783          	lw	a5,-28(s0)
+     918:	83ad                	srli	a5,a5,0xb
+     91a:	8b85                	andi	a5,a5,1
+     91c:	0ff7f713          	zext.b	a4,a5
+     920:	4785                	li	a5,1
+     922:	00f71963          	bne	a4,a5,934 <lpddr4_init+0x198>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:147
+				printf("\r\nErr:LPDDR WR_TRN_FAIL ocurred\n");
+     926:	6785                	lui	a5,0x1
+     928:	71078513          	addi	a0,a5,1808 # 1710 <_etext+0xcc>
+     92c:	76e000ef          	jal	ra,109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:148
+				return WR_TRN_FAIL;
+     930:	4791                	li	a5,4
+     932:	a025                	j	95a <lpddr4_init+0x1be>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:131
+	while((sts_reg.reg & LPDDR_ERR_DONE_BITS) != LPDDR_DONE_BITS){
+     934:	fe442703          	lw	a4,-28(s0)
+     938:	6799                	lui	a5,0x6
+     93a:	f7f78793          	addi	a5,a5,-129 # 5f7f <_stack_start+0x37cf>
+     93e:	8f7d                	and	a4,a4,a5
+     940:	07f00793          	li	a5,127
+     944:	f4f71de3          	bne	a4,a5,89e <lpddr4_init+0x102>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:151
+			}
+		}
+		printf("\r\nINFO: LPDDR4 training complete; LPDDR4 training status = %x \r\nINFO: LPDDR4 initialized successfully\n", sts_reg);
+     948:	fe442583          	lw	a1,-28(s0)
+     94c:	6785                	lui	a5,0x1
+     94e:	73078513          	addi	a0,a5,1840 # 1730 <_etext+0xec>
+     952:	722000ef          	jal	ra,1074 <printf>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:152
+		return ret;
+     956:	fec42783          	lw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/mc_avant/ddr_mc_avant.c:153
+}
+     95a:	853e                	mv	a0,a5
+     95c:	50b2                	lw	ra,44(sp)
+     95e:	5422                	lw	s0,40(sp)
+     960:	6145                	addi	sp,sp,48
+     962:	8082                	ret
+
+00000964 <gpio_init>:
+gpio_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:60
+#include <stddef.h>
+
+unsigned char gpio_init(struct gpio_instance *this_gpio,
+		uint32_t base_addr,
+		uint32_t lines_num, uint32_t gpio_dirs)
+{
+     964:	7179                	addi	sp,sp,-48
+     966:	d606                	sw	ra,44(sp)
+     968:	d422                	sw	s0,40(sp)
+     96a:	1800                	addi	s0,sp,48
+     96c:	fca42e23          	sw	a0,-36(s0)
+     970:	fcb42c23          	sw	a1,-40(s0)
+     974:	fcc42a23          	sw	a2,-44(s0)
+     978:	fcd42823          	sw	a3,-48(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:61
+	unsigned int index = 0;
+     97c:	fe042623          	sw	zero,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:62
+	if (NULL == this_gpio) {
+     980:	fdc42783          	lw	a5,-36(s0)
+     984:	e399                	bnez	a5,98a <gpio_init+0x26>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:63
+		return 1;
+     986:	4785                	li	a5,1
+     988:	a04d                	j	a2a <_STACK_SIZE+0x2a>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:65
+	}
+	this_gpio->base_address = base_addr;
+     98a:	fdc42783          	lw	a5,-36(s0)
+     98e:	fd842703          	lw	a4,-40(s0)
+     992:	c3d8                	sw	a4,4(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:67
+
+	for (index = 0; index < lines_num; index++) {
+     994:	fe042623          	sw	zero,-20(s0)
+     998:	a051                	j	a1c <_STACK_SIZE+0x1c>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:68
+		this_gpio->gpio_config[index].pin = 0x01 << index;
+     99a:	fec42783          	lw	a5,-20(s0)
+     99e:	4705                	li	a4,1
+     9a0:	00f717b3          	sll	a5,a4,a5
+     9a4:	86be                	mv	a3,a5
+     9a6:	fdc42703          	lw	a4,-36(s0)
+     9aa:	fec42783          	lw	a5,-20(s0)
+     9ae:	078a                	slli	a5,a5,0x2
+     9b0:	97ba                	add	a5,a5,a4
+     9b2:	c794                	sw	a3,8(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:70
+
+		if (gpio_dirs & (0x01 << index)) {
+     9b4:	fec42783          	lw	a5,-20(s0)
+     9b8:	4705                	li	a4,1
+     9ba:	00f717b3          	sll	a5,a4,a5
+     9be:	873e                	mv	a4,a5
+     9c0:	fd042783          	lw	a5,-48(s0)
+     9c4:	8ff9                	and	a5,a5,a4
+     9c6:	c795                	beqz	a5,9f2 <gpio_init+0x8e>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:71
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     9c8:	fdc42783          	lw	a5,-36(s0)
+     9cc:	43dc                	lw	a5,4(a5)
+     9ce:	0107e693          	ori	a3,a5,16
+     9d2:	fdc42703          	lw	a4,-36(s0)
+     9d6:	fec42783          	lw	a5,-20(s0)
+     9da:	078a                	slli	a5,a5,0x2
+     9dc:	97ba                	add	a5,a5,a4
+     9de:	478c                	lw	a1,8(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:72
+					this_gpio->gpio_config[index].pin, (GPIO_OUTPUT << index));
+     9e0:	fec42783          	lw	a5,-20(s0)
+     9e4:	4705                	li	a4,1
+     9e6:	00f717b3          	sll	a5,a4,a5
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:71
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     9ea:	863e                	mv	a2,a5
+     9ec:	8536                	mv	a0,a3
+     9ee:	30f5                	jal	2da <reg_32b_modify>
+     9f0:	a00d                	j	a12 <_STACK_SIZE+0x12>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:77
+#ifdef _DIRECTION_INTERNAL_MEMORY_USE_
+			this_gpio->gpio_config[index].direction = GPIO_OUTPUT;
+#endif
+		} else {
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     9f2:	fdc42783          	lw	a5,-36(s0)
+     9f6:	43dc                	lw	a5,4(a5)
+     9f8:	0107e693          	ori	a3,a5,16
+     9fc:	fdc42703          	lw	a4,-36(s0)
+     a00:	fec42783          	lw	a5,-20(s0)
+     a04:	078a                	slli	a5,a5,0x2
+     a06:	97ba                	add	a5,a5,a4
+     a08:	479c                	lw	a5,8(a5)
+     a0a:	4601                	li	a2,0
+     a0c:	85be                	mv	a1,a5
+     a0e:	8536                	mv	a0,a3
+     a10:	30e9                	jal	2da <reg_32b_modify>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:67 (discriminator 2)
+	for (index = 0; index < lines_num; index++) {
+     a12:	fec42783          	lw	a5,-20(s0)
+     a16:	0785                	addi	a5,a5,1
+     a18:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:67 (discriminator 1)
+     a1c:	fec42703          	lw	a4,-20(s0)
+     a20:	fd442783          	lw	a5,-44(s0)
+     a24:	f6f76be3          	bltu	a4,a5,99a <gpio_init+0x36>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:84
+#ifdef _DIRECTION_INTERNAL_MEMORY_USE_
+			this_gpio->gpio_config[index].direction = GPIO_INPUT;
+#endif
+		}
+	}
+	return 0;
+     a28:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/bsp/driver/gpio/gpio.c:85
+}
+     a2a:	853e                	mv	a0,a5
+     a2c:	50b2                	lw	ra,44(sp)
+     a2e:	5422                	lw	s0,40(sp)
+     a30:	6145                	addi	sp,sp,48
+     a32:	8082                	ret
+
+00000a34 <crc16_ccitt>:
+crc16_ccitt():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:69
+		0x6e17,0x7e36,0x4e55,0x5e74,0x2e93,0x3eb2,0x0ed1,0x1ef0
+};
+
+
+unsigned short crc16_ccitt(const void *buf, int len, unsigned short start)
+{
+     a34:	7179                	addi	sp,sp,-48
+     a36:	d622                	sw	s0,44(sp)
+     a38:	1800                	addi	s0,sp,48
+     a3a:	fca42e23          	sw	a0,-36(s0)
+     a3e:	fcb42c23          	sw	a1,-40(s0)
+     a42:	87b2                	mv	a5,a2
+     a44:	fcf41b23          	sh	a5,-42(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:71
+	unsigned int counter;
+	unsigned short crc = start;
+     a48:	fd645783          	lhu	a5,-42(s0)
+     a4c:	fef41523          	sh	a5,-22(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:73
+
+	for( counter = 0; counter < len; ) {
+     a50:	fe042623          	sw	zero,-20(s0)
+     a54:	aa0d                	j	b86 <crc16_ccitt+0x152>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:74
+		crc = (crc<<8) ^ crc16tab[((crc>>8) ^ *(unsigned int *)buf)&0x00FF];
+     a56:	fea45783          	lhu	a5,-22(s0)
+     a5a:	07a2                	slli	a5,a5,0x8
+     a5c:	01079713          	slli	a4,a5,0x10
+     a60:	8741                	srai	a4,a4,0x10
+     a62:	fea45783          	lhu	a5,-22(s0)
+     a66:	83a1                	srli	a5,a5,0x8
+     a68:	07c2                	slli	a5,a5,0x10
+     a6a:	83c1                	srli	a5,a5,0x10
+     a6c:	86be                	mv	a3,a5
+     a6e:	fdc42783          	lw	a5,-36(s0)
+     a72:	439c                	lw	a5,0(a5)
+     a74:	8fb5                	xor	a5,a5,a3
+     a76:	0ff7f793          	zext.b	a5,a5
+     a7a:	6685                	lui	a3,0x1
+     a7c:	79868693          	addi	a3,a3,1944 # 1798 <crc16tab>
+     a80:	0786                	slli	a5,a5,0x1
+     a82:	97b6                	add	a5,a5,a3
+     a84:	0007d783          	lhu	a5,0(a5)
+     a88:	07c2                	slli	a5,a5,0x10
+     a8a:	87c1                	srai	a5,a5,0x10
+     a8c:	8fb9                	xor	a5,a5,a4
+     a8e:	07c2                	slli	a5,a5,0x10
+     a90:	87c1                	srai	a5,a5,0x10
+     a92:	fef41523          	sh	a5,-22(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:75
+		crc = (crc<<8) ^ crc16tab[((crc>>8) ^ *(unsigned int *)buf>>8)&0x00FF];
+     a96:	fea45783          	lhu	a5,-22(s0)
+     a9a:	07a2                	slli	a5,a5,0x8
+     a9c:	01079713          	slli	a4,a5,0x10
+     aa0:	8741                	srai	a4,a4,0x10
+     aa2:	fea45783          	lhu	a5,-22(s0)
+     aa6:	83a1                	srli	a5,a5,0x8
+     aa8:	07c2                	slli	a5,a5,0x10
+     aaa:	83c1                	srli	a5,a5,0x10
+     aac:	86be                	mv	a3,a5
+     aae:	fdc42783          	lw	a5,-36(s0)
+     ab2:	439c                	lw	a5,0(a5)
+     ab4:	83a1                	srli	a5,a5,0x8
+     ab6:	8fb5                	xor	a5,a5,a3
+     ab8:	0ff7f793          	zext.b	a5,a5
+     abc:	6685                	lui	a3,0x1
+     abe:	79868693          	addi	a3,a3,1944 # 1798 <crc16tab>
+     ac2:	0786                	slli	a5,a5,0x1
+     ac4:	97b6                	add	a5,a5,a3
+     ac6:	0007d783          	lhu	a5,0(a5)
+     aca:	07c2                	slli	a5,a5,0x10
+     acc:	87c1                	srai	a5,a5,0x10
+     ace:	8fb9                	xor	a5,a5,a4
+     ad0:	07c2                	slli	a5,a5,0x10
+     ad2:	87c1                	srai	a5,a5,0x10
+     ad4:	fef41523          	sh	a5,-22(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:76
+		if(len - counter <4)
+     ad8:	fd842703          	lw	a4,-40(s0)
+     adc:	fec42783          	lw	a5,-20(s0)
+     ae0:	8f1d                	sub	a4,a4,a5
+     ae2:	478d                	li	a5,3
+     ae4:	00e7e563          	bltu	a5,a4,aee <crc16_ccitt+0xba>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:77
+			return crc;
+     ae8:	fea45783          	lhu	a5,-22(s0)
+     aec:	a06d                	j	b96 <crc16_ccitt+0x162>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:78
+		crc = (crc<<8) ^ crc16tab[((crc>>8) ^ *(unsigned int *)buf>>16)&0x00FF];
+     aee:	fea45783          	lhu	a5,-22(s0)
+     af2:	07a2                	slli	a5,a5,0x8
+     af4:	01079713          	slli	a4,a5,0x10
+     af8:	8741                	srai	a4,a4,0x10
+     afa:	fea45783          	lhu	a5,-22(s0)
+     afe:	83a1                	srli	a5,a5,0x8
+     b00:	07c2                	slli	a5,a5,0x10
+     b02:	83c1                	srli	a5,a5,0x10
+     b04:	86be                	mv	a3,a5
+     b06:	fdc42783          	lw	a5,-36(s0)
+     b0a:	439c                	lw	a5,0(a5)
+     b0c:	83c1                	srli	a5,a5,0x10
+     b0e:	8fb5                	xor	a5,a5,a3
+     b10:	0ff7f793          	zext.b	a5,a5
+     b14:	6685                	lui	a3,0x1
+     b16:	79868693          	addi	a3,a3,1944 # 1798 <crc16tab>
+     b1a:	0786                	slli	a5,a5,0x1
+     b1c:	97b6                	add	a5,a5,a3
+     b1e:	0007d783          	lhu	a5,0(a5)
+     b22:	07c2                	slli	a5,a5,0x10
+     b24:	87c1                	srai	a5,a5,0x10
+     b26:	8fb9                	xor	a5,a5,a4
+     b28:	07c2                	slli	a5,a5,0x10
+     b2a:	87c1                	srai	a5,a5,0x10
+     b2c:	fef41523          	sh	a5,-22(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:79
+		crc = (crc<<8) ^ crc16tab[((crc>>8) ^ *(unsigned int *)buf>>24)&0x00FF];
+     b30:	fea45783          	lhu	a5,-22(s0)
+     b34:	07a2                	slli	a5,a5,0x8
+     b36:	01079713          	slli	a4,a5,0x10
+     b3a:	8741                	srai	a4,a4,0x10
+     b3c:	fea45783          	lhu	a5,-22(s0)
+     b40:	83a1                	srli	a5,a5,0x8
+     b42:	07c2                	slli	a5,a5,0x10
+     b44:	83c1                	srli	a5,a5,0x10
+     b46:	86be                	mv	a3,a5
+     b48:	fdc42783          	lw	a5,-36(s0)
+     b4c:	439c                	lw	a5,0(a5)
+     b4e:	83e1                	srli	a5,a5,0x18
+     b50:	8fb5                	xor	a5,a5,a3
+     b52:	0ff7f793          	zext.b	a5,a5
+     b56:	6685                	lui	a3,0x1
+     b58:	79868693          	addi	a3,a3,1944 # 1798 <crc16tab>
+     b5c:	0786                	slli	a5,a5,0x1
+     b5e:	97b6                	add	a5,a5,a3
+     b60:	0007d783          	lhu	a5,0(a5)
+     b64:	07c2                	slli	a5,a5,0x10
+     b66:	87c1                	srai	a5,a5,0x10
+     b68:	8fb9                	xor	a5,a5,a4
+     b6a:	07c2                	slli	a5,a5,0x10
+     b6c:	87c1                	srai	a5,a5,0x10
+     b6e:	fef41523          	sh	a5,-22(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:80
+		counter = counter +4;
+     b72:	fec42783          	lw	a5,-20(s0)
+     b76:	0791                	addi	a5,a5,4
+     b78:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:81
+		buf = buf +4;
+     b7c:	fdc42783          	lw	a5,-36(s0)
+     b80:	0791                	addi	a5,a5,4
+     b82:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:73 (discriminator 1)
+	for( counter = 0; counter < len; ) {
+     b86:	fd842783          	lw	a5,-40(s0)
+     b8a:	fec42703          	lw	a4,-20(s0)
+     b8e:	ecf764e3          	bltu	a4,a5,a56 <crc16_ccitt+0x22>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:83
+	}
+	return crc;
+     b92:	fea45783          	lhu	a5,-22(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/crc16.c:84
+}
+     b96:	853e                	mv	a0,a5
+     b98:	5432                	lw	s0,44(sp)
+     b9a:	6145                	addi	sp,sp,48
+     b9c:	8082                	ret
+
+00000b9e <lscc_uart_putc>:
+lscc_uart_putc():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:157
+#include "pic.h"
+#endif
+
+struct gpio_instance gpio_inst;
+static int lscc_uart_putc(char c, FILE *file)
+{
+     b9e:	1101                	addi	sp,sp,-32
+     ba0:	ce06                	sw	ra,28(sp)
+     ba2:	cc22                	sw	s0,24(sp)
+     ba4:	1000                	addi	s0,sp,32
+     ba6:	87aa                	mv	a5,a0
+     ba8:	feb42423          	sw	a1,-24(s0)
+     bac:	fef407a3          	sb	a5,-17(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:159
+#ifdef LSCC_STDIO_UART_APB
+	return uart_putc(&uart_core_uart, c);
+     bb0:	fef44783          	lbu	a5,-17(s0)
+     bb4:	85be                	mv	a1,a5
+     bb6:	6789                	lui	a5,0x2
+     bb8:	cc878513          	addi	a0,a5,-824 # 1cc8 <uart_core_uart>
+     bbc:	d92ff0ef          	jal	ra,14e <uart_putc>
+     bc0:	87aa                	mv	a5,a0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:163
+#else
+	return EOF;
+#endif
+}
+     bc2:	853e                	mv	a0,a5
+     bc4:	40f2                	lw	ra,28(sp)
+     bc6:	4462                	lw	s0,24(sp)
+     bc8:	6105                	addi	sp,sp,32
+     bca:	8082                	ret
+
+00000bcc <lscc_uart_getc>:
+lscc_uart_getc():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:168
+
+
+
+static int lscc_uart_getc(FILE *file)
+{
+     bcc:	1101                	addi	sp,sp,-32
+     bce:	ce22                	sw	s0,28(sp)
+     bd0:	1000                	addi	s0,sp,32
+     bd2:	fea42623          	sw	a0,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:170
+	(void) file;
+	return EOF;
+     bd6:	57fd                	li	a5,-1
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:171
+}
+     bd8:	853e                	mv	a0,a5
+     bda:	4472                	lw	s0,28(sp)
+     bdc:	6105                	addi	sp,sp,32
+     bde:	8082                	ret
+
+00000be0 <lscc_uart_flush>:
+lscc_uart_flush():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:175
+
+
+static int lscc_uart_flush(FILE *file)
+{
+     be0:	1101                	addi	sp,sp,-32
+     be2:	ce22                	sw	s0,28(sp)
+     be4:	1000                	addi	s0,sp,32
+     be6:	fea42623          	sw	a0,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:177
+	(void) file;
+	return 0;
+     bea:	4781                	li	a5,0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:178
+}
+     bec:	853e                	mv	a0,a5
+     bee:	4472                	lw	s0,28(sp)
+     bf0:	6105                	addi	sp,sp,32
+     bf2:	8082                	ret
+
+00000bf4 <bsp_init>:
+bsp_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:182
+
+
+static void bsp_init(void)
+{
+     bf4:	1141                	addi	sp,sp,-16
+     bf6:	c606                	sw	ra,12(sp)
+     bf8:	c422                	sw	s0,8(sp)
+     bfa:	0800                	addi	s0,sp,16
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:184
+	//initialize GPIO
+	gpio_inst.instance_name = GPIO0_INST_GPIO_MEM_MAP_NAME;
+     bfc:	6789                	lui	a5,0x2
+     bfe:	d2078793          	addi	a5,a5,-736 # 1d20 <gpio_inst>
+     c02:	6709                	lui	a4,0x2
+     c04:	99870713          	addi	a4,a4,-1640 # 1998 <crc16tab+0x200>
+     c08:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:185
+	gpio_init(&gpio_inst, GPIO0_INST_GPIO_MEM_MAP_BASE_ADDR, GPIO0_INST_LINES_NUM, GPIO0_INST_GPIO_DIRS);
+     c0a:	0ff00693          	li	a3,255
+     c0e:	4621                	li	a2,8
+     c10:	400005b7          	lui	a1,0x40000
+     c14:	6789                	lui	a5,0x2
+     c16:	d2078513          	addi	a0,a5,-736 # 1d20 <gpio_inst>
+     c1a:	33a9                	jal	964 <gpio_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:188
+
+	//initialize UART
+	uart_init(&uart_core_uart, UART0_INST_UART_MEM_MAP_BASE_ADDR, UART0_INST_SYS_CLK * 1000000, UART0_INST_BAUD_RATE, 1, 8);
+     c1c:	47a1                	li	a5,8
+     c1e:	4705                	li	a4,1
+     c20:	66f1                	lui	a3,0x1c
+     c22:	20068693          	addi	a3,a3,512 # 1c200 <_stack_start+0x19a50>
+     c26:	05f5e637          	lui	a2,0x5f5e
+     c2a:	10060613          	addi	a2,a2,256 # 5f5e100 <_stack_start+0x5f5b950>
+     c2e:	400905b7          	lui	a1,0x40090
+     c32:	6509                	lui	a0,0x2
+     c34:	cc850513          	addi	a0,a0,-824 # 1cc8 <uart_core_uart>
+     c38:	c8cff0ef          	jal	ra,c4 <uart_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:189
+	iob_init(lscc_uart_putc, lscc_uart_getc, lscc_uart_flush);
+     c3c:	6785                	lui	a5,0x1
+     c3e:	be078613          	addi	a2,a5,-1056 # be0 <lscc_uart_flush>
+     c42:	6785                	lui	a5,0x1
+     c44:	bcc78593          	addi	a1,a5,-1076 # bcc <lscc_uart_getc>
+     c48:	6785                	lui	a5,0x1
+     c4a:	b9e78513          	addi	a0,a5,-1122 # b9e <lscc_uart_putc>
+     c4e:	d62ff0ef          	jal	ra,1b0 <iob_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:190
+}
+     c52:	0001                	nop
+     c54:	40b2                	lw	ra,12(sp)
+     c56:	4422                	lw	s0,8(sp)
+     c58:	0141                	addi	sp,sp,16
+     c5a:	8082                	ret
+
+00000c5c <LPDDR_init>:
+LPDDR_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:206
+		printf("\r\n	INFO: Data 0x%08X read from memory at address %p\r\n", data[i], (void*)&address[i]);
+	}
+}
+
+void LPDDR_init()
+{
+     c5c:	1141                	addi	sp,sp,-16
+     c5e:	c606                	sw	ra,12(sp)
+     c60:	c422                	sw	s0,8(sp)
+     c62:	0800                	addi	s0,sp,16
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:207
+	lpddr4_init(&lpddr4_instance,LPDDR4_MC_CONTR0_INST_MEMC_REG_MEM_MAP_BASE_ADDR);
+     c64:	400925b7          	lui	a1,0x40092
+     c68:	6789                	lui	a5,0x2
+     c6a:	cb478513          	addi	a0,a5,-844 # 1cb4 <lpddr4_instance>
+     c6e:	363d                	jal	79c <lpddr4_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:208
+}
+     c70:	0001                	nop
+     c72:	40b2                	lw	ra,12(sp)
+     c74:	4422                	lw	s0,8(sp)
+     c76:	0141                	addi	sp,sp,16
+     c78:	8082                	ret
+
+00000c7a <qspi_init>:
+qspi_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:211
+
+void qspi_init()
+{
+     c7a:	1141                	addi	sp,sp,-16
+     c7c:	c606                	sw	ra,12(sp)
+     c7e:	c422                	sw	s0,8(sp)
+     c80:	0800                	addi	s0,sp,16
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:212
+	qspi_core.base_address = QSPI0_INST_QSPI_FLASH_CONTROLLER_MEM_MAP_AXI4_BASE_ADDR;
+     c82:	6789                	lui	a5,0x2
+     c84:	cb878793          	addi	a5,a5,-840 # 1cb8 <qspi_core>
+     c88:	40300737          	lui	a4,0x40300
+     c8c:	c398                	sw	a4,0(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:213
+	qspi_core.config_0 = (EN_FRAME_END_DONE_CNTR | EN_FLASH_ADDR_SPACE_MAP | BIG_ENDIAN | DIV_BY_4 | CHIP_SEL_BEH | MIN_IDLE_TIME |
+     c8e:	6789                	lui	a5,0x2
+     c90:	cb878793          	addi	a5,a5,-840 # 1cb8 <qspi_core>
+     c94:	6709                	lui	a4,0x2
+     c96:	20670713          	addi	a4,a4,518 # 2206 <_bss_end+0x45e>
+     c9a:	c798                	sw	a4,8(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:215
+			EN_BACK_TO_BACK_TRANS | SAMPLE_EVEN_EDGES | ACTIVE_HIGH | MSB_FIRST);
+	qspi_core.config_1 = TGT_RD_TRANS_CNT;
+     c9c:	6789                	lui	a5,0x2
+     c9e:	cb878793          	addi	a5,a5,-840 # 1cb8 <qspi_core>
+     ca2:	00100737          	lui	a4,0x100
+     ca6:	c7d8                	sw	a4,12(a5)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:216
+	qspi_flash_cntl_write(&qspi_core,REG_INT_STATUS, CLR_INTERRUPT);
+     ca8:	6785                	lui	a5,0x1
+     caa:	fff78613          	addi	a2,a5,-1 # fff <main+0xdb>
+     cae:	04100593          	li	a1,65
+     cb2:	6789                	lui	a5,0x2
+     cb4:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     cb8:	f54ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:217
+	qspi_flash_cntl_init(&qspi_core);
+     cbc:	6789                	lui	a5,0x2
+     cbe:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     cc2:	ec2ff0ef          	jal	ra,384 <qspi_flash_cntl_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:222
+	//qspi_flash_cntl_read_write_config_reg(1);
+	//qspi_flash_cntl_read_write_config_reg(0);
+
+#if(FLASH_ADDR_MODE == FLASH_ADDR_32BIT) //Enter 4-bytes mode
+	qspi_flash_cntl_write(&qspi_core,REG_QSPI_FLASH_CMD_CODE_7, (ENTER_4_BYTE_ADDR_MODE_CMD_CODE | FLASH_CMD_CODE_7_REG_CMD_QUAD_EN));
+     cc6:	b70037b7          	lui	a5,0xb7003
+     cca:	50078613          	addi	a2,a5,1280 # b7003500 <_stack_start+0xb7000d50>
+     cce:	45a9                	li	a1,10
+     cd0:	6789                	lui	a5,0x2
+     cd2:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     cd6:	f36ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:223
+	qspi_flash_cntl_write(&qspi_core,REG_PACKET_HDR_0, (XFER_LEN_BYTES | NUM_WAIT_STATE | MULT_FLASH_TARGET |
+     cda:	07100613          	li	a2,113
+     cde:	08200593          	li	a1,130
+     ce2:	6789                	lui	a5,0x2
+     ce4:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     ce8:	f24ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:225
+			FLASH_CMD_CODE | WITH_PAYLOAD | SUPPORTED_FLASH_CMD));
+	qspi_flash_cntl_write(&qspi_core,REG_PACKET_HDR_1, (FLASH_ADDRESS_WIDTH | TARGET_CS | DATA_LANE_WIDTH |
+     cec:	4601                	li	a2,0
+     cee:	08300593          	li	a1,131
+     cf2:	6789                	lui	a5,0x2
+     cf4:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     cf8:	f14ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:227
+			ADDRESS_LANE_WIDTH | COMMAND_LANE_WIDTH));
+	qspi_flash_cntl_write(&qspi_core,REG_START_TRANS, START_TRANS_VAL);
+     cfc:	4605                	li	a2,1
+     cfe:	08800593          	li	a1,136
+     d02:	6789                	lui	a5,0x2
+     d04:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     d08:	f04ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:228
+	qspi_flash_cntl_write(&qspi_core,REG_INT_STATUS, CLR_INTERRUPT);
+     d0c:	6785                	lui	a5,0x1
+     d0e:	fff78613          	addi	a2,a5,-1 # fff <main+0xdb>
+     d12:	04100593          	li	a1,65
+     d16:	6789                	lui	a5,0x2
+     d18:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     d1c:	ef0ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:229
+	qspi_flash_cntl_write(&qspi_core,REG_START_TRANS, CLR_START_TRANS_VAL);
+     d20:	4601                	li	a2,0
+     d22:	08800593          	li	a1,136
+     d26:	6789                	lui	a5,0x2
+     d28:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     d2c:	ee0ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:234
+#if(SPI_COMM_MODE == QUAD_SPI_MODE)
+	enable_quad_mode();
+	qspi_flash_cntl_write(&qspi_core,REG_QSPI_FLASH_CMD_CODE_3, QUAD_IO_FAST_RD_CMD_CODE);
+#elif(SPI_COMM_MODE == STANDARD_SPI_MODE)
+	qspi_flash_cntl_write(&qspi_core,REG_QSPI_FLASH_CMD_CODE_2, STD_IO_FAST_RD_CMD_CODE); // Fast read opcode
+     d30:	4631                	li	a2,12
+     d32:	4595                	li	a1,5
+     d34:	6789                	lui	a5,0x2
+     d36:	cb878513          	addi	a0,a5,-840 # 1cb8 <qspi_core>
+     d3a:	ed2ff0ef          	jal	ra,40c <qspi_flash_cntl_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:239
+#endif
+#elif(FLASH_ADDR_MODE == FLASH_ADDR_24BIT)
+	enable_quad_mode();
+#endif
+}
+     d3e:	0001                	nop
+     d40:	40b2                	lw	ra,12(sp)
+     d42:	4422                	lw	s0,8(sp)
+     d44:	0141                	addi	sp,sp,16
+     d46:	8082                	ret
+
+00000d48 <mdio_phy_init>:
+mdio_phy_init():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:242
+
+void mdio_phy_init()
+{
+     d48:	7139                	addi	sp,sp,-64
+     d4a:	de06                	sw	ra,60(sp)
+     d4c:	dc22                	sw	s0,56(sp)
+     d4e:	0080                	addi	s0,sp,64
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:243
+	uint32_t access_ctrl_reg = TSE_MAC0_INST_TSE_ETHERNET_MAC_MEM_MAP_BASE_ADDR + 0x20;
+     d50:	400017b7          	lui	a5,0x40001
+     d54:	02078793          	addi	a5,a5,32 # 40001020 <_stack_start+0x3fffe870>
+     d58:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:244
+	uint32_t access_data_reg = TSE_MAC0_INST_TSE_ETHERNET_MAC_MEM_MAP_BASE_ADDR + 0x24;
+     d5c:	400017b7          	lui	a5,0x40001
+     d60:	02478793          	addi	a5,a5,36 # 40001024 <_stack_start+0x3fffe874>
+     d64:	fef42423          	sw	a5,-24(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:245
+	uint8_t reg_addr = 0x3;
+     d68:	478d                	li	a5,3
+     d6a:	fef403a3          	sb	a5,-25(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:246
+	uint8_t phy_reset_reg = 0x0;
+     d6e:	fe040323          	sb	zero,-26(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:247
+	uint16_t phy_reset = 0x0;
+     d72:	fc041823          	sh	zero,-48(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:248
+	uint16_t data_buffer = 0x0;
+     d76:	fe041223          	sh	zero,-28(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:249
+	uint16_t reg_write_reset = 0x8140;
+     d7a:	77e1                	lui	a5,0xffff8
+     d7c:	14078793          	addi	a5,a5,320 # ffff8140 <_stack_start+0xffff5990>
+     d80:	fef41123          	sh	a5,-30(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:250
+	uint32_t phy_id = 0x0;
+     d84:	fc042623          	sw	zero,-52(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:251
+	uint32_t phy_addr = 0x0;
+     d88:	fc042e23          	sw	zero,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:252
+	uint8_t page_reg_addr = 0x1;
+     d8c:	4785                	li	a5,1
+     d8e:	fcf40da3          	sb	a5,-37(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:253
+	uint8_t page_num = 0x2;
+     d92:	4789                	li	a5,2
+     d94:	fcf40d23          	sb	a5,-38(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:254
+	uint32_t page_num_read = 0;
+     d98:	fc042a23          	sw	zero,-44(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:255
+	uint32_t copper_status = 0;
+     d9c:	fc042423          	sw	zero,-56(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:256
+	uint32_t gmii_cmd_fin = 0;
+     da0:	fc042223          	sw	zero,-60(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:259
+
+	// read the model id
+	reg_32b_write(access_ctrl_reg, PHY_REG_READ << PHY_REG_READ_WRITE_SHIFT | phy_addr << PHY_REG_SHIFT | reg_addr);
+     da4:	fdc42783          	lw	a5,-36(s0)
+     da8:	00879713          	slli	a4,a5,0x8
+     dac:	fe744783          	lbu	a5,-25(s0)
+     db0:	8fd9                	or	a5,a5,a4
+     db2:	85be                	mv	a1,a5
+     db4:	fec42503          	lw	a0,-20(s0)
+     db8:	cccff0ef          	jal	ra,284 <reg_32b_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:260
+	while((gmii_cmd_fin & PHY_REG_CMD_FIN) != PHY_REG_CMD_FIN) {
+     dbc:	a801                	j	dcc <mdio_phy_init+0x84>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:261
+		reg_32b_read(access_ctrl_reg, &gmii_cmd_fin);
+     dbe:	fc440793          	addi	a5,s0,-60
+     dc2:	85be                	mv	a1,a5
+     dc4:	fec42503          	lw	a0,-20(s0)
+     dc8:	ce6ff0ef          	jal	ra,2ae <reg_32b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:260
+	while((gmii_cmd_fin & PHY_REG_CMD_FIN) != PHY_REG_CMD_FIN) {
+     dcc:	fc442703          	lw	a4,-60(s0)
+     dd0:	6791                	lui	a5,0x4
+     dd2:	8ff9                	and	a5,a5,a4
+     dd4:	d7ed                	beqz	a5,dbe <mdio_phy_init+0x76>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:264
+	}
+
+	gmii_cmd_fin = 0;
+     dd6:	fc042223          	sw	zero,-60(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:265
+	reg_32b_read(access_data_reg, &phy_id);
+     dda:	fcc40793          	addi	a5,s0,-52
+     dde:	85be                	mv	a1,a5
+     de0:	fe842503          	lw	a0,-24(s0)
+     de4:	ccaff0ef          	jal	ra,2ae <reg_32b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:268
+
+	// check for the Marvell PHY model
+	uint16_t model = ((phy_id >> 4) & 0x1D);
+     de8:	fcc42783          	lw	a5,-52(s0)
+     dec:	8391                	srli	a5,a5,0x4
+     dee:	07c2                	slli	a5,a5,0x10
+     df0:	83c1                	srli	a5,a5,0x10
+     df2:	8bf5                	andi	a5,a5,29
+     df4:	fcf41923          	sh	a5,-46(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:269
+	printf("\r\nphy_id: %x, model: %x\r\n", phy_id, model);
+     df8:	fcc42783          	lw	a5,-52(s0)
+     dfc:	fd245703          	lhu	a4,-46(s0)
+     e00:	863a                	mv	a2,a4
+     e02:	85be                	mv	a1,a5
+     e04:	6789                	lui	a5,0x2
+     e06:	a2078513          	addi	a0,a5,-1504 # 1a20 <crc16tab+0x288>
+     e0a:	24ad                	jal	1074 <printf>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:270
+	if (model == MARVELL_PHY_88E151X) {
+     e0c:	fd245703          	lhu	a4,-46(s0)
+     e10:	47f5                	li	a5,29
+     e12:	10f71063          	bne	a4,a5,f12 <mdio_phy_init+0x1ca>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:272
+		// reset the PHY and set the Full-Duplex mode
+		reg_32b_write(access_ctrl_reg, PHY_REG_WRITE << PHY_REG_READ_WRITE_SHIFT | phy_addr << PHY_REG_SHIFT | phy_reset_reg);
+     e16:	fdc42783          	lw	a5,-36(s0)
+     e1a:	00879713          	slli	a4,a5,0x8
+     e1e:	fe644783          	lbu	a5,-26(s0)
+     e22:	8f5d                	or	a4,a4,a5
+     e24:	6785                	lui	a5,0x1
+     e26:	8fd9                	or	a5,a5,a4
+     e28:	85be                	mv	a1,a5
+     e2a:	fec42503          	lw	a0,-20(s0)
+     e2e:	c56ff0ef          	jal	ra,284 <reg_32b_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:273
+		reg_16b_write(access_data_reg, reg_write_reset);
+     e32:	fe245783          	lhu	a5,-30(s0)
+     e36:	85be                	mv	a1,a5
+     e38:	fe842503          	lw	a0,-24(s0)
+     e3c:	ce4ff0ef          	jal	ra,320 <reg_16b_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:275
+
+		while((gmii_cmd_fin & 0x00004000) != 0x00004000) {
+     e40:	a801                	j	e50 <mdio_phy_init+0x108>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:276
+			reg_32b_read(access_ctrl_reg, &gmii_cmd_fin);
+     e42:	fc440793          	addi	a5,s0,-60
+     e46:	85be                	mv	a1,a5
+     e48:	fec42503          	lw	a0,-20(s0)
+     e4c:	c62ff0ef          	jal	ra,2ae <reg_32b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:275
+		while((gmii_cmd_fin & 0x00004000) != 0x00004000) {
+     e50:	fc442703          	lw	a4,-60(s0)
+     e54:	6791                	lui	a5,0x4
+     e56:	8ff9                	and	a5,a5,a4
+     e58:	d7ed                	beqz	a5,e42 <mdio_phy_init+0xfa>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:280
+		}
+
+		// read back the control reg.
+		gmii_cmd_fin = 0;
+     e5a:	fc042223          	sw	zero,-60(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:281
+		reg_32b_write(access_ctrl_reg, PHY_REG_READ << PHY_REG_READ_WRITE_SHIFT | phy_addr << PHY_REG_SHIFT | phy_reset_reg);
+     e5e:	fdc42783          	lw	a5,-36(s0)
+     e62:	00879713          	slli	a4,a5,0x8
+     e66:	fe644783          	lbu	a5,-26(s0)
+     e6a:	8fd9                	or	a5,a5,a4
+     e6c:	85be                	mv	a1,a5
+     e6e:	fec42503          	lw	a0,-20(s0)
+     e72:	c12ff0ef          	jal	ra,284 <reg_32b_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:283
+
+		while((gmii_cmd_fin & 0x00004000) != 0x00004000) {
+     e76:	a801                	j	e86 <mdio_phy_init+0x13e>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:284
+			reg_32b_read(access_ctrl_reg, &gmii_cmd_fin);
+     e78:	fc440793          	addi	a5,s0,-60
+     e7c:	85be                	mv	a1,a5
+     e7e:	fec42503          	lw	a0,-20(s0)
+     e82:	c2cff0ef          	jal	ra,2ae <reg_32b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:283
+		while((gmii_cmd_fin & 0x00004000) != 0x00004000) {
+     e86:	fc442703          	lw	a4,-60(s0)
+     e8a:	6791                	lui	a5,0x4
+     e8c:	8ff9                	and	a5,a5,a4
+     e8e:	d7ed                	beqz	a5,e78 <mdio_phy_init+0x130>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:287
+		}
+
+		gmii_cmd_fin = 0;
+     e90:	fc042223          	sw	zero,-60(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:288
+		reg_16b_read(access_data_reg, &phy_reset);
+     e94:	fd040793          	addi	a5,s0,-48
+     e98:	85be                	mv	a1,a5
+     e9a:	fe842503          	lw	a0,-24(s0)
+     e9e:	cb0ff0ef          	jal	ra,34e <reg_16b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:289
+		printf("\r\nAfter write: Control Register: %x\r\n", phy_reset);
+     ea2:	fd045783          	lhu	a5,-48(s0)
+     ea6:	85be                	mv	a1,a5
+     ea8:	6789                	lui	a5,0x2
+     eaa:	a3c78513          	addi	a0,a5,-1476 # 1a3c <crc16tab+0x2a4>
+     eae:	22d9                	jal	1074 <printf>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:291
+
+		while((copper_status & 0x24) != 0x24) {
+     eb0:	a089                	j	ef2 <mdio_phy_init+0x1aa>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:293
+			// read copper status for link-up status
+			reg_32b_write(access_ctrl_reg, PHY_REG_READ << PHY_REG_READ_WRITE_SHIFT | phy_addr << PHY_REG_SHIFT | page_reg_addr);
+     eb2:	fdc42783          	lw	a5,-36(s0)
+     eb6:	00879713          	slli	a4,a5,0x8
+     eba:	fdb44783          	lbu	a5,-37(s0)
+     ebe:	8fd9                	or	a5,a5,a4
+     ec0:	85be                	mv	a1,a5
+     ec2:	fec42503          	lw	a0,-20(s0)
+     ec6:	bbeff0ef          	jal	ra,284 <reg_32b_write>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:294
+			while((gmii_cmd_fin & 0x00004000) != 0x00004000) {
+     eca:	a801                	j	eda <mdio_phy_init+0x192>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:295
+				reg_32b_read(access_ctrl_reg, &gmii_cmd_fin);
+     ecc:	fc440793          	addi	a5,s0,-60
+     ed0:	85be                	mv	a1,a5
+     ed2:	fec42503          	lw	a0,-20(s0)
+     ed6:	bd8ff0ef          	jal	ra,2ae <reg_32b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:294
+			while((gmii_cmd_fin & 0x00004000) != 0x00004000) {
+     eda:	fc442703          	lw	a4,-60(s0)
+     ede:	6791                	lui	a5,0x4
+     ee0:	8ff9                	and	a5,a5,a4
+     ee2:	d7ed                	beqz	a5,ecc <mdio_phy_init+0x184>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:298
+			}
+
+			reg_32b_read(access_data_reg, &copper_status);
+     ee4:	fc840793          	addi	a5,s0,-56
+     ee8:	85be                	mv	a1,a5
+     eea:	fe842503          	lw	a0,-24(s0)
+     eee:	bc0ff0ef          	jal	ra,2ae <reg_32b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:291
+		while((copper_status & 0x24) != 0x24) {
+     ef2:	fc842783          	lw	a5,-56(s0)
+     ef6:	0247f713          	andi	a4,a5,36
+     efa:	02400793          	li	a5,36
+     efe:	faf71ae3          	bne	a4,a5,eb2 <mdio_phy_init+0x16a>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:301
+		}
+
+		printf("\r\naccess_data_reg - 2, access_data_reg: %x\r\n", copper_status);
+     f02:	fc842783          	lw	a5,-56(s0)
+     f06:	85be                	mv	a1,a5
+     f08:	6789                	lui	a5,0x2
+     f0a:	a6478513          	addi	a0,a5,-1436 # 1a64 <crc16tab+0x2cc>
+     f0e:	229d                	jal	1074 <printf>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:306
+	}
+	else {
+		printf("\r\nSkip write: Not Marvel PHY.\r\n");
+	}
+}
+     f10:	a029                	j	f1a <mdio_phy_init+0x1d2>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:304
+		printf("\r\nSkip write: Not Marvel PHY.\r\n");
+     f12:	6789                	lui	a5,0x2
+     f14:	a9478513          	addi	a0,a5,-1388 # 1a94 <crc16tab+0x2fc>
+     f18:	2249                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:306
+}
+     f1a:	0001                	nop
+     f1c:	50f2                	lw	ra,60(sp)
+     f1e:	5462                	lw	s0,56(sp)
+     f20:	6121                	addi	sp,sp,64
+     f22:	8082                	ret
+
+00000f24 <main>:
+main():
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:315
+	// soft reset command incase crc fails
+	reg_32b_write(MBCONFIG0_INST_FPGA_MULTIBOOT_CONFIG_APB_MEM_MAP_BASE_ADDR  , 0x01);
+}
+
+
+int main(void) {
+     f24:	7179                	addi	sp,sp,-48
+     f26:	d606                	sw	ra,44(sp)
+     f28:	d422                	sw	s0,40(sp)
+     f2a:	1800                	addi	s0,sp,48
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:318
+	static uint8_t idx = 0;
+	static uint8_t pin_state = 0xFF;
+	unsigned int seq =0;
+     f2c:	fe042623          	sw	zero,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:319
+	unsigned int new_addr =GOLDEN_COPY_MEMORY_START_ADDR;
+     f30:	028007b7          	lui	a5,0x2800
+     f34:	fef42423          	sw	a5,-24(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:320
+	unsigned int lppdr_addr=LPDDR_APPLICATION_MEMORY_START_ADDR;
+     f38:	800007b7          	lui	a5,0x80000
+     f3c:	fef42223          	sw	a5,-28(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:321
+	unsigned int crc_calculated = 0;
+     f40:	fe042023          	sw	zero,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:322
+	unsigned int crc_fw = 0;
+     f44:	fc042e23          	sw	zero,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:324
+
+	bsp_init();
+     f48:	3175                	jal	bf4 <bsp_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:327
+
+	//Displaying Welcome Message on UART Terminal
+    printf("\r\n****************************************************\r\n");
+     f4a:	6789                	lui	a5,0x2
+     f4c:	ab478513          	addi	a0,a5,-1356 # 1ab4 <crc16tab+0x31c>
+     f50:	22a9                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:328
+    printf("***        GSRD Golden Bootloader Avant-E        ***\r\n");
+     f52:	6789                	lui	a5,0x2
+     f54:	aec78513          	addi	a0,a5,-1300 # 1aec <crc16tab+0x354>
+     f58:	2289                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:329
+    printf("****************************************************\r\n");
+     f5a:	6789                	lui	a5,0x2
+     f5c:	b2478513          	addi	a0,a5,-1244 # 1b24 <crc16tab+0x38c>
+     f60:	2a2d                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:332
+
+
+    printf("\r\nMemory Controller Initialization: \r\n");
+     f62:	6789                	lui	a5,0x2
+     f64:	b5c78513          	addi	a0,a5,-1188 # 1b5c <crc16tab+0x3c4>
+     f68:	2a0d                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:333
+    LPDDR_init();
+     f6a:	39cd                	jal	c5c <LPDDR_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:334
+    printf("\r\nMemory Controller Initialization Complete.\r\n");
+     f6c:	6789                	lui	a5,0x2
+     f6e:	b8478513          	addi	a0,a5,-1148 # 1b84 <crc16tab+0x3ec>
+     f72:	2225                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:335
+    qspi_init();
+     f74:	3319                	jal	c7a <qspi_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:337
+
+	for(seq=0;seq<QSPI_FETCH_SEQ;seq++)
+     f76:	fe042623          	sw	zero,-20(s0)
+     f7a:	a82d                	j	fb4 <main+0x90>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:339 (discriminator 3)
+	{
+		qspi_flash_cntl_read_fifo_dis(new_addr, FLASH_ADDR_WIDTH, FLASH_CNTL_SPI_MODE,
+     f7c:	fe442683          	lw	a3,-28(s0)
+     f80:	0ef00793          	li	a5,239
+     f84:	673d                	lui	a4,0xf
+     f86:	4601                	li	a2,0
+     f88:	458d                	li	a1,3
+     f8a:	fe842503          	lw	a0,-24(s0)
+     f8e:	d0eff0ef          	jal	ra,49c <qspi_flash_cntl_read_fifo_dis>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:342 (discriminator 3)
+									  (unsigned int *)lppdr_addr, QSPI_FW_FETCH_SIZE,
+									  JEDEC_MANUFACTURER_ID_WINBOND);
+		new_addr = new_addr+QSPI_FW_FETCH_SIZE;
+     f92:	fe842703          	lw	a4,-24(s0)
+     f96:	67bd                	lui	a5,0xf
+     f98:	97ba                	add	a5,a5,a4
+     f9a:	fef42423          	sw	a5,-24(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:343 (discriminator 3)
+		lppdr_addr = lppdr_addr+QSPI_FW_FETCH_SIZE;
+     f9e:	fe442703          	lw	a4,-28(s0)
+     fa2:	67bd                	lui	a5,0xf
+     fa4:	97ba                	add	a5,a5,a4
+     fa6:	fef42223          	sw	a5,-28(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:337 (discriminator 3)
+	for(seq=0;seq<QSPI_FETCH_SEQ;seq++)
+     faa:	fec42783          	lw	a5,-20(s0)
+     fae:	0785                	addi	a5,a5,1
+     fb0:	fef42623          	sw	a5,-20(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:337 (discriminator 1)
+     fb4:	fec42703          	lw	a4,-20(s0)
+     fb8:	4799                	li	a5,6
+     fba:	fce7f1e3          	bgeu	a5,a4,f7c <main+0x58>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:346
+	}
+
+    printf("\r\nPHY Initialization: \r\n");
+     fbe:	6789                	lui	a5,0x2
+     fc0:	bb478513          	addi	a0,a5,-1100 # 1bb4 <crc16tab+0x41c>
+     fc4:	28d9                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:347
+    mdio_phy_init();
+     fc6:	3349                	jal	d48 <mdio_phy_init>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:348
+    printf("\r\nPHY Initialization Complete.\r\n");
+     fc8:	6789                	lui	a5,0x2
+     fca:	bcc78513          	addi	a0,a5,-1076 # 1bcc <crc16tab+0x434>
+     fce:	20f1                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:350
+
+	printf("\r\nMemory Controller Single Write/Read: \r\n");
+     fd0:	6789                	lui	a5,0x2
+     fd2:	bec78513          	addi	a0,a5,-1044 # 1bec <crc16tab+0x454>
+     fd6:	20d1                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:351
+	crc_calculated = crc16_ccitt((void*)LPDDR_APPLICATION_MEMORY_START_ADDR, LPDDR_APPLICATION_MEMORY_END_ADDR-LPDDR_APPLICATION_MEMORY_START_ADDR, CRC16_START_VAL);
+     fd8:	6789                	lui	a5,0x2
+     fda:	d0f78613          	addi	a2,a5,-753 # 1d0f <uart_core_uart+0x47>
+     fde:	000407b7          	lui	a5,0x40
+     fe2:	ffe78593          	addi	a1,a5,-2 # 3fffe <_stack_start+0x3d84e>
+     fe6:	80000537          	lui	a0,0x80000
+     fea:	34a9                	jal	a34 <crc16_ccitt>
+     fec:	87aa                	mv	a5,a0
+     fee:	fef42023          	sw	a5,-32(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:352
+	printf("\n LPDDR crc = %x", crc_calculated);
+     ff2:	fe042583          	lw	a1,-32(s0)
+     ff6:	6789                	lui	a5,0x2
+     ff8:	c1878513          	addi	a0,a5,-1000 # 1c18 <crc16tab+0x480>
+     ffc:	28a5                	jal	1074 <printf>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:353
+	reg_32b_read(LPDDR_FW_CRC, &crc_fw);
+     ffe:	fdc40793          	addi	a5,s0,-36
+    1002:	85be                	mv	a1,a5
+    1004:	800407b7          	lui	a5,0x80040
+    1008:	ffc78513          	addi	a0,a5,-4 # 8003fffc <_stack_start+0x8003d84c>
+    100c:	aa2ff0ef          	jal	ra,2ae <reg_32b_read>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:354
+	crc_fw >>= 16;
+    1010:	fdc42783          	lw	a5,-36(s0)
+    1014:	83c1                	srli	a5,a5,0x10
+    1016:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:355
+	crc_fw = (crc_fw>>8)|((crc_fw <<8)&0xff00);
+    101a:	fdc42783          	lw	a5,-36(s0)
+    101e:	0087d713          	srli	a4,a5,0x8
+    1022:	fdc42783          	lw	a5,-36(s0)
+    1026:	00879693          	slli	a3,a5,0x8
+    102a:	67c1                	lui	a5,0x10
+    102c:	17fd                	addi	a5,a5,-1
+    102e:	8ff5                	and	a5,a5,a3
+    1030:	8fd9                	or	a5,a5,a4
+    1032:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:356
+	printf("\n fw crc = %x", crc_fw);
+    1036:	fdc42783          	lw	a5,-36(s0)
+    103a:	85be                	mv	a1,a5
+    103c:	6789                	lui	a5,0x2
+    103e:	c2c78513          	addi	a0,a5,-980 # 1c2c <crc16tab+0x494>
+    1042:	280d                	jal	1074 <printf>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:357
+	reset_quad_mode();
+    1044:	e9cff0ef          	jal	ra,6e0 <reset_quad_mode>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:359
+
+	if(crc_calculated == crc_fw)
+    1048:	fdc42783          	lw	a5,-36(s0)
+    104c:	fe042703          	lw	a4,-32(s0)
+    1050:	00f71d63          	bne	a4,a5,106a <main+0x146>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:361
+	{
+		printf("\n--- CRC matches-----------\n");
+    1054:	6789                	lui	a5,0x2
+    1056:	c3c78513          	addi	a0,a5,-964 # 1c3c <crc16tab+0x4a4>
+    105a:	2081                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:362
+		asm volatile ("lui	x5, %[appStart]" : : [appStart] "i" (LPDDR_APPLICATION_MEMORY_START_ADDR >> 12));
+    105c:	800002b7          	lui	t0,0x80000
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:363
+		asm volatile ("addi x5, x5, %[appStart]" : : [appStart] "i" (LPDDR_APPLICATION_MEMORY_START_ADDR & 0xFFF));
+    1060:	00028293          	mv	t0,t0
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:364
+		asm volatile ("jalr x0, x5, 0");
+    1064:	00028067          	jr	t0 # 80000000 <_stack_start+0x7fffd850>
+    1068:	a029                	j	1072 <main+0x14e>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:368
+	}
+	else
+	{
+		printf("\n--- CRC Mis-matched!!!-----------\n");
+    106a:	6789                	lui	a5,0x2
+    106c:	c5878513          	addi	a0,a5,-936 # 1c58 <crc16tab+0x4c0>
+    1070:	202d                	jal	109a <puts>
+C:\Users\SKothari\Downloads\GSRD2.0_Avant_CPNX_Beta\Final_Beta_Testing\golden_avant\c_golden_bootloader_avant\Debug/../src/main.c:372 (discriminator 1)
+		//fw_softreset();
+	}
+
+	while(1);
+    1072:	a001                	j	1072 <main+0x14e>
+
+00001074 <printf>:
+printf():
+    1074:	7139                	addi	sp,sp,-64
+    1076:	da3e                	sw	a5,52(sp)
+    1078:	6785                	lui	a5,0x1
+    107a:	d22e                	sw	a1,36(sp)
+    107c:	85aa                	mv	a1,a0
+    107e:	6487a503          	lw	a0,1608(a5) # 1648 <_etext+0x4>
+    1082:	d432                	sw	a2,40(sp)
+    1084:	1050                	addi	a2,sp,36
+    1086:	ce06                	sw	ra,28(sp)
+    1088:	d636                	sw	a3,44(sp)
+    108a:	d83a                	sw	a4,48(sp)
+    108c:	dc42                	sw	a6,56(sp)
+    108e:	de46                	sw	a7,60(sp)
+    1090:	c632                	sw	a2,12(sp)
+    1092:	2049                	jal	1114 <vfprintf>
+    1094:	40f2                	lw	ra,28(sp)
+    1096:	6121                	addi	sp,sp,64
+    1098:	8082                	ret
+
+0000109a <puts>:
+puts():
+    109a:	57a002ef          	jal	t0,1614 <__riscv_save_0>
+    109e:	6785                	lui	a5,0x1
+    10a0:	6487a583          	lw	a1,1608(a5) # 1648 <_etext+0x4>
+    10a4:	1141                	addi	sp,sp,-16
+    10a6:	842a                	mv	s0,a0
+    10a8:	0045c783          	lbu	a5,4(a1) # 40092004 <_stack_start+0x4008f854>
+    10ac:	4481                	li	s1,0
+    10ae:	8b89                	andi	a5,a5,2
+    10b0:	eb91                	bnez	a5,10c4 <puts+0x2a>
+    10b2:	54fd                	li	s1,-1
+    10b4:	8526                	mv	a0,s1
+    10b6:	0141                	addi	sp,sp,16
+    10b8:	a341                	j	1638 <__riscv_restore_0>
+    10ba:	c62e                	sw	a1,12(sp)
+    10bc:	9782                	jalr	a5
+    10be:	45b2                	lw	a1,12(sp)
+    10c0:	c111                	beqz	a0,10c4 <puts+0x2a>
+    10c2:	54fd                	li	s1,-1
+    10c4:	00044503          	lbu	a0,0(s0)
+    10c8:	0405                	addi	s0,s0,1
+    10ca:	459c                	lw	a5,8(a1)
+    10cc:	f57d                	bnez	a0,10ba <puts+0x20>
+    10ce:	4529                	li	a0,10
+    10d0:	9782                	jalr	a5
+    10d2:	d16d                	beqz	a0,10b4 <puts+0x1a>
+    10d4:	bff9                	j	10b2 <puts+0x18>
+
+000010d6 <__ultoa_invert>:
+__ultoa_invert():
+    10d6:	20067793          	andi	a5,a2,512
+    10da:	872a                	mv	a4,a0
+    10dc:	852e                	mv	a0,a1
+    10de:	02700593          	li	a1,39
+    10e2:	c781                	beqz	a5,10ea <__ultoa_invert+0x14>
+    10e4:	dff67613          	andi	a2,a2,-513
+    10e8:	459d                	li	a1,7
+    10ea:	4825                	li	a6,9
+    10ec:	86ba                	mv	a3,a4
+    10ee:	02c6f7b3          	remu	a5,a3,a2
+    10f2:	0ff7f793          	zext.b	a5,a5
+    10f6:	02c75733          	divu	a4,a4,a2
+    10fa:	00f87563          	bgeu	a6,a5,1104 <__ultoa_invert+0x2e>
+    10fe:	97ae                	add	a5,a5,a1
+    1100:	0ff7f793          	zext.b	a5,a5
+    1104:	0505                	addi	a0,a0,1
+    1106:	03078793          	addi	a5,a5,48
+    110a:	fef50fa3          	sb	a5,-1(a0) # 7fffffff <_stack_start+0x7fffd84f>
+    110e:	fcc6ffe3          	bgeu	a3,a2,10ec <__ultoa_invert+0x16>
+    1112:	8082                	ret
+
+00001114 <vfprintf>:
+vfprintf():
+    1114:	4d0002ef          	jal	t0,15e4 <__riscv_save_12>
+    1118:	00454783          	lbu	a5,4(a0)
+    111c:	1101                	addi	sp,sp,-32
+    111e:	597d                	li	s2,-1
+    1120:	8b89                	andi	a5,a5,2
+    1122:	48078263          	beqz	a5,15a6 <vfprintf+0x492>
+    1126:	67c1                	lui	a5,0x10
+    1128:	17fd                	addi	a5,a5,-1
+    112a:	8aaa                	mv	s5,a0
+    112c:	8a32                	mv	s4,a2
+    112e:	4901                	li	s2,0
+    1130:	01410c13          	addi	s8,sp,20
+    1134:	6c85                	lui	s9,0x1
+    1136:	c43e                	sw	a5,8(sp)
+    1138:	0005c483          	lbu	s1,0(a1)
+    113c:	46048563          	beqz	s1,15a6 <vfprintf+0x492>
+    1140:	02500793          	li	a5,37
+    1144:	00158b93          	addi	s7,a1,1
+    1148:	00f49863          	bne	s1,a5,1158 <vfprintf+0x44>
+    114c:	0015c483          	lbu	s1,1(a1)
+    1150:	00258b93          	addi	s7,a1,2
+    1154:	00f49763          	bne	s1,a5,1162 <vfprintf+0x4e>
+    1158:	0905                	addi	s2,s2,1
+    115a:	85d6                	mv	a1,s5
+    115c:	8526                	mv	a0,s1
+    115e:	219d                	jal	15c4 <fputc>
+    1160:	a295                	j	12c4 <vfprintf+0x1b0>
+    1162:	4981                	li	s3,0
+    1164:	4b01                	li	s6,0
+    1166:	4401                	li	s0,0
+    1168:	467d                	li	a2,31
+    116a:	06c00593          	li	a1,108
+    116e:	06800513          	li	a0,104
+    1172:	06a00813          	li	a6,106
+    1176:	07400893          	li	a7,116
+    117a:	4325                	li	t1,9
+    117c:	02a00e13          	li	t3,42
+    1180:	02e00e93          	li	t4,46
+    1184:	4729                	li	a4,10
+    1186:	07f00f13          	li	t5,127
+    118a:	02b00693          	li	a3,43
+    118e:	02d00f93          	li	t6,45
+    1192:	03000293          	li	t0,48
+    1196:	02000393          	li	t2,32
+    119a:	02300d93          	li	s11,35
+    119e:	04866d63          	bltu	a2,s0,11f8 <vfprintf+0xe4>
+    11a2:	04d48063          	beq	s1,a3,11e2 <vfprintf+0xce>
+    11a6:	0296e363          	bltu	a3,s1,11cc <vfprintf+0xb8>
+    11aa:	02748e63          	beq	s1,t2,11e6 <vfprintf+0xd2>
+    11ae:	05b48263          	beq	s1,s11,11f2 <vfprintf+0xde>
+    11b2:	fd048793          	addi	a5,s1,-48
+    11b6:	0ff7f793          	zext.b	a5,a5
+    11ba:	04f36c63          	bltu	t1,a5,1212 <vfprintf+0xfe>
+    11be:	04047493          	andi	s1,s0,64
+    11c2:	c0b1                	beqz	s1,1206 <vfprintf+0xf2>
+    11c4:	02e989b3          	mul	s3,s3,a4
+    11c8:	99be                	add	s3,s3,a5
+    11ca:	a039                	j	11d8 <vfprintf+0xc4>
+    11cc:	03f48063          	beq	s1,t6,11ec <vfprintf+0xd8>
+    11d0:	fe5491e3          	bne	s1,t0,11b2 <vfprintf+0x9e>
+    11d4:	00146413          	ori	s0,s0,1
+    11d8:	000bc483          	lbu	s1,0(s7)
+    11dc:	0b85                	addi	s7,s7,1
+    11de:	f0e1                	bnez	s1,119e <vfprintf+0x8a>
+    11e0:	a069                	j	126a <vfprintf+0x156>
+    11e2:	00246413          	ori	s0,s0,2
+    11e6:	00446413          	ori	s0,s0,4
+    11ea:	b7fd                	j	11d8 <vfprintf+0xc4>
+    11ec:	00846413          	ori	s0,s0,8
+    11f0:	b7e5                	j	11d8 <vfprintf+0xc4>
+    11f2:	01046413          	ori	s0,s0,16
+    11f6:	b7cd                	j	11d8 <vfprintf+0xc4>
+    11f8:	fa8f7de3          	bgeu	t5,s0,11b2 <vfprintf+0x9e>
+    11fc:	04b49763          	bne	s1,a1,124a <vfprintf+0x136>
+    1200:	08046413          	ori	s0,s0,128
+    1204:	bfd1                	j	11d8 <vfprintf+0xc4>
+    1206:	02eb0b33          	mul	s6,s6,a4
+    120a:	02046413          	ori	s0,s0,32
+    120e:	9b3e                	add	s6,s6,a5
+    1210:	b7e1                	j	11d8 <vfprintf+0xc4>
+    1212:	03c49363          	bne	s1,t3,1238 <vfprintf+0x124>
+    1216:	04047493          	andi	s1,s0,64
+    121a:	000a2783          	lw	a5,0(s4)
+    121e:	0a11                	addi	s4,s4,4
+    1220:	e4c5                	bnez	s1,12c8 <vfprintf+0x1b4>
+    1222:	0007c663          	bltz	a5,122e <vfprintf+0x11a>
+    1226:	02046413          	ori	s0,s0,32
+    122a:	8b3e                	mv	s6,a5
+    122c:	b775                	j	11d8 <vfprintf+0xc4>
+    122e:	40f00b33          	neg	s6,a5
+    1232:	02846413          	ori	s0,s0,40
+    1236:	b74d                	j	11d8 <vfprintf+0xc4>
+    1238:	fdd492e3          	bne	s1,t4,11fc <vfprintf+0xe8>
+    123c:	04047793          	andi	a5,s0,64
+    1240:	36079363          	bnez	a5,15a6 <vfprintf+0x492>
+    1244:	04046413          	ori	s0,s0,64
+    1248:	bf41                	j	11d8 <vfprintf+0xc4>
+    124a:	00a49a63          	bne	s1,a0,125e <vfprintf+0x14a>
+    124e:	10047793          	andi	a5,s0,256
+    1252:	c399                	beqz	a5,1258 <vfprintf+0x144>
+    1254:	20046413          	ori	s0,s0,512
+    1258:	10046413          	ori	s0,s0,256
+    125c:	bfb5                	j	11d8 <vfprintf+0xc4>
+    125e:	0ef4f793          	andi	a5,s1,239
+    1262:	f7078be3          	beq	a5,a6,11d8 <vfprintf+0xc4>
+    1266:	f71489e3          	beq	s1,a7,11d8 <vfprintf+0xc4>
+    126a:	0009d763          	bgez	s3,1278 <vfprintf+0x164>
+    126e:	fbf47413          	andi	s0,s0,-65
+    1272:	0442                	slli	s0,s0,0x10
+    1274:	8041                	srli	s0,s0,0x10
+    1276:	4981                	li	s3,0
+    1278:	0204e793          	ori	a5,s1,32
+    127c:	f9b78713          	addi	a4,a5,-101 # ff9b <_stack_start+0xd7eb>
+    1280:	0ff77713          	zext.b	a4,a4
+    1284:	4689                	li	a3,2
+    1286:	00e6f663          	bgeu	a3,a4,1292 <vfprintf+0x17e>
+    128a:	06100713          	li	a4,97
+    128e:	02e79f63          	bne	a5,a4,12cc <vfprintf+0x1b8>
+    1292:	007a0493          	addi	s1,s4,7
+    1296:	98e1                	andi	s1,s1,-8
+    1298:	6789                	lui	a5,0x2
+    129a:	04a1                	addi	s1,s1,8
+    129c:	4a1d                	li	s4,7
+    129e:	c8478d93          	addi	s11,a5,-892 # 1c84 <crc16tab+0x4ec>
+    12a2:	8821                	andi	s0,s0,8
+    12a4:	c051                	beqz	s0,1328 <vfprintf+0x214>
+    12a6:	414b0b33          	sub	s6,s6,s4
+    12aa:	014d8433          	add	s0,s11,s4
+    12ae:	088d9063          	bne	s11,s0,132e <vfprintf+0x21a>
+    12b2:	9952                	add	s2,s2,s4
+    12b4:	845a                	mv	s0,s6
+    12b6:	2e804263          	bgtz	s0,159a <vfprintf+0x486>
+    12ba:	000b5363          	bgez	s6,12c0 <vfprintf+0x1ac>
+    12be:	4b01                	li	s6,0
+    12c0:	995a                	add	s2,s2,s6
+    12c2:	8a26                	mv	s4,s1
+    12c4:	85de                	mv	a1,s7
+    12c6:	bd8d                	j	1138 <vfprintf+0x24>
+    12c8:	89be                	mv	s3,a5
+    12ca:	b739                	j	11d8 <vfprintf+0xc4>
+    12cc:	06300713          	li	a4,99
+    12d0:	00e49c63          	bne	s1,a4,12e8 <vfprintf+0x1d4>
+    12d4:	000a2783          	lw	a5,0(s4)
+    12d8:	004a0493          	addi	s1,s4,4
+    12dc:	01410d93          	addi	s11,sp,20
+    12e0:	00f10a23          	sb	a5,20(sp)
+    12e4:	4a05                	li	s4,1
+    12e6:	bf75                	j	12a2 <vfprintf+0x18e>
+    12e8:	07300713          	li	a4,115
+    12ec:	04e49763          	bne	s1,a4,133a <vfprintf+0x226>
+    12f0:	000a2d83          	lw	s11,0(s4)
+    12f4:	004a0493          	addi	s1,s4,4
+    12f8:	000d9563          	bnez	s11,1302 <vfprintf+0x1ee>
+    12fc:	6789                	lui	a5,0x2
+    12fe:	c7c78d93          	addi	s11,a5,-900 # 1c7c <crc16tab+0x4e4>
+    1302:	04047793          	andi	a5,s0,64
+    1306:	55fd                	li	a1,-1
+    1308:	c391                	beqz	a5,130c <vfprintf+0x1f8>
+    130a:	85ce                	mv	a1,s3
+    130c:	856e                	mv	a0,s11
+    130e:	2c79                	jal	15ac <strnlen>
+    1310:	8a2a                	mv	s4,a0
+    1312:	bf41                	j	12a2 <vfprintf+0x18e>
+    1314:	85d6                	mv	a1,s5
+    1316:	02000513          	li	a0,32
+    131a:	246d                	jal	15c4 <fputc>
+    131c:	1b7d                	addi	s6,s6,-1
+    131e:	41640933          	sub	s2,s0,s6
+    1322:	ff6a69e3          	bltu	s4,s6,1314 <vfprintf+0x200>
+    1326:	b741                	j	12a6 <vfprintf+0x192>
+    1328:	012b0433          	add	s0,s6,s2
+    132c:	bfcd                	j	131e <vfprintf+0x20a>
+    132e:	000dc503          	lbu	a0,0(s11)
+    1332:	85d6                	mv	a1,s5
+    1334:	0d85                	addi	s11,s11,1
+    1336:	2479                	jal	15c4 <fputc>
+    1338:	bf9d                	j	12ae <vfprintf+0x19a>
+    133a:	06400713          	li	a4,100
+    133e:	00e48663          	beq	s1,a4,134a <vfprintf+0x236>
+    1342:	06900713          	li	a4,105
+    1346:	04e49e63          	bne	s1,a4,13a2 <vfprintf+0x28e>
+    134a:	08047793          	andi	a5,s0,128
+    134e:	000a2503          	lw	a0,0(s4)
+    1352:	004a0493          	addi	s1,s4,4
+    1356:	cb95                	beqz	a5,138a <vfprintf+0x276>
+    1358:	00055663          	bgez	a0,1364 <vfprintf+0x250>
+    135c:	40a00533          	neg	a0,a0
+    1360:	40046413          	ori	s0,s0,1024
+    1364:	fef47793          	andi	a5,s0,-17
+    1368:	01079d13          	slli	s10,a5,0x10
+    136c:	04047413          	andi	s0,s0,64
+    1370:	010d5d13          	srli	s10,s10,0x10
+    1374:	c409                	beqz	s0,137e <vfprintf+0x26a>
+    1376:	00a9ea33          	or	s4,s3,a0
+    137a:	060a0e63          	beqz	s4,13f6 <vfprintf+0x2e2>
+    137e:	4629                	li	a2,10
+    1380:	85e2                	mv	a1,s8
+    1382:	3b91                	jal	10d6 <__ultoa_invert>
+    1384:	41850a33          	sub	s4,a0,s8
+    1388:	a0bd                	j	13f6 <vfprintf+0x2e2>
+    138a:	10047793          	andi	a5,s0,256
+    138e:	d7e9                	beqz	a5,1358 <vfprintf+0x244>
+    1390:	20047793          	andi	a5,s0,512
+    1394:	c781                	beqz	a5,139c <vfprintf+0x288>
+    1396:	0562                	slli	a0,a0,0x18
+    1398:	8561                	srai	a0,a0,0x18
+    139a:	bf7d                	j	1358 <vfprintf+0x244>
+    139c:	0542                	slli	a0,a0,0x10
+    139e:	8541                	srai	a0,a0,0x10
+    13a0:	bf65                	j	1358 <vfprintf+0x244>
+    13a2:	07500713          	li	a4,117
+    13a6:	10e49263          	bne	s1,a4,14aa <vfprintf+0x396>
+    13aa:	983d                	andi	s0,s0,-17
+    13ac:	0442                	slli	s0,s0,0x10
+    13ae:	8041                	srli	s0,s0,0x10
+    13b0:	4629                	li	a2,10
+    13b2:	08047793          	andi	a5,s0,128
+    13b6:	000a2503          	lw	a0,0(s4)
+    13ba:	004a0493          	addi	s1,s4,4
+    13be:	eb91                	bnez	a5,13d2 <vfprintf+0x2be>
+    13c0:	10047793          	andi	a5,s0,256
+    13c4:	c799                	beqz	a5,13d2 <vfprintf+0x2be>
+    13c6:	20047793          	andi	a5,s0,512
+    13ca:	12078863          	beqz	a5,14fa <vfprintf+0x3e6>
+    13ce:	0ff57513          	zext.b	a0,a0
+    13d2:	ff947793          	andi	a5,s0,-7
+    13d6:	01079d13          	slli	s10,a5,0x10
+    13da:	04047713          	andi	a4,s0,64
+    13de:	010d5d13          	srli	s10,s10,0x10
+    13e2:	df59                	beqz	a4,1380 <vfprintf+0x26c>
+    13e4:	00a9e733          	or	a4,s3,a0
+    13e8:	ff41                	bnez	a4,1380 <vfprintf+0x26c>
+    13ea:	9825                	andi	s0,s0,-23
+    13ec:	01041d13          	slli	s10,s0,0x10
+    13f0:	010d5d13          	srli	s10,s10,0x10
+    13f4:	4a01                	li	s4,0
+    13f6:	040d7713          	andi	a4,s10,64
+    13fa:	10070363          	beqz	a4,1500 <vfprintf+0x3ec>
+    13fe:	ffed7d93          	andi	s11,s10,-2
+    1402:	0dc2                	slli	s11,s11,0x10
+    1404:	010ddd93          	srli	s11,s11,0x10
+    1408:	8452                	mv	s0,s4
+    140a:	013a5d63          	bge	s4,s3,1424 <vfprintf+0x310>
+    140e:	6705                	lui	a4,0x1
+    1410:	00ed7733          	and	a4,s10,a4
+    1414:	844e                	mv	s0,s3
+    1416:	e719                	bnez	a4,1424 <vfprintf+0x310>
+    1418:	feed7793          	andi	a5,s10,-18
+    141c:	01079d93          	slli	s11,a5,0x10
+    1420:	010ddd93          	srli	s11,s11,0x10
+    1424:	010df793          	andi	a5,s11,16
+    1428:	0e078763          	beqz	a5,1516 <vfprintf+0x402>
+    142c:	101c                	addi	a5,sp,32
+    142e:	97d2                	add	a5,a5,s4
+    1430:	ff37c703          	lbu	a4,-13(a5)
+    1434:	03000793          	li	a5,48
+    1438:	0cf71763          	bne	a4,a5,1506 <vfprintf+0x3f2>
+    143c:	fefdfd93          	andi	s11,s11,-17
+    1440:	0dc2                	slli	s11,s11,0x10
+    1442:	010ddd93          	srli	s11,s11,0x10
+    1446:	008df793          	andi	a5,s11,8
+    144a:	ef89                	bnez	a5,1464 <vfprintf+0x350>
+    144c:	001df793          	andi	a5,s11,1
+    1450:	0e078863          	beqz	a5,1540 <vfprintf+0x42c>
+    1454:	89d2                	mv	s3,s4
+    1456:	01645763          	bge	s0,s6,1464 <vfprintf+0x350>
+    145a:	408b0433          	sub	s0,s6,s0
+    145e:	014409b3          	add	s3,s0,s4
+    1462:	845a                	mv	s0,s6
+    1464:	010df793          	andi	a5,s11,16
+    1468:	408b0b33          	sub	s6,s6,s0
+    146c:	0e078e63          	beqz	a5,1568 <vfprintf+0x454>
+    1470:	85d6                	mv	a1,s5
+    1472:	03000513          	li	a0,48
+    1476:	22b9                	jal	15c4 <fputc>
+    1478:	00cdd793          	srli	a5,s11,0xc
+    147c:	8b85                	andi	a5,a5,1
+    147e:	e3f9                	bnez	a5,1544 <vfprintf+0x430>
+    1480:	0905                	addi	s2,s2,1
+    1482:	844e                	mv	s0,s3
+    1484:	108a4563          	blt	s4,s0,158e <vfprintf+0x47a>
+    1488:	4781                	li	a5,0
+    148a:	0149c463          	blt	s3,s4,1492 <vfprintf+0x37e>
+    148e:	414987b3          	sub	a5,s3,s4
+    1492:	993e                	add	s2,s2,a5
+    1494:	8452                	mv	s0,s4
+    1496:	e0040ee3          	beqz	s0,12b2 <vfprintf+0x19e>
+    149a:	147d                	addi	s0,s0,-1
+    149c:	008c07b3          	add	a5,s8,s0
+    14a0:	0007c503          	lbu	a0,0(a5)
+    14a4:	85d6                	mv	a1,s5
+    14a6:	2a39                	jal	15c4 <fputc>
+    14a8:	b7fd                	j	1496 <vfprintf+0x382>
+    14aa:	06f00713          	li	a4,111
+    14ae:	04e48463          	beq	s1,a4,14f6 <vfprintf+0x3e2>
+    14b2:	07000713          	li	a4,112
+    14b6:	00e49763          	bne	s1,a4,14c4 <vfprintf+0x3b0>
+    14ba:	010c8793          	addi	a5,s9,16 # 1010 <main+0xec>
+    14be:	8c5d                	or	s0,s0,a5
+    14c0:	4641                	li	a2,16
+    14c2:	bdc5                	j	13b2 <vfprintf+0x29e>
+    14c4:	07800713          	li	a4,120
+    14c8:	02e79163          	bne	a5,a4,14ea <vfprintf+0x3d6>
+    14cc:	05800793          	li	a5,88
+    14d0:	00f48463          	beq	s1,a5,14d8 <vfprintf+0x3c4>
+    14d4:	6785                	lui	a5,0x1
+    14d6:	b7e5                	j	14be <vfprintf+0x3aa>
+    14d8:	6789                	lui	a5,0x2
+    14da:	80078793          	addi	a5,a5,-2048 # 1800 <crc16tab+0x68>
+    14de:	8c5d                	or	s0,s0,a5
+    14e0:	0442                	slli	s0,s0,0x10
+    14e2:	8041                	srli	s0,s0,0x10
+    14e4:	21000613          	li	a2,528
+    14e8:	b5e9                	j	13b2 <vfprintf+0x29e>
+    14ea:	85d6                	mv	a1,s5
+    14ec:	02500513          	li	a0,37
+    14f0:	28d1                	jal	15c4 <fputc>
+    14f2:	0909                	addi	s2,s2,2
+    14f4:	b19d                	j	115a <vfprintf+0x46>
+    14f6:	4621                	li	a2,8
+    14f8:	bd6d                	j	13b2 <vfprintf+0x29e>
+    14fa:	47a2                	lw	a5,8(sp)
+    14fc:	8d7d                	and	a0,a0,a5
+    14fe:	bdd1                	j	13d2 <vfprintf+0x2be>
+    1500:	8452                	mv	s0,s4
+    1502:	8dea                	mv	s11,s10
+    1504:	b705                	j	1424 <vfprintf+0x310>
+    1506:	00cdd793          	srli	a5,s11,0xc
+    150a:	8b85                	andi	a5,a5,1
+    150c:	e399                	bnez	a5,1512 <vfprintf+0x3fe>
+    150e:	0405                	addi	s0,s0,1
+    1510:	bf1d                	j	1446 <vfprintf+0x332>
+    1512:	0409                	addi	s0,s0,2
+    1514:	bf0d                	j	1446 <vfprintf+0x332>
+    1516:	406df793          	andi	a5,s11,1030
+    151a:	d795                	beqz	a5,1446 <vfprintf+0x332>
+    151c:	bfcd                	j	150e <vfprintf+0x3fa>
+    151e:	85d6                	mv	a1,s5
+    1520:	02000513          	li	a0,32
+    1524:	c63e                	sw	a5,12(sp)
+    1526:	2879                	jal	15c4 <fputc>
+    1528:	47b2                	lw	a5,12(sp)
+    152a:	0785                	addi	a5,a5,1
+    152c:	ff67c9e3          	blt	a5,s6,151e <vfprintf+0x40a>
+    1530:	4781                	li	a5,0
+    1532:	008b4463          	blt	s6,s0,153a <vfprintf+0x426>
+    1536:	408b07b3          	sub	a5,s6,s0
+    153a:	993e                	add	s2,s2,a5
+    153c:	943e                	add	s0,s0,a5
+    153e:	b71d                	j	1464 <vfprintf+0x350>
+    1540:	87a2                	mv	a5,s0
+    1542:	b7ed                	j	152c <vfprintf+0x418>
+    1544:	6785                	lui	a5,0x1
+    1546:	80078793          	addi	a5,a5,-2048 # 800 <lpddr4_init+0x64>
+    154a:	00fdfdb3          	and	s11,s11,a5
+    154e:	0dc2                	slli	s11,s11,0x10
+    1550:	010ddd93          	srli	s11,s11,0x10
+    1554:	0909                	addi	s2,s2,2
+    1556:	05800513          	li	a0,88
+    155a:	000d9463          	bnez	s11,1562 <vfprintf+0x44e>
+    155e:	07800513          	li	a0,120
+    1562:	85d6                	mv	a1,s5
+    1564:	2085                	jal	15c4 <fputc>
+    1566:	bf31                	j	1482 <vfprintf+0x36e>
+    1568:	406df793          	andi	a5,s11,1030
+    156c:	f0078be3          	beqz	a5,1482 <vfprintf+0x36e>
+    1570:	002df793          	andi	a5,s11,2
+    1574:	02000513          	li	a0,32
+    1578:	c399                	beqz	a5,157e <vfprintf+0x46a>
+    157a:	02b00513          	li	a0,43
+    157e:	400dfd93          	andi	s11,s11,1024
+    1582:	000d8463          	beqz	s11,158a <vfprintf+0x476>
+    1586:	02d00513          	li	a0,45
+    158a:	0905                	addi	s2,s2,1
+    158c:	bfd9                	j	1562 <vfprintf+0x44e>
+    158e:	85d6                	mv	a1,s5
+    1590:	03000513          	li	a0,48
+    1594:	2805                	jal	15c4 <fputc>
+    1596:	147d                	addi	s0,s0,-1
+    1598:	b5f5                	j	1484 <vfprintf+0x370>
+    159a:	85d6                	mv	a1,s5
+    159c:	02000513          	li	a0,32
+    15a0:	2015                	jal	15c4 <fputc>
+    15a2:	147d                	addi	s0,s0,-1
+    15a4:	bb09                	j	12b6 <vfprintf+0x1a2>
+    15a6:	854a                	mv	a0,s2
+    15a8:	6105                	addi	sp,sp,32
+    15aa:	a89d                	j	1620 <__riscv_restore_12>
+
+000015ac <strnlen>:
+    15ac:	95aa                	add	a1,a1,a0
+    15ae:	87aa                	mv	a5,a0
+    15b0:	00b78563          	beq	a5,a1,15ba <strnlen+0xe>
+    15b4:	0007c703          	lbu	a4,0(a5)
+    15b8:	e701                	bnez	a4,15c0 <strnlen+0x14>
+    15ba:	40a78533          	sub	a0,a5,a0
+    15be:	8082                	ret
+    15c0:	0785                	addi	a5,a5,1
+    15c2:	b7fd                	j	15b0 <strnlen+0x4>
+
+000015c4 <fputc>:
+    15c4:	050002ef          	jal	t0,1614 <__riscv_save_0>
+    15c8:	0045c703          	lbu	a4,4(a1)
+    15cc:	8b09                	andi	a4,a4,2
+    15ce:	cb01                	beqz	a4,15de <fputc+0x1a>
+    15d0:	459c                	lw	a5,8(a1)
+    15d2:	842a                	mv	s0,a0
+    15d4:	0ff57513          	zext.b	a0,a0
+    15d8:	9782                	jalr	a5
+    15da:	00055363          	bgez	a0,15e0 <fputc+0x1c>
+    15de:	547d                	li	s0,-1
+    15e0:	8522                	mv	a0,s0
+    15e2:	a899                	j	1638 <__riscv_restore_0>
+
+000015e4 <__riscv_save_12>:
+    15e4:	7139                	addi	sp,sp,-64
+    15e6:	4301                	li	t1,0
+    15e8:	c66e                	sw	s11,12(sp)
+    15ea:	a019                	j	15f0 <__riscv_save_10+0x4>
+
+000015ec <__riscv_save_10>:
+    15ec:	7139                	addi	sp,sp,-64
+    15ee:	5341                	li	t1,-16
+    15f0:	c86a                	sw	s10,16(sp)
+    15f2:	ca66                	sw	s9,20(sp)
+    15f4:	cc62                	sw	s8,24(sp)
+    15f6:	ce5e                	sw	s7,28(sp)
+    15f8:	a019                	j	15fe <__riscv_save_4+0x4>
+
+000015fa <__riscv_save_4>:
+    15fa:	7139                	addi	sp,sp,-64
+    15fc:	5301                	li	t1,-32
+    15fe:	d05a                	sw	s6,32(sp)
+    1600:	d256                	sw	s5,36(sp)
+__riscv_save_7():
+    1602:	d452                	sw	s4,40(sp)
+    1604:	d64e                	sw	s3,44(sp)
+    1606:	d84a                	sw	s2,48(sp)
+    1608:	da26                	sw	s1,52(sp)
+    160a:	dc22                	sw	s0,56(sp)
+    160c:	de06                	sw	ra,60(sp)
+    160e:	40610133          	sub	sp,sp,t1
+    1612:	8282                	jr	t0
+
+00001614 <__riscv_save_0>:
+__riscv_save_1():
+    1614:	1141                	addi	sp,sp,-16
+    1616:	c04a                	sw	s2,0(sp)
+    1618:	c226                	sw	s1,4(sp)
+    161a:	c422                	sw	s0,8(sp)
+    161c:	c606                	sw	ra,12(sp)
+    161e:	8282                	jr	t0
+
+00001620 <__riscv_restore_12>:
+__riscv_restore_12():
+    1620:	4db2                	lw	s11,12(sp)
+    1622:	0141                	addi	sp,sp,16
+
+00001624 <__riscv_restore_10>:
+    1624:	4d02                	lw	s10,0(sp)
+    1626:	4c92                	lw	s9,4(sp)
+    1628:	4c22                	lw	s8,8(sp)
+    162a:	4bb2                	lw	s7,12(sp)
+    162c:	0141                	addi	sp,sp,16
+
+0000162e <__riscv_restore_4>:
+    162e:	4b02                	lw	s6,0(sp)
+    1630:	4a92                	lw	s5,4(sp)
+    1632:	4a22                	lw	s4,8(sp)
+    1634:	49b2                	lw	s3,12(sp)
+    1636:	0141                	addi	sp,sp,16
+
+00001638 <__riscv_restore_0>:
+    1638:	4902                	lw	s2,0(sp)
+    163a:	4492                	lw	s1,4(sp)
+    163c:	4422                	lw	s0,8(sp)
+    163e:	40b2                	lw	ra,12(sp)
+    1640:	0141                	addi	sp,sp,16
+    1642:	8082                	ret

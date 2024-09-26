@@ -1,0 +1,11 @@
+ckid0_0:@|S:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOS2@|E:mbconfig0_inst.fpga_multiboot_config_inst.state[3]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOP@|E:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.reset_n_r@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_2:@|S:rgmii_rxc_i@|E:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.rx_ddr_out_dddd_CR9[9:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_3:@|S:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft._FWFT_ENABLE\.re_r.Q[0]@|E:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft.d_o[7]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_4:@|S:osc0_inst.lscc_osc_inst.u_OSC.CLKOUT@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4
+ckid0_5:@|S:clk_125_in@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_5==1@|M:ClockId_0_5
+ckid0_6:@|S:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKRES@|E:pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init\.bw_init_cs[4]@|F:@syn_dgcc_clockid0_6==1@|M:ClockId_0_6
+ckid0_7:@|S:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.u_eclkdiv.ECLKDIVOUT@|E:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.s_rst_n_r1@|F:@syn_dgcc_clockid0_7==1@|M:ClockId_0_7
+ckid0_8:@|S:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOS@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_8==1@|M:ClockId_0_8
+ckid0_9:@|S:ENCRYPTED@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_9==1@|M:ClockId_0_9
+ckid0_10:@|S:ENCRYPTED@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_10==1@|M:ClockId_0_10

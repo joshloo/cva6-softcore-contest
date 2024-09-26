@@ -1,0 +1,22 @@
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[15] from driver R115C222_JLMMIRDATA15_PLL_CORE_I2 tail R115C222_JLMMIRDATA15_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[14] from driver R115C222_JLMMIRDATA14_PLL_CORE_I2 tail R115C222_JLMMIRDATA14_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[13] from driver R115C222_JLMMIRDATA13_PLL_CORE_I2 tail R115C222_JLMMIRDATA13_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[12] from driver R115C222_JLMMIRDATA12_PLL_CORE_I2 tail R115C222_JLMMIRDATA12_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[11] from driver R115C222_JLMMIRDATA11_PLL_CORE_I2 tail R115C222_JLMMIRDATA11_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[10] from driver R115C222_JLMMIRDATA10_PLL_CORE_I2 tail R115C222_JLMMIRDATA10_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[9] from driver R115C222_JLMMIRDATA9_PLL_CORE_I2 tail R115C222_JLMMIRDATA9_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[8] from driver R115C222_JLMMIRDATA8_PLL_CORE_I2 tail R115C222_JLMMIRDATA8_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[7] from driver R115C222_JLMMIRDATA7_PLL_CORE_I2 tail R115C222_JLMMIRDATA7_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[6] from driver R115C222_JLMMIRDATA6_PLL_CORE_I2 tail R115C222_JLMMIRDATA6_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[5] from driver R115C222_JLMMIRDATA5_PLL_CORE_I2 tail R115C222_JLMMIRDATA5_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[4] from driver R115C222_JLMMIRDATA4_PLL_CORE_I2 tail R115C222_JLMMIRDATA4_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[3] from driver R115C222_JLMMIRDATA3_PLL_CORE_I2 tail R115C222_JLMMIRDATA3_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[2] from driver R115C222_JLMMIRDATA2_PLL_CORE_I2 tail R115C222_JLMMIRDATA2_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[1] from driver R115C222_JLMMIRDATA1_PLL_CORE_I2 tail R115C222_JLMMIRDATA1_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_w[0] from driver R115C222_JLMMIRDATA0_PLL_CORE_I2 tail R115C222_JLMMIRDATA0_PLL_CORE_I2.
+WARNING <71001209> - Disconnected tail of routing path on signal pll0_inst.lscc_pll_inst.lmmi_rdata_valid_w from driver R115C222_JLMMIRDATAVALID_PLL_CORE_I2 tail R115C222_JLMMIRDATAVALID_PLL_CORE_I2.
+WARNING <71003020> - Top module port 'TCK' does not connect to anything.
+WARNING <71003020> - Top module port 'TMS' does not connect to anything.
+WARNING <71003020> - Top module port 'TDI' does not connect to anything.
+WARNING <71003020> - Top module port 'TDO' does not connect to anything.
+DRC detected 0 errors and 17 warnings.

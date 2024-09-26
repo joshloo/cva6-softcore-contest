@@ -1,0 +1,705 @@
+# Wed Sep 18 11:54:49 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: C:\lscc\radiant\2024.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 101R, Built May 14 2024 08:42:08, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 195MB peak: 195MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 197MB peak: 210MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 197MB peak: 210MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 200MB peak: 210MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 201MB peak: 210MB)
+
+
+
+
+@N: MF105 |Performing bottom-up mapping of Compile point view:work.axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0(verilog) 
+
+Begin environment creation (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 269MB peak: 269MB)
+
+@W: BN114 :|Removing instance CP_fanout_cell_work_axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0_verilog_inst (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@W: BN114 :|Removing instance CP_fanout_cell_axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0_inst (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+
+Finished environment creation (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 270MB peak: 270MB)
+
+
+Start loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 270MB peak: 271MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 270MB peak: 271MB)
+
+
+Begin compile point sub-process log
+
+		 user requested clean build.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 270MB peak: 271MB)
+
+@W: BN114 :|Removing instance CP_fanout_cell_work_axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0_verilog_0_0_0_0_inst (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@W: BN114 :|Removing instance CP_fanout_cell_work_axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0_verilog_0_0_0_inst (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@W: BN114 :|Removing instance CP_fanout_cell_work_axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0_verilog_0_0_inst (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo.fifo_fwft.clk_i has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_1 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_2 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_3 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_4 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_5 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_6 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_7 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_8 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_9 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_10 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_11 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_12 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_13 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_14 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_15 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_16 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_17 has multiple drivers .
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.N_18 has multiple drivers .
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 275MB peak: 275MB)
+
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[6] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[5] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[2] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[0\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":3902:8:3902:13|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[1\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._CDC_EN\.dc_fifo.u_fifo0.fifo_dc0._FABRIC\.u_fifo.DIST\.out_raw[6] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":3902:8:3902:13|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[1\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._CDC_EN\.dc_fifo.u_fifo0.fifo_dc0._FABRIC\.u_fifo.DIST\.out_raw[5] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":3902:8:3902:13|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[1\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._CDC_EN\.dc_fifo.u_fifo0.fifo_dc0._FABRIC\.u_fifo.DIST\.out_raw[2] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[6] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[5] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[2] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[3\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[0] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[4\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_ALMOST_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[6] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[4\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_ALMOST_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[5] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[4\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_ALMOST_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[2] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[4\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_ALMOST_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[1] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[6] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.B_FIFO_FULL\.u_b_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[5] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN161 :|Net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.cur_rd_state_ns[0] has multiple drivers .
+@W: BN161 :|Net N_11306 has multiple drivers .
+@W: BN161 :|Net N_11307 has multiple drivers .
+@W: BN161 :|Net N_11308 has multiple drivers .
+@W: BN161 :|Net N_11309 has multiple drivers .
+@W: BN161 :|Net N_11310 has multiple drivers .
+@W: BN161 :|Net N_11311 has multiple drivers .
+@W: BN161 :|Net N_11312 has multiple drivers .
+@W: BN161 :|Net N_11313 has multiple drivers .
+@W: BN161 :|Net N_11314 has multiple drivers .
+@W: BN161 :|Net N_11315 has multiple drivers .
+@W: BN161 :|Net N_11316 has multiple drivers .
+@W: BN161 :|Net N_11317 has multiple drivers .
+@W: BN161 :|Net N_11318 has multiple drivers .
+@W: BN161 :|Net N_11319 has multiple drivers .
+@W: BN161 :|Net N_11320 has multiple drivers .
+@W: BN161 :|Net N_11321 has multiple drivers .
+@W: BN161 :|Net N_11322 has multiple drivers .
+@W: BN161 :|Net N_11323 has multiple drivers .
+@W: BN161 :|Net N_11324 has multiple drivers .
+@W: BN161 :|Net N_11325 has multiple drivers .
+@W: BN161 :|Net N_11326 has multiple drivers .
+@W: BN161 :|Net N_11327 has multiple drivers .
+@W: BN161 :|Net N_11328 has multiple drivers .
+@W: BN161 :|Net N_11329 has multiple drivers .
+@W: BN161 :|Net N_11330 has multiple drivers .
+@W: BN161 :|Net N_11331 has multiple drivers .
+@W: BN161 :|Net N_11332 has multiple drivers .
+@W: BN161 :|Net N_11333 has multiple drivers .
+@W: BN161 :|Net N_11334 has multiple drivers .
+@W: BN161 :|Net N_11335 has multiple drivers .
+@W: BN161 :|Net N_11336 has multiple drivers .
+@W: BN161 :|Net N_11337 has multiple drivers .
+@W: BN161 :|Net N_11338 has multiple drivers .
+@W: BN161 :|Net N_11339 has multiple drivers .
+@W: BN161 :|Net N_11340 has multiple drivers .
+@W: BN161 :|Net N_11341 has multiple drivers .
+@W: BN161 :|Net N_11342 has multiple drivers .
+@W: BN161 :|Net N_11343 has multiple drivers .
+@W: BN161 :|Net N_11344 has multiple drivers .
+@W: BN161 :|Net N_11345 has multiple drivers .
+@W: BN161 :|Net N_11346 has multiple drivers .
+@W: BN161 :|Net N_11347 has multiple drivers .
+@W: BN161 :|Net N_11348 has multiple drivers .
+@W: BN161 :|Net N_11349 has multiple drivers .
+@W: BN161 :|Net N_11350 has multiple drivers .
+@W: BN161 :|Net N_11351 has multiple drivers .
+@W: BN161 :|Net N_11352 has multiple drivers .
+@W: BN161 :|Net N_11353 has multiple drivers .
+@W: BN161 :|Net N_11354 has multiple drivers .
+@W: BN161 :|Net N_11355 has multiple drivers .
+@W: BN161 :|Net N_11356 has multiple drivers .
+@W: BN161 :|Net N_11357 has multiple drivers .
+@W: BN161 :|Net N_11358 has multiple drivers .
+@W: BN161 :|Net N_11359 has multiple drivers .
+@W: BN161 :|Net N_11360 has multiple drivers .
+@W: BN161 :|Net N_11361 has multiple drivers .
+@W: BN161 :|Net N_11362 has multiple drivers .
+@W: BN161 :|Net N_11363 has multiple drivers .
+@W: BN161 :|Net N_11364 has multiple drivers .
+@W: BN161 :|Net N_11365 has multiple drivers .
+@W: BN161 :|Net N_11366 has multiple drivers .
+@W: BN161 :|Net N_11367 has multiple drivers .
+@W: BN161 :|Net N_11368 has multiple drivers .
+@W: BN161 :|Net N_11369 has multiple drivers .
+@W: BN161 :|Net N_11370 has multiple drivers .
+@W: BN161 :|Net N_11371 has multiple drivers .
+@W: BN161 :|Net N_11372 has multiple drivers .
+@W: BN161 :|Net N_11373 has multiple drivers .
+@W: BN161 :|Net N_11374 has multiple drivers .
+@W: BN161 :|Net N_11375 has multiple drivers .
+@W: BN161 :|Net N_11376 has multiple drivers .
+@W: BN161 :|Net N_11377 has multiple drivers .
+@W: BN161 :|Net N_11378 has multiple drivers .
+@W: BN161 :|Net N_11379 has multiple drivers .
+@W: BN161 :|Net N_11380 has multiple drivers .
+@W: BN161 :|Net N_11381 has multiple drivers .
+@W: BN161 :|Net N_11382 has multiple drivers .
+@W: BN161 :|Net N_11383 has multiple drivers .
+@W: BN161 :|Net N_11384 has multiple drivers .
+@W: BN161 :|Net N_11385 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0\axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+
+Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 278MB peak: 278MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 289MB peak: 289MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 388MB peak: 397MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:15s; Memory used current: 388MB peak: 397MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:24s; Memory used current: 397MB peak: 397MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:24s; Memory used current: 397MB peak: 398MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:26s; Memory used current: 397MB peak: 398MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 437MB peak: 464MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:31s		    -1.58ns		2831 /      2640
+   2		0h:00m:31s		    -1.58ns		2817 /      2640
+Timing driven replication report
+Added 3 Registers via timing driven replication
+Added 3 LUTs via timing driven replication
+
+   3		0h:00m:32s		    -1.08ns		2822 /      2643
+   4		0h:00m:32s		    -0.86ns		2823 /      2643
+   5		0h:00m:32s		    -0.76ns		2830 /      2643
+   6		0h:00m:32s		    -0.76ns		2831 /      2643
+   7		0h:00m:32s		    -0.76ns		2830 /      2643
+   8		0h:00m:32s		    -0.76ns		2831 /      2643
+   9		0h:00m:32s		    -0.76ns		2830 /      2643
+Added 4 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+Added 12 Registers via timing driven replication
+Added 8 LUTs via timing driven replication
+
+  10		0h:00m:34s		    -0.34ns		2854 /      2659
+  11		0h:00m:34s		    -0.18ns		2856 /      2659
+  12		0h:00m:34s		    -0.16ns		2858 /      2659
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:34s; Memory used current: 438MB peak: 464MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:35s; Memory used current: 439MB peak: 464MB)
+
+
+End compile point sub-process log
+
+@W: MT246 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":1384:58:1384:62|Blackbox PLLC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_MAS_BLK\[0\]\.u_ext_mas_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo.fifo_fwft.clk_i[0].
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Sep 18 11:55:25 2024
+#
+
+
+Top view:               soc_golden_gsrd
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+                       C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\soc_golden_gsrd_impl_1_cpe.ldc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.477
+
+                                                                                                                               Requested     Estimated     Requested     Estimated                Clock                                                                            Clock                
+Starting Clock                                                                                                                 Frequency     Frequency     Period        Period        Slack      Type                                                                             Group                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk_125_in                                                                                                                     125.0 MHz     NA            8.000         NA            NA         declared                                                                         default_clkgroup     
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock                                              200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_8
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock                                    200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_9
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock                                                           200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_6
+osc0_ipgen_lscc_osc_400s_40s_40_LAV-AT_LAV-AT-E70ES1|clk_out_o_inferred_clock                                                  200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_4
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock                                                                  200.0 MHz     182.6 MHz     5.000         5.477         -0.477     inferred                                                                         Inferred_clkgroup_0_3
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock                                                                 200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_1
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos_o_inferred_clock                                                                  200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_7
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_testclk_o_inferred_clock                                                                200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_5
+pll_refclk_i                                                                                                                   100.0 MHz     NA            10.000        NA            NA         declared                                                                         default_clkgroup     
+soc_golden_gsrd|rgmii_rxc_i                                                                                                    200.0 MHz     NA            5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_2
+tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric_noreg_1s_9s|_FWFT_ENABLE_re_r_derived_clock     200.0 MHz     NA            5.000         NA            NA         derived (from pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock)     Inferred_clkgroup_0_3
+System                                                                                                                         200.0 MHz     305.3 MHz     5.000         3.275         1.725      system                                                                           system_clkgroup      
+========================================================================================================================================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                       Ending                                                         |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                         pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       1.725   |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  System                                                         |  5.000       0.885   |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       -0.477  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                                                                                    Arrival           
+Instance      Reference                                                         Type        Pin     Net                                   Time        Slack 
+              Clock                                                                                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       HtzyqFJggzsraz27J                     1.057       -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       i0v11LjLnEwmkKgLtjppDIsx23            1.027       -0.447
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       znjBmJ3BxnB5IEefhshA                  1.015       -0.435
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       iku4gL2AJKiE4qxn                      0.955       -0.375
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3BX     Q       oKBy5IzIdAo15Gp0v3Lhk7J               1.051       -0.328
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       iku4gL2AJKiE4q23                      1.027       -0.304
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       bbIAHlgp1szmg0rHbjtIvargFam3          0.955       -0.282
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       qa8BDKqrLfeo0Lg5x0orgAwFEC20G3h7J     0.907       -0.234
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       ps847l5kfrhHmga4169GBI3               0.907       -0.234
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       fee1qsqHcxksqhqcb3e                   0.907       -0.199
+============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                                                         Required           
+Instance      Reference                                                         Type        Pin     Net                        Time         Slack 
+              Clock                                                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jabJ     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jahn     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jam3     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jarJ     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jaxn     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2ja23     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2ja7J     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jaDn     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jaI3     4.946        -0.477
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       cEd4EKy3hJp8s5kvJ2jbbJ     4.946        -0.477
+==================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.423
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.477
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+encrypted                                    FD1P3DX     Q        Out     1.057     1.057 r     -         
+HtzyqFJggzsraz27J                            Net         -        -       -         -           12        
+encrypted                                    LUT4        D        In      0.000     1.057 r     -         
+encrypted                                    LUT4        Z        Out     0.390     1.447 f     -         
+0ujBIKHekq8gcpeAhIra                         Net         -        -       -         -           1         
+encrypted                                    LUT4        B        In      0.000     1.447 f     -         
+encrypted                                    LUT4        Z        Out     0.880     2.327 r     -         
+bE501fa1Kz7ulDCpoaBaC0f2aHJlryKJAbJ          Net         -        -       -         -           40        
+encrypted                                    LUT4        D        In      0.000     2.327 r     -         
+encrypted                                    LUT4        Z        Out     0.822     3.149 f     -         
+boA0pKx23GJm5H6                              Net         -        -       -         -           15        
+encrypted                                    LUT4        A        In      0.000     3.149 f     -         
+encrypted                                    LUT4        Z        Out     0.801     3.950 f     -         
+5gtwxxvwFnBpJfAf8i5rnE3pChh34pF00E197om3     Net         -        -       -         -           10        
+encrypted                                    LUT4        C        In      0.000     3.950 f     -         
+encrypted                                    LUT4        Z        Out     0.866     4.817 r     -         
+qBwsbzlGniBulnoH2561cBdyglgJIkq3i            Net         -        -       -         -           32        
+encrypted                                    LUT4        C        In      0.000     4.817 r     -         
+encrypted                                    LUT4        Z        Out     0.606     5.423 r     -         
+cEd4EKy3hJp8s5kvJ2jabJ                       Net         -        -       -         -           1         
+encrypted                                    FD1P3DX     D        In      0.000     5.423 r     -         
+==========================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.423
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.477
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+encrypted                                    FD1P3DX     Q        Out     1.057     1.057 r     -         
+HtzyqFJggzsraz27J                            Net         -        -       -         -           12        
+encrypted                                    LUT4        D        In      0.000     1.057 r     -         
+encrypted                                    LUT4        Z        Out     0.390     1.447 f     -         
+0ujBIKHekq8gcpeAhIra                         Net         -        -       -         -           1         
+encrypted                                    LUT4        B        In      0.000     1.447 f     -         
+encrypted                                    LUT4        Z        Out     0.880     2.327 r     -         
+bE501fa1Kz7ulDCpoaBaC0f2aHJlryKJAbJ          Net         -        -       -         -           40        
+encrypted                                    LUT4        D        In      0.000     2.327 r     -         
+encrypted                                    LUT4        Z        Out     0.822     3.149 f     -         
+boA0pKx23GJm5H6                              Net         -        -       -         -           15        
+encrypted                                    LUT4        A        In      0.000     3.149 f     -         
+encrypted                                    LUT4        Z        Out     0.801     3.950 f     -         
+5gtwxxvwFnBpJfAf8i5rnE3pChh34pF00E197om3     Net         -        -       -         -           10        
+encrypted                                    LUT4        C        In      0.000     3.950 f     -         
+encrypted                                    LUT4        Z        Out     0.866     4.817 r     -         
+qBwsbzlGniBulnoH2561cBdyglgJIkq3i            Net         -        -       -         -           32        
+encrypted                                    LUT4        C        In      0.000     4.817 r     -         
+encrypted                                    LUT4        Z        Out     0.606     5.423 r     -         
+cEd4EKy3hJp8s5kvJ2jahn                       Net         -        -       -         -           1         
+encrypted                                    FD1P3DX     D        In      0.000     5.423 r     -         
+==========================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.423
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.477
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+encrypted                                    FD1P3DX     Q        Out     1.057     1.057 r     -         
+HtzyqFJggzsraz27J                            Net         -        -       -         -           12        
+encrypted                                    LUT4        D        In      0.000     1.057 r     -         
+encrypted                                    LUT4        Z        Out     0.390     1.447 f     -         
+0ujBIKHekq8gcpeAhIra                         Net         -        -       -         -           1         
+encrypted                                    LUT4        B        In      0.000     1.447 f     -         
+encrypted                                    LUT4        Z        Out     0.880     2.327 r     -         
+bE501fa1Kz7ulDCpoaBaC0f2aHJlryKJAbJ          Net         -        -       -         -           40        
+encrypted                                    LUT4        D        In      0.000     2.327 r     -         
+encrypted                                    LUT4        Z        Out     0.822     3.149 f     -         
+boA0pKx23GJm5H6                              Net         -        -       -         -           15        
+encrypted                                    LUT4        A        In      0.000     3.149 f     -         
+encrypted                                    LUT4        Z        Out     0.801     3.950 f     -         
+5gtwxxvwFnBpJfAf8i5rnE3pChh34pF00E197om3     Net         -        -       -         -           10        
+encrypted                                    LUT4        C        In      0.000     3.950 f     -         
+encrypted                                    LUT4        Z        Out     0.866     4.817 r     -         
+qBwsbzlGniBulnoH2561cBdyglgJIkq3i            Net         -        -       -         -           32        
+encrypted                                    LUT4        C        In      0.000     4.817 r     -         
+encrypted                                    LUT4        Z        Out     0.606     5.423 r     -         
+cEd4EKy3hJp8s5kvJ2jam3                       Net         -        -       -         -           1         
+encrypted                                    FD1P3DX     D        In      0.000     5.423 r     -         
+==========================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.423
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.477
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+encrypted                                    FD1P3DX     Q        Out     1.057     1.057 r     -         
+HtzyqFJggzsraz27J                            Net         -        -       -         -           12        
+encrypted                                    LUT4        D        In      0.000     1.057 r     -         
+encrypted                                    LUT4        Z        Out     0.390     1.447 f     -         
+0ujBIKHekq8gcpeAhIra                         Net         -        -       -         -           1         
+encrypted                                    LUT4        B        In      0.000     1.447 f     -         
+encrypted                                    LUT4        Z        Out     0.880     2.327 r     -         
+bE501fa1Kz7ulDCpoaBaC0f2aHJlryKJAbJ          Net         -        -       -         -           40        
+encrypted                                    LUT4        D        In      0.000     2.327 r     -         
+encrypted                                    LUT4        Z        Out     0.822     3.149 f     -         
+boA0pKx23GJm5H6                              Net         -        -       -         -           15        
+encrypted                                    LUT4        A        In      0.000     3.149 f     -         
+encrypted                                    LUT4        Z        Out     0.801     3.950 f     -         
+5gtwxxvwFnBpJfAf8i5rnE3pChh34pF00E197om3     Net         -        -       -         -           10        
+encrypted                                    LUT4        C        In      0.000     3.950 f     -         
+encrypted                                    LUT4        Z        Out     0.866     4.817 r     -         
+qBwsbzlGniBulnoH2561cBdyglgJIkq3i            Net         -        -       -         -           32        
+encrypted                                    LUT4        C        In      0.000     4.817 r     -         
+encrypted                                    LUT4        Z        Out     0.606     5.423 r     -         
+cEd4EKy3hJp8s5kvJ2ja23                       Net         -        -       -         -           1         
+encrypted                                    FD1P3DX     D        In      0.000     5.423 r     -         
+==========================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      5.423
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.477
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+encrypted                                    FD1P3DX     Q        Out     1.057     1.057 r     -         
+HtzyqFJggzsraz27J                            Net         -        -       -         -           12        
+encrypted                                    LUT4        D        In      0.000     1.057 r     -         
+encrypted                                    LUT4        Z        Out     0.390     1.447 f     -         
+0ujBIKHekq8gcpeAhIra                         Net         -        -       -         -           1         
+encrypted                                    LUT4        B        In      0.000     1.447 f     -         
+encrypted                                    LUT4        Z        Out     0.880     2.327 r     -         
+bE501fa1Kz7ulDCpoaBaC0f2aHJlryKJAbJ          Net         -        -       -         -           40        
+encrypted                                    LUT4        D        In      0.000     2.327 r     -         
+encrypted                                    LUT4        Z        Out     0.822     3.149 f     -         
+boA0pKx23GJm5H6                              Net         -        -       -         -           15        
+encrypted                                    LUT4        A        In      0.000     3.149 f     -         
+encrypted                                    LUT4        Z        Out     0.801     3.950 f     -         
+5gtwxxvwFnBpJfAf8i5rnE3pChh34pF00E197om3     Net         -        -       -         -           10        
+encrypted                                    LUT4        C        In      0.000     3.950 f     -         
+encrypted                                    LUT4        Z        Out     0.866     4.817 r     -         
+qBwsbzlGniBulnoH2561cBdyglgJIkq3i            Net         -        -       -         -           32        
+encrypted                                    LUT4        C        In      0.000     4.817 r     -         
+encrypted                                    LUT4        Z        Out     0.606     5.423 r     -         
+pf9u0ydl0r9DtwxBdgqa7Dn                      Net         -        -       -         -           1         
+encrypted                                    FD1P3DX     D        In      0.000     5.423 r     -         
+==========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                                         Arrival          
+Instance      Reference     Type         Pin       Net                                         Time        Slack
+              Clock                                                                                             
+----------------------------------------------------------------------------------------------------------------
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3     0.000       1.725
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3     0.000       1.725
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn     0.000       2.221
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn     0.000       2.221
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3     0.000       2.221
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3     0.000       2.221
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn     0.000       2.311
+encrypted     System        DPR16X4A     DO[0]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rDn     0.000       2.311
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3     0.000       2.311
+encrypted     System        DPR16X4A     DO[1]     ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3     0.000       2.311
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                       Required          
+Instance      Reference     Type        Pin     Net                                          Time         Slack
+              Clock                                                                                            
+---------------------------------------------------------------------------------------------------------------
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+encrypted     System        FD1P3DX     SP      7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     4.806        1.725
+===============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.194
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.806
+
+    - Propagation time:                      3.082
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 1.725
+
+    Number of logic level(s):                5
+    Starting point:                          encrypted / DO[1]
+    Ending point:                            encrypted / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                            Pin       Pin               Arrival     No. of    
+Name                                         Type         Name      Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+encrypted                                    DPR16X4A     DO[1]     Out     0.000     0.000 r     -         
+ftCC3bDiisLfvHjnIcexsuJzK7bC24Kb6Hn1rI3      Net          -         -       -         -           36        
+encrypted                                    LUT4         A         In      0.000     0.000 r     -         
+encrypted                                    LUT4         Z         Out     0.708     0.708 f     -         
+1zb3Al6                                      Net          -         -       -         -           3         
+encrypted                                    LUT4         A         In      0.000     0.708 f     -         
+encrypted                                    LUT4         Z         Out     0.660     1.368 f     -         
+k1sx3kJceAKqmc7cdDni4pmo5n1Lwj1n9CJe         Net          -         -       -         -           2         
+encrypted                                    LUT4         A         In      0.000     1.368 f     -         
+encrypted                                    LUT4         Z         Out     0.180     1.548 f     -         
+1zb4qgu                                      Net          -         -       -         -           2         
+encrypted                                    LUT4         B         In      0.000     1.548 f     -         
+encrypted                                    LUT4         Z         Out     0.660     2.208 f     -         
+qBwsbzowEHt0eKkq2DCmtCt1j1exHFfl6            Net          -         -       -         -           2         
+encrypted                                    LUT4         A         In      0.000     2.208 f     -         
+encrypted                                    LUT4         Z         Out     0.874     3.082 f     -         
+7t2kkoxmF0ioniD5mgq9ebKsIHppjEix8wAybG7J     Net          -         -       -         -           36        
+encrypted                                    FD1P3DX      SP        In      0.000     3.082 f     -         
+============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":121:0:121:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":123:0:123:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+None
+Writing compile point status file C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                                                  Status       Reason      
+-------------------------------------------------------------------------------
+axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0     Remapped     User request
+===============================================================================
+
+Process took 0h:00m:36s realtime, 0h:00m:36s cputime
+# Wed Sep 18 11:55:26 2024
+
+###########################################################]

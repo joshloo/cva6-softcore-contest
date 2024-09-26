@@ -1,0 +1,886 @@
+#OPTIONS:"|-mixedhdl|-modhint|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\impl_1\\synwork\\_verilog_hintfile|-top|soc_golden_gsrd|-layerid|0|-orig_srs|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\impl_1\\synwork\\soc_golden_gsrd_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi2apb0\\1.2.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi4_interconnect0\\2.0.1|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi4_interconnect1\\2.0.1|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi_register_slice0\\1.0.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\cpu0\\2.4.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\gpio0\\1.6.2|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\lpddr4_mc_contr0\\2.2.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\mbconfig0\\1.0.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\mpmc0\\1.0.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\qspi0\\1.2.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\rst_sync0\\3.0.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\sgdma0\\2.2.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\sysmem0\\2.2.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\tse_mac0\\1.6.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\tse_to_rgmii_bridge0\\1.0.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\uart0\\1.3.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\module\\apb_interconnect0\\1.2.1|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\module\\osc0\\2.1.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\module\\pll0\\2.5.0|-I|C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\impl_1\\|-I|C:\\lscc\\radiant\\2024.1\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\generic\\lav-ate-es.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fsysv|-lib|work|-fv2001"
+#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\bin64\\c_ver.exe":1715795486
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\impl_1\\synwork\\_verilog_hintfile":1726630799
+#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\generic\\lav-ate-es.v":1718762606
+#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vlog\\hypermods.v":1715795541
+#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vlog\\scemi_objects.v":1715795541
+#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vlog\\scemi_pipes.svh":1715795541
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_lav-at.v":1657666652
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_addsub.v":1562800400
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/adder_subtractor/rtl/lscc_add_sub.v":1683513052
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_add.v":1562800366
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/adder/rtl/lscc_adder.v":1684803183
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_complex_mult.v":1562800443
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/complex_mult/rtl/lscc_complex_mult.v":1698224940
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_counter.v":1562800475
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/counter/rtl/lscc_cntr.v":1564990907
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_distributed_dpram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/distributed_dpram/rtl/lscc_distributed_dpram.v":1695018057
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_distributed_spram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/distributed_spram/rtl/lscc_distributed_spram.v":1695018104
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_distributed_rom.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/distributed_rom/rtl/lscc_distributed_rom.v":1695018080
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_distributed_shift_reg.v":1666080348
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/ram_shift_reg/rtl/lscc_shift_register.v":1695019042
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_fifo.v":1714014022
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/fifo/rtl/lscc_fifo.v":1714014204
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_fifo_dc.v":1715826488
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/fifo_dc/rtl/lscc_fifo_dc.v":1718352575
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_mac.v":1562800511
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1698226765
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_multaddsubsum.v":1562800615
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":1698227216
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_multaddsub.v":1562800566
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1698227041
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_mult.v":1562800537
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/multiplier/rtl/lscc_multiplier.v":1698227389
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_ram_dp.v":1716513609
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/ram_dp/rtl/lscc_ram_dp.v":1712791629
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_ram_dp_be.v":1712795729
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/ram_dp/rtl/lscc_ram_dp.v":1712791629
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_ram_dp_true.v":1716514614
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1711850744
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_ram_dq.v":1716514771
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1711896736
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_ram_dq_be.v":1712795739
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1711896736
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_rom.v":1712795741
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/rom/rtl/lscc_rom.v":1711898000
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_sub.v":1562800650
+#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1564990995
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi4_interconnect0\\2.0.1\\rtl\\axi4_interconnect0.sv":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\tse_mac0\\1.6.0\\rtl\\tse_mac0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\qspi0\\1.2.0\\rtl\\qspi0.v":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi4_interconnect1\\2.0.1\\rtl\\axi4_interconnect1.sv":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi_register_slice0\\1.0.0\\rtl\\axi_register_slice0.v":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\module\\apb_interconnect0\\1.2.1\\rtl\\apb_interconnect0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\sgdma0\\2.2.0\\rtl\\sgdma0.sv":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\mpmc0\\1.0.0\\rtl\\mpmc0.sv":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\soc_golden_gsrd.v":1726631101
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\axi2apb0\\1.2.0\\rtl\\axi2apb0.v":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\mbconfig0\\1.0.0\\rtl\\mbconfig0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\tse_to_rgmii_bridge0\\1.0.0\\rtl\\tse_to_rgmii_bridge0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\rst_sync0\\3.0.0\\rtl\\rst_sync0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\gpio0\\1.6.2\\rtl\\gpio0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\sysmem0\\2.2.0\\rtl\\sysmem0.v":1726631072
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\lpddr4_mc_contr0\\2.2.0\\rtl\\lpddr4_mc_contr0.sv":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\uart0\\1.3.0\\rtl\\uart0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\module\\pll0\\2.5.0\\rtl\\pll0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\ip\\cpu0\\2.4.0\\rtl\\cpu0.sv":1726630800
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\soc_golden_gsrd\\lib\\latticesemi.com\\module\\osc0\\2.1.0\\rtl\\osc0.v":1725506181
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\reginit.bin":1726631106
+#CUR:"C:\\code\\cva6-joshloo\\cva6\\corev_apu\\fpga\\lattice\\soc_golden_gsrd\\bht_ini.bin":1726631106
+#CUR:"lpddr4_mc_contr0_ipgen_VexRiscv_RegFilePlugin_regFile_25568_initial_block":1726631265
+0			"C:\lscc\radiant\2024.1\ip\pmi\pmi_lav-at.v" verilog
+1		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_addsub.v" verilog
+2		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" verilog
+3		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_add.v" verilog
+4		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/adder/rtl\lscc_adder.v" verilog
+5		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_complex_mult.v" verilog
+6		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" verilog
+7		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_counter.v" verilog
+8		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/counter/rtl\lscc_cntr.v" verilog
+9		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_distributed_dpram.v" verilog
+10		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" verilog
+11		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_distributed_spram.v" verilog
+12		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" verilog
+13		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_distributed_rom.v" verilog
+14		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" verilog
+15		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_distributed_shift_reg.v" verilog
+16		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" verilog
+17		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_fifo.v" verilog
+18		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v" verilog
+19		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_fifo_dc.v" verilog
+20		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v" verilog
+21		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_mac.v" verilog
+22		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" verilog
+23		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_multaddsubsum.v" verilog
+24		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" verilog
+25		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_multaddsub.v" verilog
+26		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" verilog
+27		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_mult.v" verilog
+28		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" verilog
+29		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_ram_dp.v" verilog
+30		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v" verilog
+31		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_ram_dp_be.v" verilog
+32		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_ram_dp_true.v" verilog
+33		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v" verilog
+34		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_ram_dq.v" verilog
+35		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v" verilog
+36		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_ram_dq_be.v" verilog
+37		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_rom.v" verilog
+38		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/rom/rtl\lscc_rom.v" verilog
+39		*	"C:\lscc\radiant\2024.1\ip\pmi\pmi_sub.v" verilog
+40		*	"C:\lscc\radiant\2024.1\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" verilog
+41			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\axi4_interconnect0\2.0.1\rtl\axi4_interconnect0.sv" verilog
+42			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_mac0\1.6.0\rtl\tse_mac0.v" verilog
+43			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\qspi0\1.2.0\rtl\qspi0.v" verilog
+44			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\axi4_interconnect1\2.0.1\rtl\axi4_interconnect1.sv" verilog
+45			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\axi_register_slice0\1.0.0\rtl\axi_register_slice0.v" verilog
+46			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\apb_interconnect0\1.2.1\rtl\apb_interconnect0.v" verilog
+47			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sgdma0\2.2.0\rtl\sgdma0.sv" verilog
+48			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\mpmc0\1.0.0\rtl\mpmc0.sv" verilog
+49			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\soc_golden_gsrd.v" verilog
+50			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\axi2apb0\1.2.0\rtl\axi2apb0.v" verilog
+51			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\mbconfig0\1.0.0\rtl\mbconfig0.v" verilog
+52			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\tse_to_rgmii_bridge0\1.0.0\rtl\tse_to_rgmii_bridge0.v" verilog
+53			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\rst_sync0\3.0.0\rtl\rst_sync0.v" verilog
+54			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v" verilog
+55			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\sysmem0\2.2.0\rtl\sysmem0.v" verilog
+56			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\lpddr4_mc_contr0\2.2.0\rtl\lpddr4_mc_contr0.sv" verilog
+57			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v" verilog
+58			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v" verilog
+59			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\ip\cpu0\2.4.0\rtl\cpu0.sv" verilog
+60			"C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\osc0\2.1.0\rtl\osc0.v" verilog
+#Dependency Lists(Uses List)
+0 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+1 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 0
+2 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 1 0
+3 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 2 1 0
+4 56 0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 3 2 1
+5 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 4 3 2 1 0
+6 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 5 4 3 2 1 0
+7 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 6 5 4 3 2 1 0
+8 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 7 6 5 4 3 2 1 0
+9 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8 7 6 5 4 3 2 1 0
+10 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8 7 6 5 4 3 2 1 0
+11 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8 7 6 5 4 3 2 1 0
+12 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9 8 7 6 5 4 3 2 1 0
+13 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8 7 6 5 4 3 2 1 0
+14 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+15 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+16 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+17 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+18 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+19 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+20 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+21 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+22 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+23 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+24 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+25 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+26 56 0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+27 56 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+28 56 0 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+29 56 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+30 56 40 39 38 37 36 35 34 33 32 30 31 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+31 56 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+32 56 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+33 56 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+34 56 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+35 56 40 39 38 37 35 36 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+36 56 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+37 56 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+38 56 40 39 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+39 56 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+40 56 0 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+41 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+42 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+43 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+44 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+45 56
+46 56
+47 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+48 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+49 57 52 42 55 47 53 43 58 60 48 51 56 54 59 45 44 41 50 46
+50 56
+51 56
+52 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+53 56
+54 56
+55 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+56 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 55
+57 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+58 56
+59 56 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+60 56
+#Dependency Lists(Users Of)
+0 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+1 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 0
+2 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 1 0
+3 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 2 1 0
+4 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 3 2 1 0
+5 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 4 3 2 1 0
+6 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 5 4 3 2 1 0
+7 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 6 5 4 3 2 1 0
+8 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 7 6 5 4 3 2 1 0
+9 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8 7 6 5 4 3 2 1 0
+10 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8 7 6 5 4 3 2 1 0
+11 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8 7 6 5 4 3 2 1 0
+12 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9 8 7 6 5 4 3 2 1 0
+13 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8 7 6 5 4 3 2 1 0
+14 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+15 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+16 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+17 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+18 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+19 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+20 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+21 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+22 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+23 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+24 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+25 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+26 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+27 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+28 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+29 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+30 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+31 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+32 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+33 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+34 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+35 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+36 59 57 56 55 52 48 47 44 43 42 41 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+37 59 57 56 55 52 48 47 44 43 42 41 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+38 59 57 56 55 52 48 47 44 43 42 41 40 39 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+39 59 57 56 55 52 48 47 44 43 42 41 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+40 59 57 56 55 52 48 47 44 43 42 41 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+41 49
+42 49
+43 49
+44 49
+45 49
+46 49
+47 49
+48 49
+49 -1
+50 49
+51 49
+52 49
+53 49
+54 49
+55 56 49
+56 60 59 58 57 55 54 53 52 51 50 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 49
+57 49
+58 49
+59 49
+60 49
+#Design Unit to File Association
+module work osc0_ipgen_lscc_osc 60
+module work cpu0_ipgen_lscc_sync 59
+module work cpu0_ipgen_clkdiv 59
+module work cpu0_ipgen_plic_top 59
+module work cpu0_ipgen_plic_localbus_register 59
+module work cpu0_ipgen_priority_index 59
+module work cpu0_ipgen_interrupt 59
+module work cpu0_ipgen_gateway 59
+module work cpu0_ipgen_dffr 59
+module work cpu0_ipgen_lscc_uart 59
+module work cpu0_ipgen_lscc_uart_txmitt 59
+module work cpu0_ipgen_lscc_uart_rxcver 59
+module work cpu0_ipgen_lscc_uart_rxcver_fifo 59
+module work cpu0_ipgen_lscc_uart_local_intface 59
+module work cpu0_ipgen_lscc_uart_apb_intface 59
+module work cpu0_ipgen_lscc_uart_txcver_fifo 59
+module work cpu0_ipgen_localbus_wrapper 59
+module work cpu0_ipgen_localbus_mux_full 59
+module work cpu0_ipgen_dbus2axi 59
+module work cpu0_ipgen_axi_register_rd 59
+module work cpu0_ipgen_axi_register_wr 59
+module work cpu0_ipgen_axi_register 59
+module work cpu0_ipgen_d_ff_plain_rst_we_t 59
+module work cpu0_ipgen_d_ff_plain_rst_t 59
+module work cpu0_ipgen_vex_jtag_bridge 59
+module work cpu0_ipgen_vex_debug 59
+module work cpu0_ipgen_BufferCC_1_ 59
+module work cpu0_ipgen_SystemDebugger 59
+module work cpu0_ipgen_FlowCCByToggle 59
+module work cpu0_ipgen_JtagBridge 59
+module work cpu0_ipgen_StreamFifo 59
+module work cpu0_ipgen_StreamFifoLowLatency 59
+module work cpu0_ipgen_VexRiscv_lite 59
+module work cpu0_ipgen_Balanced_core_DataCache 59
+module work cpu0_ipgen_Balanced_core_InstructionCache 59
+module work cpu0_ipgen_VexRiscv_balanced 59
+module work cpu0_ipgen_StreamArbiter_1 59
+module work cpu0_ipgen_FpuSqrt 59
+module work cpu0_ipgen_FpuDiv 59
+module work cpu0_ipgen_StreamArbiter 59
+module work cpu0_ipgen_StreamFork 59
+module work cpu0_ipgen_FpuCore 59
+module work cpu0_ipgen_DataCache 59
+module work cpu0_ipgen_InstructionCache 59
+module work cpu0_ipgen_VexRiscv_advanced 59
+module work cpu0_ipgen_clint_sync 59
+module work cpu0_ipgen_clint_sync_wedge 59
+module work cpu0_ipgen_top_clint_wdt 59
+module work cpu0_ipgen_cfu_mux 59
+module work cpu0_ipgen_riscvrtos 59
+module work pll0_ipgen_pll_sip_lmmi_mux 58
+module work pll0_ipgen_pll_init_bw 58
+module work pll0_ipgen_apb2lmmi 58
+module work pll0_ipgen_lscc_pll 58
+module work uart0_ipgen_lscc_uart_txmitt 57
+module work uart0_ipgen_lscc_uart_rxcver 57
+module work uart0_ipgen_lscc_uart_rxcver_fifo 57
+module work uart0_ipgen_lscc_uart_intface 57
+module work uart0_ipgen_lscc_uart_txcver_fifo 57
+module work uart0_ipgen_lscc_uart 57
+module work lpddr4_mc_contr0_ipgen_mrw_zq_cal 56
+module work lpddr4_mc_contr0_ipgen_dfi_re_org 56
+module work lpddr4_mc_contr0_ipgen_ddrphy_csr 56
+module work lpddr4_mc_contr0_ipgen_apb_access_blocker 56
+module work lpddr4_mc_contr0_ipgen_lscc_ddrphy 56
+module work lpddr4_mc_contr0_ipgen_dram_controller_engine_wrap 56
+module work lpddr4_mc_contr0_ipgen_dram_controller_engine 56
+module work lpddr4_mc_contr0_ipgen_rddata_byte_shifter 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_reorder_buffer 56
+module work lpddr4_mc_contr0_ipgen_rddata_shifter 56
+module work lpddr4_mc_contr0_ipgen_rdrtrnctrlfifo 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_rd_rtrn 56
+module work lpddr4_mc_contr0_ipgen_odt_control 56
+module work lpddr4_mc_contr0_ipgen_rank_timers 56
+module work lpddr4_mc_contr0_ipgen_wr_data_handler 56
+module work lpddr4_mc_contr0_ipgen_read_data_handler 56
+module work lpddr4_mc_contr0_ipgen_protocol_top 56
+module work lpddr4_mc_contr0_ipgen_req_processor 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_prot_eng 56
+module work lpddr4_mc_contr0_ipgen_power_mgmt 56
+module work lpddr4_mc_contr0_ipgen_periodic_event_ms_generator 56
+module work lpddr4_mc_contr0_ipgen_periodic_refresh_generator 56
+module work lpddr4_mc_contr0_ipgen_periodic_event_manager 56
+module work lpddr4_mc_contr0_ipgen_shifter 56
+module work lpddr4_mc_contr0_ipgen_ddr4_req_processor 56
+module work lpddr4_mc_contr0_ipgen_ddr4_command_pkr 56
+module work lpddr4_mc_contr0_ipgen_ddr3_req_processor 56
+module work lpddr4_mc_contr0_ipgen_periodic_event_generator 56
+module work lpddr4_mc_contr0_ipgen_ddr3_pwr_down_ctrl 56
+module work lpddr4_mc_contr0_ipgen_ddr3_command_pkr 56
+module work lpddr4_mc_contr0_ipgen_command_pkr 56
+module work lpddr4_mc_contr0_ipgen_timer 56
+module work lpddr4_mc_contr0_ipgen_bank_timers 56
+module work lpddr4_mc_contr0_ipgen_rr_arbiter 56
+module work lpddr4_mc_contr0_ipgen_arbiter 56
+module work lpddr4_mc_contr0_ipgen_ordering_q_select_valid 56
+module work lpddr4_mc_contr0_ipgen_ordering_q_select 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_wr_reorder_buffer 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_req_handler 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_wr_data_handler 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_iface_top 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_ecc_gen 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_ebr 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_sch_dbi 56
+module work lpddr4_mc_contr0_ipgen_d4_ordering_q_select_valid 56
+module work lpddr4_mc_contr0_ipgen_d4_ordering_q_select 56
+module work lpddr4_mc_contr0_ipgen_ddr4_mc_sch_req_handler 56
+module work lpddr4_mc_contr0_ipgen_trn2phy_if 56
+module work lpddr4_mc_contr0_ipgen_trn2phy_dqs_if 56
+module work lpddr4_mc_contr0_ipgen_trn2phy_ca_if 56
+module work lpddr4_mc_contr0_ipgen_sch2prot_wrbuf_if 56
+module work lpddr4_mc_contr0_ipgen_sch2prot_if 56
+module work lpddr4_mc_contr0_ipgen_sch2pe_if 56
+module work lpddr4_mc_contr0_ipgen_rd_rtrn_rsp_if 56
+module work lpddr4_mc_contr0_ipgen_rd_rtrn_bus_if 56
+module work lpddr4_mc_contr0_ipgen_phy2rd_rtrn_if 56
+module work lpddr4_mc_contr0_ipgen_dq_lpddr4_if 56
+module work lpddr4_mc_contr0_ipgen_ca_lpddr4_if 56
+module work lpddr4_mc_contr0_ipgen_bus2sch_if 56
+module work lpddr4_mc_contr0_ipgen_axi_if 56
+module work lpddr4_mc_contr0_ipgen_apb_intf 56
+module work lpddr4_mc_contr0_ipgen_ahbl_if 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_ecc_gen 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_ecc_check 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_axi_slv_rd_rsp 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_axi_slv_rd 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_axi_slv_wr 56
+module work lpddr4_mc_contr0_ipgen_lddr4_mc_axi_iface_top 56
+module work lpddr4_mc_contr0_ipgen_mem_sync 56
+module work lpddr4_mc_contr0_ipgen_pll_init_bw 56
+module work lpddr4_mc_contr0_ipgen_apb2lmmi 56
+module work lpddr4_mc_contr0_ipgen_lscc_pll 56
+module work lpddr4_mc_contr0_ipgen_sys_mem_ipgen_lscc_fifo_streamer 56
+module work lpddr4_mc_contr0_ipgen_sys_mem_ipgen_lscc_ahblmem_slave 56
+module work lpddr4_mc_contr0_ipgen_sys_mem_ipgen_lscc_ahblmem_arbiter 56
+module work lpddr4_mc_contr0_ipgen_sys_mem_ipgen_lscc_sys_mem 56
+module work lpddr4_mc_contr0_ipgen_mem0_ddr5 56
+module work lpddr4_mc_contr0_ipgen_mem0_ddr4 56
+module work lpddr4_mc_contr0_ipgen_mem0_ddr3 56
+module work lpddr4_mc_contr0_ipgen_mem0_ipgen_lscc_ram_dp_true_core 56
+module work lpddr4_mc_contr0_ipgen_mem0_ipgen_lscc_ram_dp_true_inst 56
+module work lpddr4_mc_contr0_ipgen_mem0_ipgen_lscc_write_through 56
+module work lpddr4_mc_contr0_ipgen_mem0_ipgen_lscc_ram_dp_true_main 56
+module work lpddr4_mc_contr0_ipgen_mem0_ipgen_lscc_ram_dp_true 56
+module work lpddr4_mc_contr0_ipgen_mem0 56
+module work lpddr4_mc_contr0_ipgen_sys_mem 56
+module work lpddr4_mc_contr0_ipgen_cpu_grp 56
+module work lpddr4_mc_contr0_ipgen_StreamFifoLowLatency 56
+module work lpddr4_mc_contr0_ipgen_VexRiscv 56
+module work lpddr4_mc_contr0_ipgen_cpu 56
+module work lpddr4_mc_contr0_ipgen_apb_int_2x1_ipgen_lscc_apb_thermo_mask 56
+module work lpddr4_mc_contr0_ipgen_apb_int_2x1_ipgen_lscc_apb_prio_arb 56
+module work lpddr4_mc_contr0_ipgen_apb_int_2x1_ipgen_lscc_apb_arbiter 56
+module work lpddr4_mc_contr0_ipgen_apb_int_2x1_ipgen_lscc_apb_arbmux 56
+module work lpddr4_mc_contr0_ipgen_apb_int_2x1 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_decoder_comp 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_decoder_prim 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_crossbar 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_multiplexor 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_decoder 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_bus 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_arbmux 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_thermo_mask 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_prio_arb 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_arbiter 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3_ipgen_lscc_apb_interconnect 56
+module work lpddr4_mc_contr0_ipgen_apb_inst_1x3 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_decoder_comp 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_decoder_prim 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_input_stage 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_crossbar 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_default_slv 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_multiplexor 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_decoder 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_bus 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_arbmux 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_prio_arb 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_fair_arb 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_arbiter 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2_ipgen_lscc_ahbl_interconnect 56
+module work lpddr4_mc_contr0_ipgen_ahbl_int_1x2 56
+module work lpddr4_mc_contr0_ipgen_ahbl2apb_ipgen_lscc_ahbl2apb 56
+module work lpddr4_mc_contr0_ipgen_ahbl2apb 56
+module work lpddr4_mc_contr0_ipgen_lscc_ram_dp_core 56
+module work lpddr4_mc_contr0_ipgen_lscc_ram_dp_main 56
+module work lpddr4_mc_contr0_ipgen_lscc_ram_dp 56
+module work lpddr4_mc_contr0_ipgen_lscc_soft_fifo_dist 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_sync_fifo 56
+module work lpddr4_mc_contr0_ipgen_dpram_ipgen_lscc_distributed_dpram 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_dpram 56
+module work lpddr4_mc_contr0_ipgen_lscc_fifo_fwft 56
+module work lpddr4_mc_contr0_ipgen_lscc_soft_fifo_dc_dist 56
+module work lpddr4_mc_contr0_ipgen_lpddr4_mc_async_fifo 56
+module work lpddr4_mc_contr0_ipgen_lscc_mc_avant 56
+module work sysmem0_ipgen_lscc_lram_core 55
+module work sysmem0_ipgen_lscc_smem_lram 55
+module work sysmem0_ipgen_lscc_mem 55
+module work sysmem0_ipgen_lscc_fifo_streamer 55
+module work sysmem0_ipgen_lscc_axi4stream_rx 55
+module work sysmem0_ipgen_lscc_axi4mem_subordinate 55
+module work sysmem0_ipgen_lscc_axi4mem_arbiter 55
+module work sysmem0_ipgen_lscc_ahblmem_subordinate 55
+module work sysmem0_ipgen_lscc_ahblmem_arbiter 55
+module work sysmem0_ipgen_lscc_sys_mem 55
+module work gpio0_ipgen_lscc_gpio_lmmi 54
+module work gpio0_ipgen_lscc_apb2lmmi 54
+module work gpio0_ipgen_lscc_gpio 54
+module work rst_sync0_ipgen_rst_sync 53
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_mem_core 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_mem_main 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_soft_mem 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_reset_async 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_hw_core 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_soft_fifo_dc 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_hard_fifo_dc 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_main 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc 52
+module work tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo 52
+module work tse_to_rgmii_bridge0_ipgen_tse_to_rgmii_bridge 52
+module work mbconfig0_ipgen_fpga_multiboot_config 51
+module work axi2apb0_ipgen_lscc_axi2apb 50
+module work uart0 57
+module work tse_to_rgmii_bridge0 52
+module work sysmem0 55
+module work rst_sync0 53
+module work pll0 58
+module work osc0 60
+module work mbconfig0 51
+module work lpddr4_mc_contr0 56
+module work gpio0 54
+module work cpu0 59
+module work axi2apb0 50
+module work soc_golden_gsrd 49
+module work mpmc0_ipgen_write_upsizer 48
+module work mpmc0_ipgen_upsizer 48
+module work mpmc0_ipgen_read_upsizer 48
+module work mpmc0_ipgen_mpmc_soft_fifo_dist 48
+module work mpmc0_ipgen_mpmc_fifo_hw_core 48
+module work mpmc0_ipgen_mpmc_hard_fifo_dc 48
+module work mpmc0_ipgen_mpmc_soft_fifo 48
+module work mpmc0_ipgen_mpmc_fifo_main 48
+module work mpmc0_ipgen_mpmc_fifo 48
+module work mpmc0_ipgen_mpmc_fifo_fwft 48
+module work mpmc0_ipgen_mpmc_soft_fifo_async_dc 48
+module work mpmc0_ipgen_width_converter 48
+module work mpmc0_ipgen_ext_mgr_addr_check 48
+module work mpmc0_ipgen_mpmc_sync_fifo 48
+module work mpmc0_ipgen_mpmc_data_fifo 48
+module work mpmc0_ipgen_mpmc_async_fifo 48
+module work mpmc0_ipgen_mpmc_async_fifo_fwft 48
+module work mpmc0_ipgen_fifo_wrapper 48
+module work mpmc0_ipgen_mpmc_sync_fifo_fwft 48
+module work mpmc0_ipgen_rr_arb 48
+module work mpmc0_ipgen_read_rr_arbiter 48
+module work mpmc0_ipgen_write_rr_arbiter 48
+module work mpmc0_ipgen_arbiter 48
+module work mpmc0_ipgen_fifo_interface 48
+module work mpmc0_ipgen_ext_manager 48
+module work mpmc0_ipgen_ext_mgr_interface 48
+module work mpmc0_ipgen_reset_sync_deassertion 48
+module work mpmc0_ipgen_lscc_mpmc_axi 48
+module work mpmc0 48
+module work sgdma0_ipgen_lscc_sgdma_s_axis 47
+module work sgdma0_ipgen_lscc_sgdma_m_axis 47
+module work sgdma0_ipgen_lscc_sgdma_m_axi_wr 47
+module work sgdma0_ipgen_lscc_sgdma_m_axi_desc_wr 47
+module work sgdma0_ipgen_lscc_sgdma_m_axi_rd 47
+module work sgdma0_ipgen_lscc_cdc_multibit 47
+module work sgdma0_ipgen_lscc_cdc_pulse 47
+module work sgdma0_ipgen_lscc_cdc_bit 47
+module work sgdma0_ipgen_lscc_sgdma_mm2s_buffer 47
+module work sgdma0_ipgen_lscc_sgdma_s2mm_buffer 47
+module work sgdma0_ipgen_lscc_sgdma_descriptor 47
+module work sgdma0_ipgen_lscc_sgdma_csr 47
+module work sgdma0_ipgen_lscc_sgdma_s_axil 47
+module work sgdma0_ipgen_sgdmac_core 47
+module work sgdma0 47
+module work apb_interconnect0_ipgen_lscc_apb_decoder_comp 46
+module work apb_interconnect0_ipgen_lscc_apb_decoder_prim 46
+module work apb_interconnect0_ipgen_lscc_apb_crossbar 46
+module work apb_interconnect0_ipgen_lscc_apb_multiplexor 46
+module work apb_interconnect0_ipgen_lscc_apb_decoder 46
+module work apb_interconnect0_ipgen_lscc_apb_bus 46
+module work apb_interconnect0_ipgen_lscc_apb_arbmux 46
+module work apb_interconnect0_ipgen_lscc_apb_thermo_mask 46
+module work apb_interconnect0_ipgen_lscc_apb_prio_arb 46
+module work apb_interconnect0_ipgen_lscc_apb_arbiter 46
+module work apb_interconnect0_ipgen_lscc_apb_interconnect 46
+module work apb_interconnect0 46
+module work axi_register_slice0_ipgen_shift_reg 45
+module work axi_register_slice0_ipgen_axi_register_slice_top 45
+module work axi_register_slice0 45
+module work axi4_interconnect1_ipgen_write_resp_downsizer 44
+module work axi4_interconnect1_ipgen_write_data_downsizer 44
+module work axi4_interconnect1_ipgen_read_data_downsizer 44
+module work axi4_interconnect1_ipgen_lutram 44
+module work axi4_interconnect1_ipgen_gen_memfile 44
+module work axi4_interconnect1_ipgen_read_downsizer 44
+module work axi4_interconnect1_ipgen_write_downsizer 44
+module work axi4_interconnect1_ipgen_ext_slv_port 44
+module work axi4_interconnect1_ipgen_gen_fifo 44
+module work axi4_interconnect1_ipgen_fixed_arb 44
+module work axi4_interconnect1_ipgen_fixed_arb_ext_mas 44
+module work axi4_interconnect1_ipgen_rr_arb 44
+module work axi4_interconnect1_ipgen_fifo_interface 44
+module work axi4_interconnect1_ipgen_read_upsizer 44
+module work axi4_interconnect1_ipgen_write_upsizer 44
+module work axi4_interconnect1_ipgen_ext_mas_port 44
+module work axi4_interconnect1_ipgen_ext_mas_adr_dec 44
+module work axi4_interconnect1_ipgen_def_slave 44
+module work axi4_interconnect1_ipgen_axi_fifo_fwft_handler 44
+module work axi4_interconnect1_ipgen_axi_fifo 44
+module work axi4_interconnect1_ipgen_ext_slv_ard_arb 44
+module work axi4_interconnect1_ipgen_ext_slv_rdresp_ifc 44
+module work axi4_interconnect1_ipgen_ext_slv_dwr_arb 44
+module work axi4_interconnect1_ipgen_ext_slv_awr_arb 44
+module work axi4_interconnect1_ipgen_ext_slv_wrresp_ifc 44
+module work axi4_interconnect1_ipgen_ext_mas_rdresp_arb 44
+module work axi4_interconnect1_ipgen_ext_mas_rdresp_ord_suprt_arb 44
+module work axi4_interconnect1_ipgen_ext_mas_ard_ifc 44
+module work axi4_interconnect1_ipgen_ext_mas_wrresp_arb 44
+module work axi4_interconnect1_ipgen_ext_mas_wrresp_ord_suprt_arb 44
+module work axi4_interconnect1_ipgen_ext_mas_dwr_ifc 44
+module work axi4_interconnect1_ipgen_ext_mas_awr_ifc 44
+module work axi4_interconnect1_ipgen_axi_cross_bar 44
+module work axi4_interconnect1_ipgen_addr_downsizer_axi4l 44
+module work axi4_interconnect1_ipgen_skid_buffer 44
+module work axi4_interconnect1_ipgen_addr_downsizer_axi4 44
+module work axi4_interconnect1_ipgen_addr_downsizer 44
+module work axi4_interconnect1_ipgen_lscc_sync_axi_interconnect 44
+module work axi4_interconnect1_ipgen_lscc_axi_interconnect 44
+module work axi4_interconnect1 44
+module work qspi0_ipgen_qspi_flash_tx_rx_fifo 43
+module work qspi0_ipgen_qspi_flash_virtual_space 43
+module work qspi0_ipgen_qspi_flash_generic_controller 43
+module work qspi0_ipgen_qspi_flash_packet_bus_gen 43
+module work qspi0_ipgen_qspi_flash_reg_space 43
+module work qspi0_ipgen_qspi_flash_command_decode 43
+module work qspi0_ipgen_qspi_axi4_slave 43
+module work qspi0_ipgen_qspi_axi4_lite_slave 43
+module work qspi0_ipgen_qspi_ahbl_slave 43
+module work qspi0_ipgen_qspi_flash_controller_core 43
+module work qspi0_ipgen_lscc_qspi_flash_controller 43
+module work qspi0 43
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_fifo_mem_core 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_fifo_mem_main 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_fifo_mem 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_fifo_hw_core 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_hard_fifo_dc 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_soft_fifo_dc 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_fifo_dc_main 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_fifo_fwft_fabric 42
+module work tse_mac0_ipgen_shallow_fifo_dc_ipgen_lscc_fifo_dc 42
+module work tse_mac0_ipgen_lscc_tx_rfifo 42
+module work tse_mac0_ipgen_lscc_tx_pausecnt 42
+module work tse_mac0_ipgen_lscc_tx_misc 42
+module work tse_mac0_ipgen_lscc_tx_macsm 42
+module work tse_mac0_ipgen_lscc_tx_readfifo 42
+module work tse_mac0_ipgen_lscc_tx_ipgcnt 42
+module work tse_mac0_ipgen_lscc_tx_crc32 42
+module work tse_mac0_ipgen_lscc_tx_backoffcnt 42
+module work tse_mac0_ipgen_lscc_tx_fifo_rd_ctrl 42
+module work tse_mac0_ipgen_lscc_tx_mac 42
+module work tse_mac0_ipgen_lscc_statistics_cnt 42
+module work tse_mac0_ipgen_shallow_buf_m2g 42
+module work tse_mac0_ipgen_shallow_buf_g2m 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_fb_rf 42
+module work tse_mac0_ipgen_lscc_pll_125_625s_ipgen_lscc_apb2lmmi 42
+module work tse_mac0_ipgen_lscc_pll_125_625s_ipgen_lscc_pll 42
+module work tse_mac0_ipgen_register_e 42
+module work tse_mac0_ipgen_register_f 42
+module work tse_mac0_ipgen_register_6 42
+module work tse_mac0_ipgen_register_5 42
+module work tse_mac0_ipgen_register_4 42
+module work tse_mac0_ipgen_register_1 42
+module work tse_mac0_ipgen_register_0 42
+module work tse_mac0_ipgen_regs_smi 42
+module work tse_mac0_ipgen_smi_to_regbus 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_enc8b10b 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_dec8b10b 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_fc_sync 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_link_sync 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_word_align 42
+module work tse_mac0_ipgen_lscc_gddr_tx5c 42
+module work tse_mac0_ipgen_lscc_pll_125_625s 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_rx_top 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_tx_top 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_fb_tx 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_lmmi 42
+module work tse_mac0_ipgen_lscc_sgmii_autoneg 42
+module work tse_mac0_ipgen_lscc_sgmii_rx_sm 42
+module work tse_mac0_ipgen_lscc_sgmii_rx_sync_sm 42
+module work tse_mac0_ipgen_lscc_sgmii_rx_ctc_none 42
+module work tse_mac0_ipgen_lscc_sgmii_rx_ctc_static 42
+module work tse_mac0_ipgen_lscc_sgmii_rx_ctc_dynamic 42
+module work tse_mac0_ipgen_lscc_sgmii_rate_adapt_g2m 42
+module work tse_mac0_ipgen_lscc_sgmii_rate_adapt_m2g 42
+module work tse_mac0_ipgen_lscc_sgmii_rate_adapt_g2m_all_8b 42
+module work tse_mac0_ipgen_lscc_sgmii_rate_adapt_m2g_all 42
+module work tse_mac0_ipgen_lscc_sgmii_tx_sm 42
+module work tse_mac0_ipgen_lscc_sgmii_core 42
+module work tse_mac0_ipgen_lscc_sgmii_mdio 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_serdes 42
+module work tse_mac0_ipgen_lscc_rx_mac 42
+module work tse_mac0_ipgen_lscc_rx_fsm 42
+module work tse_mac0_ipgen_lscc_rx_crc32 42
+module work tse_mac0_ipgen_lscc_rmii 42
+module work tse_mac0_ipgen_lscc_rgmii 42
+module work tse_mac0_ipgen_lscc_pll_125_625s_a_ipgen_apb2lmmi 42
+module work tse_mac0_ipgen_lscc_pll_125_625s_a_ipgen_lscc_pll 42
+module work tse_mac0_ipgen_lscc_pll_125_625s_a 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs 42
+module work tse_mac0_ipgen_lscc_sgmii_pcs_rsl 42
+module work tse_mac0_ipgen_lscc_sgmii_core_wrap 42
+module work tse_mac0_ipgen_e1gb_ipgen_lscc_mpcs_top 42
+module work tse_mac0_ipgen_lscc_mpcs_bypass 42
+module work tse_mac0_ipgen_lscc_mii_gmii 42
+module work tse_mac0_ipgen_lscc_mgmt_if 42
+module work tse_mac0_ipgen_lscc_mac_mii_sync_rmii 42
+module work tse_mac0_ipgen_lscc_mac_mii_sync 42
+module work tse_mac0_ipgen_lscc_len_type 42
+module work tse_mac0_ipgen_lscc_gmii 42
+module work tse_mac0_ipgen_lscc_gddr_tx5c_a_01a 42
+module work tse_mac0_ipgen_lscc_gddr_tx5c_gddr_sync 42
+module work tse_mac0_ipgen_lscc_gddr_tx5c_a 42
+module work tse_mac0_ipgen_lscc_gddr_rx5c_a_01a 42
+module work tse_mac0_ipgen_lscc_gddr_rx5c_a 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_fifo_mem_core 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_fifo_mem_main 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_fifo_mem 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_fifo_hw_core 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_hard_fifo_dc 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_soft_fifo_dc 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_fifo_dc_main 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_fifo_fwft_fabric 42
+module work tse_mac0_ipgen_lscc_fifo_32x32_ipgen_lscc_fifo_dc 42
+module work tse_mac0_ipgen_lscc_fifo_32x32 42
+module work tse_mac0_ipgen_lscc_ddr_edgemon_centered 42
+module work tse_mac0_ipgen_lscc_cpu_if 42
+module work tse_mac0_ipgen_lscc_buf_if 42
+module work tse_mac0_ipgen_lscc_axi4l2lmmi 42
+module work tse_mac0_ipgen_lscc_apb2lmmi 42
+module work tse_mac0_ipgen_lscc_aml 42
+module work tse_mac0_ipgen_lscc_alignbuf 42
+module work tse_mac0_ipgen_lscc_ahbl2lmmi 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_fifo_mem_core 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_fifo_mem_main 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_fifo_soft_mem 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_fifo_dc_hw_core 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_hard_fifo_dc 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_soft_fifo_dc 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_fifo_dc_main 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_fifo_dc_fwft_fabric 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii_ipgen_lscc_fifo_dc 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_32x3_rmii 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_fifo_mem_core 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_fifo_mem_main 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_fifo_mem 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_fifo_dc_hw_core 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_hard_fifo_dc 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_soft_fifo_dc 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_fifo_dc_main 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_fifo_dc_fwft_fabric 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6_ipgen_lscc_fifo_dc 42
+module work tse_mac0_ipgen_fifo_tx_8x12_to_16x6 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_fifo_mem_core 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_fifo_mem_main 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_fifo_soft_mem 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_fifo_dc_hw_core 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_hard_fifo_dc 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_soft_fifo_dc 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_fifo_dc_main 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_fifo_dc_fwft_fabric 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii_ipgen_lscc_fifo_dc 42
+module work tse_mac0_ipgen_fifo_rx_32x4_to_8x16_rmii 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_fifo_mem_core 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_fifo_mem_main 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_fifo_mem 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_fifo_dc_hw_core 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_hard_fifo_dc 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_soft_fifo_dc 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_fifo_dc_main 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_fifo_dc_fwft_fabric 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12_ipgen_lscc_fifo_dc 42
+module work tse_mac0_ipgen_fifo_rx_16x6_to_8x12 42
+module work tse_mac0_ipgen_fifo_2048x9 42
+module work tse_mac0_ipgen_divider_nrst_un 42
+module work tse_mac0_ipgen_divider_div_unsigned 42
+module work tse_mac0_ipgen_divider_core 42
+module work tse_mac0_ipgen_ctc_fifo_static 42
+module work tse_mac0_ipgen_ctc_fifo_none 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_fifo_mem_core 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_fifo_mem_main 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_fifo_mem 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_fifo_hw_core 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_hard_fifo_dc 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_soft_fifo_dc 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_fifo_dc_main 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_fifo_fwft_fabric 42
+module work tse_mac0_ipgen_ctc_fifo_ipgen_lscc_fifo_dc 42
+module work tse_mac0_ipgen_ctc_fifo 42
+module work tse_mac0_ipgen_axi4s_bridge 42
+module work tse_mac0_ipgen_avant_ram_dp_ipgen_lscc_ram_dp_core 42
+module work tse_mac0_ipgen_avant_ram_dp_ipgen_lscc_ram_dp_main 42
+module work tse_mac0_ipgen_avant_ram_dp_ipgen_lscc_ram_dp 42
+module work tse_mac0_ipgen_avant_ram_dp 42
+module work tse_mac0_ipgen_fifo_2048x9_ipgen_lscc_fifo_hw_core 42
+module work tse_mac0_ipgen_fifo_2048x9_ipgen_lscc_hard_fifo 42
+module work tse_mac0_ipgen_fifo_2048x9_ipgen_lscc_soft_fifo 42
+module work tse_mac0_ipgen_fifo_2048x9_ipgen_lscc_fifo_main 42
+module work tse_mac0_ipgen_fifo_2048x9_ipgen_lscc_fifo_fwft_fabric 42
+module work tse_mac0_ipgen_fifo_2048x9_ipgen_lscc_fifo 42
+module work tse_mac0_ipgen_avant_fifo_2048x9 42
+module work tse_mac0_ipgen_lscc_sgmii_gbe_pcs 42
+module work tse_mac0_ipgen_lmmi_bytes_to_word_bandwidth_adapter 42
+module work tse_mac0_ipgen_lscc_mpcs_gbe 42
+module work tse_mac0_ipgen_lscc_tse_mac_core 42
+module work tse_mac0_ipgen_mac_phy_top 42
+module work tse_mac0 42
+module work axi4_interconnect0_ipgen_write_resp_downsizer 41
+module work axi4_interconnect0_ipgen_write_data_downsizer 41
+module work axi4_interconnect0_ipgen_read_data_downsizer 41
+module work axi4_interconnect0_ipgen_lutram 41
+module work axi4_interconnect0_ipgen_gen_memfile 41
+module work axi4_interconnect0_ipgen_read_downsizer 41
+module work axi4_interconnect0_ipgen_write_downsizer 41
+module work axi4_interconnect0_ipgen_ext_slv_port 41
+module work axi4_interconnect0_ipgen_gen_fifo 41
+module work axi4_interconnect0_ipgen_fixed_arb 41
+module work axi4_interconnect0_ipgen_fixed_arb_ext_mas 41
+module work axi4_interconnect0_ipgen_rr_arb 41
+module work axi4_interconnect0_ipgen_fifo_interface 41
+module work axi4_interconnect0_ipgen_read_upsizer 41
+module work axi4_interconnect0_ipgen_write_upsizer 41
+module work axi4_interconnect0_ipgen_ext_mas_port 41
+module work axi4_interconnect0_ipgen_ext_mas_adr_dec 41
+module work axi4_interconnect0_ipgen_def_slave 41
+module work axi4_interconnect0_ipgen_axi_fifo_fwft_handler 41
+module work axi4_interconnect0_ipgen_axi_fifo 41
+module work axi4_interconnect0_ipgen_ext_slv_ard_arb 41
+module work axi4_interconnect0_ipgen_ext_slv_rdresp_ifc 41
+module work axi4_interconnect0_ipgen_ext_slv_dwr_arb 41
+module work axi4_interconnect0_ipgen_ext_slv_awr_arb 41
+module work axi4_interconnect0_ipgen_ext_slv_wrresp_ifc 41
+module work axi4_interconnect0_ipgen_ext_mas_rdresp_arb 41
+module work axi4_interconnect0_ipgen_ext_mas_rdresp_ord_suprt_arb 41
+module work axi4_interconnect0_ipgen_ext_mas_ard_ifc 41
+module work axi4_interconnect0_ipgen_ext_mas_wrresp_arb 41
+module work axi4_interconnect0_ipgen_ext_mas_wrresp_ord_suprt_arb 41
+module work axi4_interconnect0_ipgen_ext_mas_dwr_ifc 41
+module work axi4_interconnect0_ipgen_ext_mas_awr_ifc 41
+module work axi4_interconnect0_ipgen_axi_cross_bar 41
+module work axi4_interconnect0_ipgen_addr_downsizer_axi4l 41
+module work axi4_interconnect0_ipgen_skid_buffer 41
+module work axi4_interconnect0_ipgen_addr_downsizer_axi4 41
+module work axi4_interconnect0_ipgen_addr_downsizer 41
+module work axi4_interconnect0_ipgen_lscc_sync_axi_interconnect 41
+module work axi4_interconnect0_ipgen_lscc_axi_interconnect 41
+module work axi4_interconnect0 41
+module work pmi_sub 39
+module work pmi_rom 37
+module work lscc_rom_inst_core 38
+module work lscc_rom_inst 38
+module work lscc_rom 38
+module work pmi_ram_dq_be 36
+module work pmi_ram_dq 34
+module work lscc_ram_dq_core 35
+module work lscc_ram_dq_inst 35
+module work lscc_ram_dq_main 35
+module work lscc_ram_dq 35
+module work pmi_ram_dp_true 32
+module work lscc_ram_dp_true_core 33
+module work lscc_ram_dp_true_inst 33
+module work lscc_write_through 33
+module work lscc_ram_dp_true_main 33
+module work lscc_ram_dp_true 33
+module work pmi_ram_dp_be 31
+module work pmi_ram_dp 29
+module work lscc_ram_dp_core 30
+module work lscc_ram_dp_main 30
+module work lscc_ram_dp 30
+module work pmi_mult 27
+module work pmi_multaddsub 25
+module work pmi_multaddsubsum 23
+module work lscc_mult_add_sub_sum 24
+module work pmi_mac 21
+module work lscc_mult_accumulate 22
+module work pmi_fifo_dc 19
+module work lscc_fifo_mem_core 20
+module work lscc_fifo_mem_main 20
+module work lscc_fifo_soft_mem 20
+module work lscc_reset_async 20
+module work lscc_fifo_dc_hw_core 20
+module work lscc_soft_fifo_dc 20
+module work lscc_hard_fifo_dc 20
+module work lscc_fifo_dc_main 20
+module work lscc_fifo_dc_fwft_fabric 20
+module work lscc_fifo_dc 20
+module work pmi_fifo 17
+module work lscc_fifo_hw_core 18
+module work lscc_soft_fifo 18
+module work lscc_hard_fifo 18
+module work lscc_fifo_main 18
+module work lscc_fifo_fwft_fabric 18
+module work lscc_fifo 18
+module work pmi_distributed_shift_reg 15
+module work lscc_shift_register 16
+module work pmi_distributed_rom 13
+module work lscc_distributed_rom 14
+module work pmi_distributed_spram 11
+module work lscc_distributed_spram 12
+module work pmi_distributed_dpram 9
+module work lscc_distributed_dpram 10
+module work pmi_counter 7
+module work lscc_cntr 8
+module work pmi_complex_mult 5
+module work lscc_multiplier_dsp 6
+module work lscc_multiplier_lut 6
+module work lscc_multiplier 6
+module work lscc_mult_add_sub 6
+module work lscc_complex_mult 6
+module work pmi_add 3
+module work pmi_addsub 1
+module work lscc_subtractor 2
+module work lscc_adder 2
+module work lscc_add_sub 2

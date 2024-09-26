@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="ap6a00b" date="2024 08 24 00:13:23" device="LAV-AT-E70ES1" device_int="ap6a400be" family="LAV-AT" gen_platform="Propel" gen_platform_version="2024.1.2406150513_p" generator="ipgen" library="ip" module="axi_interconnect" name="axi4_interconnect1" operation="Commercial" package="LFG1156" package_int="LFG1156" partnumber="LAV-AT-E70ES1-1LFG1156C" source_format="Verilog" speed="1" speed_int="1" vendor="latticesemi.com" version="2.0.1">
+ <Package>
+  <File modified="2024 08 24 00:13:22" name="rtl/axi4_interconnect1_bb.v" type="black_box_verilog"/>
+  <File modified="2024 08 24 00:13:22" name="axi4_interconnect1.cfg" type="cfg"/>
+  <File modified="2024 08 24 00:13:22" name="misc/axi4_interconnect1_tmpl.v" type="template_verilog"/>
+  <File modified="2024 08 24 00:13:22" name="misc/axi4_interconnect1_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 08 24 00:13:22" name="rtl/axi4_interconnect1.sv" type="top_level_system_verilog"/>
+  <File modified="2024 08 24 00:13:22" name="constraints/constraints.sdc" stage="lse:premap,synplify:premap" type="tcl_constraints"/>
+  <File modified="2024 08 24 00:13:23" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 08 24 00:13:23" name="design.xml" type="IP-XACT_design"/>
+ </Package>
+</RadiantModule>

@@ -1,0 +1,765 @@
+# Wed Sep 18 11:52:35 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: C:\lscc\radiant\2024.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 101R, Built May 14 2024 08:42:08, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 203MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 203MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 193MB peak: 203MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 194MB peak: 203MB)
+
+
+
+
+@N: MF105 |Performing bottom-up mapping of Compile point view:work.qspi0_ipgen_qspi_flash_controller_core_Z266_layer0(verilog) 
+
+Begin environment creation (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 255MB peak: 255MB)
+
+
+Finished environment creation (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 255MB peak: 256MB)
+
+
+Start loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 255MB peak: 256MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 255MB peak: 256MB)
+
+
+Begin compile point sub-process log
+
+		 user requested clean build.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 255MB peak: 256MB)
+
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.a_clk_i has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_1 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_2 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_3 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_4 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_5 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_6 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_7 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_8 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_9 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_10 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_11 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_12 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_13 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_14 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_15 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_16 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_17 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_18 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_19 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_20 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_21 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_22 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_23 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_24 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_25 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_26 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_27 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_28 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_29 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_30 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_31 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_32 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_33 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_34 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_35 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_36 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_37 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_38 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_39 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_40 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_41 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_42 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_43 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_44 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_45 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_46 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_47 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_48 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_49 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_50 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_51 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_52 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_53 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_54 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_55 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_56 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_57 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_58 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_59 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_60 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_61 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_62 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_63 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_64 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_65 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_66 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_67 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_68 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_69 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_70 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_71 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_72 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_73 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_74 has multiple drivers .
+@W: BN161 :|Net qspi0_inst.lscc_qspi_flash_controller_inst.N_75 has multiple drivers .
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 260MB peak: 260MB)
+
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[65] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[64] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[63] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[62] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[61] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[60] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[59] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[58] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[57] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[56] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[55] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[54] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[53] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[52] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[51] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[50] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[49] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[48] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[47] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[46] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[45] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[44] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[43] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[42] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[41] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[40] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[39] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[38] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[37] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[36] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[35] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[34] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[33] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[32] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[31] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[30] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[29] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[28] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[27] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[26] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[25] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.WO_WR_ACCESS_BLK_FIFO\.AW_FIFO_FULL\.u_aw_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[24] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[65] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[64] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[63] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[62] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[61] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[60] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[59] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[58] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[57] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[56] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[55] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[54] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[53] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[52] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[51] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[50] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[49] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[48] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[47] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[46] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[45] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[44] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[43] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[42] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[41] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[40] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[39] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[38] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[37] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[36] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[35] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[34] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[33] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[32] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[31] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[30] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[29] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[28] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[27] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[26] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[25] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\radiant\2024.1\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3324:4:3324:9|Removing sequential instance axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK\[2\]\.u_ext_slv_port.u_fifo_interface.RO_WR_ACCESS_BLK_FIFO\.AR_FIFO_FULL\.u_ar_axi_fifo._NO_CDC_EN\.sc_fifo.u_mem0.fifo0._FABRIC\.u_fifo.mem_LUT\.data_raw_r[24] (in view: work.soc_golden_gsrd(verilog)) because it does not drive other instances.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN161 :|Net N_1526 has multiple drivers .
+@W: BN161 :|Net N_1527 has multiple drivers .
+@W: BN161 :|Net N_1528 has multiple drivers .
+@W: BN161 :|Net N_1529 has multiple drivers .
+@W: BN161 :|Net N_1530 has multiple drivers .
+@W: BN161 :|Net N_1531 has multiple drivers .
+@W: BN161 :|Net N_1532 has multiple drivers .
+@W: BN161 :|Net N_1533 has multiple drivers .
+@W: BN161 :|Net N_1534 has multiple drivers .
+@W: BN161 :|Net N_1535 has multiple drivers .
+@W: BN161 :|Net N_1536 has multiple drivers .
+@W: BN161 :|Net N_1537 has multiple drivers .
+@W: BN161 :|Net N_1538 has multiple drivers .
+@W: BN161 :|Net N_1539 has multiple drivers .
+@W: BN161 :|Net N_1540 has multiple drivers .
+@W: BN161 :|Net N_1541 has multiple drivers .
+@W: BN161 :|Net N_1542 has multiple drivers .
+@W: BN161 :|Net N_1543 has multiple drivers .
+@W: BN161 :|Net N_1544 has multiple drivers .
+@W: BN161 :|Net N_1545 has multiple drivers .
+@W: BN161 :|Net N_1546 has multiple drivers .
+@W: BN161 :|Net N_1547 has multiple drivers .
+@W: BN161 :|Net N_1548 has multiple drivers .
+@W: BN161 :|Net N_1549 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\qspi0_ipgen_qspi_flash_controller_core_Z266_layer0\qspi0_ipgen_qspi_flash_controller_core_Z266_layer0.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+
+Starting factoring (Real Time elapsed 0h:00m:39s; CPU Time elapsed 0h:00m:38s; Memory used current: 277MB peak: 277MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:43s; Memory used current: 301MB peak: 301MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:52s; CPU Time elapsed 0h:00m:51s; Memory used current: 394MB peak: 425MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:54s; Memory used current: 399MB peak: 425MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 405MB peak: 425MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 405MB peak: 425MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:00m:59s; Memory used current: 406MB peak: 425MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:01m:04s; CPU Time elapsed 0h:01m:03s; Memory used current: 451MB peak: 469MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:01m:03s		    -4.64ns		3254 /      2225
+   2		0h:01m:03s		    -4.64ns		3227 /      2225
+   3		0h:01m:03s		    -4.64ns		3227 /      2225
+Timing driven replication report
+Added 12 Registers via timing driven replication
+Added 9 LUTs via timing driven replication
+
+   4		0h:01m:06s		    -4.40ns		3237 /      2237
+   5		0h:01m:06s		    -4.20ns		3237 /      2237
+   6		0h:01m:06s		    -4.15ns		3237 /      2237
+   7		0h:01m:06s		    -4.15ns		3238 /      2237
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+
+   8		0h:01m:07s		    -4.04ns		3242 /      2238
+   9		0h:01m:07s		    -4.07ns		3243 /      2238
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:08s; CPU Time elapsed 0h:01m:07s; Memory used current: 451MB peak: 469MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:01m:09s; CPU Time elapsed 0h:01m:08s; Memory used current: 452MB peak: 469MB)
+
+
+End compile point sub-process log
+
+@W: MT246 :"c:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\soc_golden_gsrd\lib\latticesemi.com\module\pll0\2.5.0\rtl\pll0.v":1384:58:1384:62|Blackbox PLLC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net qspi0_inst.lscc_qspi_flash_controller_inst.a_clk_i.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Sep 18 11:53:46 2024
+#
+
+
+Top view:               soc_golden_gsrd
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+                       C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\soc_golden_gsrd_impl_1_cpe.ldc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -4.252
+
+                                                                                                                               Requested     Estimated      Requested     Estimated                Clock                                                                            Clock                
+Starting Clock                                                                                                                 Frequency     Frequency      Period        Period        Slack      Type                                                                             Group                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk_125_in                                                                                                                     125.0 MHz     NA             8.000         NA            NA         declared                                                                         default_clkgroup     
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock                                              200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_8
+cpu0_ipgen_vex_jtag_bridge_LAV-AT_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock                                    200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_9
+lpddr4_mc_contr0_ipgen_lscc_ddrphy_Z219_layer0|sclk_o_inferred_clock                                                           200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_6
+osc0_ipgen_lscc_osc_400s_40s_40_LAV-AT_LAV-AT-E70ES1|clk_out_o_inferred_clock                                                  200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_4
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock                                                                  200.0 MHz     108.1 MHz      5.000         9.252         -4.252     inferred                                                                         Inferred_clkgroup_0_3
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos2_o_inferred_clock                                                                 200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_1
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkos_o_inferred_clock                                                                  200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_7
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_testclk_o_inferred_clock                                                                200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_5
+pll_refclk_i                                                                                                                   100.0 MHz     NA             10.000        NA            NA         declared                                                                         default_clkgroup     
+soc_golden_gsrd|rgmii_rxc_i                                                                                                    200.0 MHz     NA             5.000         NA            NA         inferred                                                                         Inferred_clkgroup_0_2
+tse_to_rgmii_bridge0_ipgen_lpddr4_mc_async_fifo_ipgen_lscc_fifo_dc_fwft_fabric_noreg_1s_9s|_FWFT_ENABLE_re_r_derived_clock     200.0 MHz     NA             5.000         NA            NA         derived (from pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock)     Inferred_clkgroup_0_3
+System                                                                                                                         200.0 MHz     1312.3 MHz     5.000         0.762         4.238      system                                                                           system_clkgroup      
+=========================================================================================================================================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                       Ending                                                         |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                         System                                                         |  5.000       4.238   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                         pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       3.170   |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  System                                                         |  5.000       -3.263  |  No paths    -      |  No paths    -      |  No paths    -    
+pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock  |  5.000       -4.252  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                Starting                                                                                                                                                                                        Arrival           
+Instance                                                                        Reference                                                         Type        Pin     Net                                                                                                       Time        Slack 
+                                                                                Clock                                                                                                                                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cpu0_inst.riscvrtos_inst.clint_wdt0_inst.wdt_s2wto                              pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDRE        Q       cpu0_inst.riscvrtos_inst.watchdog_s2                                                                      0.853       -4.252
+cpu0_inst.riscvrtos_inst.genblk_debug_en\.vex_debug0.resetCtrl_systemResetN     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FDR         Q       cpu0_inst.riscvrtos_inst.resetCtrl_systemResetN                                                           0.853       -4.252
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       jrt6yk4A3xt1oLgq7bgC98fvxn                                                                                0.985       -4.204
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       jrt6yk4A3xt1oLgq7bgC98fvrJ                                                                                0.955       -4.174
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       ikJAuKI59Lzhlp7q7furu4rorJ                                                                                0.853       -4.072
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       bbIEJriryaKFB4gDycF9E2t5bv8u                                                                              0.985       -3.994
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3BX     Q       hmEwrvdpc1AbL6su                                                                                          0.955       -3.964
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       ikJAuKI59Lzhlp7q7furu4roxn                                                                                0.853       -3.784
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       bfs86HtzELbvAE2GBIKlHwsH0q2cDkryd7Eoc6ju259lCl6Do8698CgroG5z68s59kkjxdxg8xxC78d2kp6uhlbs0nlubsAzylsxn     1.015       -3.720
+encrypted                                                                       pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     Q       bfs86HtzELbvAE2GBIKlHwsH0q2cDkryd7Eoc6ju259lCl6Do8698CgroG5z68s59kkjxdxg8xxC78d2kp6uhlbs0nlubsAzyls23     1.015       -3.720
+==================================================================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                                                                        Required           
+Instance      Reference                                                         Type        Pin     Net                                       Time         Slack 
+              Clock                                                                                                                                              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       Csli7tvmrL4hIsxhn                         4.946        -4.252
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       mK521nxauv02F                             4.946        -3.994
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       Csli7tvmrL4hIsxm3                         4.946        -3.862
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       Csli7tvmrL4hIsx7J                         4.946        -3.862
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     SP      LlCfg8ym6ro71yDq4sbhvkx6b9plzvsi7F78j     4.806        -3.720
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     SP      LlCfg8ym6ro71yDq4sbhvkx6b9plzvsi7F78j     4.806        -3.720
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     SP      LlCfg8ym6ro71yDq4sbhvkx6b9plzvsi7F78j     4.806        -3.720
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     SP      LlCfg8ym6ro71yDq4sbhvkx6b9plzvsi7F78j     4.806        -3.720
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       h6LibJptCB59JEDz                          4.946        -3.604
+encrypted     pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock     FD1P3DX     D       dnDlxc89hAFwu0zf9hoa7wD10yB7c2ra          4.946        -3.527
+=================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      9.198
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -4.252
+
+    Number of logic level(s):                7
+    Starting point:                          cpu0_inst.riscvrtos_inst.clint_wdt0_inst.wdt_s2wto / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                        Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+cpu0_inst.riscvrtos_inst.clint_wdt0_inst.wdt_s2wto                          FDRE        Q        Out     0.853     0.853 r     -         
+cpu0_inst.riscvrtos_inst.watchdog_s2                                        Net         -        -       -         -           1         
+cpu0_inst.riscvrtos_inst.system_resetn_o                                    LUT2        I1       In      0.000     0.853 r     -         
+cpu0_inst.riscvrtos_inst.system_resetn_o                                    LUT2        O        Out     0.180     1.033 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.a_reset_n_i                      Net         -        -       -         -           26        
+encrypted                                                                   LUT4        A        In      0.000     1.033 f     -         
+encrypted                                                                   LUT4        Z        Out     0.390     1.423 r     -         
+h7DIExaJcarkdlcy                                                            Net         -        -       -         -           1         
+encrypted                                                                   LUT4        B        In      0.000     1.423 r     -         
+encrypted                                                                   LUT4        Z        Out     0.660     2.083 f     -         
+cvaDycBAkoh5                                                                Net         -        -       -         -           2         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         I        In      0.000     2.083 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         O        Out     0.606     2.689 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       Net         -        -       -         -           1         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          T        In      0.000     2.689 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          O        Out     5.513     8.202 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_i1                           Net         -        -       -         -           4         
+encrypted                                                                   LUT4        B        In      0.000     8.202 r     -         
+encrypted                                                                   LUT4        Z        Out     0.390     8.592 f     -         
+hLr0wipL5gEg91CGfdg4ItoqbJ                                                  Net         -        -       -         -           1         
+encrypted                                                                   LUT4        C        In      0.000     8.592 f     -         
+encrypted                                                                   LUT4        Z        Out     0.606     9.198 r     -         
+Csli7tvmrL4hIsxhn                                                           Net         -        -       -         -           1         
+encrypted                                                                   FD1P3DX     D        In      0.000     9.198 r     -         
+=========================================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      9.198
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -4.252
+
+    Number of logic level(s):                7
+    Starting point:                          cpu0_inst.riscvrtos_inst.genblk_debug_en\.vex_debug0.resetCtrl_systemResetN / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin C
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                              Pin      Pin               Arrival     No. of    
+Name                                                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+cpu0_inst.riscvrtos_inst.genblk_debug_en\.vex_debug0.resetCtrl_systemResetN     FDR         Q        Out     0.853     0.853 r     -         
+cpu0_inst.riscvrtos_inst.resetCtrl_systemResetN                                 Net         -        -       -         -           1         
+cpu0_inst.riscvrtos_inst.system_resetn_o                                        LUT2        I0       In      0.000     0.853 r     -         
+cpu0_inst.riscvrtos_inst.system_resetn_o                                        LUT2        O        Out     0.180     1.033 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.a_reset_n_i                          Net         -        -       -         -           26        
+encrypted                                                                       LUT4        A        In      0.000     1.033 r     -         
+encrypted                                                                       LUT4        Z        Out     0.390     1.423 f     -         
+h7DIExaJcarkdlcy                                                                Net         -        -       -         -           1         
+encrypted                                                                       LUT4        B        In      0.000     1.423 f     -         
+encrypted                                                                       LUT4        Z        Out     0.660     2.083 r     -         
+cvaDycBAkoh5                                                                    Net         -        -       -         -           2         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                           INV         I        In      0.000     2.083 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                           INV         O        Out     0.606     2.689 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                           Net         -        -       -         -           1         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1         BB          T        In      0.000     2.689 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1         BB          O        Out     5.513     8.202 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_i1                               Net         -        -       -         -           4         
+encrypted                                                                       LUT4        B        In      0.000     8.202 r     -         
+encrypted                                                                       LUT4        Z        Out     0.390     8.592 f     -         
+hLr0wipL5gEg91CGfdg4ItoqbJ                                                      Net         -        -       -         -           1         
+encrypted                                                                       LUT4        C        In      0.000     8.592 f     -         
+encrypted                                                                       LUT4        Z        Out     0.606     9.198 r     -         
+Csli7tvmrL4hIsxhn                                                               Net         -        -       -         -           1         
+encrypted                                                                       FD1P3DX     D        In      0.000     9.198 r     -         
+=============================================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      9.150
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.204
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                        Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+encrypted                                                                   FD1P3DX     Q        Out     0.985     0.985 r     -         
+jrt6yk4A3xt1oLgq7bgC98fvxn                                                  Net         -        -       -         -           4         
+encrypted                                                                   LUT4        B        In      0.000     0.985 r     -         
+encrypted                                                                   LUT4        Z        Out     0.390     1.375 r     -         
+h7DIExaJcarkdlcy                                                            Net         -        -       -         -           1         
+encrypted                                                                   LUT4        B        In      0.000     1.375 r     -         
+encrypted                                                                   LUT4        Z        Out     0.660     2.035 f     -         
+cvaDycBAkoh5                                                                Net         -        -       -         -           2         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         I        In      0.000     2.035 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         O        Out     0.606     2.641 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       Net         -        -       -         -           1         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          T        In      0.000     2.641 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          O        Out     5.513     8.154 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_i1                           Net         -        -       -         -           4         
+encrypted                                                                   LUT4        B        In      0.000     8.154 r     -         
+encrypted                                                                   LUT4        Z        Out     0.390     8.544 f     -         
+hLr0wipL5gEg91CGfdg4ItoqbJ                                                  Net         -        -       -         -           1         
+encrypted                                                                   LUT4        C        In      0.000     8.544 f     -         
+encrypted                                                                   LUT4        Z        Out     0.606     9.150 r     -         
+Csli7tvmrL4hIsxhn                                                           Net         -        -       -         -           1         
+encrypted                                                                   FD1P3DX     D        In      0.000     9.150 r     -         
+=========================================================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      9.120
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.174
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                        Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+encrypted                                                                   FD1P3DX     Q        Out     0.955     0.955 r     -         
+jrt6yk4A3xt1oLgq7bgC98fvrJ                                                  Net         -        -       -         -           3         
+encrypted                                                                   LUT4        C        In      0.000     0.955 r     -         
+encrypted                                                                   LUT4        Z        Out     0.390     1.345 r     -         
+h7DIExaJcarkdlcy                                                            Net         -        -       -         -           1         
+encrypted                                                                   LUT4        B        In      0.000     1.345 r     -         
+encrypted                                                                   LUT4        Z        Out     0.660     2.005 f     -         
+cvaDycBAkoh5                                                                Net         -        -       -         -           2         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         I        In      0.000     2.005 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         O        Out     0.606     2.611 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       Net         -        -       -         -           1         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          T        In      0.000     2.611 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          O        Out     5.513     8.124 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_i1                           Net         -        -       -         -           4         
+encrypted                                                                   LUT4        B        In      0.000     8.124 r     -         
+encrypted                                                                   LUT4        Z        Out     0.390     8.514 f     -         
+hLr0wipL5gEg91CGfdg4ItoqbJ                                                  Net         -        -       -         -           1         
+encrypted                                                                   LUT4        C        In      0.000     8.514 f     -         
+encrypted                                                                   LUT4        Z        Out     0.606     9.120 r     -         
+Csli7tvmrL4hIsxhn                                                           Net         -        -       -         -           1         
+encrypted                                                                   FD1P3DX     D        In      0.000     9.120 r     -         
+=========================================================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      9.018
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.072
+
+    Number of logic level(s):                6
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                        Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+encrypted                                                                   FD1P3DX     Q        Out     0.853     0.853 r     -         
+ikJAuKI59Lzhlp7q7furu4rorJ                                                  Net         -        -       -         -           1         
+encrypted                                                                   LUT4        D        In      0.000     0.853 r     -         
+encrypted                                                                   LUT4        Z        Out     0.390     1.243 f     -         
+h7DIExaJcarkdlcy                                                            Net         -        -       -         -           1         
+encrypted                                                                   LUT4        B        In      0.000     1.243 f     -         
+encrypted                                                                   LUT4        Z        Out     0.660     1.903 r     -         
+cvaDycBAkoh5                                                                Net         -        -       -         -           2         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         I        In      0.000     1.903 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       INV         O        Out     0.606     2.509 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_oe_o_i                       Net         -        -       -         -           1         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          T        In      0.000     2.509 f     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.enabled_io_primitive\.qspio1     BB          O        Out     5.513     8.022 r     -         
+qspi0_inst.lscc_qspi_flash_controller_inst.io1_i1                           Net         -        -       -         -           4         
+encrypted                                                                   LUT4        B        In      0.000     8.022 r     -         
+encrypted                                                                   LUT4        Z        Out     0.390     8.412 f     -         
+hLr0wipL5gEg91CGfdg4ItoqbJ                                                  Net         -        -       -         -           1         
+encrypted                                                                   LUT4        C        In      0.000     8.412 f     -         
+encrypted                                                                   LUT4        Z        Out     0.606     9.018 r     -         
+Csli7tvmrL4hIsxhn                                                           Net         -        -       -         -           1         
+encrypted                                                                   FD1P3DX     D        In      0.000     9.018 r     -         
+=========================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                      Arrival          
+Instance      Reference     Type        Pin     Net         Time        Slack
+              Clock                                                          
+-----------------------------------------------------------------------------
+encrypted     System        WIDEFN9     Z       1zb20Ct     0.000       3.170
+encrypted     System        WIDEFN9     Z       1zb20Cu     0.000       3.170
+encrypted     System        WIDEFN9     Z       fh7pl7      0.000       3.170
+encrypted     System        WIDEFN9     Z       fh7pgy      0.000       3.170
+encrypted     System        WIDEFN9     Z       1zb21rj     0.000       3.170
+encrypted     System        WIDEFN9     Z       1zb21wq     0.000       3.170
+encrypted     System        WIDEFN9     Z       1zb20Cv     0.000       3.170
+encrypted     System        WIDEFN9     Z       fh7pl8      0.000       3.170
+encrypted     System        WIDEFN9     Z       fh7pl9      0.000       3.170
+encrypted     System        WIDEFN9     Z       fh7plA      0.000       3.170
+=============================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                  Required          
+Instance      Reference     Type        Pin     Net                                     Time         Slack
+              Clock                                                                                       
+----------------------------------------------------------------------------------------------------------
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDDhn     4.946        3.170
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDDm3     4.946        3.170
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDDrJ     4.946        3.170
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDDxn     4.946        3.170
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDD23     4.946        3.170
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDD7J     4.946        3.170
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDDDn     4.946        3.170
+encrypted     System        FD1P3DX     D       b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDDI3     4.946        3.170
+encrypted     System        FD1P3DX     D       jj6hua486xcnu7h8kk2hrka7Dn              4.946        3.170
+encrypted     System        FD1P3DX     D       bCLf4vnpbLIF                            4.946        3.290
+==========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.946
+
+    - Propagation time:                      1.776
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 3.170
+
+    Number of logic level(s):                4
+    Starting point:                          encrypted / Z
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll0_ipgen_lscc_pll_Z262_layer0|clkout_clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+encrypted                                      WIDEFN9     Z        Out     0.000     0.000 r     -         
+1zb20Ct                                        Net         -        -       -         -           1         
+encrypted                                      LUT4        A        In      0.000     0.000 r     -         
+encrypted                                      LUT4        Z        Out     0.390     0.390 f     -         
+dltydhHlyAjm6DggKE9xJngF2B2k7F3BJzLkx596hn     Net         -        -       -         -           1         
+encrypted                                      LUT4        D        In      0.000     0.390 f     -         
+encrypted                                      LUT4        Z        Out     0.390     0.780 r     -         
+1zb211B                                        Net         -        -       -         -           1         
+encrypted                                      LUT4        A        In      0.000     0.780 r     -         
+encrypted                                      LUT4        Z        Out     0.390     1.170 r     -         
+1zb397d                                        Net         -        -       -         -           1         
+encrypted                                      LUT4        A        In      0.000     1.170 r     -         
+encrypted                                      LUT4        Z        Out     0.606     1.776 r     -         
+b8KGFq3cyjxeiAmCCHC9oj4nunr2m3EDDm3            Net         -        -       -         -           1         
+encrypted                                      FD1P3DX     D        In      0.000     1.776 r     -         
+============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":121:0:121:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclkdiv/RST]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/impl_1/soc_golden_gsrd_impl_1_cpe.ldc":123:0:123:0|Timing constraint (to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+None
+Writing compile point status file C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\soc_golden_gsrd\impl_1\qspi0_ipgen_qspi_flash_controller_core_Z266_layer0\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                                                   Status       Reason      
+--------------------------------------------------------------------------------
+qspi0_ipgen_qspi_flash_controller_core_Z266_layer0     Remapped     User request
+================================================================================
+
+Process took 0h:01m:11s realtime, 0h:01m:10s cputime
+# Wed Sep 18 11:53:47 2024
+
+###########################################################]

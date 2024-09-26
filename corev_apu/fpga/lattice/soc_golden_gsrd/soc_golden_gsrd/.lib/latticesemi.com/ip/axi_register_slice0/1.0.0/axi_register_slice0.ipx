@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="ap6a00b" date="2024 08 24 00:14:08" device="LAV-AT-E70ES1" device_int="ap6a400be" family="LAV-AT" gen_platform="Propel" gen_platform_version="2024.1.2406150513_p" generator="ipgen" library="ip" module="axi_register_slice" name="axi_register_slice0" operation="Commercial" package="LFG1156" package_int="LFG1156" partnumber="LAV-AT-E70ES1-1LFG1156C" source_format="Verilog" speed="1" speed_int="1" vendor="latticesemi.com" version="1.0.0">
+ <Package>
+  <File modified="2024 08 24 00:14:08" name="rtl/axi_register_slice0_bb.v" type="black_box_verilog"/>
+  <File modified="2024 08 24 00:14:08" name="axi_register_slice0.cfg" type="cfg"/>
+  <File modified="2024 08 24 00:14:08" name="misc/axi_register_slice0_tmpl.v" type="template_verilog"/>
+  <File modified="2024 08 24 00:14:08" name="misc/axi_register_slice0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 08 24 00:14:08" name="rtl/axi_register_slice0.v" type="top_level_verilog"/>
+  <File modified="2024 08 24 00:14:08" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:14:08" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 08 24 00:14:08" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 08 24 00:14:08" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2023 07 10 16:35:57" name="testbench/axi_register_slice_checker.sv" type="testbench_system_verilog"/>
+  <File modified="2023 07 10 16:35:57" name="testbench/axi_register_slice_manager.sv" type="testbench_system_verilog"/>
+  <File modified="2023 07 10 16:35:57" name="testbench/axi_register_slice_subordinate.sv" type="testbench_system_verilog"/>
+  <File modified="2023 07 10 16:35:57" name="testbench/axi_register_slice_tb.sv" type="testbench_system_verilog"/>
+ </Package>
+</RadiantModule>

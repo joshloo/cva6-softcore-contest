@@ -1,0 +1,9 @@
+-ver "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v"
+-lib pmi -vhd "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd"
+-sver "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/sgdma0/2.2.0/rtl/sgdma0.sv"
+-sdc "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/sgdma0/2.2.0/constraints/sgdma0.ldc"
+-sdc "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/sgdma0/2.2.0/constraints/constraint.sdc"
+-path "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd" "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/sgdma0/2.2.0" "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd"
+-top sgdma0
+-a "LAV-AT"
+-t "LAV-AT-E70ES1"

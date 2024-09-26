@@ -1,0 +1,174 @@
+i pll0_inst.lscc_pll_inst.clkout_clkos2_o_i
+m 0 0
+u 577 2739
+p {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOS2}{t:pll0_inst.lscc_pll_inst.clkout_clkos2_o_inferred_clock.I[0]}{t:pll0_inst.lscc_pll_inst.clkout_clkos2_o_inferred_clock.OUT[0]}{p:pll0_inst.lscc_pll_inst.clkout_clkos2_o}{t:pll0_inst.lscc_pll_inst.clkout_clkos2_o}{p:pll0_inst.clkos2_o}{t:pll0_inst.clkos2_o}{t:mbconfig0_inst.pclk_i}{p:mbconfig0_inst.pclk_i}{t:mbconfig0_inst.fpga_multiboot_config_inst.pclk_i}{p:mbconfig0_inst.fpga_multiboot_config_inst.pclk_i}{t:mbconfig0_inst.fpga_multiboot_config_inst.state[3].C}
+e ckid0_0 {t:mbconfig0_inst.fpga_multiboot_config_inst.state[3].C} dffr
+c ckid0_0 {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOS2} PLLC Unsupported/too complex instance on clock path
+i pll0_inst.lscc_pll_inst.clkout_clkop_o_i
+m 0 0
+u 4977 27142
+p {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOP}{t:pll0_inst.lscc_pll_inst.clkout_clkop_o_inferred_clock.I[0]}{t:pll0_inst.lscc_pll_inst.clkout_clkop_o_inferred_clock.OUT[0]}{p:pll0_inst.lscc_pll_inst.clkout_clkop_o}{t:pll0_inst.lscc_pll_inst.clkout_clkop_o}{p:pll0_inst.clkop_o}{t:pll0_inst.clkop_o}{t:lpddr4_mc_contr0_inst.aclk_i}{p:lpddr4_mc_contr0_inst.aclk_i}{t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.clk_i}{p:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.clk_i}{t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.reset_n_r.C}
+e ckid0_1 {t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.reset_n_r.C} dffr
+c ckid0_1 {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOP} PLLC Unsupported/too complex instance on clock path
+i rgmii_rxc_i
+m 0 0
+u 12 57
+p {p:rgmii_rxc_i}{t:tse_to_rgmii_bridge0_inst.rgmii_rxc_i}{p:tse_to_rgmii_bridge0_inst.rgmii_rxc_i}{t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.rgmii_rxc_i}{p:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.rgmii_rxc_i}{t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.rx_ddr_out_dddd_CR9[9:0].CLK}
+e ckid0_2 {t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.rx_ddr_out_dddd_CR9[9:0].CLK} ram1
+c ckid0_2 {p:rgmii_rxc_i} port Unsupported/too complex instance on clock path
+i tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft._FWFT_ENABLE®re_r
+m 0 0
+u 8 8
+n ckid0_3 {t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft.d_o[7].C} Clock Optimization not enabled
+p {t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft._FWFT_ENABLE\.re_r_derived_clock.OUT[0]}{t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft.d_o[7].C}
+e ckid0_3 {t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft.d_o[7].C} lat
+d ckid0_3 {t:tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft._FWFT_ENABLE\.re_r.Q[0]} dffr Clock Optimization not enabled
+i osc0_inst.lscc_osc_inst.clk_out_o_i
+m 0 0
+u 35 105
+p {t:osc0_inst.lscc_osc_inst.u_OSC.CLKOUT}{t:osc0_inst.lscc_osc_inst.clk_out_o_inferred_clock.I[0]}{t:osc0_inst.lscc_osc_inst.clk_out_o_inferred_clock.OUT[0]}{p:osc0_inst.lscc_osc_inst.clk_out_o}{t:osc0_inst.lscc_osc_inst.clk_out_o}{p:osc0_inst.clk_out_o}{t:osc0_inst.clk_out_o}{t:tse_mac0_inst.mdc_i}{p:tse_mac0_inst.mdc_i}{t:tse_mac0_inst.mac_phy_top_inst.mdc_i}{p:tse_mac0_inst.mac_phy_top_inst.mdc_i}{t:tse_mac0_inst.mac_phy_top_inst.genblk1\.tse_mac.mdc_i}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_4 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_4 {t:osc0_inst.lscc_osc_inst.u_OSC.CLKOUT} OSCE Unsupported/too complex instance on clock path
+i clk_125_in
+m 0 0
+u 5 36
+p {p:clk_125_in}{t:rst_sync0_inst.clk}{p:rst_sync0_inst.clk}{t:rst_sync0_inst.rst_sync_inst.clk}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_5 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_5 {p:clk_125_in} port Unsupported/too complex instance on clock path
+i pll0_inst.lscc_pll_inst.clkout_testclk_o_i
+m 0 0
+u 11 18
+p {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKRES}{t:pll0_inst.lscc_pll_inst.clkout_testclk_o_inferred_clock.I[0]}{t:pll0_inst.lscc_pll_inst.clkout_testclk_o_inferred_clock.OUT[0]}{t:pll0_inst.lscc_pll_inst.u_pll_init_bw.init_clk_i}{p:pll0_inst.lscc_pll_inst.u_pll_init_bw.init_clk_i}{t:pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init\.bw_init_cs[4].C}
+e ckid0_6 {t:pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init\.bw_init_cs[4].C} dffr
+c ckid0_6 {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKRES} PLLC Unsupported/too complex instance on clock path
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.sclk_o_i
+m 0 0
+u 1210 6611
+p {t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.u_eclkdiv.ECLKDIVOUT}{t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.sclk_o_inferred_clock.I[0]}{t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.sclk_o_inferred_clock.OUT[0]}{t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.s_rst_n_r1.C}
+e ckid0_7 {t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.s_rst_n_r1.C} dffr
+c ckid0_7 {t:lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.u_eclkdiv.ECLKDIVOUT} ECLKDIVA Unsupported/too complex instance on clock path
+i pll0_inst.lscc_pll_inst.clkout_clkos_o_i
+m 0 0
+u 1 9
+p {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOS}{t:pll0_inst.lscc_pll_inst.clkout_clkos_o_inferred_clock.I[0]}{t:pll0_inst.lscc_pll_inst.clkout_clkos_o_inferred_clock.OUT[0]}{p:pll0_inst.lscc_pll_inst.clkout_clkos_o}{t:pll0_inst.lscc_pll_inst.clkout_clkos_o}{p:pll0_inst.clkos_o}{t:pll0_inst.clkos_o}{t:cpu0_inst.clk_realtime_i}{p:cpu0_inst.clk_realtime_i}{t:cpu0_inst.riscvrtos_inst.clk_realtime_i}{p:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_8 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_8 {t:pll0_inst.lscc_pll_inst.gen_ext_outclkdiv\.u_pll.CLKOS} PLLC Unsupported/too complex instance on clock path
+i cpu0_inst.riscvrtos_inst.<encrypted><ENCNET1355>
+m 0 0
+u 13 83
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_9 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_9 {t:ENCRYPTED} DCCA Unsupported/too complex instance on clock path
+i cpu0_inst.riscvrtos_inst.<encrypted><ENCNET1359>
+m 0 0
+u 8 9
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_10 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_10 {t:ENCRYPTED} JTAGH25 Unsupported/too complex instance on clock path
+i pll_refclk_i
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<encrypted><ENCNET1356>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<encrypted><ENCNET1360>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<encrypted><ENCNET1361>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<encrypted><ENCNET1362>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<encrypted><ENCNET1363>
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ck[0]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ck[1]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_cs[0]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ca[0]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ca[1]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ca[2]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ca[3]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ca[4]
+m 0 0
+u 0 0
+i lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.ddr_ca[5]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_ready_w
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[0]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[1]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[2]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[3]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[4]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[5]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[6]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[7]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[8]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[9]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[10]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[11]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[12]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[13]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[14]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_w[15]
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lmmi_rdata_valid_w
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.pll_lock
+m 0 0
+u 0 0
+i tse_to_rgmii_bridge0_inst.tse_to_rgmii_bridge_inst.lpddr4_mc_async_fifo_inst.lscc_fifo_dc_inst.u_fwft._FWFT_ENABLE®re_r_i
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

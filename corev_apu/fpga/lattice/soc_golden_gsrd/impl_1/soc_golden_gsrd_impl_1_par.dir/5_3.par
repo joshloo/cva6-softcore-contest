@@ -1,0 +1,470 @@
+
+Lattice Place and Route Report for Design "soc_golden_gsrd_impl_1_map.udb"
+Fri Aug 30 08:35:16 2024
+
+PAR: Place And Route Radiant Software (64-bit) 2024.1.1.237.0  Patch Version(s) 22225.
+Command Line: par -w -t 3 -sp 1 -hsp m -hos -exp nbrForceHoldTimeCorrection=1 \
+	soc_golden_gsrd_impl_1_map.udb soc_golden_gsrd_impl_1_par.dir/5_3.udb 
+
+Loading soc_golden_gsrd_impl_1_map.udb ...
+Loading device for application GENERIC from file 'ap6a400be.nph' in environment: C:/lscc/radiant/2024.1/ispfpga.
+Package Status:                     Preliminary    Version 10.
+Virtual clock 'rgmii_rxc_i_pad_0' is using in the design.
+Performance Hardware Data Status:   Preliminary    Version 103.1.
+
+
+
+Design:  soc_golden_gsrd
+Family:  LAV-AT
+Device:  LAV-AT-E70ES1
+Package: LFG1156
+Performance Grade:   1
+
+Constraint Summary
+   Total number of constraints: 169
+   Total number of constraints dropped: 0
+
+WARNING <71003020> - par: Top module port 'TCK' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TMS' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TDI' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TDO' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TCK' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TMS' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TDI' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TDO' does not connect to anything.
+WARNING <71301018> - par: The PLL clock port [clk_125_in] is assigned to a non PLL dedicated pin [AL10], which might affect the clock performance. Use dedicated PLL clock resources for the port.
+WARNING <70009502> - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING <70009502> - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING <70001949> - par: The object lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC in the option "-to" of constraint set_false_path -to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC] is not valid.
+WARNING <70001908> - par: set_false_path -to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC] is being ignored due to errors
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+Number of Signals: 79391
+Number of Connections: 303947
+
++
+Pin Constraint Summary:
+   83 out of 91 pins locked (91% locked).
+
+INFO: assign sig60110(clk_125_in_c) to regional clock due to driver being locked at an RCLK only IO 'AL10'.
+
+INFO: assign sig76887(rgmii_rxc_i_c) to regional clock due to driver being locked at an RCLK only IO 'Y7'.
+INFO: assign 'lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.LP4_x32.u_ddrphy.DDRPHY32E_MODE_inst' to 'DDRPHY2' due to associated IO 'ddr_dq_io[20]' locked at Y28.
+INFO: signal 'cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1' driving mixed DCC load types requires multi-feedlines.
+
+.
+.
+
+INFO: signal 'cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1' driving mixed DCC load types requires multi-feedlines.
+.
+
+INFO: STA multithread mode is on
+
+
+Starting Placer Phase 0. CPU time: 4 mins 32 secs , REAL time: 5 mins 9 secs 
+
+Finished Placer Phase 0. CPU time: 6 mins 15 secs , REAL time: 6 mins 33 secs 
+
+Starting Placer Phase 1. CPU time: 6 mins 15 secs , REAL time: 6 mins 33 secs 
+
+Finished Placer Phase 1. CPU time: 9 mins 13 secs , REAL time: 8 mins 33 secs 
+
+Placer score = 43921762.
+Starting Placer Phase 2. CPU time: 9 mins 13 secs , REAL time: 8 mins 33 secs 
+
+Finished Placer Phase 2. CPU time: 23 mins 44 secs , REAL time: 18 mins 4 secs 
+
+Placer score =  40102514
+
+Device utilization summary:
+
+   WRIO                 20/94           21% used
+                        20/94           21% bonded
+   SIOLOGIC              2/104           2% used
+   HPIO                 71/468          15% used
+                        71/459          15% bonded
+   IOLOGIC_B            10/468           2% used
+   DCC                   1/344          <1% used
+   EBR                  96/990          10% used
+   PLL                   2/11           18% used
+   OSC                   1/1           100% used
+   ECLKSYNC              1/54            2% used
+   ECLKDIV               1/45            2% used
+   DDRPHY                1/3            33% used
+   JTAG                  1/1           100% used
+   CONFIG_LMMI_SLAVE     1/1           100% used
+   DSP                   6/1800         <1% used
+     MULT18X18           4
+     MULTADDSUB18X18     2
+   SLICE             32246/198720       16% used
+     LUT             51536/397440       13% used
+     REG             33550/397440        8% used
+
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 22 (0%)
+  PLL        : 2 out of 11 (18%)
+  DCS        : 0 out of 4 (0%)
+  DCC        : 1 out of 344 (0%)
+  ECLKDIV    : 1 out of 45 (2%)
+  OSC        : 1 out of 1 (100%)
+
+Global Clocks:
+  PRIMARY "rgmii_txc_o_Z[0]" from CLKOP on comp "pll0_inst.lscc_pll_inst.gen_ext_outclkdiv.u_pll.PLLC_MODE_inst" on PLL site "PLL6", clk load = 16284, ce load = 0, sr load = 0
+  PRIMARY "sclk_o_c" from comp "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.u_eclkdiv" on ECLKDIV_CORE site "ECLKDIV_CORE_R115C69E", clk load = 3949, ce load = 0, sr load = 0
+  PRIMARY "pll0_inst_clkos2_o_net" from CLKOS2 on comp "pll0_inst.lscc_pll_inst.gen_ext_outclkdiv.u_pll.PLLC_MODE_inst" on PLL site "PLL6", clk load = 1886, ce load = 0, sr load = 0
+  PRIMARY "rgmii_mdc_o_c" from comp "osc0_inst.lscc_osc_inst.u_OSC" on site "OSC", clk load = 71, ce load = 0, sr load = 0
+  PRIMARY "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" from JTCK on comp "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk2.jtag.jtagg_u" on site "JTAG", clk load = 45, ce load = 0, sr load = 0
+  PRIMARY "pll0_inst_clkos_o_net" from CLKOS on comp "pll0_inst.lscc_pll_inst.gen_ext_outclkdiv.u_pll.PLLC_MODE_inst" on PLL site "PLL6", clk load = 5, ce load = 0, sr load = 0
+  PRIMARY "pll0_inst.lscc_pll_inst.lmmi_clk_w" from F0 on comp "pll0_inst.lscc_pll_inst.u_pll_init_bw.gen_bw_init.u_pll_lmmi_mux.u_sw_lmmi_mux.LMMICLK_OUT_cZ" on site "R47C236A", clk load = 1, ce load = 0, sr load = 0
+  PRIMARY "phy_resetn_o_c" from F0 on comp "cpu0_inst.riscvrtos_inst.Ic0wwLIeHj4fn4kc9gkv2DA.IcKlycCqwvHHunGeAAHlxcp" on site "R47C240A", clk load = 0, ce load = 13, sr load = 6251
+  PRIMARY "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.rst_n" from Q0 on comp "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.rst_n_Z" on site "R47C241A", clk load = 0, ce load = 1, sr load = 3395
+  PRIMARY "axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.aresetn_i_i" from F0 on comp "axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.EXT_SLV_BLK[4].u_ext_slv_port.EXT_SLV_ACLK_RO_WR_ACCESS_BLK.u_read_downsizer.u_addr_downsizer.AXI4L.u_addr_downsizer_axi4l.aresetn_i_i" on site "R47C245A", clk load = 0, ce load = 0, sr load = 1911
+  PRIMARY "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.reset_n" from Q0 on comp "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.reset_n_Z" on site "R61C236A", clk load = 0, ce load = 0, sr load = 763
+  PRIMARY "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.genblk1[1].si_rsd.si_reset_n[1]" from Q0 on comp "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.genblk1[1].si_rsd.ActiveLow.rst_regs[1]" on site "R61C240A", clk load = 0, ce load = 0, sr load = 767
+  PRIMARY "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.genblk1[0].si_rsd.si_reset_n[0]" from Q0 on comp "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.genblk1[0].si_rsd.ActiveLow.rst_regs[1]" on site "R61C241A", clk load = 0, ce load = 0, sr load = 749
+  PRIMARY "tse_mac0_inst.mac_phy_top_inst.genblk1.tse_mac.NjnqCGs6zBuzoktGgEnqst1E0Cs" from Q0 on comp "tse_mac0_inst.mac_phy_top_inst.genblk1.tse_mac.IjnqCGs6zBuzoktGgEnqst1E0Cs" on site "R61C245A", clk load = 0, ce load = 0, sr load = 679
+  PRIMARY "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.mi_rsd.mi_reset_n" from Q0 on comp "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.mi_rsd.ActiveLow.rst_regs[1]" on site "R111C236A", clk load = 0, ce load = 0, sr load = 563
+  PRIMARY DCC "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.NbbICH" from comp "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.Iohm428if6m0yb9tuqsdusxw" on DCC_CORE site "DCC_T15", total # of clk loads = 51
+     - DCC input "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" from JTCK on comp "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk2.jtag.jtagg_u" on site "JTAG"
+
+  PRIMARY  : 16 out of 24 (66%)
+
+Regional Clocks:
+  RCLK "clk_125_in_c" from comp "clk_125_in" on RCLK PIN site "AL10 (HPIO6_25A)", clk load = 20, ce load = 0, sr load = 0
+  RCLK "rgmii_rxc_i_c" from comp "rgmii_rxc_i" on RCLK PIN site "Y7 (HPIO3_25A)", clk load = 294, ce load = 0, sr load = 0
+
+  REGIONAL : 2 are used.
+
+Edge Clocks:
+  No edge clock selected.
+
+PHYCLKs:
+  "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.eclk" from comp "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.pll_inst.gen_ext_outclkdiv.u_pll.PLLC_MODE_inst" on PLL10.CLKPHY
+
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   20 out of 94 (21.3%) WRIO sites used.
+   20 out of 94 (21.3%) bonded WRIO sites used.
+   Number of WRIO components: 20; differential: 0
+   Number of Vref pins used: 0
+   71 out of 468 (15.2%) HPIO sites used.
+   71 out of 459 (15.5%) bonded HPIO sites used.
+   Number of HPIO components: 71; differential: 7
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 |
++----------+----------------+------------+------------+
+| 0        | 0 / 15 (  0%)  | -          | -          |
+| 1        | 12 / 15 ( 80%) | 3.3V       | -          |
+| 2        | 2 / 12 ( 16%)  | 3.3V       | -          |
+| 3        | 15 / 51 ( 29%) | 1.8V       | -          |
+| 4        | 0 / 51 (  0%)  | -          | -          |
+| 5        | 0 / 51 (  0%)  | -          | -          |
+| 6        | 2 / 51 (  3%)  | 1.8V       | -          |
+| 7        | 0 / 51 (  0%)  | -          | -          |
+| 8        | 0 / 51 (  0%)  | -          | -          |
+| 9        | 2 / 51 (  3%)  | 1.8V       | -          |
+| 10       | 37 / 51 ( 72%) | 1.1V       | -          |
+| 11       | 22 / 51 ( 43%) | 1.1V       | -          |
+| 12       | 0 / 16 (  0%)  | -          | -          |
+| 13       | 6 / 16 ( 37%)  | 3.3V       | -          |
+| 14       | 0 / 20 (  0%)  | -          | -          |
++----------+----------------+------------+------------+
+
+Total Placer CPU time: 24 mins 45 secs , REAL time: 19 mins 25 secs 
+
+
+Checksum -- place: 13d5c2beaf393cd59f67c36caac293a57730d805
+Writing design to file soc_golden_gsrd_impl_1_par.dir/5_3.udb ...
+
+
+
+
+WARNING <71003020> - par: Top module port 'TCK' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TMS' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TDI' does not connect to anything.
+WARNING <71003020> - par: Top module port 'TDO' does not connect to anything.
+WARNING <71301018> - par: The PLL clock port [clk_125_in] is assigned to a non PLL dedicated pin [AL10], which might affect the clock performance. Use dedicated PLL clock resources for the port.
+
+Start NBR router at 08:56:34 08/30/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+17377 connections routed with dedicated routing resources
+16 global clock signals routed
+57116 connections routed (of 272346 total) (20.97%)
+---------------------------------------------------------
+Clock routing summary:
+Global clocks (16 used out of 24 available):
+    Signal "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.genblk1[1].si_rsd.si_reset_n[1]"
+       Control loads: 767   out of   767 routed (100.00%)
+    Signal "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.NbbICH"
+       Clock   loads: 51    out of    51 routed (100.00%)
+    Signal "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.rst_n"
+       Control loads: 3396  out of  3396 routed (100.00%)
+    Signal "phy_resetn_o_c"
+       Control loads: 6264  out of  6264 routed (100.00%)
+       Data    loads: 0     out of    39 routed (  0.00%)
+    Signal "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.reset_n"
+       Control loads: 763   out of   763 routed (100.00%)
+    Signal "rgmii_txc_o_Z[0]"
+       Clock   loads: 16284 out of 16284 routed (100.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+    Signal "sclk_o_c"
+       Clock   loads: 3949  out of  3949 routed (100.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+    Signal "cpu0_inst.riscvrtos_inst.Ibb45mqq1Dymg0ysCxp1KEgkwALCmfHgtc28aCq.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1"
+       Clock   loads: 45    out of    45 routed (100.00%)
+       Data    loads: 1     out of     1 routed (100.00%)
+    Signal "pll0_inst_clkos2_o_net"
+       Clock   loads: 1886  out of  1886 routed (100.00%)
+    Signal "pll0_inst_clkos_o_net"
+       Clock   loads: 5     out of     5 routed (100.00%)
+    Signal "axi4_interconnect0_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.aresetn_i_i"
+       Control loads: 1911  out of  1911 routed (100.00%)
+    Signal "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.genblk1[0].si_rsd.si_reset_n[0]"
+       Control loads: 749   out of   749 routed (100.00%)
+    Signal "mpmc0_inst.lscc_mpmc_axi_inst.genblk1.mi_rsd.mi_reset_n"
+       Control loads: 563   out of   563 routed (100.00%)
+    Signal "rgmii_mdc_o_c"
+       Clock   loads: 71    out of    71 routed (100.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+    Signal "pll0_inst.lscc_pll_inst.lmmi_clk_w"
+       Clock   loads: 1     out of     1 routed (100.00%)
+    Signal "tse_mac0_inst.mac_phy_top_inst.genblk1.tse_mac.NjnqCGs6zBuzoktGgEnqst1E0Cs"
+       Control loads: 679   out of   679 routed (100.00%)
+Regional clocks:
+    Signal "clk_125_in_c"
+       Clock   loads: 20    out of    20 routed (100.00%)
+       Data    loads: 1     out of     1 routed (100.00%)
+    Signal "rgmii_rxc_i_c"
+       Clock   loads: 294   out of   294 routed (100.00%)
+Other clocks:
+    Signal "lpddr4_mc_contr0_inst.lscc_mc_avant_inst.u_ddrphy.eclk"
+       Clock   loads: 2     out of     2 routed (100.00%)
+    Signal "pll0_inst.lscc_pll_inst.clkout_testclk_o"
+       Clock   loads: 0     out of    10 routed (  0.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+WARNING <70009502> - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING <70009502> - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING <70001949> - par: The object lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC in the option "-to" of constraint set_false_path -to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC] is not valid.
+WARNING <70001908> - par: set_false_path -to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC] is being ignored due to errors
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+--------------------------------------------------------------------------------
+Info: STA Multithread Mode is SET
+Number of threads = 4
+--------------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing design in Multi thread mode
+Number of threads = 4
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Start NBR section for initial routing at 09:06:41 08/30/24
+Level 4, iteration 1
+30481(0.10%) conflicts; 0(0.00%) untouched conn; 76189 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.072ns/-76.190ns; real time: 16 mins 5 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 09:12:42 08/30/24
+Level 4, iteration 1
+18370(0.06%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 18 mins 48 secs 
+Level 4, iteration 2
+11923(0.04%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 19 mins 48 secs 
+Level 4, iteration 3
+7675(0.02%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 20 mins 39 secs 
+Level 4, iteration 4
+5378(0.02%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 21 mins 13 secs 
+Level 4, iteration 5
+3780(0.01%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 21 mins 41 secs 
+Level 4, iteration 6
+2781(0.01%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 22 mins 9 secs 
+Level 4, iteration 7
+1616(0.01%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 22 mins 45 secs 
+Level 4, iteration 8
+1054(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 23 mins 12 secs 
+Level 4, iteration 9
+705(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 23 mins 30 secs 
+Level 4, iteration 10
+488(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 23 mins 48 secs 
+Level 4, iteration 11
+344(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 23 mins 59 secs 
+Level 4, iteration 12
+277(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 24 mins 14 secs 
+Level 4, iteration 13
+200(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 24 mins 22 secs 
+Level 4, iteration 14
+162(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 24 mins 37 secs 
+Level 4, iteration 15
+124(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 24 mins 43 secs 
+Level 4, iteration 16
+96(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 24 mins 59 secs 
+Level 4, iteration 17
+70(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 4 secs 
+Level 4, iteration 18
+56(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 13 secs 
+Level 4, iteration 19
+46(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 18 secs 
+Level 4, iteration 20
+38(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 27 secs 
+Level 4, iteration 21
+26(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 32 secs 
+Level 4, iteration 22
+18(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 41 secs 
+Level 4, iteration 23
+15(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 45 secs 
+Level 4, iteration 24
+14(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 54 secs 
+Level 4, iteration 25
+10(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 25 mins 57 secs 
+Level 4, iteration 26
+9(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 4 secs 
+Level 4, iteration 27
+7(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 8 secs 
+Level 4, iteration 28
+6(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 15 secs 
+Level 4, iteration 29
+2(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 19 secs 
+Level 4, iteration 30
+2(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 26 secs 
+Level 4, iteration 31
+2(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 32 secs 
+Level 4, iteration 32
+2(0.00%) conflicts; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 39 secs 
+Level 4, iteration 33
+1(0.00%) conflict; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 42 secs 
+Level 4, iteration 34
+1(0.00%) conflict; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 49 secs 
+Level 4, iteration 35
+1(0.00%) conflict; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 52 secs 
+Level 4, iteration 36
+0(0.00%) conflict; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 26 mins 59 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 5 at 09:23:24 08/30/24
+Level 4, iteration 0
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.013ns/0.000ns; real time: 51 mins 1 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 111948 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-111.949ns; real time: 53 mins 59 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 111948 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-111.949ns; real time: 54 mins 44 secs 
+
+Start NBR section for post-routing at 09:54:54 08/30/24
+0(0.00%) conflict; 0(0.00%) untouched conn; 74928 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.045ns/-74.929ns; real time: 58 mins 50 secs 
+
+End NBR router with 0 unrouted connection(s)
+WARNING <70009502> - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING <70009502> - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING <70001949> - par: The object lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC in the option "-to" of constraint set_false_path -to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC] is not valid.
+WARNING <70001908> - par: set_false_path -to [get_pins lpddr4_mc_contr0_inst/lscc_mc_avant_inst/u_ddrphy/u_eclksync/SYNC] is being ignored due to errors
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+
+Checksum -- route: 9f9452741dc2b2020730dade3841efca4bc8208
+
+Total CPU time 1 hrs 8 mins 27 secs 
+Total REAL time: 1 hrs 2 mins 53 secs 
+Completely routed.
+End of route.  272346 routed (100.00%); 0 unrouted.
+
+Writing design to file soc_golden_gsrd_impl_1_par.dir/5_3.udb ...
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = -0.045
+PAR_SUMMARY::Timing score<setup/<ns>> = 74.884
+PAR_SUMMARY::Estimated worst slack<hold/<ns>> = 0.013
+PAR_SUMMARY::Timing score<hold/<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Note: user must run 'timing' for timing closure signoff.
+
+Total CPU  Time: 1 hrs 36 mins 5 secs 
+Total REAL Time: 1 hrs 25 mins 37 secs 
+Peak Memory Usage: 6896.79 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
