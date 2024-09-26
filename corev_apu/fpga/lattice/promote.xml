@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/promote.xml" version="Diamond (64-bit) 2024.1.0.34.2" date="Fri Sep 20 14:48:49 2024" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/promote.xml" version="Diamond (64-bit) 2024.1.1.259.1" date="Thu Sep 26 11:51:46 2024" vendor="Lattice Semiconductor Corporation" >
   <msg mid="2012653" type="Warning" internal="true" />
-  <msg mid="35901343" type="Error" internal="true" />
   <msg mid="35921504" type="Info" internal="true" />
+  <msg mid="35901343" type="Error" internal="true" />
   <msg mid="35901328" type="Info" internal="true" />
   <msg mid="35901199" type="Warning" internal="true" />
   <msg mid="35901209" type="Warning" internal="true" />
