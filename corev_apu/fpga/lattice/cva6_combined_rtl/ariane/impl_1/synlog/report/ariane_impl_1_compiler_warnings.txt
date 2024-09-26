@@ -1,0 +1,30 @@
+@W: CG104 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5140:73:5140:73|Unsized number in concatenation is 32 bits
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5712:104:5712:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5935:104:5935:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":6333:104:6333:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":6554:104:6554:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":6621:84:6621:83|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":6780:104:6780:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":6955:104:6955:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":7341:104:7341:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":7622:104:7622:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":7782:104:7782:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":8097:104:8097:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":8315:104:8315:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":8460:104:8460:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":8728:104:8728:103|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CG1337 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":9210:13:9210:21|Net out_ready is not declared.
+@W: CG1337 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":9214:13:9214:24|Net local_result is not declared.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":9701:106:9701:105|Unrecognized synthesis directive sync_set_reset. Verify the correct directive name.
+@W: CG1337 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":9703:13:9703:19|Net reg_ena is not declared.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15369:54:15369:55|Unrecognized synthesis directive dc. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15421:54:15421:55|Unrecognized synthesis directive dc. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15504:46:15504:47|Unrecognized synthesis directive dc. Verify the correct directive name.
+@W: CD489 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28630:9:28630:9|Newline in quoted string
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":61481:14:61481:15|Unrecognized synthesis directive dc. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":63180:63:63180:64|Unrecognized synthesis directive dc. Verify the correct directive name.
+@W: CS141 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":63981:63:63981:64|Unrecognized synthesis directive dc. Verify the correct directive name.
+@W: CG1256 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":66825:2:66825:6|final block is not supported for synthesis
+@W: CG1112 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":67201:0:67201:8|Function/task debug_tick is an unsupported SCE-MI function -- SCE-MI functions in packages or global scope are not supported.
+@W: CG1112 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":67201:0:67201:8|Function/task jtag_tick is an unsupported SCE-MI function -- SCE-MI functions in packages or global scope are not supported.
+
