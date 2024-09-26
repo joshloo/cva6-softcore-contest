@@ -2,12 +2,12 @@
 <RadiantProject version="4.2" radiant="2024.1.1.259.1" title="ariane" device="LAV-AT-E70ES1-1LFG676C" performance_grade="1" family_int="ap6a00b" device_int="ap6a400bee" package_int="LFG676" operation_int="COM" speed_int="1" default_implementation="impl_1">
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="AsyncThreePortRam">
+        <Options VerilogStandard="System Verilog" def_top="pulp_clock_delay">
             <Option name="include path" value="../../../../../vendor/pulp-platform/common_cells/include;../../../../../vendor/pulp-platform/axi/include;../../../../../core/cache_subsystem/hpdcache/rtl/include;../../../../register_interface/include"/>
             <Option name="top" value="ariane"/>
         </Options>
         <Source name="../../../../../merged_systemverilog.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
+            <Options VerilogStandard="System Verilog" top_module="ariane"/>
         </Source>
     </Implementation>
     <Strategy name="Strategy1" file="ariane1.sty"/>

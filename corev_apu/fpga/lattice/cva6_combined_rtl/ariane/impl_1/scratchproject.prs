@@ -15,7 +15,7 @@ impl -add C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\
 #
 #implementation attributes
 
-set_option -vlog_std v2001
+set_option -vlog_std sysv
 set_option -project_relative_includes 1
 set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/}
 set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include;C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include;C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/include;C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/register_interface/include;C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane}

@@ -248,12 +248,12 @@ package cva6_config_pkg;
   localparam CVA6ConfigRvfiTrace = 1;
 
   localparam config_pkg::cva6_cfg_t cva6_cfg = '{
-      NrCommitPorts: unsigned'(CVA6ConfigNrCommitPorts),
-      AxiAddrWidth: unsigned'(CVA6ConfigAxiAddrWidth),
-      AxiDataWidth: unsigned'(CVA6ConfigAxiDataWidth),
-      AxiIdWidth: unsigned'(CVA6ConfigAxiIdWidth),
-      AxiUserWidth: unsigned'(CVA6ConfigDataUserWidth),
-      NrLoadBufEntries: unsigned'(CVA6ConfigNrLoadBufEntries),
+      NrCommitPorts: $unsigned(CVA6ConfigNrCommitPorts),
+      AxiAddrWidth: $unsigned(CVA6ConfigAxiAddrWidth),
+      AxiDataWidth: $unsigned(CVA6ConfigAxiDataWidth),
+      AxiIdWidth: $unsigned(CVA6ConfigAxiIdWidth),
+      AxiUserWidth: $unsigned(CVA6ConfigDataUserWidth),
+      NrLoadBufEntries: $unsigned(CVA6ConfigNrLoadBufEntries),
       FpuEn: bit'(CVA6ConfigFpuEn),
       XF16: bit'(CVA6ConfigF16En),
       XF16ALT: bit'(CVA6ConfigF16AltEn),
@@ -273,30 +273,30 @@ package cva6_config_pkg;
       RVD: bit'(0),
       FpPresent: bit'(0),
       NSX: bit'(0),
-      FLen: unsigned'(0),
+      FLen: $unsigned(0),
       RVFVec: bit'(0),
       XF16Vec: bit'(0),
       XF16ALTVec: bit'(0),
       XF8Vec: bit'(0),
-      NrRgprPorts: unsigned'(0),
-      NrWbPorts: unsigned'(0),
+      NrRgprPorts: $unsigned(0),
+      NrWbPorts: $unsigned(0),
       EnableAccelerator: bit'(0),
       HaltAddress: 64'h800,
       ExceptionAddress: 64'h808,
-      RASDepth: unsigned'(CVA6ConfigRASDepth),
-      BTBEntries: unsigned'(CVA6ConfigBTBEntries),
-      BHTEntries: unsigned'(CVA6ConfigBHTEntries),
+      RASDepth: $unsigned(CVA6ConfigRASDepth),
+      BTBEntries: $unsigned(CVA6ConfigBTBEntries),
+      BHTEntries: $unsigned(CVA6ConfigBHTEntries),
       DmBaseAddress: 64'h0,
-      NrPMPEntries: unsigned'(CVA6ConfigNrPMPEntries),
+      NrPMPEntries: $unsigned(CVA6ConfigNrPMPEntries),
       NOCType: config_pkg::NOC_TYPE_AXI4_ATOP,
       // idempotent region
       NrNonIdempotentRules:
-      unsigned'(
+      $unsigned(
       2
       ),
       NonIdempotentAddrBase: 1024'({64'b0, 64'b0}),
       NonIdempotentLength: 1024'({64'b0, 64'b0}),
-      NrExecuteRegionRules: unsigned'(3),
+      NrExecuteRegionRules: $unsigned(3),
       //                      DRAM,          Boot ROM,   Debug Module
       ExecuteRegionAddrBase:
       1024'(
@@ -305,12 +305,12 @@ package cva6_config_pkg;
       ExecuteRegionLength: 1024'({64'h40000000, 64'h10000, 64'h1000}),
       // cached region
       NrCachedRegionRules:
-      unsigned'(
+      $unsigned(
       1
       ),
       CachedRegionAddrBase: 1024'({64'h8000_0000}),
       CachedRegionLength: 1024'({64'h40000000}),
-      MaxOutstandingStores: unsigned'(7)
+      MaxOutstandingStores: $unsigned(7)
   };
 
 endpackage
@@ -1299,10 +1299,10 @@ package axi_pkg;
     // equivalent with multiplication and division by a power of two, which conveniently are the
     // only allowed values for `len` of a `BURST_WRAP`.
     unique case (len)
-      4'b1    : wrap_addr = (addr >> (unsigned'(size) + 1)) << (unsigned'(size) + 1); // multiply `Number_Bytes` by `2`
-      4'b11   : wrap_addr = (addr >> (unsigned'(size) + 2)) << (unsigned'(size) + 2); // multiply `Number_Bytes` by `4`
-      4'b111  : wrap_addr = (addr >> (unsigned'(size) + 3)) << (unsigned'(size) + 3); // multiply `Number_Bytes` by `8`
-      4'b1111 : wrap_addr = (addr >> (unsigned'(size) + 4)) << (unsigned'(size) + 4); // multiply `Number_Bytes` by `16`
+      4'b1    : wrap_addr = (addr >> ($unsigned(size) + 1)) << ($unsigned(size) + 1); // multiply `Number_Bytes` by `2`
+      4'b11   : wrap_addr = (addr >> ($unsigned(size) + 2)) << ($unsigned(size) + 2); // multiply `Number_Bytes` by `4`
+      4'b111  : wrap_addr = (addr >> ($unsigned(size) + 3)) << ($unsigned(size) + 3); // multiply `Number_Bytes` by `8`
+      4'b1111 : wrap_addr = (addr >> ($unsigned(size) + 4)) << ($unsigned(size) + 4); // multiply `Number_Bytes` by `16`
       default : wrap_addr = '0;
     endcase
     return wrap_addr;
@@ -4009,7 +4009,7 @@ package fpnew_pkg;
     automatic int unsigned res = 0;
     for (int unsigned i = 0; i < NUM_FP_FORMATS; i++)
       if (cfg[i])
-        res = unsigned'(maximum(res, fp_width(fp_format_e'(i))));
+        res = $unsigned(maximum(res, fp_width(fp_format_e'(i))));
     return res;
   endfunction
 
@@ -4018,7 +4018,7 @@ package fpnew_pkg;
     automatic int unsigned res = max_fp_width(cfg);
     for (int unsigned i = 0; i < NUM_FP_FORMATS; i++)
       if (cfg[i])
-        res = unsigned'(minimum(res, fp_width(fp_format_e'(i))));
+        res = $unsigned(minimum(res, fp_width(fp_format_e'(i))));
     return res;
   endfunction
 
@@ -4034,7 +4034,7 @@ package fpnew_pkg;
 
   // Returns the bias value for a given format (as per IEEE 754-2008)
   function automatic int unsigned bias(fp_format_e fmt);
-    return unsigned'(2**(FP_ENCODINGS[fmt].exp_bits-1)-1); // symmetrical bias
+    return $unsigned(2**(FP_ENCODINGS[fmt].exp_bits-1)-1); // symmetrical bias
   endfunction
 
   function automatic fp_encoding_t super_format(fmt_logic_t cfg);
@@ -4042,8 +4042,8 @@ package fpnew_pkg;
     res = '0;
     for (int unsigned fmt = 0; fmt < NUM_FP_FORMATS; fmt++)
       if (cfg[fmt]) begin // only active format
-        res.exp_bits = unsigned'(maximum(res.exp_bits, exp_bits(fp_format_e'(fmt))));
-        res.man_bits = unsigned'(maximum(res.man_bits, man_bits(fp_format_e'(fmt))));
+        res.exp_bits = $unsigned(maximum(res.exp_bits, exp_bits(fp_format_e'(fmt))));
+        res.man_bits = $unsigned(maximum(res.man_bits, man_bits(fp_format_e'(fmt))));
       end
     return res;
   endfunction
@@ -5233,7 +5233,7 @@ package cf_math_pkg;
     /// As typedef:
     ///   `typedef logic [cf_math_pkg::idx_width(NumIdx)-1:0] idx_t`
     function automatic integer unsigned idx_width (input integer unsigned num_idx);
-        return (num_idx > 32'd1) ? unsigned'($clog2(num_idx)) : 32'd1;
+        return (num_idx > 32'd1) ? $unsigned($clog2(num_idx)) : 32'd1;
     endfunction
 
 endpackage
@@ -5805,7 +5805,7 @@ module fpnew_cast_multi #(
   // Construct input mantissa from integer
   assign int_value    = ifmt_input_val[int_fmt_q];
   assign int_sign     = int_value[INT_MAN_WIDTH-1] & ~op_mod_q; // only signed ints are negative
-  assign int_mantissa = int_sign ? unsigned'(-int_value) : int_value; // get magnitude of negative
+  assign int_mantissa = int_sign ? $unsigned(-int_value) : int_value; // get magnitude of negative
 
   // select mantissa with source format
   assign encoded_mant = src_is_int ? int_mantissa : fmt_mantissa[src_fmt_q];
@@ -5987,7 +5987,7 @@ module fpnew_cast_multi #(
   // Perform adjustments to mantissa and exponent
   always_comb begin : cast_value
     // Default assignment
-    final_exp       = unsigned'(destination_exp_q); // take exponent as is, only look at lower bits
+    final_exp       = $unsigned(destination_exp_q); // take exponent as is, only look at lower bits
     preshift_mant   = '0;  // initialize mantissa container with zeroes
     denorm_shamt    = SUPER_MAN_BITS - fpnew_pkg::man_bits(dst_fmt_q2); // right of mantissa
     of_before_round = 1'b0;
@@ -5999,7 +5999,7 @@ module fpnew_cast_multi #(
     // Handle INT casts
     if (dst_is_int_q) begin
       // By default right shift mantissa to be an integer
-      denorm_shamt = unsigned'(MAX_INT_WIDTH - 1 - input_exp_q);
+      denorm_shamt = $unsigned(MAX_INT_WIDTH - 1 - input_exp_q);
       // overflow: when converting to unsigned the range is larger by one
       if (input_exp_q >= signed'(fpnew_pkg::int_width(int_fmt_q2) - 1 + op_mod_q2)) begin
         denorm_shamt    = '0; // prevent shifting
@@ -6014,19 +6014,19 @@ module fpnew_cast_multi #(
       // Overflow or infinities (for proper rounding)
       if ((destination_exp_q >= signed'(2**fpnew_pkg::exp_bits(dst_fmt_q2))-1) ||
           (~src_is_int_q && info_q.is_inf)) begin
-        final_exp       = unsigned'(2**fpnew_pkg::exp_bits(dst_fmt_q2)-2); // largest normal value
+        final_exp       = $unsigned(2**fpnew_pkg::exp_bits(dst_fmt_q2)-2); // largest normal value
         preshift_mant   = '1;                           // largest normal value and RS bits set
         of_before_round = 1'b1;
       // Denormalize underflowing values
       end else if (destination_exp_q < 1 &&
                    destination_exp_q >= -signed'(fpnew_pkg::man_bits(dst_fmt_q2))) begin
         final_exp       = '0; // denormal result
-        denorm_shamt    = unsigned'(denorm_shamt + 1 - destination_exp_q); // adjust right shifting
+        denorm_shamt    = $unsigned(denorm_shamt + 1 - destination_exp_q); // adjust right shifting
         uf_before_round = 1'b1;
       // Limit the shift to retain sticky bits
       end else if (destination_exp_q < -signed'(fpnew_pkg::man_bits(dst_fmt_q2))) begin
         final_exp       = '0; // denormal result
-        denorm_shamt    = unsigned'(denorm_shamt + 2 + fpnew_pkg::man_bits(dst_fmt_q2)); // to sticky
+        denorm_shamt    = $unsigned(denorm_shamt + 2 + fpnew_pkg::man_bits(dst_fmt_q2)); // to sticky
         uf_before_round = 1'b1;
       end
     end
@@ -6146,7 +6146,7 @@ module fpnew_cast_multi #(
   end
 
   // Negative integer result needs to be brought into two's complement
-  assign rounded_int_res      = rounded_sign ? unsigned'(-rounded_abs) : rounded_abs;
+  assign rounded_int_res      = rounded_sign ? $unsigned(-rounded_abs) : rounded_abs;
   assign rounded_int_res_zero = (rounded_int_res == '0);
 
   // Detect integer overflows after rounding (only positives)
@@ -7198,7 +7198,7 @@ module fpnew_fma_multi #(
       addend_shamt = 3 * PRECISION_BITS + 4;
     // Addend and product will have mutual bits to add
     else if (exponent_difference <= signed'(PRECISION_BITS + 2))
-      addend_shamt = unsigned'(signed'(PRECISION_BITS) + 3 - exponent_difference);
+      addend_shamt = $unsigned(signed'(PRECISION_BITS) + 3 - exponent_difference);
     // Addend-anchored case, saturated shift (product is only in the sticky bit)
     else
       addend_shamt = 0;
@@ -7418,7 +7418,7 @@ module fpnew_fma_multi #(
       // Subnormal result
       end else begin
         // Cap the shift distance to align mantissa with minimum exponent
-        norm_shamt          = unsigned'(signed'(PRECISION_BITS + 2 + exponent_product_q));
+        norm_shamt          = $unsigned(signed'(PRECISION_BITS + 2 + exponent_product_q));
         normalized_exponent = 0; // subnormals encoded as 0
       end
     // Addend-anchored case
@@ -7713,7 +7713,7 @@ module fpnew_fma #(
   // Internal exponent width of FMA must accomodate all meaningful exponent values in order to avoid
   // datapath leakage. This is either given by the exponent bits or the width of the LZC result.
   // In most reasonable FP formats the internal exponent will be wider than the LZC result.
-  localparam int unsigned EXP_WIDTH = unsigned'(fpnew_pkg::maximum(EXP_BITS + 2, LZC_RESULT_WIDTH));
+  localparam int unsigned EXP_WIDTH = $unsigned(fpnew_pkg::maximum(EXP_BITS + 2, LZC_RESULT_WIDTH));
   // Shift amount width: maximum internal mantissa size is 3p+4 bits
   localparam int unsigned SHIFT_AMOUNT_WIDTH = $clog2(3 * PRECISION_BITS + 5);
   // Pipelines
@@ -7956,7 +7956,7 @@ module fpnew_fma #(
       addend_shamt = 3 * PRECISION_BITS + 4;
     // Addend and product will have mutual bits to add
     else if (exponent_difference <= signed'(PRECISION_BITS + 2))
-      addend_shamt = unsigned'(signed'(PRECISION_BITS) + 3 - exponent_difference);
+      addend_shamt = $unsigned(signed'(PRECISION_BITS) + 3 - exponent_difference);
     // Addend-anchored case, saturated shift (product is only in the sticky bit)
     else
       addend_shamt = 0;
@@ -8172,7 +8172,7 @@ module fpnew_fma #(
       // Subnormal result
       end else begin
         // Cap the shift distance to align mantissa with minimum exponent
-        norm_shamt          = unsigned'(signed'(PRECISION_BITS) + 2 + exponent_product_q);
+        norm_shamt          = $unsigned(signed'(PRECISION_BITS) + 2 + exponent_product_q);
         normalized_exponent = 0; // subnormals encoded as 0
       end
     // Addend-anchored case
@@ -8234,7 +8234,7 @@ module fpnew_fma #(
 
   // Assemble result before rounding. In case of overflow, the largest normal value is set.
   assign pre_round_sign     = final_sign_q;
-  assign pre_round_exponent = (of_before_round) ? 2**EXP_BITS-2 : unsigned'(final_exponent[EXP_BITS-1:0]);
+  assign pre_round_exponent = (of_before_round) ? 2**EXP_BITS-2 : $unsigned(final_exponent[EXP_BITS-1:0]);
   assign pre_round_mantissa = (of_before_round) ? '1 : final_mantissa[MAN_BITS:1]; // bit 0 is R bit
   assign pre_round_abs      = {pre_round_exponent, pre_round_mantissa};
 
@@ -9060,7 +9060,7 @@ module fpnew_opgroup_fmt_slice #(
 );
 
   localparam int unsigned FP_WIDTH  = fpnew_pkg::fp_width(FpFormat);
-  localparam int unsigned SIMD_WIDTH = unsigned'(Width/NUM_LANES);
+  localparam int unsigned SIMD_WIDTH = $unsigned(Width/NUM_LANES);
 
 
   logic [NUM_LANES-1:0] lane_in_ready, lane_out_valid; // Handshake signals for the lanes
@@ -9103,7 +9103,7 @@ module fpnew_opgroup_fmt_slice #(
       // Slice out the operands for this lane
       always_comb begin : prepare_input
         for (int i = 0; i < int'(NUM_OPERANDS); i++) begin
-          local_operands[i] = operands_i[i][(unsigned'(lane)+1)*FP_WIDTH-1:unsigned'(lane)*FP_WIDTH];
+          local_operands[i] = operands_i[i][($unsigned(lane)+1)*FP_WIDTH-1:$unsigned(lane)*FP_WIDTH];
         end
       end
 
@@ -9225,7 +9225,7 @@ module fpnew_opgroup_fmt_slice #(
     end
 
     // Insert lane result into slice result
-    assign slice_result[(unsigned'(lane)+1)*FP_WIDTH-1:unsigned'(lane)*FP_WIDTH] = local_result;
+    assign slice_result[($unsigned(lane)+1)*FP_WIDTH-1:$unsigned(lane)*FP_WIDTH] = local_result;
 
     // Create Classification results
     if (TrueSIMDClass && SIMD_WIDTH >= 10) begin : vectorial_true_class // true vectorial class blocks are 10bits in size
@@ -9443,7 +9443,7 @@ module fpnew_opgroup_multifmt_slice #(
   // Generate Lanes
   // ---------------
   for (genvar lane = 0; lane < int'(NUM_LANES); lane++) begin : gen_num_lanes
-    localparam int unsigned LANE = unsigned'(lane); // unsigned to please the linter
+    localparam int unsigned LANE = $unsigned(lane); // unsigned to please the linter
     // Get a mask of active formats for this lane
     localparam fpnew_pkg::fmt_logic_t ACTIVE_FORMATS =
         fpnew_pkg::get_lane_formats(Width, FpFmtConfig, LANE);
@@ -15218,7 +15218,7 @@ end
 // block cipher layers
 ////////////////////////////////////////////////////////////////////////
 
-if (CipherLayers > unsigned'(0)) begin : g_cipher_layers
+if (CipherLayers > $unsigned(0)) begin : g_cipher_layers
   logic [63:0] ciph_layer;
   localparam int unsigned NumRepl = ((64+LfsrWidth)/LfsrWidth);
 
@@ -15264,7 +15264,7 @@ initial begin
   // these are the LUT limits
   assert(OutWidth <= LfsrWidth) else
     $fatal(1,"OutWidth must be smaller equal the LfsrWidth.");
-  assert(RstVal > unsigned'(0)) else
+  assert(RstVal > $unsigned(0)) else
     $fatal(1,"RstVal must be nonzero.");
   assert((LfsrWidth >= $low(Masks)) && (LfsrWidth <= $high(Masks))) else
     $fatal(1,"Unsupported LfsrWidth.");
@@ -15553,7 +15553,7 @@ module stream_demux #(
   /// Number of connected outputs.
   parameter int unsigned N_OUP     = 32'd1,
   /// Dependent parameters, DO NOT OVERRIDE!
-  parameter int unsigned LOG_N_OUP = (N_OUP > 32'd1) ? unsigned'($clog2(N_OUP)) : 1'b1
+  parameter int unsigned LOG_N_OUP = (N_OUP > 32'd1) ? $unsigned($clog2(N_OUP)) : 1'b1
 ) (
   input  logic                 inp_valid_i,
   output logic                 inp_ready_o,
@@ -15644,27 +15644,27 @@ module lzc #(
       end
     end
 
-    for (genvar j = 0; unsigned'(j) < WIDTH; j++) begin : g_index_lut
-      assign index_lut[j] = (NumLevels)'(unsigned'(j));
+    for (genvar j = 0; $unsigned(j) < WIDTH; j++) begin : g_index_lut
+      assign index_lut[j] = (NumLevels)'($unsigned(j));
     end
 
-    for (genvar level = 0; unsigned'(level) < NumLevels; level++) begin : g_levels
-      if (unsigned'(level) == NumLevels - 1) begin : g_last_level
+    for (genvar level = 0; $unsigned(level) < NumLevels; level++) begin : g_levels
+      if ($unsigned(level) == NumLevels - 1) begin : g_last_level
         for (genvar k = 0; k < 2 ** level; k++) begin : g_level
           // if two successive indices are still in the vector...
-          if (unsigned'(k) * 2 < WIDTH - 1) begin : g_reduce
+          if ($unsigned(k) * 2 < WIDTH - 1) begin : g_reduce
             assign sel_nodes[2 ** level - 1 + k] = in_tmp[k * 2] | in_tmp[k * 2 + 1];
             assign index_nodes[2 ** level - 1 + k] = (in_tmp[k * 2] == 1'b1)
               ? index_lut[k * 2] :
                 index_lut[k * 2 + 1];
           end
           // if only the first index is still in the vector...
-          if (unsigned'(k) * 2 == WIDTH - 1) begin : g_base
+          if ($unsigned(k) * 2 == WIDTH - 1) begin : g_base
             assign sel_nodes[2 ** level - 1 + k] = in_tmp[k * 2];
             assign index_nodes[2 ** level - 1 + k] = index_lut[k * 2];
           end
           // if index is out of range
-          if (unsigned'(k) * 2 > WIDTH - 1) begin : g_out_of_range
+          if ($unsigned(k) * 2 > WIDTH - 1) begin : g_out_of_range
             assign sel_nodes[2 ** level - 1 + k] = 1'b0;
             assign index_nodes[2 ** level - 1 + k] = '0;
           end
@@ -15680,8 +15680,8 @@ module lzc #(
       end
     end
 
-    assign cnt_o = NumLevels > unsigned'(0) ? index_nodes[0] : {($clog2(WIDTH)) {1'b0}};
-    assign empty_o = NumLevels > unsigned'(0) ? ~sel_nodes[0] : ~(|in_i);
+    assign cnt_o = NumLevels > $unsigned(0) ? index_nodes[0] : {($clog2(WIDTH)) {1'b0}};
+    assign empty_o = NumLevels > $unsigned(0) ? ~sel_nodes[0] : ~(|in_i);
 
   end : gen_lzc
 
@@ -15769,7 +15769,7 @@ module rr_arb_tree #(
   parameter bit          FairArb    = 1'b1,
   /// Dependent parameter, do **not** overwrite.
   /// Width of the arbitration priority signal and the arbitrated index.
-  parameter int unsigned IdxWidth   = (NumIn > 32'd1) ? unsigned'($clog2(NumIn)) : 32'd1,
+  parameter int unsigned IdxWidth   = (NumIn > 32'd1) ? $unsigned($clog2(NumIn)) : 32'd1,
   /// Dependent parameter, do **not** overwrite.
   /// Type for defining the arbitration priority and arbitrated index signal.
   parameter type         idx_t      = logic [IdxWidth-1:0]
@@ -15810,7 +15810,7 @@ module rr_arb_tree #(
   // pragma translate_on
 
   // just pass through in this corner case
-  if (NumIn == unsigned'(1)) begin : gen_pass_through
+  if (NumIn == $unsigned(1)) begin : gen_pass_through
     assign req_o    = req_i[0];
     assign gnt_o[0] = gnt_i;
     assign data_o   = data_i[0];
@@ -15943,7 +15943,7 @@ module rr_arb_tree #(
     assign gnt_nodes[0] = gnt_i;
 
     // arbiter tree
-    for (genvar level = 0; unsigned'(level) < NumLevels; level++) begin : gen_levels
+    for (genvar level = 0; $unsigned(level) < NumLevels; level++) begin : gen_levels
       for (genvar l = 0; l < 2**level; l++) begin : gen_level
         // local select signal
         logic sel;
@@ -15952,9 +15952,9 @@ module rr_arb_tree #(
         localparam int unsigned Idx1 = 2**(level+1)-1+l*2;
         //////////////////////////////////////////////////////////////
         // uppermost level where data is fed in from the inputs
-        if (unsigned'(level) == NumLevels-1) begin : gen_first_level
+        if ($unsigned(level) == NumLevels-1) begin : gen_first_level
           // if two successive indices are still in the vector...
-          if (unsigned'(l) * 2 < NumIn-1) begin : gen_reduce
+          if ($unsigned(l) * 2 < NumIn-1) begin : gen_reduce
             assign req_nodes[Idx0]   = req_d[l*2] | req_d[l*2+1];
 
             // arbitration: round robin
@@ -15966,14 +15966,14 @@ module rr_arb_tree #(
             assign gnt_o[l*2+1]      = gnt_nodes[Idx0] & (AxiVldRdy | req_d[l*2+1]) & sel;
           end
           // if only the first index is still in the vector...
-          if (unsigned'(l) * 2 == NumIn-1) begin : gen_first
+          if ($unsigned(l) * 2 == NumIn-1) begin : gen_first
             assign req_nodes[Idx0]   = req_d[l*2];
             assign index_nodes[Idx0] = '0;// always zero in this case
             assign data_nodes[Idx0]  = data_i[l*2];
             assign gnt_o[l*2]        = gnt_nodes[Idx0] & (AxiVldRdy | req_d[l*2]);
           end
           // if index is out of range, fill up with zeros (will get pruned)
-          if (unsigned'(l) * 2 > NumIn-1) begin : gen_out_of_range
+          if ($unsigned(l) * 2 > NumIn-1) begin : gen_out_of_range
             assign req_nodes[Idx0]   = 1'b0;
             assign index_nodes[Idx0] = idx_t'('0);
             assign data_nodes[Idx0]  = DataType'('0);
@@ -15987,8 +15987,8 @@ module rr_arb_tree #(
           assign sel =  ~req_nodes[Idx1] | req_nodes[Idx1+1] & rr_q[NumLevels-1-level];
 
           assign index_nodes[Idx0] = (sel) ?
-            idx_t'({1'b1, index_nodes[Idx1+1][NumLevels-unsigned'(level)-2:0]}) :
-            idx_t'({1'b0, index_nodes[Idx1][NumLevels-unsigned'(level)-2:0]});
+            idx_t'({1'b1, index_nodes[Idx1+1][NumLevels-$unsigned(level)-2:0]}) :
+            idx_t'({1'b0, index_nodes[Idx1][NumLevels-$unsigned(level)-2:0]});
 
           assign data_nodes[Idx0]  = (sel) ? data_nodes[Idx1+1] : data_nodes[Idx1];
           assign gnt_nodes[Idx1]   = gnt_nodes[Idx0] & ~sel;
@@ -16595,13 +16595,13 @@ module cva6
     bit'(RVD),
     bit'(FpPresent),
     bit'(NSX),
-    unsigned'(FLen),
+    $unsigned(FLen),
     bit'(RVFVec),
     bit'(XF16Vec),
     bit'(XF16ALTVec),
     bit'(XF8Vec),
-    unsigned'(NrRgprPorts),
-    unsigned'(NrWbPorts),
+    $unsigned(NrRgprPorts),
+    $unsigned(NrWbPorts),
     bit'(EnableAccelerator),
     CVA6Cfg.HaltAddress,
     CVA6Cfg.ExceptionAddress,
@@ -18191,7 +18191,7 @@ module fpu_wrap
 
     // Features (enabled formats, vectors etc.)
     localparam fpnew_pkg::fpu_features_t FPU_FEATURES = '{
-        Width: unsigned'(riscv::XLEN),  // parameterized using XLEN
+        Width: $unsigned(riscv::XLEN),  // parameterized using XLEN
         EnableVectors: CVA6Cfg.XFVec,
         EnableNanBox: 1'b1,
         FpFmtMask: {CVA6Cfg.RVF, CVA6Cfg.RVD, CVA6Cfg.XF16, CVA6Cfg.XF8, CVA6Cfg.XF16ALT},
@@ -18207,15 +18207,15 @@ module fpu_wrap
     localparam fpnew_pkg::fpu_implementation_t FPU_IMPLEMENTATION = '{
         PipeRegs: '{  // FP32, FP64, FP16, FP8, FP16alt
             '{
-                unsigned'(LAT_COMP_FP32),
-                unsigned'(LAT_COMP_FP64),
-                unsigned'(LAT_COMP_FP16),
-                unsigned'(LAT_COMP_FP8),
-                unsigned'(LAT_COMP_FP16ALT)
+                $unsigned(LAT_COMP_FP32),
+                $unsigned(LAT_COMP_FP64),
+                $unsigned(LAT_COMP_FP16),
+                $unsigned(LAT_COMP_FP8),
+                $unsigned(LAT_COMP_FP16ALT)
             },  // ADDMUL
-            '{default: unsigned'(LAT_DIVSQRT)},  // DIVSQRT
-            '{default: unsigned'(LAT_NONCOMP)},  // NONCOMP
-            '{default: unsigned'(LAT_CONV)}
+            '{default: $unsigned(LAT_DIVSQRT)},  // DIVSQRT
+            '{default: $unsigned(LAT_NONCOMP)},  // NONCOMP
+            '{default: $unsigned(LAT_CONV)}
         },  // CONV
         UnitTypes: '{
             '{default: fpnew_pkg::PARALLEL},  // ADDMUL
@@ -23355,25 +23355,55 @@ endmodule
 // Furthermore we need to handle the case if we want to start fetching from an unaligned
 // instruction e.g. a branch.
 
+// Copyright 2018 - 2019 ETH Zurich and University of Bologna.
+// Copyright and related rights are licensed under the Solderpad Hardware
+// License, Version 0.51 (the "License"); you may not use this file except in
+// compliance with the License.  You may obtain a copy of the License at
+// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
+// or agreed to in writing, software, hardware and materials distributed under
+// this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+// CONDITIONS OF ANY KIND, either express or implied. See the License for the
+// specific language governing permissions and limitations under the License.
+//
+// Author: Florian Zaruba <zarubaf@iis.ee.ethz.ch>
+// Description: Instruction Re-aligner
+//
+// This module takes cache blocks and extracts the instructions.
+// As we are supporting the compressed instruction set extension, in a 32 bit instruction word
+// are up to 2 compressed instructions.
+// Furthermore those instructions can be arbitrarily interleaved which makes it possible to fetch
+// only the lower part of a 32 bit instruction.
+// Furthermore we need to handle the case if we want to start fetching from an unaligned
+// instruction e.g. a branch.
 
 module instr_realign
   import ariane_pkg::*;
 #(
     parameter config_pkg::cva6_cfg_t CVA6Cfg = config_pkg::cva6_cfg_empty
 ) (
+    // Subsystem Clock - SUBSYSTEM
     input logic clk_i,
+    // Asynchronous reset active low - SUBSYSTEM
     input logic rst_ni,
+    // Fetch flush request - CONTROLLER
     input logic flush_i,
+    // 32-bit block is valid - CACHE
     input logic valid_i,
-    output logic serving_unaligned_o,  // we have an unaligned instruction in [0]
+    // Instruction is unaligned - FRONTEND
+    output logic serving_unaligned_o,
+    // 32-bit block address - CACHE
     input logic [riscv::VLEN-1:0] address_i,
+    // 32-bit block - CACHE
     input logic [FETCH_WIDTH-1:0] data_i,
+    // instruction is valid - FRONTEND
     output logic [INSTR_PER_FETCH-1:0] valid_o,
+    // Instruction address - FRONTEND
     output logic [INSTR_PER_FETCH-1:0][riscv::VLEN-1:0] addr_o,
+    // Instruction - instr_scan&instr_queue
     output logic [INSTR_PER_FETCH-1:0][31:0] instr_o
 );
   // as a maximum we support a fetch width of 64-bit, hence there can be 4 compressed instructions
-  logic [3:0] instr_is_compressed;
+  logic [INSTR_PER_FETCH-1:0] instr_is_compressed;
 
   for (genvar i = 0; i < INSTR_PER_FETCH; i++) begin
     // LSB != 2'b11
@@ -23397,13 +23427,14 @@ module instr_realign
       unaligned_instr_d = data_i[31:16];
 
       valid_o[0] = valid_i;
-      instr_o[0] = (unaligned_q) ? {data_i[15:0], unaligned_instr_q} : data_i[31:0];
-      addr_o[0] = (unaligned_q) ? unaligned_address_q : address_i;
+      instr_o[0] = unaligned_q ? {data_i[15:0], unaligned_instr_q} : data_i[31:0];
+      addr_o[0] = unaligned_q ? unaligned_address_q : address_i;
 
-      valid_o[1] = 1'b0;
-      instr_o[1] = '0;
-      addr_o[1] = {address_i[riscv::VLEN-1:2], 2'b10};
-
+      if (INSTR_PER_FETCH != 1) begin
+        valid_o[INSTR_PER_FETCH-1] = 1'b0;
+        instr_o[INSTR_PER_FETCH-1] = '0;
+        addr_o[INSTR_PER_FETCH-1]  = {address_i[riscv::VLEN-1:2], 2'b10};
+      end
       // this instruction is compressed or the last instruction was unaligned
       if (instr_is_compressed[0] || unaligned_q) begin
         // check if this is instruction is still unaligned e.g.: it is not compressed
@@ -23412,10 +23443,10 @@ module instr_realign
         // if it is compressed the next fetch will contain an aligned instruction
         // is instruction 1 also compressed
         // yes? -> no problem, no -> we've got an unaligned instruction
-        if (instr_is_compressed[1]) begin
+        if (instr_is_compressed[INSTR_PER_FETCH-1] && CVA6Cfg.RVC) begin
           unaligned_d = 1'b0;
-          valid_o[1]  = valid_i;
-          instr_o[1]  = {16'b0, data_i[31:16]};
+          valid_o[INSTR_PER_FETCH-1] = valid_i;
+          instr_o[INSTR_PER_FETCH-1] = {16'b0, data_i[31:16]};
         end else begin
           // save the upper bits for next cycle
           unaligned_d = 1'b1;
@@ -23435,241 +23466,235 @@ module instr_realign
           unaligned_instr_d = data_i[15:0];
           // the instruction isn't compressed but only the lower is ready
         end else begin
-          valid_o = 1'b1;
+          valid_o = {{INSTR_PER_FETCH - 1{1'b0}}, 1'b1};
         end
       end
     end
-    // TODO(zarubaf): Fix 64 bit FETCH_WIDTH, maybe generalize to arbitrary fetch width
   end else if (FETCH_WIDTH == 64) begin : realign_bp_64
-    initial begin
-      $error("Not propperly implemented");
-    end
     always_comb begin : re_align
-      unaligned_d = unaligned_q;
+      unaligned_d         = 1'b0;
       unaligned_address_d = unaligned_address_q;
-      unaligned_instr_d = unaligned_instr_q;
+      unaligned_instr_d   = unaligned_instr_q;
 
-      valid_o    = '0;
-      valid_o[0] = valid_i;
+      valid_o             = '0;
+      instr_o[0]          = '0;
+      addr_o[0]           = '0;
+      instr_o[1]          = '0;
+      addr_o[1]           = '0;
+      instr_o[2]          = '0;
+      addr_o[2]           = '0;
+      instr_o[3]          = {16'b0, data_i[63:48]};
+      addr_o[3]           = {address_i[riscv::VLEN-1:3], 3'b110};
 
-      instr_o[0] = data_i[31:0];
-      addr_o[0]  = address_i;
-
-      instr_o[1] = '0;
-      addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b010};
-
-      instr_o[2] = {16'b0, data_i[47:32]};
-      addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b100};
-
-      instr_o[3] = {16'b0, data_i[63:48]};
-      addr_o[3]  = {address_i[riscv::VLEN-1:3], 3'b110};
-
-      // last instruction was unaligned
-      if (unaligned_q) begin
-        instr_o[0] = {data_i[15:0], unaligned_instr_q};
-        addr_o[0]  = unaligned_address_q;
-        // for 64 bit there exist the following options:
-        //     64      32      0
-        //     | 3 | 2 | 1 | 0 | <- instruction slot
-        // |   I   |   I   |   U   | -> again unaligned
-        // | * | C |   I   |   U   | -> aligned
-        // | * |   I   | C |   U   | -> aligned
-        // |   I   | C | C |   U   | -> again unaligned
-        // | * | C | C | C |   U   | -> aligned
-        // Legend: C = compressed, I = 32 bit instruction, U = unaligned upper half
-        //         * = don't care
-        if (instr_is_compressed[1]) begin
-          instr_o[1] = {16'b0, data_i[31:16]};
-          valid_o[1] = valid_i;
-
-          if (instr_is_compressed[2]) begin
-            if (instr_is_compressed[3]) begin
-              unaligned_d = 1'b0;
-              valid_o[3]  = valid_i;
-            end else begin
-              // continues to be unaligned
-            end
-          end else begin
-            unaligned_d = 1'b0;
-            instr_o[2]  = data_i[63:32];
-            valid_o[2]  = valid_i;
-          end
-          // instruction 1 is not compressed
-        end else begin
-          instr_o[1] = data_i[47:16];
-          valid_o[1] = valid_i;
-          addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b110};
-          if (instr_is_compressed[2]) begin
-            unaligned_d = 1'b0;
-            instr_o[2]  = {16'b0, data_i[63:48]};
-            valid_o[2]  = valid_i;
-          end else begin
-            // continues to be unaligned
-          end
-        end
-      end else if (instr_is_compressed[0]) begin  // instruction zero is RVC
-        //     64     32       0
-        //     | 3 | 2 | 1 | 0 | <- instruction slot
-        // |   I   |   I   | C | -> again unaligned
-        // | * | C |   I   | C | -> aligned
-        // | * |   I   | C | C | -> aligned
-        // |   I   | C | C | C | -> again unaligned
-        // | * | C | C | C | C | -> aligned
-        if (instr_is_compressed[1]) begin
-          instr_o[1] = {16'b0, data_i[31:16]};
-          valid_o[1] = valid_i;
-
-          if (instr_is_compressed[2]) begin
-            valid_o[2] = valid_i;
-            if (instr_is_compressed[3]) begin
-              valid_o[3] = valid_i;
-            end else begin
-              // this instruction is unaligned
-              unaligned_d = 1'b1;
-              unaligned_instr_d = data_i[63:48];
-              unaligned_address_d = addr_o[3];
-            end
-          end else begin
-            instr_o[2] = data_i[63:32];
-            valid_o[2] = valid_i;
-          end
-          // instruction 1 is not compressed -> check slot 3
-        end else begin
-          instr_o[1] = data_i[47:16];
-          valid_o[1] = valid_i;
-          addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b110};
-          if (instr_is_compressed[3]) begin
-            instr_o[2] = data_i[63:48];
-            valid_o[2] = valid_i;
-          end else begin
-            unaligned_d = 1'b1;
-            unaligned_instr_d = data_i[63:48];
-            unaligned_address_d = addr_o[2];
-          end
-        end
-
-        // Full instruction in slot zero
-        //     64     32       0
-        //     | 3 | 2 | 1 | 0 | <- instruction slot
-        // |   I   | C |   I   |
-        // | * | C | C |   I   |
-        // | * |   I   |   I   |
-      end else begin
-        addr_o[1] = {address_i[riscv::VLEN-1:3], 3'b100};
-
-        if (instr_is_compressed[2]) begin
-          instr_o[1] = {16'b0, data_i[47:32]};
-          valid_o[1] = valid_i;
-          addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b110};
-          if (instr_is_compressed[3]) begin
-            // | * | C | C |   I   |
-            valid_o[2] = valid_i;
-            addr_o[2]  = {16'b0, data_i[63:48]};
-          end else begin
-            // this instruction is unaligned
-            unaligned_d = 1'b1;
-            unaligned_instr_d = data_i[63:48];
-            unaligned_address_d = addr_o[2];
-          end
-        end else begin
-          // two regular instructions back-to-back
-          instr_o[1] = data_i[63:32];
-          valid_o[1] = valid_i;
-        end
-      end
-
-      // --------------------------
-      // Unaligned fetch
-      // --------------------------
-      // Address was not 64 bit aligned
       case (address_i[2:1])
-        // this means the previouse instruction was either compressed or unaligned
-        // in any case we don't ccare
-        2'b01: begin
-          //     64     32       0
-          //     | 3 | 2 | 1 | 0 | <- instruction slot
-          // |   I   |   I   | x  -> again unaligned
-          // | * | C |   I   | x  -> aligned
-          // | * |   I   | C | x  -> aligned
-          // |   I   | C | C | x  -> again unaligned
-          // | * | C | C | C | x  -> aligned
-          addr_o[0] = {address_i[riscv::VLEN-1:3], 3'b010};
+        2'b00: begin
+          valid_o[0]  = valid_i;
+          valid_o[1]  = valid_i;
 
-          if (instr_is_compressed[1]) begin
-            instr_o[0] = {16'b0, data_i[31:16]};
-            valid_o[0] = valid_i;
+          unaligned_d = unaligned_q;
+
+          // last instruction was unaligned
+          // TODO how are jumps + unaligned managed?
+          if (unaligned_q) begin
+            // for 64 bit there exist the following options:
+            //     64  48  32  16  0
+            //     | 3 | 2 | 1 | 0 | <- instruction slot
+            // |   I   |   I   |   U   | -> again unaligned
+            // | * | C |   I   |   U   | -> aligned
+            // | * |   I   | C |   U   | -> aligned
+            // |   I   | C | C |   U   | -> again unaligned
+            // | * | C | C | C |   U   | -> aligned
+            // Legend: C = compressed, I = 32 bit instruction, U = unaligned upper half
+
+            instr_o[0] = {data_i[15:0], unaligned_instr_q};
+            addr_o[0]  = unaligned_address_q;
+
+            instr_o[1] = data_i[47:16];
+            addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b010};
+
+            if (instr_is_compressed[1]) begin
+              instr_o[2] = data_i[63:32];
+              addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b100};
+              valid_o[2] = valid_i;
+
+              if (instr_is_compressed[2]) begin
+                if (instr_is_compressed[3]) begin
+                  unaligned_d = 1'b0;
+                  valid_o[3]  = valid_i;
+                end else begin
+                  unaligned_instr_d   = instr_o[3];
+                  unaligned_address_d = addr_o[3];
+                end
+              end else begin
+                unaligned_d = 1'b0;
+                valid_o[2]  = valid_i;
+              end
+            end else begin
+              instr_o[2] = instr_o[3];
+              addr_o[2]  = addr_o[3];
+              if (instr_is_compressed[3]) begin
+                unaligned_d = 1'b0;
+                valid_o[2]  = valid_i;
+              end else begin
+                unaligned_instr_d   = instr_o[3];
+                unaligned_address_d = addr_o[3];
+              end
+            end
+          end else begin
+            instr_o[0] = data_i[31:0];
+            addr_o[0]  = address_i;
+
+            if (instr_is_compressed[0]) begin
+              instr_o[1] = data_i[47:16];
+              addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b010};
+
+              //     64  48  32  16  0
+              //     | 3 | 2 | 1 | 0 | <- instruction slot
+              // |   I   |   I   | C | -> again unaligned
+              // | * | C |   I   | C | -> aligned
+              // | * |   I   | C | C | -> aligned
+              // |   I   | C | C | C | -> again unaligned
+              // | * | C | C | C | C | -> aligned
+              if (instr_is_compressed[1]) begin
+                instr_o[2] = data_i[63:32];
+                addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b100};
+                valid_o[2] = valid_i;
+
+                if (instr_is_compressed[2]) begin
+                  if (instr_is_compressed[3]) begin
+                    valid_o[3] = valid_i;
+                  end else begin
+                    unaligned_d         = 1'b1;
+                    unaligned_instr_d   = instr_o[3];
+                    unaligned_address_d = addr_o[3];
+                  end
+                end
+              end else begin
+                instr_o[2] = instr_o[3];
+                addr_o[2]  = addr_o[3];
+
+                if (instr_is_compressed[3]) begin
+                  valid_o[2] = valid_i;
+                end else begin
+                  unaligned_d         = 1'b1;
+                  unaligned_instr_d   = instr_o[3];
+                  unaligned_address_d = addr_o[3];
+                end
+              end
+            end else begin
+              //     64     32       0
+              //     | 3 | 2 | 1 | 0 | <- instruction slot
+              // |   I   | C |   I   |
+              // | * | C | C |   I   |
+              // | * |   I   |   I   |
+              instr_o[1] = data_i[63:32];
+              addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b100};
+
+              instr_o[2] = instr_o[3];
+              addr_o[2]  = addr_o[3];
+
+              if (instr_is_compressed[2]) begin
+                if (instr_is_compressed[3]) begin
+                  valid_o[2] = valid_i;
+                end else begin
+                  unaligned_d         = 1'b1;
+                  unaligned_instr_d   = instr_o[3];
+                  unaligned_address_d = addr_o[3];
+                end
+              end
+            end
+          end
+        end
+        // this means the previous instruction was either compressed or unaligned
+        // in any case we don't care
+        // TODO input is actually right-shifted so the code below is wrong
+        2'b01: begin
+          // 64  48  32  16  0
+          // | 3 | 2 | 1 | 0 | <- instruction slot
+          // |   I   |   I   | -> again unaligned
+          // | * | C |   I   | -> aligned
+          // | * |   I   | C | -> aligned
+          // |   I   | C | C | -> again unaligned
+          // | * | C | C | C | -> aligned
+          //   000 110 100 010 <- unaligned address
+
+          instr_o[0] = data_i[31:0];
+          addr_o[0]  = {address_i[riscv::VLEN-1:3], 3'b010};
+          valid_o[0] = valid_i;
+
+          instr_o[2] = data_i[63:32];
+          addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b110};
+
+          if (instr_is_compressed[0]) begin
+            instr_o[1] = data_i[47:16];
+            addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b100};
+            valid_o[1] = valid_i;
+
+            if (instr_is_compressed[1]) begin
+              if (instr_is_compressed[2]) begin
+                valid_o[2] = valid_i;
+              end else begin
+                unaligned_d         = 1'b1;
+                unaligned_instr_d   = instr_o[2];
+                unaligned_address_d = addr_o[2];
+              end
+            end
+          end else begin
+            instr_o[1] = instr_o[2];
+            addr_o[1]  = addr_o[2];
 
             if (instr_is_compressed[2]) begin
               valid_o[1] = valid_i;
-              instr_o[1] = {16'b0, data_i[47:32]};
-              addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b100};
-              if (instr_is_compressed[3]) begin
-                instr_o[2] = {16'b0, data_i[63:48]};
-                addr_o[2]  = {address_i[riscv::VLEN-1:3], 3'b110};
-                valid_o[2] = valid_i;
-              end else begin
-                // this instruction is unaligned
-                unaligned_d = 1'b1;
-                unaligned_instr_d = data_i[63:48];
-                unaligned_address_d = addr_o[3];
-              end
             end else begin
-              instr_o[1] = data_i[63:32];
-              addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b100};
-              valid_o[1] = valid_i;
-            end
-            // instruction 1 is not compressed -> check slot 3
-          end else begin
-            instr_o[0] = data_i[47:16];
-            valid_o[0] = valid_i;
-            addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b110};
-            if (instr_is_compressed[3]) begin
-              instr_o[1] = data_i[63:48];
-              valid_o[1] = valid_i;
-            end else begin
-              unaligned_d = 1'b1;
-              unaligned_instr_d = data_i[63:48];
-              unaligned_address_d = addr_o[1];
+              unaligned_d         = 1'b1;
+              unaligned_instr_d   = instr_o[2];
+              unaligned_address_d = addr_o[2];
             end
           end
         end
         2'b10: begin
-          valid_o = '0;
-          //     64     32       0
-          //     | 3 | 2 | 1 | 0 | <- instruction slot
-          // |   I   | C |   *   | <- unaligned
-          //    | C  | C |   *   | <- aligned
-          //    |    I   |   *   | <- aligned
-          if (instr_is_compressed[2]) begin
-            valid_o[0] = valid_i;
-            instr_o[0] = data_i[47:32];
-            // second instruction is also compressed
-            if (instr_is_compressed[3]) begin
+          // 64  48  32  16  0
+          // | 3 | 2 | 1 | 0 | <- instruction slot
+          // | * |   I   | C | <- unaligned
+          // |   *   | C | C | <- aligned
+          // |   *   |   I   | <- aligned
+          //      1000 110 100 <- unaligned address
+
+          instr_o[0] = data_i[31:0];
+          addr_o[0]  = {address_i[riscv::VLEN-1:3], 3'b100};
+          valid_o[0] = valid_i;
+
+          instr_o[1] = data_i[47:16];
+          addr_o[1]  = {address_i[riscv::VLEN-1:3], 3'b110};
+
+          if (instr_is_compressed[0]) begin
+            if (instr_is_compressed[1]) begin
               valid_o[1] = valid_i;
-              instr_o[1] = data_i[63:48];
-              // regular instruction -> unaligned
             end else begin
-              unaligned_d = 1'b1;
-              unaligned_address_d = {address_i[riscv::VLEN-1:3], 3'b110};
-              unaligned_instr_d = data_i[63:48];
+              unaligned_d         = 1'b1;
+              unaligned_instr_d   = instr_o[1];
+              unaligned_address_d = addr_o[1];
             end
-            // instruction is a regular instruction
-          end else begin
-            valid_o[0] = valid_i;
-            instr_o[0] = data_i[63:32];
-            addr_o[0]  = address_i;
           end
         end
         // we started to fetch on a unaligned boundary with a whole instruction -> wait until we've
         // received the next instruction
         2'b11: begin
-          valid_o = '0;
-          if (!instr_is_compressed[3]) begin
-            unaligned_d = 1'b1;
-            unaligned_address_d = {address_i[riscv::VLEN-1:3], 3'b110};
-            unaligned_instr_d = data_i[63:48];
+          //     64  48  32  16  0
+          // | 3 | 2 | 1 | 0 | <- instruction slot
+          // |   *   |   I   | <- unaligned
+          // |     *     | C | <- aligned
+          //          1000 110 <- unaligned address
+
+          instr_o[0] = data_i[31:0];
+          addr_o[0]  = {address_i[riscv::VLEN-1:3], 3'b110};
+
+          if (instr_is_compressed[0]) begin
+            valid_o[0] = valid_i;
           end else begin
-            valid_o[3] = valid_i;
+            unaligned_d         = 1'b1;
+            unaligned_instr_d   = instr_o[0];
+            unaligned_address_d = addr_o[0];
           end
         end
       endcase
@@ -23695,7 +23720,6 @@ module instr_realign
     end
   end
 endmodule
-
 
 // C:/code/cva6-softcore-contest/core/id_stage.sv
 // Copyright 2018 ETH Zurich and University of Bologna.
@@ -26754,10 +26778,11 @@ module ariane_regfile_fpga #(
 
   localparam ADDR_WIDTH = 5;
   localparam NUM_WORDS = 2 ** ADDR_WIDTH;
-  localparam LOG_NR_WRITE_PORTS = CVA6Cfg.NrCommitPorts == 1 ? 1 : $clog2(CVA6Cfg.NrCommitPorts);
+  //localparam LOG_NR_WRITE_PORTS = CVA6Cfg.NrCommitPorts == 1 ? 1 : $clog2(CVA6Cfg.NrCommitPorts);
+  localparam LOG_NR_WRITE_PORTS = 1;
 
   // Distributed RAM usually supports one write port per block - duplicate for each write port.
-  logic [            NUM_WORDS-1:0][        DATA_WIDTH-1:0] mem             [CVA6Cfg.NrCommitPorts];
+  logic [            2-1:0][        64-1:0] mem             [1];
 
   logic [CVA6Cfg.NrCommitPorts-1:0][         NUM_WORDS-1:0] we_dec;
   logic [            NUM_WORDS-1:0][LOG_NR_WRITE_PORTS-1:0] mem_block_sel;
@@ -26785,7 +26810,8 @@ module ariane_regfile_fpga #(
     for (int i = 0; i < NUM_WORDS; i++) begin
       for (int j = 0; j < CVA6Cfg.NrCommitPorts; j++) begin
         if (we_dec[j][i] == 1'b1) begin
-          mem_block_sel[i] = LOG_NR_WRITE_PORTS'(j);
+          //mem_block_sel[i] = LOG_NR_WRITE_PORTS'(j);
+          mem_block_sel[i] = 1;
         end
       end
     end
@@ -26801,7 +26827,7 @@ module ariane_regfile_fpga #(
   end
 
   // distributed RAM blocks
-  logic [NR_READ_PORTS-1:0][DATA_WIDTH-1:0] mem_read[CVA6Cfg.NrCommitPorts];
+  logic [2-1:0][64-1:0] mem_read[1];
   for (genvar j = 0; j < CVA6Cfg.NrCommitPorts; j++) begin : regfile_ram_block
     always_ff @(posedge clk_i) begin
       if (we_i[j] && ~waddr_i[j] != 0) begin
@@ -27062,7 +27088,7 @@ module scoreboard #(
 
   // precompute offsets for commit slots
   for (genvar k = 1; k < CVA6Cfg.NrCommitPorts; k++) begin : gen_cnt_incr
-    assign commit_pointer_n[k] = (flush_i) ? '0 : commit_pointer_n[0] + unsigned'(k);
+    assign commit_pointer_n[k] = (flush_i) ? '0 : commit_pointer_n[0] + $unsigned(k);
   end
 
   // -------------------
@@ -27146,7 +27172,7 @@ module scoreboard #(
   logic rs1_valid, rs2_valid, rs3_valid;
 
   // WB ports have higher prio than entries
-  for (genvar k = 0; unsigned'(k) < CVA6Cfg.NrWbPorts; k++) begin : gen_rs_wb
+  for (genvar k = 0; $unsigned(k) < CVA6Cfg.NrWbPorts; k++) begin : gen_rs_wb
     assign rs1_fwd_req[k] = (mem_q[trans_id_i[k]].sbe.rd == rs1_i) & wt_valid_i[k] & (~ex_i[k].valid) & (mem_q[trans_id_i[k]].is_rd_fpr_flag == (CVA6Cfg.FpPresent && ariane_pkg::is_rs1_fpr(
         issue_instr_o.op
     )));
@@ -27158,7 +27184,7 @@ module scoreboard #(
     )));
     assign rs_data[k] = wbdata_i[k];
   end
-  for (genvar k = 0; unsigned'(k) < NR_ENTRIES; k++) begin : gen_rs_entries
+  for (genvar k = 0; $unsigned(k) < NR_ENTRIES; k++) begin : gen_rs_entries
     assign rs1_fwd_req[k+CVA6Cfg.NrWbPorts] = (mem_q[k].sbe.rd == rs1_i) & mem_q[k].issued & mem_q[k].sbe.valid & (mem_q[k].is_rd_fpr_flag == (CVA6Cfg.FpPresent && ariane_pkg::is_rs1_fpr(
         issue_instr_o.op
     )));
@@ -28627,9 +28653,7 @@ module cva6_accel_first_pass_decoder
   assign illegal_instr_o         = 1'b0;
   assign is_control_flow_instr_o = 1'b0;
 
-  $error("cva6_accel_first_pass_decoder: instantiated non-functional module stub.\
-          Please replace this with your accelerator's first pass decoder \
-          (or unset ENABLE_ACCELERATOR).");
+  $error("cva6_accel_first_pass_decoder");
 
 endmodule : cva6_accel_first_pass_decoder
 
@@ -31173,7 +31197,8 @@ module wt_dcache_mem
   if (CVA6Cfg.NOCType == config_pkg::NOC_TYPE_AXI4_ATOP) begin : gen_axi_offset
     // In case of an uncached read, return the desired XLEN-bit segment of the most recent AXI read
     assign wr_cl_off     = (wr_cl_nc_i) ? (CVA6Cfg.AxiDataWidth == riscv::XLEN) ? '0 :
-                              {{DCACHE_OFFSET_WIDTH-AXI_OFFSET_WIDTH{1'b0}}, wr_cl_off_i[AXI_OFFSET_WIDTH-1:riscv::XLEN_ALIGN_BYTES]} :
+                      //        {{DCACHE_OFFSET_WIDTH-AXI_OFFSET_WIDTH{1'b0}}, wr_cl_off_i[AXI_OFFSET_WIDTH-1:riscv::XLEN_ALIGN_BYTES]} :
+                              {{DCACHE_OFFSET_WIDTH-AXI_OFFSET_WIDTH{1'b0}}, wr_cl_off_i[3-1:2]} :
                               wr_cl_off_i[DCACHE_OFFSET_WIDTH-1:riscv::XLEN_ALIGN_BYTES];
   end else begin : gen_piton_offset
     assign wr_cl_off = wr_cl_off_i[DCACHE_OFFSET_WIDTH-1:3];
@@ -33834,9 +33859,10 @@ module wt_axi_adapter
 );
 
   // support up to 512bit cache lines
-  localparam AxiNumWords = (ariane_pkg::ICACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth) * (ariane_pkg::ICACHE_LINE_WIDTH > ariane_pkg::DCACHE_LINE_WIDTH)  +
-                           (ariane_pkg::DCACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth) * (ariane_pkg::ICACHE_LINE_WIDTH <= ariane_pkg::DCACHE_LINE_WIDTH) ;
+//  localparam AxiNumWords = (ariane_pkg::ICACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth) * (ariane_pkg::ICACHE_LINE_WIDTH > ariane_pkg::DCACHE_LINE_WIDTH)  +
+//                           (ariane_pkg::DCACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth) * (ariane_pkg::ICACHE_LINE_WIDTH <= ariane_pkg::DCACHE_LINE_WIDTH) ;
 
+  localparam AxiNumWords = (128/64) * (128 > 128) + (128/64) * (128 <= 128) ; // 2
 
   ///////////////////////////////////////////////////////
   // request path
@@ -33941,9 +33967,9 @@ module wt_axi_adapter
       // Cast to AXI address width
       axi_rd_addr = dcache_data.paddr;
       // If dcache_data.size MSB is set, we want to read as much as possible
-      axi_rd_size = dcache_data.size[2] ? $clog2(CVA6Cfg.AxiDataWidth / 8) : dcache_data.size;
+      axi_rd_size = dcache_data.size[2] ? $clog2(64 / 8) : dcache_data.size;
       if (dcache_data.size[2]) begin
-        axi_rd_blen = ariane_pkg::DCACHE_LINE_WIDTH / CVA6Cfg.AxiDataWidth - 1;
+        axi_rd_blen = 128 / 64 - 1;
       end
     end else begin
       // Cast to AXI address width
@@ -33951,7 +33977,7 @@ module wt_axi_adapter
       axi_rd_size =
           $clog2(CVA6Cfg.AxiDataWidth / 8);  // always request max number of words in case of ifill
       if (!icache_data.nc) begin
-        axi_rd_blen = ariane_pkg::ICACHE_LINE_WIDTH / CVA6Cfg.AxiDataWidth - 1;
+        axi_rd_blen = 128 / 64 - 1;
       end
     end
 
@@ -33978,13 +34004,13 @@ module wt_axi_adapter
             axi_wr_be  = '0;
             unique case (dcache_data.size[1:0])
               2'b00:
-              axi_wr_be[0][dcache_data.paddr[$clog2(CVA6Cfg.AxiDataWidth/8)-1:0]] = '1;  // byte
+              axi_wr_be[0][dcache_data.paddr[$clog2(64/8)-1:0]] = '1;  // byte
               2'b01:
-              axi_wr_be[0][dcache_data.paddr[$clog2(CVA6Cfg.AxiDataWidth/8)-1:0]+:2] = '1;  // hword
+              axi_wr_be[0][dcache_data.paddr[$clog2(64/8)-1:0]+:2] = '1;  // hword
               2'b10:
-              axi_wr_be[0][dcache_data.paddr[$clog2(CVA6Cfg.AxiDataWidth/8)-1:0]+:4] = '1;  // word
+              axi_wr_be[0][dcache_data.paddr[$clog2(64/8)-1:0]+:4] = '1;  // word
               default:
-              axi_wr_be[0][dcache_data.paddr[$clog2(CVA6Cfg.AxiDataWidth/8)-1:0]+:8] = '1;  // dword
+              axi_wr_be[0][dcache_data.paddr[$clog2(64/8)-1:0]+:8] = '1;  // dword
             endcase
           end
           //////////////////////////////////////
@@ -34174,13 +34200,14 @@ module wt_axi_adapter
 
   // buffer read responses in shift regs
   logic icache_first_d, icache_first_q, dcache_first_d, dcache_first_q;
-  logic [ICACHE_USER_LINE_WIDTH/CVA6Cfg.AxiUserWidth-1:0][CVA6Cfg.AxiUserWidth-1:0]
+  //logic [ICACHE_USER_LINE_WIDTH/CVA6Cfg.AxiUserWidth-1:0][CVA6Cfg.AxiUserWidth-1:0]
+  logic [128/32-1:0][CVA6Cfg.AxiUserWidth-1:0]
       icache_rd_shift_user_d, icache_rd_shift_user_q;
-  logic [DCACHE_USER_LINE_WIDTH/CVA6Cfg.AxiUserWidth-1:0][CVA6Cfg.AxiUserWidth-1:0]
+  logic [128/32-1:0][CVA6Cfg.AxiUserWidth-1:0]
       dcache_rd_shift_user_d, dcache_rd_shift_user_q;
-  logic [ICACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth-1:0][CVA6Cfg.AxiDataWidth-1:0]
+  logic [128/32-1:0][CVA6Cfg.AxiDataWidth-1:0]
       icache_rd_shift_d, icache_rd_shift_q;
-  logic [DCACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth-1:0][CVA6Cfg.AxiDataWidth-1:0]
+  logic [128/32-1:0][CVA6Cfg.AxiDataWidth-1:0]
       dcache_rd_shift_d, dcache_rd_shift_q;
   wt_cache_pkg::dcache_in_t dcache_rtrn_type_d, dcache_rtrn_type_q;
   wt_cache_pkg::dcache_inval_t dcache_rtrn_inv_d, dcache_rtrn_inv_q;
@@ -34217,11 +34244,11 @@ module wt_axi_adapter
         icache_rd_shift_d = axi_rd_data;
       end else begin
         icache_rd_shift_d = {
-          axi_rd_data, icache_rd_shift_q[ICACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth-1:1]
+          axi_rd_data, icache_rd_shift_q[128/64-1:1]
         };
       end
       icache_rd_shift_user_d = {
-        axi_rd_user, icache_rd_shift_user_q[ICACHE_USER_LINE_WIDTH/CVA6Cfg.AxiUserWidth-1:1]
+        axi_rd_user, icache_rd_shift_user_q[128/32-1:1]
       };
       // if this is a single word transaction, we need to make sure that word is placed at offset 0
       if (icache_first_q) begin
@@ -34236,11 +34263,11 @@ module wt_axi_adapter
         dcache_rd_shift_d = axi_rd_data;
       end else begin
         dcache_rd_shift_d = {
-          axi_rd_data, dcache_rd_shift_q[DCACHE_LINE_WIDTH/CVA6Cfg.AxiDataWidth-1:1]
+          axi_rd_data, dcache_rd_shift_q[128/64-1:1]
         };
       end
       dcache_rd_shift_user_d = {
-        axi_rd_user, dcache_rd_shift_user_q[DCACHE_USER_LINE_WIDTH/CVA6Cfg.AxiUserWidth-1:1]
+        axi_rd_user, dcache_rd_shift_user_q[128/32-1:1]
       };
       // if this is a single word transaction, we need to make sure that word is placed at offset 0
       if (dcache_first_q) begin
@@ -62613,7 +62640,7 @@ module axi_err_slv #(
 
   fifo_v3 #(
     .FALL_THROUGH ( 1'b0         ),
-    .DEPTH        ( unsigned'(2) ), // two placed so that w can eat beats if b is not sent
+    .DEPTH        ( $unsigned(2) ), // two placed so that w can eat beats if b is not sent
     .dtype        ( id_t         )
   ) i_b_fifo (
     .clk_i      ( clk_i        ),
@@ -65386,1818 +65413,5 @@ endmodule
 `endif
 
 
-
-
-// C:/code/cva6-softcore-contest/corev_apu/tb/ariane_testharness.sv
-// Copyright 2018 ETH Zurich and University of Bologna.
-// Copyright and related rights are licensed under the Solderpad Hardware
-// License, Version 0.51 (the "License"); you may not use this file except in
-// compliance with the License.  You may obtain a copy of the License at
-// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
-// or agreed to in writing, software, hardware and materials distributed under
-// this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-// CONDITIONS OF ANY KIND, either express or implied. See the License for the
-// specific language governing permissions and limitations under the License.
-//
-// Author: Florian Zaruba, ETH Zurich
-// Date: 19.03.2017
-//
-// Additional contributions by:
-//         Sebastien Jacq - sjthales on github.com
-//
-// Description: Test-harness for Ariane
-//              Instantiates an AXI-Bus and memories
-//
-// =========================================================================== //
-// Revisions  :
-// Date        Version  Author       Description
-// 2020-10-06  0.1      S.Jacq       modification for CVA6 softcore
-// =========================================================================== //
-
-`include "axi/assign.svh"
-
-module ariane_testharness #(
-  parameter config_pkg::cva6_cfg_t CVA6Cfg = cva6_config_pkg::cva6_cfg,
-  parameter bit IsRVFI = bit'(cva6_config_pkg::CVA6ConfigRvfiTrace),
-  parameter type rvfi_instr_t = struct packed {
-    logic [config_pkg::NRET-1:0]                  valid;
-    logic [config_pkg::NRET*64-1:0]               order;
-    logic [config_pkg::NRET*config_pkg::ILEN-1:0] insn;
-    logic [config_pkg::NRET-1:0]                  trap;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      cause;
-    logic [config_pkg::NRET-1:0]                  halt;
-    logic [config_pkg::NRET-1:0]                  intr;
-    logic [config_pkg::NRET*2-1:0]                mode;
-    logic [config_pkg::NRET*2-1:0]                ixl;
-    logic [config_pkg::NRET*5-1:0]                rs1_addr;
-    logic [config_pkg::NRET*5-1:0]                rs2_addr;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      rs1_rdata;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      rs2_rdata;
-    logic [config_pkg::NRET*5-1:0]                rd_addr;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      rd_wdata;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      pc_rdata;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      pc_wdata;
-    logic [config_pkg::NRET*riscv::VLEN-1:0]      mem_addr;
-    logic [config_pkg::NRET*riscv::PLEN-1:0]      mem_paddr;
-    logic [config_pkg::NRET*(riscv::XLEN/8)-1:0]  mem_rmask;
-    logic [config_pkg::NRET*(riscv::XLEN/8)-1:0]  mem_wmask;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      mem_rdata;
-    logic [config_pkg::NRET*riscv::XLEN-1:0]      mem_wdata;
-  },
-  //
-  parameter int unsigned AXI_USER_WIDTH    = ariane_pkg::AXI_USER_WIDTH,
-  parameter int unsigned AXI_USER_EN       = ariane_pkg::AXI_USER_EN,
-  parameter int unsigned AXI_ADDRESS_WIDTH = 64,
-  parameter int unsigned AXI_DATA_WIDTH    = 64,
-  parameter bit          InclSimDTM        = 1'b1,
-  parameter int unsigned NUM_WORDS         = 2**25,         // memory size
-  parameter bit          StallRandomOutput = 1'b0,
-  parameter bit          StallRandomInput  = 1'b0
-) (
-  input  logic        clk_i,
-  input  logic        rtc_i,
-  input  logic        rst_ni,
-  input  logic        jtag_TCK,
-  input  logic        jtag_TMS,
-  input  logic        jtag_TDI,
-  input  logic        jtag_TRSTn,
-  output logic        jtag_TDO_data,
-  output logic        jtag_TDO_driven
-);
-
-  localparam [7:0] hart_id = '0;
-
-  // disable test-enable
-  logic        test_en;
-  logic        ndmreset;
-  logic        ndmreset_n;
-  logic        debug_req_core;
-
-  int          jtag_enable;
-  logic        init_done;
-  logic [31:0] jtag_exit, dmi_exit;
-  logic [31:0] rvfi_exit;
-
-  /*logic        jtag_TCK;
-  logic        jtag_TMS;
-  logic        jtag_TDI;
-  logic        jtag_TRSTn;
-  logic        jtag_TDO_data;
-  logic        jtag_TDO_driven;*/
-
-  logic        debug_req_valid;
-  logic        debug_req_ready;
-  logic        debug_resp_valid;
-  logic        debug_resp_ready;
-
-  logic        jtag_req_valid;
-  logic [6:0]  jtag_req_bits_addr;
-  logic [1:0]  jtag_req_bits_op;
-  logic [31:0] jtag_req_bits_data;
-  logic        jtag_resp_ready;
-  logic        jtag_resp_valid;
-
-  logic        dmi_req_valid;
-  logic        dmi_resp_ready;
-  logic        dmi_resp_valid;
-
-  dm::dmi_req_t  jtag_dmi_req;
-  dm::dmi_req_t  dmi_req;
-
-  dm::dmi_req_t  debug_req;
-  dm::dmi_resp_t debug_resp;
-
-  assign test_en = 1'b0;
-
-  AXI_BUS #(
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH       ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH          ),
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidth ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH          )
-  ) slave[ariane_soc::NrSlaves-1:0]();
-
-  AXI_BUS #(
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH               )
-  ) master[ariane_soc::NB_PERIPHERALS-1:0]();
-
-  rstgen i_rstgen_main (
-    .clk_i        ( clk_i                ),
-    .rst_ni       ( rst_ni & (~ndmreset) ),
-    .test_mode_i  ( test_en              ),
-    .rst_no       ( ndmreset_n           ),
-    .init_no      (                      ) // keep open
-  );
-
-  // ---------------
-  // Debug
-  // ---------------
-  assign init_done = rst_ni;
-  
-  assign debug_req_valid     = jtag_req_valid;
-  assign debug_resp_ready    = jtag_resp_ready;
-  assign debug_req           = jtag_dmi_req;
-  assign jtag_resp_valid     = debug_resp_valid;
-
- /* logic debug_enable;
-  initial begin
-    if (!$value$plusargs("jtag_rbb_enable=%b", jtag_enable)) jtag_enable = 'h0;
-    if ($test$plusargs("debug_disable")) debug_enable = 'h0; else debug_enable = 'h1;
-    if (riscv::XLEN != 32 & riscv::XLEN != 64) $error("XLEN different from 32 and 64");
-  end
-
-  // debug if MUX
-  assign debug_req_valid     = (jtag_enable[0]) ? jtag_req_valid     : dmi_req_valid;
-  assign debug_resp_ready    = (jtag_enable[0]) ? jtag_resp_ready    : dmi_resp_ready;
-  assign debug_req           = (jtag_enable[0]) ? jtag_dmi_req       : dmi_req;
-  if (ariane_pkg::RVFI) begin
-    assign exit_o              = (jtag_enable[0]) ? jtag_exit          : rvfi_exit;
-  end else begin
-    assign exit_o              = (jtag_enable[0]) ? jtag_exit          : dmi_exit;
-  end
-  assign jtag_resp_valid     = (jtag_enable[0]) ? debug_resp_valid   : 1'b0;
-  assign dmi_resp_valid      = (jtag_enable[0]) ? 1'b0               : debug_resp_valid;*/
-/*
-  // SiFive's SimJTAG Module
-  // Converts to DPI calls
-  SimJTAG i_SimJTAG (
-    .clock                ( clk_i                ),
-    .reset                ( ~rst_ni              ),
-    .enable               ( jtag_enable[0]       ),
-    .init_done            ( init_done            ),
-    .jtag_TCK             ( jtag_TCK             ),
-    .jtag_TMS             ( jtag_TMS             ),
-    .jtag_TDI             ( jtag_TDI             ),
-    .jtag_TRSTn           ( jtag_TRSTn           ),
-    .jtag_TDO_data        ( jtag_TDO_data        ),
-    .jtag_TDO_driven      ( jtag_TDO_driven      ),
-    .exit                 ( jtag_exit            )
-  );
-*/
-  dmi_jtag i_dmi_jtag (
-    .clk_i            ( clk_i           ),
-    .rst_ni           ( rst_ni          ),
-    .testmode_i       ( test_en         ),
-    .dmi_req_o        ( jtag_dmi_req    ),
-    .dmi_req_valid_o  ( jtag_req_valid  ),
-    .dmi_req_ready_i  ( debug_req_ready ),
-    .dmi_resp_i       ( debug_resp      ),
-    .dmi_resp_ready_o ( jtag_resp_ready ),
-    .dmi_resp_valid_i ( jtag_resp_valid ),
-    .dmi_rst_no       (                 ), // not connected
-    .tck_i            ( jtag_TCK        ),
-    .tms_i            ( jtag_TMS        ),
-    .trst_ni          ( jtag_TRSTn      ),
-    .td_i             ( jtag_TDI        ),
-    .td_o             ( jtag_TDO_data   ),
-    .tdo_oe_o         ( jtag_TDO_driven )
-  );
-
- /* // SiFive's SimDTM Module
-  // Converts to DPI calls
-  logic [1:0] debug_req_bits_op;
-  assign dmi_req.op = dm::dtm_op_e'(debug_req_bits_op);
-
-  if (InclSimDTM) begin
-    SimDTM i_SimDTM (
-      .clk                  ( clk_i                 ),
-      .reset                ( ~rst_ni               ),
-      .debug_req_valid      ( dmi_req_valid         ),
-      .debug_req_ready      ( debug_req_ready       ),
-      .debug_req_bits_addr  ( dmi_req.addr          ),
-      .debug_req_bits_op    ( debug_req_bits_op     ),
-      .debug_req_bits_data  ( dmi_req.data          ),
-      .debug_resp_valid     ( dmi_resp_valid        ),
-      .debug_resp_ready     ( dmi_resp_ready        ),
-      .debug_resp_bits_resp ( debug_resp.resp       ),
-      .debug_resp_bits_data ( debug_resp.data       ),
-      .exit                 ( dmi_exit              )
-    );
-  end else begin
-    assign dmi_req_valid = '0;
-    assign debug_req_bits_op = '0;
-    assign dmi_exit = 1'b0;
-  end
-*/
-  // this delay window allows the core to read and execute init code
-  // from the bootrom before the first debug request can interrupt
-  // core. this is needed in cases where an fsbl is involved that
-  // expects a0 and a1 to be initialized with the hart id and a
-  // pointer to the dev tree, respectively.
- /* localparam int unsigned DmiDelCycles = 500;
-
-  logic debug_req_core_ungtd;
-  int dmi_del_cnt_d, dmi_del_cnt_q;
-
-  assign dmi_del_cnt_d  = (dmi_del_cnt_q) ? dmi_del_cnt_q - 1 : 0;
-  assign debug_req_core = (dmi_del_cnt_q) ? 1'b0 :
-                          (!debug_enable) ? 1'b0 : debug_req_core_ungtd;
-
-  always_ff @(posedge clk_i or negedge rst_ni) begin : p_dmi_del_cnt
-    if(!rst_ni) begin
-      dmi_del_cnt_q <= DmiDelCycles;
-    end else begin
-      dmi_del_cnt_q <= dmi_del_cnt_d;
-    end
-  end*/
-
-  ariane_axi::req_t    dm_axi_m_req;
-  ariane_axi::resp_t   dm_axi_m_resp;
-
-  logic                dm_slave_req;
-  logic                dm_slave_we;
-  logic [64-1:0]       dm_slave_addr;
-  logic [64/8-1:0]     dm_slave_be;
-  logic [64-1:0]       dm_slave_wdata;
-  logic [64-1:0]       dm_slave_rdata;
-
-  logic                dm_master_req;
-  logic [64-1:0]       dm_master_add;
-  logic                dm_master_we;
-  logic [64-1:0]       dm_master_wdata;
-  logic [64/8-1:0]     dm_master_be;
-  logic                dm_master_gnt;
-  logic                dm_master_r_valid;
-  logic [64-1:0]       dm_master_r_rdata;
-
-  // debug module
-  dm_top #(
-    .NrHarts              ( 1                           ),
-    .BusWidth             ( AXI_DATA_WIDTH              ),
-    .SelectableHarts      ( 1'b1                        )
-  ) i_dm_top (
-    .clk_i                ( clk_i                       ),
-    .rst_ni               ( rst_ni                      ), // PoR
-    .testmode_i           ( test_en                     ),
-    .ndmreset_o           ( ndmreset                    ),
-    .dmactive_o           (                             ), // active debug session
-    //.debug_req_o          ( debug_req_core_ungtd        ),
-    .debug_req_o          ( debug_req_core              ),
-    .unavailable_i        ( '0                          ),
-    .hartinfo_i           ( {ariane_pkg::DebugHartInfo} ),
-    .slave_req_i          ( dm_slave_req                ),
-    .slave_we_i           ( dm_slave_we                 ),
-    .slave_addr_i         ( dm_slave_addr               ),
-    .slave_be_i           ( dm_slave_be                 ),
-    .slave_wdata_i        ( dm_slave_wdata              ),
-    .slave_rdata_o        ( dm_slave_rdata              ),
-    .master_req_o         ( dm_master_req               ),
-    .master_add_o         ( dm_master_add               ),
-    .master_we_o          ( dm_master_we                ),
-    .master_wdata_o       ( dm_master_wdata             ),
-    .master_be_o          ( dm_master_be                ),
-    .master_gnt_i         ( dm_master_gnt               ),
-    .master_r_valid_i     ( dm_master_r_valid           ),
-    .master_r_rdata_i     ( dm_master_r_rdata           ),
-    .dmi_rst_ni           ( rst_ni                      ),
-    .dmi_req_valid_i      ( debug_req_valid             ),
-    .dmi_req_ready_o      ( debug_req_ready             ),
-    .dmi_req_i            ( debug_req                   ),
-    .dmi_resp_valid_o     ( debug_resp_valid            ),
-    .dmi_resp_ready_i     ( debug_resp_ready            ),
-    .dmi_resp_o           ( debug_resp                  )
-  );
-
-
-  axi2mem #(
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH               )
-  ) i_dm_axi2mem (
-    .clk_i      ( clk_i                     ),
-    .rst_ni     ( rst_ni                    ),
-    .slave      ( master[ariane_soc::Debug] ),
-    .req_o      ( dm_slave_req              ),
-    .we_o       ( dm_slave_we               ),
-    .addr_o     ( dm_slave_addr             ),
-    .be_o       ( dm_slave_be               ),
-    .user_o     (                           ),
-    .data_o     ( dm_slave_wdata            ),
-    .user_i     ( '0                        ),
-    .data_i     ( dm_slave_rdata            )
-  );
-
-  `AXI_ASSIGN_FROM_REQ(slave[1], dm_axi_m_req)
-  `AXI_ASSIGN_TO_RESP(dm_axi_m_resp, slave[1])
-
-  axi_adapter #(
-    .CVA6Cfg               ( CVA6Cfg                   ),
-    .DATA_WIDTH            ( AXI_DATA_WIDTH            ),
-    .axi_req_t             ( ariane_axi::req_t         ),
-    .axi_rsp_t             ( ariane_axi::resp_t        )
-  ) i_dm_axi_master (
-    .clk_i                 ( clk_i                     ),
-    .rst_ni                ( rst_ni                    ),
-    .req_i                 ( dm_master_req             ),
-    .type_i                ( ariane_pkg::SINGLE_REQ    ),
-    .amo_i                 ( ariane_pkg::AMO_NONE      ),
-    .gnt_o                 ( dm_master_gnt             ),
-    .addr_i                ( dm_master_add             ),
-    .we_i                  ( dm_master_we              ),
-    .wdata_i               ( dm_master_wdata           ),
-    .be_i                  ( dm_master_be              ),
-    .size_i                ( 2'b11                     ), // always do 64bit here and use byte enables to gate
-    .id_i                  ( '0                        ),
-    .valid_o               ( dm_master_r_valid         ),
-    .rdata_o               ( dm_master_r_rdata         ),
-    .id_o                  (                           ),
-    .critical_word_o       (                           ),
-    .critical_word_valid_o (                           ),
-    .axi_req_o             ( dm_axi_m_req              ),
-    .axi_resp_i            ( dm_axi_m_resp             )
-  );
-
-
-  // ---------------
-  // ROM
-  // ---------------
-  logic                         rom_req;
-  logic [AXI_ADDRESS_WIDTH-1:0] rom_addr;
-  logic [AXI_DATA_WIDTH-1:0]    rom_rdata;
-
-  axi2mem #(
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH               )
-  ) i_axi2rom (
-    .clk_i  ( clk_i                   ),
-    .rst_ni ( ndmreset_n              ),
-    .slave  ( master[ariane_soc::ROM] ),
-    .req_o  ( rom_req                 ),
-    .we_o   (                         ),
-    .addr_o ( rom_addr                ),
-    .be_o   (                         ),
-    .user_o (                         ),
-    .data_o (                         ),
-    .user_i ( '0                      ),
-    .data_i ( rom_rdata               )
-  );
-
-  bootrom i_bootrom (
-    .clk_i      ( clk_i     ),
-    .req_i      ( rom_req   ),
-    .addr_i     ( rom_addr  ),
-    .rdata_o    ( rom_rdata )
-  );
-
-  // ------------------------------
-  // GPIO
-  // ------------------------------
-
-  // GPIO not implemented, adding an error slave here
-
-  ariane_axi_soc::req_slv_t  gpio_req;
-  ariane_axi_soc::resp_slv_t gpio_resp;
-  `AXI_ASSIGN_TO_REQ(gpio_req, master[ariane_soc::GPIO])
-  `AXI_ASSIGN_FROM_RESP(master[ariane_soc::GPIO], gpio_resp)
-  axi_err_slv #(
-    .AxiIdWidth ( ariane_axi_soc::IdWidthSlave ),
-    .req_t      ( ariane_axi_soc::req_slv_t    ),
-    .resp_t     ( ariane_axi_soc::resp_slv_t   )
-  ) i_gpio_err_slv (
-    .clk_i      ( clk_i      ),
-    .rst_ni     ( ndmreset_n ),
-    .test_i     ( test_en    ),
-    .slv_req_i  ( gpio_req ),
-    .slv_resp_o ( gpio_resp )
-  );
-
-
-  // ------------------------------
-  // Memory + Exclusive Access
-  // ------------------------------
-  AXI_BUS #(
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH               )
-  ) dram();
-
-  logic                         req;
-  logic                         we;
-  logic [AXI_ADDRESS_WIDTH-1:0] addr;
-  logic [AXI_DATA_WIDTH/8-1:0]  be;
-  logic [AXI_DATA_WIDTH-1:0]    wdata;
-  logic [AXI_DATA_WIDTH-1:0]    rdata;
-  logic [AXI_USER_WIDTH-1:0]    wuser;
-  logic [AXI_USER_WIDTH-1:0]    ruser;
-
-  axi_riscv_atomics_wrap #(
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH               ),
-    .AXI_MAX_WRITE_TXNS ( 1  ),
-    .RISCV_WORD_WIDTH   ( 64 )
-  ) i_axi_riscv_atomics (
-    .clk_i,
-    .rst_ni ( ndmreset_n               ),
-    .slv    ( master[ariane_soc::DRAM] ),
-    .mst    ( dram                     )
-  );
-
-  AXI_BUS #(
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH               )
-  ) dram_delayed();
-
-  /*axi_delayer_intf #(
-    .AXI_ID_WIDTH        ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_ADDR_WIDTH      ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH      ( AXI_DATA_WIDTH               ),
-    .AXI_USER_WIDTH      ( AXI_USER_WIDTH               ),
-    .STALL_RANDOM_INPUT  ( StallRandomInput             ),
-    .STALL_RANDOM_OUTPUT ( StallRandomOutput            ),
-    .FIXED_DELAY_INPUT   ( 0                            ),
-    .FIXED_DELAY_OUTPUT  ( 0                            )
-  ) i_axi_delayer (
-    .clk_i  ( clk_i        ),
-    .rst_ni ( ndmreset_n   ),
-    .slv    ( dram         ),
-    .mst    ( dram_delayed )
-  );*/
-
-  axi2mem #(
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH               )
-  ) i_axi2mem (
-    .clk_i  ( clk_i        ),
-    .rst_ni ( ndmreset_n   ),
-    //.slave  ( dram_delayed ),
-    .slave  ( dram ),
-    .req_o  ( req          ),
-    .we_o   ( we           ),
-    .addr_o ( addr         ),
-    .be_o   ( be           ),
-    .user_o ( wuser        ),
-    .data_o ( wdata        ),
-    .user_i ( ruser        ),
-    .data_i ( rdata        )
-  );
-
-  sram #(
-    .DATA_WIDTH ( AXI_DATA_WIDTH ),
-    .USER_WIDTH ( AXI_USER_WIDTH ),
-    .USER_EN    ( AXI_USER_EN    ),
-`ifdef VERILATOR
-    .SIM_INIT   ( "none"         ),
-`else
-    .SIM_INIT   ( "zeros"        ),
-`endif
-    .NUM_WORDS  ( NUM_WORDS      )
-  ) i_sram (
-    .clk_i      ( clk_i                                                                       ),
-    .rst_ni     ( rst_ni                                                                      ),
-    .req_i      ( req                                                                         ),
-    .we_i       ( we                                                                          ),
-    .addr_i     ( addr[$clog2(NUM_WORDS)-1+$clog2(AXI_DATA_WIDTH/8):$clog2(AXI_DATA_WIDTH/8)] ),
-    .wuser_i    ( wuser                                                                       ),
-    .wdata_i    ( wdata                                                                       ),
-    .be_i       ( be                                                                          ),
-    .ruser_o    ( ruser                                                                       ),
-    .rdata_o    ( rdata                                                                       )
-  );
-
-  // ---------------
-  // AXI Xbar
-  // ---------------
-
-  axi_pkg::xbar_rule_64_t [ariane_soc::NB_PERIPHERALS-1:0] addr_map;
-
-  assign addr_map = '{
-    '{ idx: ariane_soc::Debug,    start_addr: ariane_soc::DebugBase,    end_addr: ariane_soc::DebugBase + ariane_soc::DebugLength       },
-    '{ idx: ariane_soc::ROM,      start_addr: ariane_soc::ROMBase,      end_addr: ariane_soc::ROMBase + ariane_soc::ROMLength           },
-    '{ idx: ariane_soc::CLINT,    start_addr: ariane_soc::CLINTBase,    end_addr: ariane_soc::CLINTBase + ariane_soc::CLINTLength       },
-    '{ idx: ariane_soc::PLIC,     start_addr: ariane_soc::PLICBase,     end_addr: ariane_soc::PLICBase + ariane_soc::PLICLength         },
-    '{ idx: ariane_soc::UART,     start_addr: ariane_soc::UARTBase,     end_addr: ariane_soc::UARTBase + ariane_soc::UARTLength         },
-    '{ idx: ariane_soc::Timer,    start_addr: ariane_soc::TimerBase,    end_addr: ariane_soc::TimerBase + ariane_soc::TimerLength       },
-    '{ idx: ariane_soc::SPI,      start_addr: ariane_soc::SPIBase,      end_addr: ariane_soc::SPIBase + ariane_soc::SPILength           },
-    '{ idx: ariane_soc::Ethernet, start_addr: ariane_soc::EthernetBase, end_addr: ariane_soc::EthernetBase + ariane_soc::EthernetLength },
-    '{ idx: ariane_soc::GPIO,     start_addr: ariane_soc::GPIOBase,     end_addr: ariane_soc::GPIOBase + ariane_soc::GPIOLength         },
-    '{ idx: ariane_soc::DRAM,     start_addr: ariane_soc::DRAMBase,     end_addr: ariane_soc::DRAMBase + ariane_soc::DRAMLength         }
-  };
-
-  localparam axi_pkg::xbar_cfg_t AXI_XBAR_CFG = '{
-    NoSlvPorts: unsigned'(ariane_soc::NrSlaves),
-    NoMstPorts: unsigned'(ariane_soc::NB_PERIPHERALS),
-    MaxMstTrans: unsigned'(1), // Probably requires update
-    MaxSlvTrans: unsigned'(1), // Probably requires update
-    FallThrough: 1'b0,
-    LatencyMode: axi_pkg::NO_LATENCY,
-    AxiIdWidthSlvPorts: unsigned'(ariane_axi_soc::IdWidth),
-    AxiIdUsedSlvPorts: unsigned'(ariane_axi_soc::IdWidth),
-    UniqueIds: 1'b0,
-    AxiAddrWidth: unsigned'(AXI_ADDRESS_WIDTH),
-    AxiDataWidth: unsigned'(AXI_DATA_WIDTH),
-    NoAddrRules: unsigned'(ariane_soc::NB_PERIPHERALS)
-  };
-
-  axi_xbar_intf #(
-    .AXI_USER_WIDTH ( AXI_USER_WIDTH          ),
-    .Cfg            ( AXI_XBAR_CFG            ),
-    .rule_t         ( axi_pkg::xbar_rule_64_t )
-  ) i_axi_xbar (
-    .clk_i                 ( clk_i      ),
-    .rst_ni                ( ndmreset_n ),
-    .test_i                ( test_en    ),
-    .slv_ports             ( slave      ),
-    .mst_ports             ( master     ),
-    .addr_map_i            ( addr_map   ),
-    .en_default_mst_port_i ( '0         ),
-    .default_mst_port_i    ( '0         )
-  );
-
-  // ---------------
-  // CLINT
-  // ---------------
-  logic ipi;
-  logic timer_irq;
-
-  ariane_axi_soc::req_slv_t  axi_clint_req;
-  ariane_axi_soc::resp_slv_t axi_clint_resp;
-
-  clint #(
-    .AXI_ADDR_WIDTH ( AXI_ADDRESS_WIDTH            ),
-    .AXI_DATA_WIDTH ( AXI_DATA_WIDTH               ),
-    .AXI_ID_WIDTH   ( ariane_axi_soc::IdWidthSlave ),
-    .NR_CORES       ( 1                            ),
-    .axi_req_t      ( ariane_axi_soc::req_slv_t    ),
-    .axi_resp_t     ( ariane_axi_soc::resp_slv_t   )
-  ) i_clint (
-    .clk_i       ( clk_i          ),
-    .rst_ni      ( ndmreset_n     ),
-    .testmode_i  ( test_en        ),
-    .axi_req_i   ( axi_clint_req  ),
-    .axi_resp_o  ( axi_clint_resp ),
-    .rtc_i       ( rtc_i          ),
-    .timer_irq_o ( timer_irq      ),
-    .ipi_o       ( ipi            )
-  );
-
-  `AXI_ASSIGN_TO_REQ(axi_clint_req, master[ariane_soc::CLINT])
-  `AXI_ASSIGN_FROM_RESP(master[ariane_soc::CLINT], axi_clint_resp)
-
-  // ---------------
-  // Peripherals
-  // ---------------
-  logic tx, rx;
-  logic [1:0] irqs;
-
-  ariane_peripherals #(
-    .AxiAddrWidth ( AXI_ADDRESS_WIDTH            ),
-    .AxiDataWidth ( AXI_DATA_WIDTH               ),
-    .AxiIdWidth   ( ariane_axi_soc::IdWidthSlave ),
-    .AxiUserWidth ( AXI_USER_WIDTH               ),
-    .InclUART     ( 1'b1                     ),
-    .InclSPI      ( 1'b0                     ),
-    .InclEthernet ( 1'b0                     )
-  ) i_ariane_peripherals (
-    .clk_i     ( clk_i                        ),
-    .rst_ni    ( ndmreset_n                   ),
-    .plic      ( master[ariane_soc::PLIC]     ),
-    .uart      ( master[ariane_soc::UART]     ),
-    .spi       ( master[ariane_soc::SPI]      ),
-    .ethernet  ( master[ariane_soc::Ethernet] ),
-    .timer     ( master[ariane_soc::Timer]    ),
-    .irq_o     ( irqs                         ),
-    .rx_i      ( rx                           ),
-    .tx_o      ( tx                           ),
-    .eth_txck  ( ),
-    .eth_rxck  ( ),
-    .eth_rxctl ( ),
-    .eth_rxd   ( ),
-    .eth_rst_n ( ),
-    .eth_tx_en ( ),
-    .eth_txd   ( ),
-    .phy_mdio  ( ),
-    .eth_mdc   ( ),
-    .mdio      ( ),
-    .mdc       ( ),
-    .spi_clk_o ( ),
-    .spi_mosi  ( ),
-    .spi_miso  ( ),
-    .spi_ss    ( )
-  );
-
-  uart_bus #(.BAUD_RATE(115200), .PARITY_EN(0)) i_uart_bus (.rx(tx), .tx(rx), .rx_en(1'b1));
-
-  // ---------------
-  // Core
-  // ---------------
-  ariane_axi::req_t    axi_ariane_req;
-  ariane_axi::resp_t   axi_ariane_resp;
-  rvfi_instr_t [CVA6Cfg.NrCommitPorts-1:0] rvfi;
-
-  ariane #(
-    .CVA6Cfg              ( CVA6Cfg             ),
-    .IsRVFI               ( IsRVFI              ),
-    .rvfi_instr_t         ( rvfi_instr_t        ),
-    .noc_req_t            ( ariane_axi::req_t   ),
-    .noc_resp_t           ( ariane_axi::resp_t  )
-  ) i_ariane (
-    .clk_i                ( clk_i               ),
-    .rst_ni               ( ndmreset_n          ),
-    .boot_addr_i          ( ariane_soc::ROMBase ), // start fetching from ROM
-    .hart_id_i            ( {56'h0, hart_id}    ),
-    .irq_i                ( irqs                ),
-    .ipi_i                ( ipi                 ),
-    .time_irq_i           ( timer_irq           ),
-    .rvfi_o               ( rvfi                ),
-// Disable Debug when simulating with Spike
-`ifdef SPIKE_TANDEM
-    .debug_req_i          ( 1'b0                ),
-`else
-    .debug_req_i          ( debug_req_core      ),
-`endif
-    .noc_req_o            ( axi_ariane_req      ),
-    .noc_resp_i           ( axi_ariane_resp     )
-  );
-
-  `AXI_ASSIGN_FROM_REQ(slave[0], axi_ariane_req)
-  `AXI_ASSIGN_TO_RESP(axi_ariane_resp, slave[0])
-
-  // -------------
-  // Simulation Helper Functions
-  // -------------
-  // check for response errors
-  always_ff @(posedge clk_i) begin : p_assert
-    if (axi_ariane_req.r_ready &&
-      axi_ariane_resp.r_valid &&
-      axi_ariane_resp.r.resp inside {axi_pkg::RESP_DECERR, axi_pkg::RESP_SLVERR}) begin
-      $warning("R Response Errored");
-    end
-    if (axi_ariane_req.b_ready &&
-      axi_ariane_resp.b_valid &&
-      axi_ariane_resp.b.resp inside {axi_pkg::RESP_DECERR, axi_pkg::RESP_SLVERR}) begin
-      $warning("B Response Errored");
-    end
-  end
-
-  rvfi_tracer  #(
-    .CVA6Cfg(CVA6Cfg),
-    .rvfi_instr_t(rvfi_instr_t),
-    //
-    .HART_ID(hart_id),
-    .DEBUG_START(0),
-    .DEBUG_STOP(0)
-  ) rvfi_tracer_i (
-    .clk_i(clk_i),
-    .rst_ni(rst_ni),
-    .rvfi_i(rvfi),
-    .end_of_test_o(rvfi_exit)
-  );
-
-`ifdef AXI_SVA
-  // AXI 4 Assertion IP integration - You will need to get your own copy of this IP if you want
-  // to use it
-  Axi4PC #(
-    .DATA_WIDTH(ariane_axi_soc::DataWidth),
-    .WID_WIDTH(ariane_axi_soc::IdWidthSlave),
-    .RID_WIDTH(ariane_axi_soc::IdWidthSlave),
-    .AWUSER_WIDTH(ariane_axi_soc::UserWidth),
-    .WUSER_WIDTH(ariane_axi_soc::UserWidth),
-    .BUSER_WIDTH(ariane_axi_soc::UserWidth),
-    .ARUSER_WIDTH(ariane_axi_soc::UserWidth),
-    .RUSER_WIDTH(ariane_axi_soc::UserWidth),
-    .ADDR_WIDTH(ariane_axi_soc::AddrWidth)
-  ) i_Axi4PC (
-    .ACLK(clk_i),
-    .ARESETn(ndmreset_n),
-    .AWID(dram.aw_id),
-    .AWADDR(dram.aw_addr),
-    .AWLEN(dram.aw_len),
-    .AWSIZE(dram.aw_size),
-    .AWBURST(dram.aw_burst),
-    .AWLOCK(dram.aw_lock),
-    .AWCACHE(dram.aw_cache),
-    .AWPROT(dram.aw_prot),
-    .AWQOS(dram.aw_qos),
-    .AWREGION(dram.aw_region),
-    .AWUSER(dram.aw_user),
-    .AWVALID(dram.aw_valid),
-    .AWREADY(dram.aw_ready),
-    .WLAST(dram.w_last),
-    .WDATA(dram.w_data),
-    .WSTRB(dram.w_strb),
-    .WUSER(dram.w_user),
-    .WVALID(dram.w_valid),
-    .WREADY(dram.w_ready),
-    .BID(dram.b_id),
-    .BRESP(dram.b_resp),
-    .BUSER(dram.b_user),
-    .BVALID(dram.b_valid),
-    .BREADY(dram.b_ready),
-    .ARID(dram.ar_id),
-    .ARADDR(dram.ar_addr),
-    .ARLEN(dram.ar_len),
-    .ARSIZE(dram.ar_size),
-    .ARBURST(dram.ar_burst),
-    .ARLOCK(dram.ar_lock),
-    .ARCACHE(dram.ar_cache),
-    .ARPROT(dram.ar_prot),
-    .ARQOS(dram.ar_qos),
-    .ARREGION(dram.ar_region),
-    .ARUSER(dram.ar_user),
-    .ARVALID(dram.ar_valid),
-    .ARREADY(dram.ar_ready),
-    .RID(dram.r_id),
-    .RLAST(dram.r_last),
-    .RDATA(dram.r_data),
-    .RRESP(dram.r_resp),
-    .RUSER(dram.r_user),
-    .RVALID(dram.r_valid),
-    .RREADY(dram.r_ready),
-    .CACTIVE('0),
-    .CSYSREQ('0),
-    .CSYSACK('0)
-  );
-`endif
-endmodule
-
-
-// C:/code/cva6-softcore-contest/corev_apu/tb/ariane_peripherals.sv
-// Copyright 2018 ETH Zurich and University of Bologna.
-// Copyright and related rights are licensed under the Solderpad Hardware
-// License, Version 0.51 (the "License"); you may not use this file except in
-// compliance with the License.  You may obtain a copy of the License at
-// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
-// or agreed to in writing, software, hardware and materials distributed under
-// this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-// CONDITIONS OF ANY KIND, either express or implied. See the License for the
-// specific language governing permissions and limitations under the License.
-
-`include "register_interface/assign.svh"
-`include "register_interface/typedef.svh"
-
-// Xilinx Peripherals
-module ariane_peripherals #(
-    parameter int AxiAddrWidth = -1,
-    parameter int AxiDataWidth = -1,
-    parameter int AxiIdWidth   = -1,
-    parameter int AxiUserWidth = 1,
-    parameter bit InclUART     = 1,
-    parameter bit InclSPI      = 0,
-    parameter bit InclEthernet = 0,
-    parameter bit InclGPIO     = 0,
-    parameter bit InclTimer    = 1
-) (
-    input  logic       clk_i           , // Clock
-    input  logic       rst_ni          , // Asynchronous reset active low
-    AXI_BUS.Slave      plic            ,
-    AXI_BUS.Slave      uart            ,
-    AXI_BUS.Slave      spi             ,
-    AXI_BUS.Slave      ethernet        ,
-    AXI_BUS.Slave      timer           ,
-    output logic [1:0] irq_o           ,
-    // UART
-    input  logic       rx_i            ,
-    output logic       tx_o            ,
-    // Ethernet
-    input  wire        eth_txck        ,
-    input  wire        eth_rxck        ,
-    input  wire        eth_rxctl       ,
-    input  wire [3:0]  eth_rxd         ,
-    output wire        eth_rst_n       ,
-    output wire        eth_tx_en       ,
-    output wire [3:0]  eth_txd         ,
-    inout  wire        phy_mdio        ,
-    output logic       eth_mdc         ,
-    // MDIO Interface
-    inout              mdio            ,
-    output             mdc             ,
-    // SPI
-    output logic       spi_clk_o       ,
-    output logic       spi_mosi        ,
-    input  logic       spi_miso        ,
-    output logic       spi_ss
-);
-
-    // ---------------
-    // 1. PLIC
-    // ---------------
-    logic [ariane_soc::NumSources-1:0] irq_sources;
-
-    // Unused interrupt sources
-    assign irq_sources[ariane_soc::NumSources-1:7] = '0;
-
-    REG_BUS #(
-        .ADDR_WIDTH ( 32 ),
-        .DATA_WIDTH ( 32 )
-    ) reg_bus (clk_i);
-
-    logic         plic_penable;
-    logic         plic_pwrite;
-    logic [31:0]  plic_paddr;
-    logic         plic_psel;
-    logic [31:0]  plic_pwdata;
-    logic [31:0]  plic_prdata;
-    logic         plic_pready;
-    logic         plic_pslverr;
-
-    axi2apb_64_32 #(
-        .AXI4_ADDRESS_WIDTH ( AxiAddrWidth  ),
-        .AXI4_RDATA_WIDTH   ( AxiDataWidth  ),
-        .AXI4_WDATA_WIDTH   ( AxiDataWidth  ),
-        .AXI4_ID_WIDTH      ( AxiIdWidth    ),
-        .AXI4_USER_WIDTH    ( AxiUserWidth  ),
-        .BUFF_DEPTH_SLAVE   ( 2             ),
-        .APB_ADDR_WIDTH     ( 32            )
-    ) i_axi2apb_64_32_plic (
-        .ACLK      ( clk_i          ),
-        .ARESETn   ( rst_ni         ),
-        .test_en_i ( 1'b0           ),
-        .AWID_i    ( plic.aw_id     ),
-        .AWADDR_i  ( plic.aw_addr   ),
-        .AWLEN_i   ( plic.aw_len    ),
-        .AWSIZE_i  ( plic.aw_size   ),
-        .AWBURST_i ( plic.aw_burst  ),
-        .AWLOCK_i  ( plic.aw_lock   ),
-        .AWCACHE_i ( plic.aw_cache  ),
-        .AWPROT_i  ( plic.aw_prot   ),
-        .AWREGION_i( plic.aw_region ),
-        .AWUSER_i  ( plic.aw_user   ),
-        .AWQOS_i   ( plic.aw_qos    ),
-        .AWVALID_i ( plic.aw_valid  ),
-        .AWREADY_o ( plic.aw_ready  ),
-        .WDATA_i   ( plic.w_data    ),
-        .WSTRB_i   ( plic.w_strb    ),
-        .WLAST_i   ( plic.w_last    ),
-        .WUSER_i   ( plic.w_user    ),
-        .WVALID_i  ( plic.w_valid   ),
-        .WREADY_o  ( plic.w_ready   ),
-        .BID_o     ( plic.b_id      ),
-        .BRESP_o   ( plic.b_resp    ),
-        .BVALID_o  ( plic.b_valid   ),
-        .BUSER_o   ( plic.b_user    ),
-        .BREADY_i  ( plic.b_ready   ),
-        .ARID_i    ( plic.ar_id     ),
-        .ARADDR_i  ( plic.ar_addr   ),
-        .ARLEN_i   ( plic.ar_len    ),
-        .ARSIZE_i  ( plic.ar_size   ),
-        .ARBURST_i ( plic.ar_burst  ),
-        .ARLOCK_i  ( plic.ar_lock   ),
-        .ARCACHE_i ( plic.ar_cache  ),
-        .ARPROT_i  ( plic.ar_prot   ),
-        .ARREGION_i( plic.ar_region ),
-        .ARUSER_i  ( plic.ar_user   ),
-        .ARQOS_i   ( plic.ar_qos    ),
-        .ARVALID_i ( plic.ar_valid  ),
-        .ARREADY_o ( plic.ar_ready  ),
-        .RID_o     ( plic.r_id      ),
-        .RDATA_o   ( plic.r_data    ),
-        .RRESP_o   ( plic.r_resp    ),
-        .RLAST_o   ( plic.r_last    ),
-        .RUSER_o   ( plic.r_user    ),
-        .RVALID_o  ( plic.r_valid   ),
-        .RREADY_i  ( plic.r_ready   ),
-        .PENABLE   ( plic_penable   ),
-        .PWRITE    ( plic_pwrite    ),
-        .PADDR     ( plic_paddr     ),
-        .PSEL      ( plic_psel      ),
-        .PWDATA    ( plic_pwdata    ),
-        .PRDATA    ( plic_prdata    ),
-        .PREADY    ( plic_pready    ),
-        .PSLVERR   ( plic_pslverr   )
-    );
-
-    apb_to_reg i_apb_to_reg (
-        .clk_i     ( clk_i        ),
-        .rst_ni    ( rst_ni       ),
-        .penable_i ( plic_penable ),
-        .pwrite_i  ( plic_pwrite  ),
-        .paddr_i   ( plic_paddr   ),
-        .psel_i    ( plic_psel    ),
-        .pwdata_i  ( plic_pwdata  ),
-        .prdata_o  ( plic_prdata  ),
-        .pready_o  ( plic_pready  ),
-        .pslverr_o ( plic_pslverr ),
-        .reg_o     ( reg_bus      )
-    );
-
-    // define reg type according to REG_BUS above
-    `REG_BUS_TYPEDEF_ALL(plic, logic[31:0], logic[31:0], logic[3:0])
-    plic_req_t plic_req;
-    plic_rsp_t plic_rsp;
-
-    // assign REG_BUS.out to (req_t, rsp_t) pair
-    `REG_BUS_ASSIGN_TO_REQ(plic_req, reg_bus)
-    `REG_BUS_ASSIGN_FROM_RSP(reg_bus, plic_rsp)
-
-    plic_top #(
-      .N_SOURCE    ( ariane_soc::NumSources  ),
-      .N_TARGET    ( ariane_soc::NumTargets  ),
-      .MAX_PRIO    ( ariane_soc::MaxPriority ),
-      .reg_req_t   ( plic_req_t              ),
-      .reg_rsp_t   ( plic_rsp_t              )
-    ) i_plic (
-      .clk_i,
-      .rst_ni,
-      .req_i         ( plic_req    ),
-      .resp_o        ( plic_rsp    ),
-      .le_i          ( '0          ), // 0:level 1:edge
-      .irq_sources_i ( irq_sources ),
-      .eip_targets_o ( irq_o       )
-    );
-
-    // ---------------
-    // 2. UART
-    // ---------------
-    logic         uart_penable;
-    logic         uart_pwrite;
-    logic [31:0]  uart_paddr;
-    logic         uart_psel;
-    logic [31:0]  uart_pwdata;
-    logic [31:0]  uart_prdata;
-    logic         uart_pready;
-    logic         uart_pslverr;
-
-    axi2apb_64_32 #(
-        .AXI4_ADDRESS_WIDTH ( AxiAddrWidth ),
-        .AXI4_RDATA_WIDTH   ( AxiDataWidth ),
-        .AXI4_WDATA_WIDTH   ( AxiDataWidth ),
-        .AXI4_ID_WIDTH      ( AxiIdWidth   ),
-        .AXI4_USER_WIDTH    ( AxiUserWidth ),
-        .BUFF_DEPTH_SLAVE   ( 2            ),
-        .APB_ADDR_WIDTH     ( 32           )
-    ) i_axi2apb_64_32_uart (
-        .ACLK      ( clk_i          ),
-        .ARESETn   ( rst_ni         ),
-        .test_en_i ( 1'b0           ),
-        .AWID_i    ( uart.aw_id     ),
-        .AWADDR_i  ( uart.aw_addr   ),
-        .AWLEN_i   ( uart.aw_len    ),
-        .AWSIZE_i  ( uart.aw_size   ),
-        .AWBURST_i ( uart.aw_burst  ),
-        .AWLOCK_i  ( uart.aw_lock   ),
-        .AWCACHE_i ( uart.aw_cache  ),
-        .AWPROT_i  ( uart.aw_prot   ),
-        .AWREGION_i( uart.aw_region ),
-        .AWUSER_i  ( uart.aw_user   ),
-        .AWQOS_i   ( uart.aw_qos    ),
-        .AWVALID_i ( uart.aw_valid  ),
-        .AWREADY_o ( uart.aw_ready  ),
-        .WDATA_i   ( uart.w_data    ),
-        .WSTRB_i   ( uart.w_strb    ),
-        .WLAST_i   ( uart.w_last    ),
-        .WUSER_i   ( uart.w_user    ),
-        .WVALID_i  ( uart.w_valid   ),
-        .WREADY_o  ( uart.w_ready   ),
-        .BID_o     ( uart.b_id      ),
-        .BRESP_o   ( uart.b_resp    ),
-        .BVALID_o  ( uart.b_valid   ),
-        .BUSER_o   ( uart.b_user    ),
-        .BREADY_i  ( uart.b_ready   ),
-        .ARID_i    ( uart.ar_id     ),
-        .ARADDR_i  ( uart.ar_addr   ),
-        .ARLEN_i   ( uart.ar_len    ),
-        .ARSIZE_i  ( uart.ar_size   ),
-        .ARBURST_i ( uart.ar_burst  ),
-        .ARLOCK_i  ( uart.ar_lock   ),
-        .ARCACHE_i ( uart.ar_cache  ),
-        .ARPROT_i  ( uart.ar_prot   ),
-        .ARREGION_i( uart.ar_region ),
-        .ARUSER_i  ( uart.ar_user   ),
-        .ARQOS_i   ( uart.ar_qos    ),
-        .ARVALID_i ( uart.ar_valid  ),
-        .ARREADY_o ( uart.ar_ready  ),
-        .RID_o     ( uart.r_id      ),
-        .RDATA_o   ( uart.r_data    ),
-        .RRESP_o   ( uart.r_resp    ),
-        .RLAST_o   ( uart.r_last    ),
-        .RUSER_o   ( uart.r_user    ),
-        .RVALID_o  ( uart.r_valid   ),
-        .RREADY_i  ( uart.r_ready   ),
-        .PENABLE   ( uart_penable   ),
-        .PWRITE    ( uart_pwrite    ),
-        .PADDR     ( uart_paddr     ),
-        .PSEL      ( uart_psel      ),
-        .PWDATA    ( uart_pwdata    ),
-        .PRDATA    ( uart_prdata    ),
-        .PREADY    ( uart_pready    ),
-        .PSLVERR   ( uart_pslverr   )
-    );
-
-    if (InclUART) begin : gen_uart
-        apb_uart i_apb_uart (
-            .CLK     ( clk_i           ),
-            .RSTN    ( rst_ni          ),
-            .PSEL    ( uart_psel       ),
-            .PENABLE ( uart_penable    ),
-            .PWRITE  ( uart_pwrite     ),
-            .PADDR   ( uart_paddr[4:2] ),
-            .PWDATA  ( uart_pwdata     ),
-            .PRDATA  ( uart_prdata     ),
-            .PREADY  ( uart_pready     ),
-            .PSLVERR ( uart_pslverr    ),
-            .INT     ( irq_sources[0]  ),
-            .OUT1N   (                 ), // keep open
-            .OUT2N   (                 ), // keep open
-            .RTSN    (                 ), // no flow control
-            .DTRN    (                 ), // no flow control
-            .CTSN    ( 1'b0            ),
-            .DSRN    ( 1'b0            ),
-            .DCDN    ( 1'b0            ),
-            .RIN     ( 1'b0            ),
-            .SIN     ( rx_i            ),
-            .SOUT    ( tx_o            )
-        );
-    end else begin
-        assign irq_sources[0] = 1'b0;
-        /* pragma translate_off */
-        mock_uart i_mock_uart (
-            .clk_i     ( clk_i        ),
-            .rst_ni    ( rst_ni       ),
-            .penable_i ( uart_penable ),
-            .pwrite_i  ( uart_pwrite  ),
-            .paddr_i   ( uart_paddr   ),
-            .psel_i    ( uart_psel    ),
-            .pwdata_i  ( uart_pwdata  ),
-            .prdata_o  ( uart_prdata  ),
-            .pready_o  ( uart_pready  ),
-            .pslverr_o ( uart_pslverr )
-        );
-        /* pragma translate_on */
-    end
-
-    // ---------------
-    // 3. SPI
-    // ---------------
-    if (InclSPI) begin : gen_spi
-        logic [31:0] s_axi_spi_awaddr;
-        logic [7:0]  s_axi_spi_awlen;
-        logic [2:0]  s_axi_spi_awsize;
-        logic [1:0]  s_axi_spi_awburst;
-        logic [0:0]  s_axi_spi_awlock;
-        logic [3:0]  s_axi_spi_awcache;
-        logic [2:0]  s_axi_spi_awprot;
-        logic [3:0]  s_axi_spi_awregion;
-        logic [3:0]  s_axi_spi_awqos;
-        logic        s_axi_spi_awvalid;
-        logic        s_axi_spi_awready;
-        logic [31:0] s_axi_spi_wdata;
-        logic [3:0]  s_axi_spi_wstrb;
-        logic        s_axi_spi_wlast;
-        logic        s_axi_spi_wvalid;
-        logic        s_axi_spi_wready;
-        logic [1:0]  s_axi_spi_bresp;
-        logic        s_axi_spi_bvalid;
-        logic        s_axi_spi_bready;
-        logic [31:0] s_axi_spi_araddr;
-        logic [7:0]  s_axi_spi_arlen;
-        logic [2:0]  s_axi_spi_arsize;
-        logic [1:0]  s_axi_spi_arburst;
-        logic [0:0]  s_axi_spi_arlock;
-        logic [3:0]  s_axi_spi_arcache;
-        logic [2:0]  s_axi_spi_arprot;
-        logic [3:0]  s_axi_spi_arregion;
-        logic [3:0]  s_axi_spi_arqos;
-        logic        s_axi_spi_arvalid;
-        logic        s_axi_spi_arready;
-        logic [31:0] s_axi_spi_rdata;
-        logic [1:0]  s_axi_spi_rresp;
-        logic        s_axi_spi_rlast;
-        logic        s_axi_spi_rvalid;
-        logic        s_axi_spi_rready;
-
-        xlnx_axi_clock_converter i_xlnx_axi_clock_converter_spi (
-            .s_axi_aclk     ( clk_i              ),
-            .s_axi_aresetn  ( rst_ni             ),
-
-            .s_axi_awid     ( spi.aw_id          ),
-            .s_axi_awaddr   ( spi.aw_addr[31:0]  ),
-            .s_axi_awlen    ( spi.aw_len         ),
-            .s_axi_awsize   ( spi.aw_size        ),
-            .s_axi_awburst  ( spi.aw_burst       ),
-            .s_axi_awlock   ( spi.aw_lock        ),
-            .s_axi_awcache  ( spi.aw_cache       ),
-            .s_axi_awprot   ( spi.aw_prot        ),
-            .s_axi_awregion ( spi.aw_region      ),
-            .s_axi_awqos    ( spi.aw_qos         ),
-            .s_axi_awvalid  ( spi.aw_valid       ),
-            .s_axi_awready  ( spi.aw_ready       ),
-            .s_axi_wdata    ( spi.w_data         ),
-            .s_axi_wstrb    ( spi.w_strb         ),
-            .s_axi_wlast    ( spi.w_last         ),
-            .s_axi_wvalid   ( spi.w_valid        ),
-            .s_axi_wready   ( spi.w_ready        ),
-            .s_axi_bid      ( spi.b_id           ),
-            .s_axi_bresp    ( spi.b_resp         ),
-            .s_axi_bvalid   ( spi.b_valid        ),
-            .s_axi_bready   ( spi.b_ready        ),
-            .s_axi_arid     ( spi.ar_id          ),
-            .s_axi_araddr   ( spi.ar_addr[31:0]  ),
-            .s_axi_arlen    ( spi.ar_len         ),
-            .s_axi_arsize   ( spi.ar_size        ),
-            .s_axi_arburst  ( spi.ar_burst       ),
-            .s_axi_arlock   ( spi.ar_lock        ),
-            .s_axi_arcache  ( spi.ar_cache       ),
-            .s_axi_arprot   ( spi.ar_prot        ),
-            .s_axi_arregion ( spi.ar_region      ),
-            .s_axi_arqos    ( spi.ar_qos         ),
-            .s_axi_arvalid  ( spi.ar_valid       ),
-            .s_axi_arready  ( spi.ar_ready       ),
-            .s_axi_rid      ( spi.r_id           ),
-            .s_axi_rdata    ( spi.r_data         ),
-            .s_axi_rresp    ( spi.r_resp         ),
-            .s_axi_rlast    ( spi.r_last         ),
-            .s_axi_rvalid   ( spi.r_valid        ),
-            .s_axi_rready   ( spi.r_ready        ),
-
-            .m_axi_awaddr   ( s_axi_spi_awaddr   ),
-            .m_axi_awlen    ( s_axi_spi_awlen    ),
-            .m_axi_awsize   ( s_axi_spi_awsize   ),
-            .m_axi_awburst  ( s_axi_spi_awburst  ),
-            .m_axi_awlock   ( s_axi_spi_awlock   ),
-            .m_axi_awcache  ( s_axi_spi_awcache  ),
-            .m_axi_awprot   ( s_axi_spi_awprot   ),
-            .m_axi_awregion ( s_axi_spi_awregion ),
-            .m_axi_awqos    ( s_axi_spi_awqos    ),
-            .m_axi_awvalid  ( s_axi_spi_awvalid  ),
-            .m_axi_awready  ( s_axi_spi_awready  ),
-            .m_axi_wdata    ( s_axi_spi_wdata    ),
-            .m_axi_wstrb    ( s_axi_spi_wstrb    ),
-            .m_axi_wlast    ( s_axi_spi_wlast    ),
-            .m_axi_wvalid   ( s_axi_spi_wvalid   ),
-            .m_axi_wready   ( s_axi_spi_wready   ),
-            .m_axi_bresp    ( s_axi_spi_bresp    ),
-            .m_axi_bvalid   ( s_axi_spi_bvalid   ),
-            .m_axi_bready   ( s_axi_spi_bready   ),
-            .m_axi_araddr   ( s_axi_spi_araddr   ),
-            .m_axi_arlen    ( s_axi_spi_arlen    ),
-            .m_axi_arsize   ( s_axi_spi_arsize   ),
-            .m_axi_arburst  ( s_axi_spi_arburst  ),
-            .m_axi_arlock   ( s_axi_spi_arlock   ),
-            .m_axi_arcache  ( s_axi_spi_arcache  ),
-            .m_axi_arprot   ( s_axi_spi_arprot   ),
-            .m_axi_arregion ( s_axi_spi_arregion ),
-            .m_axi_arqos    ( s_axi_spi_arqos    ),
-            .m_axi_arvalid  ( s_axi_spi_arvalid  ),
-            .m_axi_arready  ( s_axi_spi_arready  ),
-            .m_axi_rdata    ( s_axi_spi_rdata    ),
-            .m_axi_rresp    ( s_axi_spi_rresp    ),
-            .m_axi_rlast    ( s_axi_spi_rlast    ),
-            .m_axi_rvalid   ( s_axi_spi_rvalid   ),
-            .m_axi_rready   ( s_axi_spi_rready   )
-        );
-
-        xlnx_axi_quad_spi i_xlnx_axi_quad_spi (
-            .ext_spi_clk    ( clk_i                  ),
-            .s_axi4_aclk    ( clk_i                  ),
-            .s_axi4_aresetn ( rst_ni                 ),
-            .s_axi4_awaddr  ( s_axi_spi_awaddr[23:0] ),
-            .s_axi4_awlen   ( s_axi_spi_awlen        ),
-            .s_axi4_awsize  ( s_axi_spi_awsize       ),
-            .s_axi4_awburst ( s_axi_spi_awburst      ),
-            .s_axi4_awlock  ( s_axi_spi_awlock       ),
-            .s_axi4_awcache ( s_axi_spi_awcache      ),
-            .s_axi4_awprot  ( s_axi_spi_awprot       ),
-            .s_axi4_awvalid ( s_axi_spi_awvalid      ),
-            .s_axi4_awready ( s_axi_spi_awready      ),
-            .s_axi4_wdata   ( s_axi_spi_wdata        ),
-            .s_axi4_wstrb   ( s_axi_spi_wstrb        ),
-            .s_axi4_wlast   ( s_axi_spi_wlast        ),
-            .s_axi4_wvalid  ( s_axi_spi_wvalid       ),
-            .s_axi4_wready  ( s_axi_spi_wready       ),
-            .s_axi4_bresp   ( s_axi_spi_bresp        ),
-            .s_axi4_bvalid  ( s_axi_spi_bvalid       ),
-            .s_axi4_bready  ( s_axi_spi_bready       ),
-            .s_axi4_araddr  ( s_axi_spi_araddr[23:0] ),
-            .s_axi4_arlen   ( s_axi_spi_arlen        ),
-            .s_axi4_arsize  ( s_axi_spi_arsize       ),
-            .s_axi4_arburst ( s_axi_spi_arburst      ),
-            .s_axi4_arlock  ( s_axi_spi_arlock       ),
-            .s_axi4_arcache ( s_axi_spi_arcache      ),
-            .s_axi4_arprot  ( s_axi_spi_arprot       ),
-            .s_axi4_arvalid ( s_axi_spi_arvalid      ),
-            .s_axi4_arready ( s_axi_spi_arready      ),
-            .s_axi4_rdata   ( s_axi_spi_rdata        ),
-            .s_axi4_rresp   ( s_axi_spi_rresp        ),
-            .s_axi4_rlast   ( s_axi_spi_rlast        ),
-            .s_axi4_rvalid  ( s_axi_spi_rvalid       ),
-            .s_axi4_rready  ( s_axi_spi_rready       ),
-
-            .io0_i          ( '0                     ),
-            .io0_o          ( spi_mosi               ),
-            .io0_t          ( '0                     ),
-            .io1_i          ( spi_miso               ),
-            .io1_o          (                        ),
-            .io1_t          ( '0                     ),
-            .ss_i           ( '0                     ),
-            .ss_o           ( spi_ss                 ),
-            .ss_t           ( '0                     ),
-            .sck_o          ( spi_clk_o              ),
-            .sck_i          ( '0                     ),
-            .sck_t          (                        ),
-            .ip2intc_irpt   ( irq_sources[1]         )
-            // .ip2intc_irpt   ( irq_sources[1]         )
-        );
-        // assign irq_sources [1] = 1'b0;
-    end else begin
-        assign spi_clk_o = 1'b0;
-        assign spi_mosi = 1'b0;
-        assign spi_ss = 1'b0;
-
-        assign irq_sources [1] = 1'b0;
-        assign spi.aw_ready = 1'b1;
-        assign spi.ar_ready = 1'b1;
-        assign spi.w_ready = 1'b1;
-
-        assign spi.b_valid = spi.aw_valid;
-        assign spi.b_id = spi.aw_id;
-        assign spi.b_resp = axi_pkg::RESP_SLVERR;
-        assign spi.b_user = '0;
-
-        assign spi.r_valid = spi.ar_valid;
-        assign spi.r_resp = axi_pkg::RESP_SLVERR;
-        assign spi.r_data = 'hdeadbeef;
-        assign spi.r_last = 1'b1;
-    end
-
-
-    // ---------------
-    // 4. Ethernet
-    // ---------------
-    if (0)
-      begin
-      end
-    else
-      begin
-        assign irq_sources [2] = 1'b0;
-        assign ethernet.aw_ready = 1'b1;
-        assign ethernet.ar_ready = 1'b1;
-        assign ethernet.w_ready = 1'b1;
-
-        assign ethernet.b_valid = ethernet.aw_valid;
-        assign ethernet.b_id = ethernet.aw_id;
-        assign ethernet.b_resp = axi_pkg::RESP_SLVERR;
-        assign ethernet.b_user = '0;
-
-        assign ethernet.r_valid = ethernet.ar_valid;
-        assign ethernet.r_resp = axi_pkg::RESP_SLVERR;
-        assign ethernet.r_data = 'hdeadbeef;
-        assign ethernet.r_last = 1'b1;
-    end
-
-    // ---------------
-    // 5. Timer
-    // ---------------
-    if (InclTimer) begin : gen_timer
-        logic         timer_penable;
-        logic         timer_pwrite;
-        logic [31:0]  timer_paddr;
-        logic         timer_psel;
-        logic [31:0]  timer_pwdata;
-        logic [31:0]  timer_prdata;
-        logic         timer_pready;
-        logic         timer_pslverr;
-
-        axi2apb_64_32 #(
-            .AXI4_ADDRESS_WIDTH ( AxiAddrWidth ),
-            .AXI4_RDATA_WIDTH   ( AxiDataWidth ),
-            .AXI4_WDATA_WIDTH   ( AxiDataWidth ),
-            .AXI4_ID_WIDTH      ( AxiIdWidth   ),
-            .AXI4_USER_WIDTH    ( AxiUserWidth ),
-            .BUFF_DEPTH_SLAVE   ( 2            ),
-            .APB_ADDR_WIDTH     ( 32           )
-        ) i_axi2apb_64_32_timer (
-            .ACLK      ( clk_i           ),
-            .ARESETn   ( rst_ni          ),
-            .test_en_i ( 1'b0            ),
-            .AWID_i    ( timer.aw_id     ),
-            .AWADDR_i  ( timer.aw_addr   ),
-            .AWLEN_i   ( timer.aw_len    ),
-            .AWSIZE_i  ( timer.aw_size   ),
-            .AWBURST_i ( timer.aw_burst  ),
-            .AWLOCK_i  ( timer.aw_lock   ),
-            .AWCACHE_i ( timer.aw_cache  ),
-            .AWPROT_i  ( timer.aw_prot   ),
-            .AWREGION_i( timer.aw_region ),
-            .AWUSER_i  ( timer.aw_user   ),
-            .AWQOS_i   ( timer.aw_qos    ),
-            .AWVALID_i ( timer.aw_valid  ),
-            .AWREADY_o ( timer.aw_ready  ),
-            .WDATA_i   ( timer.w_data    ),
-            .WSTRB_i   ( timer.w_strb    ),
-            .WLAST_i   ( timer.w_last    ),
-            .WUSER_i   ( timer.w_user    ),
-            .WVALID_i  ( timer.w_valid   ),
-            .WREADY_o  ( timer.w_ready   ),
-            .BID_o     ( timer.b_id      ),
-            .BRESP_o   ( timer.b_resp    ),
-            .BVALID_o  ( timer.b_valid   ),
-            .BUSER_o   ( timer.b_user    ),
-            .BREADY_i  ( timer.b_ready   ),
-            .ARID_i    ( timer.ar_id     ),
-            .ARADDR_i  ( timer.ar_addr   ),
-            .ARLEN_i   ( timer.ar_len    ),
-            .ARSIZE_i  ( timer.ar_size   ),
-            .ARBURST_i ( timer.ar_burst  ),
-            .ARLOCK_i  ( timer.ar_lock   ),
-            .ARCACHE_i ( timer.ar_cache  ),
-            .ARPROT_i  ( timer.ar_prot   ),
-            .ARREGION_i( timer.ar_region ),
-            .ARUSER_i  ( timer.ar_user   ),
-            .ARQOS_i   ( timer.ar_qos    ),
-            .ARVALID_i ( timer.ar_valid  ),
-            .ARREADY_o ( timer.ar_ready  ),
-            .RID_o     ( timer.r_id      ),
-            .RDATA_o   ( timer.r_data    ),
-            .RRESP_o   ( timer.r_resp    ),
-            .RLAST_o   ( timer.r_last    ),
-            .RUSER_o   ( timer.r_user    ),
-            .RVALID_o  ( timer.r_valid   ),
-            .RREADY_i  ( timer.r_ready   ),
-            .PENABLE   ( timer_penable   ),
-            .PWRITE    ( timer_pwrite    ),
-            .PADDR     ( timer_paddr     ),
-            .PSEL      ( timer_psel      ),
-            .PWDATA    ( timer_pwdata    ),
-            .PRDATA    ( timer_prdata    ),
-            .PREADY    ( timer_pready    ),
-            .PSLVERR   ( timer_pslverr   )
-        );
-
-        apb_timer #(
-                .APB_ADDR_WIDTH ( 32 ),
-                .TIMER_CNT      ( 2  )
-        ) i_timer (
-            .HCLK    ( clk_i            ),
-            .HRESETn ( rst_ni           ),
-            .PSEL    ( timer_psel       ),
-            .PENABLE ( timer_penable    ),
-            .PWRITE  ( timer_pwrite     ),
-            .PADDR   ( timer_paddr      ),
-            .PWDATA  ( timer_pwdata     ),
-            .PRDATA  ( timer_prdata     ),
-            .PREADY  ( timer_pready     ),
-            .PSLVERR ( timer_pslverr    ),
-            .irq_o   ( irq_sources[6:3] )
-        );
-    end
-endmodule
-
-
-// C:/code/cva6-softcore-contest/corev_apu/tb/rvfi_tracer.sv
-// Copyright 2020 Thales DIS design services SAS
-//
-// Licensed under the Solderpad Hardware Licence, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// SPDX-License-Identifier: Apache-2.0 WITH SHL-2.0
-// You may obtain a copy of the License at https://solderpad.org/licenses/
-//
-// Original Author: Jean-Roch COULON - Thales
-
-module rvfi_tracer #(
-  parameter config_pkg::cva6_cfg_t CVA6Cfg = config_pkg::cva6_cfg_empty,
-  parameter type rvfi_instr_t = logic,
-  //
-  parameter logic [7:0] HART_ID      = '0,
-  parameter int unsigned DEBUG_START = 0,
-  parameter int unsigned DEBUG_STOP  = 0
-)(
-  input logic                           clk_i,
-  input logic                           rst_ni,
-  input rvfi_instr_t[CVA6Cfg.NrCommitPorts-1:0] rvfi_i,
-  output logic[31:0]                    end_of_test_o
-);
-
-  logic[riscv::PLEN-1:0] TOHOST_ADDR;
-  int f;
-  int unsigned SIM_FINISH;
-  initial begin
-    f = $fopen($sformatf("trace_rvfi_hart_%h.dasm", HART_ID), "w");
-    if (!$value$plusargs("time_out=%d", SIM_FINISH)) SIM_FINISH = 2000000;
-    if (!$value$plusargs("tohost_addr=%h", TOHOST_ADDR)) TOHOST_ADDR = '0;
-    if (TOHOST_ADDR == '0) begin
-      $display("*** [rvf_tracer] WARNING: No valid address of 'tohost' (tohost == 0x%h), termination possible only by timeout or Ctrl-C!\n", TOHOST_ADDR);
-      $fwrite(f, "*** [rvfi_tracer] WARNING No valid address of 'tohost' (tohost == 0x%h), termination possible only by timeout or Ctrl-C!\n", TOHOST_ADDR);
-    end
-  end
-
-  final $fclose(f);
-
-  logic [31:0] cycles;
-  // Generate the trace based on RVFI
-  logic [63:0] pc64;
-  string cause;
-  logic[31:0] end_of_test_q;
-  logic[31:0] end_of_test_d;
-
-  assign end_of_test_o = end_of_test_d;
-  always_ff @(posedge clk_i) begin
-    end_of_test_q = (rst_ni && (end_of_test_d[0] == 1'b1)) ? end_of_test_d : 0;
-    for (int i = 0; i < CVA6Cfg.NrCommitPorts; i++) begin
-      pc64 = {{riscv::XLEN-riscv::VLEN{rvfi_i[i].pc_rdata[riscv::VLEN-1]}}, rvfi_i[i].pc_rdata};
-      // print the instruction information if the instruction is valid or a trap is taken
-      if (rvfi_i[i].valid) begin
-        // Instruction information
-        $fwrite(f, "core   0: 0x%h (0x%h) DASM(%h)\n",
-          pc64, rvfi_i[i].insn, rvfi_i[i].insn);
-        // Destination register information
-        if (rvfi_i[i].insn[1:0] != 2'b11) begin
-          $fwrite(f, "%h 0x%h (0x%h)",
-            rvfi_i[i].mode, pc64, rvfi_i[i].insn[15:0]);
-        end else begin
-          $fwrite(f, "%h 0x%h (0x%h)",
-            rvfi_i[i].mode, pc64, rvfi_i[i].insn);
-        end
-        // Decode instruction to know if destination register is FP register.
-        // Handle both uncompressed and compressed instructions.
-        if ( rvfi_i[i].insn[6:0] == 7'b1001111 ||
-             rvfi_i[i].insn[6:0] == 7'b1001011 ||
-             rvfi_i[i].insn[6:0] == 7'b1000111 ||
-             rvfi_i[i].insn[6:0] == 7'b1000011 ||
-             rvfi_i[i].insn[6:0] == 7'b0000111 ||
-            (rvfi_i[i].insn[6:0] == 7'b1010011 && rvfi_i[i].insn[31:26] != 6'b111000
-                                               && rvfi_i[i].insn[31:26] != 6'b101000
-                                               && rvfi_i[i].insn[31:26] != 6'b110000) ||
-            (rvfi_i[i].insn[0] == 1'b0 && ((rvfi_i[i].insn[15:13] == 3'b001 && riscv::XLEN == 64) ||
-                                           (rvfi_i[i].insn[15:13] == 3'b011 && riscv::XLEN == 32) ))) begin
-          $fwrite(f, " f%d 0x%h", rvfi_i[i].rd_addr, rvfi_i[i].rd_wdata);
-        end else if (rvfi_i[i].rd_addr != 0) begin
-          $fwrite(f, " x%d 0x%h", rvfi_i[i].rd_addr, rvfi_i[i].rd_wdata);
-          if (rvfi_i[i].mem_rmask != 0) begin
-            $fwrite(f, " mem 0x%h", rvfi_i[i].mem_addr);
-          end
-        end else begin
-          if (rvfi_i[i].mem_wmask != 0) begin
-            $fwrite(f, " mem 0x%h 0x%h", rvfi_i[i].mem_addr, rvfi_i[i].mem_wdata);
-            if (TOHOST_ADDR != '0 &&
-                rvfi_i[i].mem_paddr == TOHOST_ADDR &&
-                rvfi_i[i].mem_wdata[0] == 1'b1) begin
-              end_of_test_q = rvfi_i[i].mem_wdata[31:0];
-            end
-          end
-        end
-        $fwrite(f, "\n");
-      end else begin
-        if (rvfi_i[i].trap) begin
-          case (rvfi_i[i].cause)
-            32'h0: cause = "INSTR_ADDR_MISALIGNED";
-            32'h1: cause = "INSTR_ACCESS_FAULT";
-            32'h2: cause = "ILLEGAL_INSTR";
-            32'h3: cause = "BREAKPOINT";
-            32'h4: cause = "LD_ADDR_MISALIGNED";
-            32'h5: cause = "LD_ACCESS_FAULT";
-            32'h6: cause = "ST_ADDR_MISALIGNED";
-            32'h7: cause = "ST_ACCESS_FAULT";
-          endcase;
-          $fwrite(f, "%s exception @ 0x%h\n", cause, pc64);
-        end
-      end
-    end
-
-    if (~rst_ni)
-      cycles <= 0;
-    else
-      cycles <= cycles+1;
-    if (cycles > SIM_FINISH)
-      end_of_test_q = 32'hffff_ffff;
-
-    end_of_test_d <= end_of_test_q;
-  end
-
-
-  // Trace any custom signals
-  // Define signals to be traced by adding them into debug and name arrays
-  string name[0:10];
-  logic[63:0] debug[0:10], debug_previous[0:10];
-
-  always_ff @(posedge clk_i) begin
-    if (cycles > DEBUG_START && cycles < DEBUG_STOP)
-      for (int index = 0; index < 100; index++)
-        if (debug_previous[index] != debug[index])
-          $fwrite(f, "%d %s %x\n", cycles, name[index], debug[index]);
-    debug_previous <= debug;
-  end
-
-endmodule // rvfi_tracer
-
-
-// C:/code/cva6-softcore-contest/corev_apu/tb/common/uart.sv
-// Copyright 2018 ETH Zurich and University of Bologna.
-// Copyright and related rights are licensed under the Solderpad Hardware
-// License, Version 0.51 (the "License"); you may not use this file except in
-// compliance with the License.  You may obtain a copy of the License at
-// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
-// or agreed to in writing, software, hardware and materials distributed under
-// this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-// CONDITIONS OF ANY KIND, either express or implied. See the License for the
-// specific language governing permissions and limitations under the License.
-//
-// Author: Unknown
-// Date: Unknown
-// Description: This module takes data over UART and prints them to the console
-//              A string is printed to the console as soon as a '\n' character is found
-
-`timescale 1ns/1ns
-
-interface uart_bus #(
-    parameter int unsigned BAUD_RATE = 115200,
-    parameter int unsigned PARITY_EN = 0
-)(
-    input  logic rx,
-    output logic tx,
-    input  logic rx_en
-);
-
-/* pragma translate_off */
-`ifndef VERILATOR
-  localparam time BIT_PERIOD = (1000000000 / BAUD_RATE) * 1ns;
-
-  logic [7:0]       character;
-  logic [256*8-1:0] stringa;
-  logic             parity;
-  integer           charnum;
-  integer           file;
-
-  initial begin
-    tx   = 1'bZ;
-    file = $fopen("uart", "w");
-  end
-
-  always begin
-    if (rx_en) begin
-      @(negedge rx);
-      #(BIT_PERIOD/2);
-      for (int i = 0; i <= 7; i++) begin
-        #BIT_PERIOD character[i] = rx;
-      end
-
-      if (PARITY_EN == 1) begin
-        // check parity
-        #BIT_PERIOD parity = rx;
-
-        for (int i=7;i>=0;i--) begin
-          parity = character[i] ^ parity;
-        end
-
-        if (parity == 1'b1) begin
-          $display("Parity error detected");
-        end
-      end
-
-      // STOP BIT
-      #BIT_PERIOD;
-
-      $fwrite(file, "%c", character);
-      stringa[(255-charnum)*8 +: 8] = character;
-      if (character == 8'h0A || charnum == 254) begin // line feed or max. chars reached
-        if (character == 8'h0A) begin
-          stringa[(255-charnum)*8 +: 8] = 8'h0; // null terminate string, replace line feed
-        end else begin
-          stringa[(255-charnum-1)*8 +: 8] = 8'h0; // null terminate string
-        end
-
-        $write("[UART]: %s\n", stringa);
-        charnum = 0;
-        stringa = "";
-      end else begin
-        charnum = charnum + 1;
-      end
-    end else begin
-      charnum = 0;
-      stringa = "";
-      #10;
-    end
-  end
-
-  task send_char(input logic [7:0] c);
-    int i;
-
-    // start bit
-    tx = 1'b0;
-
-    for (i = 0; i < 8; i++) begin
-      #(BIT_PERIOD);
-      tx = c[i];
-    end
-
-    // stop bit
-    #(BIT_PERIOD);
-    tx = 1'b1;
-    #(BIT_PERIOD);
-  endtask
-`endif
-/* pragma translate_on */
-endinterface
-
-
-// C:/code/cva6-softcore-contest/corev_apu/tb/common/SimDTM.sv
-// See LICENSE.SiFive for license details.
-//VCS coverage exclude_file
-
-import "DPI-C" function int debug_tick
-(
-  output bit     debug_req_valid,
-  input  bit     debug_req_ready,
-  output int     debug_req_bits_addr,
-  output int     debug_req_bits_op,
-  output int     debug_req_bits_data,
-
-  input  bit        debug_resp_valid,
-  output bit        debug_resp_ready,
-  input  int        debug_resp_bits_resp,
-  input  int        debug_resp_bits_data
-);
-
-module SimDTM(
-  input clk,
-  input reset,
-
-  output        debug_req_valid,
-  input         debug_req_ready,
-  output [ 6:0] debug_req_bits_addr,
-  output [ 1:0] debug_req_bits_op,
-  output [31:0] debug_req_bits_data,
-
-  input         debug_resp_valid,
-  output        debug_resp_ready,
-  input  [ 1:0] debug_resp_bits_resp,
-  input  [31:0] debug_resp_bits_data,
-
-  output [31:0] exit
-);
-
-  bit r_reset;
-
-  wire #0.1 __debug_req_ready = debug_req_ready;
-  wire #0.1 __debug_resp_valid = debug_resp_valid;
-  wire [31:0] #0.1 __debug_resp_bits_resp = {30'b0, debug_resp_bits_resp};
-  wire [31:0] #0.1 __debug_resp_bits_data = debug_resp_bits_data;
-
-  bit __debug_req_valid;
-  int __debug_req_bits_addr;
-  int __debug_req_bits_op;
-  int __debug_req_bits_data;
-  bit __debug_resp_ready;
-  int __exit;
-
-  assign #0.1 debug_req_valid = __debug_req_valid;
-  assign #0.1 debug_req_bits_addr = __debug_req_bits_addr[6:0];
-  assign #0.1 debug_req_bits_op = __debug_req_bits_op[1:0];
-  assign #0.1 debug_req_bits_data = __debug_req_bits_data[31:0];
-  assign #0.1 debug_resp_ready = __debug_resp_ready;
-  assign #0.1 exit = __exit;
-
-  always @(posedge clk)
-  begin
-    r_reset <= reset;
-    if (reset || r_reset)
-    begin
-      __debug_req_valid = 0;
-      __debug_resp_ready = 0;
-      __exit = 0;
-    end
-    else
-    begin
-      __exit = debug_tick(
-        __debug_req_valid,
-        __debug_req_ready,
-        __debug_req_bits_addr,
-        __debug_req_bits_op,
-        __debug_req_bits_data,
-        __debug_resp_valid,
-        __debug_resp_ready,
-        __debug_resp_bits_resp,
-        __debug_resp_bits_data
-      );
-    end
-  end
-endmodule
-
-
-// C:/code/cva6-softcore-contest/corev_apu/tb/common/SimJTAG.sv
-// See LICENSE.SiFive for license details.
-//VCS coverage exclude_file
-import "DPI-C" function int jtag_tick
-(
- output bit jtag_TCK,
- output bit jtag_TMS,
- output bit jtag_TDI,
- output bit jtag_TRSTn,
-
- input bit  jtag_TDO
-);
-
-module SimJTAG #(
-                 parameter TICK_DELAY = 50
-                 )(
-
-                   input         clock,
-                   input         reset,
-
-                   input         enable,
-                   input         init_done,
-
-                   output        jtag_TCK,
-                   output        jtag_TMS,
-                   output        jtag_TDI,
-                   output        jtag_TRSTn,
-
-                   input         jtag_TDO_data,
-                   input         jtag_TDO_driven,
-
-                   output [31:0] exit
-                   );
-
-   reg [31:0]                    tickCounterReg;
-   wire [31:0]                   tickCounterNxt;
-
-   assign tickCounterNxt = (tickCounterReg == 0) ? TICK_DELAY :  (tickCounterReg - 1);
-
-   bit          r_reset;
-
-   wire [31:0]  random_bits = $random;
-
-   wire         #0.1 __jtag_TDO = jtag_TDO_driven ?
-                jtag_TDO_data : random_bits[0];
-
-   bit          __jtag_TCK;
-   bit          __jtag_TMS;
-   bit          __jtag_TDI;
-   bit          __jtag_TRSTn;
-   int          __exit;
-
-   reg          init_done_sticky;
-
-   assign #0.1 jtag_TCK   = __jtag_TCK;
-   assign #0.1 jtag_TMS   = __jtag_TMS;
-   assign #0.1 jtag_TDI   = __jtag_TDI;
-   assign #0.1 jtag_TRSTn = __jtag_TRSTn;
-
-   assign #0.1 exit = __exit;
-
-   always @(posedge clock) begin
-      r_reset <= reset;
-      if (reset || r_reset) begin
-         __exit = 0;
-         tickCounterReg <= TICK_DELAY;
-         init_done_sticky <= 1'b0;
-      end else begin
-         init_done_sticky <= init_done | init_done_sticky;
-         if (enable && init_done_sticky) begin
-            tickCounterReg <= tickCounterNxt;
-            if (tickCounterReg == 0) begin
-               __exit = jtag_tick(
-                                  __jtag_TCK,
-                                  __jtag_TMS,
-                                  __jtag_TDI,
-                                  __jtag_TRSTn,
-                                  __jtag_TDO);
-            end
-         end // if (enable && init_done_sticky)
-      end // else: !if(reset || r_reset)
-   end // always @ (posedge clock)
-
-endmodule
 
 

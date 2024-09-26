@@ -1,0 +1,1109 @@
+**** Begin Compile Point : load_store_unit_1s_21_layer0 ****
+@W: BN114 :|Removing instance CP_fanout_cell_load_store_unit_1s_21_layer0_inst (in view: work.ariane(verilog)) because it does not drive other instances.
+@W: BN114 :|Removing instance CP_fanout_cell_work_load_store_unit_1s_21_layer0_verilog_0_inst (in view: work.ariane(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51045:2:51045:10|Sequential instance i_cva6.ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_ptw.state_q[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25103:2:25103:10|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.state_q[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25103:2:25103:10|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.state_q[6] is reduced to a combinational gate by constant propagation.
+@W: MO197 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25103:2:25103:10|Removing FSM register state_q[5] (in view view:work.load_unit_0_1s_19_layer0(verilog)) because its output is a constant.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30883:2:30883:10|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.gen_rd_ports[1].i_wt_dcache_ctrl.address_tag_q[21] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.gen_rd_ports[1].i_wt_dcache_ctrl.address_tag_q[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN161 :|Net N_5217 has multiple drivers .
+@W: BN161 :|Net N_5441 has multiple drivers .
+@W: BN161 :|Net N_5442 has multiple drivers .
+@W: BN161 :|Net N_5443 has multiple drivers .
+@W: BN161 :|Net N_5444 has multiple drivers .
+@W: BN161 :|Net N_5445 has multiple drivers .
+@W: BN161 :|Net N_5446 has multiple drivers .
+@W: BN161 :|Net N_5447 has multiple drivers .
+@W: BN161 :|Net N_5448 has multiple drivers .
+@W: BN161 :|Net N_5449 has multiple drivers .
+@W: BN161 :|Net N_5450 has multiple drivers .
+@W: BN161 :|Net N_5451 has multiple drivers .
+@W: BN161 :|Net N_5452 has multiple drivers .
+@W: BN161 :|Net N_5453 has multiple drivers .
+@W: BN161 :|Net N_5454 has multiple drivers .
+@W: BN161 :|Net N_5455 has multiple drivers .
+@W: BN161 :|Net N_5456 has multiple drivers .
+@W: BN161 :|Net N_5457 has multiple drivers .
+@W: BN161 :|Net N_5458 has multiple drivers .
+@W: BN161 :|Net N_5459 has multiple drivers .
+@W: BN161 :|Net N_5460 has multiple drivers .
+@W: BN161 :|Net N_5461 has multiple drivers .
+@W: BN161 :|Net N_5462 has multiple drivers .
+@W: BN161 :|Net N_5463 has multiple drivers .
+@W: BN161 :|Net N_5464 has multiple drivers .
+@W: BN161 :|Net N_5465 has multiple drivers .
+@W: BN161 :|Net N_5466 has multiple drivers .
+@W: BN161 :|Net N_5467 has multiple drivers .
+@W: BN161 :|Net N_5468 has multiple drivers .
+@W: BN161 :|Net N_5469 has multiple drivers .
+@W: BN161 :|Net N_5470 has multiple drivers .
+@W: BN161 :|Net N_5471 has multiple drivers .
+@W: BN161 :|Net N_5472 has multiple drivers .
+@W: BN161 :|Net N_5473 has multiple drivers .
+@W: BN161 :|Net N_5474 has multiple drivers .
+@W: BN161 :|Net N_5475 has multiple drivers .
+@W: BN161 :|Net N_5476 has multiple drivers .
+@W: BN161 :|Net N_5477 has multiple drivers .
+@W: BN161 :|Net N_5478 has multiple drivers .
+@W: BN161 :|Net N_5479 has multiple drivers .
+@W: BN161 :|Net N_5480 has multiple drivers .
+@W: BN161 :|Net N_5481 has multiple drivers .
+@W: BN161 :|Net N_5482 has multiple drivers .
+@W: BN161 :|Net N_5483 has multiple drivers .
+@W: BN161 :|Net N_5484 has multiple drivers .
+@W: BN161 :|Net N_5485 has multiple drivers .
+@W: BN161 :|Net N_5486 has multiple drivers .
+@W: BN161 :|Net N_5487 has multiple drivers .
+@W: BN161 :|Net N_5488 has multiple drivers .
+@W: BN161 :|Net N_5489 has multiple drivers .
+@W: BN161 :|Net N_5490 has multiple drivers .
+@W: BN161 :|Net N_5491 has multiple drivers .
+@W: BN161 :|Net N_5492 has multiple drivers .
+@W: BN161 :|Net N_5493 has multiple drivers .
+@W: BN161 :|Net N_5494 has multiple drivers .
+@W: BN161 :|Net N_5495 has multiple drivers .
+@W: BN161 :|Net N_5496 has multiple drivers .
+@W: BN161 :|Net N_5497 has multiple drivers .
+@W: BN161 :|Net N_5498 has multiple drivers .
+@W: BN161 :|Net N_5499 has multiple drivers .
+@W: BN161 :|Net N_5500 has multiple drivers .
+@W: BN161 :|Net N_5501 has multiple drivers .
+@W: BN161 :|Net N_5502 has multiple drivers .
+@W: BN161 :|Net N_5503 has multiple drivers .
+@W: BN161 :|Net N_5504 has multiple drivers .
+@W: BN161 :|Net N_5505 has multiple drivers .
+@W: BN161 :|Net N_5506 has multiple drivers .
+@W: BN161 :|Net N_5507 has multiple drivers .
+@W: BN161 :|Net N_5508 has multiple drivers .
+@W: BN161 :|Net N_5509 has multiple drivers .
+@W: BN161 :|Net N_5510 has multiple drivers .
+@W: BN161 :|Net N_5511 has multiple drivers .
+@W: BN161 :|Net N_5512 has multiple drivers .
+@W: BN161 :|Net N_5513 has multiple drivers .
+@W: BN161 :|Net N_5514 has multiple drivers .
+@W: BN161 :|Net N_5515 has multiple drivers .
+@W: BN161 :|Net N_5516 has multiple drivers .
+@W: BN161 :|Net N_5517 has multiple drivers .
+@W: BN161 :|Net N_5518 has multiple drivers .
+@W: BN161 :|Net N_5519 has multiple drivers .
+@W: BN161 :|Net N_5520 has multiple drivers .
+@W: BN161 :|Net N_5521 has multiple drivers .
+@W: BN161 :|Net N_5522 has multiple drivers .
+@W: BN161 :|Net N_5523 has multiple drivers .
+@W: BN161 :|Net N_5524 has multiple drivers .
+@W: BN161 :|Net N_5525 has multiple drivers .
+@W: BN161 :|Net N_5526 has multiple drivers .
+@W: BN161 :|Net N_5527 has multiple drivers .
+@W: BN161 :|Net N_5528 has multiple drivers .
+@W: BN161 :|Net N_5529 has multiple drivers .
+@W: BN161 :|Net N_5530 has multiple drivers .
+@W: BN161 :|Net N_5531 has multiple drivers .
+@W: BN161 :|Net N_5532 has multiple drivers .
+@W: BN161 :|Net N_5533 has multiple drivers .
+@W: BN161 :|Net N_5534 has multiple drivers .
+@W: BN161 :|Net N_5535 has multiple drivers .
+@W: BN161 :|Net N_5536 has multiple drivers .
+@W: BN161 :|Net N_5537 has multiple drivers .
+@W: BN161 :|Net N_5538 has multiple drivers .
+@W: BN161 :|Net N_5539 has multiple drivers .
+@W: BN161 :|Net N_5540 has multiple drivers .
+@W: BN161 :|Net N_5541 has multiple drivers .
+@W: BN161 :|Net N_5542 has multiple drivers .
+@W: BN161 :|Net N_5543 has multiple drivers .
+@W: BN161 :|Net N_5544 has multiple drivers .
+@W: BN161 :|Net N_5545 has multiple drivers .
+@W: BN161 :|Net N_5546 has multiple drivers .
+@W: BN161 :|Net N_5547 has multiple drivers .
+@W: BN161 :|Net N_5548 has multiple drivers .
+@W: BN161 :|Net N_5549 has multiple drivers .
+@W: BN161 :|Net N_5550 has multiple drivers .
+@W: BN161 :|Net N_5551 has multiple drivers .
+@W: BN161 :|Net N_5552 has multiple drivers .
+@W: BN161 :|Net N_5553 has multiple drivers .
+@W: BN161 :|Net N_5554 has multiple drivers .
+@W: BN161 :|Net N_5555 has multiple drivers .
+@W: BN161 :|Net N_5556 has multiple drivers .
+@W: BN161 :|Net N_5557 has multiple drivers .
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[31] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[15] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[16] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[17] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[18] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[19] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[20] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[21] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[22] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[23] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[24] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[25] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[26] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[27] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[28] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[29] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[30] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[8] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[9] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[10] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[11] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[12] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[13] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Sequential instance i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[14] is reduced to a combinational gate by constant propagation.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25823:2:25823:10|Removing instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].operation[6] because it is equivalent to instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25823:2:25823:10|Removing instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[8] because it is equivalent to instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25823:2:25823:10|Removing instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[6] because it is equivalent to instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25823:2:25823:10|Removing instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[4] because it is equivalent to instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25823:2:25823:10|Removing instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[1] because it is equivalent to instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25823:2:25823:10|Removing instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[10] because it is equivalent to instance i_cva6.ex_stage_i.lsu_i.lsu_bypass_i.mem_q[0].data[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+**** End Compile Point : load_store_unit_1s_21_layer0 ****
+@W: BN114 :|Removing instance CP_fanout_cell_ariane_verilog_inst (in view: work.csr_regfile_1s_6s_1075056896_32_layer0_acp(verilog)) because it does not drive other instances.
+**** Begin Compile Point : wt_dcache_4s_1s_40_layer0 ****
+@W: BN114 :|Removing instance CP_fanout_cell_work_wt_dcache_4s_1s_40_layer0_verilog_inst (in view: work.ariane(verilog)) because it does not drive other instances.
+@W: BN161 :|Net i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed has multiple drivers .
+@W: BN161 :|Net N_2833 has multiple drivers .
+@W: BN161 :|Net N_2834 has multiple drivers .
+@W: BN161 :|Net N_2835 has multiple drivers .
+@W: BN161 :|Net N_2836 has multiple drivers .
+@W: BN161 :|Net N_2837 has multiple drivers .
+@W: BN161 :|Net N_2838 has multiple drivers .
+@W: BN161 :|Net N_2839 has multiple drivers .
+@W: BN161 :|Net N_2840 has multiple drivers .
+@W: BN161 :|Net N_2841 has multiple drivers .
+@W: BN161 :|Net N_2842 has multiple drivers .
+@W: BN161 :|Net N_2843 has multiple drivers .
+@W: BN161 :|Net N_2844 has multiple drivers .
+@W: BN161 :|Net N_2845 has multiple drivers .
+@W: BN161 :|Net N_2846 has multiple drivers .
+@W: BN161 :|Net N_2847 has multiple drivers .
+@W: BN161 :|Net N_2848 has multiple drivers .
+@W: BN161 :|Net N_2849 has multiple drivers .
+@W: BN161 :|Net N_2850 has multiple drivers .
+@W: BN161 :|Net N_2851 has multiple drivers .
+@W: BN161 :|Net N_2852 has multiple drivers .
+@W: BN161 :|Net N_2853 has multiple drivers .
+@W: BN161 :|Net N_2854 has multiple drivers .
+@W: BN161 :|Net N_2855 has multiple drivers .
+@W: BN161 :|Net N_2856 has multiple drivers .
+@W: BN161 :|Net N_2857 has multiple drivers .
+@W: BN161 :|Net N_2858 has multiple drivers .
+@W: BN161 :|Net N_2859 has multiple drivers .
+@W: BN161 :|Net N_2860 has multiple drivers .
+@W: BN161 :|Net N_2861 has multiple drivers .
+@W: BN161 :|Net N_2862 has multiple drivers .
+@W: BN161 :|Net N_2863 has multiple drivers .
+@W: BN161 :|Net N_2864 has multiple drivers .
+@W: BN161 :|Net N_2865 has multiple drivers .
+@W: BN161 :|Net N_2866 has multiple drivers .
+@W: BN161 :|Net N_2867 has multiple drivers .
+@W: BN161 :|Net N_2868 has multiple drivers .
+@W: BN161 :|Net N_2869 has multiple drivers .
+@W: BN161 :|Net N_2870 has multiple drivers .
+@W: BN161 :|Net N_2871 has multiple drivers .
+@W: BN161 :|Net N_2872 has multiple drivers .
+@W: BN161 :|Net N_2873 has multiple drivers .
+@W: BN161 :|Net N_2874 has multiple drivers .
+@W: BN161 :|Net N_2875 has multiple drivers .
+@W: BN161 :|Net N_2876 has multiple drivers .
+@W: BN161 :|Net N_2877 has multiple drivers .
+@W: BN161 :|Net N_2878 has multiple drivers .
+@W: BN161 :|Net N_2879 has multiple drivers .
+@W: BN161 :|Net N_2880 has multiple drivers .
+@W: BN161 :|Net N_2881 has multiple drivers .
+@W: BN161 :|Net N_2882 has multiple drivers .
+@W: BN161 :|Net N_2883 has multiple drivers .
+@W: BN161 :|Net N_2884 has multiple drivers .
+@W: BN161 :|Net N_2885 has multiple drivers .
+@W: BN161 :|Net N_2886 has multiple drivers .
+@W: BN161 :|Net N_2887 has multiple drivers .
+@W: BN161 :|Net N_2888 has multiple drivers .
+@W: BN161 :|Net N_2889 has multiple drivers .
+@W: BN161 :|Net N_2890 has multiple drivers .
+@W: BN161 :|Net N_2891 has multiple drivers .
+@W: BN161 :|Net N_2892 has multiple drivers .
+@W: BN161 :|Net N_2893 has multiple drivers .
+@W: BN161 :|Net N_2894 has multiple drivers .
+@W: BN161 :|Net N_2895 has multiple drivers .
+@W: BN161 :|Net N_2896 has multiple drivers .
+@W: BN161 :|Net N_2897 has multiple drivers .
+@W: BN161 :|Net N_2898 has multiple drivers .
+@W: BN161 :|Net N_2899 has multiple drivers .
+@W: BN161 :|Net N_2900 has multiple drivers .
+@W: BN161 :|Net N_2901 has multiple drivers .
+@W: BN161 :|Net N_2902 has multiple drivers .
+@W: BN161 :|Net N_2903 has multiple drivers .
+@W: BN161 :|Net N_2904 has multiple drivers .
+@W: BN161 :|Net N_2905 has multiple drivers .
+@W: BN161 :|Net N_2906 has multiple drivers .
+@W: BN161 :|Net N_2907 has multiple drivers .
+@W: BN161 :|Net N_2908 has multiple drivers .
+@W: BN161 :|Net N_2909 has multiple drivers .
+@W: BN161 :|Net N_2910 has multiple drivers .
+@W: BN161 :|Net N_2911 has multiple drivers .
+@W: BN161 :|Net N_2912 has multiple drivers .
+@W: BN161 :|Net N_2913 has multiple drivers .
+@W: BN161 :|Net N_2914 has multiple drivers .
+@W: BN161 :|Net N_2915 has multiple drivers .
+@W: BN161 :|Net N_2916 has multiple drivers .
+@W: BN161 :|Net N_2917 has multiple drivers .
+@W: BN161 :|Net N_2918 has multiple drivers .
+@W: BN161 :|Net N_2919 has multiple drivers .
+@W: BN161 :|Net N_2920 has multiple drivers .
+@W: BN161 :|Net N_2921 has multiple drivers .
+@W: BN161 :|Net N_2922 has multiple drivers .
+@W: BN161 :|Net N_2923 has multiple drivers .
+@W: BN161 :|Net N_2924 has multiple drivers .
+@W: BN161 :|Net N_2925 has multiple drivers .
+@W: BN161 :|Net N_2926 has multiple drivers .
+@W: BN161 :|Net N_2927 has multiple drivers .
+@W: BN161 :|Net N_2928 has multiple drivers .
+@W: BN161 :|Net N_2929 has multiple drivers .
+@W: BN161 :|Net N_2930 has multiple drivers .
+@W: BN161 :|Net N_2931 has multiple drivers .
+@W: BN161 :|Net N_2932 has multiple drivers .
+@W: BN161 :|Net N_2933 has multiple drivers .
+@W: BN161 :|Net N_2934 has multiple drivers .
+@W: BN161 :|Net N_2935 has multiple drivers .
+@W: BN161 :|Net N_2936 has multiple drivers .
+@W: BN161 :|Net N_2937 has multiple drivers .
+@W: BN161 :|Net N_2938 has multiple drivers .
+@W: BN161 :|Net N_2939 has multiple drivers .
+@W: BN161 :|Net N_2940 has multiple drivers .
+@W: BN161 :|Net N_2941 has multiple drivers .
+@W: BN161 :|Net N_2942 has multiple drivers .
+@W: BN161 :|Net N_2943 has multiple drivers .
+@W: BN161 :|Net N_2944 has multiple drivers .
+@W: BN161 :|Net N_2945 has multiple drivers .
+@W: BN161 :|Net N_2946 has multiple drivers .
+@W: BN161 :|Net N_2947 has multiple drivers .
+@W: BN161 :|Net N_2948 has multiple drivers .
+@W: BN161 :|Net N_2949 has multiple drivers .
+@W: BN161 :|Net N_2950 has multiple drivers .
+@W: BN161 :|Net N_2951 has multiple drivers .
+@W: BN161 :|Net N_2952 has multiple drivers .
+@W: BN161 :|Net N_2953 has multiple drivers .
+@W: BN161 :|Net N_2954 has multiple drivers .
+@W: BN161 :|Net N_2955 has multiple drivers .
+@W: BN161 :|Net N_2956 has multiple drivers .
+@W: BN161 :|Net N_2957 has multiple drivers .
+@W: BN161 :|Net N_2958 has multiple drivers .
+@W: BN161 :|Net N_2959 has multiple drivers .
+@W: BN161 :|Net N_2960 has multiple drivers .
+@W: BN161 :|Net N_2961 has multiple drivers .
+@W: BN161 :|Net N_2962 has multiple drivers .
+@W: BN161 :|Net N_2963 has multiple drivers .
+@W: BN161 :|Net N_2964 has multiple drivers .
+@W: BN161 :|Net N_2965 has multiple drivers .
+@W: BN161 :|Net N_2966 has multiple drivers .
+@W: BN161 :|Net N_2967 has multiple drivers .
+@W: BN161 :|Net N_2968 has multiple drivers .
+@W: BN161 :|Net N_2969 has multiple drivers .
+@W: BN161 :|Net N_2970 has multiple drivers .
+@W: BN161 :|Net N_2971 has multiple drivers .
+@W: BN161 :|Net N_2972 has multiple drivers .
+@W: BN161 :|Net N_2973 has multiple drivers .
+@W: BN161 :|Net N_2974 has multiple drivers .
+@W: BN161 :|Net N_2975 has multiple drivers .
+@W: BN161 :|Net N_2976 has multiple drivers .
+@W: BN161 :|Net N_2977 has multiple drivers .
+@W: BN161 :|Net N_2978 has multiple drivers .
+@W: BN161 :|Net N_2979 has multiple drivers .
+@W: BN161 :|Net N_2980 has multiple drivers .
+@W: BN161 :|Net N_2981 has multiple drivers .
+@W: BN161 :|Net N_2982 has multiple drivers .
+@W: BN161 :|Net N_2983 has multiple drivers .
+@W: BN161 :|Net N_2984 has multiple drivers .
+@W: BN161 :|Net N_2985 has multiple drivers .
+@W: BN161 :|Net N_2986 has multiple drivers .
+@W: BN161 :|Net N_2987 has multiple drivers .
+@W: BN161 :|Net N_2988 has multiple drivers .
+@W: BN161 :|Net N_2989 has multiple drivers .
+@W: BN161 :|Net N_2990 has multiple drivers .
+@W: BN161 :|Net N_2991 has multiple drivers .
+@W: BN161 :|Net N_2992 has multiple drivers .
+@W: BN161 :|Net N_2993 has multiple drivers .
+@W: BN161 :|Net N_2994 has multiple drivers .
+@W: BN161 :|Net N_2995 has multiple drivers .
+@W: BN161 :|Net N_2996 has multiple drivers .
+@W: BN161 :|Net N_2997 has multiple drivers .
+@W: BN161 :|Net N_2998 has multiple drivers .
+@W: BN161 :|Net N_2999 has multiple drivers .
+@W: BN161 :|Net N_3000 has multiple drivers .
+@W: BN161 :|Net N_3001 has multiple drivers .
+@W: BN161 :|Net N_3002 has multiple drivers .
+@W: BN161 :|Net N_3003 has multiple drivers .
+@W: BN161 :|Net N_3004 has multiple drivers .
+@W: BN161 :|Net N_3005 has multiple drivers .
+@W: BN161 :|Net N_3006 has multiple drivers .
+@W: BN161 :|Net N_3007 has multiple drivers .
+@W: BN161 :|Net N_3008 has multiple drivers .
+@W: BN161 :|Net N_3009 has multiple drivers .
+@W: BN161 :|Net N_3010 has multiple drivers .
+@W: BN161 :|Net N_3011 has multiple drivers .
+@W: BN161 :|Net N_3012 has multiple drivers .
+@W: BN161 :|Net N_3013 has multiple drivers .
+@W: BN161 :|Net N_3014 has multiple drivers .
+@W: BN161 :|Net N_3015 has multiple drivers .
+@W: BN161 :|Net N_3016 has multiple drivers .
+@W: BN161 :|Net N_3017 has multiple drivers .
+@W: BN161 :|Net N_3018 has multiple drivers .
+@W: BN161 :|Net N_3019 has multiple drivers .
+@W: BN161 :|Net N_3020 has multiple drivers .
+@W: BN161 :|Net N_3021 has multiple drivers .
+@W: BN161 :|Net N_3022 has multiple drivers .
+@W: BN161 :|Net N_3023 has multiple drivers .
+@W: BN161 :|Net N_3024 has multiple drivers .
+@W: BN161 :|Net N_3025 has multiple drivers .
+@W: BN161 :|Net N_3026 has multiple drivers .
+@W: BN161 :|Net N_3027 has multiple drivers .
+@W: BN161 :|Net N_3028 has multiple drivers .
+@W: BN161 :|Net N_3029 has multiple drivers .
+@W: BN161 :|Net N_3030 has multiple drivers .
+@W: BN161 :|Net N_3031 has multiple drivers .
+@W: BN161 :|Net N_3032 has multiple drivers .
+@W: BN161 :|Net N_3033 has multiple drivers .
+@W: BN161 :|Net N_3034 has multiple drivers .
+@W: BN161 :|Net N_3035 has multiple drivers .
+@W: BN161 :|Net N_3036 has multiple drivers .
+@W: BN161 :|Net N_3037 has multiple drivers .
+@W: BN161 :|Net N_3038 has multiple drivers .
+@W: BN161 :|Net N_3039 has multiple drivers .
+@W: BN161 :|Net N_3040 has multiple drivers .
+@W: BN161 :|Net N_3041 has multiple drivers .
+@W: BN161 :|Net N_3042 has multiple drivers .
+@W: BN161 :|Net N_3043 has multiple drivers .
+@W: BN161 :|Net N_3044 has multiple drivers .
+@W: BN161 :|Net N_3045 has multiple drivers .
+@W: BN161 :|Net N_3046 has multiple drivers .
+@W: BN161 :|Net N_3048 has multiple drivers .
+@W: BN161 :|Net N_3049 has multiple drivers .
+@W: BN161 :|Net N_3050 has multiple drivers .
+@W: BN161 :|Net N_3051 has multiple drivers .
+@W: BN161 :|Net N_3052 has multiple drivers .
+@W: BN161 :|Net N_3053 has multiple drivers .
+@W: BN161 :|Net N_3054 has multiple drivers .
+@W: BN161 :|Net N_3055 has multiple drivers .
+@W: BN161 :|Net N_3056 has multiple drivers .
+@W: BN161 :|Net N_3057 has multiple drivers .
+@W: BN161 :|Net N_3058 has multiple drivers .
+@W: BN161 :|Net N_3059 has multiple drivers .
+@W: BN161 :|Net N_3060 has multiple drivers .
+@W: BN161 :|Net N_3061 has multiple drivers .
+@W: BN161 :|Net N_3062 has multiple drivers .
+@W: BN161 :|Net N_3063 has multiple drivers .
+@W: BN161 :|Net N_3064 has multiple drivers .
+@W: BN161 :|Net N_3065 has multiple drivers .
+@W: BN161 :|Net N_3066 has multiple drivers .
+@W: BN161 :|Net N_3067 has multiple drivers .
+@W: BN161 :|Net N_3068 has multiple drivers .
+@W: BN161 :|Net N_3069 has multiple drivers .
+@W: BN161 :|Net N_3070 has multiple drivers .
+@W: BN161 :|Net N_3071 has multiple drivers .
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30883:2:30883:10|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.gen_rd_ports[1].i_wt_dcache_ctrl.address_tag_q[21] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.gen_rd_ports[1].i_wt_dcache_ctrl.address_tag_q[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: FX107 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49820:4:49820:12|RAM i_wt_dcache_mem.gen_tag_srams\[1\]\.i_tag_sram.gen_cut\[0\]\.i_tc_sram_wrapper.i_ram.Mem_DP_5[22:0] (in view: work.wt_dcache_4s_1s_40_layer0(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49820:4:49820:12|RAM i_wt_dcache_mem.gen_tag_srams\[0\]\.i_tag_sram.gen_cut\[0\]\.i_tc_sram_wrapper.i_ram.Mem_DP_5[22:0] (in view: work.wt_dcache_4s_1s_40_layer0(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49820:4:49820:12|RAM i_wt_dcache_mem.gen_data_banks\[0\]\.i_data_sram.gen_cut\[0\]\.i_tc_sram_wrapper.i_ram.Mem_DP_7[3:0] (in view: work.wt_dcache_4s_1s_40_layer0(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49820:4:49820:12|RAM i_wt_dcache_mem.gen_data_banks\[0\]\.i_data_sram.gen_cut\[0\]\.i_tc_sram_wrapper.i_ram.Mem_DP_3[3:0] (in view: work.wt_dcache_4s_1s_40_layer0(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31948:2:31948:10|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_missunit.mshr_q.paddr[33] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_missunit.mshr_q.paddr[32]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15879:8:15879:16|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id_rr.gen_arbiter.gen_int_rr.gen_lock.req_q[3] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id_rr.gen_arbiter.gen_int_rr.gen_lock.req_q[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15879:8:15879:16|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id_rr.gen_arbiter.gen_int_rr.gen_lock.req_q[2] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id_rr.gen_arbiter.gen_int_rr.gen_lock.req_q[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15879:8:15879:16|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id_rr.gen_arbiter.gen_int_rr.gen_lock.req_q[1] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id_rr.gen_arbiter.gen_int_rr.gen_lock.req_q[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN161 :|Net N_3120 has multiple drivers .
+@W: BN161 :|Net N_3121 has multiple drivers .
+@W: BN161 :|Net N_3122 has multiple drivers .
+@W: BN161 :|Net N_3123 has multiple drivers .
+@W: MT420 |Found inferred clock load_unit_0_1s_19_layer0|rdata_is_fp_signed_inferred_clock with period 5.00ns. Please declare a user-defined clock on net i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.
+**** End Compile Point : wt_dcache_4s_1s_40_layer0 ****
+**** Begin Compile Point : csr_regfile_1s_6s_1075056896_32_layer0 ****
+@W: BN114 :|Removing instance CP_fanout_cell_work_csr_regfile_1s_6s_1075056896_32_layer0_verilog_0_inst (in view: work.ariane(verilog)) because it does not drive other instances.
+@W: BN114 :|Removing instance CP_fanout_cell_work_csr_regfile_1s_6s_1075056896_32_layer0_verilog_inst (in view: work.ariane(verilog)) because it does not drive other instances.
+**** End Compile Point : csr_regfile_1s_6s_1075056896_32_layer0 ****
+**** Begin Compile Point : issue_stage_0_4s_10_layer0 ****
+@W: BN114 :|Removing instance CP_fanout_cell_work_issue_stage_0_4s_10_layer0_verilog_0_inst (in view: work.ariane(verilog)) because it does not drive other instances.
+@W: BN114 :|Removing instance CP_fanout_cell_work_issue_stage_0_4s_10_layer0_verilog_inst (in view: work.ariane(verilog)) because it does not drive other instances.
+@W: BN161 :|Net i_cva6.ex_stage_i.alu_i.less_1lto32 has multiple drivers .
+@W: BN161 :|Net N_4343 has multiple drivers .
+@W: BN161 :|Net N_4344 has multiple drivers .
+@W: BN161 :|Net N_4345 has multiple drivers .
+@W: BN161 :|Net N_4346 has multiple drivers .
+@W: BN161 :|Net N_4347 has multiple drivers .
+@W: BN161 :|Net N_4348 has multiple drivers .
+@W: BN161 :|Net N_4349 has multiple drivers .
+@W: BN161 :|Net N_4350 has multiple drivers .
+@W: BN161 :|Net N_4351 has multiple drivers .
+@W: BN161 :|Net N_4352 has multiple drivers .
+@W: BN161 :|Net N_4353 has multiple drivers .
+@W: BN161 :|Net N_4354 has multiple drivers .
+@W: BN161 :|Net N_4355 has multiple drivers .
+@W: BN161 :|Net N_4356 has multiple drivers .
+@W: BN161 :|Net N_4357 has multiple drivers .
+@W: BN161 :|Net N_4358 has multiple drivers .
+@W: BN161 :|Net N_4359 has multiple drivers .
+@W: BN161 :|Net N_4360 has multiple drivers .
+@W: BN161 :|Net N_4361 has multiple drivers .
+@W: BN161 :|Net N_4362 has multiple drivers .
+@W: BN161 :|Net N_4363 has multiple drivers .
+@W: BN161 :|Net N_4364 has multiple drivers .
+@W: BN161 :|Net N_4365 has multiple drivers .
+@W: BN161 :|Net N_4366 has multiple drivers .
+@W: BN161 :|Net N_4367 has multiple drivers .
+@W: BN161 :|Net N_4368 has multiple drivers .
+@W: BN161 :|Net N_4369 has multiple drivers .
+@W: BN161 :|Net N_4370 has multiple drivers .
+@W: BN161 :|Net N_4371 has multiple drivers .
+@W: BN161 :|Net N_4372 has multiple drivers .
+@W: BN161 :|Net N_4373 has multiple drivers .
+@W: BN161 :|Net N_4374 has multiple drivers .
+@W: BN161 :|Net N_4375 has multiple drivers .
+@W: BN161 :|Net N_4376 has multiple drivers .
+@W: BN161 :|Net N_4377 has multiple drivers .
+@W: BN161 :|Net N_4378 has multiple drivers .
+@W: BN161 :|Net N_4379 has multiple drivers .
+@W: BN161 :|Net N_4380 has multiple drivers .
+@W: BN161 :|Net N_4381 has multiple drivers .
+@W: BN161 :|Net N_4382 has multiple drivers .
+@W: BN161 :|Net N_4383 has multiple drivers .
+@W: BN161 :|Net N_4384 has multiple drivers .
+@W: BN161 :|Net N_4385 has multiple drivers .
+@W: BN161 :|Net N_4386 has multiple drivers .
+@W: BN161 :|Net N_4387 has multiple drivers .
+@W: BN161 :|Net N_4388 has multiple drivers .
+@W: BN161 :|Net N_4389 has multiple drivers .
+@W: BN161 :|Net N_4390 has multiple drivers .
+@W: BN161 :|Net N_4391 has multiple drivers .
+@W: BN161 :|Net N_4392 has multiple drivers .
+@W: BN161 :|Net N_4393 has multiple drivers .
+@W: BN161 :|Net N_4394 has multiple drivers .
+@W: BN161 :|Net N_4395 has multiple drivers .
+@W: BN161 :|Net N_4396 has multiple drivers .
+@W: BN161 :|Net N_4397 has multiple drivers .
+@W: BN161 :|Net N_4398 has multiple drivers .
+@W: BN161 :|Net N_4399 has multiple drivers .
+@W: BN161 :|Net N_4400 has multiple drivers .
+@W: BN161 :|Net N_4401 has multiple drivers .
+@W: BN161 :|Net N_4402 has multiple drivers .
+@W: BN161 :|Net N_4403 has multiple drivers .
+@W: BN161 :|Net N_4404 has multiple drivers .
+@W: BN161 :|Net N_4405 has multiple drivers .
+@W: BN161 :|Net N_4406 has multiple drivers .
+@W: BN161 :|Net N_4407 has multiple drivers .
+@W: BN161 :|Net N_4408 has multiple drivers .
+@W: BN161 :|Net N_4409 has multiple drivers .
+@W: BN161 :|Net N_4410 has multiple drivers .
+@W: BN161 :|Net N_4411 has multiple drivers .
+@W: BN161 :|Net N_4412 has multiple drivers .
+@W: BN161 :|Net N_4413 has multiple drivers .
+@W: BN161 :|Net N_4414 has multiple drivers .
+@W: BN161 :|Net N_4415 has multiple drivers .
+@W: BN161 :|Net N_4416 has multiple drivers .
+@W: BN161 :|Net N_4417 has multiple drivers .
+@W: BN161 :|Net N_4418 has multiple drivers .
+@W: BN161 :|Net N_4419 has multiple drivers .
+@W: BN161 :|Net N_4420 has multiple drivers .
+@W: BN161 :|Net N_4421 has multiple drivers .
+@W: BN161 :|Net N_4422 has multiple drivers .
+@W: BN161 :|Net N_4423 has multiple drivers .
+@W: BN161 :|Net N_4424 has multiple drivers .
+@W: BN161 :|Net N_4425 has multiple drivers .
+@W: BN161 :|Net N_4426 has multiple drivers .
+@W: BN161 :|Net N_4427 has multiple drivers .
+@W: BN161 :|Net N_4428 has multiple drivers .
+@W: BN161 :|Net N_4429 has multiple drivers .
+@W: BN161 :|Net N_4430 has multiple drivers .
+@W: BN161 :|Net N_4431 has multiple drivers .
+@W: BN161 :|Net N_4432 has multiple drivers .
+@W: BN161 :|Net N_4433 has multiple drivers .
+@W: BN161 :|Net N_4434 has multiple drivers .
+@W: BN161 :|Net N_4435 has multiple drivers .
+@W: BN161 :|Net N_4436 has multiple drivers .
+@W: BN161 :|Net N_4437 has multiple drivers .
+@W: BN161 :|Net N_4438 has multiple drivers .
+@W: BN161 :|Net N_4439 has multiple drivers .
+@W: BN161 :|Net N_4440 has multiple drivers .
+@W: BN161 :|Net N_4441 has multiple drivers .
+@W: BN161 :|Net N_4442 has multiple drivers .
+@W: BN161 :|Net N_4443 has multiple drivers .
+@W: BN161 :|Net N_4444 has multiple drivers .
+@W: BN161 :|Net N_4445 has multiple drivers .
+@W: BN161 :|Net N_4446 has multiple drivers .
+@W: BN161 :|Net N_4447 has multiple drivers .
+@W: BN161 :|Net N_4448 has multiple drivers .
+@W: BN161 :|Net N_4449 has multiple drivers .
+@W: BN161 :|Net N_4450 has multiple drivers .
+@W: BN161 :|Net N_4451 has multiple drivers .
+@W: BN161 :|Net N_4452 has multiple drivers .
+@W: BN161 :|Net N_4453 has multiple drivers .
+@W: BN161 :|Net N_4454 has multiple drivers .
+@W: BN161 :|Net N_4455 has multiple drivers .
+@W: BN161 :|Net N_4456 has multiple drivers .
+@W: BN161 :|Net N_4457 has multiple drivers .
+@W: BN161 :|Net N_4459 has multiple drivers .
+@W: BN161 :|Net N_4460 has multiple drivers .
+@W: BN161 :|Net N_4461 has multiple drivers .
+@W: BN161 :|Net N_4462 has multiple drivers .
+@W: BN161 :|Net N_4463 has multiple drivers .
+@W: BN161 :|Net N_4464 has multiple drivers .
+@W: BN161 :|Net N_4465 has multiple drivers .
+@W: BN161 :|Net N_4466 has multiple drivers .
+@W: BN161 :|Net N_4467 has multiple drivers .
+@W: BN161 :|Net N_4468 has multiple drivers .
+@W: BN161 :|Net N_4469 has multiple drivers .
+@W: BN161 :|Net N_4470 has multiple drivers .
+@W: BN161 :|Net N_4471 has multiple drivers .
+@W: BN161 :|Net N_4472 has multiple drivers .
+@W: BN161 :|Net N_4473 has multiple drivers .
+@W: BN161 :|Net N_4474 has multiple drivers .
+@W: BN161 :|Net N_4475 has multiple drivers .
+@W: BN161 :|Net N_4476 has multiple drivers .
+@W: BN161 :|Net N_4477 has multiple drivers .
+@W: BN161 :|Net N_4478 has multiple drivers .
+@W: BN161 :|Net N_4479 has multiple drivers .
+@W: BN161 :|Net N_4480 has multiple drivers .
+@W: BN161 :|Net N_4481 has multiple drivers .
+@W: BN161 :|Net N_4482 has multiple drivers .
+@W: BN161 :|Net N_4483 has multiple drivers .
+@W: BN161 :|Net N_4484 has multiple drivers .
+@W: BN161 :|Net N_4485 has multiple drivers .
+@W: BN161 :|Net N_4486 has multiple drivers .
+@W: BN161 :|Net N_4487 has multiple drivers .
+@W: BN161 :|Net N_4488 has multiple drivers .
+@W: BN161 :|Net N_4489 has multiple drivers .
+@W: BN161 :|Net N_4490 has multiple drivers .
+@W: BN161 :|Net N_5571 has multiple drivers .
+@W: BN161 :|Net N_5570 has multiple drivers .
+@W: BN161 :|Net N_5569 has multiple drivers .
+@W: BN161 :|Net N_5568 has multiple drivers .
+@W: BN161 :|Net N_5567 has multiple drivers .
+@W: BN161 :|Net N_5566 has multiple drivers .
+@W: BN161 :|Net N_5565 has multiple drivers .
+@W: BN161 :|Net N_5564 has multiple drivers .
+@W: BN161 :|Net N_5563 has multiple drivers .
+@W: BN161 :|Net N_5562 has multiple drivers .
+@W: BN161 :|Net N_5561 has multiple drivers .
+@W: BN161 :|Net N_5560 has multiple drivers .
+@W: BN161 :|Net N_5559 has multiple drivers .
+@W: BN161 :|Net N_5558 has multiple drivers .
+@W: BN161 :|Net N_5557 has multiple drivers .
+@W: BN161 :|Net N_5556 has multiple drivers .
+@W: BN161 :|Net N_5555 has multiple drivers .
+@W: BN161 :|Net N_5554 has multiple drivers .
+@W: BN161 :|Net N_5553 has multiple drivers .
+@W: BN161 :|Net N_5552 has multiple drivers .
+@W: BN161 :|Net N_5551 has multiple drivers .
+@W: BN161 :|Net N_5550 has multiple drivers .
+@W: BN161 :|Net N_5549 has multiple drivers .
+@W: BN161 :|Net N_5548 has multiple drivers .
+@W: BN161 :|Net N_5547 has multiple drivers .
+@W: BN161 :|Net N_5546 has multiple drivers .
+@W: BN161 :|Net N_5545 has multiple drivers .
+@W: BN161 :|Net N_5544 has multiple drivers .
+@W: BN161 :|Net N_5543 has multiple drivers .
+@W: BN161 :|Net N_5542 has multiple drivers .
+@W: BN161 :|Net N_5541 has multiple drivers .
+@W: BN161 :|Net N_5540 has multiple drivers .
+@W: BN161 :|Net N_5539 has multiple drivers .
+@W: BN161 :|Net N_5538 has multiple drivers .
+@W: BN161 :|Net N_5537 has multiple drivers .
+@W: BN161 :|Net N_5572 has multiple drivers .
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[4] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[3] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[2] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[1] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[2].sbe.rd[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[4] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[3] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[2] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[1] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[0].sbe.rd[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[4] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[3] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[2] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[1] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[1].sbe.rd[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[4] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[3] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[2] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[1] because it is equivalent to instance i_cva6.issue_stage_i.i_scoreboard.mem_q[3].sbe.rd[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_2 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_3 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_4 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_5 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_6 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_7 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_8 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_9 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_10 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_11 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_12 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_13 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_14 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_15 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_16 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_17 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_18 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_19 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_20 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_21 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_22 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_23 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_24 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_25 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_26 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_27 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_28 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_29 has multiple drivers .
+@W: BN161 :|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_30 has multiple drivers .
+@W: BN161 :|Net N_5580 has multiple drivers .
+@W: BN161 :|Net N_5581 has multiple drivers .
+@W: BN161 :|Net N_5584 has multiple drivers .
+@W: BN161 :|Net N_5587 has multiple drivers .
+@W: BN161 :|Net N_5590 has multiple drivers .
+@W: BN161 :|Net N_5593 has multiple drivers .
+@W: BN161 :|Net N_5596 has multiple drivers .
+@W: BN161 :|Net N_5599 has multiple drivers .
+@W: BN161 :|Net N_5602 has multiple drivers .
+@W: BN161 :|Net N_5605 has multiple drivers .
+@W: BN161 :|Net N_5608 has multiple drivers .
+@W: BN161 :|Net N_5611 has multiple drivers .
+@W: BN161 :|Net N_5614 has multiple drivers .
+@W: BN161 :|Net N_5617 has multiple drivers .
+@W: BN161 :|Net N_5620 has multiple drivers .
+@W: BN161 :|Net N_5623 has multiple drivers .
+@W: BN161 :|Net N_5626 has multiple drivers .
+@W: BN161 :|Net N_5629 has multiple drivers .
+@W: BN161 :|Net N_5632 has multiple drivers .
+@W: BN161 :|Net N_5635 has multiple drivers .
+@W: BN161 :|Net N_5638 has multiple drivers .
+@W: BN161 :|Net N_5641 has multiple drivers .
+@W: BN161 :|Net N_5644 has multiple drivers .
+@W: BN161 :|Net N_5647 has multiple drivers .
+@W: BN161 :|Net N_5650 has multiple drivers .
+@W: BN161 :|Net N_5653 has multiple drivers .
+@W: BN161 :|Net N_5656 has multiple drivers .
+@W: BN161 :|Net N_5659 has multiple drivers .
+@W: BN161 :|Net N_5662 has multiple drivers .
+@W: BN161 :|Net N_5665 has multiple drivers .
+@W: BN161 :|Net N_5668 has multiple drivers .
+@W: BN161 :|Net N_5671 has multiple drivers .
+@W: BN161 :|Net N_5674 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_0 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_1 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_2 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_3 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_4 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_5 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_6 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_7 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_8 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_9 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_10 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_11 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_12 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_13 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_14 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_15 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_16 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_17 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_18 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_19 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_20 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_21 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_22 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_23 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_24 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_25 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_26 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_27 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_28 has multiple drivers .
+@W: BN161 :|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_m_0_axb_29 has multiple drivers .
+**** End Compile Point : issue_stage_0_4s_10_layer0 ****
+**** Begin Compile Point : ariane ****
+@W: BN114 :|Removing instance CP_fanout_cell_csr_regfile_1s_6s_1075056896_32_layer0_verilog_inst (in view: work.csr_regfile_1s_6s_1075056896_32_layer0_rtl_ilm(verilog)) because it does not drive other instances.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23857:2:23857:10|Removing instance i_cva6.id_stage_i.issue_q.sbe.op[0] because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.fu[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23857:2:23857:10|Removing instance i_cva6.id_stage_i.issue_q.sbe.op[1] because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.fu[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23857:2:23857:10|Removing instance i_cva6.id_stage_i.issue_q.sbe.op[5] because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.fu[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23857:2:23857:10|Removing instance i_cva6.id_stage_i.issue_q.sbe.fu[2] because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.fu[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23857:2:23857:10|Removing instance i_cva6.id_stage_i.issue_q.sbe.op[2] because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.fu[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23857:2:23857:10|Removing instance i_cva6.id_stage_i.issue_q.sbe.op[4] because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.fu[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33475:2:33475:10|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.vaddr_q[3] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33475:2:33475:10|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.vaddr_q[2] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23704:2:23704:10|Removing instance i_cva6.i_frontend.i_instr_realign.unaligned_instr_q[1] because it is equivalent to instance i_cva6.i_frontend.i_instr_realign.unaligned_instr_q[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26390:2:26390:10|Sequential instance i_cva6.ex_stage_i.i_mult.i_div.state_q[1] is reduced to a combinational gate by constant propagation.
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_541 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_767 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_768 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_769 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_770 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_771 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_772 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_773 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_774 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_775 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_776 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_777 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_778 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_779 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_780 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_781 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_782 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_783 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_784 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_785 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_786 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_787 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_788 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_789 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_790 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_791 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_792 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_793 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_794 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_795 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_796 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_797 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_798 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_799 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_800 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_801 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_802 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_803 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_804 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_805 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_806 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_807 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_808 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_809 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_810 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_811 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_812 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_813 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_814 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_815 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_816 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_817 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_818 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_819 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_820 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_821 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_822 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_823 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_824 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_825 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_826 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_827 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_828 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_829 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_830 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_831 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_832 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_833 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_834 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_835 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_836 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_837 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_838 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_839 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_840 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_841 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_842 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_843 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_844 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_845 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_846 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_847 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_848 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_849 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_850 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_851 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_852 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_853 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_854 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_856 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_857 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_858 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_859 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_860 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_861 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_862 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_863 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_864 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_865 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_866 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_867 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_868 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_869 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_870 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_871 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_872 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_873 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_874 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_875 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_876 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_877 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_878 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_879 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_880 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_881 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_882 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_883 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_884 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_885 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_886 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_887 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_888 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_889 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_890 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_891 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_892 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_893 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_894 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_895 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_896 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_897 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_898 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_899 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_900 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_901 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_902 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_903 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_904 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_905 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_906 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_907 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_908 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_909 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_910 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_911 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_912 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_913 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_914 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_915 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_916 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_917 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_918 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_919 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_920 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_921 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_922 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_923 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_924 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_925 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_926 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_930 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_931 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_932 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_939 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_940 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_941 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_942 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_943 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_944 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_945 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_946 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_947 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_948 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_949 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_950 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_951 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_952 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_953 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_954 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_955 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_956 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_957 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_958 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_959 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_960 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_961 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_962 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_963 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_964 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_965 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_966 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_967 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_968 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_969 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_970 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_971 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_972 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_973 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_974 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_975 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_976 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_977 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_978 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_979 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_980 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_981 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_982 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.N_983 has multiple drivers .
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28602:2:28602:10|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_adapter.i_axi_shim.wr_state_q[3] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.state_q[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14909:4:14909:12|Removing instance i_cva6.gen_cache_wt.i_cache_subsystem.i_adapter.i_icache_data_fifo.status_cnt_q[1] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.state_q[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30484:2:30484:10|Removing sequential instance i_cva6.i_frontend.npc_rst_load_q_1 because it is equivalent to instance i_cva6.i_frontend.npc_rst_load_q_0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30484:2:30484:10|Removing sequential instance i_cva6.i_frontend.npc_rst_load_q_0 because it is equivalent to instance i_cva6.i_frontend.npc_rst_load_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33475:2:33475:10|Removing sequential instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q_1[22:0] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q_0[22:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33475:2:33475:10|Removing sequential instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q_0[22:0] because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q[22:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30484:2:30484:10|Removing sequential instance i_cva6.i_frontend.icache_vaddr_q_0[22:0] because it is equivalent to instance i_cva6.i_frontend.icache_vaddr_q[22:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN161 :|Net N_4655 has multiple drivers .
+@W: BN161 :|Net N_4654 has multiple drivers .
+@W: BN161 :|Net N_4653 has multiple drivers .
+@W: BN161 :|Net N_4652 has multiple drivers .
+@W: BN161 :|Net N_4651 has multiple drivers .
+@W: BN161 :|Net N_4650 has multiple drivers .
+@W: BN161 :|Net N_4649 has multiple drivers .
+@W: BN161 :|Net N_4648 has multiple drivers .
+@W: BN161 :|Net N_4647 has multiple drivers .
+@W: BN161 :|Net N_4646 has multiple drivers .
+@W: BN161 :|Net N_4645 has multiple drivers .
+@W: BN161 :|Net N_4644 has multiple drivers .
+@W: BN161 :|Net N_4643 has multiple drivers .
+@W: BN161 :|Net N_4642 has multiple drivers .
+@W: BN161 :|Net N_4641 has multiple drivers .
+@W: BN161 :|Net N_4640 has multiple drivers .
+@W: BN161 :|Net N_4639 has multiple drivers .
+@W: BN161 :|Net N_4638 has multiple drivers .
+@W: BN161 :|Net N_4637 has multiple drivers .
+@W: BN161 :|Net N_4636 has multiple drivers .
+@W: BN161 :|Net N_4635 has multiple drivers .
+@W: BN161 :|Net N_4634 has multiple drivers .
+@W: BN161 :|Net N_4633 has multiple drivers .
+@W: BN161 :|Net N_4632 has multiple drivers .
+@W: BN161 :|Net N_4631 has multiple drivers .
+@W: BN161 :|Net N_4630 has multiple drivers .
+@W: BN161 :|Net N_4629 has multiple drivers .
+@W: BN161 :|Net N_4628 has multiple drivers .
+@W: BN161 :|Net N_4627 has multiple drivers .
+@W: BN161 :|Net N_4626 has multiple drivers .
+@W: BN161 :|Net N_4625 has multiple drivers .
+@W: BN161 :|Net N_4624 has multiple drivers .
+@W: BN161 :|Net N_4623 has multiple drivers .
+@W: BN161 :|Net N_4622 has multiple drivers .
+@W: BN161 :|Net N_4621 has multiple drivers .
+@W: BN161 :|Net N_4656 has multiple drivers .
+@W: BN161 :|Net N_4620 has multiple drivers .
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[26] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_0_0[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[27] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_0[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[28] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[2] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[1] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[0] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[17] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[16] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[15] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[14] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[13] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[12] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[11] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[10] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[9] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[8] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[7] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[6] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[5] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[24] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_0_0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[4] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[25] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_0_0[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[3] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[29] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_0_0[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[23] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[22] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[21] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[20] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[19] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_mod[18] because it is equivalent to instance i_cva6.i_frontend.i_instr_queue.gen_pc_q_without_C.pc_q_1[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_0 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_1 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_2 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_3 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_4 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_5 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_6 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_7 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_8 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_9 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_10 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_11 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_12 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_13 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_14 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_15 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_16 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_17 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_18 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_19 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_20 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_21 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_22 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_23 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_24 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_25 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_26 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_27 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_28 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.un1_fetch_address_1_axb_29 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net N_4785 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_0 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_1 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_2 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_3 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_4 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_5 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_6 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_7 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_8 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_9 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_10 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_11 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_12 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_13 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_14 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_15 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_16 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_17 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_18 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_19 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_20 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_21 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_22 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_23 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_24 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_25 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_26 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_27 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_28 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.i_frontend.i_instr_queue.un1_gen_pc_q_without_C\.pc_q_axb_29 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_2 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_3 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_4 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_5 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_6 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_7 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_8 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_9 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_10 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_11 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_12 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_13 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_14 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_15 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_16 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_17 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_18 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_19 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_20 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_21 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_22 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_23 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_24 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_25 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_26 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_27 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_28 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_29 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.ex_stage_i.branch_unit_i.branch_result_o_1_axb_30 has multiple drivers .
+@W: BN161 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51745:7:51745:12|Net i_cva6.gen_cache_wt\.i_cache_subsystem.i_cva6_icache.flush_cnt_q has multiple drivers .
+**** End Compile Point : ariane ****
+@W: BW150 :|Clock load_unit_0_1s_19_layer0|rdata_is_fp_signed_inferred_clock in set_clock_groups command cannot be found and will not be forward annotated
+@W: MT420 |Found inferred clock ariane|clk_i with period 5.00ns. Please declare a user-defined clock on port clk_i.

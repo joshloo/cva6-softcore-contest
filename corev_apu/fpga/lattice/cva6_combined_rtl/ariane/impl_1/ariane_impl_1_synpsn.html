@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link href="file:///C:/lscc/radiant/2024.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2024.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2024.1.1.259.1
+Command Line: postsyn -a LAV-AT -p LAV-AT-E70ES1 -t LFG676 -sp 1 -oc Commercial -top -w -o ariane_impl_1_syn.udb -ldc C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.ldc -gui -msgset C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/promote.xml ariane_impl_1.vm 
+   Architecture:     LAV-AT
+   Device:           LAV-AT-E70ES1
+   Package:          LFG676
+   Performance:      1
+Reading input file 'ariane_impl_1.vm' ...
+Reading constraint file 'C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.ldc' ...
+Removing unused logic ...
+INFO <35811145> - Instance i_cva6/i_frontend/i_instr_queue/gen_instr_fifo[0].i_fifo_instr_data/gen_fpga_queue.fifo_ram/mem_ram_1.dpram_inst is optimized away.
+INFO <35811146> - Signal i_cva6/i_frontend/i_instr_queue/gen_instr_fifo[0].i_fifo_instr_data/gen_fpga_queue.fifo_ram/fifo_ram_wdata_24 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_cva6/i_frontend/i_instr_queue/gen_instr_fifo[0].i_fifo_instr_data/gen_fpga_queue.fifo_ram/mem_ram_7 undriven or does not drive anything - clipped
+INFO <35811145> - Instance i_cva6/i_frontend/i_instr_queue/gen_instr_fifo[0].i_fifo_instr_data/fifo_ram_wdata_cZ[56] is optimized away.
+INFO <35811146> - Signal i_cva6/i_frontend/i_instr_queue/gen_instr_fifo[0].i_fifo_instr_data/mem_ram_7 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_cva6/i_frontend/i_instr_queue/gen_instr_fifo[0].i_fifo_instr_data/fifo_ram_wdata[56] undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_cva6/i_frontend/i_instr_queue/mem_ram_7 undriven or does not drive anything - clipped
+INFO <35811145> - Instance i_cva6/i_frontend/m415 is optimized away.
+INFO <35811146> - Signal i_cva6/i_frontend/mem_ram_7 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_cva6/i_frontend/N_416 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_cva6/i_frontend/N_5868 undriven or does not drive anything - clipped
+INFO <35811145> - Instance i_cva6/id_stage_i/decoder_i/instruction_o.rs1[1] is optimized away.
+INFO <35811145> - Instance i_cva6/id_stage_i/decoder_i/instruction_o.rs1[2] is optimized away.
+INFO <35811145> - Instance i_cva6/id_stage_i/decoder_i/instruction_o.rs1[3] is optimized away.
+INFO <35811145> - Instance i_cva6/id_stage_i/decoder_i/instruction_o.rs1[4] is optimized away.
+INFO <35811146> - Signal i_cva6/id_stage_i/decoder_i/rs1[4] undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_cva6/id_stage_i/decoder_i/rs1[3] undriven or does not drive anything - clipped
+INFO <35811149> - ... More signals are undriven or does not drive anything - clipped
+INFO <35811145> - Instance i_cva6/id_stage_i/issue_q.sbe.rs1[4] is optimized away.
+INFO <35811145> - Instance i_cva6/id_stage_i/issue_q.sbe.rs1[3] is optimized away.
+INFO <35811145> - Instance i_cva6/id_stage_i/issue_q.sbe.rs1[2] is optimized away.
+INFO <35811148> - ... More instances are optimized away.
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+ 
+Writing output file 'ariane_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 8 secs 
+Total REAL Time: 9 secs 
+Peak Memory Usage: 793 MB
+Checksum -- postsyn: eb831c42755f44901d9fa69cb9cc3e57fef767ed
+
+
+</PRE></DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

@@ -1,0 +1,1 @@
+"C:/code/cva6-softcore-contest/corev_apu/tb/ariane_testharness.sv" "C:/code/cva6-softcore-contest/corev_apu/tb/ariane_peripherals.sv" "C:/code/cva6-softcore-contest/corev_apu/tb/rvfi_tracer.sv" "C:/code/cva6-softcore-contest/corev_apu/tb/common/uart.sv" "C:/code/cva6-softcore-contest/corev_apu/tb/common/SimDTM.sv" "C:/code/cva6-softcore-contest/corev_apu/tb/common/SimJTAG.sv"

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the information about all compile points from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<report_table display_priority="4" name="Compile Points Summary">
+<row>
+<data>Name</data>
+<data>Status</data>
+<data>Reason</data>
+<data>Real Time</data>
+<data>CPU Time</data>
+</row>
+<row>
+<data>
+<value>load_store_unit_1s_21_layer0</value>
+<report_link name="Report">
+<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\load_store_unit_1s_21_layer0\load_store_unit_1s_21_layer0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:00m:27s</data>
+<data>0h:00m:28s</data>
+</row>
+<row>
+<data>
+<value>wt_dcache_4s_1s_40_layer0</value>
+<report_link name="Report">
+<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\wt_dcache_4s_1s_40_layer0\wt_dcache_4s_1s_40_layer0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:00m:30s</data>
+<data>0h:00m:30s</data>
+</row>
+<row>
+<data>
+<value>csr_regfile_1s_6s_1075056896_32_layer0</value>
+<report_link name="Report">
+<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\csr_regfile_1s_6s_1075056896_32_layer0\csr_regfile_1s_6s_1075056896_32_layer0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:00m:08s</data>
+<data>0h:00m:09s</data>
+</row>
+<row>
+<data>
+<value>issue_stage_0_4s_10_layer0</value>
+<report_link name="Report">
+<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\issue_stage_0_4s_10_layer0\issue_stage_0_4s_10_layer0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:00m:59s</data>
+<data>0h:00m:59s</data>
+</row>
+<row>
+<data>
+<value>ariane</value>
+<report_link name="Report">
+<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\ariane\ariane.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:01m:07s</data>
+<data>0h:01m:07s</data>
+</row>
+</report_table>

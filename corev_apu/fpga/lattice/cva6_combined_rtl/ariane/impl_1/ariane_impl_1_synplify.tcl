@@ -11,7 +11,7 @@ set_option -symbolic_fsm_compiler true
 set_option -resource_sharing true
 
 #use verilog standard option
-set_option -vlog_std v2001
+set_option -vlog_std sysv
 
 #map options
 set_option -frequency 200

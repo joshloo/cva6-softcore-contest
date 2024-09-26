@@ -1,0 +1,2 @@
+ckid0_0:@|S:clk_i@|E:i_cva6.id_stage_i.issue_q\.sbe\.op[5:0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT@|E:i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[31]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1

@@ -1,0 +1,428 @@
+# Thu Sep 26 17:33:08 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: C:\lscc\radiant\2024.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 123R, Built Jun 14 2024 11:20:26, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 214MB peak: 214MB)
+
+Reading constraint file: C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+@L: C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\ariane_impl_1_scck.rpt 
+See clock summary report "C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\ariane_impl_1_scck.rpt"
+@N: MF472 |Synthesis running in Automatic Compile Point mode
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 256MB peak: 256MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 256MB peak: 257MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 260MB peak: 260MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 260MB peak: 262MB)
+
+@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30053:9:30053:27|Removing instance i_unread_instr_fifo (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
+@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30052:9:30052:25|Removing instance i_unread_fifo_pos (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
+@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30051:9:30051:20|Removing instance i_unread_lzc (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
+@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30050:9:30050:28|Removing instance i_unread_branch_mask (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
+@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30049:9:30049:29|Removing instance i_unread_address_fifo (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
+NConnInternalConnection caching is on
+@N: FX493 |Applying initial value "00000000000000000000000000000000000000" on instance mem\[1\][37:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "00000000000000000000000000000000000000" on instance mem\[0\][37:0].
+@N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[1\][110:0].
+@N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[0\][110:0].
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33460:6:33460:14|Removing user instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.gen_sram[1].data_sram because it is equivalent to instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.gen_sram[0].data_sram. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 318MB peak: 318MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 318MB peak: 319MB)
+
+
+Start optimization across hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 318MB peak: 319MB)
+
+@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23857:2:23857:10|Removing sequential instance i_cva6.id_stage_i.issue_q.sbe.ex.valid because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.valid. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.x (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.v (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.r (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.a (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.x (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.v (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.r (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.a (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50827:4:50827:12|Removing instance i_pmp_ptw (in view: work.cva6_ptw_sv32_1s_27_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.x (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.w (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.v (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.u (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.r (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.d (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[0\]\.a (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.x (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.w (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.v (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.u (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.r (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.d (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Removing sequential instance content_q\[1\]\.a (in view: work.cva6_tlb_sv32_2s_1s_22_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50637:4:50637:13|Removing instance i_pmp_data (in view: work.cva6_mmu_sv32_2s_2s_1s_21s_29_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25553:4:25553:19|Removing instance i_pipe_reg_store (in view: work.load_store_unit_1s_21_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24326:6:24326:26|Removing instance gen_fpga_regfile\.i_ariane_regfile_fpga (in view: work.issue_read_operands_rs3_len_t_35_rs3_len_t_8_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Removing sequential instance mem_q_3[3:0] (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) of type view:PrimLib.ram2(prim) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27258:4:27258:12|Removing instance i_sel_rs3 (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[0\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24424:2:24424:10|Sequential instance i_cva6.issue_stage_i.i_issue_read_operands.is_compressed_instr_o is reduced to a combinational gate by constant propagation.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31187:4:31187:15|Removing instance i_lzc_rd_hit (in view: work.wt_dcache_mem_4s_0s_39_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31179:4:31179:20|Removing instance i_lzc_wbuffer_hit (in view: work.wt_dcache_mem_4s_0s_39_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15916:10:15916:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_lower (in view: work.rr_arb_tree_wbuffer_t_40_2s_32s_0_0_0_1_1__internal_typedef_139(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15907:10:15907:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_upper (in view: work.rr_arb_tree_wbuffer_t_40_2s_32s_0_0_0_1_1__internal_typedef_139(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15916:10:15916:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_lower (in view: work.rr_arb_tree_wbuffer_t_39_2s_32s_0_0_1_1_1__internal_typedef_137(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15907:10:15907:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_upper (in view: work.rr_arb_tree_wbuffer_t_39_2s_32s_0_0_1_1_1__internal_typedef_137(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32394:4:32394:12|Removing instance i_hit_lzc (in view: work.wt_dcache_wbuffer_38_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34394:2:34394:10|Sequential instance i_cva6.gen_cache_wt.i_cache_subsystem.i_adapter.dcache_rtrn_inv_q.all is reduced to a combinational gate by constant propagation.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34394:2:34394:10|Removing sequential instance dcache_rd_shift_user_q\[3\][0:1] (in view: work.wt_axi_adapter__gen35__gen36_41_2s_4s_2_43_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34394:2:34394:10|Removing sequential instance dcache_rd_shift_user_q\[2\][0:1] (in view: work.wt_axi_adapter__gen35__gen36_41_2s_4s_2_43_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34394:2:34394:10|Removing sequential instance dcache_rd_shift_user_q\[1\][0:1] (in view: work.wt_axi_adapter__gen35__gen36_41_2s_4s_2_43_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34394:2:34394:10|Removing sequential instance dcache_rd_shift_user_q\[0\][0:1] (in view: work.wt_axi_adapter__gen35__gen36_41_2s_4s_2_43_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][105] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][104] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][103] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][102] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][101] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][100] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][99] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][98] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][97] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][96] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][95] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][94] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][93] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][92] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][91] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][90] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][89] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][88] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][87] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][86] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][85] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][84] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][83] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][82] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][81] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][80] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][79] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][78] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][77] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][76] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][75] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][74] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][70] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][69] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][68] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][67] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][66] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][65] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][64] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][63] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][62] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][61] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][60] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][59] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][58] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][57] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][56] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][55] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][54] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][53] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][52] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][51] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][50] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][49] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][48] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][47] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][46] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][45] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][44] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][43] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][42] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][41] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][40] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][39] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[0\][6] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[1\][105] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[1\][104] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[1\][103] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Removing sequential instance mem\[1\][102] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\synlog\ariane_impl_1_premap.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14932:10:14932:17|Removing instance gen_fpga_queue\.fifo_ram (in view: work.fifo_v3_1_1_4s_2s_4s(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15916:10:15916:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_lower (in view: work.rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_9(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15907:10:15907:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_upper (in view: work.rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_9(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33475:2:33475:10|Sequential instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.inv_q is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15208:0:15208:8|Sequential instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.i_lfsr.lfsr_q[1] is reduced to a combinational gate by constant propagation.
+@W: MO156 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49820:4:49820:12|RAM Mem_DP_7[3:0] removed due to constant propagation. 
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49979:4:49979:8|Removing instance i_ram (in view: work.tc_sram_wrapper_Z36_layer0_1(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49979:4:49979:8|Removing instance i_ram (in view: work.tc_sram_wrapper_Z36_layer0_2(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50070:8:50070:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_128s_128s_0s_256s_none_0s_128s_128s_16s(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50070:8:50070:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_128s_128s_0s_256s_none_0s_128s_128s_16s(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33460:6:33460:14|Removing instance gen_sram\[0\]\.data_sram (in view: work.cva6_icache_0s_35_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33436:6:33436:13|Removing instance gen_sram\[1\]\.tag_sram (in view: work.cva6_icache_0s_35_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33436:6:33436:13|Removing instance gen_sram\[0\]\.tag_sram (in view: work.cva6_icache_0s_35_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33407:4:33407:12|Removing instance i_lzc_hit (in view: work.cva6_icache_0s_35_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33384:4:33384:9|Removing instance i_lfsr (in view: work.cva6_icache_0s_35_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33374:4:33374:8|Removing instance i_lzc (in view: work.cva6_icache_0s_35_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14932:10:14932:17|Removing instance gen_fpga_queue\.fifo_ram (in view: work.fifo_v3_icache_req_t_42_0_32s_2s_1s_2s(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14932:10:14932:17|Removing instance gen_fpga_queue\.fifo_ram (in view: work.fifo_v3_0_2s_4s_2s_4s_3(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30579:6:30579:17|Removing instance gen_instr_scan\[0\]\.i_instr_scan (in view: work.frontend_3_layer0(verilog)) because it does not drive other instances.
+@W: MO156 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|RAM mem[31:0] removed due to constant propagation. 
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14932:10:14932:17|Removing instance gen_fpga_queue\.fifo_ram (in view: work.fifo_v3_0_32s_4s_2s_4s(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27237:4:27237:12|Removing instance i_sel_rs2 (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[27\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[29\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[19\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[23\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[15\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[25\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[17\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[31\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[21\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[13\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[5\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[7\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[9\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[1\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[11\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27131:6:27131:23|Removing instance gen_sel_clobbers\[3\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_7_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26133:2:26133:10|Sequential instance i_cva6.ex_stage_i.i_mult.i_multiplier.mult_valid_q is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26390:2:26390:10|Sequential instance i_cva6.ex_stage_i.i_mult.i_div.div_res_zero_q is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26390:2:26390:10|Sequential instance i_cva6.ex_stage_i.i_mult.i_div.op_b_zero_q is reduced to a combinational gate by constant propagation.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26262:4:26262:10|Removing instance i_lzc_b (in view: work.serdiv_32s_0s_15_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26253:4:26253:10|Removing instance i_lzc_a (in view: work.serdiv_32s_0s_15_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25890:4:25890:15|Removing instance i_multiplier (in view: work.mult_16_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28135:4:28135:5|Sequential instance i_cva6.commit_stage_i.commit_ack_o_1[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21384:2:21384:10|Sequential instance i_cva6.csr_regfile_i.icache_q[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21384:2:21384:10|Sequential instance i_cva6.csr_regfile_i.dcache_q[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21384:2:21384:10|Sequential instance i_cva6.csr_regfile_i.dpc_q[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21384:2:21384:10|Sequential instance i_cva6.csr_regfile_i.debug_mode_q is reduced to a combinational gate by constant propagation.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17323:4:17323:15|Removing instance controller_i (in view: work.cva6_logic_ar_chan_t_aw_chan_t_w_chan_t_req_t_resp_t_0_Z34_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17178:4:17178:17|Removing instance commit_stage_i (in view: work.cva6_logic_ar_chan_t_aw_chan_t_w_chan_t_req_t_resp_t_0_Z34_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51591:2:51591:10|Sequential instance i_cva6.ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.dtlb_req_q is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51591:2:51591:10|Sequential instance i_cva6.ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_shared_tlb.itlb_req_q is reduced to a combinational gate by constant propagation.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51710:6:51710:13|Removing instance gen_sram\[0\]\.pte_sram (in view: work.cva6_shared_tlb_sv32_64s_2s_1s_24_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51710:6:51710:13|Removing instance gen_sram\[1\]\.pte_sram (in view: work.cva6_shared_tlb_sv32_64s_2s_1s_24_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51302:2:51302:10|Sequential instance i_cva6.ex_stage_i.lsu_i.gen_mmu_sv32.i_cva6_mmu.i_itlb.plru_tree_q[0] is reduced to a combinational gate by constant propagation.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50247:4:50247:9|Removing instance i_dtlb (in view: work.cva6_mmu_sv32_2s_2s_1s_21s_29_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50225:4:50225:9|Removing instance i_itlb (in view: work.cva6_mmu_sv32_2s_2s_1s_21s_29_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51691:6:51691:13|Removing instance gen_sram\[1\]\.tag_sram (in view: work.cva6_shared_tlb_sv32_64s_2s_1s_24_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51691:6:51691:13|Removing instance gen_sram\[0\]\.tag_sram (in view: work.cva6_shared_tlb_sv32_64s_2s_1s_24_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51667:4:51667:9|Removing instance i_lfsr (in view: work.cva6_shared_tlb_sv32_64s_2s_1s_24_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51658:4:51658:8|Removing instance i_lzc (in view: work.cva6_shared_tlb_sv32_64s_2s_1s_24_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50270:4:50270:15|Removing instance i_shared_tlb (in view: work.cva6_mmu_sv32_2s_2s_1s_21s_29_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32385:4:32385:12|Removing instance i_vld_lzc (in view: work.wt_dcache_wbuffer_38_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49979:4:49979:8|Removing instance i_ram (in view: work.tc_sram_wrapper_Z36_layer0_3_5(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50070:8:50070:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_64s_64s_0s_256s_none_0s_64s_64s_8s_0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49979:4:49979:8|Removing instance i_ram (in view: work.tc_sram_wrapper_Z36_layer0_3_2(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50070:8:50070:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_64s_64s_0s_256s_none_0s_64s_64s_8s_3(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49979:4:49979:8|Removing instance i_ram (in view: work.tc_sram_wrapper_Z36_layer0_3_4(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50070:8:50070:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_64s_64s_0s_256s_none_0s_64s_64s_8s_1(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31238:6:31238:16|Removing instance gen_data_banks\[1\]\.i_data_sram (in view: work.wt_dcache_mem_4s_0s_39_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31238:6:31238:16|Removing instance gen_data_banks\[3\]\.i_data_sram (in view: work.wt_dcache_mem_4s_0s_39_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31238:6:31238:16|Removing instance gen_data_banks\[2\]\.i_data_sram (in view: work.wt_dcache_mem_4s_0s_39_layer0(verilog)) because it does not drive other instances.
+
+Finished optimization across hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 319MB peak: 319MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 319MB peak: 320MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 319MB peak: 320MB)
+
+Encoding state machine state_q[2:0] (in view: work.serdiv_32s_0s_15_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state_q[6:0] (in view: work.cva6_ptw_sv32_1s_27_layer0(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine state_q[6:0] (in view: work.load_unit_0_1s_19_layer0(verilog))
+original code -> new code
+   0000 -> 0000001
+   0001 -> 0000010
+   0010 -> 0000100
+   0011 -> 0001000
+   0100 -> 0010000
+   0110 -> 0100000
+   0111 -> 1000000
+Encoding state machine state_q[5:0] (in view: work.cva6_icache_0s_35_layer0(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+Encoding state machine state_q[4:0] (in view: work.wt_dcache_missunit_1_4s_37_layer0(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   011 -> 00100
+   100 -> 01000
+   101 -> 10000
+Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl_1_41_layer0_2(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl_1_41_layer0_1(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl_1_41_layer0_0(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine wr_state_q[4:0] (in view: work.axi_shim__gen35__gen36_44_2_1s_42_layer0(verilog))
+original code -> new code
+   0000 -> 00001
+   0001 -> 00010
+   0010 -> 00100
+   0011 -> 01000
+   0100 -> 10000
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 324MB peak: 324MB)
+
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 324MB peak: 325MB)
+
+@N: FX1185 |Applying syn_allowed_resources blockrams=3 on compile point issue_stage_0_4s_10_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=11 on compile point wt_dcache_4s_1s_40_layer0 
+@N: FX1184 |Applying syn_allowed_resources blockrams=990 on top level netlist ariane 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 324MB peak: 325MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                                          Requested     Requested     Clock        Clock          Clock
+Level     Clock                                                          Frequency     Period        Type         Group          Load 
+--------------------------------------------------------------------------------------------------------------------------------------
+0 -       ariane|clk_i                                                   200.0 MHz     5.000         inferred     (multiple)     1590 
+                                                                                                                                      
+0 -       load_unit_0_1s_19_layer0|rdata_is_fp_signed_inferred_clock     200.0 MHz     5.000         inferred     (multiple)     32   
+======================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                               Clock     Source                                                             Clock Pin                                                                          Non-clock Pin     Non-clock Pin                                                       
+Clock                                                          Load      Pin                                                                Seq Example                                                                        Seq Example       Comb Example                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ariane|clk_i                                                   1590      clk_i(port)                                                        i_cva6.gen_cache_wt\.i_cache_subsystem.i_adapter.icache_rd_shift_q\[0\][0:1].C     -                 -                                                                   
+                                                                                                                                                                                                                                                                                                                     
+load_unit_0_1s_19_layer0|rdata_is_fp_signed_inferred_clock     32        i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT(or)     i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[0].C                                  -                 i_cva6.ex_stage_i.lsu_i.i_load_unit.un1_rdata_is_fp_signed.I[0](inv)
+=====================================================================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23704:2:23704:10|Found inferred clock ariane|clk_i which controls 1590 sequential elements including i_cva6.i_frontend.i_instr_realign.unaligned_instr_q[3:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25157:11:25157:14|Found inferred clock load_unit_0_1s_19_layer0|rdata_is_fp_signed_inferred_clock which controls 32 sequential elements including i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[31]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 1489 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 32 clock pin(s) of sequential element(s)
+0 instances converted, 32 sequential instances remain driven by gated/generated clocks
+
+======================================= Non-Gated/Non-Generated Clocks ========================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                        
+---------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       clk_i               port                   1489       i_cva6.id_stage_i.issue_q\.sbe\.op[5:0]
+===============================================================================================================
+============================================================================================= Gated/Generated Clocks =============================================================================================
+Clock Tree ID     Driving Element                                                Drive Element Type     Unconverted Fanout     Sample Instance                                      Explanation                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT     or                     32                     i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[31]     Clock Optimization not enabled
+==================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 312MB peak: 325MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 312MB peak: 325MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 314MB peak: 325MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 203MB peak: 325MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+# Thu Sep 26 17:33:14 2024
+
+###########################################################]
