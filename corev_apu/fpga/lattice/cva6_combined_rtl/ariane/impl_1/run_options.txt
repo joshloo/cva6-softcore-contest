@@ -1,14 +1,14 @@
 #--  Synopsys, Inc.
 #--  Version V-2023.09LR-1
 #--  Project file C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\run_options.txt
-#--  Written on Thu Sep 26 17:31:37 2024
+#--  Written on Thu Sep 26 17:45:52 2024
 
 
 #project files
 add_file -constraint "C:/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl"
 add_file -verilog "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v"
 add_file -vhdl -lib pmi "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd"
-add_file -verilog -vlog_std sysv "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/merged_systemverilog.sv"
+add_file -verilog -vlog_std sysv "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/ariane.sv"
 
 
 #implementation: "impl_1"

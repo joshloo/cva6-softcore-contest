@@ -23,6 +23,6 @@ def merge_sv_files(file_list_path, output_file):
 
 if __name__ == "__main__":
     file_list_path = 'file_list.txt'
-    output_filename = 'merged_systemverilog.sv'
+    output_filename = 'ariane.sv'
     merge_sv_files(file_list_path, output_filename)
     print(f"Selected SystemVerilog files have been merged into {output_filename}")
