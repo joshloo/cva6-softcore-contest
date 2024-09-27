@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ippackgerproject version="1.0">
+    <filegroups>
+        <filegroup filetype="metadata">
+            <file path="metadata.xml"/>
+        </filegroup>
+        <filegroup filetype="rtl">
+            <file encryption="0" path="../../../../../ariane.sv" type="verilog"/>
+        </filegroup>
+        <filegroup filetype="key">
+            <file path="../../../../../../../../lscc/radiant/2024.1/ispfpga/data/key.txt"/>
+        </filegroup>
+    </filegroups>
+</ippackgerproject>

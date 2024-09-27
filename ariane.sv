@@ -51770,10 +51770,120 @@ module ariane import ariane_pkg::*; #(
   // RISC-V formal interface port (`rvfi`):
   // Can be left open when formal tracing is not needed.
   output rvfi_instr_t [CVA6Cfg.NrCommitPorts-1:0] rvfi_o,
+
   // memory side
-  output noc_req_t                     noc_req_o,
-  input  noc_resp_t                    noc_resp_i
+  // noc_req_o replacement
+  output logic					noc_req_o_aw_valid,
+  output logic					noc_req_o_w_valid,
+  output logic					noc_req_o_b_ready,
+  output logic					noc_req_o_ar_valid,
+  output logic					noc_req_o_r_ready,
+  // axi_aw_chan_t
+  output logic [AxiIdWidth-1:0] 		noc_req_o_aw_id;
+  output logic [AxiAddrWidth-1:0] 		noc_req_o_aw_addr;
+  output logic [7:0]					noc_req_o_aw_len;
+  output logic [2:0]					noc_req_o_aw_size;
+  output logic [1:0]					noc_req_o_aw_burst;
+  output logic							noc_req_o_aw_lock;
+  output logic [3:0]					noc_req_o_aw_cache;
+  output logic [2:0]					noc_req_o_aw_prot;
+  output logic [3:0]					noc_req_o_aw_qos;
+  output logic [3:0]					noc_req_o_aw_region;
+  output logic [5:0]					noc_req_o_aw_atop;
+  output logic [31:0]					noc_req_o_aw_user;
+  // axi_w_chan_t
+  output logic [AxiDataWidth-1:0]		noc_req_o_w_data;
+  output logic [(AxiDataWidth/8)-1:0]	noc_req_o_w_strb;
+  output logic							noc_req_o_w_last;
+  output logic [31:0]					noc_req_o_w_user;
+  // axi_ar_chan_t
+  output logic [AxiIdWidth-1:0] 		noc_req_o_ar_id;
+  output logic [AxiAddrWidth-1:0] 		noc_req_o_ar_addr;
+  output logic [7:0]					noc_req_o_ar_len;
+  output logic [2:0]					noc_req_o_ar_size;
+  output logic [1:0]					noc_req_o_ar_burst;
+  output logic							noc_req_o_ar_lock;
+  output logic [3:0]					noc_req_o_ar_cache;
+  output logic [2:0]					noc_req_o_ar_prot;
+  output logic [3:0]					noc_req_o_ar_qos;
+  output logic [3:0]					noc_req_o_ar_region;
+  output logic [31:0]					noc_req_o_ar_user;
+
+  // noc_resp_i replacement
+  input  logic					noc_resp_i_aw_ready,
+  input  logic					noc_resp_i_ar_ready,
+  input  logic					noc_resp_i_w_ready,
+  input  logic					noc_resp_i_b_valid,
+  input  logic					noc_resp_i_r_valid,
+  // b_chan_t
+  input logic [AxiIdWidth-1:0]		noc_resp_i_b_id,
+  input logic [1:0]					noc_resp_i_b_resp,
+  input logic [31:0]				noc_resp_i_b_user,
+  // r_chan_t
+  input logic [AxiIdWidth-1:0]		noc_resp_i_r_id,
+  input logic [AxiDataWidth-1:0]	noc_resp_i_r_data,
+  input logic [1:0]					noc_resp_i_r_resp,
+  input logic						noc_resp_i_r_last,
+  input logic [31:0]				noc_resp_i_r_user
+
 );
+
+  noc_req_t		noc_req_o;
+  noc_resp_t	noc_resp_i;
+
+  // noc_req_o replacement
+  assign noc_req_o_aw_valid =  noc_req_o.aw_valid;
+  assign noc_req_o_w_valid =  noc_req_o.w_valid;
+  assign noc_req_o_b_ready =  noc_req_o.b_ready;
+  assign noc_req_o_ar_valid =  noc_req_o.ar_valid;
+  assign noc_req_o_r_ready =  noc_req_o.r_ready;
+  // axi_aw_chan_t
+  assign noc_req_o_aw_id	=  noc_req_o.aw.id;
+  assign noc_req_o_aw_addr	=  noc_req_o.aw.addr;
+  assign noc_req_o_aw_len	=  noc_req_o.aw.len;
+  assign noc_req_o_aw_size	=  noc_req_o.aw.size;
+  assign noc_req_o_aw_burst	=  noc_req_o.aw.burst;
+  assign noc_req_o_aw_lock	=  noc_req_o.aw.lock;
+  assign noc_req_o_aw_cache	=  noc_req_o.aw.cache;
+  assign noc_req_o_aw_prot	=  noc_req_o.aw.prot;
+  assign noc_req_o_aw_qos	=  noc_req_o.aw.qos;
+  assign noc_req_o_aw_region=  noc_req_o.aw.region;
+  assign noc_req_o_aw_atop=  noc_req_o.aw.atop;
+  assign noc_req_o_aw_user	=  noc_req_o.aw.user;
+  // axi_w_chan_t
+  assign noc_req_o_w_data	=  noc_req_o.w.data;
+  assign noc_req_o_w_strb	=  noc_req_o.w.strb;
+  assign noc_req_o_w_last	=  noc_req_o.w.last;
+  assign noc_req_o_w_user	=  noc_req_o.w.user;
+  // axi_ar_chan_t
+  assign noc_req_o_ar_id	=  noc_req_o.ar.id;
+  assign noc_req_o_ar_addr	=  noc_req_o.ar.addr;
+  assign noc_req_o_ar_len	=  noc_req_o.ar.len;
+  assign noc_req_o_ar_size	=  noc_req_o.ar.size;
+  assign noc_req_o_ar_burst	=  noc_req_o.ar.burst;
+  assign noc_req_o_ar_lock	=  noc_req_o.ar.lock;
+  assign noc_req_o_ar_cache	=  noc_req_o.ar.cache;
+  assign noc_req_o_ar_prot	=  noc_req_o.ar.prot;
+  assign noc_req_o_ar_qos	=  noc_req_o.ar.qos;
+  assign noc_req_o_ar_region=  noc_req_o.ar.region;
+  assign noc_req_o_ar_user	=  noc_req_o.ar.user;
+
+  // noc_resp_i replacement
+  assign noc_resp_i.aw_ready=  noc_resp_i_aw_ready;
+  assign noc_resp_i.ar_ready=  noc_resp_i_ar_ready;
+  assign noc_resp_i.w_ready	=  noc_resp_i_w_ready;
+  assign noc_resp_i.b_valid	=  noc_resp_i_b_valid;
+  assign noc_resp_i.r_valid	=  noc_resp_i_r_valid;
+  // b_chan_t
+  assign noc_resp_i.b.id	=  noc_resp_i_b_id;
+  assign noc_resp_i.b.resp	=  noc_resp_i_b_resp;
+  assign noc_resp_i.b.user	=  noc_resp_i_b_user;
+  // r_chan_t
+  assign noc_resp_i.r.id	=  noc_resp_i_r_valid;
+  assign noc_resp_i.r.data	=  noc_resp_i_r_data;
+  assign noc_resp_i.r.resp	=  noc_resp_i_r_resp;
+  assign noc_resp_i.r.last	=  noc_resp_i_r_last;
+  assign noc_resp_i.r.user	=  noc_resp_i_r_user;
 
   cvxif_pkg::cvxif_req_t  cvxif_req;
   cvxif_pkg::cvxif_resp_t cvxif_resp;

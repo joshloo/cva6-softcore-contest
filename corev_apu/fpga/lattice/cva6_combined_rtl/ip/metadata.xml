@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lsccip:ip xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip" xmlns:xi="http://www.w3.org/2001/XInclude" version="2.0" platform="Radiant" platform_version="2024.1">
+    <lsccip:general>
+        <lsccip:vendor>latticesemi.com</lsccip:vendor>
+        <lsccip:library>ip</lsccip:library>
+        <lsccip:name>Hello_World</lsccip:name>
+        <lsccip:display_name>Hello_World</lsccip:display_name>
+        <lsccip:version>1.0.0</lsccip:version>
+        <lsccip:category />
+        <lsccip:min_radiant_version>2024.1</lsccip:min_radiant_version>
+        <lsccip:min_esi_version>2024.1</lsccip:min_esi_version>
+        <lsccip:supported_products>
+            <lsccip:supported_family name="*" />
+        </lsccip:supported_products>
+        <lsccip:supported_platforms />
+    </lsccip:general>
+    <lsccip:settings>
+        <lsccip:setting id="__dummy__"
+                        type="param"
+                        value_type="string"
+                        conn_mod="cvxif_fu"
+                        hidden="True"
+         />
+    </lsccip:settings>
+    <lsccip:ports />
+</lsccip:ip>

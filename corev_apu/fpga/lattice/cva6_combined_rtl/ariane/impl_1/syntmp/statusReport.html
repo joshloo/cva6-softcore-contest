@@ -32,31 +32,42 @@
  			<th align="left">Memory</th>
  			<th align="left">Date/Time</th>
          </tr>
+  <tr>
+  <td class="optionTitle"> (compiler)</td><td>Complete</td>
+ <td>644</td>
+ <td>658</td>
+<td>0</td>
+<td>-</td>
+<td>01m:38s</td>
+<td>-</td>
+<td><font size="-1">9/27/2024</font><br/><font size="-2">3:04 PM</font></td>
+</tr> 
+
  <tr>
-  <td class="optionTitle">Compile Input</td>
-  <td>Running</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> <tr>
   <td class="optionTitle"> (premap)</td><td>Complete</td>
- <td>403</td>
- <td>27</td>
+ <td>475</td>
+ <td>50</td>
 <td>0</td>
 <td>0m:06s</td>
 <td>0m:06s</td>
 <td>325MB</td>
-<td><font size="-1">9/26/2024</font><br/><font size="-2">5:33 PM</font></td>
+<td><font size="-1">9/27/2024</font><br/><font size="-2">3:05 PM</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (fpga_mapper)</td><td>Complete</td>
- <td>922</td>
- <td>1099</td>
+ <td>378</td>
+ <td>120</td>
 <td>0</td>
 <td>0m:06s</td>
-<td>01m:15s</td>
-<td>283MB</td>
-<td><font size="-1">9/26/2024</font><br/><font size="-2">5:34 PM</font></td>
+<td>0m:34s</td>
+<td>272MB</td>
+<td><font size="-1">9/27/2024</font><br/><font size="-2">3:05 PM</font></td>
 </tr> 
 
- 		</tbody>
+<tr>
+  <td class="optionTitle">Multi-srs Generator</td>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>00m:01s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">9/27/2024</font><br/><font size="-2">3:05 PM</font></td> 		</tbody>
      </table>
  <br> 
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
@@ -64,14 +75,14 @@
 <tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
  </tfoot> 
  <tbody> <tr> 
-<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>787</td>
-<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>421</td>
+<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>157</td>
+<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>386</td>
 </tr>
 <tr> 
 <td title ="Total Block RAMs used" class="optionTitle" align="left">Block RAMs
 (v_ram)</td> <td>4</td>
 <td title ="Total LUTs used" class="optionTitle" align="left">LUTs
-(total_luts)</td> <td>1290</td>
+(total_luts)</td> <td>387</td>
 </tr>
  
 </tbody>
@@ -82,15 +93,15 @@
  </tfoot> 
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
-<tr> <td  align="left">ariane|clk_i</td><td  align="left">200.0 MHz</td><td  align="left">119.8 MHz</td><td  align="left">-3.349</td></tr> 
-<tr> <td  align="left">System</td><td  align="left">200.0 MHz</td><td  align="left">195.8 MHz</td><td  align="left">-0.106</td></tr> 
+<tr> <td  align="left">ariane|clk_i</td><td  align="left">200.0 MHz</td><td  align="left">187.4 MHz</td><td  align="left">-0.335</td></tr> 
+<tr> <td  align="left">System</td><td  align="left">200.0 MHz</td><td  align="left">1650.2 MHz</td><td  align="left">4.394</td></tr> 
 </tbody> 
  </table>
 <br>
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
  				   <thead class="tablehead"><tr><th   colspan="4">Optimizations Summary</th></tr></thead>
  <tbody> <tr> 
-<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>1 / 1</td>
+<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>1 / 0</td>
 <td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br>
@@ -98,11 +109,11 @@
  				   <thead class="tablehead"><tr><th   colspan="5">Compile Points Summary</th></tr></thead>
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Name</th><th class="optionTitle" align= "left ">Status</th><th class="optionTitle" align= "left ">Reason</th><th class="optionTitle" align= "left ">Real Time</th><th class="optionTitle" align= "left ">CPU Time</th></tr> 
-<tr> <td  align="left">load_store_unit_1s_21_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:00m:27s</td><td  align="left">0h:00m:28s</td></tr> 
-<tr> <td  align="left">wt_dcache_4s_1s_40_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:00m:30s</td><td  align="left">0h:00m:30s</td></tr> 
-<tr> <td  align="left">csr_regfile_1s_6s_1075056896_32_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:00m:08s</td><td  align="left">0h:00m:09s</td></tr> 
-<tr> <td  align="left">issue_stage_0_4s_10_layer0</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:00m:59s</td><td  align="left">0h:00m:59s</td></tr> 
-<tr> <td  align="left">ariane</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:01m:07s</td><td  align="left">0h:01m:07s</td></tr> 
+<tr> <td  align="left">issue_stage_0_4s_10_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:10s</td><td  align="left">0h:00m:11s</td></tr> 
+<tr> <td  align="left">load_store_unit_1s_21_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:11s</td><td  align="left">0h:00m:11s</td></tr> 
+<tr> <td  align="left">csr_regfile_1s_6s_1075056896_32_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:10s</td><td  align="left">0h:00m:10s</td></tr> 
+<tr> <td  align="left">wt_dcache_4s_1s_40_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:24s</td><td  align="left">0h:00m:24s</td></tr> 
+<tr> <td  align="left">ariane</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:26s</td><td  align="left">0h:00m:27s</td></tr> 
 </tbody> 
  </table>
 <br>

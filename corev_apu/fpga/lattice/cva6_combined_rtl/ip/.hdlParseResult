@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<lscc:hdlparseresult version="1.0">
+    <modules>
+        <module name="cvxif_fu">
+            <ports>
+                <port dir="in" name="clk_i"/>
+                <port dir="in" name="rst_ni"/>
+                <port dir="in" range="(109,0)" name="fu_data_i"/>
+                <port dir="in" range="(1,0)" name="priv_lvl_i"/>
+                <port dir="in" name="x_valid_i"/>
+                <port dir="out" name="x_ready_o"/>
+                <port dir="in" range="(31,0)" name="x_off_instr_i"/>
+                <port dir="out" range="(1,0)" name="x_trans_id_o"/>
+                <port dir="out" range="(64,0)" name="x_exception_o"/>
+                <port dir="out" range="(31,0)" name="x_result_o"/>
+                <port dir="out" name="x_valid_o"/>
+                <port dir="out" name="x_we_o"/>
+                <port dir="out" range="(204,0)" name="cvxif_req_o"/>
+                <port dir="in" range="(194,0)" name="cvxif_resp_i"/>
+            </ports>
+        </module>
+        <module name="cvxif_example_coprocessor">
+            <ports>
+                <port dir="in" name="clk_i"/>
+                <port dir="in" name="rst_ni"/>
+                <port dir="in" range="(204,0)" name="cvxif_req_i"/>
+                <port dir="out" range="(194,0)" name="cvxif_resp_o"/>
+            </ports>
+        </module>
+    </modules>
+</lscc:hdlparseresult>

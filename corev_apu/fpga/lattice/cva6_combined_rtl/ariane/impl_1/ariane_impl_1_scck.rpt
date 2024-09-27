@@ -12,7 +12,7 @@ Hostname: LPGL109105
 
 Implementation : impl_1
 
-# Written on Thu Sep 26 17:33:09 2024
+# Written on Fri Sep 27 15:05:01 2024
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl"
@@ -29,22 +29,18 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                                                          Requested     Requested     Clock        Clock          Clock
-Level     Clock                                                          Frequency     Period        Type         Group          Load 
---------------------------------------------------------------------------------------------------------------------------------------
-0 -       ariane|clk_i                                                   200.0 MHz     5.000         inferred     (multiple)     1590 
-                                                                                                                                      
-0 -       load_unit_0_1s_19_layer0|rdata_is_fp_signed_inferred_clock     200.0 MHz     5.000         inferred     (multiple)     32   
-======================================================================================================================================
+          Start            Requested     Requested     Clock        Clock          Clock
+Level     Clock            Frequency     Period        Type         Group          Load 
+----------------------------------------------------------------------------------------
+0 -       ariane|clk_i     200.0 MHz     5.000         inferred     (multiple)     654  
+========================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                                               Clock     Source                                                             Clock Pin                                                                          Non-clock Pin     Non-clock Pin                                                       
-Clock                                                          Load      Pin                                                                Seq Example                                                                        Seq Example       Comb Example                                                        
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ariane|clk_i                                                   1590      clk_i(port)                                                        i_cva6.gen_cache_wt\.i_cache_subsystem.i_adapter.icache_rd_shift_q\[0\][0:1].C     -                 -                                                                   
-                                                                                                                                                                                                                                                                                                                     
-load_unit_0_1s_19_layer0|rdata_is_fp_signed_inferred_clock     32        i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT(or)     i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[0].C                                  -                 i_cva6.ex_stage_i.lsu_i.i_load_unit.un1_rdata_is_fp_signed.I[0](inv)
-=====================================================================================================================================================================================================================================================================================================================
+                 Clock     Source          Clock Pin                                                                          Non-clock Pin     Non-clock Pin
+Clock            Load      Pin             Seq Example                                                                        Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+ariane|clk_i     654       clk_i(port)     i_cva6.gen_cache_wt\.i_cache_subsystem.i_adapter.dcache_rd_shift_q\[0\][0:1].C     -                 -            
+=============================================================================================================================================================

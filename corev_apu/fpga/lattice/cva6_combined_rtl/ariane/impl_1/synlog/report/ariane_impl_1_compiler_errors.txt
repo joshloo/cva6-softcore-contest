@@ -1,3 +1,3 @@
-@E: CS101 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34007:27:34007:80|Index -1 is out of range for variable dcache_data.paddr
+@E: CG1241 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":51794:9:51794:20|Unable to resolve reference to variable AxiUserWidth.
 @E::Errors while synthesizing top module ariane.
 

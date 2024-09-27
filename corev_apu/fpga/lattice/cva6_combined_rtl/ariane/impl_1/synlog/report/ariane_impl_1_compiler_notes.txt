@@ -69,142 +69,142 @@
 @N: CG333 :"C:\lscc\radiant\2024.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\2024.1\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":124:14:124:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":134:14:134:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1131:12:1131:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1166:12:1166:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1283:14:1283:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1289:14:1289:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3794:18:3794:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3796:18:3796:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5204:18:5204:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5218:18:5218:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5266:10:5266:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5268:10:5268:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5415:12:5415:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5422:12:5422:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5483:12:5483:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5487:12:5487:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5552:12:5552:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5556:12:5556:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14950:10:14950:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14964:10:14964:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15262:10:15262:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15282:10:15282:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15342:11:15342:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15346:11:15346:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15480:14:15480:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15482:14:15482:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15526:10:15526:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15532:10:15532:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15628:14:15628:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15632:14:15632:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15803:12:15803:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15810:12:15810:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15862:18:15862:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15877:18:15877:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16001:14:16001:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16036:14:16036:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16269:9:16269:21|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16281:9:16281:20|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17598:12:17598:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17602:12:17602:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17608:11:17608:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17752:11:17752:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21496:11:21496:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21503:11:21503:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24448:11:24448:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24465:11:24465:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25189:11:25189:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25208:11:25208:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27294:11:27294:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27329:11:27329:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27601:11:27601:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27620:11:27620:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28617:11:28617:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28624:11:28624:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30094:12:30094:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30107:12:30107:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30619:12:30619:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30626:12:30626:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30911:11:30911:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30927:11:30927:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31294:11:31294:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31359:11:31359:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31980:11:31980:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32007:11:32007:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32582:11:32582:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32635:11:32635:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32966:11:32966:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32979:11:32979:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33505:11:33505:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33564:11:33564:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33755:11:33755:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33799:11:33799:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34478:11:34478:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34482:11:34482:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35628:11:35628:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35634:11:35634:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35914:11:35914:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35936:11:35936:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36396:11:36396:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36414:11:36414:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36894:11:36894:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36937:11:36937:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37214:11:37214:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37219:11:37219:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37889:18:37889:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37891:18:37891:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38172:15:38172:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38176:15:38176:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38261:15:38261:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38264:15:38264:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38329:15:38329:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38333:15:38333:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38383:15:38383:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38388:15:38388:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39001:15:39001:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39010:15:39010:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39185:15:39185:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39194:15:39194:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":40585:15:40585:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":40591:15:40591:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41379:14:41379:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41395:14:41395:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41630:38:41630:50|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41632:38:41632:49|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41710:11:41710:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41718:11:41718:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":42651:15:42651:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":42657:15:42657:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44053:15:44053:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44061:15:44061:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44518:26:44518:38|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44520:26:44520:37|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44732:15:44732:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44735:15:44735:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45121:15:45121:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45125:15:45125:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45232:11:45232:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45233:11:45233:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45999:11:45999:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":46043:11:46043:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":46970:11:46970:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47010:11:47010:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47687:15:47687:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47699:15:47699:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47910:19:47910:31|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47914:19:47914:30|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47925:15:47925:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47928:15:47928:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":48498:13:48498:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":48540:13:48540:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49107:13:49107:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49129:13:49129:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49329:15:49329:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49333:15:49333:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49609:15:49609:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49623:15:49623:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":124:14:124:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":134:14:134:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1131:12:1131:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1166:12:1166:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1283:14:1283:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1289:14:1289:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3794:18:3794:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3796:18:3796:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5204:18:5204:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5218:18:5218:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5266:10:5266:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5268:10:5268:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5415:12:5415:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5422:12:5422:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5483:12:5483:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5487:12:5487:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5552:12:5552:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5556:12:5556:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14950:10:14950:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14964:10:14964:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15262:10:15262:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15282:10:15282:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15342:11:15342:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15346:11:15346:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15480:14:15480:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15482:14:15482:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15526:10:15526:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15532:10:15532:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15628:14:15628:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15632:14:15632:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15803:12:15803:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15810:12:15810:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15862:18:15862:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15877:18:15877:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16001:14:16001:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16036:14:16036:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16269:9:16269:21|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16281:9:16281:20|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17598:12:17598:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17602:12:17602:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17608:11:17608:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17752:11:17752:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":21496:11:21496:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":21503:11:21503:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24448:11:24448:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24465:11:24465:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25189:11:25189:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25208:11:25208:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27294:11:27294:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27329:11:27329:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27601:11:27601:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27620:11:27620:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28617:11:28617:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28624:11:28624:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30094:12:30094:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30107:12:30107:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30619:12:30619:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30626:12:30626:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30911:11:30911:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30927:11:30927:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31294:11:31294:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31359:11:31359:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31980:11:31980:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32007:11:32007:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32582:11:32582:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32635:11:32635:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32966:11:32966:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32979:11:32979:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33505:11:33505:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33564:11:33564:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33755:11:33755:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33799:11:33799:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":34478:11:34478:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":34482:11:34482:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35628:11:35628:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35634:11:35634:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35914:11:35914:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35936:11:35936:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36396:11:36396:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36414:11:36414:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36894:11:36894:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36937:11:36937:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37214:11:37214:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37219:11:37219:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37889:18:37889:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37891:18:37891:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38172:15:38172:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38176:15:38176:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38261:15:38261:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38264:15:38264:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38329:15:38329:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38333:15:38333:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38383:15:38383:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38388:15:38388:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39001:15:39001:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39010:15:39010:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39185:15:39185:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39194:15:39194:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":40585:15:40585:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":40591:15:40591:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41379:14:41379:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41395:14:41395:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41630:38:41630:50|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41632:38:41632:49|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41710:11:41710:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41718:11:41718:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":42651:15:42651:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":42657:15:42657:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44053:15:44053:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44061:15:44061:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44518:26:44518:38|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44520:26:44520:37|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44732:15:44732:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44735:15:44735:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45121:15:45121:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45125:15:45125:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45232:11:45232:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45233:11:45233:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45999:11:45999:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":46043:11:46043:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":46970:11:46970:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47010:11:47010:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47687:15:47687:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47699:15:47699:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47910:19:47910:31|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47914:19:47914:30|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47925:15:47925:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47928:15:47928:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":48498:13:48498:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":48540:13:48540:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49107:13:49107:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49129:13:49129:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49329:15:49329:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49333:15:49333:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49609:15:49609:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49623:15:49623:26|Read directive translate_on.
 @N: CG1349 :	| Running Verilog Compiler in System Verilog mode
 @N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
@@ -271,375 +271,375 @@
 @N: CG333 :"C:\lscc\radiant\2024.1\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\2024.1\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":124:14:124:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":134:14:134:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1131:12:1131:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1166:12:1166:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1283:14:1283:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1289:14:1289:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3794:18:3794:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3796:18:3796:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5204:18:5204:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5218:18:5218:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5266:10:5266:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5268:10:5268:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5415:12:5415:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5422:12:5422:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5483:12:5483:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5487:12:5487:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5552:12:5552:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5556:12:5556:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14950:10:14950:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14964:10:14964:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15262:10:15262:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15282:10:15282:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15342:11:15342:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15346:11:15346:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15480:14:15480:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15482:14:15482:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15526:10:15526:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15532:10:15532:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15628:14:15628:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15632:14:15632:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15803:12:15803:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15810:12:15810:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15862:18:15862:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15877:18:15877:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16001:14:16001:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16036:14:16036:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16269:9:16269:21|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16281:9:16281:20|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17598:12:17598:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17602:12:17602:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17608:11:17608:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17752:11:17752:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21496:11:21496:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21503:11:21503:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24448:11:24448:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24465:11:24465:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25189:11:25189:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25208:11:25208:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27294:11:27294:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27329:11:27329:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27601:11:27601:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27620:11:27620:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28617:11:28617:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28624:11:28624:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30094:12:30094:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30107:12:30107:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30619:12:30619:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30626:12:30626:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30911:11:30911:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30927:11:30927:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31294:11:31294:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31359:11:31359:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31980:11:31980:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32007:11:32007:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32582:11:32582:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32635:11:32635:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32966:11:32966:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32979:11:32979:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33505:11:33505:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33564:11:33564:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33755:11:33755:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33799:11:33799:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34478:11:34478:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":34482:11:34482:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35628:11:35628:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35634:11:35634:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35914:11:35914:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":35936:11:35936:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36396:11:36396:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36414:11:36414:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36894:11:36894:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":36937:11:36937:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37214:11:37214:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37219:11:37219:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37889:18:37889:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37891:18:37891:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38172:15:38172:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38176:15:38176:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38261:15:38261:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38264:15:38264:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38329:15:38329:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38333:15:38333:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38383:15:38383:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":38388:15:38388:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39001:15:39001:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39010:15:39010:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39185:15:39185:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39194:15:39194:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":40585:15:40585:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":40591:15:40591:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41379:14:41379:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41395:14:41395:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41630:38:41630:50|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41632:38:41632:49|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41710:11:41710:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":41718:11:41718:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":42651:15:42651:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":42657:15:42657:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44053:15:44053:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44061:15:44061:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44518:26:44518:38|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44520:26:44520:37|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44732:15:44732:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":44735:15:44735:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45121:15:45121:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45125:15:45125:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45232:11:45232:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45233:11:45233:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":45999:11:45999:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":46043:11:46043:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":46970:11:46970:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47010:11:47010:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47687:15:47687:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47699:15:47699:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47910:19:47910:31|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47914:19:47914:30|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47925:15:47925:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":47928:15:47928:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":48498:13:48498:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":48540:13:48540:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49107:13:49107:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49129:13:49129:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49329:15:49329:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49333:15:49333:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49609:15:49609:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49623:15:49623:26|Read directive translate_on.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":11:8:11:17|Synthesizing module config_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":186:8:186:22|Synthesizing module cva6_config_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":337:8:337:12|Synthesizing module riscv in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1192:8:1192:14|Synthesizing module axi_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":1626:8:1626:17|Synthesizing module ariane_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":2630:8:2630:17|Synthesizing module ariane_axi in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3097:8:3097:17|Synthesizing module ariane_soc in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3174:8:3174:9|Synthesizing module dm in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3612:8:3612:21|Synthesizing module ariane_axi_soc in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":3715:8:3715:16|Synthesizing module fpnew_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":4220:8:4220:19|Synthesizing module wt_cache_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":4558:8:4558:20|Synthesizing module std_cache_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":4650:8:4650:14|Synthesizing module acc_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":4702:8:4702:16|Synthesizing module cvxif_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":4813:8:4813:22|Synthesizing module cvxif_instr_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5196:8:5196:18|Synthesizing module cf_math_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":10032:8:10032:24|Synthesizing module defs_div_sqrt_mvp in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37239:8:37239:26|Synthesizing module hpdcache_params_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":37373:8:37373:19|Synthesizing module hpdcache_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":39890:8:39890:22|Synthesizing module hwpf_stride_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":10145:0:10145:5|Synthesizing module work_C:\lscc\radiant\2024.1\ip\pmi\pmi_lav-at.v_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23379:7:23379:19|Synthesizing module instr_realign in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14788:7:14788:13|Synthesizing module fifo_v3 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5448:7:5448:16|Synthesizing module AsyncDpRam in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16114:7:16114:12|Synthesizing module unread in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":29695:7:29695:17|Synthesizing module instr_queue in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14788:7:14788:13|Synthesizing module fifo_v3__gen0_1 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5448:7:5448:16|Synthesizing module AsyncDpRam in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30129:7:30129:14|Synthesizing module frontend in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":29581:7:29581:16|Synthesizing module instr_scan in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21529:7:21529:13|Synthesizing module decoder in library work.
-@N: CG179 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":21680:59:21680:71|Removing redundant assignment.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23740:7:23740:14|Synthesizing module id_stage in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26876:7:26876:16|Synthesizing module scoreboard_rs3_len_t_2 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen1_3 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen2_4 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen3_5 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen4_6 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen5_7 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen6_8 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen7_9 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen8_10 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen9_11 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen10_12 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen11_13 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen12_14 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen13_15 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen14_16 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen15_17 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen16_18 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen17_19 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen18_20 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen19_21 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen20_22 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen21_23 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen22_24 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen23_25 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen24_26 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen25_27 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen26_28 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen27_29 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen28_30 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen29_31 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen30_32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen31_33 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen32_34 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23884:7:23884:25|Synthesizing module issue_read_operands_rs3_len_t_35 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26759:7:26759:25|Synthesizing module ariane_regfile_fpga in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24488:7:24488:17|Synthesizing module issue_stage in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17827:7:17827:9|Synthesizing module alu in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":18718:7:18718:17|Synthesizing module branch_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":19919:7:19919:16|Synthesizing module csr_buffer in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26010:7:26010:16|Synthesizing module multiplier in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15601:7:15601:9|Synthesizing module lzc in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26169:7:26169:12|Synthesizing module serdiv in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25843:7:25843:10|Synthesizing module mult in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27350:7:27350:18|Synthesizing module store_buffer in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27728:7:27728:16|Synthesizing module store_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24706:7:24706:15|Synthesizing module load_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16058:7:16058:15|Synthesizing module shift_reg__internal_typedef_19_36 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16058:7:16058:15|Synthesizing module shift_reg__internal_typedef_20_37 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25741:7:25741:16|Synthesizing module lsu_bypass in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25229:7:25229:21|Synthesizing module load_store_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51102:7:51102:19|Synthesizing module cva6_tlb_sv32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15601:7:15601:9|Synthesizing module lzc in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14991:7:14991:10|Synthesizing module lfsr in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51379:7:51379:26|Synthesizing module cva6_shared_tlb_sv32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50017:7:50017:10|Synthesizing module sram in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49784:7:49784:21|Synthesizing module SyncSpRamBeNx64 in library work.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49945:7:49945:21|Synthesizing module tc_sram_wrapper in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50017:7:50017:10|Synthesizing module sram in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49546:7:49546:9|Synthesizing module pmp in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50701:7:50701:19|Synthesizing module cva6_ptw_sv32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49546:7:49546:9|Synthesizing module pmp in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50135:7:50135:19|Synthesizing module cva6_mmu_sv32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":22937:7:22937:14|Synthesizing module ex_stage in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28031:7:28031:18|Synthesizing module commit_stage in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":19997:7:19997:17|Synthesizing module csr_regfile in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":19721:7:19721:16|Synthesizing module controller in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16425:7:16425:10|Synthesizing module cva6_logic_ar_chan_t_aw_chan_t_w_chan_t_req_t_resp_t_0 in library work.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28602:2:28602:10|Trying to extract state machine for register wr_state_q.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Found RAM mem, depth=4, width=1
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":30883:2:30883:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50030:41:50030:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32549:2:32549:10|Found RAM tx_stat_q, depth=4, width=1
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32549:2:32549:10|Found RAM tx_stat_q, depth=4, width=4
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32073:16:32073:25|Input cache_en_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32100:24:32100:32|Input rd_data_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":32101:39:32101:51|Input rd_vld_bits_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Found RAM mem, depth=4, width=2
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31948:2:31948:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":31400:20:31400:28|Input amo_req_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50030:41:50030:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49794:32:49794:38|Input Rst_RBI is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50030:41:50030:47|Input wuser_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":33475:2:33475:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":19726:17:19726:21|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":19727:17:19727:22|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":19736:17:19736:34|Input flush_dcache_ack_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":19750:16:19750:29|Input flush_commit_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":20023:16:20023:31|Input dirty_fp_state_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":20024:34:20024:51|Input csr_write_fflags_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":20025:16:20025:30|Input dirty_v_state_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":20036:34:20036:48|Input acc_fflags_ex_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":20037:16:20037:36|Input acc_fflags_ex_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28036:16:28036:20|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28037:16:28037:21|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28042:16:28042:28|Input single_step_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":28052:21:28052:30|Input amo_resp_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":22996:22:22996:30|Input fpu_fmt_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":22997:22:22997:29|Input fpu_rm_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":22998:22:22998:30|Input fpu_frm_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":22999:22:22999:31|Input fpu_prec_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23005:16:23005:24|Input x_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23007:23:23007:35|Input x_off_instr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23014:34:23014:45|Input cvxif_resp_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50167:28:50167:37|Input priv_lvl_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49553:27:49553:32|Input addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49554:30:49554:42|Input access_type_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49555:28:49555:37|Input priv_lvl_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49557:36:49557:46|Input conf_addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49558:33:49558:38|Input conf_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":51045:2:51045:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49553:27:49553:32|Input addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49554:30:49554:42|Input access_type_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49555:28:49555:37|Input priv_lvl_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49557:36:49557:46|Input conf_addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49558:33:49558:38|Input conf_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50030:41:50030:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":49794:32:49794:38|Input Rst_RBI is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":50030:41:50030:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25283:51:25283:72|Input dcache_wbuffer_empty_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16062:17:16062:21|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":16063:17:16063:22|Input rst_ni is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":25103:2:25103:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24729:37:24729:46|Input dtlb_ppn_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24733:16:24733:35|Input store_buffer_empty_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24734:36:24734:51|Input commit_tran_id_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27745:16:27745:33|Input amo_valid_commit_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27763:21:27763:30|Input amo_resp_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26390:2:26390:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":18721:16:18721:20|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":18722:16:18722:21|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":18723:16:18723:27|Input debug_mode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":18727:38:18727:47|Input fu_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17832:25:17832:29|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":17833:25:17833:30|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24505:16:24505:29|Input is_ctrl_flow_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":24516:16:24516:31|Input resolve_branch_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26766:61:26766:65|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26767:61:26767:66|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26769:61:26769:69|Input test_en_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26771:61:26771:67|Input raddr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26774:61:26774:67|Input waddr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26775:61:26775:67|Input wdata_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":26776:61:26776:64|Input we_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23908:20:23908:24|Input rs3_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23909:16:23909:26|Input rs3_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23912:38:23912:53|Input rd_clobber_fpr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23931:16:23931:26|Input fpu_ready_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23942:49:23942:55|Input waddr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23943:61:23943:67|Input wdata_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23944:44:23944:51|Input we_gpr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":23945:44:23945:51|Input we_fpr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Found RAM mem, depth=4, width=69
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\merged_systemverilog.sv":5469:2:5469:10|Found RAM mem, depth=4, width=32
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":124:14:124:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":134:14:134:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1131:12:1131:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1166:12:1166:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1283:14:1283:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1289:14:1289:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3794:18:3794:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3796:18:3796:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5204:18:5204:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5218:18:5218:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5266:10:5266:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5268:10:5268:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5415:12:5415:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5422:12:5422:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5483:12:5483:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5487:12:5487:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5552:12:5552:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5556:12:5556:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14950:10:14950:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14964:10:14964:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15262:10:15262:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15282:10:15282:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15342:11:15342:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15346:11:15346:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15480:14:15480:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15482:14:15482:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15526:10:15526:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15532:10:15532:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15628:14:15628:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15632:14:15632:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15803:12:15803:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15810:12:15810:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15862:18:15862:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15877:18:15877:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16001:14:16001:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16036:14:16036:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16269:9:16269:21|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16281:9:16281:20|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17598:12:17598:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17602:12:17602:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17608:11:17608:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17752:11:17752:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":21496:11:21496:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":21503:11:21503:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24448:11:24448:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24465:11:24465:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25189:11:25189:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25208:11:25208:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27294:11:27294:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27329:11:27329:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27601:11:27601:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27620:11:27620:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28617:11:28617:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28624:11:28624:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30094:12:30094:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30107:12:30107:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30619:12:30619:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30626:12:30626:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30911:11:30911:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30927:11:30927:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31294:11:31294:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31359:11:31359:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31980:11:31980:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32007:11:32007:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32582:11:32582:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32635:11:32635:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32966:11:32966:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32979:11:32979:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33505:11:33505:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33564:11:33564:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33755:11:33755:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33799:11:33799:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":34478:11:34478:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":34482:11:34482:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35628:11:35628:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35634:11:35634:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35914:11:35914:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":35936:11:35936:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36396:11:36396:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36414:11:36414:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36894:11:36894:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":36937:11:36937:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37214:11:37214:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37219:11:37219:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37889:18:37889:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37891:18:37891:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38172:15:38172:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38176:15:38176:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38261:15:38261:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38264:15:38264:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38329:15:38329:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38333:15:38333:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38383:15:38383:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":38388:15:38388:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39001:15:39001:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39010:15:39010:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39185:15:39185:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39194:15:39194:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":40585:15:40585:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":40591:15:40591:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41379:14:41379:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41395:14:41395:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41630:38:41630:50|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41632:38:41632:49|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41710:11:41710:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":41718:11:41718:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":42651:15:42651:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":42657:15:42657:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44053:15:44053:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44061:15:44061:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44518:26:44518:38|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44520:26:44520:37|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44732:15:44732:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":44735:15:44735:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45121:15:45121:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45125:15:45125:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45232:11:45232:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45233:11:45233:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":45999:11:45999:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":46043:11:46043:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":46970:11:46970:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47010:11:47010:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47687:15:47687:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47699:15:47699:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47910:19:47910:31|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47914:19:47914:30|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47925:15:47925:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":47928:15:47928:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":48498:13:48498:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":48540:13:48540:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49107:13:49107:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49129:13:49129:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49329:15:49329:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49333:15:49333:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49609:15:49609:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49623:15:49623:26|Read directive translate_on.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":11:8:11:17|Synthesizing module config_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":186:8:186:22|Synthesizing module cva6_config_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":337:8:337:12|Synthesizing module riscv in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1192:8:1192:14|Synthesizing module axi_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":1626:8:1626:17|Synthesizing module ariane_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":2630:8:2630:17|Synthesizing module ariane_axi in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3097:8:3097:17|Synthesizing module ariane_soc in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3174:8:3174:9|Synthesizing module dm in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3612:8:3612:21|Synthesizing module ariane_axi_soc in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":3715:8:3715:16|Synthesizing module fpnew_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":4220:8:4220:19|Synthesizing module wt_cache_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":4558:8:4558:20|Synthesizing module std_cache_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":4650:8:4650:14|Synthesizing module acc_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":4702:8:4702:16|Synthesizing module cvxif_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":4813:8:4813:22|Synthesizing module cvxif_instr_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5196:8:5196:18|Synthesizing module cf_math_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":10032:8:10032:24|Synthesizing module defs_div_sqrt_mvp in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37239:8:37239:26|Synthesizing module hpdcache_params_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":37373:8:37373:19|Synthesizing module hpdcache_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":39890:8:39890:22|Synthesizing module hwpf_stride_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":10145:0:10145:5|Synthesizing module work_C:\lscc\radiant\2024.1\ip\pmi\pmi_lav-at.v_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23379:7:23379:19|Synthesizing module instr_realign in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14788:7:14788:13|Synthesizing module fifo_v3 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5448:7:5448:16|Synthesizing module AsyncDpRam in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16114:7:16114:12|Synthesizing module unread in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":29695:7:29695:17|Synthesizing module instr_queue in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14788:7:14788:13|Synthesizing module fifo_v3__gen0_1 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5448:7:5448:16|Synthesizing module AsyncDpRam in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30129:7:30129:14|Synthesizing module frontend in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":29581:7:29581:16|Synthesizing module instr_scan in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":21529:7:21529:13|Synthesizing module decoder in library work.
+@N: CG179 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":21680:59:21680:71|Removing redundant assignment.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23740:7:23740:14|Synthesizing module id_stage in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26876:7:26876:16|Synthesizing module scoreboard_rs3_len_t_2 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen1_3 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen2_4 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen3_5 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen4_6 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen5_7 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen6_8 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen7_9 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen8_10 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen9_11 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen10_12 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen11_13 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen12_14 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen13_15 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen14_16 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen15_17 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen16_18 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen17_19 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen18_20 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen19_21 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen20_22 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen21_23 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen22_24 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen23_25 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen24_26 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen25_27 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen26_28 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen27_29 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen28_30 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen29_31 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen30_32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen31_33 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen32_34 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23884:7:23884:25|Synthesizing module issue_read_operands_rs3_len_t_35 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26759:7:26759:25|Synthesizing module ariane_regfile_fpga in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24488:7:24488:17|Synthesizing module issue_stage in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17827:7:17827:9|Synthesizing module alu in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":18718:7:18718:17|Synthesizing module branch_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":19919:7:19919:16|Synthesizing module csr_buffer in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26010:7:26010:16|Synthesizing module multiplier in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15601:7:15601:9|Synthesizing module lzc in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26169:7:26169:12|Synthesizing module serdiv in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25843:7:25843:10|Synthesizing module mult in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27350:7:27350:18|Synthesizing module store_buffer in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27728:7:27728:16|Synthesizing module store_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24706:7:24706:15|Synthesizing module load_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16058:7:16058:15|Synthesizing module shift_reg__internal_typedef_19_36 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16058:7:16058:15|Synthesizing module shift_reg__internal_typedef_20_37 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25741:7:25741:16|Synthesizing module lsu_bypass in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25229:7:25229:21|Synthesizing module load_store_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":51102:7:51102:19|Synthesizing module cva6_tlb_sv32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15601:7:15601:9|Synthesizing module lzc in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14991:7:14991:10|Synthesizing module lfsr in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":51379:7:51379:26|Synthesizing module cva6_shared_tlb_sv32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50017:7:50017:10|Synthesizing module sram in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49784:7:49784:21|Synthesizing module SyncSpRamBeNx64 in library work.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=64, width=8
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49945:7:49945:21|Synthesizing module tc_sram_wrapper in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50017:7:50017:10|Synthesizing module sram in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49546:7:49546:9|Synthesizing module pmp in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50701:7:50701:19|Synthesizing module cva6_ptw_sv32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49546:7:49546:9|Synthesizing module pmp in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50135:7:50135:19|Synthesizing module cva6_mmu_sv32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":22937:7:22937:14|Synthesizing module ex_stage in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28031:7:28031:18|Synthesizing module commit_stage in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":19997:7:19997:17|Synthesizing module csr_regfile in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":19721:7:19721:16|Synthesizing module controller in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16425:7:16425:10|Synthesizing module cva6_logic_ar_chan_t_aw_chan_t_w_chan_t_req_t_resp_t_0 in library work.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49845:21:49845:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":51824:32:51824:46|Input noc_resp_i_r_id is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28602:2:28602:10|Trying to extract state machine for register wr_state_q.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=1
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14799:18:14799:27|Input testmode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14799:18:14799:27|Input testmode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14799:18:14799:27|Input testmode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15784:30:15784:33|Input rr_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":30883:2:30883:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50030:41:50030:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15784:30:15784:33|Input rr_i is unused.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32549:2:32549:10|Found RAM tx_stat_q, depth=4, width=1
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32549:2:32549:10|Found RAM tx_stat_q, depth=4, width=4
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32073:16:32073:25|Input cache_en_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32100:24:32100:32|Input rd_data_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":32101:39:32101:51|Input rd_vld_bits_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15784:30:15784:33|Input rr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15784:30:15784:33|Input rr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15784:30:15784:33|Input rr_i is unused.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=2
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":14799:18:14799:27|Input testmode_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31948:2:31948:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":31400:20:31400:28|Input amo_req_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50030:41:50030:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49794:32:49794:38|Input Rst_RBI is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50030:41:50030:47|Input wuser_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":33475:2:33475:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":19726:17:19726:21|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":19727:17:19727:22|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":19736:17:19736:34|Input flush_dcache_ack_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":19750:16:19750:29|Input flush_commit_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":20023:16:20023:31|Input dirty_fp_state_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":20024:34:20024:51|Input csr_write_fflags_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":20025:16:20025:30|Input dirty_v_state_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":20036:34:20036:48|Input acc_fflags_ex_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":20037:16:20037:36|Input acc_fflags_ex_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28036:16:28036:20|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28037:16:28037:21|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28042:16:28042:28|Input single_step_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":28052:21:28052:30|Input amo_resp_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":22996:22:22996:30|Input fpu_fmt_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":22997:22:22997:29|Input fpu_rm_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":22998:22:22998:30|Input fpu_frm_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":22999:22:22999:31|Input fpu_prec_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23005:16:23005:24|Input x_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23007:23:23007:35|Input x_off_instr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23014:34:23014:45|Input cvxif_resp_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50167:28:50167:37|Input priv_lvl_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49553:27:49553:32|Input addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49554:30:49554:42|Input access_type_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49555:28:49555:37|Input priv_lvl_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49557:36:49557:46|Input conf_addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49558:33:49558:38|Input conf_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":51045:2:51045:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49553:27:49553:32|Input addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49554:30:49554:42|Input access_type_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49555:28:49555:37|Input priv_lvl_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49557:36:49557:46|Input conf_addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49558:33:49558:38|Input conf_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50030:41:50030:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":49794:32:49794:38|Input Rst_RBI is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":50030:41:50030:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25283:51:25283:72|Input dcache_wbuffer_empty_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16062:17:16062:21|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":16063:17:16063:22|Input rst_ni is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":25103:2:25103:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24729:37:24729:46|Input dtlb_ppn_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24733:16:24733:35|Input store_buffer_empty_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24734:36:24734:51|Input commit_tran_id_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27745:16:27745:33|Input amo_valid_commit_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27763:21:27763:30|Input amo_resp_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26390:2:26390:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":18721:16:18721:20|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":18722:16:18722:21|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":18723:16:18723:27|Input debug_mode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":18727:38:18727:47|Input fu_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17832:25:17832:29|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":17833:25:17833:30|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24505:16:24505:29|Input is_ctrl_flow_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":24516:16:24516:31|Input resolve_branch_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26766:61:26766:65|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26767:61:26767:66|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26769:61:26769:69|Input test_en_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26771:61:26771:67|Input raddr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26774:61:26774:67|Input waddr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26775:61:26775:67|Input wdata_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":26776:61:26776:64|Input we_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23908:20:23908:24|Input rs3_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23909:16:23909:26|Input rs3_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23912:38:23912:53|Input rd_clobber_fpr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23931:16:23931:26|Input fpu_ready_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23942:49:23942:55|Input waddr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23943:61:23943:67|Input wdata_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23944:44:23944:51|Input we_gpr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":23945:44:23945:51|Input we_fpr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15778:30:15778:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15780:30:15780:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15782:30:15782:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15778:30:15778:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15780:30:15780:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15782:30:15782:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15778:30:15778:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15780:30:15780:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15782:30:15782:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15778:30:15778:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15780:30:15780:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15782:30:15782:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15778:30:15778:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15780:30:15780:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15782:30:15782:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15778:30:15778:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":15780:30:15780:35|Input rst_ni is unused.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":27280:2:27280:10|Found RAM mem_q, depth=4, width=4
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=69
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=32
 @N|Running in 64-bit mode
 
