@@ -1,0 +1,924 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>arianelattice</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>ariane_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="ariane" vendor="latticesemi.com" version="1.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="AxiAddrWidth">64</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AxiDataWidth">64</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AxiIdWidth">4</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="clk_i"/>
+                <ipxact:externalPortReference portRef="clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rst_ni</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rst_ni"/>
+                <ipxact:externalPortReference portRef="rst_ni"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.boot_addr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="boot_addr_i"/>
+                <ipxact:externalPortReference portRef="boot_addr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.hart_id_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="hart_id_i"/>
+                <ipxact:externalPortReference portRef="hart_id_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>33</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.irq_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="irq_i"/>
+                <ipxact:externalPortReference portRef="irq_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.ipi_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="ipi_i"/>
+                <ipxact:externalPortReference portRef="ipi_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.time_irq_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="time_irq_i"/>
+                <ipxact:externalPortReference portRef="time_irq_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.debug_req_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="debug_req_i"/>
+                <ipxact:externalPortReference portRef="debug_req_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_valid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_valid"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_valid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_w_valid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_w_valid"/>
+                <ipxact:externalPortReference portRef="noc_req_o_w_valid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_b_ready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_b_ready"/>
+                <ipxact:externalPortReference portRef="noc_req_o_b_ready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_valid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_valid"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_valid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_r_ready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_r_ready"/>
+                <ipxact:externalPortReference portRef="noc_req_o_r_ready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_aw_ready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_aw_ready"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_aw_ready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_ar_ready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_ar_ready"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_ar_ready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_w_ready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_w_ready"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_w_ready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_b_valid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_b_valid"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_b_valid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_r_valid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_r_valid"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_r_valid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_b_id</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_b_id"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_b_id">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_b_resp</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_b_resp"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_b_resp">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_b_user</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_b_user"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_b_user">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_r_id</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_r_id"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_r_id">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_r_data</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_r_data"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_r_data">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_r_resp</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_r_resp"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_r_resp">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_r_last</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_r_last"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_r_last"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_resp_i_r_user</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_resp_i_r_user"/>
+                <ipxact:externalPortReference portRef="noc_resp_i_r_user">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_id</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_id"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_id">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_addr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_addr"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_addr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_len</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_len"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_len">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_size</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_size"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_size">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_burst</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_burst"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_burst">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_lock</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_lock"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_lock"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_cache</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_cache"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_cache">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_prot</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_prot"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_prot">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_qos</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_qos"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_qos">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_region</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_region"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_region">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_atop</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_atop"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_atop">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>5</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_aw_user</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_aw_user"/>
+                <ipxact:externalPortReference portRef="noc_req_o_aw_user">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_w_data</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_w_data"/>
+                <ipxact:externalPortReference portRef="noc_req_o_w_data">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_w_strb</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_w_strb"/>
+                <ipxact:externalPortReference portRef="noc_req_o_w_strb">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_w_last</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_w_last"/>
+                <ipxact:externalPortReference portRef="noc_req_o_w_last"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_w_user</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_w_user"/>
+                <ipxact:externalPortReference portRef="noc_req_o_w_user">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_id</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_id"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_id">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_addr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_addr"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_addr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_len</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_len"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_len">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_size</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_size"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_size">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_burst</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_burst"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_burst">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_lock</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_lock"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_lock"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_cache</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_cache"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_cache">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_prot</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_prot"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_prot">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_qos</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_qos"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_qos">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_region</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_region"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_region">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.noc_req_o_ar_user</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="noc_req_o_ar_user"/>
+                <ipxact:externalPortReference portRef="noc_req_o_ar_user">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_valid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_valid"/>
+                <ipxact:externalPortReference portRef="rvfi_o_valid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_order</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_order"/>
+                <ipxact:externalPortReference portRef="rvfi_o_order">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_insn</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_insn"/>
+                <ipxact:externalPortReference portRef="rvfi_o_insn">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_trap</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_trap"/>
+                <ipxact:externalPortReference portRef="rvfi_o_trap"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_cause</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_cause"/>
+                <ipxact:externalPortReference portRef="rvfi_o_cause">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_halt</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_halt"/>
+                <ipxact:externalPortReference portRef="rvfi_o_halt"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_intr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_intr"/>
+                <ipxact:externalPortReference portRef="rvfi_o_intr"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_mode</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_mode"/>
+                <ipxact:externalPortReference portRef="rvfi_o_mode">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_ixl</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_ixl"/>
+                <ipxact:externalPortReference portRef="rvfi_o_ixl">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_rs1_addr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_rs1_addr"/>
+                <ipxact:externalPortReference portRef="rvfi_o_rs1_addr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>4</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_rs2_addr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_rs2_addr"/>
+                <ipxact:externalPortReference portRef="rvfi_o_rs2_addr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>4</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_rs1_rdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_rs1_rdata"/>
+                <ipxact:externalPortReference portRef="rvfi_o_rs1_rdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_rs2_rdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_rs2_rdata"/>
+                <ipxact:externalPortReference portRef="rvfi_o_rs2_rdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_rd_addr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_rd_addr"/>
+                <ipxact:externalPortReference portRef="rvfi_o_rd_addr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>4</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_rd_wdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_rd_wdata"/>
+                <ipxact:externalPortReference portRef="rvfi_o_rd_wdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_pc_rdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_pc_rdata"/>
+                <ipxact:externalPortReference portRef="rvfi_o_pc_rdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_pc_wdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_pc_wdata"/>
+                <ipxact:externalPortReference portRef="rvfi_o_pc_wdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_mem_addr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_mem_addr"/>
+                <ipxact:externalPortReference portRef="rvfi_o_mem_addr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_mem_paddr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_mem_paddr"/>
+                <ipxact:externalPortReference portRef="rvfi_o_mem_paddr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>33</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_mem_rmask</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_mem_rmask"/>
+                <ipxact:externalPortReference portRef="rvfi_o_mem_rmask">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_mem_wmask</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_mem_wmask"/>
+                <ipxact:externalPortReference portRef="rvfi_o_mem_wmask">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_mem_rdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_mem_rdata"/>
+                <ipxact:externalPortReference portRef="rvfi_o_mem_rdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>arianelattice.rvfi_o_mem_wdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="arianelattice" portRef="rvfi_o_mem_wdata"/>
+                <ipxact:externalPortReference portRef="rvfi_o_mem_wdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

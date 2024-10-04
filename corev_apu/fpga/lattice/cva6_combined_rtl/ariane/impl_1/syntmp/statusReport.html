@@ -10,7 +10,7 @@
 <table style="border:none;" width="100%" ><tr> <td class="outline">
 <table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
  <tr> <td class="optionTitle" align="left"> Project Name</td> <td> proj_1</td> <td class="optionTitle" align="left"> Device Name</td> <td> impl_1: Lattice LAV-AT : LAV_AT_E70ES1</td> </tr>
-<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> impl_1</td> <td class="optionTitle" align="left"> Top Module</td> <td> ariane</td> </tr>
+<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> impl_1</td> <td class="optionTitle" align="left"> Top Module</td> <td> [auto]</td> </tr>
  		 </thead> 
 		 <tbody> <tr> <td class="optionTitle" align="left"> Pipelining</td> <td> 1</td> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> </tr>
 <tr> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 1000</td> </tr>
@@ -33,14 +33,14 @@
  			<th align="left">Date/Time</th>
          </tr>
   <tr>
-  <td class="optionTitle"> (compiler)</td><td>Complete</td>
- <td>644</td>
- <td>658</td>
-<td>0</td>
+  <td class="optionTitle"> (compiler)</td><td>Error</td>
+ <td>70</td>
+ <td>7</td>
+ <td style="background-color:#FFBBBB;">2117</td>
 <td>-</td>
-<td>01m:38s</td>
+<td>00m:02s</td>
 <td>-</td>
-<td><font size="-1">9/27/2024</font><br/><font size="-2">3:04 PM</font></td>
+<td><font size="-1">10/4/2024</font><br/><font size="-2">3:38 PM</font></td>
 </tr> 
 
  <tr>
@@ -48,10 +48,10 @@
  <td>475</td>
  <td>50</td>
 <td>0</td>
-<td>0m:06s</td>
-<td>0m:06s</td>
+<td>0m:13s</td>
+<td>0m:13s</td>
 <td>325MB</td>
-<td><font size="-1">9/27/2024</font><br/><font size="-2">3:05 PM</font></td>
+<td><font size="-1">10/1/2024</font><br/><font size="-2">10:46 AM</font></td>
 </tr> 
 
  <tr>
@@ -59,15 +59,13 @@
  <td>378</td>
  <td>120</td>
 <td>0</td>
-<td>0m:06s</td>
-<td>0m:34s</td>
-<td>272MB</td>
-<td><font size="-1">9/27/2024</font><br/><font size="-2">3:05 PM</font></td>
+<td>0m:13s</td>
+<td>02m:03s</td>
+<td>273MB</td>
+<td><font size="-1">10/1/2024</font><br/><font size="-2">10:48 AM</font></td>
 </tr> 
 
-<tr>
-  <td class="optionTitle">Multi-srs Generator</td>
-  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>00m:01s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">9/27/2024</font><br/><font size="-2">3:05 PM</font></td> 		</tbody>
+ 		</tbody>
      </table>
  <br> 
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
@@ -76,7 +74,7 @@
  </tfoot> 
  <tbody> <tr> 
 <td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>157</td>
-<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>386</td>
+<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>832</td>
 </tr>
 <tr> 
 <td title ="Total Block RAMs used" class="optionTitle" align="left">Block RAMs
@@ -109,11 +107,11 @@
  				   <thead class="tablehead"><tr><th   colspan="5">Compile Points Summary</th></tr></thead>
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Name</th><th class="optionTitle" align= "left ">Status</th><th class="optionTitle" align= "left ">Reason</th><th class="optionTitle" align= "left ">Real Time</th><th class="optionTitle" align= "left ">CPU Time</th></tr> 
-<tr> <td  align="left">issue_stage_0_4s_10_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:10s</td><td  align="left">0h:00m:11s</td></tr> 
-<tr> <td  align="left">load_store_unit_1s_21_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:11s</td><td  align="left">0h:00m:11s</td></tr> 
-<tr> <td  align="left">csr_regfile_1s_6s_1075056896_32_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:10s</td><td  align="left">0h:00m:10s</td></tr> 
-<tr> <td  align="left">wt_dcache_4s_1s_40_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:24s</td><td  align="left">0h:00m:24s</td></tr> 
-<tr> <td  align="left">ariane</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:26s</td><td  align="left">0h:00m:27s</td></tr> 
+<tr> <td  align="left">load_store_unit_1s_21_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:29s</td><td  align="left">0h:00m:21s</td></tr> 
+<tr> <td  align="left">issue_stage_0_4s_10_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:29s</td><td  align="left">0h:00m:20s</td></tr> 
+<tr> <td  align="left">csr_regfile_1s_6s_1075056896_32_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:00m:48s</td><td  align="left">0h:00m:44s</td></tr> 
+<tr> <td  align="left">wt_dcache_4s_1s_40_layer0</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:01m:43s</td><td  align="left">0h:01m:23s</td></tr> 
+<tr> <td  align="left">ariane</td><td  align="left">Remapped</td><td  align="left">User request</td><td  align="left">0h:01m:46s</td><td  align="left">0h:01m:28s</td></tr> 
 </tbody> 
  </table>
 <br>

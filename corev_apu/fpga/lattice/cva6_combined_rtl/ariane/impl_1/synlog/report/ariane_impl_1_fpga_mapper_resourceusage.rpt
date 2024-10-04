@@ -3,7 +3,7 @@ Part: lav_at_e70es1lfg676c-1
 
 
 Register bits: 157 of 397440 (0%)
-I/O cells:       386
+I/O cells:       832
 
 Details:
 CCU2C:          20
@@ -17,7 +17,7 @@ IFD1P3BX:       1
 IFD1P3DX:       2
 INV:            10
 LUT4:           387
-OB:             376
+OB:             822
 PDPSC32K:       4
 VHI:            47
 VLO:            47

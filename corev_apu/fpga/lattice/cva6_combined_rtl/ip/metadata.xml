@@ -3,24 +3,526 @@
     <lsccip:general>
         <lsccip:vendor>latticesemi.com</lsccip:vendor>
         <lsccip:library>ip</lsccip:library>
-        <lsccip:name>Hello_World</lsccip:name>
-        <lsccip:display_name>Hello_World</lsccip:display_name>
-        <lsccip:version>1.0.0</lsccip:version>
-        <lsccip:category />
-        <lsccip:min_radiant_version>2024.1</lsccip:min_radiant_version>
+        <lsccip:name>ariane</lsccip:name>
+        <lsccip:display_name>cva6</lsccip:display_name>
+        <lsccip:version>1.0</lsccip:version>
+        <lsccip:category>Processors_Controllers_and_Peripherals</lsccip:category>
+        <lsccip:min_radiant_version>3.0</lsccip:min_radiant_version>
         <lsccip:min_esi_version>2024.1</lsccip:min_esi_version>
         <lsccip:supported_products>
             <lsccip:supported_family name="*" />
         </lsccip:supported_products>
-        <lsccip:supported_platforms />
+        <lsccip:supported_platforms>
+            <lsccip:supported_platform name="esi" />
+            <lsccip:supported_platform name="radiant" />
+        </lsccip:supported_platforms>
     </lsccip:general>
     <lsccip:settings>
-        <lsccip:setting id="__dummy__"
+        <lsccip:setting id="AxiAddrWidth"
                         type="param"
-                        value_type="string"
-                        conn_mod="cvxif_fu"
-                        hidden="True"
+                        value_type="int"
+                        conn_mod="ariane"
+                        title="AXI Addr Width"
+                        default="64"
+                        options="range(64,64)"
+         />
+        <lsccip:setting id="AxiDataWidth"
+                        type="param"
+                        value_type="int"
+                        conn_mod="ariane"
+                        title="AXI Data Width"
+                        default="64"
+                        options="range(64,64)"
+         />
+        <lsccip:setting id="AxiIdWidth"
+                        type="param"
+                        value_type="int"
+                        conn_mod="ariane"
+                        title="AXI ID Width"
+                        default="4"
+                        options="range(4,4)"
          />
     </lsccip:settings>
-    <lsccip:ports />
+    <lsccip:ports>
+        <lsccip:port name="clk_i"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="clk_i"
+                     port_type="clock"
+         />
+        <lsccip:port name="rst_ni"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="rst_ni"
+                     port_type="reset"
+         />
+        <lsccip:port name="boot_addr_i"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="boot_addr_i"
+         />
+        <lsccip:port name="hart_id_i"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(33,0)"
+                     conn_port="hart_id_i"
+         />
+        <lsccip:port name="irq_i"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(1,0)"
+                     conn_port="irq_i"
+         />
+        <lsccip:port name="ipi_i"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="ipi_i"
+         />
+        <lsccip:port name="time_irq_i"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="time_irq_i"
+         />
+        <lsccip:port name="debug_req_i"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="debug_req_i"
+         />
+        <lsccip:port name="noc_req_o_aw_valid"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_aw_valid"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_w_valid"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_w_valid"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_b_ready"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_b_ready"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_valid"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_ar_valid"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_r_ready"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_r_ready"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_aw_ready"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="noc_resp_i_aw_ready"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_ar_ready"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="noc_resp_i_ar_ready"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_w_ready"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="noc_resp_i_w_ready"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_b_valid"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="noc_resp_i_b_valid"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_r_valid"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="noc_resp_i_r_valid"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_b_id"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_resp_i_b_id"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_b_resp"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(1,0)"
+                     conn_port="noc_resp_i_b_resp"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_b_user"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="noc_resp_i_b_user"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_r_id"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_resp_i_r_id"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_r_data"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(63,0)"
+                     conn_port="noc_resp_i_r_data"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_r_resp"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(1,0)"
+                     conn_port="noc_resp_i_r_resp"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_r_last"
+                     dir="in"
+                     conn_mod="ariane"
+                     conn_port="noc_resp_i_r_last"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_resp_i_r_user"
+                     dir="in"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="noc_resp_i_r_user"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_id"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_aw_id"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_addr"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(63,0)"
+                     conn_port="noc_req_o_aw_addr"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_len"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(7,0)"
+                     conn_port="noc_req_o_aw_len"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_size"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(2,0)"
+                     conn_port="noc_req_o_aw_size"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_burst"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(1,0)"
+                     conn_port="noc_req_o_aw_burst"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_lock"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_aw_lock"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_cache"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_aw_cache"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_prot"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(2,0)"
+                     conn_port="noc_req_o_aw_prot"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_qos"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_aw_qos"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_region"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_aw_region"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_aw_atop"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(5,0)"
+                     conn_port="noc_req_o_aw_atop"
+         />
+        <lsccip:port name="noc_req_o_aw_user"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="noc_req_o_aw_user"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_w_data"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(63,0)"
+                     conn_port="noc_req_o_w_data"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_w_strb"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(7,0)"
+                     conn_port="noc_req_o_w_strb"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_w_last"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_w_last"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_w_user"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="noc_req_o_w_user"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_id"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_ar_id"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_addr"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(63,0)"
+                     conn_port="noc_req_o_ar_addr"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_len"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(7,0)"
+                     conn_port="noc_req_o_ar_len"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_size"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(2,0)"
+                     conn_port="noc_req_o_ar_size"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_burst"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(1,0)"
+                     conn_port="noc_req_o_ar_burst"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_lock"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="noc_req_o_ar_lock"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_cache"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_ar_cache"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_prot"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(2,0)"
+                     conn_port="noc_req_o_ar_prot"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_qos"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_ar_qos"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_region"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="noc_req_o_ar_region"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="noc_req_o_ar_user"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="noc_req_o_ar_user"
+                     bus_interface="AXI_PORT"
+         />
+        <lsccip:port name="rvfi_o_valid"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="rvfi_o_valid"
+         />
+        <lsccip:port name="rvfi_o_order"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(63,0)"
+                     conn_port="rvfi_o_order"
+         />
+        <lsccip:port name="rvfi_o_insn"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_insn"
+         />
+        <lsccip:port name="rvfi_o_trap"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="rvfi_o_trap"
+         />
+        <lsccip:port name="rvfi_o_cause"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_cause"
+         />
+        <lsccip:port name="rvfi_o_halt"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="rvfi_o_halt"
+         />
+        <lsccip:port name="rvfi_o_intr"
+                     dir="out"
+                     conn_mod="ariane"
+                     conn_port="rvfi_o_intr"
+         />
+        <lsccip:port name="rvfi_o_mode"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(1,0)"
+                     conn_port="rvfi_o_mode"
+         />
+        <lsccip:port name="rvfi_o_ixl"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(1,0)"
+                     conn_port="rvfi_o_ixl"
+         />
+        <lsccip:port name="rvfi_o_rs1_addr"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(4,0)"
+                     conn_port="rvfi_o_rs1_addr"
+         />
+        <lsccip:port name="rvfi_o_rs2_addr"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(4,0)"
+                     conn_port="rvfi_o_rs2_addr"
+         />
+        <lsccip:port name="rvfi_o_rs1_rdata"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_rs1_rdata"
+         />
+        <lsccip:port name="rvfi_o_rs2_rdata"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_rs2_rdata"
+         />
+        <lsccip:port name="rvfi_o_rd_addr"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(4,0)"
+                     conn_port="rvfi_o_rd_addr"
+         />
+        <lsccip:port name="rvfi_o_rd_wdata"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_rd_wdata"
+         />
+        <lsccip:port name="rvfi_o_pc_rdata"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_pc_rdata"
+         />
+        <lsccip:port name="rvfi_o_pc_wdata"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_pc_wdata"
+         />
+        <lsccip:port name="rvfi_o_mem_addr"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_mem_addr"
+         />
+        <lsccip:port name="rvfi_o_mem_paddr"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(33,0)"
+                     conn_port="rvfi_o_mem_paddr"
+         />
+        <lsccip:port name="rvfi_o_mem_rmask"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(3,0)"
+                     conn_port="rvfi_o_mem_rmask"
+         />
+        <lsccip:port name="rvfi_o_mem_wmask"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(2,0)"
+                     conn_port="rvfi_o_mem_wmask"
+         />
+        <lsccip:port name="rvfi_o_mem_rdata"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_mem_rdata"
+         />
+        <lsccip:port name="rvfi_o_mem_wdata"
+                     dir="out"
+                     conn_mod="ariane"
+                     range="(31,0)"
+                     conn_port="rvfi_o_mem_wdata"
+         />
+    </lsccip:ports>
+    <xi:include parse="xml" href="bus_interface.xml" />
 </lsccip:ip>

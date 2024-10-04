@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="ap6a00b" date="2024 10 04 15:38:29" device="LAV-AT-E70ES1" device_int="ap6a400be" family="LAV-AT" gen_platform="Radiant" gen_platform_version="2024.1.1.259.1" generator="ipgen" library="ip" module="ariane" name="arianelattice" operation="Commercial" package="LFG676" package_int="LFG676" partnumber="LAV-AT-E70ES1-1LFG676C" source_format="Verilog" speed="1" speed_int="1" vendor="latticesemi.com" version="1.0">
+ <Package>
+  <File modified="2024 10 04 15:38:27" name="rtl/arianelattice_bb.v" type="black_box_verilog"/>
+  <File modified="2024 10 04 15:38:27" name="arianelattice.cfg" type="cfg"/>
+  <File modified="2024 10 04 15:38:27" name="misc/arianelattice_tmpl.v" type="template_verilog"/>
+  <File modified="2024 10 04 15:38:27" name="misc/arianelattice_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 10 04 15:38:29" name="rtl/arianelattice.v" type="top_level_verilog"/>
+  <File modified="2024 10 04 15:38:29" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 10 04 15:38:29" name="design.xml" type="IP-XACT_design"/>
+ </Package>
+</RadiantModule>

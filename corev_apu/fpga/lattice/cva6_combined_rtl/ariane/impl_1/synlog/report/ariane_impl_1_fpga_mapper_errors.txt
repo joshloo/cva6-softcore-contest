@@ -1,7 +1,7 @@
-**** Begin Compile Point : issue_stage_0_4s_10_layer0 ****
-**** End Compile Point : issue_stage_0_4s_10_layer0 ****
 **** Begin Compile Point : load_store_unit_1s_21_layer0 ****
 **** End Compile Point : load_store_unit_1s_21_layer0 ****
+**** Begin Compile Point : issue_stage_0_4s_10_layer0 ****
+**** End Compile Point : issue_stage_0_4s_10_layer0 ****
 **** Begin Compile Point : csr_regfile_1s_6s_1075056896_32_layer0 ****
 **** End Compile Point : csr_regfile_1s_6s_1075056896_32_layer0 ****
 **** Begin Compile Point : wt_dcache_4s_1s_40_layer0 ****

@@ -3,8 +3,8 @@
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
         <Options/>
-        <Source name="../../../../../merged_systemverilog.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog"/>
+        <Source name="arianelattice/arianelattice.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
         </Source>
     </Implementation>
     <Strategy name="Strategy1" file="ariane1.sty"/>

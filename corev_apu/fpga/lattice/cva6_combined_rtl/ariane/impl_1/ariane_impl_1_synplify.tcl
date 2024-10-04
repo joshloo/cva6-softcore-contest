@@ -11,7 +11,7 @@ set_option -symbolic_fsm_compiler true
 set_option -resource_sharing true
 
 #use verilog standard option
-set_option -vlog_std sysv
+set_option -vlog_std v2001
 
 #map options
 set_option -frequency 200
@@ -48,14 +48,9 @@ set_option -disable_io_insertion false
 add_file -constraint {C:/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl}
 add_file -verilog {C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v}
 add_file -vhdl -lib pmi {C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd}
-add_file -verilog -vlog_std sysv {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/ariane.sv}
-#-- top module name
-set_option -top_module ariane
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/common_cells/include}
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/vendor/pulp-platform/axi/include}
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/include}
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/register_interface/include}
+add_file -verilog -vlog_std v2001 {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice/rtl/arianelattice.v}
 set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane}
+set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice}
 
 #-- set result format/file last
 project -result_format "vm"

@@ -1,0 +1,6 @@
+#Start recording tcl command: 10/4/2024 15:37:33
+#Project Location: C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane; Project name: ariane
+prj_open "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/ariane.rdf"
+prj_add_source "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice/arianelattice.ipx"
+prj_run Synthesis -impl impl_1
+#Stop recording: 10/4/2024 15:40:22

@@ -3,7 +3,7 @@
   Synopsys, Inc.
   Version V-2023.09LR-1
   Project file C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\syntmp\run_option.xml
-  Written on Fri Sep 27 15:03:20 2024
+  Written on Fri Oct  4 15:38:40 2024
 
 
 --> 
@@ -11,7 +11,7 @@
      <option name="project_name" display_name="Project Name">proj_1</option>
      <option name="device_name" display_name="Device Name">impl_1: Lattice LAV-AT : LAV_AT_E70ES1</option>
      <option name="impl_name" display_name="Implementation Name">impl_1</option>
-     <option name="top_module" display_name="Top Module">ariane</option>
+     <option name="top_module" display_name="Top Module"></option>
      <option name="pipe" display_name="Pipelining">1</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
