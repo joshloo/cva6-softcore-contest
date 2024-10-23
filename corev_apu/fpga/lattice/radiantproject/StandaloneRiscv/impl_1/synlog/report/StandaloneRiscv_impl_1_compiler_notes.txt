@@ -87,124 +87,124 @@
 @N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5487:12:5487:23|Read directive translate_on.
 @N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5552:12:5552:24|Read directive translate_off.
 @N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5556:12:5556:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14950:10:14950:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14964:10:14964:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15262:10:15262:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15282:10:15282:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15342:11:15342:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15346:11:15346:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15480:14:15480:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15482:14:15482:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15526:10:15526:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15532:10:15532:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15628:14:15628:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15632:14:15632:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15803:12:15803:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15810:12:15810:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15862:18:15862:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15877:18:15877:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16001:14:16001:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16036:14:16036:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16269:9:16269:21|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16281:9:16281:20|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17598:12:17598:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17602:12:17602:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17608:11:17608:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17752:11:17752:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21496:11:21496:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21503:11:21503:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24424:11:24424:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24441:11:24441:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25165:11:25165:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25184:11:25184:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27268:11:27268:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27303:11:27303:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27575:11:27575:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27594:11:27594:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28591:11:28591:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28598:11:28598:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30068:12:30068:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30081:12:30081:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30593:12:30593:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30600:12:30600:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30885:11:30885:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30901:11:30901:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31267:11:31267:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31332:11:31332:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31953:11:31953:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31980:11:31980:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32555:11:32555:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32608:11:32608:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32939:11:32939:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32952:11:32952:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33478:11:33478:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33537:11:33537:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33728:11:33728:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33772:11:33772:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34449:11:34449:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34453:11:34453:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35599:11:35599:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35605:11:35605:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35885:11:35885:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35907:11:35907:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36367:11:36367:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36383:11:36383:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36863:11:36863:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36906:11:36906:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37183:11:37183:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37188:11:37188:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37858:18:37858:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37860:18:37860:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38141:15:38141:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38145:15:38145:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38230:15:38230:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38233:15:38233:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38298:15:38298:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38302:15:38302:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38352:15:38352:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38357:15:38357:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38970:15:38970:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38979:15:38979:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39154:15:39154:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39163:15:39163:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40554:15:40554:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40560:15:40560:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41348:14:41348:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41364:14:41364:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41599:38:41599:50|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41601:38:41601:49|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41679:11:41679:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41687:11:41687:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42620:15:42620:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42626:15:42626:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44022:15:44022:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44030:15:44030:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44487:26:44487:38|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44489:26:44489:37|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44701:15:44701:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44704:15:44704:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45090:15:45090:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45094:15:45094:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45201:11:45201:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45202:11:45202:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45968:11:45968:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46012:11:46012:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46939:11:46939:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46979:11:46979:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47656:15:47656:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47668:15:47668:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47879:19:47879:31|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47882:19:47882:30|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47893:15:47893:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47896:15:47896:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48466:13:48466:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48508:13:48508:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49075:13:49075:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49097:13:49097:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49297:15:49297:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49301:15:49301:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49577:15:49577:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49591:15:49591:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15156:10:15156:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15170:10:15170:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15468:10:15468:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15488:10:15488:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15548:11:15548:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15552:11:15552:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15686:14:15686:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15688:14:15688:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15732:10:15732:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:10:15738:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15834:14:15834:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15838:14:15838:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16009:12:16009:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16016:12:16016:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16068:18:16068:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16083:18:16083:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16207:14:16207:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16242:14:16242:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16475:9:16475:21|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16487:9:16487:20|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17804:12:17804:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17808:12:17808:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17814:11:17814:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17958:11:17958:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21702:11:21702:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21709:11:21709:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24630:11:24630:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24647:11:24647:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25371:11:25371:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25390:11:25390:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27474:11:27474:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27509:11:27509:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27781:11:27781:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27800:11:27800:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28797:11:28797:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28804:11:28804:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30274:12:30274:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30287:12:30287:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30799:12:30799:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30806:12:30806:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31091:11:31091:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31107:11:31107:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31473:11:31473:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31538:11:31538:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32159:11:32159:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32186:11:32186:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32761:11:32761:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32814:11:32814:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33145:11:33145:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33158:11:33158:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33684:11:33684:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33743:11:33743:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33934:11:33934:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33978:11:33978:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34655:11:34655:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34659:11:34659:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35805:11:35805:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35811:11:35811:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36091:11:36091:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36113:11:36113:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36573:11:36573:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36589:11:36589:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37069:11:37069:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37112:11:37112:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37389:11:37389:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37394:11:37394:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38064:18:38064:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38066:18:38066:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38347:15:38347:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38351:15:38351:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38436:15:38436:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38439:15:38439:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38504:15:38504:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38508:15:38508:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38558:15:38558:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38563:15:38563:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39176:15:39176:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39185:15:39185:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39360:15:39360:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39369:15:39369:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40760:15:40760:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40766:15:40766:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41554:14:41554:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41570:14:41570:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41805:38:41805:50|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41807:38:41807:49|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41885:11:41885:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41893:11:41893:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42826:15:42826:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42832:15:42832:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44228:15:44228:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44236:15:44236:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44693:26:44693:38|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44695:26:44695:37|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44907:15:44907:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44910:15:44910:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45296:15:45296:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45300:15:45300:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45407:11:45407:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45408:11:45408:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46174:11:46174:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46218:11:46218:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47145:11:47145:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47185:11:47185:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47862:15:47862:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47874:15:47874:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48085:19:48085:31|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48088:19:48088:30|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48099:15:48099:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48102:15:48102:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48902:13:48902:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48944:13:48944:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49511:13:49511:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49533:13:49533:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49733:15:49733:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49737:15:49737:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50013:15:50013:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50027:15:50027:26|Read directive translate_on.
 @N: CG1349 :	| Running Verilog Compiler in System Verilog mode
 @N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
 @N: CG334 :"C:\lscc\radiant\2024.1\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
@@ -289,124 +289,124 @@
 @N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5487:12:5487:23|Read directive translate_on.
 @N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5552:12:5552:24|Read directive translate_off.
 @N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5556:12:5556:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14950:10:14950:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14964:10:14964:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15262:10:15262:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15282:10:15282:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15342:11:15342:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15346:11:15346:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15480:14:15480:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15482:14:15482:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15526:10:15526:22|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15532:10:15532:21|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15628:14:15628:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15632:14:15632:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15803:12:15803:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15810:12:15810:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15862:18:15862:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15877:18:15877:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16001:14:16001:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16036:14:16036:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16269:9:16269:21|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16281:9:16281:20|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17598:12:17598:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17602:12:17602:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17608:11:17608:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17752:11:17752:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21496:11:21496:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21503:11:21503:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24424:11:24424:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24441:11:24441:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25165:11:25165:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25184:11:25184:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27268:11:27268:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27303:11:27303:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27575:11:27575:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27594:11:27594:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28591:11:28591:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28598:11:28598:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30068:12:30068:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30081:12:30081:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30593:12:30593:24|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30600:12:30600:23|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30885:11:30885:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30901:11:30901:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31267:11:31267:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31332:11:31332:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31953:11:31953:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31980:11:31980:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32555:11:32555:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32608:11:32608:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32939:11:32939:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32952:11:32952:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33478:11:33478:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33537:11:33537:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33728:11:33728:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33772:11:33772:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34449:11:34449:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34453:11:34453:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35599:11:35599:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35605:11:35605:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35885:11:35885:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35907:11:35907:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36367:11:36367:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36383:11:36383:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36863:11:36863:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36906:11:36906:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37183:11:37183:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37188:11:37188:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37858:18:37858:30|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37860:18:37860:29|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38141:15:38141:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38145:15:38145:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38230:15:38230:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38233:15:38233:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38298:15:38298:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38302:15:38302:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38352:15:38352:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38357:15:38357:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38970:15:38970:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38979:15:38979:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39154:15:39154:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39163:15:39163:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40554:15:40554:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40560:15:40560:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41348:14:41348:26|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41364:14:41364:25|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41599:38:41599:50|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41601:38:41601:49|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41679:11:41679:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41687:11:41687:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42620:15:42620:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42626:15:42626:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44022:15:44022:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44030:15:44030:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44487:26:44487:38|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44489:26:44489:37|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44701:15:44701:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44704:15:44704:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45090:15:45090:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45094:15:45094:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45201:11:45201:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45202:11:45202:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45968:11:45968:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46012:11:46012:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46939:11:46939:23|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46979:11:46979:22|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47656:15:47656:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47668:15:47668:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47879:19:47879:31|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47882:19:47882:30|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47893:15:47893:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47896:15:47896:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48466:13:48466:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48508:13:48508:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49075:13:49075:25|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49097:13:49097:24|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49297:15:49297:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49301:15:49301:26|Read directive translate_on.
-@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49577:15:49577:27|Read directive translate_off.
-@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49591:15:49591:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15156:10:15156:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15170:10:15170:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15468:10:15468:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15488:10:15488:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15548:11:15548:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15552:11:15552:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15686:14:15686:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15688:14:15688:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15732:10:15732:22|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:10:15738:21|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15834:14:15834:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15838:14:15838:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16009:12:16009:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16016:12:16016:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16068:18:16068:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16083:18:16083:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16207:14:16207:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16242:14:16242:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16475:9:16475:21|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16487:9:16487:20|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17804:12:17804:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17808:12:17808:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17814:11:17814:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17958:11:17958:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21702:11:21702:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21709:11:21709:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24630:11:24630:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24647:11:24647:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25371:11:25371:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25390:11:25390:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27474:11:27474:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27509:11:27509:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27781:11:27781:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27800:11:27800:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28797:11:28797:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28804:11:28804:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30274:12:30274:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30287:12:30287:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30799:12:30799:24|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30806:12:30806:23|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31091:11:31091:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31107:11:31107:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31473:11:31473:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31538:11:31538:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32159:11:32159:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32186:11:32186:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32761:11:32761:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32814:11:32814:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33145:11:33145:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33158:11:33158:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33684:11:33684:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33743:11:33743:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33934:11:33934:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33978:11:33978:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34655:11:34655:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34659:11:34659:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35805:11:35805:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":35811:11:35811:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36091:11:36091:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36113:11:36113:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36573:11:36573:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":36589:11:36589:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37069:11:37069:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37112:11:37112:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37389:11:37389:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37394:11:37394:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38064:18:38064:30|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38066:18:38066:29|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38347:15:38347:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38351:15:38351:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38436:15:38436:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38439:15:38439:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38504:15:38504:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38508:15:38508:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38558:15:38558:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":38563:15:38563:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39176:15:39176:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39185:15:39185:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39360:15:39360:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39369:15:39369:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40760:15:40760:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40766:15:40766:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41554:14:41554:26|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41570:14:41570:25|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41805:38:41805:50|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41807:38:41807:49|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41885:11:41885:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":41893:11:41893:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42826:15:42826:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":42832:15:42832:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44228:15:44228:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44236:15:44236:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44693:26:44693:38|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44695:26:44695:37|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44907:15:44907:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":44910:15:44910:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45296:15:45296:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45300:15:45300:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45407:11:45407:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":45408:11:45408:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46174:11:46174:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":46218:11:46218:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47145:11:47145:23|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47185:11:47185:22|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47862:15:47862:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":47874:15:47874:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48085:19:48085:31|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48088:19:48088:30|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48099:15:48099:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48102:15:48102:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48902:13:48902:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":48944:13:48944:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49511:13:49511:25|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49533:13:49533:24|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49733:15:49733:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49737:15:49737:26|Read directive translate_on.
+@N: CG334 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50013:15:50013:27|Read directive translate_off.
+@N: CG333 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50027:15:50027:26|Read directive translate_on.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":11:8:11:17|Synthesizing module config_pkg in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":186:8:186:22|Synthesizing module cva6_config_pkg in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":337:8:337:12|Synthesizing module riscv in library work.
@@ -423,225 +423,225 @@
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":4702:8:4702:16|Synthesizing module cvxif_pkg in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":4813:8:4813:22|Synthesizing module cvxif_instr_pkg in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5196:8:5196:18|Synthesizing module cf_math_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":10032:8:10032:24|Synthesizing module defs_div_sqrt_mvp in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37208:8:37208:26|Synthesizing module hpdcache_params_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37342:8:37342:19|Synthesizing module hpdcache_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":39859:8:39859:22|Synthesizing module hwpf_stride_pkg in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":10145:0:10145:5|Synthesizing module work_C:\lscc\radiant\2024.1\ip\pmi\pmi_lav-at.v_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23359:7:23359:19|Synthesizing module instr_realign in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14788:7:14788:13|Synthesizing module fifo_v3 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":10238:8:10238:24|Synthesizing module defs_div_sqrt_mvp in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37414:8:37414:26|Synthesizing module hpdcache_params_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":37548:8:37548:19|Synthesizing module hpdcache_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":40065:8:40065:22|Synthesizing module hwpf_stride_pkg in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":10351:0:10351:5|Synthesizing module work_C:\lscc\radiant\2024.1\ip\pmi\pmi_lav-at.v_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23565:7:23565:19|Synthesizing module instr_realign in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14994:7:14994:13|Synthesizing module fifo_v3 in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5448:7:5448:16|Synthesizing module AsyncDpRam in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16114:7:16114:12|Synthesizing module unread in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29669:7:29669:17|Synthesizing module instr_queue in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14788:7:14788:13|Synthesizing module fifo_v3__gen0_1 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16320:7:16320:12|Synthesizing module unread in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29875:7:29875:17|Synthesizing module instr_queue in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14994:7:14994:13|Synthesizing module fifo_v3__gen0_1 in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5448:7:5448:16|Synthesizing module AsyncDpRam in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30103:7:30103:14|Synthesizing module frontend in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29480:7:29480:9|Synthesizing module ras in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29085:7:29085:9|Synthesizing module btb in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30309:7:30309:14|Synthesizing module frontend in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29686:7:29686:9|Synthesizing module ras in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29291:7:29291:9|Synthesizing module btb in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5270:7:5270:15|Synthesizing module SyncDpRam in library work.
 @N: CG440 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5304:25:5304:30|Allowing writes in multiple processes for multi-port RAM
 @N: CL214 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5372:24:5372:40|Found multi-write port RAM Mem_DP, number of write ports=2, depth=32, width=33
 @N: CL214 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5359:24:5359:40|Found multi-write port RAM Mem_DP, number of write ports=2, depth=32, width=33
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29266:7:29266:9|Synthesizing module bht in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29472:7:29472:9|Synthesizing module bht in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5513:7:5513:23|Synthesizing module AsyncThreePortRam in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29555:7:29555:16|Synthesizing module instr_scan in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21529:7:21529:13|Synthesizing module decoder in library work.
-@N: CG179 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21680:59:21680:71|Removing redundant assignment.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23716:7:23716:14|Synthesizing module id_stage in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26850:7:26850:16|Synthesizing module scoreboard_rs3_len_t_2 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen1_3 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen2_4 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen3_5 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen4_6 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen5_7 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen6_8 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen7_9 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen8_10 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen9_11 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen10_12 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen11_13 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen12_14 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen13_15 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen14_16 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen15_17 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen16_18 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen17_19 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen18_20 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen19_21 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen20_22 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen21_23 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen22_24 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen23_25 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen24_26 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen25_27 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen26_28 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen27_29 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen28_30 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen29_31 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen30_32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen31_33 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15738:7:15738:17|Synthesizing module rr_arb_tree__gen32_34 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23860:7:23860:25|Synthesizing module issue_read_operands_rs3_len_t_35 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26735:7:26735:25|Synthesizing module ariane_regfile_fpga in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24464:7:24464:17|Synthesizing module issue_stage in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17827:7:17827:9|Synthesizing module alu in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18718:7:18718:17|Synthesizing module branch_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":19919:7:19919:16|Synthesizing module csr_buffer in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25986:7:25986:16|Synthesizing module multiplier in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15601:7:15601:9|Synthesizing module lzc in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26145:7:26145:12|Synthesizing module serdiv in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25819:7:25819:10|Synthesizing module mult in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27324:7:27324:18|Synthesizing module store_buffer in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27702:7:27702:16|Synthesizing module store_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14788:7:14788:13|Synthesizing module fifo_v3_amo_op_t_36 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29761:7:29761:16|Synthesizing module instr_scan in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21735:7:21735:13|Synthesizing module decoder in library work.
+@N: CG179 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":21886:59:21886:71|Removing redundant assignment.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23922:7:23922:14|Synthesizing module id_stage in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27056:7:27056:16|Synthesizing module scoreboard_rs3_len_t_2 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen1_3 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen2_4 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen3_5 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen4_6 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen5_7 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen6_8 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen7_9 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen8_10 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen9_11 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen10_12 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen11_13 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen12_14 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen13_15 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen14_16 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen15_17 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen16_18 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen17_19 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen18_20 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen19_21 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen20_22 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen21_23 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen22_24 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen23_25 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen24_26 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen25_27 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen26_28 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen27_29 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen28_30 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen29_31 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen30_32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen31_33 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15944:7:15944:17|Synthesizing module rr_arb_tree__gen32_34 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24066:7:24066:25|Synthesizing module issue_read_operands_rs3_len_t_35 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26941:7:26941:25|Synthesizing module ariane_regfile_fpga in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24670:7:24670:17|Synthesizing module issue_stage in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18033:7:18033:9|Synthesizing module alu in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18924:7:18924:17|Synthesizing module branch_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20125:7:20125:16|Synthesizing module csr_buffer in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26192:7:26192:16|Synthesizing module multiplier in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15807:7:15807:9|Synthesizing module lzc in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26351:7:26351:12|Synthesizing module serdiv in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26025:7:26025:10|Synthesizing module mult in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27530:7:27530:18|Synthesizing module store_buffer in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27908:7:27908:16|Synthesizing module store_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14994:7:14994:13|Synthesizing module fifo_v3_amo_op_t_36 in library work.
 @N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5448:7:5448:16|Synthesizing module AsyncDpRam in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27618:7:27618:16|Synthesizing module amo_buffer in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24682:7:24682:15|Synthesizing module load_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15601:7:15601:9|Synthesizing module lzc in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16058:7:16058:15|Synthesizing module shift_reg__internal_typedef_19_37 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16058:7:16058:15|Synthesizing module shift_reg__internal_typedef_20_38 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25717:7:25717:16|Synthesizing module lsu_bypass in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25205:7:25205:21|Synthesizing module load_store_unit in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51070:7:51070:19|Synthesizing module cva6_tlb_sv32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15601:7:15601:9|Synthesizing module lzc in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14991:7:14991:10|Synthesizing module lfsr in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51347:7:51347:26|Synthesizing module cva6_shared_tlb_sv32 in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49985:7:49985:10|Synthesizing module sram in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49752:7:49752:21|Synthesizing module SyncSpRamBeNx64 in library work.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=64, width=8
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49913:7:49913:21|Synthesizing module tc_sram_wrapper in library work.
-@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49985:7:49985:10|Synthesizing module sram in library work.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49813:21:49813:36|Found RAM Mem_DP, depth=256, width=8
-@N: CL189 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34365:2:34365:10|Register bit dcache_rtrn_type_q[2] is always 0.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28576:2:28576:10|Trying to extract state machine for register wr_state_q.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27824:7:27824:16|Synthesizing module amo_buffer in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24888:7:24888:15|Synthesizing module load_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15807:7:15807:9|Synthesizing module lzc in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16264:7:16264:15|Synthesizing module shift_reg__internal_typedef_19_37 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16264:7:16264:15|Synthesizing module shift_reg__internal_typedef_20_38 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25923:7:25923:16|Synthesizing module lsu_bypass in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25411:7:25411:21|Synthesizing module load_store_unit in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51506:7:51506:19|Synthesizing module cva6_tlb_sv32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15807:7:15807:9|Synthesizing module lzc in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15197:7:15197:10|Synthesizing module lfsr in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51783:7:51783:26|Synthesizing module cva6_shared_tlb_sv32 in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50421:7:50421:10|Synthesizing module sram in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50188:7:50188:21|Synthesizing module SyncSpRamBeNx64 in library work.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=64, width=8
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50349:7:50349:21|Synthesizing module tc_sram_wrapper in library work.
+@N: CG364 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50421:7:50421:10|Synthesizing module sram in library work.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL189 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34571:2:34571:10|Register bit dcache_rtrn_type_q[2] is always 0.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28782:2:28782:10|Trying to extract state machine for register wr_state_q.
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=5
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30857:2:30857:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49998:41:49998:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32522:2:32522:10|Found RAM tx_stat_q, depth=4, width=1
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32522:2:32522:10|Found RAM tx_stat_q, depth=4, width=4
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32073:24:32073:32|Input rd_data_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32074:39:32074:51|Input rd_vld_bits_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15784:30:15784:33|Input rr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15784:30:15784:33|Input rr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15005:18:15005:27|Input testmode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15005:18:15005:27|Input testmode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15005:18:15005:27|Input testmode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15990:30:15990:33|Input rr_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31063:2:31063:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50434:41:50434:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15990:30:15990:33|Input rr_i is unused.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32728:2:32728:10|Found RAM tx_stat_q, depth=4, width=1
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32728:2:32728:10|Found RAM tx_stat_q, depth=4, width=4
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32279:24:32279:32|Input rd_data_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32280:39:32280:51|Input rd_vld_bits_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15990:30:15990:33|Input rr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15990:30:15990:33|Input rr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15990:30:15990:33|Input rr_i is unused.
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=2
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":31921:2:31921:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49998:41:49998:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49762:32:49762:38|Input Rst_RBI is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49998:41:49998:47|Input wuser_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33448:2:33448:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":19726:17:19726:21|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":19727:17:19727:22|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":19736:17:19736:34|Input flush_dcache_ack_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20023:16:20023:31|Input dirty_fp_state_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20024:34:20024:51|Input csr_write_fflags_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20025:16:20025:30|Input dirty_v_state_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20036:34:20036:48|Input acc_fflags_ex_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20037:16:20037:36|Input acc_fflags_ex_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28010:16:28010:20|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28011:16:28011:21|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28016:16:28016:28|Input single_step_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":22996:22:22996:30|Input fpu_fmt_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":22997:22:22997:29|Input fpu_rm_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":22998:22:22998:30|Input fpu_frm_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":22999:22:22999:31|Input fpu_prec_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23005:16:23005:24|Input x_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23007:23:23007:35|Input x_off_instr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23014:34:23014:45|Input cvxif_resp_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49521:27:49521:32|Input addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49522:30:49522:42|Input access_type_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49523:28:49523:37|Input priv_lvl_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49525:36:49525:46|Input conf_addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49526:33:49526:38|Input conf_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51013:2:51013:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49521:27:49521:32|Input addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49522:30:49522:42|Input access_type_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49523:28:49523:37|Input priv_lvl_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49525:36:49525:46|Input conf_addr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49526:33:49526:38|Input conf_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49998:41:49998:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49762:32:49762:38|Input Rst_RBI is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49998:41:49998:47|Input wuser_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25259:51:25259:72|Input dcache_wbuffer_empty_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16062:17:16062:21|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16063:17:16063:22|Input rst_ni is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25079:2:25079:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24705:37:24705:46|Input dtlb_ppn_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24709:16:24709:35|Input store_buffer_empty_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24710:36:24710:51|Input commit_tran_id_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15005:18:15005:27|Input testmode_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32127:2:32127:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50434:41:50434:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50198:32:50198:38|Input Rst_RBI is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50434:41:50434:47|Input wuser_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33654:2:33654:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":19932:17:19932:21|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":19933:17:19933:22|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":19942:17:19942:34|Input flush_dcache_ack_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20229:16:20229:31|Input dirty_fp_state_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20230:34:20230:51|Input csr_write_fflags_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20231:16:20231:30|Input dirty_v_state_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20242:34:20242:48|Input acc_fflags_ex_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":20243:16:20243:36|Input acc_fflags_ex_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28216:16:28216:20|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28217:16:28217:21|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28222:16:28222:28|Input single_step_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23202:22:23202:30|Input fpu_fmt_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23203:22:23203:29|Input fpu_rm_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23204:22:23204:30|Input fpu_frm_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23205:22:23205:31|Input fpu_prec_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23211:16:23211:24|Input x_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23213:23:23213:35|Input x_off_instr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23220:34:23220:45|Input cvxif_resp_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49957:27:49957:32|Input addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49958:30:49958:42|Input access_type_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49959:28:49959:37|Input priv_lvl_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49961:36:49961:46|Input conf_addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49962:33:49962:38|Input conf_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51449:2:51449:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49957:27:49957:32|Input addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49958:30:49958:42|Input access_type_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49959:28:49959:37|Input priv_lvl_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49961:36:49961:46|Input conf_addr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":49962:33:49962:38|Input conf_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50434:41:50434:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50198:32:50198:38|Input Rst_RBI is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50434:41:50434:47|Input wuser_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25465:51:25465:72|Input dcache_wbuffer_empty_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16268:17:16268:21|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16269:17:16269:22|Input rst_ni is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25285:2:25285:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24911:37:24911:46|Input dtlb_ppn_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24915:16:24915:35|Input store_buffer_empty_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24916:36:24916:51|Input commit_tran_id_i is unused.
 @N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5462:34:5462:42|Input RdAddr_DI is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":14799:18:14799:27|Input testmode_i is unused.
-@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26366:2:26366:10|Trying to extract state machine for register state_q.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18721:16:18721:20|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18722:16:18722:21|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18723:16:18723:27|Input debug_mode_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18727:38:18727:47|Input fu_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17832:25:17832:29|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":17833:25:17833:30|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24481:16:24481:29|Input is_ctrl_flow_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24492:16:24492:31|Input resolve_branch_i is unused.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26806:4:26806:12|Found RAM regfile_ram_block[0].mem[0], depth=32, width=32
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26806:4:26806:12|Found RAM regfile_ram_block[0].mem[0], depth=32, width=32
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26743:61:26743:66|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26745:61:26745:69|Input test_en_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23884:20:23884:24|Input rs3_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23885:16:23885:26|Input rs3_valid_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23888:38:23888:53|Input rd_clobber_fpr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23907:16:23907:26|Input fpu_ready_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23921:44:23921:51|Input we_fpr_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15780:30:15780:35|Input rst_ni is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15782:30:15782:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15778:30:15778:34|Input clk_i is unused.
-@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27254:2:27254:10|Found RAM mem_q, depth=4, width=32
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15005:18:15005:27|Input testmode_i is unused.
+@N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26572:2:26572:10|Trying to extract state machine for register state_q.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18927:16:18927:20|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18928:16:18928:21|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18929:16:18929:27|Input debug_mode_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18933:38:18933:47|Input fu_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18038:25:18038:29|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":18039:25:18039:30|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24687:16:24687:29|Input is_ctrl_flow_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24698:16:24698:31|Input resolve_branch_i is unused.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27012:4:27012:12|Found RAM regfile_ram_block[0].mem[0], depth=32, width=32
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27012:4:27012:12|Found RAM regfile_ram_block[0].mem[0], depth=32, width=32
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26949:61:26949:66|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26951:61:26951:69|Input test_en_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24090:20:24090:24|Input rs3_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24091:16:24091:26|Input rs3_valid_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24094:38:24094:53|Input rd_clobber_fpr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24113:16:24113:26|Input fpu_ready_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24127:44:24127:51|Input we_fpr_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
+@N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27460:2:27460:10|Found RAM mem_q, depth=4, width=32
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5537:2:5537:10|Found RAM mem, depth=128, width=3
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5537:2:5537:10|Found RAM mem, depth=128, width=3
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=69

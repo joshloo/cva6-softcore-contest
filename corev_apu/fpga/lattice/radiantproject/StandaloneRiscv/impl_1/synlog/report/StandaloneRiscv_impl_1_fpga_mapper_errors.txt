@@ -2,9 +2,9 @@
 **** End Compile Point : wt_dcache_4s_1s_44_layer0 ****
 **** Begin Compile Point : ex_stage_1s_34_layer0 ****
 **** End Compile Point : ex_stage_1s_34_layer0 ****
-**** Begin Compile Point : issue_stage_0_4s_13_layer0 ****
-**** End Compile Point : issue_stage_0_4s_13_layer0 ****
 **** Begin Compile Point : csr_regfile_1s_6s_1075056897_36_layer0 ****
 **** End Compile Point : csr_regfile_1s_6s_1075056897_36_layer0 ****
+**** Begin Compile Point : issue_stage_0_4s_13_layer0 ****
+**** End Compile Point : issue_stage_0_4s_13_layer0 ****
 **** Begin Compile Point : ariane ****
 **** End Compile Point : ariane ****

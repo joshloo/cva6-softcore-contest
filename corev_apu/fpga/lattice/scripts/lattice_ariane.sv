@@ -5574,7 +5574,213 @@ endmodule
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+
+`ifndef COMMON_CELLS_REGISTERS_SVH_
+`define COMMON_CELLS_REGISTERS_SVH_
+
+// Abridged Summary of available FF macros:
+// `FF:      asynchronous active-low reset
+// `FFAR:    asynchronous active-high reset
+// `FFARN:   [deprecated] asynchronous active-low reset
+// `FFSR:    synchronous active-high reset
+// `FFSRN:   synchronous active-low reset
+// `FFNR:    without reset
+// `FFL:     load-enable and asynchronous active-low reset
+// `FFLAR:   load-enable and asynchronous active-high reset
+// `FFLARN:  [deprecated] load-enable and asynchronous active-low reset
+// `FFLARNC: load-enable and asynchronous active-low reset and synchronous active-high clear
+// `FFLSR:   load-enable and synchronous active-high reset
+// `FFLSRN:  load-enable and synchronous active-low reset
+// `FFLNR:   load-enable without reset
+
+`ifdef VERILATOR
+`define NO_SYNOPSYS_FF 1
+`endif
+
+`define REG_DFLT_CLK clk_i
+`define REG_DFLT_RST rst_ni
+
+// Flip-Flop with asynchronous active-low reset
+// __q: Q output of FF
+// __d: D input of FF
+// __reset_value: value assigned upon reset
+// (__clk: clock input)
+// (__arst_n: asynchronous reset, active-low)
+`define FF(__q, __d, __reset_value, __clk = `REG_DFLT_CLK, __arst_n = `REG_DFLT_RST) \
+  always_ff @(posedge (__clk) or negedge (__arst_n)) begin                           \
+    if (!__arst_n) begin                                                             \
+      __q <= (__reset_value);                                                        \
+    end else begin                                                                   \
+      __q <= (__d);                                                                  \
+    end                                                                              \
+  end
+
+// Flip-Flop with asynchronous active-high reset
+// __q: Q output of FF
+// __d: D input of FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __arst: asynchronous reset, active-high
+`define FFAR(__q, __d, __reset_value, __clk, __arst)     \
+  always_ff @(posedge (__clk) or posedge (__arst)) begin \
+    if (__arst) begin                                    \
+      __q <= (__reset_value);                            \
+    end else begin                                       \
+      __q <= (__d);                                      \
+    end                                                  \
+  end
+
+// DEPRECATED - use `FF instead
+// Flip-Flop with asynchronous active-low reset
+// __q: Q output of FF
+// __d: D input of FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __arst_n: asynchronous reset, active-low
+`define FFARN(__q, __d, __reset_value, __clk, __arst_n) \
+  `FF(__q, __d, __reset_value, __clk, __arst_n)
+
+// Flip-Flop with synchronous active-high reset
+// __q: Q output of FF
+// __d: D input of FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __reset_clk: reset input, active-high
+`define FFSR(__q, __d, __reset_value, __clk, __reset_clk) \
+  `ifndef NO_SYNOPSYS_FF                       \
+  /``* synopsys sync_set_reset `"__reset_clk`" *``/       \
+    `endif                        \
+  always_ff @(posedge (__clk)) begin                      \
+    __q <= (__reset_clk) ? (__reset_value) : (__d);       \
+  end
+
+// Flip-Flop with synchronous active-low reset
+// __q: Q output of FF
+// __d: D input of FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __reset_n_clk: reset input, active-low
+`define FFSRN(__q, __d, __reset_value, __clk, __reset_n_clk) \
+    `ifndef NO_SYNOPSYS_FF                       \
+  /``* synopsys sync_set_reset `"__reset_n_clk`" *``/        \
+    `endif                        \
+  always_ff @(posedge (__clk)) begin                         \
+    __q <= (!__reset_n_clk) ? (__reset_value) : (__d);       \
+  end
+
+// Always-enable Flip-Flop without reset
+// __q: Q output of FF
+// __d: D input of FF
+// __clk: clock input
+`define FFNR(__q, __d, __clk)        \
+  always_ff @(posedge (__clk)) begin \
+    __q <= (__d);                    \
+  end
+
+// Flip-Flop with load-enable and asynchronous active-low reset (implicit clock and reset)
+// __q: Q output of FF
+// __d: D input of FF
+// __load: load d value into FF
+// __reset_value: value assigned upon reset
+// (__clk: clock input)
+// (__arst_n: asynchronous reset, active-low)
+`define FFL(__q, __d, __load, __reset_value, __clk = `REG_DFLT_CLK, __arst_n = `REG_DFLT_RST) \
+  always_ff @(posedge (__clk) or negedge (__arst_n)) begin                                    \
+    if (!__arst_n) begin                                                                      \
+      __q <= (__reset_value);                                                                 \
+    end else begin                                                                            \
+      __q <= (__load) ? (__d) : (__q);                                                        \
+    end                                                                                       \
+  end
+
+// Flip-Flop with load-enable and asynchronous active-high reset
+// __q: Q output of FF
+// __d: D input of FF
+// __load: load d value into FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __arst: asynchronous reset, active-high
+`define FFLAR(__q, __d, __load, __reset_value, __clk, __arst) \
+  always_ff @(posedge (__clk) or posedge (__arst)) begin      \
+    if (__arst) begin                                         \
+      __q <= (__reset_value);                                 \
+    end else begin                                            \
+      __q <= (__load) ? (__d) : (__q);                        \
+    end                                                       \
+  end
+
+// DEPRECATED - use `FFL instead
+// Flip-Flop with load-enable and asynchronous active-low reset
+// __q: Q output of FF
+// __d: D input of FF
+// __load: load d value into FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __arst_n: asynchronous reset, active-low
+`define FFLARN(__q, __d, __load, __reset_value, __clk, __arst_n) \
+  `FFL(__q, __d, __load, __reset_value, __clk, __arst_n)
+
+// Flip-Flop with load-enable and synchronous active-high reset
+// __q: Q output of FF
+// __d: D input of FF
+// __load: load d value into FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __reset_clk: reset input, active-high
+`define FFLSR(__q, __d, __load, __reset_value, __clk, __reset_clk)       \
+    `ifndef NO_SYNOPSYS_FF                                               \
+  /``* synopsys sync_set_reset `"__reset_clk`" *``/                      \
+    `endif                                                               \
+  always_ff @(posedge (__clk)) begin                                     \
+    __q <= (__reset_clk) ? (__reset_value) : ((__load) ? (__d) : (__q)); \
+  end
+
+// Flip-Flop with load-enable and synchronous active-low reset
+// __q: Q output of FF
+// __d: D input of FF
+// __load: load d value into FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __reset_n_clk: reset input, active-low
+`define FFLSRN(__q, __d, __load, __reset_value, __clk, __reset_n_clk)       \
+    `ifndef NO_SYNOPSYS_FF                                                  \
+  /``* synopsys sync_set_reset `"__reset_n_clk`" *``/                       \
+    `endif                                                                  \
+  always_ff @(posedge (__clk)) begin                                        \
+    __q <= (!__reset_n_clk) ? (__reset_value) : ((__load) ? (__d) : (__q)); \
+  end
+
+// Flip-Flop with load-enable and asynchronous active-low reset and synchronous clear
+// __q: Q output of FF
+// __d: D input of FF
+// __load: load d value into FF
+// __clear: assign reset value into FF
+// __reset_value: value assigned upon reset
+// __clk: clock input
+// __arst_n: asynchronous reset, active-low
+`define FFLARNC(__q, __d, __load, __clear, __reset_value, __clk, __arst_n) \
+    `ifndef NO_SYNOPSYS_FF                                                 \
+  /``* synopsys sync_set_reset `"__clear`" *``/                            \
+    `endif                                                                 \
+  always_ff @(posedge (__clk) or negedge (__arst_n)) begin                 \
+    if (!__arst_n) begin                                                   \
+      __q <= (__reset_value);                                              \
+    end else begin                                                         \
+      __q <= (__clear) ? (__reset_value) : (__load) ? (__d) : (__q);       \
+    end                                                                    \
+  end
+
+// Load-enable Flip-Flop without reset
+// __q: Q output of FF
+// __d: D input of FF
+// __load: load d value into FF
+// __clk: clock input
+`define FFLNR(__q, __d, __load, __clk) \
+  always_ff @(posedge (__clk)) begin   \
+    __q <= (__load) ? (__d) : (__q);   \
+  end
+
+`endif
 
 module fpnew_cast_multi #(
   parameter fpnew_pkg::fmt_logic_t   FpFmtConfig  = '1,
@@ -6448,7 +6654,7 @@ endmodule
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+
 
 module fpnew_divsqrt_multi #(
   parameter fpnew_pkg::fmt_logic_t   FpFmtConfig  = '1,
@@ -6817,7 +7023,7 @@ endmodule
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+
 
 module fpnew_fma_multi #(
   parameter fpnew_pkg::fmt_logic_t   FpFmtConfig = '1,
@@ -7659,7 +7865,7 @@ endmodule
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+
 
 module fpnew_fma #(
   parameter fpnew_pkg::fp_format_e   FpFormat    = fpnew_pkg::fp_format_e'(0),
@@ -8352,7 +8558,7 @@ endmodule
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+
 
 module fpnew_noncomp #(
   parameter fpnew_pkg::fp_format_e   FpFormat    = fpnew_pkg::fp_format_e'(0),
@@ -9312,7 +9518,7 @@ endmodule
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+
 
 module fpnew_opgroup_multifmt_slice #(
   parameter fpnew_pkg::opgroup_e     OpGroup       = fpnew_pkg::CONV,
@@ -28702,7 +28908,7 @@ module acc_dispatcher
     input acc_resp_t acc_resp_i
 );
 
-  `include "common_cells/registers.svh"
+  
 
   import cf_math_pkg::idx_width;
 
@@ -47989,7 +48195,200 @@ module cva6_hpdcache_subsystem
 );
   //  }}}
 
-  `include "axi/typedef.svh"
+
+`ifndef AXI_TYPEDEF_SVH_
+`define AXI_TYPEDEF_SVH_
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// AXI4+ATOP Channel and Request/Response Structs
+//
+// Usage Example:
+// `AXI_TYPEDEF_AW_CHAN_T(axi_aw_t, axi_addr_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_W_CHAN_T(axi_w_t, axi_data_t, axi_strb_t, axi_user_t)
+// `AXI_TYPEDEF_B_CHAN_T(axi_b_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_AR_CHAN_T(axi_ar_t, axi_addr_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_R_CHAN_T(axi_r_t, axi_data_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_REQ_T(axi_req_t, axi_aw_t, axi_w_t, axi_ar_t)
+// `AXI_TYPEDEF_RESP_T(axi_resp_t, axi_b_t, axi_r_t)
+`define AXI_TYPEDEF_AW_CHAN_T(aw_chan_t, addr_t, id_t, user_t)  \
+  typedef struct packed {                                       \
+    id_t              id;                                       \
+    addr_t            addr;                                     \
+    axi_pkg::len_t    len;                                      \
+    axi_pkg::size_t   size;                                     \
+    axi_pkg::burst_t  burst;                                    \
+    logic             lock;                                     \
+    axi_pkg::cache_t  cache;                                    \
+    axi_pkg::prot_t   prot;                                     \
+    axi_pkg::qos_t    qos;                                      \
+    axi_pkg::region_t region;                                   \
+    axi_pkg::atop_t   atop;                                     \
+    user_t            user;                                     \
+  } aw_chan_t;
+`define AXI_TYPEDEF_W_CHAN_T(w_chan_t, data_t, strb_t, user_t)  \
+  typedef struct packed {                                       \
+    data_t data;                                                \
+    strb_t strb;                                                \
+    logic  last;                                                \
+    user_t user;                                                \
+  } w_chan_t;
+`define AXI_TYPEDEF_B_CHAN_T(b_chan_t, id_t, user_t)  \
+  typedef struct packed {                             \
+    id_t            id;                               \
+    axi_pkg::resp_t resp;                             \
+    user_t          user;                             \
+  } b_chan_t;
+`define AXI_TYPEDEF_AR_CHAN_T(ar_chan_t, addr_t, id_t, user_t)  \
+  typedef struct packed {                                       \
+    id_t              id;                                       \
+    addr_t            addr;                                     \
+    axi_pkg::len_t    len;                                      \
+    axi_pkg::size_t   size;                                     \
+    axi_pkg::burst_t  burst;                                    \
+    logic             lock;                                     \
+    axi_pkg::cache_t  cache;                                    \
+    axi_pkg::prot_t   prot;                                     \
+    axi_pkg::qos_t    qos;                                      \
+    axi_pkg::region_t region;                                   \
+    user_t            user;                                     \
+  } ar_chan_t;
+`define AXI_TYPEDEF_R_CHAN_T(r_chan_t, data_t, id_t, user_t)  \
+  typedef struct packed {                                     \
+    id_t            id;                                       \
+    data_t          data;                                     \
+    axi_pkg::resp_t resp;                                     \
+    logic           last;                                     \
+    user_t          user;                                     \
+  } r_chan_t;
+`define AXI_TYPEDEF_REQ_T(req_t, aw_chan_t, w_chan_t, ar_chan_t)  \
+  typedef struct packed {                                         \
+    aw_chan_t aw;                                                 \
+    logic     aw_valid;                                           \
+    w_chan_t  w;                                                  \
+    logic     w_valid;                                            \
+    logic     b_ready;                                            \
+    ar_chan_t ar;                                                 \
+    logic     ar_valid;                                           \
+    logic     r_ready;                                            \
+  } req_t;
+`define AXI_TYPEDEF_RESP_T(resp_t, b_chan_t, r_chan_t)  \
+  typedef struct packed {                               \
+    logic     aw_ready;                                 \
+    logic     ar_ready;                                 \
+    logic     w_ready;                                  \
+    logic     b_valid;                                  \
+    b_chan_t  b;                                        \
+    logic     r_valid;                                  \
+    r_chan_t  r;                                        \
+  } resp_t;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// All AXI4+ATOP Channels and Request/Response Structs in One Macro
+//
+// This can be used whenever the user is not interested in "precise" control of the naming of the
+// individual channels.
+//
+// Usage Example:
+// `AXI_TYPEDEF_ALL(axi, addr_t, id_t, data_t, strb_t, user_t)
+//
+// This defines `axi_req_t` and `axi_resp_t` request/response structs as well as `axi_aw_chan_t`,
+// `axi_w_chan_t`, `axi_b_chan_t`, `axi_ar_chan_t`, and `axi_r_chan_t` channel structs.
+`define AXI_TYPEDEF_ALL(__name, __addr_t, __id_t, __data_t, __strb_t, __user_t)                 \
+  `AXI_TYPEDEF_AW_CHAN_T(__name``_aw_chan_t, __addr_t, __id_t, __user_t)                        \
+  `AXI_TYPEDEF_W_CHAN_T(__name``_w_chan_t, __data_t, __strb_t, __user_t)                        \
+  `AXI_TYPEDEF_B_CHAN_T(__name``_b_chan_t, __id_t, __user_t)                                    \
+  `AXI_TYPEDEF_AR_CHAN_T(__name``_ar_chan_t, __addr_t, __id_t, __user_t)                        \
+  `AXI_TYPEDEF_R_CHAN_T(__name``_r_chan_t, __data_t, __id_t, __user_t)                          \
+  `AXI_TYPEDEF_REQ_T(__name``_req_t, __name``_aw_chan_t, __name``_w_chan_t, __name``_ar_chan_t) \
+  `AXI_TYPEDEF_RESP_T(__name``_resp_t, __name``_b_chan_t, __name``_r_chan_t)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// AXI4-Lite Channel and Request/Response Structs
+//
+// Usage Example:
+// `AXI_LITE_TYPEDEF_AW_CHAN_T(axi_lite_aw_t, axi_lite_addr_t)
+// `AXI_LITE_TYPEDEF_W_CHAN_T(axi_lite_w_t, axi_lite_data_t, axi_lite_strb_t)
+// `AXI_LITE_TYPEDEF_B_CHAN_T(axi_lite_b_t)
+// `AXI_LITE_TYPEDEF_AR_CHAN_T(axi_lite_ar_t, axi_lite_addr_t)
+// `AXI_LITE_TYPEDEF_R_CHAN_T(axi_lite_r_t, axi_lite_data_t)
+// `AXI_LITE_TYPEDEF_REQ_T(axi_lite_req_t, axi_lite_aw_t, axi_lite_w_t, axi_lite_ar_t)
+// `AXI_LITE_TYPEDEF_RESP_T(axi_lite_resp_t, axi_lite_b_t, axi_lite_r_t)
+`define AXI_LITE_TYPEDEF_AW_CHAN_T(aw_chan_lite_t, addr_t)  \
+  typedef struct packed {                                   \
+    addr_t          addr;                                   \
+    axi_pkg::prot_t prot;                                   \
+  } aw_chan_lite_t;
+`define AXI_LITE_TYPEDEF_W_CHAN_T(w_chan_lite_t, data_t, strb_t)  \
+  typedef struct packed {                                         \
+    data_t   data;                                                \
+    strb_t   strb;                                                \
+  } w_chan_lite_t;
+`define AXI_LITE_TYPEDEF_B_CHAN_T(b_chan_lite_t)  \
+  typedef struct packed {                         \
+    axi_pkg::resp_t resp;                         \
+  } b_chan_lite_t;
+`define AXI_LITE_TYPEDEF_AR_CHAN_T(ar_chan_lite_t, addr_t)  \
+  typedef struct packed {                                   \
+    addr_t          addr;                                   \
+    axi_pkg::prot_t prot;                                   \
+  } ar_chan_lite_t;
+`define AXI_LITE_TYPEDEF_R_CHAN_T(r_chan_lite_t, data_t)  \
+  typedef struct packed {                                 \
+    data_t          data;                                 \
+    axi_pkg::resp_t resp;                                 \
+  } r_chan_lite_t;
+`define AXI_LITE_TYPEDEF_REQ_T(req_lite_t, aw_chan_lite_t, w_chan_lite_t, ar_chan_lite_t)  \
+  typedef struct packed {                                                                  \
+    aw_chan_lite_t aw;                                                                     \
+    logic          aw_valid;                                                               \
+    w_chan_lite_t  w;                                                                      \
+    logic          w_valid;                                                                \
+    logic          b_ready;                                                                \
+    ar_chan_lite_t ar;                                                                     \
+    logic          ar_valid;                                                               \
+    logic          r_ready;                                                                \
+  } req_lite_t;
+`define AXI_LITE_TYPEDEF_RESP_T(resp_lite_t, b_chan_lite_t, r_chan_lite_t)  \
+  typedef struct packed {                                                   \
+    logic          aw_ready;                                                \
+    logic          w_ready;                                                 \
+    b_chan_lite_t  b;                                                       \
+    logic          b_valid;                                                 \
+    logic          ar_ready;                                                \
+    r_chan_lite_t  r;                                                       \
+    logic          r_valid;                                                 \
+  } resp_lite_t;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// All AXI4-Lite Channels and Request/Response Structs in One Macro
+//
+// This can be used whenever the user is not interested in "precise" control of the naming of the
+// individual channels.
+//
+// Usage Example:
+// `AXI_LITE_TYPEDEF_ALL(axi_lite, addr_t, data_t, strb_t)
+//
+// This defines `axi_lite_req_t` and `axi_lite_resp_t` request/response structs as well as
+// `axi_lite_aw_chan_t`, `axi_lite_w_chan_t`, `axi_lite_b_chan_t`, `axi_lite_ar_chan_t`, and
+// `axi_lite_r_chan_t` channel structs.
+`define AXI_LITE_TYPEDEF_ALL(__name, __addr_t, __data_t, __strb_t)                                    \
+  `AXI_LITE_TYPEDEF_AW_CHAN_T(__name``_aw_chan_t, __addr_t)                                           \
+  `AXI_LITE_TYPEDEF_W_CHAN_T(__name``_w_chan_t, __data_t, __strb_t)                                   \
+  `AXI_LITE_TYPEDEF_B_CHAN_T(__name``_b_chan_t)                                                       \
+  `AXI_LITE_TYPEDEF_AR_CHAN_T(__name``_ar_chan_t, __addr_t)                                           \
+  `AXI_LITE_TYPEDEF_R_CHAN_T(__name``_r_chan_t, __data_t)                                             \
+  `AXI_LITE_TYPEDEF_REQ_T(__name``_req_t, __name``_aw_chan_t, __name``_w_chan_t, __name``_ar_chan_t)  \
+  `AXI_LITE_TYPEDEF_RESP_T(__name``_resp_t, __name``_b_chan_t, __name``_r_chan_t)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+`endif
 
   //  I$ instantiation
   //  {{{
@@ -48024,7 +48423,44 @@ module cva6_hpdcache_subsystem
 
   //  D$ instantiation
   //  {{{
-  `include "hpdcache_typedef.svh"
+
+`ifndef __HPDCACHE_TYPEDEF_SVH__
+`define __HPDCACHE_TYPEDEF_SVH__
+
+`define HPDCACHE_TYPEDEF_MEM_REQ_T(__name__, addr_t, id_t) \
+    typedef struct packed { \
+        addr_t                                mem_req_addr; \
+        hpdcache_pkg::hpdcache_mem_len_t      mem_req_len; \
+        hpdcache_pkg::hpdcache_mem_size_t     mem_req_size; \
+        id_t                                  mem_req_id; \
+        hpdcache_pkg::hpdcache_mem_command_e  mem_req_command; \
+        hpdcache_pkg::hpdcache_mem_atomic_e   mem_req_atomic; \
+        logic                                 mem_req_cacheable; \
+    } __name__
+
+`define HPDCACHE_TYPEDEF_MEM_RESP_R_T(__name__, id_t, data_t) \
+    typedef struct packed { \
+        hpdcache_pkg::hpdcache_mem_error_e    mem_resp_r_error; \
+        id_t                                  mem_resp_r_id; \
+        data_t                                mem_resp_r_data; \
+        logic                                 mem_resp_r_last; \
+    } __name__
+
+`define HPDCACHE_TYPEDEF_MEM_REQ_W_T(__name__, data_t, be_t) \
+    typedef struct packed { \
+        data_t                                mem_req_w_data; \
+        be_t                                  mem_req_w_be; \
+        logic                                 mem_req_w_last; \
+    } __name__
+
+`define HPDCACHE_TYPEDEF_MEM_RESP_W_T(__name__, id_t) \
+    typedef struct packed { \
+        logic                                 mem_resp_w_is_atomic; \
+        hpdcache_pkg::hpdcache_mem_error_e    mem_resp_w_error; \
+        id_t                                  mem_resp_w_id; \
+    } __name__
+
+`endif
 
   //    0: Page-Table Walk (PTW)
   //    1: Load unit
@@ -60528,8 +60964,745 @@ module axi_multicut #(
   // pragma translate_on
 endmodule
 
-`include "axi/assign.svh"
-`include "axi/typedef.svh"
+
+`ifndef AXI_ASSIGN_SVH_
+`define AXI_ASSIGN_SVH_
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Internal implementation for assigning one AXI struct or interface to another struct or interface.
+// The path to the signals on each side is defined by the `__sep*` arguments.  The `__opt_as`
+// argument allows to use this standalone (with `__opt_as = assign`) or in assignments inside
+// processes (with `__opt_as` void).
+`define __AXI_TO_AW(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)   \
+  __opt_as __lhs``__lhs_sep``id     = __rhs``__rhs_sep``id;         \
+  __opt_as __lhs``__lhs_sep``addr   = __rhs``__rhs_sep``addr;       \
+  __opt_as __lhs``__lhs_sep``len    = __rhs``__rhs_sep``len;        \
+  __opt_as __lhs``__lhs_sep``size   = __rhs``__rhs_sep``size;       \
+  __opt_as __lhs``__lhs_sep``burst  = __rhs``__rhs_sep``burst;      \
+  __opt_as __lhs``__lhs_sep``lock   = __rhs``__rhs_sep``lock;       \
+  __opt_as __lhs``__lhs_sep``cache  = __rhs``__rhs_sep``cache;      \
+  __opt_as __lhs``__lhs_sep``prot   = __rhs``__rhs_sep``prot;       \
+  __opt_as __lhs``__lhs_sep``qos    = __rhs``__rhs_sep``qos;        \
+  __opt_as __lhs``__lhs_sep``region = __rhs``__rhs_sep``region;     \
+  __opt_as __lhs``__lhs_sep``atop   = __rhs``__rhs_sep``atop;       \
+  __opt_as __lhs``__lhs_sep``user   = __rhs``__rhs_sep``user;
+`define __AXI_TO_W(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)    \
+  __opt_as __lhs``__lhs_sep``data   = __rhs``__rhs_sep``data;       \
+  __opt_as __lhs``__lhs_sep``strb   = __rhs``__rhs_sep``strb;       \
+  __opt_as __lhs``__lhs_sep``last   = __rhs``__rhs_sep``last;       \
+  __opt_as __lhs``__lhs_sep``user   = __rhs``__rhs_sep``user;
+`define __AXI_TO_B(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)    \
+  __opt_as __lhs``__lhs_sep``id     = __rhs``__rhs_sep``id;         \
+  __opt_as __lhs``__lhs_sep``resp   = __rhs``__rhs_sep``resp;       \
+  __opt_as __lhs``__lhs_sep``user   = __rhs``__rhs_sep``user;
+`define __AXI_TO_AR(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)   \
+  __opt_as __lhs``__lhs_sep``id     = __rhs``__rhs_sep``id;         \
+  __opt_as __lhs``__lhs_sep``addr   = __rhs``__rhs_sep``addr;       \
+  __opt_as __lhs``__lhs_sep``len    = __rhs``__rhs_sep``len;        \
+  __opt_as __lhs``__lhs_sep``size   = __rhs``__rhs_sep``size;       \
+  __opt_as __lhs``__lhs_sep``burst  = __rhs``__rhs_sep``burst;      \
+  __opt_as __lhs``__lhs_sep``lock   = __rhs``__rhs_sep``lock;       \
+  __opt_as __lhs``__lhs_sep``cache  = __rhs``__rhs_sep``cache;      \
+  __opt_as __lhs``__lhs_sep``prot   = __rhs``__rhs_sep``prot;       \
+  __opt_as __lhs``__lhs_sep``qos    = __rhs``__rhs_sep``qos;        \
+  __opt_as __lhs``__lhs_sep``region = __rhs``__rhs_sep``region;     \
+  __opt_as __lhs``__lhs_sep``user   = __rhs``__rhs_sep``user;
+`define __AXI_TO_R(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)    \
+  __opt_as __lhs``__lhs_sep``id     = __rhs``__rhs_sep``id;         \
+  __opt_as __lhs``__lhs_sep``data   = __rhs``__rhs_sep``data;       \
+  __opt_as __lhs``__lhs_sep``resp   = __rhs``__rhs_sep``resp;       \
+  __opt_as __lhs``__lhs_sep``last   = __rhs``__rhs_sep``last;       \
+  __opt_as __lhs``__lhs_sep``user   = __rhs``__rhs_sep``user;
+`define __AXI_TO_REQ(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)  \
+  `__AXI_TO_AW(__opt_as, __lhs.aw, __lhs_sep, __rhs.aw, __rhs_sep)  \
+  __opt_as __lhs.aw_valid = __rhs.aw_valid;                         \
+  `__AXI_TO_W(__opt_as, __lhs.w, __lhs_sep, __rhs.w, __rhs_sep)     \
+  __opt_as __lhs.w_valid = __rhs.w_valid;                           \
+  __opt_as __lhs.b_ready = __rhs.b_ready;                           \
+  `__AXI_TO_AR(__opt_as, __lhs.ar, __lhs_sep, __rhs.ar, __rhs_sep)  \
+  __opt_as __lhs.ar_valid = __rhs.ar_valid;                         \
+  __opt_as __lhs.r_ready = __rhs.r_ready;
+`define __AXI_TO_RESP(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep) \
+  __opt_as __lhs.aw_ready = __rhs.aw_ready;                         \
+  __opt_as __lhs.ar_ready = __rhs.ar_ready;                         \
+  __opt_as __lhs.w_ready = __rhs.w_ready;                           \
+  __opt_as __lhs.b_valid = __rhs.b_valid;                           \
+  `__AXI_TO_B(__opt_as, __lhs.b, __lhs_sep, __rhs.b, __rhs_sep)     \
+  __opt_as __lhs.r_valid = __rhs.r_valid;                           \
+  `__AXI_TO_R(__opt_as, __lhs.r, __lhs_sep, __rhs.r, __rhs_sep)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning one AXI4+ATOP interface to another, as if you would do `assign slv = mst;`
+//
+// The channel assignments `AXI_ASSIGN_XX(dst, src)` assign all payload and the valid signal of the
+// `XX` channel from the `src` to the `dst` interface and they assign the ready signal from the
+// `src` to the `dst` interface.
+// The interface assignment `AXI_ASSIGN(dst, src)` assigns all channels including handshakes as if
+// `src` was the master of `dst`.
+//
+// Usage Example:
+// `AXI_ASSIGN(slv, mst)
+// `AXI_ASSIGN_AW(dst, src)
+// `AXI_ASSIGN_R(dst, src)
+`define AXI_ASSIGN_AW(dst, src)               \
+  `__AXI_TO_AW(assign, dst.aw, _, src.aw, _)  \
+  assign dst.aw_valid = src.aw_valid;         \
+  assign src.aw_ready = dst.aw_ready;
+`define AXI_ASSIGN_W(dst, src)                \
+  `__AXI_TO_W(assign, dst.w, _, src.w, _)     \
+  assign dst.w_valid  = src.w_valid;          \
+  assign src.w_ready  = dst.w_ready;
+`define AXI_ASSIGN_B(dst, src)                \
+  `__AXI_TO_B(assign, dst.b, _, src.b, _)     \
+  assign dst.b_valid  = src.b_valid;          \
+  assign src.b_ready  = dst.b_ready;
+`define AXI_ASSIGN_AR(dst, src)               \
+  `__AXI_TO_AR(assign, dst.ar, _, src.ar, _)  \
+  assign dst.ar_valid = src.ar_valid;         \
+  assign src.ar_ready = dst.ar_ready;
+`define AXI_ASSIGN_R(dst, src)                \
+  `__AXI_TO_R(assign, dst.r, _, src.r, _)     \
+  assign dst.r_valid  = src.r_valid;          \
+  assign src.r_ready  = dst.r_ready;
+`define AXI_ASSIGN(slv, mst)  \
+  `AXI_ASSIGN_AW(slv, mst)    \
+  `AXI_ASSIGN_W(slv, mst)     \
+  `AXI_ASSIGN_B(mst, slv)     \
+  `AXI_ASSIGN_AR(slv, mst)    \
+  `AXI_ASSIGN_R(mst, slv)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning a AXI4+ATOP interface to a monitor modport, as if you would do `assign mon = axi_if;`
+//
+// The channel assignment `AXI_ASSIGN_MONITOR(mon_dv, axi_if)` assigns all signals from `axi_if`
+// to the `mon_dv` interface.
+//
+// Usage Example:
+// `AXI_ASSIGN_MONITOR(mon_dv, axi_if)
+`define AXI_ASSIGN_MONITOR(mon_dv, axi_if)          \
+  `__AXI_TO_AW(assign, mon_dv.aw, _, axi_if.aw, _)  \
+  assign mon_dv.aw_valid  = axi_if.aw_valid;        \
+  assign mon_dv.aw_ready  = axi_if.aw_ready;        \
+  `__AXI_TO_W(assign, mon_dv.w, _, axi_if.w, _)     \
+  assign mon_dv.w_valid   = axi_if.w_valid;         \
+  assign mon_dv.w_ready   = axi_if.w_ready;         \
+  `__AXI_TO_B(assign, mon_dv.b, _, axi_if.b, _)     \
+  assign mon_dv.b_valid   = axi_if.b_valid;         \
+  assign mon_dv.b_ready   = axi_if.b_ready;         \
+  `__AXI_TO_AR(assign, mon_dv.ar, _, axi_if.ar, _)  \
+  assign mon_dv.ar_valid  = axi_if.ar_valid;        \
+  assign mon_dv.ar_ready  = axi_if.ar_ready;        \
+  `__AXI_TO_R(assign, mon_dv.r, _, axi_if.r, _)     \
+  assign mon_dv.r_valid   = axi_if.r_valid;         \
+  assign mon_dv.r_ready   = axi_if.r_ready;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Setting an interface from channel or request/response structs inside a process.
+//
+// The channel macros `AXI_SET_FROM_XX(axi_if, xx_struct)` set the payload signals of the `axi_if`
+// interface from the signals in `xx_struct`.  They do not set the handshake signals.
+// The request macro `AXI_SET_FROM_REQ(axi_if, req_struct)` sets all request channels (AW, W, AR)
+// and the request-side handshake signals (AW, W, and AR valid and B and R ready) of the `axi_if`
+// interface from the signals in `req_struct`.
+// The response macro `AXI_SET_FROM_RESP(axi_if, resp_struct)` sets both response channels (B and R)
+// and the response-side handshake signals (B and R valid and AW, W, and AR ready) of the `axi_if`
+// interface from the signals in `resp_struct`.
+//
+// Usage Example:
+// always_comb begin
+//   `AXI_SET_FROM_REQ(my_if, my_req_struct)
+// end
+`define AXI_SET_FROM_AW(axi_if, aw_struct)      `__AXI_TO_AW(, axi_if.aw, _, aw_struct, .)
+`define AXI_SET_FROM_W(axi_if, w_struct)        `__AXI_TO_W(, axi_if.w, _, w_struct, .)
+`define AXI_SET_FROM_B(axi_if, b_struct)        `__AXI_TO_B(, axi_if.b, _, b_struct, .)
+`define AXI_SET_FROM_AR(axi_if, ar_struct)      `__AXI_TO_AR(, axi_if.ar, _, ar_struct, .)
+`define AXI_SET_FROM_R(axi_if, r_struct)        `__AXI_TO_R(, axi_if.r, _, r_struct, .)
+`define AXI_SET_FROM_REQ(axi_if, req_struct)    `__AXI_TO_REQ(, axi_if, _, req_struct, .)
+`define AXI_SET_FROM_RESP(axi_if, resp_struct)  `__AXI_TO_RESP(, axi_if, _, resp_struct, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning an interface from channel or request/response structs outside a process.
+//
+// The channel macros `AXI_ASSIGN_FROM_XX(axi_if, xx_struct)` assign the payload signals of the
+// `axi_if` interface from the signals in `xx_struct`.  They do not assign the handshake signals.
+// The request macro `AXI_ASSIGN_FROM_REQ(axi_if, req_struct)` assigns all request channels (AW, W,
+// AR) and the request-side handshake signals (AW, W, and AR valid and B and R ready) of the
+// `axi_if` interface from the signals in `req_struct`.
+// The response macro `AXI_ASSIGN_FROM_RESP(axi_if, resp_struct)` assigns both response channels (B
+// and R) and the response-side handshake signals (B and R valid and AW, W, and AR ready) of the
+// `axi_if` interface from the signals in `resp_struct`.
+//
+// Usage Example:
+// `AXI_ASSIGN_FROM_REQ(my_if, my_req_struct)
+`define AXI_ASSIGN_FROM_AW(axi_if, aw_struct)     `__AXI_TO_AW(assign, axi_if.aw, _, aw_struct, .)
+`define AXI_ASSIGN_FROM_W(axi_if, w_struct)       `__AXI_TO_W(assign, axi_if.w, _, w_struct, .)
+`define AXI_ASSIGN_FROM_B(axi_if, b_struct)       `__AXI_TO_B(assign, axi_if.b, _, b_struct, .)
+`define AXI_ASSIGN_FROM_AR(axi_if, ar_struct)     `__AXI_TO_AR(assign, axi_if.ar, _, ar_struct, .)
+`define AXI_ASSIGN_FROM_R(axi_if, r_struct)       `__AXI_TO_R(assign, axi_if.r, _, r_struct, .)
+`define AXI_ASSIGN_FROM_REQ(axi_if, req_struct)   `__AXI_TO_REQ(assign, axi_if, _, req_struct, .)
+`define AXI_ASSIGN_FROM_RESP(axi_if, resp_struct) `__AXI_TO_RESP(assign, axi_if, _, resp_struct, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Setting channel or request/response structs from an interface inside a process.
+//
+// The channel macros `AXI_SET_TO_XX(xx_struct, axi_if)` set the signals of `xx_struct` to the
+// payload signals of that channel in the `axi_if` interface.  They do not set the handshake
+// signals.
+// The request macro `AXI_SET_TO_REQ(axi_if, req_struct)` sets all signals of `req_struct` (i.e.,
+// request channel (AW, W, AR) payload and request-side handshake signals (AW, W, and AR valid and
+// B and R ready)) to the signals in the `axi_if` interface.
+// The response macro `AXI_SET_TO_RESP(axi_if, resp_struct)` sets all signals of `resp_struct`
+// (i.e., response channel (B and R) payload and response-side handshake signals (B and R valid and
+// AW, W, and AR ready)) to the signals in the `axi_if` interface.
+//
+// Usage Example:
+// always_comb begin
+//   `AXI_SET_TO_REQ(my_req_struct, my_if)
+// end
+`define AXI_SET_TO_AW(aw_struct, axi_if)     `__AXI_TO_AW(, aw_struct, ., axi_if.aw, _)
+`define AXI_SET_TO_W(w_struct, axi_if)       `__AXI_TO_W(, w_struct, ., axi_if.w, _)
+`define AXI_SET_TO_B(b_struct, axi_if)       `__AXI_TO_B(, b_struct, ., axi_if.b, _)
+`define AXI_SET_TO_AR(ar_struct, axi_if)     `__AXI_TO_AR(, ar_struct, ., axi_if.ar, _)
+`define AXI_SET_TO_R(r_struct, axi_if)       `__AXI_TO_R(, r_struct, ., axi_if.r, _)
+`define AXI_SET_TO_REQ(req_struct, axi_if)   `__AXI_TO_REQ(, req_struct, ., axi_if, _)
+`define AXI_SET_TO_RESP(resp_struct, axi_if) `__AXI_TO_RESP(, resp_struct, ., axi_if, _)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning channel or request/response structs from an interface outside a process.
+//
+// The channel macros `AXI_ASSIGN_TO_XX(xx_struct, axi_if)` assign the signals of `xx_struct` to the
+// payload signals of that channel in the `axi_if` interface.  They do not assign the handshake
+// signals.
+// The request macro `AXI_ASSIGN_TO_REQ(axi_if, req_struct)` assigns all signals of `req_struct`
+// (i.e., request channel (AW, W, AR) payload and request-side handshake signals (AW, W, and AR
+// valid and B and R ready)) to the signals in the `axi_if` interface.
+// The response macro `AXI_ASSIGN_TO_RESP(axi_if, resp_struct)` assigns all signals of `resp_struct`
+// (i.e., response channel (B and R) payload and response-side handshake signals (B and R valid and
+// AW, W, and AR ready)) to the signals in the `axi_if` interface.
+//
+// Usage Example:
+// `AXI_ASSIGN_TO_REQ(my_req_struct, my_if)
+`define AXI_ASSIGN_TO_AW(aw_struct, axi_if)     `__AXI_TO_AW(assign, aw_struct, ., axi_if.aw, _)
+`define AXI_ASSIGN_TO_W(w_struct, axi_if)       `__AXI_TO_W(assign, w_struct, ., axi_if.w, _)
+`define AXI_ASSIGN_TO_B(b_struct, axi_if)       `__AXI_TO_B(assign, b_struct, ., axi_if.b, _)
+`define AXI_ASSIGN_TO_AR(ar_struct, axi_if)     `__AXI_TO_AR(assign, ar_struct, ., axi_if.ar, _)
+`define AXI_ASSIGN_TO_R(r_struct, axi_if)       `__AXI_TO_R(assign, r_struct, ., axi_if.r, _)
+`define AXI_ASSIGN_TO_REQ(req_struct, axi_if)   `__AXI_TO_REQ(assign, req_struct, ., axi_if, _)
+`define AXI_ASSIGN_TO_RESP(resp_struct, axi_if) `__AXI_TO_RESP(assign, resp_struct, ., axi_if, _)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Setting channel or request/response structs from another struct inside a process.
+//
+// The channel macros `AXI_SET_XX_STRUCT(lhs, rhs)` set the fields of the `lhs` channel struct to
+// the fields of the `rhs` channel struct.  They do not set the handshake signals, which are not
+// part of channel structs.
+// The request macro `AXI_SET_REQ_STRUCT(lhs, rhs)` sets all fields of the `lhs` request struct to
+// the fields of the `rhs` request struct.  This includes all request channel (AW, W, AR) payload
+// and request-side handshake signals (AW, W, and AR valid and B and R ready).
+// The response macro `AXI_SET_RESP_STRUCT(lhs, rhs)` sets all fields of the `lhs` response struct
+// to the fields of the `rhs` response struct.  This includes all response channel (B and R) payload
+// and response-side handshake signals (B and R valid and AW, W, and R ready).
+//
+// Usage Example:
+// always_comb begin
+//   `AXI_SET_REQ_STRUCT(my_req_struct, another_req_struct)
+// end
+`define AXI_SET_AW_STRUCT(lhs, rhs)     `__AXI_TO_AW(, lhs, ., rhs, .)
+`define AXI_SET_W_STRUCT(lhs, rhs)       `__AXI_TO_W(, lhs, ., rhs, .)
+`define AXI_SET_B_STRUCT(lhs, rhs)       `__AXI_TO_B(, lhs, ., rhs, .)
+`define AXI_SET_AR_STRUCT(lhs, rhs)     `__AXI_TO_AR(, lhs, ., rhs, .)
+`define AXI_SET_R_STRUCT(lhs, rhs)       `__AXI_TO_R(, lhs, ., rhs, .)
+`define AXI_SET_REQ_STRUCT(lhs, rhs)   `__AXI_TO_REQ(, lhs, ., rhs, .)
+`define AXI_SET_RESP_STRUCT(lhs, rhs) `__AXI_TO_RESP(, lhs, ., rhs, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning channel or request/response structs from another struct outside a process.
+//
+// The channel macros `AXI_ASSIGN_XX_STRUCT(lhs, rhs)` assign the fields of the `lhs` channel struct
+// to the fields of the `rhs` channel struct.  They do not assign the handshake signals, which are
+// not part of the channel structs.
+// The request macro `AXI_ASSIGN_REQ_STRUCT(lhs, rhs)` assigns all fields of the `lhs` request
+// struct to the fields of the `rhs` request struct.  This includes all request channel (AW, W, AR)
+// payload and request-side handshake signals (AW, W, and AR valid and B and R ready).
+// The response macro `AXI_ASSIGN_RESP_STRUCT(lhs, rhs)` assigns all fields of the `lhs` response
+// struct to the fields of the `rhs` response struct.  This includes all response channel (B and R)
+// payload and response-side handshake signals (B and R valid and AW, W, and R ready).
+//
+// Usage Example:
+// `AXI_ASSIGN_REQ_STRUCT(my_req_struct, another_req_struct)
+`define AXI_ASSIGN_AW_STRUCT(lhs, rhs)     `__AXI_TO_AW(assign, lhs, ., rhs, .)
+`define AXI_ASSIGN_W_STRUCT(lhs, rhs)       `__AXI_TO_W(assign, lhs, ., rhs, .)
+`define AXI_ASSIGN_B_STRUCT(lhs, rhs)       `__AXI_TO_B(assign, lhs, ., rhs, .)
+`define AXI_ASSIGN_AR_STRUCT(lhs, rhs)     `__AXI_TO_AR(assign, lhs, ., rhs, .)
+`define AXI_ASSIGN_R_STRUCT(lhs, rhs)       `__AXI_TO_R(assign, lhs, ., rhs, .)
+`define AXI_ASSIGN_REQ_STRUCT(lhs, rhs)   `__AXI_TO_REQ(assign, lhs, ., rhs, .)
+`define AXI_ASSIGN_RESP_STRUCT(lhs, rhs) `__AXI_TO_RESP(assign, lhs, ., rhs, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Internal implementation for assigning one Lite structs or interface to another struct or
+// interface.  The path to the signals on each side is defined by the `__sep*` arguments.  The
+// `__opt_as` argument allows to use this standalne (with `__opt_as = assign`) or in assignments
+// inside processes (with `__opt_as` void).
+`define __AXI_LITE_TO_AX(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)  \
+  __opt_as __lhs``__lhs_sep``addr = __rhs``__rhs_sep``addr;             \
+  __opt_as __lhs``__lhs_sep``prot = __rhs``__rhs_sep``prot;
+`define __AXI_LITE_TO_W(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep) \
+  __opt_as __lhs``__lhs_sep``data = __rhs``__rhs_sep``data;           \
+  __opt_as __lhs``__lhs_sep``strb = __rhs``__rhs_sep``strb;
+`define __AXI_LITE_TO_B(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep) \
+  __opt_as __lhs``__lhs_sep``resp = __rhs``__rhs_sep``resp;
+`define __AXI_LITE_TO_R(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep) \
+  __opt_as __lhs``__lhs_sep``data = __rhs``__rhs_sep``data;           \
+  __opt_as __lhs``__lhs_sep``resp = __rhs``__rhs_sep``resp;
+`define __AXI_LITE_TO_REQ(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep) \
+  `__AXI_LITE_TO_AX(__opt_as, __lhs.aw, __lhs_sep, __rhs.aw, __rhs_sep) \
+  __opt_as __lhs.aw_valid = __rhs.aw_valid;                             \
+  `__AXI_LITE_TO_W(__opt_as, __lhs.w, __lhs_sep, __rhs.w, __rhs_sep)    \
+  __opt_as __lhs.w_valid = __rhs.w_valid;                               \
+  __opt_as __lhs.b_ready = __rhs.b_ready;                               \
+  `__AXI_LITE_TO_AX(__opt_as, __lhs.ar, __lhs_sep, __rhs.ar, __rhs_sep) \
+  __opt_as __lhs.ar_valid = __rhs.ar_valid;                             \
+  __opt_as __lhs.r_ready = __rhs.r_ready;
+`define __AXI_LITE_TO_RESP(__opt_as, __lhs, __lhs_sep, __rhs, __rhs_sep)  \
+  __opt_as __lhs.aw_ready = __rhs.aw_ready;                               \
+  __opt_as __lhs.ar_ready = __rhs.ar_ready;                               \
+  __opt_as __lhs.w_ready = __rhs.w_ready;                                 \
+  __opt_as __lhs.b_valid = __rhs.b_valid;                                 \
+  `__AXI_LITE_TO_B(__opt_as, __lhs.b, __lhs_sep, __rhs.b, __rhs_sep)      \
+  __opt_as __lhs.r_valid = __rhs.r_valid;                                 \
+  `__AXI_LITE_TO_R(__opt_as, __lhs.r, __lhs_sep, __rhs.r, __rhs_sep)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning one AXI-Lite interface to another, as if you would do `assign slv = mst;`
+//
+// The channel assignments `AXI_LITE_ASSIGN_XX(dst, src)` assign all payload and the valid signal of
+// the `XX` channel from the `src` to the `dst` interface and they assign the ready signal from the
+// `src` to the `dst` interface.
+// The interface assignment `AXI_LITE_ASSIGN(dst, src)` assigns all channels including handshakes as
+// if `src` was the master of `dst`.
+//
+// Usage Example:
+// `AXI_LITE_ASSIGN(slv, mst)
+// `AXI_LITE_ASSIGN_AW(dst, src)
+// `AXI_LITE_ASSIGN_R(dst, src)
+`define AXI_LITE_ASSIGN_AW(dst, src)              \
+  `__AXI_LITE_TO_AX(assign, dst.aw, _, src.aw, _) \
+  assign dst.aw_valid = src.aw_valid;             \
+  assign src.aw_ready = dst.aw_ready;
+`define AXI_LITE_ASSIGN_W(dst, src)             \
+  `__AXI_LITE_TO_W(assign, dst.w, _, src.w, _)  \
+  assign dst.w_valid  = src.w_valid;            \
+  assign src.w_ready  = dst.w_ready;
+`define AXI_LITE_ASSIGN_B(dst, src)             \
+  `__AXI_LITE_TO_B(assign, dst.b, _, src.b, _)  \
+  assign dst.b_valid  = src.b_valid;            \
+  assign src.b_ready  = dst.b_ready;
+`define AXI_LITE_ASSIGN_AR(dst, src)              \
+  `__AXI_LITE_TO_AX(assign, dst.ar, _, src.ar, _) \
+  assign dst.ar_valid = src.ar_valid;             \
+  assign src.ar_ready = dst.ar_ready;
+`define AXI_LITE_ASSIGN_R(dst, src)             \
+  `__AXI_LITE_TO_R(assign, dst.r, _, src.r, _)  \
+  assign dst.r_valid  = src.r_valid;            \
+  assign src.r_ready  = dst.r_ready;
+`define AXI_LITE_ASSIGN(slv, mst) \
+  `AXI_LITE_ASSIGN_AW(slv, mst)   \
+  `AXI_LITE_ASSIGN_W(slv, mst)    \
+  `AXI_LITE_ASSIGN_B(mst, slv)    \
+  `AXI_LITE_ASSIGN_AR(slv, mst)   \
+  `AXI_LITE_ASSIGN_R(mst, slv)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Setting a Lite interface from channel or request/response structs inside a process.
+//
+// The channel macros `AXI_LITE_SET_FROM_XX(axi_if, xx_struct)` set the payload signals of the
+// `axi_if` interface from the signals in `xx_struct`.  They do not set the handshake signals.
+// The request macro `AXI_LITE_SET_FROM_REQ(axi_if, req_struct)` sets all request channels (AW, W,
+// AR) and the request-side handshake signals (AW, W, and AR valid and B and R ready) of the
+// `axi_if` interface from the signals in `req_struct`.
+// The response macro `AXI_LITE_SET_FROM_RESP(axi_if, resp_struct)` sets both response channels (B
+// and R) and the response-side handshake signals (B and R valid and AW, W, and AR ready) of the
+// `axi_if` interface from the signals in `resp_struct`.
+//
+// Usage Example:
+// always_comb begin
+//   `AXI_LITE_SET_FROM_REQ(my_if, my_req_struct)
+// end
+`define AXI_LITE_SET_FROM_AW(axi_if, aw_struct)      `__AXI_LITE_TO_AX(, axi_if.aw, _, aw_struct, .)
+`define AXI_LITE_SET_FROM_W(axi_if, w_struct)        `__AXI_LITE_TO_W(, axi_if.w, _, w_struct, .)
+`define AXI_LITE_SET_FROM_B(axi_if, b_struct)        `__AXI_LITE_TO_B(, axi_if.b, _, b_struct, .)
+`define AXI_LITE_SET_FROM_AR(axi_if, ar_struct)      `__AXI_LITE_TO_AX(, axi_if.ar, _, ar_struct, .)
+`define AXI_LITE_SET_FROM_R(axi_if, r_struct)        `__AXI_LITE_TO_R(, axi_if.r, _, r_struct, .)
+`define AXI_LITE_SET_FROM_REQ(axi_if, req_struct)    `__AXI_LITE_TO_REQ(, axi_if, _, req_struct, .)
+`define AXI_LITE_SET_FROM_RESP(axi_if, resp_struct)  `__AXI_LITE_TO_RESP(, axi_if, _, resp_struct, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning a Lite interface from channel or request/response structs outside a process.
+//
+// The channel macros `AXI_LITE_ASSIGN_FROM_XX(axi_if, xx_struct)` assign the payload signals of the
+// `axi_if` interface from the signals in `xx_struct`.  They do not assign the handshake signals.
+// The request macro `AXI_LITE_ASSIGN_FROM_REQ(axi_if, req_struct)` assigns all request channels
+// (AW, W, AR) and the request-side handshake signals (AW, W, and AR valid and B and R ready) of the
+// `axi_if` interface from the signals in `req_struct`.
+// The response macro `AXI_LITE_ASSIGN_FROM_RESP(axi_if, resp_struct)` assigns both response
+// channels (B and R) and the response-side handshake signals (B and R valid and AW, W, and AR
+// ready) of the `axi_if` interface from the signals in `resp_struct`.
+//
+// Usage Example:
+// `AXI_LITE_ASSIGN_FROM_REQ(my_if, my_req_struct)
+`define AXI_LITE_ASSIGN_FROM_AW(axi_if, aw_struct)     `__AXI_LITE_TO_AX(assign, axi_if.aw, _, aw_struct, .)
+`define AXI_LITE_ASSIGN_FROM_W(axi_if, w_struct)       `__AXI_LITE_TO_W(assign, axi_if.w, _, w_struct, .)
+`define AXI_LITE_ASSIGN_FROM_B(axi_if, b_struct)       `__AXI_LITE_TO_B(assign, axi_if.b, _, b_struct, .)
+`define AXI_LITE_ASSIGN_FROM_AR(axi_if, ar_struct)     `__AXI_LITE_TO_AX(assign, axi_if.ar, _, ar_struct, .)
+`define AXI_LITE_ASSIGN_FROM_R(axi_if, r_struct)       `__AXI_LITE_TO_R(assign, axi_if.r, _, r_struct, .)
+`define AXI_LITE_ASSIGN_FROM_REQ(axi_if, req_struct)   `__AXI_LITE_TO_REQ(assign, axi_if, _, req_struct, .)
+`define AXI_LITE_ASSIGN_FROM_RESP(axi_if, resp_struct) `__AXI_LITE_TO_RESP(assign, axi_if, _, resp_struct, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Setting channel or request/response structs from an interface inside a process.
+//
+// The channel macros `AXI_LITE_SET_TO_XX(xx_struct, axi_if)` set the signals of `xx_struct` to the
+// payload signals of that channel in the `axi_if` interface.  They do not set the handshake
+// signals.
+// The request macro `AXI_LITE_SET_TO_REQ(axi_if, req_struct)` sets all signals of `req_struct`
+// (i.e., request channel (AW, W, AR) payload and request-side handshake signals (AW, W, and AR
+// valid and B and R ready)) to the signals in the `axi_if` interface.
+// The response macro `AXI_LITE_SET_TO_RESP(axi_if, resp_struct)` sets all signals of `resp_struct`
+// (i.e., response channel (B and R) payload and response-side handshake signals (B and R valid and
+// AW, W, and AR ready)) to the signals in the `axi_if` interface.
+//
+// Usage Example:
+// always_comb begin
+//   `AXI_LITE_SET_TO_REQ(my_req_struct, my_if)
+// end
+`define AXI_LITE_SET_TO_AW(aw_struct, axi_if)     `__AXI_LITE_TO_AX(, aw_struct, ., axi_if.aw, _)
+`define AXI_LITE_SET_TO_W(w_struct, axi_if)       `__AXI_LITE_TO_W(, w_struct, ., axi_if.w, _)
+`define AXI_LITE_SET_TO_B(b_struct, axi_if)       `__AXI_LITE_TO_B(, b_struct, ., axi_if.b, _)
+`define AXI_LITE_SET_TO_AR(ar_struct, axi_if)     `__AXI_LITE_TO_AX(, ar_struct, ., axi_if.ar, _)
+`define AXI_LITE_SET_TO_R(r_struct, axi_if)       `__AXI_LITE_TO_R(, r_struct, ., axi_if.r, _)
+`define AXI_LITE_SET_TO_REQ(req_struct, axi_if)   `__AXI_LITE_TO_REQ(, req_struct, ., axi_if, _)
+`define AXI_LITE_SET_TO_RESP(resp_struct, axi_if) `__AXI_LITE_TO_RESP(, resp_struct, ., axi_if, _)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning channel or request/response structs from an interface outside a process.
+//
+// The channel macros `AXI_LITE_ASSIGN_TO_XX(xx_struct, axi_if)` assign the signals of `xx_struct`
+// to the payload signals of that channel in the `axi_if` interface.  They do not assign the
+// handshake signals.
+// The request macro `AXI_LITE_ASSIGN_TO_REQ(axi_if, req_struct)` assigns all signals of
+// `req_struct` (i.e., request channel (AW, W, AR) payload and request-side handshake signals (AW,
+// W, and AR valid and B and R ready)) to the signals in the `axi_if` interface.
+// The response macro `AXI_LITE_ASSIGN_TO_RESP(axi_if, resp_struct)` assigns all signals of
+// `resp_struct` (i.e., response channel (B and R) payload and response-side handshake signals (B
+// and R valid and AW, W, and AR ready)) to the signals in the `axi_if` interface.
+//
+// Usage Example:
+// `AXI_LITE_ASSIGN_TO_REQ(my_req_struct, my_if)
+`define AXI_LITE_ASSIGN_TO_AW(aw_struct, axi_if)     `__AXI_LITE_TO_AX(assign, aw_struct, ., axi_if.aw, _)
+`define AXI_LITE_ASSIGN_TO_W(w_struct, axi_if)       `__AXI_LITE_TO_W(assign, w_struct, ., axi_if.w, _)
+`define AXI_LITE_ASSIGN_TO_B(b_struct, axi_if)       `__AXI_LITE_TO_B(assign, b_struct, ., axi_if.b, _)
+`define AXI_LITE_ASSIGN_TO_AR(ar_struct, axi_if)     `__AXI_LITE_TO_AX(assign, ar_struct, ., axi_if.ar, _)
+`define AXI_LITE_ASSIGN_TO_R(r_struct, axi_if)       `__AXI_LITE_TO_R(assign, r_struct, ., axi_if.r, _)
+`define AXI_LITE_ASSIGN_TO_REQ(req_struct, axi_if)   `__AXI_LITE_TO_REQ(assign, req_struct, ., axi_if, _)
+`define AXI_LITE_ASSIGN_TO_RESP(resp_struct, axi_if) `__AXI_LITE_TO_RESP(assign, resp_struct, ., axi_if, _)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Setting channel or request/response structs from another struct inside a process.
+//
+// The channel macros `AXI_LITE_SET_XX_STRUCT(lhs, rhs)` set the fields of the `lhs` channel struct
+// to the fields of the `rhs` channel struct.  They do not set the handshake signals, which are not
+// part of channel structs.
+// The request macro `AXI_LITE_SET_REQ_STRUCT(lhs, rhs)` sets all fields of the `lhs` request struct
+// to the fields of the `rhs` request struct.  This includes all request channel (AW, W, AR) payload
+// and request-side handshake signals (AW, W, and AR valid and B and R ready).
+// The response macro `AXI_LITE_SET_RESP_STRUCT(lhs, rhs)` sets all fields of the `lhs` response
+// struct to the fields of the `rhs` response struct.  This includes all response channel (B and R)
+// payload and response-side handshake signals (B and R valid and AW, W, and R ready).
+//
+// Usage Example:
+// always_comb begin
+//   `AXI_LITE_SET_REQ_STRUCT(my_req_struct, another_req_struct)
+// end
+`define AXI_LITE_SET_AW_STRUCT(lhs, rhs)     `__AXI_LITE_TO_AX(, lhs, ., rhs, .)
+`define AXI_LITE_SET_W_STRUCT(lhs, rhs)       `__AXI_LITE_TO_W(, lhs, ., rhs, .)
+`define AXI_LITE_SET_B_STRUCT(lhs, rhs)       `__AXI_LITE_TO_B(, lhs, ., rhs, .)
+`define AXI_LITE_SET_AR_STRUCT(lhs, rhs)     `__AXI_LITE_TO_AX(, lhs, ., rhs, .)
+`define AXI_LITE_SET_R_STRUCT(lhs, rhs)       `__AXI_LITE_TO_R(, lhs, ., rhs, .)
+`define AXI_LITE_SET_REQ_STRUCT(lhs, rhs)   `__AXI_LITE_TO_REQ(, lhs, ., rhs, .)
+`define AXI_LITE_SET_RESP_STRUCT(lhs, rhs) `__AXI_LITE_TO_RESP(, lhs, ., rhs, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Assigning channel or request/response structs from another struct outside a process.
+//
+// The channel macros `AXI_LITE_ASSIGN_XX_STRUCT(lhs, rhs)` assign the fields of the `lhs` channel
+// struct to the fields of the `rhs` channel struct.  They do not assign the handshake signals,
+// which are not part of the channel structs.
+// The request macro `AXI_LITE_ASSIGN_REQ_STRUCT(lhs, rhs)` assigns all fields of the `lhs` request
+// struct to the fields of the `rhs` request struct.  This includes all request channel (AW, W, AR)
+// payload and request-side handshake signals (AW, W, and AR valid and B and R ready).
+// The response macro `AXI_LITE_ASSIGN_RESP_STRUCT(lhs, rhs)` assigns all fields of the `lhs`
+// response struct to the fields of the `rhs` response struct.  This includes all response channel
+// (B and R) payload and response-side handshake signals (B and R valid and AW, W, and R ready).
+//
+// Usage Example:
+// `AXI_LITE_ASSIGN_REQ_STRUCT(my_req_struct, another_req_struct)
+`define AXI_LITE_ASSIGN_AW_STRUCT(lhs, rhs)     `__AXI_LITE_TO_AX(assign, lhs, ., rhs, .)
+`define AXI_LITE_ASSIGN_W_STRUCT(lhs, rhs)       `__AXI_LITE_TO_W(assign, lhs, ., rhs, .)
+`define AXI_LITE_ASSIGN_B_STRUCT(lhs, rhs)       `__AXI_LITE_TO_B(assign, lhs, ., rhs, .)
+`define AXI_LITE_ASSIGN_AR_STRUCT(lhs, rhs)     `__AXI_LITE_TO_AX(assign, lhs, ., rhs, .)
+`define AXI_LITE_ASSIGN_R_STRUCT(lhs, rhs)       `__AXI_LITE_TO_R(assign, lhs, ., rhs, .)
+`define AXI_LITE_ASSIGN_REQ_STRUCT(lhs, rhs)   `__AXI_LITE_TO_REQ(assign, lhs, ., rhs, .)
+`define AXI_LITE_ASSIGN_RESP_STRUCT(lhs, rhs) `__AXI_LITE_TO_RESP(assign, lhs, ., rhs, .)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+`endif
+
+
+// Copyright (c) 2019 ETH Zurich, University of Bologna
+//
+// Copyright and related rights are licensed under the Solderpad Hardware
+// License, Version 0.51 (the "License"); you may not use this file except in
+// compliance with the License.  You may obtain a copy of the License at
+// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
+// or agreed to in writing, software, hardware and materials distributed under
+// this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+// CONDITIONS OF ANY KIND, either express or implied. See the License for the
+// specific language governing permissions and limitations under the License.
+//
+// Authors:
+// - Andreas Kurth <akurth@iis.ee.ethz.ch>
+// - Florian Zaruba <zarubaf@iis.ee.ethz.ch>
+// - Wolfgang Roenninger <wroennin@iis.ee.ethz.ch>
+
+// Macros to define AXI and AXI-Lite Channel and Request/Response Structs
+
+`ifndef AXI_TYPEDEF_SVH_
+`define AXI_TYPEDEF_SVH_
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// AXI4+ATOP Channel and Request/Response Structs
+//
+// Usage Example:
+// `AXI_TYPEDEF_AW_CHAN_T(axi_aw_t, axi_addr_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_W_CHAN_T(axi_w_t, axi_data_t, axi_strb_t, axi_user_t)
+// `AXI_TYPEDEF_B_CHAN_T(axi_b_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_AR_CHAN_T(axi_ar_t, axi_addr_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_R_CHAN_T(axi_r_t, axi_data_t, axi_id_t, axi_user_t)
+// `AXI_TYPEDEF_REQ_T(axi_req_t, axi_aw_t, axi_w_t, axi_ar_t)
+// `AXI_TYPEDEF_RESP_T(axi_resp_t, axi_b_t, axi_r_t)
+`define AXI_TYPEDEF_AW_CHAN_T(aw_chan_t, addr_t, id_t, user_t)  \
+  typedef struct packed {                                       \
+    id_t              id;                                       \
+    addr_t            addr;                                     \
+    axi_pkg::len_t    len;                                      \
+    axi_pkg::size_t   size;                                     \
+    axi_pkg::burst_t  burst;                                    \
+    logic             lock;                                     \
+    axi_pkg::cache_t  cache;                                    \
+    axi_pkg::prot_t   prot;                                     \
+    axi_pkg::qos_t    qos;                                      \
+    axi_pkg::region_t region;                                   \
+    axi_pkg::atop_t   atop;                                     \
+    user_t            user;                                     \
+  } aw_chan_t;
+`define AXI_TYPEDEF_W_CHAN_T(w_chan_t, data_t, strb_t, user_t)  \
+  typedef struct packed {                                       \
+    data_t data;                                                \
+    strb_t strb;                                                \
+    logic  last;                                                \
+    user_t user;                                                \
+  } w_chan_t;
+`define AXI_TYPEDEF_B_CHAN_T(b_chan_t, id_t, user_t)  \
+  typedef struct packed {                             \
+    id_t            id;                               \
+    axi_pkg::resp_t resp;                             \
+    user_t          user;                             \
+  } b_chan_t;
+`define AXI_TYPEDEF_AR_CHAN_T(ar_chan_t, addr_t, id_t, user_t)  \
+  typedef struct packed {                                       \
+    id_t              id;                                       \
+    addr_t            addr;                                     \
+    axi_pkg::len_t    len;                                      \
+    axi_pkg::size_t   size;                                     \
+    axi_pkg::burst_t  burst;                                    \
+    logic             lock;                                     \
+    axi_pkg::cache_t  cache;                                    \
+    axi_pkg::prot_t   prot;                                     \
+    axi_pkg::qos_t    qos;                                      \
+    axi_pkg::region_t region;                                   \
+    user_t            user;                                     \
+  } ar_chan_t;
+`define AXI_TYPEDEF_R_CHAN_T(r_chan_t, data_t, id_t, user_t)  \
+  typedef struct packed {                                     \
+    id_t            id;                                       \
+    data_t          data;                                     \
+    axi_pkg::resp_t resp;                                     \
+    logic           last;                                     \
+    user_t          user;                                     \
+  } r_chan_t;
+`define AXI_TYPEDEF_REQ_T(req_t, aw_chan_t, w_chan_t, ar_chan_t)  \
+  typedef struct packed {                                         \
+    aw_chan_t aw;                                                 \
+    logic     aw_valid;                                           \
+    w_chan_t  w;                                                  \
+    logic     w_valid;                                            \
+    logic     b_ready;                                            \
+    ar_chan_t ar;                                                 \
+    logic     ar_valid;                                           \
+    logic     r_ready;                                            \
+  } req_t;
+`define AXI_TYPEDEF_RESP_T(resp_t, b_chan_t, r_chan_t)  \
+  typedef struct packed {                               \
+    logic     aw_ready;                                 \
+    logic     ar_ready;                                 \
+    logic     w_ready;                                  \
+    logic     b_valid;                                  \
+    b_chan_t  b;                                        \
+    logic     r_valid;                                  \
+    r_chan_t  r;                                        \
+  } resp_t;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// All AXI4+ATOP Channels and Request/Response Structs in One Macro
+//
+// This can be used whenever the user is not interested in "precise" control of the naming of the
+// individual channels.
+//
+// Usage Example:
+// `AXI_TYPEDEF_ALL(axi, addr_t, id_t, data_t, strb_t, user_t)
+//
+// This defines `axi_req_t` and `axi_resp_t` request/response structs as well as `axi_aw_chan_t`,
+// `axi_w_chan_t`, `axi_b_chan_t`, `axi_ar_chan_t`, and `axi_r_chan_t` channel structs.
+`define AXI_TYPEDEF_ALL(__name, __addr_t, __id_t, __data_t, __strb_t, __user_t)                 \
+  `AXI_TYPEDEF_AW_CHAN_T(__name``_aw_chan_t, __addr_t, __id_t, __user_t)                        \
+  `AXI_TYPEDEF_W_CHAN_T(__name``_w_chan_t, __data_t, __strb_t, __user_t)                        \
+  `AXI_TYPEDEF_B_CHAN_T(__name``_b_chan_t, __id_t, __user_t)                                    \
+  `AXI_TYPEDEF_AR_CHAN_T(__name``_ar_chan_t, __addr_t, __id_t, __user_t)                        \
+  `AXI_TYPEDEF_R_CHAN_T(__name``_r_chan_t, __data_t, __id_t, __user_t)                          \
+  `AXI_TYPEDEF_REQ_T(__name``_req_t, __name``_aw_chan_t, __name``_w_chan_t, __name``_ar_chan_t) \
+  `AXI_TYPEDEF_RESP_T(__name``_resp_t, __name``_b_chan_t, __name``_r_chan_t)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// AXI4-Lite Channel and Request/Response Structs
+//
+// Usage Example:
+// `AXI_LITE_TYPEDEF_AW_CHAN_T(axi_lite_aw_t, axi_lite_addr_t)
+// `AXI_LITE_TYPEDEF_W_CHAN_T(axi_lite_w_t, axi_lite_data_t, axi_lite_strb_t)
+// `AXI_LITE_TYPEDEF_B_CHAN_T(axi_lite_b_t)
+// `AXI_LITE_TYPEDEF_AR_CHAN_T(axi_lite_ar_t, axi_lite_addr_t)
+// `AXI_LITE_TYPEDEF_R_CHAN_T(axi_lite_r_t, axi_lite_data_t)
+// `AXI_LITE_TYPEDEF_REQ_T(axi_lite_req_t, axi_lite_aw_t, axi_lite_w_t, axi_lite_ar_t)
+// `AXI_LITE_TYPEDEF_RESP_T(axi_lite_resp_t, axi_lite_b_t, axi_lite_r_t)
+`define AXI_LITE_TYPEDEF_AW_CHAN_T(aw_chan_lite_t, addr_t)  \
+  typedef struct packed {                                   \
+    addr_t          addr;                                   \
+    axi_pkg::prot_t prot;                                   \
+  } aw_chan_lite_t;
+`define AXI_LITE_TYPEDEF_W_CHAN_T(w_chan_lite_t, data_t, strb_t)  \
+  typedef struct packed {                                         \
+    data_t   data;                                                \
+    strb_t   strb;                                                \
+  } w_chan_lite_t;
+`define AXI_LITE_TYPEDEF_B_CHAN_T(b_chan_lite_t)  \
+  typedef struct packed {                         \
+    axi_pkg::resp_t resp;                         \
+  } b_chan_lite_t;
+`define AXI_LITE_TYPEDEF_AR_CHAN_T(ar_chan_lite_t, addr_t)  \
+  typedef struct packed {                                   \
+    addr_t          addr;                                   \
+    axi_pkg::prot_t prot;                                   \
+  } ar_chan_lite_t;
+`define AXI_LITE_TYPEDEF_R_CHAN_T(r_chan_lite_t, data_t)  \
+  typedef struct packed {                                 \
+    data_t          data;                                 \
+    axi_pkg::resp_t resp;                                 \
+  } r_chan_lite_t;
+`define AXI_LITE_TYPEDEF_REQ_T(req_lite_t, aw_chan_lite_t, w_chan_lite_t, ar_chan_lite_t)  \
+  typedef struct packed {                                                                  \
+    aw_chan_lite_t aw;                                                                     \
+    logic          aw_valid;                                                               \
+    w_chan_lite_t  w;                                                                      \
+    logic          w_valid;                                                                \
+    logic          b_ready;                                                                \
+    ar_chan_lite_t ar;                                                                     \
+    logic          ar_valid;                                                               \
+    logic          r_ready;                                                                \
+  } req_lite_t;
+`define AXI_LITE_TYPEDEF_RESP_T(resp_lite_t, b_chan_lite_t, r_chan_lite_t)  \
+  typedef struct packed {                                                   \
+    logic          aw_ready;                                                \
+    logic          w_ready;                                                 \
+    b_chan_lite_t  b;                                                       \
+    logic          b_valid;                                                 \
+    logic          ar_ready;                                                \
+    r_chan_lite_t  r;                                                       \
+    logic          r_valid;                                                 \
+  } resp_lite_t;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// All AXI4-Lite Channels and Request/Response Structs in One Macro
+//
+// This can be used whenever the user is not interested in "precise" control of the naming of the
+// individual channels.
+//
+// Usage Example:
+// `AXI_LITE_TYPEDEF_ALL(axi_lite, addr_t, data_t, strb_t)
+//
+// This defines `axi_lite_req_t` and `axi_lite_resp_t` request/response structs as well as
+// `axi_lite_aw_chan_t`, `axi_lite_w_chan_t`, `axi_lite_b_chan_t`, `axi_lite_ar_chan_t`, and
+// `axi_lite_r_chan_t` channel structs.
+`define AXI_LITE_TYPEDEF_ALL(__name, __addr_t, __data_t, __strb_t)                                    \
+  `AXI_LITE_TYPEDEF_AW_CHAN_T(__name``_aw_chan_t, __addr_t)                                           \
+  `AXI_LITE_TYPEDEF_W_CHAN_T(__name``_w_chan_t, __data_t, __strb_t)                                   \
+  `AXI_LITE_TYPEDEF_B_CHAN_T(__name``_b_chan_t)                                                       \
+  `AXI_LITE_TYPEDEF_AR_CHAN_T(__name``_ar_chan_t, __addr_t)                                           \
+  `AXI_LITE_TYPEDEF_R_CHAN_T(__name``_r_chan_t, __data_t)                                             \
+  `AXI_LITE_TYPEDEF_REQ_T(__name``_req_t, __name``_aw_chan_t, __name``_w_chan_t, __name``_ar_chan_t)  \
+  `AXI_LITE_TYPEDEF_RESP_T(__name``_resp_t, __name``_b_chan_t, __name``_r_chan_t)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+`endif
+
 
 // interface wrapper
 module axi_multicut_intf #(
@@ -61108,8 +62281,8 @@ module axi_cut #(
   );
 endmodule
 
-`include "axi/assign.svh"
-`include "axi/typedef.svh"
+
+
 
 // interface wrapper
 module axi_cut_intf #(
@@ -61277,7 +62450,7 @@ endmodule
 // - Fabian Schuiki <fschuiki@iis.ee.ethz.ch>
 // - Andreas Kurth <akurth@iis.ee.ethz.ch>
 
-`include "axi/assign.svh"
+
 
 /// A connector that joins two AXI interfaces.
 module axi_join_intf (
@@ -61424,8 +62597,8 @@ module axi_delayer #(
   );
 endmodule
 
-`include "axi/typedef.svh"
-`include "axi/assign.svh"
+
+
 
 // interface wrapper
 module axi_delayer_intf #(
@@ -61749,8 +62922,8 @@ module axi_to_axi_lite_id_reflect #(
 endmodule
 
 // interface wrapper
-`include "axi/assign.svh"
-`include "axi/typedef.svh"
+
+
 module axi_to_axi_lite_intf #(
   /// AXI bus parameters
   parameter int unsigned AXI_ADDR_WIDTH     = 32'd0,
@@ -62363,8 +63536,8 @@ module axi_atop_filter #(
 // pragma translate_on
 endmodule
 
-`include "axi/assign.svh"
-`include "axi/typedef.svh"
+
+
 
 /// Interface variant of [`axi_atop_filter`](module.axi_atop_filter).
 module axi_atop_filter_intf #(
@@ -62728,7 +63901,7 @@ endmodule
 // a response with ID `6'b100110` will be forwarded to slave port 2 (`2'b10`).
 
 // register macros
-`include "common_cells/registers.svh"
+
 
 module axi_mux #(
   // AXI parameter and channel types
@@ -63125,8 +64298,8 @@ module axi_mux #(
 endmodule
 
 // interface wrap
-`include "axi/assign.svh"
-`include "axi/typedef.svh"
+
+
 module axi_mux_intf #(
   parameter int unsigned SLV_AXI_ID_WIDTH = 32'd0, // Synopsys DC requires default value for params
   parameter int unsigned MST_AXI_ID_WIDTH = 32'd0,
@@ -63243,7 +64416,7 @@ endmodule
 // - Wolfgang Roenninger <wroennin@iis.ee.ethz.ch>
 // - Andreas Kurth <akurth@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+
 
 // axi_demux: Demultiplex an AXI bus from one slave port to multiple master ports.
 // See `doc/axi_demux.md` for the documentation, including the definition of parameters and ports.
@@ -63926,8 +65099,8 @@ module axi_demux_id_counters #(
 endmodule
 
 // interface wrapper
-`include "axi/assign.svh"
-`include "axi/typedef.svh"
+
+
 module axi_demux_intf #(
   parameter int unsigned AXI_ID_WIDTH     = 32'd0, // Synopsys DC requires default value for params
   parameter int unsigned AXI_ADDR_WIDTH   = 32'd0,
@@ -64256,8 +65429,8 @@ module axi_xbar #(
   // pragma translate_on
 endmodule
 
-`include "axi/assign.svh"
-`include "axi/typedef.svh"
+
+
 
 module axi_xbar_intf #(
   parameter int unsigned AXI_USER_WIDTH =  0,

@@ -1,0 +1,11 @@
+#Start recording tcl command: 10/23/2024 16:08:18
+#Project Location: C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv; Project name: StandaloneRiscv
+prj_open "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/StandaloneRiscv.rdf"
+prj_remove_source "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/scripts/lattice_ariane.sv"
+prj_add_source "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_set_impl_opt -impl "impl_1" "include path" "../../../../../vendor/pulp-platform/common_cells/include;../../../../../vendor/pulp-platform/axi/include;../../../../../core/cache_subsystem/hpdcache/rtl/include;../../../../../vendor/pulp-platform/common_cells/include"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+#Stop recording: 10/23/2024 16:30:37

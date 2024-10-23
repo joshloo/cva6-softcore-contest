@@ -20,8 +20,8 @@ The file contains the information about all compile points from mapper to be dis
 </data>
 <data>Remapped</data>
 <data>User request</data>
-<data>0h:01m:11s</data>
-<data>0h:01m:11s</data>
+<data>0h:01m:10s</data>
+<data>0h:01m:10s</data>
 </row>
 <row>
 <data>
@@ -32,8 +32,20 @@ The file contains the information about all compile points from mapper to be dis
 </data>
 <data>Remapped</data>
 <data>User request</data>
-<data>0h:02m:09s</data>
-<data>0h:02m:09s</data>
+<data>0h:02m:20s</data>
+<data>0h:02m:19s</data>
+</row>
+<row>
+<data>
+<value>csr_regfile_1s_6s_1075056897_36_layer0</value>
+<report_link name="Report">
+<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\csr_regfile_1s_6s_1075056897_36_layer0\csr_regfile_1s_6s_1075056897_36_layer0.srr</data>
+</report_link>
+</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:01m:11s</data>
+<data>0h:01m:12s</data>
 </row>
 <row>
 <data>
@@ -44,20 +56,8 @@ The file contains the information about all compile points from mapper to be dis
 </data>
 <data>Remapped</data>
 <data>User request</data>
-<data>0h:02m:16s</data>
-<data>0h:02m:15s</data>
-</row>
-<row>
-<data>
-<value>csr_regfile_1s_6s_1075056897_36_layer0</value>
-<report_link name="Report">
-<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\csr_regfile_1s_6s_1075056897_36_layer0\csr_regfile_1s_6s_1075056897_36_layer0.srr</data>
-</report_link>
-</data>
-<data>Mapped</data>
-<data>No database</data>
-<data>0h:01m:02s</data>
-<data>0h:01m:03s</data>
+<data>0h:02m:28s</data>
+<data>0h:02m:26s</data>
 </row>
 <row>
 <data>
@@ -68,7 +68,7 @@ The file contains the information about all compile points from mapper to be dis
 </data>
 <data>Remapped</data>
 <data>User request</data>
+<data>0h:03m:17s</data>
 <data>0h:03m:15s</data>
-<data>0h:03m:13s</data>
 </row>
 </report_table>
