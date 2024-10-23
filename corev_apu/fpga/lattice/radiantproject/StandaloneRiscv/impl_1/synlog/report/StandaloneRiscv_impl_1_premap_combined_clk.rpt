@@ -1,0 +1,26 @@
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 6391 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 32 clock pin(s) of sequential element(s)
+0 instances converted, 32 sequential instances remain driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks ====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                 
+--------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       clk_i               port                   6391       i_cva6.csr_regfile_i.dcache_q[0]
+========================================================================================================
+============================================================================================= Gated/Generated Clocks =============================================================================================
+Clock Tree ID     Driving Element                                                Drive Element Type     Unconverted Fanout     Sample Instance                                      Explanation                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT     or                     32                     i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[31]     Clock Optimization not enabled
+==================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+

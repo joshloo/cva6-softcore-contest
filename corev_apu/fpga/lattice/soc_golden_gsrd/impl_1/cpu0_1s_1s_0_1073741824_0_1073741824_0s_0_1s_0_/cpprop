@@ -1,9 +1,0 @@
-n work cpu0_1s_1s_0_1073741824_0_1073741824_0s_0_1s_0_ verilog;
-av .compile_point_summary_status "Remapped";
-av .compile_point_summary_reason "User request";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 242.219;
-av .compile_point_starttime_stamp "Fri Aug 30 08:22:05 2024";
-av .compile_point_endtime_stamp "Fri Aug 30 08:26:18 2024";
-av .compile_point_realtime_used 252.867;

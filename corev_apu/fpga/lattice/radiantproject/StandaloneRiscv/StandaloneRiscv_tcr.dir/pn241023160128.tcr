@@ -1,0 +1,20 @@
+#Start recording tcl command: 10/23/2024 15:15:51
+#Project Location: C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/standalone_riscv/StandaloneRiscv; Project name: StandaloneRiscv
+prj_create -name "StandaloneRiscv" -impl "impl_1" -dev LAV-AT-E70ES1-1LFG676C -performance "1" -synthesis "synplify"
+prj_add_source "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv"
+prj_save 
+prj_set_impl_opt -impl "impl_1" "top" "ariane"
+prj_run Synthesis -impl impl_1
+prj_set_impl_opt -impl "impl_1" "include path" "../../../../../../vendor/pulp-platform/common_cells/include"
+prj_run Synthesis -impl impl_1
+prj_set_impl_opt -impl "impl_1" "VerilogStandard" "System Verilog"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_set_impl_opt -impl "impl_1" "include path" "../../../../../../vendor/pulp-platform/common_cells/include;../../../../../../vendor/pulp-platform/axi/include"
+prj_run Synthesis -impl impl_1
+prj_set_impl_opt -impl "impl_1" "include path" "../../../../../../vendor/pulp-platform/common_cells/include;../../../../../../vendor/pulp-platform/axi/include;../../../../../../core/cache_subsystem/hpdcache/rtl/include"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+#Stop recording: 10/23/2024 16:01:28

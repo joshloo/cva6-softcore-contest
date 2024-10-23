@@ -1,9 +1,0 @@
-n work cpu0_1s_1s_0_1073741824_0_1073741824_0s_0_1s_0_143_layer0 verilog;
-av .compile_point_summary_status "Mapped";
-av .compile_point_summary_reason "No database";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 167.172;
-av .compile_point_starttime_stamp "Wed Sep 18 11:52:36 2024";
-av .compile_point_endtime_stamp "Wed Sep 18 11:55:25 2024";
-av .compile_point_realtime_used 169.268;

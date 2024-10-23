@@ -1,4 +1,0 @@
-axi4_interconnect0=C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/axi4_interconnect0/2.0.1/constraints/constraints.sdc
-axi4_interconnect1=C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/axi4_interconnect1/2.0.1/constraints/constraints.sdc
-sgdma0=C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/sgdma0/2.2.0/constraints/constraint.sdc
-lpddr4_mc_contr0=C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/lpddr4_mc_contr0/2.2.0/constraints/constraint.sdc

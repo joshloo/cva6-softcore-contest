@@ -1,9 +1,0 @@
-n work axi4_interconnect0_ipgen_axi_cross_bar_Z11_layer0 verilog;
-av .compile_point_summary_status "Remapped";
-av .compile_point_summary_reason "User request";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 36.5469;
-av .compile_point_starttime_stamp "Wed Sep 18 11:54:50 2024";
-av .compile_point_endtime_stamp "Wed Sep 18 11:55:26 2024";
-av .compile_point_realtime_used 35.871;

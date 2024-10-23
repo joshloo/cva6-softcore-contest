@@ -1,7 +1,0 @@
--ver "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v"
--lib pmi -vhd "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd"
--ver "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/axi_register_slice0/1.0.0/rtl/axi_register_slice0.v"
--path "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd" "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/lib/latticesemi.com/ip/axi_register_slice0/1.0.0" "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd"
--top axi_register_slice0
--a "LAV-AT"
--t "LAV-AT-E70ES1"

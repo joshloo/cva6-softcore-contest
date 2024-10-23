@@ -1,9 +1,0 @@
--ver "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v"
--lib pmi -vhd "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd"
--ver "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/soc_golden_gsrd/soc_golden_gsrd.v"
--sdc "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd/source/impl_1/clock_constraint.sdc"
--path "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd" "C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/soc_golden_gsrd"
--top soc_golden_gsrd
--isTop
--a "LAV-AT"
--t "LAV-AT-E70ES1"
