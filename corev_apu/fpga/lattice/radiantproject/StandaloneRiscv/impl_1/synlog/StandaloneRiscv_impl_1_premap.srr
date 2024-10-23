@@ -1,4 +1,4 @@
-# Wed Oct 23 16:26:26 2024
+# Wed Oct 23 16:39:26 2024
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -35,7 +35,7 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 259MB peak: 260MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 264MB peak: 264MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 264MB peak: 264MB)
 
 
 Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 264MB peak: 266MB)
@@ -55,7 +55,7 @@ NConnInternalConnection caching is on
 @N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[1\][110:0].
 @N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[0\][110:0].
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 324MB peak: 324MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 324MB peak: 324MB)
 
 
 Finished HSTDM IP insertion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 324MB peak: 325MB)
@@ -227,7 +227,7 @@ Starting clock optimization report phase (Real Time elapsed 0h:00m:03s; CPU Time
 
 @N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 334MB peak: 334MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 334MB peak: 335MB)
 
 @N: FX1185 |Applying syn_allowed_resources blockrams=3 on compile point issue_stage_0_4s_13_layer0 
 @N: FX1185 |Applying syn_allowed_resources blockrams=15 on compile point ex_stage_1s_34_layer0 
@@ -301,16 +301,16 @@ Finished Pre Mapping Phase.
 Starting constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 320MB peak: 335MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 324MB peak: 335MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 325MB peak: 335MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 330MB peak: 335MB)
+Finished constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 331MB peak: 335MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 226MB peak: 335MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 227MB peak: 335MB)
 
 Process took 0h:00m:06s realtime, 0h:00m:06s cputime
-# Wed Oct 23 16:26:32 2024
+# Wed Oct 23 16:39:32 2024
 
 ###########################################################]

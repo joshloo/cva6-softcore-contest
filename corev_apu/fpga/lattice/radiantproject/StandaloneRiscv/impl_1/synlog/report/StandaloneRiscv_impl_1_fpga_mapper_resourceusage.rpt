@@ -2,29 +2,29 @@ Resource Usage Report
 Part: lav_at_e70es1lfg676c-1
 
 
-Register bits: 5093 of 397440 (1%)
-I/O cells:       391
+Register bits: 4878 of 397440 (1%)
+I/O cells:       380
 
 Details:
 CCU2C:          592
 DPR16X4A:       39
 DPR32X2:        57
-FD1P3BX:        53
-FD1P3DX:        4593
+FD1P3BX:        44
+FD1P3DX:        4388
 FD1P3IX:        413
 GSRA:           1
-IB:             116
+IB:             112
 IFD1P3BX:       1
-IFD1P3DX:       33
-INV:            20
-LUT4:           10158
-OB:             275
+IFD1P3DX:       32
+INV:            21
+LUT4:           10122
+OB:             268
 PDPSC32K:       42
 SP16KA:         1
 SPR32X2:        4
-VHI:            154
-VLO:            154
-WIDEFN9:        1446
+VHI:            153
+VLO:            153
+WIDEFN9:        1387
 MULT18X18A:     2
 MULTADDSUB18X18A: 2
 
@@ -38,10 +38,10 @@ Carry Chains: 0
 Blackboxes: 0
 
 Mapping Summary:
-Total number of registers: 5093 + 0 = 5093 of 397440 (1.28%)
-Total number of LUTs: 10158 + 0 = 10158 
+Total number of registers: 4878 + 0 = 4878 of 397440 (1.23%)
+Total number of LUTs: 10122 + 0 = 10122 
 Total number of EBRs: 43 + 0 = 43 of 990 (4.34%)
 Total number of DSPs: 4 + 0 = 4 of 1800 (0.22%)
 Total number of Distributed RAMs: 100 + 0 = 100 
 Total number of Carry Chains: 592 + 0 = 592 
-Total number of BlackBoxes: 309 + 0 = 309 
+Total number of BlackBoxes: 307 + 0 = 307 

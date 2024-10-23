@@ -9,15 +9,15 @@ The file contains the area information from mapper to be displayed as part of th
 <title>Resource Usage</title>
 </report_link>
 <parameter tooltip="Total Register bits used" name="Register bits">
-<data>5093</data>
+<data>4878</data>
 </parameter>
 <parameter tooltip="Total I/O cells used" name="I/O cells">
-<data>391</data>
+<data>380</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
 <data>43</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
-<data>10158</data>
+<data>10122</data>
 </parameter>
 </report_table>

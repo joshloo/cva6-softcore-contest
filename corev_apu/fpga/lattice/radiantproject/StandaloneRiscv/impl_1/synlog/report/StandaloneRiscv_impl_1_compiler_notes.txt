@@ -527,6 +527,7 @@
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50249:21:50249:36|Found RAM Mem_DP, depth=256, width=8
+@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":52229:33:52229:47|Input noc_resp_i_r_id is unused.
 @N: CL189 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34571:2:34571:10|Register bit dcache_rtrn_type_q[2] is always 0.
 @N: CL201 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28782:2:28782:10|Trying to extract state machine for register wr_state_q.
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Found RAM mem, depth=4, width=5
@@ -640,7 +641,6 @@
 @N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
 @N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15986:30:15986:35|Input rst_ni is unused.
 @N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15988:30:15988:36|Input flush_i is unused.
-@N: CL159 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15984:30:15984:34|Input clk_i is unused.
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27460:2:27460:10|Found RAM mem_q, depth=4, width=32
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5537:2:5537:10|Found RAM mem, depth=128, width=3
 @N: CL134 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5537:2:5537:10|Found RAM mem, depth=128, width=3
