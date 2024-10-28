@@ -1,0 +1,11 @@
+#Start recording tcl command: 10/28/2024 11:32:40
+#Project Location: C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv; Project name: StandaloneRiscv
+prj_open "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/StandaloneRiscv.rdf"
+prj_remove_source "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/test4/test4.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+#Stop recording: 10/28/2024 11:54:14

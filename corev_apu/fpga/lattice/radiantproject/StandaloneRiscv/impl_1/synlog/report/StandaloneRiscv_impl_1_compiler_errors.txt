@@ -1,3 +1,4 @@
-@E: Can't open file common_cells/registers.svh
+@E: CG285 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29765:4:29765:12|Expecting statement
+@E: CS187 :"C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29777:2:29777:4|Expecting endmodule
 @E::Verilog compiler failed
 

@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/23/2024 17:38:14
+#Project Location: C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv; Project name: StandaloneRiscv
+prj_open "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/StandaloneRiscv.rdf"
+prj_add_source "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/test4/test4.ipx"
+#Stop recording: 10/23/2024 17:49:00

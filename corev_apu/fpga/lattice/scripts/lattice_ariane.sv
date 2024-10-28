@@ -18086,21 +18086,6 @@ module alu
 
   always_comb begin
     operand_a_bitmanip = fu_data_i.operand_a;
-
-    if (ariane_pkg::BITMANIP) begin
-      unique case (fu_data_i.operation)
-        SH1ADD:             operand_a_bitmanip = fu_data_i.operand_a << 1;
-        SH2ADD:             operand_a_bitmanip = fu_data_i.operand_a << 2;
-        SH3ADD:             operand_a_bitmanip = fu_data_i.operand_a << 3;
-        SH1ADDUW:           operand_a_bitmanip = fu_data_i.operand_a[31:0] << 1;
-        SH2ADDUW:           operand_a_bitmanip = fu_data_i.operand_a[31:0] << 2;
-        SH3ADDUW:           operand_a_bitmanip = fu_data_i.operand_a[31:0] << 3;
-        CTZ:                operand_a_bitmanip = operand_a_rev;
-        CTZW:               operand_a_bitmanip = operand_a_rev32;
-        ADDUW, CPOPW, CLZW: operand_a_bitmanip = fu_data_i.operand_a[31:0];
-        default:            ;
-      endcase
-    end
   end
 
   // prepare operand a
@@ -18200,50 +18185,7 @@ module alu
     less = ($signed({sgn & fu_data_i.operand_a[riscv::XLEN-1], fu_data_i.operand_a}) <
             $signed({sgn & fu_data_i.operand_b[riscv::XLEN-1], fu_data_i.operand_b}));
   end
-
-  if (ariane_pkg::BITMANIP) begin : gen_bitmanip
-    // Count Population + Count population Word
-
-    popcount #(
-        .INPUT_WIDTH(riscv::XLEN)
-    ) i_cpop_count (
-        .data_i    (operand_a_bitmanip),
-        .popcount_o(cpop)
-    );
-
-    // Count Leading/Trailing Zeros
-    // 64b
-    lzc #(
-        .WIDTH(riscv::XLEN),
-        .MODE (1)
-    ) i_clz_64b (
-        .in_i(operand_a_bitmanip),
-        .cnt_o(lz_tz_count),
-        .empty_o(lz_tz_empty)
-    );
-    //32b
-    lzc #(
-        .WIDTH(32),
-        .MODE (1)
-    ) i_clz_32b (
-        .in_i(operand_a_bitmanip[31:0]),
-        .cnt_o(lz_tz_wcount),
-        .empty_o(lz_tz_wempty)
-    );
-  end
-
-  if (ariane_pkg::BITMANIP) begin : gen_orcbw_rev8w_results
-    assign orcbw = {{8{|fu_data_i.operand_a[31:24]}}, {8{|fu_data_i.operand_a[23:16]}}, {8{|fu_data_i.operand_a[15:8]}}, {8{|fu_data_i.operand_a[7:0]}}};
-    assign rev8w = {{fu_data_i.operand_a[7:0]}, {fu_data_i.operand_a[15:8]}, {fu_data_i.operand_a[23:16]}, {fu_data_i.operand_a[31:24]}};
-    if (riscv::XLEN == 64) begin : gen_64b
-      assign orcbw_result = {{8{|fu_data_i.operand_a[63:56]}}, {8{|fu_data_i.operand_a[55:48]}}, {8{|fu_data_i.operand_a[47:40]}}, {8{|fu_data_i.operand_a[39:32]}}, orcbw};
-      assign rev8w_result = {rev8w , {fu_data_i.operand_a[39:32]}, {fu_data_i.operand_a[47:40]}, {fu_data_i.operand_a[55:48]}, {fu_data_i.operand_a[63:56]}};
-    end else begin : gen_32b
-      assign orcbw_result = orcbw;
-      assign rev8w_result = rev8w;
-    end
-  end
-
+  
   // -----------
   // Result MUX
   // -----------
@@ -18271,66 +18213,6 @@ module alu
       default: ;  // default case to suppress unique warning
     endcase
 
-    if (ariane_pkg::BITMANIP) begin
-      // Index for Bitwise Rotation
-      bit_indx = 1 << (fu_data_i.operand_b & (riscv::XLEN - 1));
-      // rolw, roriw, rorw
-      rolw = ({{riscv::XLEN-32{1'b0}},fu_data_i.operand_a[31:0]} << fu_data_i.operand_b[4:0]) | ({{riscv::XLEN-32{1'b0}},fu_data_i.operand_a[31:0]} >> (riscv::XLEN-32-fu_data_i.operand_b[4:0]));
-      rorw = ({{riscv::XLEN-32{1'b0}},fu_data_i.operand_a[31:0]} >> fu_data_i.operand_b[4:0]) | ({{riscv::XLEN-32{1'b0}},fu_data_i.operand_a[31:0]} << (riscv::XLEN-32-fu_data_i.operand_b[4:0]));
-      unique case (fu_data_i.operation)
-        // Left Shift 32 bit unsigned
-        SLLIUW:
-        result_o = {{riscv::XLEN-32{1'b0}}, fu_data_i.operand_a[31:0]} << fu_data_i.operand_b[5:0];
-        // Integer minimum/maximum
-        MAX: result_o = less ? fu_data_i.operand_b : fu_data_i.operand_a;
-        MAXU: result_o = less ? fu_data_i.operand_b : fu_data_i.operand_a;
-        MIN: result_o = ~less ? fu_data_i.operand_b : fu_data_i.operand_a;
-        MINU: result_o = ~less ? fu_data_i.operand_b : fu_data_i.operand_a;
-
-        // Single bit instructions operations
-        BCLR, BCLRI: result_o = fu_data_i.operand_a & ~bit_indx;
-        BEXT, BEXTI: result_o = {{riscv::XLEN - 1{1'b0}}, |(fu_data_i.operand_a & bit_indx)};
-        BINV, BINVI: result_o = fu_data_i.operand_a ^ bit_indx;
-        BSET, BSETI: result_o = fu_data_i.operand_a | bit_indx;
-
-        // Count Leading/Trailing Zeros
-        CLZ, CTZ:
-        result_o = (lz_tz_empty) ? ({{riscv::XLEN - $clog2(riscv::XLEN) {1'b0}}, lz_tz_count} + 1) :
-            {{riscv::XLEN - $clog2(riscv::XLEN) {1'b0}}, lz_tz_count};
-        CLZW, CTZW: result_o = (lz_tz_wempty) ? 32 : {{riscv::XLEN - 5{1'b0}}, lz_tz_wcount};
-
-        // Count population
-        CPOP, CPOPW: result_o = {{(riscv::XLEN - ($clog2(riscv::XLEN) + 1)) {1'b0}}, cpop};
-
-        // Sign and Zero Extend
-        SEXTB: result_o = {{riscv::XLEN - 8{fu_data_i.operand_a[7]}}, fu_data_i.operand_a[7:0]};
-        SEXTH: result_o = {{riscv::XLEN - 16{fu_data_i.operand_a[15]}}, fu_data_i.operand_a[15:0]};
-        ZEXTH: result_o = {{riscv::XLEN - 16{1'b0}}, fu_data_i.operand_a[15:0]};
-
-        // Bitwise Rotation
-        ROL:
-        result_o = (riscv::XLEN == 64) ? ((fu_data_i.operand_a << fu_data_i.operand_b[5:0]) | (fu_data_i.operand_a >> (riscv::XLEN-fu_data_i.operand_b[5:0]))) : ((fu_data_i.operand_a << fu_data_i.operand_b[4:0]) | (fu_data_i.operand_a >> (riscv::XLEN-fu_data_i.operand_b[4:0])));
-        ROLW: result_o = {{riscv::XLEN - 32{rolw[31]}}, rolw};
-        ROR, RORI:
-        result_o = (riscv::XLEN == 64) ? ((fu_data_i.operand_a >> fu_data_i.operand_b[5:0]) | (fu_data_i.operand_a << (riscv::XLEN-fu_data_i.operand_b[5:0]))) : ((fu_data_i.operand_a >> fu_data_i.operand_b[4:0]) | (fu_data_i.operand_a << (riscv::XLEN-fu_data_i.operand_b[4:0])));
-        RORW, RORIW: result_o = {{riscv::XLEN - 32{rorw[31]}}, rorw};
-        ORCB:
-        result_o = orcbw_result;
-        REV8:
-        result_o = rev8w_result;
-
-        default: ;  // default case to suppress unique warning
-      endcase
-    end
-    if (CVA6Cfg.ZiCondExtEn) begin
-      unique case (fu_data_i.operation)
-        CZERO_EQZ:
-        result_o = (|fu_data_i.operand_b) ? fu_data_i.operand_a : '0;  // move zero to rd if rs2 is equal to zero else rs1
-        CZERO_NEZ:
-        result_o = (|fu_data_i.operand_b) ? '0 : fu_data_i.operand_a; // move zero to rd if rs2 is nonzero else rs1
-        default: ;  // default case to suppress unique warning
-      endcase
-    end
   end
 endmodule
 
@@ -19579,84 +19461,19 @@ module compressed_decoder #(
                         end
 
                         3'b001: begin
-                          if (ariane_pkg::BITMANIP) begin
-                            // c.sext.b -> sext.b rd', rd'
-                            instr_o = {
-                              7'h30,
-                              5'h4,
-                              2'b01,
-                              instr_i[9:7],
-                              3'b001,
-                              2'b01,
-                              instr_i[9:7],
-                              riscv::OpcodeOpImm
-                            };
-                          end else illegal_instr_o = 1'b1;
+                          illegal_instr_o = 1'b1;
                         end
 
                         3'b010: begin
-                          if (ariane_pkg::BITMANIP) begin
-                            // c.zext.h -> zext.h rd', rd'
-                            if (riscv::XLEN == 64) begin
-                              instr_o = {
-                                7'h4,
-                                5'h0,
-                                2'b01,
-                                instr_i[9:7],
-                                3'b100,
-                                2'b01,
-                                instr_i[9:7],
-                                riscv::OpcodeOp32
-                              };
-                            end else begin
-                              instr_o = {
-                                7'h4,
-                                5'h0,
-                                2'b01,
-                                instr_i[9:7],
-                                3'b100,
-                                2'b01,
-                                instr_i[9:7],
-                                riscv::OpcodeOp
-                              };
-                            end
-                          end else illegal_instr_o = 1'b1;
+                          illegal_instr_o = 1'b1;
                         end
 
                         3'b011: begin
-                          if (ariane_pkg::BITMANIP) begin
-                            // c.sext.h -> sext.h rd', rd'
-                            instr_o = {
-                              7'h30,
-                              5'h5,
-                              2'b01,
-                              instr_i[9:7],
-                              3'b001,
-                              2'b01,
-                              instr_i[9:7],
-                              riscv::OpcodeOpImm
-                            };
-                          end else illegal_instr_o = 1'b1;
+                          illegal_instr_o = 1'b1;
                         end
 
                         3'b100: begin
-                          if (ariane_pkg::BITMANIP) begin
-                            // c.zext.w -> add.uw
-                            if (riscv::XLEN == 64) begin
-                              instr_o = {
-                                7'h4,
-                                5'h0,
-                                2'b01,
-                                instr_i[9:7],
-                                3'b000,
-                                2'b01,
-                                instr_i[9:7],
-                                riscv::OpcodeOp32
-                              };
-                            end else begin
                               illegal_instr_o = 1'b1;
-                            end
-                          end else illegal_instr_o = 1'b1;
                         end
 
                         3'b101: begin
@@ -22233,9 +22050,7 @@ module decoder
             // Integer Reg-Reg Operations
             // ---------------------------
           end else begin
-            if (ariane_pkg::BITMANIP) begin
-              instruction_o.fu  = (instr.rtype.funct7 == 7'b000_0001 || ((instr.rtype.funct7 == 7'b000_0101) && !(instr.rtype.funct3[14]))) ? MULT : ALU;
-            end else begin
+            begin
               instruction_o.fu = (instr.rtype.funct7 == 7'b000_0001) ? MULT : ALU;
             end
             instruction_o.rs1[4:0] = instr.rtype.rs1;
@@ -22271,54 +22086,6 @@ module decoder
                 illegal_instr_non_bm = 1'b1;
               end
             endcase
-            if (ariane_pkg::BITMANIP) begin
-              unique case ({
-                instr.rtype.funct7, instr.rtype.funct3
-              })
-                //Logical with Negate
-                {7'b010_0000, 3'b111} : instruction_o.op = ariane_pkg::ANDN;  // Andn
-                {7'b010_0000, 3'b110} : instruction_o.op = ariane_pkg::ORN;  // Orn
-                {7'b010_0000, 3'b100} : instruction_o.op = ariane_pkg::XNOR;  // Xnor
-                //Shift and Add (Bitmanip)
-                {7'b001_0000, 3'b010} : instruction_o.op = ariane_pkg::SH1ADD;  // Sh1add
-                {7'b001_0000, 3'b100} : instruction_o.op = ariane_pkg::SH2ADD;  // Sh2add
-                {7'b001_0000, 3'b110} : instruction_o.op = ariane_pkg::SH3ADD;  // Sh3add
-                // Integer maximum/minimum
-                {7'b000_0101, 3'b110} : instruction_o.op = ariane_pkg::MAX;  // max
-                {7'b000_0101, 3'b111} : instruction_o.op = ariane_pkg::MAXU;  // maxu
-                {7'b000_0101, 3'b100} : instruction_o.op = ariane_pkg::MIN;  // min
-                {7'b000_0101, 3'b101} : instruction_o.op = ariane_pkg::MINU;  // minu
-                // Single bit instructions
-                {7'b010_0100, 3'b001} : instruction_o.op = ariane_pkg::BCLR;  // bclr
-                {7'b010_0100, 3'b101} : instruction_o.op = ariane_pkg::BEXT;  // bext
-                {7'b011_0100, 3'b001} : instruction_o.op = ariane_pkg::BINV;  // binv
-                {7'b001_0100, 3'b001} : instruction_o.op = ariane_pkg::BSET;  // bset
-                // Carry-Less-Multiplication (clmul, clmulh, clmulr)
-                {7'b000_0101, 3'b001} : instruction_o.op = ariane_pkg::CLMUL;  // clmul
-                {7'b000_0101, 3'b011} : instruction_o.op = ariane_pkg::CLMULH;  // clmulh
-                {7'b000_0101, 3'b010} : instruction_o.op = ariane_pkg::CLMULR;  // clmulr
-                // Bitwise Shifting
-                {7'b011_0000, 3'b001} : instruction_o.op = ariane_pkg::ROL;  // rol
-                {7'b011_0000, 3'b101} : instruction_o.op = ariane_pkg::ROR;  // ror
-                // Zero Extend Op
-                {7'b000_0100, 3'b100} : instruction_o.op = ariane_pkg::ZEXTH;
-                default: begin
-                  illegal_instr_bm = 1'b1;
-                end
-              endcase
-            end
-            if (CVA6Cfg.ZiCondExtEn) begin
-              unique case ({
-                instr.rtype.funct7, instr.rtype.funct3
-              })
-                //Conditional move
-                {7'b000_0111, 3'b101} : instruction_o.op = ariane_pkg::CZERO_EQZ;  // czero.eqz
-                {7'b000_0111, 3'b111} : instruction_o.op = ariane_pkg::CZERO_NEZ;  // czero.nez
-                default: begin
-                  illegal_instr_zic = 1'b1;
-                end
-              endcase
-            end
             //VCS coverage on
             unique case ({
               ariane_pkg::BITMANIP, CVA6Cfg.ZiCondExtEn
@@ -22356,25 +22123,7 @@ module decoder
               {7'b000_0001, 3'b111} : instruction_o.op = ariane_pkg::REMUW;
               default: illegal_instr_non_bm = 1'b1;
             endcase
-            if (ariane_pkg::BITMANIP) begin
-              unique case ({
-                instr.rtype.funct7, instr.rtype.funct3
-              })
-                // Shift with Add (Unsigned Word)
-                {7'b001_0000, 3'b010}: instruction_o.op = ariane_pkg::SH1ADDUW; // sh1add.uw
-                {7'b001_0000, 3'b100}: instruction_o.op = ariane_pkg::SH2ADDUW; // sh2add.uw
-                {7'b001_0000, 3'b110}: instruction_o.op = ariane_pkg::SH3ADDUW; // sh3add.uw
-                // Unsigned word Op's
-                {7'b000_0100, 3'b000}: instruction_o.op = ariane_pkg::ADDUW;    // add.uw
-                // Zero Extend Op
-                {7'b000_0100, 3'b100}: instruction_o.op = ariane_pkg::ZEXTH;    // zext
-                // Bitwise Shifting
-                {7'b011_0000, 3'b001}: instruction_o.op = ariane_pkg::ROLW;     // rolw
-                {7'b011_0000, 3'b101}: instruction_o.op = ariane_pkg::RORW;     // rorw
-                default: illegal_instr_bm = 1'b1;
-              endcase
-              illegal_instr = illegal_instr_non_bm & illegal_instr_bm;
-            end else begin
+            begin
               illegal_instr = illegal_instr_non_bm;
             end
           end else illegal_instr = 1'b1;
@@ -22411,32 +22160,7 @@ module decoder
               if (instr.instr[25] != 1'b0 && riscv::XLEN == 32) illegal_instr_non_bm = 1'b1;
             end
           endcase
-          if (ariane_pkg::BITMANIP) begin
-            unique case (instr.itype.funct3)
-              3'b001: begin
-                if (instr.instr[31:25] == 7'b0110000) begin
-                  if (instr.instr[22:20] == 3'b100) instruction_o.op = ariane_pkg::SEXTB;
-                  else if (instr.instr[22:20] == 3'b101) instruction_o.op = ariane_pkg::SEXTH;
-                  else if (instr.instr[22:20] == 3'b010) instruction_o.op = ariane_pkg::CPOP;
-                  else if (instr.instr[22:20] == 3'b000) instruction_o.op = ariane_pkg::CLZ;
-                  else if (instr.instr[22:20] == 3'b001) instruction_o.op = ariane_pkg::CTZ;
-                end else if (instr.instr[31:26] == 6'b010010) instruction_o.op = ariane_pkg::BCLRI;
-                else if (instr.instr[31:26] == 6'b011010) instruction_o.op = ariane_pkg::BINVI;
-                else if (instr.instr[31:26] == 6'b001010) instruction_o.op = ariane_pkg::BSETI;
-                else illegal_instr_bm = 1'b1;
-              end
-              3'b101: begin
-                if (instr.instr[31:20] == 12'b001010000111) instruction_o.op = ariane_pkg::ORCB;
-                else if (instr.instr[31:20] == 12'b011010111000 || instr.instr[31:20] == 12'b011010011000)
-                  instruction_o.op = ariane_pkg::REV8;
-                else if (instr.instr[31:26] == 6'b010_010) instruction_o.op = ariane_pkg::BEXTI;
-                else if (instr.instr[31:26] == 6'b011_000) instruction_o.op = ariane_pkg::RORI;
-                else illegal_instr_bm = 1'b1;
-              end
-              default: illegal_instr_bm = 1'b1;
-            endcase
-            illegal_instr = illegal_instr_non_bm & illegal_instr_bm;
-          end else begin
+          begin
             illegal_instr = illegal_instr_non_bm;
           end
         end
@@ -22465,26 +22189,7 @@ module decoder
               end
               default: illegal_instr_non_bm = 1'b1;
             endcase
-            if (ariane_pkg::BITMANIP) begin
-              unique case (instr.itype.funct3)
-                3'b001: begin
-                  if (instr.instr[31:25] == 7'b0110000) begin
-                    if (instr.instr[21:20] == 2'b10) instruction_o.op = ariane_pkg::CPOPW;
-                    else if (instr.instr[21:20] == 2'b00) instruction_o.op = ariane_pkg::CLZW;
-                    else if (instr.instr[21:20] == 2'b01) instruction_o.op = ariane_pkg::CTZW;
-                    else illegal_instr_bm = 1'b1;
-                  end else if (instr.instr[31:26] == 6'b000010) begin
-                    instruction_o.op = ariane_pkg::SLLIUW; // Shift Left Logic by Immediate (Unsigned Word)
-                  end else illegal_instr_bm = 1'b1;
-                end
-                3'b101: begin
-                  if (instr.instr[31:25] == 7'b011_0000) instruction_o.op = ariane_pkg::RORIW;
-                  else illegal_instr_bm = 1'b1;
-                end
-                default: illegal_instr_bm = 1'b1;
-              endcase
-              illegal_instr = illegal_instr_non_bm & illegal_instr_bm;
-            end else begin
+            begin
               illegal_instr = illegal_instr_non_bm;
             end
 
@@ -23963,19 +23668,7 @@ module id_stage #(
   logic                          [31:0] instruction;
   logic                                 is_compressed;
 
-  if (CVA6Cfg.RVC) begin
-    // ---------------------------------------------------------
-    // 1. Check if they are compressed and expand in case they are
-    // ---------------------------------------------------------
-    compressed_decoder #(
-        .CVA6Cfg(CVA6Cfg)
-    ) compressed_decoder_i (
-        .instr_i        (fetch_entry_i.instruction),
-        .instr_o        (instruction),
-        .illegal_instr_o(is_illegal),
-        .is_compressed_o(is_compressed)
-    );
-  end else begin
+  begin
     assign instruction = fetch_entry_i.instruction;
     assign is_illegal = '0;
     assign is_compressed = '0;
@@ -26211,35 +25904,6 @@ module multiplier
       clmul_q, clmul_d, clmulr_q, clmulr_d, operand_a, operand_b, operand_a_rev, operand_b_rev;
   logic clmul_rmode, clmul_hmode;
 
-  if (ariane_pkg::BITMANIP) begin : gen_bitmanip
-    // checking for clmul_rmode and clmul_hmode
-    assign clmul_rmode = (operation_i == CLMULR);
-    assign clmul_hmode = (operation_i == CLMULH);
-
-    // operand_a and b reverse generator
-    for (genvar i = 0; i < riscv::XLEN; i++) begin
-      assign operand_a_rev[i] = operand_a_i[(riscv::XLEN-1)-i];
-      assign operand_b_rev[i] = operand_b_i[(riscv::XLEN-1)-i];
-    end
-
-    // operand_a and operand_b selection
-    assign operand_a = (clmul_rmode | clmul_hmode) ? operand_a_rev : operand_a_i;
-    assign operand_b = (clmul_rmode | clmul_hmode) ? operand_b_rev : operand_b_i;
-
-    // implementation
-    always_comb begin
-      clmul_d = '0;
-      for (int i = 0; i <= riscv::XLEN; i++) begin
-        clmul_d = (|((operand_b >> i) & 1)) ? clmul_d ^ (operand_a << i) : clmul_d;
-      end
-    end
-
-    // clmulr + clmulh result generator
-    for (genvar i = 0; i < riscv::XLEN; i++) begin
-      assign clmulr_d[i] = clmul_d[(riscv::XLEN-1)-i];
-    end
-  end
-
   // Pipeline register
   logic [TRANS_ID_BITS-1:0] trans_id_q;
   logic                     mult_valid_q;
@@ -26297,17 +25961,6 @@ module multiplier
       // MUL performs an XLEN-bitÃ—XLEN-bit multiplication and places the lower XLEN bits in the destination register
       default:             result_o = mult_result_q[riscv::XLEN-1:0];  // including MUL
     endcase
-  end
-  if (ariane_pkg::BITMANIP) begin
-    always_ff @(posedge clk_i or negedge rst_ni) begin
-      if (~rst_ni) begin
-        clmul_q  <= '0;
-        clmulr_q <= '0;
-      end else begin
-        clmul_q  <= clmul_d;
-        clmulr_q <= clmulr_d;
-      end
-    end
   end
   // -----------------------
   // Output pipeline register
@@ -29323,9 +28976,7 @@ module btb #(
 
   assign index     = vpc_i[PREDICTION_BITS-1:ROW_ADDR_BITS+OFFSET];
   assign update_pc = btb_update_i.pc[PREDICTION_BITS-1:ROW_ADDR_BITS+OFFSET];
-  if (CVA6Cfg.RVC) begin : gen_update_row_index
-    assign update_row_index = btb_update_i.pc[ROW_ADDR_BITS+OFFSET-1:OFFSET];
-  end else begin
+  begin
     assign update_row_index = '0;
   end
 
@@ -29506,9 +29157,7 @@ module bht #(
 
   assign index     = vpc_i[PREDICTION_BITS-1:ROW_ADDR_BITS+OFFSET];
   assign update_pc = bht_update_i.pc[PREDICTION_BITS-1:ROW_ADDR_BITS+OFFSET];
-  if (CVA6Cfg.RVC) begin : gen_update_row_index
-    assign update_row_index = bht_update_i.pc[ROW_ADDR_BITS+OFFSET-1:OFFSET];
-  end else begin
+  begin
     assign update_row_index = '0;
   end
 
@@ -29583,9 +29232,7 @@ module bht #(
     ariane_pkg::bht_t [                ariane_pkg::INSTR_PER_FETCH-1:0] bht;
     ariane_pkg::bht_t [                ariane_pkg::INSTR_PER_FETCH-1:0] bht_updated;
 
-    if (CVA6Cfg.RVC) begin : gen_row_index
-      assign row_index = vpc_i[ROW_ADDR_BITS+OFFSET-1:OFFSET];
-    end else begin
+    begin
       assign row_index = '0;
     end
 
@@ -29953,78 +29600,7 @@ ariane_pkg::FETCH_FIFO_DEPTH
 
   assign ready_o = ~(|instr_queue_full) & ~full_address;
 
-  if (ariane_pkg::RVC) begin : gen_multiple_instr_per_fetch_with_C
-
-    for (genvar i = 0; i < ariane_pkg::INSTR_PER_FETCH; i++) begin : gen_unpack_taken
-      assign taken[i] = cf_type_i[i] != ariane_pkg::NoCF;
-    end
-
-    // calculate a branch mask, e.g.: get the first taken branch
-    lzc #(
-        .WIDTH(ariane_pkg::INSTR_PER_FETCH),
-        .MODE (0)                             // count trailing zeros
-    ) i_lzc_branch_index (
-        .in_i   (taken),         // we want to count trailing zeros
-        .cnt_o  (branch_index),  // first branch on branch_index
-        .empty_o(branch_empty)
-    );
-
-
-    // the first index is for sure valid
-    // for example (64 bit fetch):
-    // taken mask: 0 1 1 0
-    // leading zero count = 1
-    // 0 0 0 1, 1 1 1 << 1 = 0 0 1 1, 1 1 0
-    // take the upper 4 bits: 0 0 1 1
-    assign branch_mask_extended = {{{ariane_pkg::INSTR_PER_FETCH-1}{1'b0}}, {{ariane_pkg::INSTR_PER_FETCH}{1'b1}}} << branch_index;
-    assign branch_mask = branch_mask_extended[ariane_pkg::INSTR_PER_FETCH * 2 - 2:ariane_pkg::INSTR_PER_FETCH - 1];
-
-    // mask with taken branches to get the actual amount of instructions we want to push
-    assign valid = valid_i & branch_mask;
-    // rotate right again
-    assign consumed_extended = {push_instr_fifo, push_instr_fifo} >> idx_is_q;
-    assign consumed_o = consumed_extended[ariane_pkg::INSTR_PER_FETCH-1:0];
-    // count the numbers of valid instructions we've pushed from this package
-    popcount #(
-        .INPUT_WIDTH(ariane_pkg::INSTR_PER_FETCH)
-    ) i_popcount (
-        .data_i    (push_instr_fifo),
-        .popcount_o(popcount)
-    );
-    assign shamt = popcount[$bits(shamt)-1:0];
-
-    // save the shift amount for next cycle
-    assign idx_is_d = idx_is_q + shamt;
-
-    // ----------------------
-    // Input interface
-    // ----------------------
-    // rotate left by the current position
-    assign fifo_pos_extended = {valid, valid} << idx_is_q;
-    // we just care about the upper bits
-    assign fifo_pos = fifo_pos_extended[ariane_pkg::INSTR_PER_FETCH*2-1:ariane_pkg::INSTR_PER_FETCH];
-    // the fifo_position signal can directly be used to guide the push signal of each FIFO
-    // make sure it is not full
-    assign push_instr = fifo_pos & ~instr_queue_full;
-
-    // duplicate the entries for easier selection e.g.: 3 2 1 0 3 2 1 0
-    for (genvar i = 0; i < ariane_pkg::INSTR_PER_FETCH; i++) begin : gen_duplicate_instr_input
-      assign instr[i] = instr_i[i];
-      assign instr[i+ariane_pkg::INSTR_PER_FETCH] = instr_i[i];
-      assign cf[i] = cf_type_i[i];
-      assign cf[i+ariane_pkg::INSTR_PER_FETCH] = cf_type_i[i];
-    end
-
-    // shift the inputs
-    for (genvar i = 0; i < ariane_pkg::INSTR_PER_FETCH; i++) begin : gen_fifo_input_select
-      /* verilator lint_off WIDTH */
-      assign instr_data_in[i].instr = instr[i+idx_is_q];
-      assign instr_data_in[i].cf = cf[i+idx_is_q];
-      assign instr_data_in[i].ex = exception_i;  // exceptions hold for the whole fetch packet
-      assign instr_data_in[i].ex_vaddr = exception_addr_i;
-      /* verilator lint_on WIDTH */
-    end
-  end else begin : gen_multiple_instr_per_fetch_without_C
+  begin : gen_multiple_instr_per_fetch_without_C
 
     assign taken = '0;
     assign branch_empty = '0;
@@ -30062,22 +29638,14 @@ ariane_pkg::FETCH_FIFO_DEPTH
   // (e.g.: we pushed and it was full)
   // 2. The address/branch predict FIFO was full
   // if one of the FIFOs was full we need to replay the faulting instruction
-  if (ariane_pkg::RVC == 1'b1) begin : gen_instr_overflow_fifo_with_C
-    assign instr_overflow_fifo = instr_queue_full & fifo_pos;
-  end else begin : gen_instr_overflow_fifo_without_C
+  begin : gen_instr_overflow_fifo_without_C
     assign instr_overflow_fifo = instr_queue_full & valid_i;
   end
   assign instr_overflow = |instr_overflow_fifo;  // at least one instruction overflowed
   assign address_overflow = full_address & push_address;
   assign replay_o = instr_overflow | address_overflow;
 
-  if (ariane_pkg::RVC) begin : gen_replay_addr_o_with_c
-    // select the address, in the case of an address fifo overflow just
-    // use the base of this package
-    // if we successfully pushed some instructions we can output the next instruction
-    // which we didn't manage to push
-    assign replay_addr_o = (address_overflow) ? addr_i[0] : addr_i[shamt];
-  end else begin : gen_replay_addr_o_without_C
+  begin : gen_replay_addr_o_without_C
     assign replay_addr_o = addr_i[0];
   end
 
@@ -30087,45 +29655,7 @@ ariane_pkg::FETCH_FIFO_DEPTH
   // as long as there is at least one queue which can take the value we have a valid instruction
   assign fetch_entry_valid_o = ~(&instr_queue_empty);
 
-  if (ariane_pkg::RVC) begin : gen_downstream_itf_with_c
-    always_comb begin
-      idx_ds_d = idx_ds_q;
 
-      pop_instr = '0;
-      // assemble fetch entry
-      fetch_entry_o.instruction = '0;
-      fetch_entry_o.address = pc_q;
-      fetch_entry_o.ex.valid = 1'b0;
-      fetch_entry_o.ex.cause = '0;
-
-      fetch_entry_o.ex.tval = '0;
-      fetch_entry_o.branch_predict.predict_address = address_out;
-      fetch_entry_o.branch_predict.cf = ariane_pkg::NoCF;
-      // output mux select
-      for (int unsigned i = 0; i < ariane_pkg::INSTR_PER_FETCH; i++) begin
-        if (idx_ds_q[i]) begin
-          if (instr_data_out[i].ex == ariane_pkg::FE_INSTR_ACCESS_FAULT) begin
-            fetch_entry_o.ex.cause = riscv::INSTR_ACCESS_FAULT;
-          end else begin
-            fetch_entry_o.ex.cause = riscv::INSTR_PAGE_FAULT;
-          end
-          fetch_entry_o.instruction = instr_data_out[i].instr;
-          fetch_entry_o.ex.valid = instr_data_out[i].ex != ariane_pkg::FE_NONE;
-          fetch_entry_o.ex.tval = {
-            {(riscv::XLEN - riscv::VLEN) {1'b0}}, instr_data_out[i].ex_vaddr
-          };
-          fetch_entry_o.branch_predict.cf = instr_data_out[i].cf;
-          pop_instr[i] = fetch_entry_valid_o & fetch_entry_ready_i;
-        end
-      end
-      // rotate the pointer left
-      if (fetch_entry_ready_i) begin
-        idx_ds_d = {
-          idx_ds_q[ariane_pkg::INSTR_PER_FETCH-2:0], idx_ds_q[ariane_pkg::INSTR_PER_FETCH-1]
-        };
-      end
-    end
-  end else begin : gen_downstream_itf_without_c
     always_comb begin
       idx_ds_d = '0;
       idx_is_d = '0;
@@ -30145,7 +29675,6 @@ ariane_pkg::FETCH_FIFO_DEPTH
 
       pop_instr[0] = fetch_entry_valid_o & fetch_entry_ready_i;
     end
-  end
 
   // TODO(zarubaf): This needs to change for dual-issue
   // if the handshaking is successful and we had a prediction pop one address entry
@@ -30161,9 +29690,7 @@ ariane_pkg::FETCH_FIFO_DEPTH
     if (fetch_entry_ready_i) begin
       // TODO(zarubaf): This needs to change for a dual issue implementation
       // advance the PC
-      if (ariane_pkg::RVC == 1'b1) begin : gen_pc_with_c_extension
-        pc_d = pc_q + ((fetch_entry_o.instruction[1:0] != 2'b11) ? 'd2 : 'd4);
-      end else begin : gen_pc_without_c_extension
+      begin : gen_pc_without_c_extension
         pc_d = pc_q + 'd4;
       end
     end
@@ -30232,29 +29759,6 @@ ariane_pkg::FETCH_FIFO_DEPTH
   unread i_unread_fifo_pos (.d_i(|fifo_pos_extended));  // we don't care about the lower signals
   unread i_unread_instr_fifo (.d_i(|instr_queue_usage));
 
-  if (ariane_pkg::RVC) begin : gen_pc_q_with_c
-    always_ff @(posedge clk_i or negedge rst_ni) begin
-      if (!rst_ni) begin
-        idx_ds_q        <= 'b1;
-        idx_is_q        <= '0;
-        pc_q            <= '0;
-        reset_address_q <= 1'b1;
-      end else begin
-        pc_q            <= pc_d;
-        reset_address_q <= reset_address_d;
-        if (flush_i) begin
-          // one-hot encoded
-          idx_ds_q        <= 'b1;
-          // binary encoded
-          idx_is_q        <= '0;
-          reset_address_q <= 1'b1;
-        end else begin
-          idx_ds_q <= idx_ds_d;
-          idx_is_q <= idx_is_d;
-        end
-      end
-    end
-  end else begin : gen_pc_q_without_C
     assign idx_ds_q = '0;
     assign idx_is_q = '0;
     always_ff @(posedge clk_i or negedge rst_ni) begin
@@ -30269,7 +29773,6 @@ ariane_pkg::FETCH_FIFO_DEPTH
         end
       end
     end
-  end
 
   // pragma translate_off
 `ifndef VERILATOR
@@ -30362,9 +29865,7 @@ module frontend
   // shift amount
   logic [$clog2(ariane_pkg::INSTR_PER_FETCH)-1:0] shamt;
   // address will always be 16 bit aligned, make this explicit here
-  if (CVA6Cfg.RVC) begin : gen_shamt
-    assign shamt = icache_dreq_i.vaddr[$clog2(ariane_pkg::INSTR_PER_FETCH):1];
-  end else begin
+  begin
     assign shamt = 1'b0;
   end
 
@@ -30423,21 +29924,7 @@ module frontend
   // select the right branch prediction result
   // in case we are serving an unaligned instruction in instr[0] we need to take
   // the prediction we saved from the previous fetch
-  if (CVA6Cfg.RVC) begin : gen_btb_prediction_shifted
-    assign bht_prediction_shifted[0] = (serving_unaligned) ? bht_q : bht_prediction[addr[0][$clog2(
-        INSTR_PER_FETCH
-    ):1]];
-    assign btb_prediction_shifted[0] = (serving_unaligned) ? btb_q : btb_prediction[addr[0][$clog2(
-        INSTR_PER_FETCH
-    ):1]];
-
-    // for all other predictions we can use the generated address to index
-    // into the branch prediction data structures
-    for (genvar i = 1; i < INSTR_PER_FETCH; i++) begin : gen_prediction_address
-      assign bht_prediction_shifted[i] = bht_prediction[addr[i][$clog2(INSTR_PER_FETCH):1]];
-      assign btb_prediction_shifted[i] = btb_prediction[addr[i][$clog2(INSTR_PER_FETCH):1]];
-    end
-  end else begin
+  begin
     assign bht_prediction_shifted[0] = (serving_unaligned) ? bht_q : bht_prediction[addr[0][1]];
     assign btb_prediction_shifted[0] = (serving_unaligned) ? btb_q : btb_prediction[addr[0][1]];
   end
@@ -52496,7 +51983,48 @@ module axi_lite_interface #(
     `ifndef VERILATOR
     // check that burst length is just one
     assert property (@(posedge clk_i) axi_req_i.ar_valid |->  ((axi_req_i.ar.len == 8'b0)))
-    else begin $error("AXI Lite does not support bursts larger than 1 or byte length unequal to the native bus size"); $stop(); end     // do the same for the write channel     assert property (@(posedge clk_i) axi_req_i.aw_valid |->  ((axi_req_i.aw.len == 8'b0)))     else begin $error("AXI Lite does not support bursts larger than 1 or byte length unequal to the native bus size"); $stop(); end     `endif     //pragma translate_on endmodule   // C:/code/cva6-softcore-contest/corev_apu/clint/clint.sv // Copyright 2018 ETH Zurich and University of Bologna. // Copyright and related rights are licensed under the Solderpad Hardware // License, Version 0.51 (the “License”); you may not use this file except in // compliance with the License.  You may obtain a copy of the License at // http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law // or agreed to in writing, software, hardware and materials distributed under // this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR // CONDITIONS OF ANY KIND, either express or implied. See the License for the // specific language governing permissions and limitations under the License. // // Author: Florian Zaruba, ETH Zurich // Date: 15/07/2017 // Description: A RISC-V privilege spec 1.11 (WIP) compatible CLINT (core local interrupt controller) //  // Platforms provide a real-time counter, exposed as a memory-mapped machine-mode register, mtime. mtime must run at // constant frequency, and the platform must provide a mechanism for determining the timebase of mtime (device tree).  module clint #(     parameter int unsigned AXI_ADDR_WIDTH = 64,     parameter int unsigned AXI_DATA_WIDTH = 64,     parameter int unsigned AXI_ID_WIDTH   = 10,     parameter int unsigned NR_CORES       = 1, // Number of cores therefore also the number of timecmp registers and timer interrupts     parameter type         axi_req_t      = ariane_axi::req_t,     parameter type         axi_resp_t     = ariane_axi::resp_t ) (     input  logic                clk_i,       // Clock     input  logic                rst_ni,      // Asynchronous reset active low     input  logic                testmode_i,     input  axi_req_t            axi_req_i,     output axi_resp_t           axi_resp_o,     input  logic                rtc_i,       // Real-time clock in (usually 32.768 kHz)     output logic [NR_CORES-1:0] timer_irq_o, // Timer interrupts     output logic [NR_CORES-1:0] ipi_o        // software interrupt (a.k.a inter-process-interrupt) );
+    else begin $error("AXI Lite does not support bursts larger than 1 or byte length unequal to the native bus size"); $stop(); end
+    `endif
+    //pragma translate_on
+endmodule
+
+
+// C:/code/cva6-softcore-contest/corev_apu/clint/clint.sv
+// Copyright 2018 ETH Zurich and University of Bologna.
+// Copyright and related rights are licensed under the Solderpad Hardware
+// License, Version 0.51 (the “License”); you may not use this file except in
+// compliance with the License.  You may obtain a copy of the License at
+// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
+// or agreed to in writing, software, hardware and materials distributed under
+// this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR
+// CONDITIONS OF ANY KIND, either express or implied. See the License for the
+// specific language governing permissions and limitations under the License.
+//
+// Author: Florian Zaruba, ETH Zurich
+// Date: 15/07/2017
+// Description: A RISC-V privilege spec 1.11 (WIP) compatible CLINT (core local interrupt controller)
+//
+
+// Platforms provide a real-time counter, exposed as a memory-mapped machine-mode register, mtime. mtime must run at
+// constant frequency, and the platform must provide a mechanism for determining the timebase of mtime (device tree).
+
+module clint #(
+    parameter int unsigned AXI_ADDR_WIDTH = 64,
+    parameter int unsigned AXI_DATA_WIDTH = 64,
+    parameter int unsigned AXI_ID_WIDTH   = 10,
+    parameter int unsigned NR_CORES       = 1, // Number of cores therefore also the number of timecmp registers and timer interrupts
+    parameter type         axi_req_t      = ariane_axi::req_t,
+    parameter type         axi_resp_t     = ariane_axi::resp_t
+) (
+    input  logic                clk_i,       // Clock
+    input  logic                rst_ni,      // Asynchronous reset active low
+    input  logic                testmode_i,
+    input  axi_req_t            axi_req_i,
+    output axi_resp_t           axi_resp_o,
+    input  logic                rtc_i,       // Real-time clock in (usually 32.768 kHz)
+    output logic [NR_CORES-1:0] timer_irq_o, // Timer interrupts
+    output logic [NR_CORES-1:0] ipi_o        // software interrupt (a.k.a inter-process-interrupt)
+);
     // register offset
     localparam logic [15:0] MSIP_BASE     = 16'h0;
     localparam logic [15:0] MTIMECMP_BASE = 16'h4000;
@@ -53956,189 +53484,6 @@ module axi2apb
     end
 
 endmodule
-
-
-// C:/code/cva6-softcore-contest/corev_apu/fpga/src/axi2apb/src/axi2apb_wrap.sv
-// Copyright 2014-2018 ETH Zurich and University of Bologna.
-// Copyright and related rights are licensed under the Solderpad Hardware
-// License, Version 0.51 (the “License”); you may not use this file except in
-// compliance with the License.  You may obtain a copy of the License at
-// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
-// or agreed to in writing, software, hardware and materials distributed under
-// this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR
-// CONDITIONS OF ANY KIND, either express or implied. See the License for the
-// specific language governing permissions and limitations under the License.
-
-module axi2apb_wrap #(
-    parameter int unsigned AXI_ADDR_WIDTH   = 32,
-    parameter int unsigned AXI_DATA_WIDTH   = 32,
-    parameter int unsigned AXI_USER_WIDTH   = 6,
-    parameter int unsigned AXI_ID_WIDTH     = 6,
-    parameter int unsigned APB_ADDR_WIDTH   = 32,
-    parameter int unsigned APB_DATA_WIDTH   = 32
-)(
-    input logic     clk_i,
-    input logic     rst_ni,
-    input logic     test_en_i,
-
-    AXI_BUS.Slave   axi_slave,
-    APB_BUS.Master  apb_master
-);
-
-    // ----------------
-    // AXI2APB WRAPER
-    // ----------------
-    generate if (AXI_DATA_WIDTH == APB_DATA_WIDTH) begin
-        axi2apb #(
-            .AXI4_ADDRESS_WIDTH ( AXI_ADDR_WIDTH ),
-            .AXI4_RDATA_WIDTH   ( AXI_DATA_WIDTH ),
-            .AXI4_WDATA_WIDTH   ( AXI_DATA_WIDTH ),
-            .AXI4_ID_WIDTH      ( AXI_ID_WIDTH   ),
-            .AXI4_USER_WIDTH    ( AXI_USER_WIDTH ),
-
-            .BUFF_DEPTH_SLAVE   ( 2              ),
-            .APB_ADDR_WIDTH     ( APB_ADDR_WIDTH )
-        ) axi2apb_i (
-            .ACLK       ( clk_i                  ),
-            .ARESETn    ( rst_ni                 ),
-            .test_en_i  ( test_en_i              ),
-
-            .AWID_i     ( axi_slave.aw_id        ),
-            .AWADDR_i   ( axi_slave.aw_addr      ),
-            .AWLEN_i    ( axi_slave.aw_len       ),
-            .AWSIZE_i   ( axi_slave.aw_size      ),
-            .AWBURST_i  ( axi_slave.aw_burst     ),
-            .AWLOCK_i   ( axi_slave.aw_lock      ),
-            .AWCACHE_i  ( axi_slave.aw_cache     ),
-            .AWPROT_i   ( axi_slave.aw_prot      ),
-            .AWREGION_i ( axi_slave.aw_region    ),
-            .AWUSER_i   ( axi_slave.aw_user      ),
-            .AWQOS_i    ( axi_slave.aw_qos       ),
-            .AWVALID_i  ( axi_slave.aw_valid     ),
-            .AWREADY_o  ( axi_slave.aw_ready     ),
-
-            .WDATA_i    ( axi_slave.w_data       ),
-            .WSTRB_i    ( axi_slave.w_strb       ),
-            .WLAST_i    ( axi_slave.w_last       ),
-            .WUSER_i    ( axi_slave.w_user       ),
-            .WVALID_i   ( axi_slave.w_valid      ),
-            .WREADY_o   ( axi_slave.w_ready      ),
-
-            .BID_o      ( axi_slave.b_id         ),
-            .BRESP_o    ( axi_slave.b_resp       ),
-            .BVALID_o   ( axi_slave.b_valid      ),
-            .BUSER_o    ( axi_slave.b_user       ),
-            .BREADY_i   ( axi_slave.b_ready      ),
-
-            .ARID_i     ( axi_slave.ar_id        ),
-            .ARADDR_i   ( axi_slave.ar_addr      ),
-            .ARLEN_i    ( axi_slave.ar_len       ),
-            .ARSIZE_i   ( axi_slave.ar_size      ),
-            .ARBURST_i  ( axi_slave.ar_burst     ),
-            .ARLOCK_i   ( axi_slave.ar_lock      ),
-            .ARCACHE_i  ( axi_slave.ar_cache     ),
-            .ARPROT_i   ( axi_slave.ar_prot      ),
-            .ARREGION_i ( axi_slave.ar_region    ),
-            .ARUSER_i   ( axi_slave.ar_user      ),
-            .ARQOS_i    ( axi_slave.ar_qos       ),
-            .ARVALID_i  ( axi_slave.ar_valid     ),
-            .ARREADY_o  ( axi_slave.ar_ready     ),
-
-            .RID_o      ( axi_slave.r_id         ),
-            .RDATA_o    ( axi_slave.r_data       ),
-            .RRESP_o    ( axi_slave.r_resp       ),
-            .RLAST_o    ( axi_slave.r_last       ),
-            .RUSER_o    ( axi_slave.r_user       ),
-            .RVALID_o   ( axi_slave.r_valid      ),
-            .RREADY_i   ( axi_slave.r_ready      ),
-
-            .PENABLE    ( apb_master.penable     ),
-            .PWRITE     ( apb_master.pwrite      ),
-            .PADDR      ( apb_master.paddr       ),
-            .PSEL       ( apb_master.psel        ),
-            .PWDATA     ( apb_master.pwdata      ),
-            .PRDATA     ( apb_master.prdata      ),
-            .PREADY     ( apb_master.pready      ),
-            .PSLVERR    ( apb_master.pslverr     )
-        );
-        end else if (AXI_DATA_WIDTH == 64 && APB_DATA_WIDTH == 32) begin
-            axi2apb_64_32  #(
-                .AXI4_ADDRESS_WIDTH ( AXI_ADDR_WIDTH ),
-                .AXI4_RDATA_WIDTH   ( AXI_DATA_WIDTH ),
-                .AXI4_WDATA_WIDTH   ( AXI_DATA_WIDTH ),
-                .AXI4_ID_WIDTH      ( AXI_ID_WIDTH   ),
-                .AXI4_USER_WIDTH    ( AXI_USER_WIDTH ),
-
-                .BUFF_DEPTH_SLAVE   ( 2              ),
-                .APB_ADDR_WIDTH     ( APB_ADDR_WIDTH )
-            ) axi2apb_i (
-                .ACLK       ( clk_i                  ),
-                .ARESETn    ( rst_ni                 ),
-                .test_en_i  ( test_en_i              ),
-
-                .AWID_i     ( axi_slave.aw_id        ),
-                .AWADDR_i   ( axi_slave.aw_addr      ),
-                .AWLEN_i    ( axi_slave.aw_len       ),
-                .AWSIZE_i   ( axi_slave.aw_size      ),
-                .AWBURST_i  ( axi_slave.aw_burst     ),
-                .AWLOCK_i   ( axi_slave.aw_lock      ),
-                .AWCACHE_i  ( axi_slave.aw_cache     ),
-                .AWPROT_i   ( axi_slave.aw_prot      ),
-                .AWREGION_i ( axi_slave.aw_region    ),
-                .AWUSER_i   ( axi_slave.aw_user      ),
-                .AWQOS_i    ( axi_slave.aw_qos       ),
-                .AWVALID_i  ( axi_slave.aw_valid     ),
-                .AWREADY_o  ( axi_slave.aw_ready     ),
-
-                .WDATA_i    ( axi_slave.w_data       ),
-                .WSTRB_i    ( axi_slave.w_strb       ),
-                .WLAST_i    ( axi_slave.w_last       ),
-                .WUSER_i    ( axi_slave.w_user       ),
-                .WVALID_i   ( axi_slave.w_valid      ),
-                .WREADY_o   ( axi_slave.w_ready      ),
-
-                .BID_o      ( axi_slave.b_id         ),
-                .BRESP_o    ( axi_slave.b_resp       ),
-                .BVALID_o   ( axi_slave.b_valid      ),
-                .BUSER_o    ( axi_slave.b_user       ),
-                .BREADY_i   ( axi_slave.b_ready      ),
-
-                .ARID_i     ( axi_slave.ar_id        ),
-                .ARADDR_i   ( axi_slave.ar_addr      ),
-                .ARLEN_i    ( axi_slave.ar_len       ),
-                .ARSIZE_i   ( axi_slave.ar_size      ),
-                .ARBURST_i  ( axi_slave.ar_burst     ),
-                .ARLOCK_i   ( axi_slave.ar_lock      ),
-                .ARCACHE_i  ( axi_slave.ar_cache     ),
-                .ARPROT_i   ( axi_slave.ar_prot      ),
-                .ARREGION_i ( axi_slave.ar_region    ),
-                .ARUSER_i   ( axi_slave.ar_user      ),
-                .ARQOS_i    ( axi_slave.ar_qos       ),
-                .ARVALID_i  ( axi_slave.ar_valid     ),
-                .ARREADY_o  ( axi_slave.ar_ready     ),
-
-                .RID_o      ( axi_slave.r_id         ),
-                .RDATA_o    ( axi_slave.r_data       ),
-                .RRESP_o    ( axi_slave.r_resp       ),
-                .RLAST_o    ( axi_slave.r_last       ),
-                .RUSER_o    ( axi_slave.r_user       ),
-                .RVALID_o   ( axi_slave.r_valid      ),
-                .RREADY_i   ( axi_slave.r_ready      ),
-
-                .PENABLE    ( apb_master.penable     ),
-                .PWRITE     ( apb_master.pwrite      ),
-                .PADDR      ( apb_master.paddr       ),
-                .PSEL       ( apb_master.psel        ),
-                .PWDATA     ( apb_master.pwdata      ),
-                .PRDATA     ( apb_master.prdata      ),
-                .PREADY     ( apb_master.pready      ),
-                .PSLVERR    ( apb_master.pslverr     )
-            );
-        end
-  endgenerate
-endmodule
-
-
 // C:/code/cva6-softcore-contest/corev_apu/fpga/src/apb_timer/apb_timer.sv
 // Copyright 2015 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware

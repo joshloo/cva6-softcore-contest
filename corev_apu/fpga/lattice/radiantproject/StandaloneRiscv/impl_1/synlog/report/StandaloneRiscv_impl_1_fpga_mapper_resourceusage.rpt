@@ -16,7 +16,7 @@ GSRA:           1
 IB:             112
 IFD1P3BX:       1
 IFD1P3DX:       32
-INV:            21
+INV:            20
 LUT4:           10122
 OB:             268
 PDPSC32K:       42
@@ -24,7 +24,7 @@ SP16KA:         1
 SPR32X2:        4
 VHI:            153
 VLO:            153
-WIDEFN9:        1387
+WIDEFN9:        1385
 MULT18X18A:     2
 MULTADDSUB18X18A: 2
 
