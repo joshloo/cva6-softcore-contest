@@ -5,19 +5,19 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\synlog\report\StandaloneRiscv_impl_1_fpga_mapper_resourceusage.rpt</data>
+<data>/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/synlog/report/StandaloneRiscv_impl_1_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <parameter tooltip="Total Register bits used" name="Register bits">
-<data>4878</data>
+<data>166</data>
 </parameter>
 <parameter tooltip="Total I/O cells used" name="I/O cells">
-<data>380</data>
+<data>6</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
-<data>43</data>
+<data>0</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
-<data>10122</data>
+<data>187</data>
 </parameter>
 </report_table>

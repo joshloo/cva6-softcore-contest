@@ -6,16 +6,20 @@ with Synopsys, Inc. All other use, reproduction, modification, or distribution o
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
 Build: V-2023.09LR-1
-Install: C:\lscc\radiant\2024.1\synpbase
-OS: Windows 10 or later
-Hostname: LPGL109105
+Install: /home/anonymous/lscc/radiant/2024.1/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: anonymous
+max virtual memory: unlimited (bytes)
+max user processes: 143858
+max stack size: 8388608 (bytes)
+
 
 Implementation : impl_1
 
-# Written on Mon Oct 28 11:48:03 2024
+# Written on Wed Nov 27 11:06:33 2024
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      "C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl"
+Constraint File(s):      "/home/anonymous/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################
@@ -29,22 +33,18 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                                                          Requested     Requested     Clock        Clock          Clock
-Level     Clock                                                          Frequency     Period        Type         Group          Load 
---------------------------------------------------------------------------------------------------------------------------------------
-0 -       ariane|clk_i                                                   200.0 MHz     5.000         inferred     (multiple)     7251 
-                                                                                                                                      
-0 -       load_unit_0_1s_23_layer0|rdata_is_fp_signed_inferred_clock     200.0 MHz     5.000         inferred     (multiple)     32   
-======================================================================================================================================
+          Start              Requested     Requested     Clock        Clock          Clock
+Level     Clock              Frequency     Period        Type         Group          Load 
+------------------------------------------------------------------------------------------
+0 -       cva6_avant|tck     200.0 MHz     5.000         inferred     (multiple)     168  
+==========================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                                               Clock     Source                                                             Clock Pin                                                          Non-clock Pin     Non-clock Pin                                                       
-Clock                                                          Load      Pin                                                                Seq Example                                                        Seq Example       Comb Example                                                        
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ariane|clk_i                                                   7251      clk_i(port)                                                        i_cva6.gen_cache_wt\.i_cache_subsystem.i_adapter.amo_gen_r_q.C     -                 -                                                                   
-                                                                                                                                                                                                                                                                                                     
-load_unit_0_1s_23_layer0|rdata_is_fp_signed_inferred_clock     32        i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT(or)     i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[0].C                  -                 i_cva6.ex_stage_i.lsu_i.i_load_unit.un1_rdata_is_fp_signed.I[0](inv)
-=====================================================================================================================================================================================================================================================================================================
+                   Clock     Source        Clock Pin                     Non-clock Pin     Non-clock Pin                                                        
+Clock              Load      Pin           Seq Example                   Seq Example       Comb Example                                                         
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+cva6_avant|tck     168       tck(port)     i_dmi_jtag.data_q[31:0].C     -                 i_dmi_jtag.i_dmi_jtag_tap.i_tck_inv.i_tc_clk_inverter.clk_o.I[0](inv)
+================================================================================================================================================================

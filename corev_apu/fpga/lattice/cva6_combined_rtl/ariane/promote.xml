@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/promote.xml" version="Diamond (64-bit) 2024.1.1.259.1" date="Fri Oct 04 15:38:47 2024" vendor="Lattice Semiconductor Corporation" >
-  <msg mid="2012653" type="Warning" internal="true" />
+<userSetting name="/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/promote.xml" version="Diamond (64-bit) 2024.1.0.34.2  Patch Version(s) " date="Rab Nov 27 10:01:29  +08 2024" vendor="Lattice Semiconductor Corporation" >
   <msg mid="2012925" type="Error" internal="true" />
+  <msg mid="2012653" type="Warning" internal="true" />
 </userSetting>

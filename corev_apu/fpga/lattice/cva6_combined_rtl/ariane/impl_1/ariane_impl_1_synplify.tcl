@@ -45,16 +45,16 @@ set_option -automatic_compile_point 1
 
 set_option -dup false
 set_option -disable_io_insertion false
-add_file -constraint {C:/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl}
-add_file -verilog {C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v}
-add_file -vhdl -lib pmi {C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd}
-add_file -verilog -vlog_std v2001 {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice/rtl/arianelattice.v}
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane}
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice}
+add_file -constraint {/home/anonymous/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl}
+add_file -verilog {/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v}
+add_file -vhdl -lib pmi {/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd}
+add_file -verilog -vlog_std v2001 {/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice/rtl/arianelattice.v}
+set_option -include_path {/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane}
+set_option -include_path {/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice}
 
 #-- set result format/file last
 project -result_format "vm"
-project -result_file {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.vm}
+project -result_file {/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.vm}
 
 #-- error message log file
 project -log_file {ariane_impl_1.srf}

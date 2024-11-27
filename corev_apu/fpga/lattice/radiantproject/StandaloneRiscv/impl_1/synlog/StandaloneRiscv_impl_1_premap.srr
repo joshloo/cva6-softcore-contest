@@ -1,4 +1,4 @@
-# Mon Oct 28 11:48:02 2024
+# Wed Nov 27 11:06:33 2024
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -8,263 +8,140 @@ with Synopsys, Inc. All other use, reproduction, modification, or distribution o
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
 Build: V-2023.09LR-1
-Install: C:\lscc\radiant\2024.1\synpbase
-OS: Windows 10 or later
-Hostname: LPGL109105
+Install: /home/anonymous/lscc/radiant/2024.1/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: anonymous
+max virtual memory: unlimited (bytes)
+max user processes: 143858
+max stack size: 8388608 (bytes)
+
 
 Implementation : impl_1
-Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 123R, Built Jun 14 2024 11:20:26, @
+Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 123R, Built Jun 14 2024 09:44:39, @5470900
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 501MB peak: 501MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 214MB peak: 214MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 516MB)
 
-Reading constraint file: C:\lscc\radiant\2024.1\scripts\tcl\flow\radiant_synplify_vars.tcl
-@L: C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\StandaloneRiscv_impl_1_scck.rpt 
-See clock summary report "C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\StandaloneRiscv_impl_1_scck.rpt"
+Reading constraint file: /home/anonymous/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl
+@L: /home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/StandaloneRiscv_impl_1_scck.rpt 
+See clock summary report "/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/StandaloneRiscv_impl_1_scck.rpt"
 @N: MF472 |Synthesis running in Automatic Compile Point mode
+@N: MF474 |No compile point is identified in Automatic Compile Point mode
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 259MB peak: 259MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 516MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 259MB peak: 260MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 515MB peak: 516MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 264MB peak: 264MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 516MB peak: 516MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 264MB peak: 266MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 518MB peak: 518MB)
 
-@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":28971:9:28971:16|Removing instance i_unread (in view: work.btb_32s_2s_32s_0s_1s_7s_8s_33s_5_layer0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29146:9:29146:16|Removing instance i_unread (in view: work.bht_128_2s_128_0s_1s_9s_6_layer0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29760:9:29760:27|Removing instance i_unread_instr_fifo (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29759:9:29759:25|Removing instance i_unread_fifo_pos (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29758:9:29758:20|Removing instance i_unread_lzc (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29757:9:29757:28|Removing instance i_unread_branch_mask (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
-@W: BN114 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":29756:9:29756:29|Removing instance i_unread_address_fifo (in view: work.instr_queue_2_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":34417:4:34417:7|Removing sequential instance assert_1 (in view: work.axi_adapter__internal_typedef_62__internal_typedef_63_222_32s_0s_8s_0_1s_7_3s_68_layer0(verilog)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":34417:4:34417:7|Removing sequential instance assert_0 (in view: work.axi_adapter__internal_typedef_62__internal_typedef_63_222_32s_0s_8s_0_1s_7_3s_68_layer0(verilog)) of type view:PrimLib.lat(prim) because it does not drive other instances.
 NConnInternalConnection caching is on
-@N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[0\][71:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance mem\[1\][31:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-@N: FX493 |Applying initial value "00000000000000000000000000000000000000" on instance mem\[1\][37:0].
-@N: FX493 |Applying initial value "00000000000000000000000000000000000000" on instance mem\[0\][37:0].
-@N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[1\][110:0].
-@N: FX493 |Applying initial value "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" on instance mem\[0\][110:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance mem\[0\][31:0].
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":66157:4:66157:15|Removing instance master_to_dm\[0\] (in view: work.cva6_avant(verilog)) because it does not drive other instances.
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 324MB peak: 324MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 324MB peak: 325MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
 
-Start optimization across hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 324MB peak: 325MB)
-
-@W: BN132 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23732:2:23732:10|Removing sequential instance i_cva6.id_stage_i.issue_q.sbe.ex.valid because it is equivalent to instance i_cva6.id_stage_i.issue_q.sbe.valid. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24672:8:24672:19|Removing instance ldbuf_free_index_multi_gen\.lzc_windex_i (in view: work.load_unit_0_1s_23_layer0(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.x (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.v (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.r (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.a (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.x (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.v (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.r (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.a (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50718:4:50718:12|Removing instance i_pmp_ptw (in view: work.cva6_ptw_sv32_1s_31_layer0(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.x (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.w (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.v (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.r (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.d (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[0\]\.a (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.rsw[1:0] (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.x (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.w (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.v (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.r (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.d (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":51193:2:51193:10|Removing sequential instance content_q\[1\]\.a (in view: work.cva6_tlb_sv32_2s_1s_26_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50528:4:50528:13|Removing instance i_pmp_data (in view: work.cva6_mmu_sv32_2s_2s_1s_21s_33_layer0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":50367:4:50367:11|Removing instance i_pmp_if (in view: work.cva6_mmu_sv32_2s_2s_1s_21s_33_layer0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25428:4:25428:19|Removing instance i_pipe_reg_store (in view: work.load_store_unit_1s_25_layer0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27091:4:27091:12|Removing instance i_sel_rs3 (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_10_layer0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":26964:6:26964:23|Removing instance gen_sel_clobbers\[0\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_10_layer0(verilog)) because it does not drive other instances.
-@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":24299:2:24299:10|Sequential instance i_cva6.issue_stage_i.i_issue_read_operands.is_compressed_instr_o is reduced to a combinational gate by constant propagation.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30854:4:30854:15|Removing instance i_lzc_rd_hit (in view: work.wt_dcache_mem_4s_3s_43_layer0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30846:4:30846:20|Removing instance i_lzc_wbuffer_hit (in view: work.wt_dcache_mem_4s_3s_43_layer0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16122:10:16122:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_lower (in view: work.rr_arb_tree_wbuffer_t_41_2s_32s_0_0_0_1_1__internal_typedef_140(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16113:10:16113:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_upper (in view: work.rr_arb_tree_wbuffer_t_41_2s_32s_0_0_0_1_1__internal_typedef_140(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16122:10:16122:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_lower (in view: work.rr_arb_tree_wbuffer_t_40_2s_32s_0_0_1_1_1__internal_typedef_138(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16113:10:16113:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_upper (in view: work.rr_arb_tree_wbuffer_t_40_2s_32s_0_0_1_1_1__internal_typedef_138(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":32060:4:32060:12|Removing instance i_hit_lzc (in view: work.wt_dcache_wbuffer_42_layer0(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34058:2:34058:10|Removing sequential instance dcache_rd_shift_user_q\[0\][31:0] (in view: work.wt_axi_adapter__gen35__gen36_42_2s_4s_4_47_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34058:2:34058:10|Removing sequential instance dcache_rd_shift_user_q\[3\][31:0] (in view: work.wt_axi_adapter__gen35__gen36_42_2s_4s_4_47_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34058:2:34058:10|Removing sequential instance dcache_rd_shift_user_q\[2\][31:0] (in view: work.wt_axi_adapter__gen35__gen36_42_2s_4s_4_47_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34058:2:34058:10|Removing sequential instance dcache_rd_shift_user_q\[1\][31:0] (in view: work.wt_axi_adapter__gen35__gen36_42_2s_4s_4_47_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[0\][105] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[0\][104] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[0\][103] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[0\][6] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[1\][105] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[1\][104] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[1\][103] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[1\][6] (in view: work.AsyncDpRam_1s_2s_111s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16122:10:16122:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_lower (in view: work.rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_9(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":16113:10:16113:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_upper (in view: work.rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_9(verilog)) because it does not drive other instances.
-@W: MO129 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33141:2:33141:10|Sequential instance i_cva6.gen_cache_wt.i_cache_subsystem.i_cva6_icache.inv_q is reduced to a combinational gate by constant propagation.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":33073:4:33073:12|Removing instance i_lzc_hit (in view: work.cva6_icache_0s_39_layer0(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":34058:2:34058:10|Removing sequential instance icache_rtrn_tid_q[1:0] (in view: work.wt_axi_adapter__gen35__gen36_42_2s_4s_4_47_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[0\][37] (in view: work.AsyncDpRam_1s_2s_38s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[0\][36] (in view: work.AsyncDpRam_1s_2s_38s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[0\][35] (in view: work.AsyncDpRam_1s_2s_38s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[1\][37] (in view: work.AsyncDpRam_1s_2s_38s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[1\][36] (in view: work.AsyncDpRam_1s_2s_38s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":5469:2:5469:10|Removing sequential instance mem\[1\][35] (in view: work.AsyncDpRam_1s_2s_38s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15115:4:15115:12|Removing sequential instance write_pointer_q[1:0] (in view: work.fifo_v3_0_2s_4s_2s_4s_3(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15115:4:15115:12|Removing sequential instance read_pointer_q[1:0] (in view: work.fifo_v3_0_2s_4s_2s_4s_3(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN115 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":15138:10:15138:17|Removing instance gen_fpga_queue\.fifo_ram (in view: work.fifo_v3_0_2s_4s_2s_4s_3(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":30151:2:30151:10|Removing sequential instance speculative_q (in view: work.frontend_3_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :|Removing sequential instance Mem_DP[32:0] (in view: work.SyncDpRam_5s_32s_33s_0s_1s(verilog)) of type view:PrimLib.ram1(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23732:2:23732:10|Removing sequential instance issue_q\.is_ctrl_flow (in view: work.id_stage_9_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-
-Finished optimization across hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 325MB peak: 325MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 325MB peak: 326MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
-
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 325MB peak: 326MB)
-
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27113:2:27113:10|Removing sequential instance mem_q\[3\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_10_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27113:2:27113:10|Removing sequential instance mem_q\[0\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_10_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27113:2:27113:10|Removing sequential instance mem_q\[1\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_10_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":27113:2:27113:10|Removing sequential instance mem_q\[2\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t_2_0_4s_2s_10_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-Encoding state machine state_q[2:0] (in view: work.serdiv_32s_0s_18_layer0(verilog))
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":65908:14:65908:26|Removing instance i_tc_clk_mux2 (in view: work.pulp_clock_mux2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":58616:18:58616:30|Removing instance i_dft_tck_mux (in view: work.dmi_jtag_tap_5s_613749187(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":65108:26:65108:30|Removing instance i_dst (in view: work.cdc_2phase__internal_typedef_53_214__internal_typedef_53(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":65096:26:65096:30|Removing instance i_src (in view: work.cdc_2phase__internal_typedef_54_217__internal_typedef_54(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":15138:10:15138:17|Removing instance gen_fpga_queue\.fifo_ram (in view: work.fifo_v3__internal_typedef_55_221_0_32s_2s_1s_2s(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":65506:6:65506:14|Removing instance i_fifo_v3 (in view: work.fifo_v2__internal_typedef_55_220_0_32s_2s_1s_1s_1s(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":59304:4:59304:9|Removing instance i_fifo (in view: work.dm_csrs_1s_32s_1_1s_2s_5_39(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":59856:14:59856:24|Removing instance gen_rom_snd_scratch\.i_debug_rom (in view: work.dm_mem_Z66_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":60183:4:60183:12|Removing instance i_dm_csrs (in view: work.dm_top_1s_32s_4096_1_18446744073709551615s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":65142:2:65142:10|Removing sequential instance data_src_q\.data[31:0] (in view: work.cdc_2phase_src__internal_typedef_53_215__internal_typedef_53(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":65142:2:65142:10|Removing sequential instance data_src_q\.op[1:0] (in view: work.cdc_2phase_src__internal_typedef_53_215__internal_typedef_53(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":65142:2:65142:10|Removing sequential instance data_src_q\.addr[6:0] (in view: work.cdc_2phase_src__internal_typedef_53_215__internal_typedef_53(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":60269:4:60269:11|Removing instance i_dm_mem (in view: work.dm_top_1s_32s_4096_1_18446744073709551615s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":58624:2:58624:10|Removing sequential instance tdo_oe_o (in view: work.dmi_jtag_tap_5s_613749187(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":59878:2:59878:10|Removing sequential instance state_q[3:0] (in view: work.dm_mem_Z66_layer0(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":66362:4:66362:15|Removing instance i_dm_axi2mem (in view: work.cva6_avant(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":57311:4:57311:12|Removing sequential instance state_q[4:0] (in view: work.axi2mem_5s_32s_32s_32s_2s_67_layer0(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":66478:4:66478:18|Removing instance i_dm_axi_master (in view: work.cva6_avant(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":66325:4:66325:11|Removing instance i_dm_top (in view: work.cva6_avant(verilog)) because it does not drive other instances.
+Encoding state machine tap_state_q[15:0] (in view: work.dmi_jtag_tap_5s_613749187(verilog))
 original code -> new code
-   00 -> 00
-   01 -> 01
-   10 -> 10
-Encoding state machine state_q[6:0] (in view: work.cva6_ptw_sv32_1s_31_layer0(verilog))
+   0000 -> 0000
+   0001 -> 0001
+   0010 -> 0010
+   0011 -> 0011
+   0100 -> 0100
+   0101 -> 0101
+   0110 -> 0110
+   0111 -> 0111
+   1000 -> 1000
+   1001 -> 1001
+   1010 -> 1010
+   1011 -> 1011
+   1100 -> 1100
+   1101 -> 1101
+   1110 -> 1110
+   1111 -> 1111
+@N: MO225 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":58725:2:58725:10|There are no possible illegal states for state machine tap_state_q[15:0] (in view: work.dmi_jtag_tap_5s_613749187(verilog)); safe FSM implementation is not required.
+Encoding state machine state_q[4:0] (in view: work.dmi_jtag_613749187(verilog))
 original code -> new code
-   000 -> 0000001
-   001 -> 0000010
-   010 -> 0000100
-   011 -> 0001000
-   100 -> 0010000
-   101 -> 0100000
-   110 -> 1000000
-Encoding state machine state_q[6:0] (in view: work.load_unit_0_1s_23_layer0(verilog))
-original code -> new code
-   0000 -> 0000001
-   0001 -> 0000010
-   0010 -> 0000100
-   0011 -> 0001000
-   0100 -> 0010000
-   0110 -> 0100000
-   0111 -> 1000000
-Encoding state machine state_q[5:0] (in view: work.cva6_icache_0s_39_layer0(verilog))
-original code -> new code
-   000 -> 000001
-   001 -> 000010
-   010 -> 000100
-   011 -> 001000
-   100 -> 010000
-   101 -> 100000
-Encoding state machine state_q[6:0] (in view: work.wt_dcache_missunit_1_4s_41_layer0(verilog))
-original code -> new code
-   000 -> 0000001
-   001 -> 0000010
-   010 -> 0000100
-   011 -> 0001000
-   100 -> 0010000
-   101 -> 0100000
-   110 -> 1000000
-Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl_1_45_layer0_2(verilog))
-original code -> new code
-   000 -> 00000001
-   001 -> 00000010
-   010 -> 00000100
-   011 -> 00001000
-   100 -> 00010000
-   101 -> 00100000
-   110 -> 01000000
-   111 -> 10000000
-Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl_1_45_layer0_1(verilog))
-original code -> new code
-   000 -> 00000001
-   001 -> 00000010
-   010 -> 00000100
-   011 -> 00001000
-   100 -> 00010000
-   101 -> 00100000
-   110 -> 01000000
-   111 -> 10000000
-Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl_1_45_layer0_0(verilog))
-original code -> new code
-   000 -> 00000001
-   001 -> 00000010
-   010 -> 00000100
-   011 -> 00001000
-   100 -> 00010000
-   101 -> 00100000
-   110 -> 01000000
-   111 -> 10000000
-Encoding state machine wr_state_q[4:0] (in view: work.axi_shim__gen35__gen36_45_4_2s_46_layer0(verilog))
-original code -> new code
-   0000 -> 00001
-   0001 -> 00010
-   0010 -> 00100
-   0011 -> 01000
-   0100 -> 10000
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 334MB peak: 334MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
-@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 334MB peak: 335MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
-@N: FX1185 |Applying syn_allowed_resources blockrams=3 on compile point issue_stage_0_4s_13_layer0 
-@N: FX1185 |Applying syn_allowed_resources blockrams=15 on compile point ex_stage_1s_34_layer0 
-@N: FX1185 |Applying syn_allowed_resources blockrams=1 on compile point csr_regfile_1s_6s_1075056897_36_layer0 
-@N: FX1185 |Applying syn_allowed_resources blockrams=41 on compile point wt_dcache_4s_1s_44_layer0 
-@N: FX1184 |Applying syn_allowed_resources blockrams=990 on top level netlist ariane 
+@N: FX1184 |Applying syn_allowed_resources blockrams=990 on top level netlist cva6_avant 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 334MB peak: 335MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
 
 
 Clock Summary
 ******************
 
-          Start                                                          Requested     Requested     Clock        Clock          Clock
-Level     Clock                                                          Frequency     Period        Type         Group          Load 
---------------------------------------------------------------------------------------------------------------------------------------
-0 -       ariane|clk_i                                                   200.0 MHz     5.000         inferred     (multiple)     7251 
-                                                                                                                                      
-0 -       load_unit_0_1s_23_layer0|rdata_is_fp_signed_inferred_clock     200.0 MHz     5.000         inferred     (multiple)     32   
-======================================================================================================================================
+          Start              Requested     Requested     Clock        Clock          Clock
+Level     Clock              Frequency     Period        Type         Group          Load 
+------------------------------------------------------------------------------------------
+0 -       cva6_avant|tck     200.0 MHz     5.000         inferred     (multiple)     168  
+==========================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                                                               Clock     Source                                                             Clock Pin                                                          Non-clock Pin     Non-clock Pin                                                       
-Clock                                                          Load      Pin                                                                Seq Example                                                        Seq Example       Comb Example                                                        
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ariane|clk_i                                                   7251      clk_i(port)                                                        i_cva6.gen_cache_wt\.i_cache_subsystem.i_adapter.amo_gen_r_q.C     -                 -                                                                   
-                                                                                                                                                                                                                                                                                                     
-load_unit_0_1s_23_layer0|rdata_is_fp_signed_inferred_clock     32        i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT(or)     i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[0].C                  -                 i_cva6.ex_stage_i.lsu_i.i_load_unit.un1_rdata_is_fp_signed.I[0](inv)
-=====================================================================================================================================================================================================================================================================================================
+                   Clock     Source        Clock Pin                     Non-clock Pin     Non-clock Pin                                                        
+Clock              Load      Pin           Seq Example                   Seq Example       Comb Example                                                         
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+cva6_avant|tck     168       tck(port)     i_dmi_jtag.data_q[31:0].C     -                 i_dmi_jtag.i_dmi_jtag_tap.i_tck_inv.i_tc_clk_inverter.clk_o.I[0](inv)
+================================================================================================================================================================
 
-@W: MT530 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":23590:2:23590:10|Found inferred clock ariane|clk_i which controls 7251 sequential elements including i_cva6.i_frontend.i_instr_realign.unaligned_instr_q[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\scripts\lattice_ariane.sv":25032:11:25032:14|Found inferred clock load_unit_0_1s_23_layer0|rdata_is_fp_signed_inferred_clock which controls 32 sequential elements including i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[31]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/scripts/lattice_ariane.sv":58725:2:58725:10|Found inferred clock cva6_avant|tck which controls 168 sequential elements including i_dmi_jtag.i_dmi_jtag_tap.tap_state_q[3]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -277,20 +154,15 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 6391 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 32 clock pin(s) of sequential element(s)
-0 instances converted, 32 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 168 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-==================================== Non-Gated/Non-Generated Clocks ====================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                 
---------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       clk_i               port                   6391       i_cva6.csr_regfile_i.dcache_q[0]
-========================================================================================================
-============================================================================================= Gated/Generated Clocks =============================================================================================
-Clock Tree ID     Driving Element                                                Drive Element Type     Unconverted Fanout     Sample Instance                                      Explanation                   
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       i_cva6.ex_stage_i.lsu_i.i_load_unit.rdata_is_fp_signed.OUT     or                     32                     i_cva6.ex_stage_i.lsu_i.i_load_unit.result_o[31]     Clock Optimization not enabled
-==================================================================================================================================================================================================================
+============================== Non-Gated/Non-Generated Clocks ===============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance      
+---------------------------------------------------------------------------------------------
+@KP:ckid0_0       tck                 port                   168        i_dmi_jtag.state_q[4]
+=============================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -298,19 +170,19 @@ Clock Tree ID     Driving Element                                               
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 320MB peak: 335MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 325MB peak: 335MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 331MB peak: 335MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 566MB peak: 566MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 226MB peak: 335MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 477MB peak: 566MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:06s cputime
-# Mon Oct 28 11:48:08 2024
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Nov 27 11:06:34 2024
 
 ###########################################################]

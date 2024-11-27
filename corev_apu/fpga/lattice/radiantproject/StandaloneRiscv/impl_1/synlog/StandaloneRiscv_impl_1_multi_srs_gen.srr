@@ -7,21 +7,25 @@ with Synopsys, Inc. All other use, reproduction, modification, or distribution o
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
 Build: V-2023.09LR-1
-Install: C:\lscc\radiant\2024.1\synpbase
-OS: Windows 10 or later
-Hostname: LPGL109105
+Install: /home/anonymous/lscc/radiant/2024.1/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: anonymous
+max virtual memory: unlimited (bytes)
+max user processes: 143858
+max stack size: 8388608 (bytes)
+
 
 Implementation : impl_1
-Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 251R, Built May 14 2024 08:13:06, @
+Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 251R, Built May 14 2024 08:22:43, @5398574
 
 @N|Running in 64-bit mode
-File C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\synwork\StandaloneRiscv_impl_1_comp.srs changed - recompiling
+File /home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/synwork/StandaloneRiscv_impl_1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 154MB peak: 155MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 195MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct 28 11:48:01 2024
+# Wed Nov 27 11:06:33 2024
 
 ###########################################################]

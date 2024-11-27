@@ -15,12 +15,12 @@
             <Task name="PARTrace" build_result="0" update_result="2" update_time="1728027053"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="1728027053"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="1" build_time="1728027523">
-            <Task name="Synplify_Synthesis" build_result="1" update_result="2" update_time="1728027523"/>
+        <Milestone name="Synthesis" build_result="1" build_time="1732672889">
+            <Task name="Synplify_Synthesis" build_result="1" update_result="2" update_time="1732672889"/>
             <Task name="SynTrace" build_result="0" update_result="2" update_time="1728027511"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1728027511"/>
             <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1728027511"/>
         </Milestone>
-        <Report name="ariane_impl_1_syn.udb" last_build_time="1727751001" last_build_size="103348"/>
+        <Report name="ariane_impl_1_syn.udb" last_build_time="0" last_build_size="0"/>
     </Strategy>
 </BuildStatus>

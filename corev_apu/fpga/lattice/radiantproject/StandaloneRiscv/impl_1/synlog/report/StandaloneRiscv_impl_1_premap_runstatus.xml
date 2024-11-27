@@ -5,7 +5,7 @@ The file contains the job information from mapper to be displayed as part of the
 *******************************************************************************************-->
 <job_run_status name="Mapper">
 <report_link name="Detailed report">
-<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\synlog\StandaloneRiscv_impl_1_premap.srr</data>
+<data>/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/synlog/StandaloneRiscv_impl_1_premap.srr</data>
 <title></title>
 </report_link>
 <job_status>
@@ -13,34 +13,34 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>86</data>
+<data>32</data>
 <report_link name="more">
-<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\synlog\report\StandaloneRiscv_impl_1_premap_notes.txt</data>
+<data>/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/synlog/report/StandaloneRiscv_impl_1_premap_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>13</data>
+<data>2</data>
 <report_link name="more">
-<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\synlog\report\StandaloneRiscv_impl_1_premap_warnings.txt</data>
+<data>/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/synlog/report/StandaloneRiscv_impl_1_premap_warnings.txt</data>
 </report_link>
 </info>
 <info name="Errors">
 <data>0</data>
 <report_link name="more">
-<data>C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\radiantproject\StandaloneRiscv\impl_1\synlog\report\StandaloneRiscv_impl_1_premap_errors.txt</data>
+<data>/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/radiantproject/StandaloneRiscv/impl_1/synlog/report/StandaloneRiscv_impl_1_premap_errors.txt</data>
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:06s</data>
+<data>0h:00m:00s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:06s</data>
+<data>0h:00m:00s</data>
 </info>
 <info name="Peak Memory">
-<data>335MB</data>
+<data>566MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1730087288</data>
+<data type="timestamp">1732676794</data>
 </info>
 </job_info>
 </job_run_status>

@@ -1,0 +1,69 @@
+
+: 1 work.lscc_add_sub "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v" 108 0 work.lscc_adder work.lscc_subtractor 
+: 1 work.lscc_adder "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v" 441 0 
+: 1 work.lscc_subtractor "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v" 794 0 
+: 1 work.pmi_addsub "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v" 71 0 work.lscc_add_sub 
+: 1 work.pmi_add "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_add.v" 81 0 work.lscc_adder 
+: 1 work.lscc_complex_mult "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v" 97 0 work.lscc_mult_add_sub work.lscc_mult_add_sub 
+: 1 work.lscc_mult_add_sub "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v" 241 0 work.lscc_multiplier 
+: 1 work.lscc_multiplier "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v" 422 0 
+: 1 work.lscc_multiplier_lut "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v" 535 0 
+: 1 work.lscc_multiplier_dsp "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v" 771 0 
+: 1 work.pmi_complex_mult "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v" 106 0 work.lscc_complex_mult 
+: 1 work.lscc_cntr "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v" 77 0 
+: 1 work.pmi_counter "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_counter.v" 65 0 work.lscc_cntr 
+: 1 work.lscc_distributed_dpram "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v" 105 0 
+: 1 work.pmi_distributed_dpram "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v" 81 0 work.lscc_distributed_dpram 
+: 1 work.lscc_distributed_spram "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v" 96 0 
+: 1 work.pmi_distributed_spram "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v" 77 0 work.lscc_distributed_spram 
+: 1 work.lscc_distributed_rom "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v" 89 0 
+: 1 work.pmi_distributed_rom "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v" 76 0 work.lscc_distributed_rom 
+: 1 work.lscc_shift_register "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v" 82 0 
+: 1 work.pmi_distributed_shift_reg "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v" 86 0 work.lscc_shift_register 
+: 1 work.lscc_fifo "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v" 110 0 work.lscc_fifo_fwft_fabric work.lscc_fifo_main 
+: 1 work.lscc_fifo_fwft_fabric "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v" 270 0 
+: 1 work.lscc_fifo_main "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v" 448 0 
+: 1 work.lscc_hard_fifo "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v" 685 0 
+: 1 work.lscc_fifo_hw_core "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v" 2449 0 
+: 1 work.lscc_soft_fifo "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v" 2919 0 
+: 1 work.pmi_fifo "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v" 84 0 work.lscc_fifo 
+: 1 work.lscc_fifo_dc "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 120 0 work.lscc_fifo_dc_fwft_fabric work.lscc_fifo_dc_main 
+: 1 work.lscc_fifo_dc_fwft_fabric "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 288 0 
+: 1 work.lscc_fifo_dc_main "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 476 0 
+: 1 work.lscc_hard_fifo_dc "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 734 0 
+: 1 work.lscc_fifo_dc_hw_core "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 2568 0 
+: 1 work.lscc_soft_fifo_dc "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 3218 0 
+: 1 work.lscc_reset_async "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 4033 4 
+: 1 work.lscc_fifo_soft_mem "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 4291 0 work.lscc_fifo_mem_main 
+: 1 work.lscc_fifo_mem_main "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 4724 0 
+: 1 work.lscc_fifo_mem_core "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v" 7588 0 
+: 1 work.pmi_fifo_dc "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v" 94 0 work.lscc_fifo_dc 
+: 1 work.lscc_mult_accumulate "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v" 92 0 work.lscc_multiplier 
+: 1 work.pmi_mac "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mac.v" 89 0 work.lscc_mult_accumulate 
+: 1 work.lscc_mult_add_sub_sum "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v" 100 0 work.lscc_mult_add_sub work.lscc_mult_add_sub 
+: 1 work.pmi_multaddsubsum "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v" 97 0 work.lscc_mult_add_sub_sum 
+: 1 work.pmi_multaddsub "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v" 105 0 work.lscc_mult_add_sub 
+: 1 work.pmi_mult "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mult.v" 101 0 work.lscc_multiplier 
+: 1 work.lscc_ram_dp "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v" 235 0 work.lscc_ram_dp_main 
+: 1 work.lscc_ram_dp_main "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v" 673 0 
+: 1 work.lscc_ram_dp_core "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v" 3552 0 
+: 1 work.pmi_ram_dp "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v" 93 0 work.lscc_ram_dp 
+: 1 work.pmi_ram_dp_be "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v" 95 0 work.lscc_ram_dp 
+: 1 work.lscc_ram_dp_true "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v" 248 0 work.lscc_ram_dp_true_main 
+: 1 work.lscc_ram_dp_true_main "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v" 748 0 work.lscc_write_through work.lscc_write_through work.lscc_ram_dp_true_inst 
+: 1 work.lscc_write_through "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v" 1034 0 
+: 1 work.lscc_ram_dp_true_inst "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v" 1326 0 
+: 1 work.lscc_ram_dp_true_core "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v" 4019 0 
+: 1 work.pmi_ram_dp_true "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v" 101 0 work.lscc_ram_dp_true 
+: 1 work.lscc_ram_dq "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v" 231 0 work.lscc_ram_dq_main 
+: 1 work.lscc_ram_dq_main "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v" 657 0 work.lscc_write_through work.lscc_ram_dq_inst 
+: 1 work.lscc_ram_dq_inst "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v" 1176 0 
+: 1 work.lscc_ram_dq_core "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v" 2136 0 
+: 1 work.pmi_ram_dq "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v" 82 0 work.lscc_ram_dq 
+: 1 work.pmi_ram_dq_be "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v" 82 0 work.lscc_ram_dq 
+: 1 work.lscc_rom "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v" 223 0 work.lscc_rom_inst 
+: 1 work.lscc_rom_inst "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v" 662 0 
+: 1 work.lscc_rom_inst_core "/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v" 1621 0 
+: 1 work.pmi_rom "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_rom.v" 74 0 work.lscc_rom 
+: 1 work.pmi_sub "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_sub.v" 81 0 work.lscc_subtractor 
+: 1 work.arianelattice "/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice/rtl/arianelattice.v" 5906 4 work.arianelattice_ipgen_ariane 

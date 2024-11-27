@@ -1,24 +1,24 @@
 #--  Synopsys, Inc.
 #--  Version V-2023.09LR-1
-#--  Project file C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1\scratchproject.prs
+#--  Project file /home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/scratchproject.prs
 
 #project files
-add_file -constraint "C:/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl"
-add_file -verilog "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v"
-add_file -vhdl -lib pmi "C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd"
-add_file -verilog -vlog_std v2001 "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice/rtl/arianelattice.v"
+add_file -constraint "/home/anonymous/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl"
+add_file -verilog "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v"
+add_file -vhdl -lib pmi "/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd"
+add_file -verilog -vlog_std v2001 "/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice/rtl/arianelattice.v"
 
 
 #implementation: "impl_1"
-impl -add C:\code\cva6-softcore-contest-joshloo\cva6-softcore-contest\corev_apu\fpga\lattice\cva6_combined_rtl\ariane\impl_1 -type fpga
+impl -add /home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1 -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/}
-set_option -include_path {C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane;C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice}
+set_option -include_path {/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/}
+set_option -include_path {/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane;/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/arianelattice}
 
 #device options
 set_option -technology LAV-AT
@@ -93,8 +93,8 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.vm"
+project -result_file "/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.vm"
 
 #set log file 
-set_option log_file "C:/code/cva6-softcore-contest-joshloo/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.srf" 
+set_option log_file "/home/anonymous/code/cva6-softcore-contest/corev_apu/fpga/lattice/cva6_combined_rtl/ariane/impl_1/ariane_impl_1.srf" 
 impl -active "impl_1"

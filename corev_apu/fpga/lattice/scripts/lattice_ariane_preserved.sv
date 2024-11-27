@@ -51617,7 +51617,6 @@ endmodule
 /* verilator lint_on WIDTH */
 
 
-/*
 // C:/code/cva6-softcore-contest/corev_apu/src/ariane.sv
 // Copyright 2017-2019 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
@@ -51661,12 +51660,11 @@ module ariane import ariane_pkg::*; #(
   input  logic                         debug_req_i,  // debug request (async)
   // RISC-V formal interface port (`rvfi`):
   // Can be left open when formal tracing is not needed.
-  //output rvfi_instr_t [CVA6Cfg.NrCommitPorts-1:0] rvfi_o,
+  // output rvfi_instr_t [CVA6Cfg.NrCommitPorts-1:0] rvfi_o,
   // memory side
-  //output noc_req_t                     noc_req_o,
-  //input  noc_resp_t                    noc_resp_i
+  // output noc_req_t                     noc_req_o,
+  // input  noc_resp_t                    noc_resp_i
   
-
   // noc_req_o replacement
   output  logic 					noc_req_o_aw_valid,
   output  logic 					noc_req_o_w_valid,
@@ -51720,7 +51718,6 @@ module ariane import ariane_pkg::*; #(
   input  logic [1:0]				noc_resp_i_r_resp,
   input  logic 						noc_resp_i_r_last,
   input  logic [31:0]				noc_resp_i_r_user
-
 );
 
   rvfi_instr_t rvfi_o;
@@ -51804,80 +51801,6 @@ module ariane import ariane_pkg::*; #(
     .time_irq_i           ( time_irq_i                ),
     .debug_req_i          ( debug_req_i               ),
     .rvfi_o               ( 		                  ),
-    .cvxif_req_o          ( cvxif_req                 ),
-    .cvxif_resp_i         ( cvxif_resp                ),
-    .noc_req_o            ( noc_req_o                 ),
-    .noc_resp_i           ( noc_resp_i                )
-  );
-
-  if (CVA6Cfg.CvxifEn) begin : gen_example_coprocessor
-    cvxif_example_coprocessor i_cvxif_coprocessor (
-      .clk_i                ( clk_i                          ),
-      .rst_ni               ( rst_ni                         ),
-      .cvxif_req_i          ( cvxif_req                      ),
-      .cvxif_resp_o         ( cvxif_resp                     )
-    );
-  end
-
-endmodule // ariane
-*/
-
-
-module ariane import ariane_pkg::*; #(
-  parameter config_pkg::cva6_cfg_t CVA6Cfg = config_pkg::cva6_cfg_empty,
-  parameter bit IsRVFI = bit'(0),
-  parameter type rvfi_instr_t = logic,
-  parameter int unsigned AxiAddrWidth = ariane_axi::AddrWidth,
-  parameter int unsigned AxiDataWidth = ariane_axi::DataWidth,
-  parameter int unsigned AxiIdWidth   = ariane_axi::IdWidth,
-  parameter type axi_ar_chan_t = ariane_axi::ar_chan_t,
-  parameter type axi_aw_chan_t = ariane_axi::aw_chan_t,
-  parameter type axi_w_chan_t  = ariane_axi::w_chan_t,
-  parameter type noc_req_t = ariane_axi::req_t,
-  parameter type noc_resp_t = ariane_axi::resp_t
-) (
-  input  logic                         clk_i,
-  input  logic                         rst_ni,
-  // Core ID, Cluster ID and boot address are considered more or less static
-  input  logic [riscv::VLEN-1:0]       boot_addr_i,  // reset boot address
-  input  logic [riscv::XLEN-1:0]       hart_id_i,    // hart id in a multicore environment (reflected in a CSR)
-
-  // Interrupt inputs
-  input  logic [1:0]                   irq_i,        // level sensitive IR lines, mip & sip (async)
-  input  logic                         ipi_i,        // inter-processor interrupts (async)
-  // Timer facilities
-  input  logic                         time_irq_i,   // timer interrupt in (async)
-  input  logic                         debug_req_i,  // debug request (async)
-  // RISC-V formal interface port (`rvfi`):
-  // Can be left open when formal tracing is not needed.
-  output rvfi_instr_t [CVA6Cfg.NrCommitPorts-1:0] rvfi_o,
-  // memory side
-  output noc_req_t                     noc_req_o,
-  input  noc_resp_t                    noc_resp_i
-);
-
-  cvxif_pkg::cvxif_req_t  cvxif_req;
-  cvxif_pkg::cvxif_resp_t cvxif_resp;
-
-  cva6 #(
-    .CVA6Cfg ( CVA6Cfg ),
-    .IsRVFI ( IsRVFI ),
-    .rvfi_instr_t ( rvfi_instr_t ),
-    .axi_ar_chan_t (axi_ar_chan_t),
-    .axi_aw_chan_t (axi_aw_chan_t),
-    .axi_w_chan_t (axi_w_chan_t),
-    .noc_req_t (noc_req_t),
-    .noc_resp_t (noc_resp_t)
-  ) i_cva6 (
-    .clk_i                ( clk_i                     ),
-    .rst_ni               ( rst_ni                    ),
-    .boot_addr_i          ( boot_addr_i               ),
-    .hart_id_i            ( hart_id_i                 ),
-    .irq_i                ( irq_i                     ),
-    .ipi_i                ( ipi_i                     ),
-    .time_irq_i           ( time_irq_i                ),
-    .debug_req_i          ( debug_req_i               ),
-    .rvfi_o               ( rvfi_o                    ),
     .cvxif_req_o          ( cvxif_req                 ),
     .cvxif_resp_i         ( cvxif_resp                ),
     .noc_req_o            ( noc_req_o                 ),
@@ -66044,113 +65967,6 @@ module tc_clk_delay #(
 endmodule
 `endif
 
-
-
-module cva6_avant (
-
-    input  logic     clk_sys   ,
-    input  logic     cpu_reset ,
-
-    // common part
-    input logic      trst_n    ,
-    input  logic     tck       ,
-    input  logic     tms       ,
-    input  logic     tdi       ,
-    output wire      tdo       ,
-    input  logic     rx        ,
-    output logic     tx	
-);
-
-// IRQ
-logic [1:0] irq;
-logic debug_req_irq;
-logic timer_irq;
-
-logic ipi;
-
-// CVA6 config
-localparam bit IsRVFI = bit'(0);
-// CVA6 Xilinx configuration
-localparam config_pkg::cva6_cfg_t CVA6Cfg = '{
-  NrCommitPorts:         cva6_config_pkg::CVA6ConfigNrCommitPorts,
-  AxiAddrWidth:          cva6_config_pkg::CVA6ConfigAxiAddrWidth,
-  AxiDataWidth:          cva6_config_pkg::CVA6ConfigAxiDataWidth,
-  AxiIdWidth:            cva6_config_pkg::CVA6ConfigAxiIdWidth,
-  AxiUserWidth:          cva6_config_pkg::CVA6ConfigDataUserWidth,
-  NrLoadBufEntries:      cva6_config_pkg::CVA6ConfigNrLoadBufEntries,
-  RASDepth:              cva6_config_pkg::CVA6ConfigRASDepth,
-  BTBEntries:            cva6_config_pkg::CVA6ConfigBTBEntries,
-  BHTEntries:            cva6_config_pkg::CVA6ConfigBHTEntries,
-  FpuEn:                 bit'(cva6_config_pkg::CVA6ConfigFpuEn),
-  XF16:                  bit'(cva6_config_pkg::CVA6ConfigF16En),
-  XF16ALT:               bit'(cva6_config_pkg::CVA6ConfigF16AltEn),
-  XF8:                   bit'(cva6_config_pkg::CVA6ConfigF8En),
-  RVA:                   bit'(cva6_config_pkg::CVA6ConfigAExtEn),
-  RVV:                   bit'(cva6_config_pkg::CVA6ConfigVExtEn),
-  RVC:                   bit'(cva6_config_pkg::CVA6ConfigCExtEn),
-  RVZCB:                 bit'(cva6_config_pkg::CVA6ConfigZcbExtEn),
-  XFVec:                 bit'(cva6_config_pkg::CVA6ConfigFVecEn),
-  CvxifEn:               bit'(cva6_config_pkg::CVA6ConfigCvxifEn),
-  ZiCondExtEn:           bit'(0),
-  RVF:                   bit'(0),
-  RVD:                   bit'(0),
-  FpPresent:             bit'(0),
-  NSX:                   bit'(0),
-  FLen:                  unsigned'(0),
-  RVFVec:                bit'(0),
-  XF16Vec:               bit'(0),
-  XF16ALTVec:            bit'(0),
-  XF8Vec:                bit'(0),
-  NrRgprPorts:           unsigned'(0),
-  NrWbPorts:             unsigned'(0),
-  EnableAccelerator:     bit'(0),
-  /*
-  HaltAddress:           dm::HaltAddress,
-  ExceptionAddress:      dm::ExceptionAddress,
-  DmBaseAddress:         ariane_soc::DebugBase,
-  NrPMPEntries:          unsigned'(cva6_config_pkg::CVA6ConfigNrPMPEntries),
-  NOCType:               config_pkg::NOC_TYPE_AXI4_ATOP,
-  // idempotent region
-  NrNonIdempotentRules:  unsigned'(1),
-  NonIdempotentAddrBase: 1024'({64'b0}),
-  NonIdempotentLength:   1024'({ariane_soc::DRAMBase}),
-  NrExecuteRegionRules:  unsigned'(3),
-  ExecuteRegionAddrBase: 1024'({ariane_soc::DRAMBase,   ariane_soc::ROMBase,   ariane_soc::DebugBase}),
-  ExecuteRegionLength:   1024'({ariane_soc::DRAMLength, ariane_soc::ROMLength, ariane_soc::DebugLength}),
-  // cached region
-  NrCachedRegionRules:   unsigned'(1),
-  CachedRegionAddrBase:  1024'({ariane_soc::DRAMBase}),
-  CachedRegionLength:    1024'({ariane_soc::DRAMLength}),
-  */
-  MaxOutstandingStores:  unsigned'(7)
-};
-
-localparam type rvfi_instr_t = logic;
-
-  // ---------------
-  // Core
-  // ---------------
-  ariane_axi::req_t    axi_ariane_req;
-  ariane_axi::resp_t   axi_ariane_resp;
-
-  ariane #(
-      .CVA6Cfg ( CVA6Cfg ),
-      .IsRVFI ( IsRVFI ),
-      .rvfi_instr_t ( rvfi_instr_t )
-  ) i_ariane (
-      .clk_i        ( clk_sys            ),
-      .rst_ni       ( cpu_reset          ),
-      .boot_addr_i  ( '0 ), // start fetching from ROM
-      .hart_id_i    ( '0 ),
-      .irq_i        ( irq                 ),
-      .ipi_i        ( ipi                 ),
-      .time_irq_i   ( timer_irq           ),
-      .debug_req_i  ( debug_req_irq       ),
-      .noc_req_o    ( axi_ariane_req      ),
-      .noc_resp_i   ( axi_ariane_resp     )
-  );
-
-endmodule
 
 
 

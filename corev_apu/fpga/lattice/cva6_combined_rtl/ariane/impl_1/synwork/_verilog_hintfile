@@ -1,14 +1,14 @@
 %%% protect protected_file
 #OPTIONS:"|-autotop|-bldtbl|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi"
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\bin64\\c_vhdl.exe":1715795487
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\location.map":1717196465
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\std.vhd":1715795540
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1715795541
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\std1164.vhd":1715795541
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\numeric.vhd":1715795541
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\umr_capim.vhd":1715795541
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\arith.vhd":1715795540
-#CUR:"C:\\lscc\\radiant\\2024.1\\synpbase\\lib\\vhd\\unsigned.vhd":1715795541
-#CUR:"C:\\lscc\\radiant\\2024.1\\ip\\pmi\\pmi_lav-at.vhd":1657666652
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/linux_a_64/c_vhdl":1715766995
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/location.map":1717421429
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/std.vhd":1715766972
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/snps_haps_pkg.vhd":1715766972
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/std1164.vhd":1715766972
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/numeric.vhd":1715766972
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/umr_capim.vhd":1715766972
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/arith.vhd":1715766972
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vhd/unsigned.vhd":1715766972
+#CUR:"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd":1657637852
 @E
 @ 
